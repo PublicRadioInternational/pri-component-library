@@ -3,7 +3,7 @@ This repository contains a node module that exports PRI's React components.
 
 ## Requirements and Setup
 ### Requirements
- - Node.JS (>=9.7.0). We recommend installing via [NVM](https://github.com/creationix/nvm).
+ - Node.JS (>=8.4.0). We recommend installing via [NVM](https://github.com/creationix/nvm).
  - Yarn (>=1.5.0).
 
 ### Setup
