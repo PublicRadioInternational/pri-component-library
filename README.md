@@ -25,5 +25,4 @@ To generate snapshots: `yarn snapshot`.
 The process around contributing to this codebase and the workflow by which code changes are proposed and accepted into this project are documented [here](./.github/CONTRIBUTING.md).
 
 ## Deployment
-... coming soon ...
-This application is deployed to GitHub pages via a simple command: `yarn deploy`. This will create a new build, and send it up to the gh-pages branch.
+This application is deployed to GitHub pages via a simple command: `yarn deploy`. This will create a new build, and send it up to the gh-pages branch. You should never need to run this command, as CircleCI is set up to deploy changes when new versions are released.
