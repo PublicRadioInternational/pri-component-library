@@ -27,5 +27,5 @@ jobs:
         name: Deploy project.
         command: |
           if [ "${CIRCLE_BRANCH}" == "master" ]; then
-            echo "this will deploy"
+            yarn semantic-release
           fi
