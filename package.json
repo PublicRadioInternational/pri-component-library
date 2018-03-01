@@ -24,6 +24,12 @@
   "lint-staged": {
     "**/*.{js,jsx,json,css}": ["prettier --single-quote --write", "git add"]
   },
+  "release": {
+    "verifyConditions": ["@semantic-release/github"],
+    "publish": ["@semantic-release/github"],
+    "success": ["@semantic-release/github"],
+    "fail": ["@semantic-release/github"]
+  },
   "scripts": {
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "eslint --ext .jsx,.js .",
@@ -33,6 +39,7 @@
   "devDependencies": {
     "@commitlint/cli": "^6.1.2",
     "@commitlint/config-angular": "^6.1.2",
+    "@semantic-release/github": "^4.0.3",
     "babel-eslint": "^8.2.2",
     "eslint": "^4.18.1",
     "eslint-config-airbnb": "^16.1.0",
@@ -43,6 +50,7 @@
     "eslint-plugin-react": "^7.7.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.0",
-    "prettier": "^1.11.1"
+    "prettier": "^1.11.1",
+    "semantic-release": "^12.4.1"
   }
 }
