@@ -42,6 +42,7 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "eslint --ext .jsx,.js .",
     "test": "NODE_ENV=development jest --verbose --coverage --no-cache",
+    "snapshot": "NODE_ENV=development jest -u",
     "prettier": "prettier --single-quote --write \"**/*.{js,jsx}\"",
     "precommit": "lint-staged && yarn lint && yarn test",
     "semantic-release": "semantic-release",
@@ -70,6 +71,7 @@
     "jest": "^22.4.2",
     "lint-staged": "^7.0.0",
     "prettier": "^1.11.1",
+    "react-test-renderer": "^16.2.0",
     "semantic-release": "^12.4.1"
   },
   "publishConfig": {
