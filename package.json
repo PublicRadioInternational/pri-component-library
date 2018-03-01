@@ -45,7 +45,7 @@
     "prettier": "prettier --single-quote --write \"**/*.{js,jsx}\"",
     "precommit": "lint-staged && yarn lint && yarn test",
     "semantic-release": "semantic-release",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "start": "start-storybook -p 9001 -c .storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.40",
