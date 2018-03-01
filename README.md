@@ -11,10 +11,15 @@ This repository contains a node module that exports PRI's React components.
  - Run `yarn` in this repository's root directory.
 
 ## Developing
- ... coming soon ...
+This project uses [Storybook](https://github.com/storybooks/storybook) to generate a front end for defined components. Components are located in `/src/components/{ComponentName}`, and then passed to Storybook in `/src/stories/index.js`.
+
+To start Storybook: `yarn start`.
 
 ## Testing
- ... coming soon ...
+This project makes use of Jest's snapshot testing utilities. Test files should be located in the same directory as the component the test file is testing. Jest will then create a `__snapshots__` directory, and manage it's snapshots from there.
+
+To run tests: `yarn test`.
+To generate snapshots: `yarn snapshot`.
 
 ## Contributing
 The process around contributing to this codebase and the workflow by which code changes are proposed and accepted into this project are documented [here](./.github/CONTRIBUTING.md).
