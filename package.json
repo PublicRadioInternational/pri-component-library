@@ -43,7 +43,7 @@
     "lint": "eslint --ext .jsx,.js .",
     "test": "NODE_ENV=development jest --verbose --coverage --no-cache",
     "prettier": "prettier --single-quote --write \"**/*.{js,jsx}\"",
-    "precommit": "lint-staged && yarn lint",
+    "precommit": "lint-staged && yarn lint && yarn test",
     "semantic-release": "semantic-release",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
