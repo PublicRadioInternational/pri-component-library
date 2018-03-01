@@ -19,5 +19,13 @@
   ],
   "engines": {
     "node": ">=9.7.0"
+  },
+  "scripts": {
+    "commitmsg": "commitlint -e $GIT_PARAMS"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^6.1.2",
+    "@commitlint/config-angular": "^6.1.2",
+    "husky": "^0.14.3"
   }
 }
