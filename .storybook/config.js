@@ -1,3 +1,8 @@
+/**
+ * @file config.js
+ * Contains configuration for Storybook.
+ */
+
 import { configure } from '@storybook/react';
 
 function loadStories() {

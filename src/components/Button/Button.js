@@ -1,3 +1,8 @@
+/**
+ * @file Button.js
+ * Creates button component.
+ */
+
 import React, { Component } from 'react';
 import './Button.css';
 
