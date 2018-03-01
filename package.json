@@ -1,0 +1,23 @@
+{
+  "name": "pri-component-library",
+  "version": "0.0.0-development",
+  "description": "Contains a node module that exports PRI's React components.",
+  "main": "index.js",
+  "repository": "git@github.com:PublicRadioInternational/pri-component-library.git",
+  "author": "PRI",
+  "license": "UNLICENSED",
+  "private": true,
+  "contributors": [
+    {
+      "name": "Patrick Coffey",
+      "email": "patrickcoffey48@gmail.com"
+    },
+    {
+      "name": "Evan Willhite",
+      "email": "evan@fourkitchens.com"
+    }
+  ],
+  "engines": {
+    "node": ">=9.7.0"
+  }
+}
