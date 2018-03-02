@@ -24,8 +24,9 @@ jobs:
 
       - run: yarn lint
       - type: deploy
-        name: Deploy project.
+        name: Deploy and release.
         command: |
           if [ "${CIRCLE_BRANCH}" == "master" ]; then
             yarn semantic-release
+            yarn deploy
           fi

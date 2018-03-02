@@ -1,12 +1,12 @@
 /**
  * @file index.js
- * Contains stories for storybook.
+ * Story configuration for Button component.
  */
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import Button from '../components/Button/Button';
+import Button from './Button';
 
 storiesOf('Button', module).add('Toggle Button', () => (
   <Button onClick={action('button-clicked')}>Hello Button</Button>

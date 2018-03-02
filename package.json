@@ -22,7 +22,7 @@
     "node": ">=8.4.0"
   },
   "lint-staged": {
-    "**/*.{js,jsx,json,css}": ["prettier --single-quote --write", "git add"]
+    "**/*.{js,jsx,json,css}": ["prettier --write", "git add"]
   },
   "release": {
     "verifyConditions": ["@semantic-release/github"],
@@ -43,10 +43,13 @@
     "lint": "eslint --ext .jsx,.js .",
     "test": "NODE_ENV=development jest --verbose --coverage --no-cache",
     "snapshot": "NODE_ENV=development jest -u",
-    "prettier": "prettier --single-quote --write \"**/*.{js,jsx}\"",
+    "prettier": "prettier --write \"**/*.{js,jsx}\"",
     "precommit": "lint-staged && yarn lint && yarn test",
     "semantic-release": "semantic-release",
-    "start": "start-storybook -p 9001 -c .storybook"
+    "start": "start-storybook -p 9001 -c .storybook",
+    "build": "build-storybook -c .storybook -o dist",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.40",
@@ -64,8 +67,9 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.7.0",
+    "fs-extra": "^5.0.0",
+    "gh-pages": "^1.1.0",
     "husky": "^0.14.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^22.4.2",
