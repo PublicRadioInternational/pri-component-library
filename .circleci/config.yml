@@ -27,6 +27,7 @@ jobs:
         name: Deploy and release.
         command: |
           if [ "${CIRCLE_BRANCH}" == "master" ]; then
+            git fetch --tags
             yarn semantic-release
             yarn deploy
           fi
