@@ -1,6 +1,6 @@
 /**
- * @file index.js
- * Contains stories for storybook.
+ * @file config.js
+ * Contains configuration for Storybook.
  */
 
 import { configure } from '@storybook/react';
