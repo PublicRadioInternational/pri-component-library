@@ -1,6 +1,8 @@
 # PRI Component Library
 This repository contains a node module that exports PRI's React components.
 
+The application defined in this codebase is live and available [here](https://publicradiointernational.github.io/pri-component-library/).
+
 ## Requirements and Setup
 ### Requirements
  - Node.JS (>=8.4.0). We recommend installing via [NVM](https://github.com/creationix/nvm).
