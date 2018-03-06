@@ -3,6 +3,6 @@
  * Exports all components available in this project.
  */
 
-import Button from './src/components/Button/Button';
+import Button from './src/components/Atoms/Button/Button';
 
 export { Button }; // eslint-disable-line
