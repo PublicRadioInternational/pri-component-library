@@ -5,10 +5,17 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import Button from './Button.component';
 
 describe('<Button />', () => {
-  it('Renders without crashing', () => {
+  const wrapper = shallow(<Button />);
+
+  it('Creates a button.', () => {
+    expect(wrapper.find('button')).not.toBeNull();
+  });
+
+  it('Renders correctly', () => {
     const component = renderer.create(<Button />);
     expect(component.toJSON()).toMatchSnapshot();
   });
