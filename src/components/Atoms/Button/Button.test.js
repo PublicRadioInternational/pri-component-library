@@ -5,9 +5,11 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Button from './Button';
+import Button from './Button.component';
 
-it('renders without crashing', () => {
-  const component = renderer.create(<Button />);
-  expect(component.toJSON()).toMatchSnapshot();
+describe('<Button />', () => {
+  it('Renders without crashing', () => {
+    const component = renderer.create(<Button />);
+    expect(component.toJSON()).toMatchSnapshot();
+  });
 });
