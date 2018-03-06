@@ -18,7 +18,11 @@ This project uses [Storybook](https://github.com/storybooks/storybook) to genera
 To start Storybook: `yarn start`.
 
 ## Testing
-This project makes use of Jest's snapshot testing utilities. Test files should be located in the same directory as the component the test file is testing. Jest will then create a `__snapshots__` directory, and manage it's snapshots from there.
+This project makes use of Jest's snapshot testing utilities. Test files should be located in the same directory as the component the test file is testing. Jest will then create a `__snapshots__` directory, and manage it's snapshots from there. Also note that this Jest instance is set up to use Enzyme.
+
+For more information about tests on this project, please read this documentation:
+ - [Jest Documentation](https://facebook.github.io/jest/).
+ - [Enzyme Documentation](https://github.com/airbnb/enzyme).
 
 To run tests: `yarn test`.
 To generate snapshots: `yarn snapshot`.
