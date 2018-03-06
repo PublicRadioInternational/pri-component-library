@@ -1,11 +1,12 @@
 /**
- * @file Button.js
+ * @file Button.component.js
  * Creates button component.
  */
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './Button.css';
+import { Dropdown } from '../Dropdown/Dropdown.component';
 
 function ifDropdown(dropdown, title, url, className) {
   if (dropdown === false) {
@@ -22,20 +23,7 @@ function ifDropdown(dropdown, title, url, className) {
         <span className="oi oi-media-play" ariaHidden="true" />
         <span className="text-label">{title}</span>
       </a>
-      <button
-        type="button"
-        className="btn btn-secondary dropdown-toggle dropdown-toggle-split"
-        dataToggle="dropdown"
-        ariaHaspopup="true"
-        ariaExpanded="false"
-      >
-        <span className="sr-only">Toggle Dropdown</span>
-      </button>
-      <div className="dropdown-menu dropdown-menu-right">
-        <a className="dropdown-item" href="{child.url}">
-          {child.title}
-        </a>
-      </div>
+      <Dropdown />
     </div>
   );
 }
