@@ -54,14 +54,10 @@
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.40",
-    "@babel/preset-env": "^7.0.0-beta.40",
-    "@babel/preset-react": "^7.0.0-beta.40",
     "@commitlint/cli": "^6.1.2",
     "@commitlint/config-angular": "^6.1.2",
     "@semantic-release/github": "^4.0.3",
     "@storybook/react": "^3.3.14",
-    "babel-core": "^7.0.0-0",
     "babel-eslint": "^8.2.2",
     "babel-jest": "^22.4.1",
     "enzyme": "^3.3.0",
@@ -86,6 +82,7 @@
     "access": "restricted"
   },
   "dependencies": {
+    "babel-plugin-macros": "^2.2.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }

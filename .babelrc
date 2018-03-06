@@ -1,10 +1,10 @@
 {
-  "presets": [
-    ["@babel/preset-env", {
-      "targets": {
-        "browsers": ["last 2 versions"]
-      }
-    }],
-    "@babel/preset-react"
+  "presets": ["env", "stage-0", "react"],
+  "plugins": [
+    "babel-plugin-macros",
+    ["transform-runtime", {
+      "polyfill": false,
+      "regenerator": true
+    }]
   ]
 }
