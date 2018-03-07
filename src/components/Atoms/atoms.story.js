@@ -7,6 +7,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import Button from './Button/Button.component';
+import Dropdown from './Dropdown/Dropdown.component';
 
 storiesOf('Atoms/Buttons', module).add('Default', () => (
   <Button
@@ -23,7 +24,22 @@ storiesOf('Atoms/Buttons', module).add('Orange', () => (
     onClick={action('button-clicked')}
     title="Donate"
     url="#"
-    dropdown={false}
     className="btnOrange"
+  />
+));
+
+storiesOf('Atoms/Dropdown', module).add('Default', () => (
+  <Dropdown
+    btnTitle="Listen"
+    items={[
+      {
+        url: 'http://google.com',
+        title: 'Google.com'
+      },
+      {
+        url: '/',
+        title: 'Local url'
+      }
+    ]}
   />
 ));

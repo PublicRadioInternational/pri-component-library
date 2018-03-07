@@ -1,0 +1,39 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value blue from colors;
+/* import fonts... */
+@value fonts: "../../00_global/fonts.css";
+@value copy from fonts;
+
+/* Group */
+.btnGroup {
+  display: flex;
+  position: relative;
+  vertical-align: middle;
+}
+
+/* Dropdown */
+.dropdown {
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  display: none;
+  left: 0;
+  margin: 0.125rem 0 0;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+}
+
+.dropdownItem {
+  clear: both;
+  color: blue;
+  display: block;
+  font-size: 0.875em;
+  font-weight: 400;
+  padding: 0.25rem 1.5rem;
+  width: 100%;
+}

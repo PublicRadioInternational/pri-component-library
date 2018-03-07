@@ -6,29 +6,54 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Dropdown.css';
+import Button from '../Button/Button.component';
 
-const Dropdown = ({ item, className }) => (
-  <div className="dropdown">
-    <button
-      type="button"
-      className={styles[className]}
-      dataToggle="dropdown"
-      ariaHaspopup="true"
-      ariaExpanded="false"
-    >
-      <span className="sr-only">Toggle Dropdown</span>
-    </button>
-    <div className="dropdown-menu dropdown-menu-right">
-      <a className="dropdown-item" href="{item.url}">
-        {item.title}
-      </a>
-    </div>
-  </div>
-);
+// const Dropdown = ({ items, btnTitle, isToggled }) => (
+class Dropdown extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleToggleChange = this.handleToggleChange.bind(this);
+    this.state = { toggled: false };
+  }
+  handleToggleChange() {
+    this.setState({ toggled: true });
+  }
+  render() {
+    return (
+      <div className={styles.btnGroup}>
+        <Button
+          dropdown={false}
+          title={this.props.btnTitle}
+          url="#"
+          className="btnGrpOrange"
+          ariaHaspopup
+          ariaExpanded={false}
+        />
+        <Button
+          button
+          dropdown
+          title="Toggle Dropdown"
+          url="#"
+          className="btnDropdownOrange"
+          ariaHaspopup
+          ariaExpanded={false}
+          isToggleOn={this.state.toggled}
+        />
+        <div className={styles.dropdown} data-toggled={this.handleToggleChange}>
+          {this.props.items.map(item => (
+            <a className={styles.dropdownItem} href={item.url}>
+              {item.title}
+            </a>
+          ))}
+        </div>
+      </div>
+    );
+  }
+}
 
 Dropdown.propTypes = {
-  className: PropTypes.string.isRequired,
-  item: PropTypes.arrayOf.isRequired
+  items: PropTypes.arrayOf.isRequired,
+  btnTitle: PropTypes.string.isRequired
 };
 
 export default Dropdown;
