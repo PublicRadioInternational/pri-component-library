@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dropdown /> Renders correctly 1`] = `
+<div
+  className="btnGroup"
+>
+  <a
+    className="btnGrpOrange"
+    href="#"
+    onClick={[Function]}
+  >
+    <span
+      className="text-label"
+    >
+      Listen
+    </span>
+  </a>
+  <button
+    aria-expanded={false}
+    aria-haspopup={true}
+    className="btnDropdownOrange"
+    data-toggle="toggled"
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="hidden"
+    >
+      Toggle Dropdown
+    </span>
+  </button>
+  <div
+    className="dropdown"
+    data-toggled={null}
+  >
+    <a
+      className="dropdownItem"
+      href="http://google.com"
+    >
+      Google.com
+    </a>
+    <a
+      className="dropdownItem"
+      href="/"
+    >
+      Local url
+    </a>
+  </div>
+</div>
+`;
