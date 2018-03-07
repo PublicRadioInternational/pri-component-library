@@ -46,7 +46,7 @@ class Dropdown extends React.Component {
           data-toggled={this.state.toggled ? 'toggled' : null}
         >
           {this.props.items.map(item => (
-            <a className={styles.dropdownItem} href={item.url}>
+            <a className={styles.dropdownItem} href={item.url} key={item.id}>
               {item.title}
             </a>
           ))}
@@ -57,7 +57,7 @@ class Dropdown extends React.Component {
 }
 
 Dropdown.propTypes = {
-  items: PropTypes.arrayOf.isRequired,
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
   btnTitle: PropTypes.string.isRequired
 };
 

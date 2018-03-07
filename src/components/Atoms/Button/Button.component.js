@@ -61,7 +61,7 @@ class Button extends Component {
 Button.propTypes = {
   button: PropTypes.bool,
   hidden: PropTypes.bool.isRequired,
-  toggled: PropTypes.bool,
+  toggled: PropTypes.func,
   title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
@@ -73,7 +73,7 @@ Button.defaultProps = {
   button: false,
   ariaHaspopup: false,
   ariaExpanded: false,
-  toggled: false
+  toggled: () => {}
 };
 
 export default Button;

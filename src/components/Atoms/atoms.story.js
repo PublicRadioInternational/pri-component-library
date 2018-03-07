@@ -33,10 +33,12 @@ storiesOf('Atoms/Dropdown', module).add('Default', () => (
     btnTitle="Listen"
     items={[
       {
+        id: 1,
         url: 'http://google.com',
         title: 'Google.com'
       },
       {
+        id: 2,
         url: '/',
         title: 'Local url'
       }
