@@ -3,10 +3,21 @@
  * Contains tests for index.js
  */
 
-import { readdir } from 'fs-extra';
+import path from 'path';
+import glob from 'glob';
 import * as Components from './index';
 
-it('Exports all expected components', async () => {
-  const dirContents = await readdir('./src/components');
-  expect(Object.keys(Components)).toEqual(dirContents);
+describe('index', () => {
+  it('Exports valid component objects', () => {
+    glob('./src/components/**/*.component.js', {}, (er, files) => {
+      const components = files.map(filepath => {
+        // Grab the file name.
+        const filename = path.parse(filepath).name;
+        // Parse out the component name.
+        return filename.split('.')[0] || null;
+      });
+
+      expect(Object.keys(Components)).toEqual(components);
+    });
+  });
 });

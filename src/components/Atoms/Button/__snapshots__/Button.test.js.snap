@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> Renders correctly 1`] = `
+<a
+  className="btnOrange"
+  href="https://google.com"
+>
+  <span
+    className="text-label"
+  >
+    test
+  </span>
+</a>
+`;
