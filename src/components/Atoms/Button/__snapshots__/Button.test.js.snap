@@ -1,10 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Button /> Renders correctly 1`] = `
-<button
-  className="button"
-  onClick={[Function]}
+<a
+  className="btn"
+  href={undefined}
 >
-  Untoggled
-</button>
+  <span
+    className="text-label"
+  />
+</a>
 `;

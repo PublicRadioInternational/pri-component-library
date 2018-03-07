@@ -13,13 +13,14 @@ import { Dropdown } from '../Dropdown/Dropdown.component';
  */
 class Button extends Component {
   static propTypes = {
-    dropdown: PropTypes.bool.isRequired,
     title: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
+    dropdown: PropTypes.bool,
     className: PropTypes.oneOf(['btn', 'btnOrange'])
   };
 
   static defaultProps = {
+    dropdown: false,
     className: 'btn'
   };
 
