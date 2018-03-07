@@ -35,7 +35,7 @@ describe('<Button />', () => {
   });
 
   it('Renders correctly', () => {
-    const component = renderer.create(<Button />);
+    const component = renderer.create(<Button title={title} url={url} className="btnOrange" />);
     expect(component.toJSON()).toMatchSnapshot();
   });
 });

@@ -2,11 +2,13 @@
 
 exports[`<Button /> Renders correctly 1`] = `
 <a
-  className="btn"
-  href={undefined}
+  className="btnOrange"
+  href="https://google.com"
 >
   <span
     className="text-label"
-  />
+  >
+    test
+  </span>
 </a>
 `;
