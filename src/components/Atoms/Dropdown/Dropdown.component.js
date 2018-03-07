@@ -16,13 +16,15 @@ class Dropdown extends React.Component {
     this.state = { toggled: false };
   }
   handleToggleChange() {
-    this.setState({ toggled: true });
+    this.setState(prevState => ({
+      toggled: !prevState.toggled
+    }));
   }
   render() {
     return (
       <div className={styles.btnGroup}>
         <Button
-          dropdown={false}
+          hidden={false}
           title={this.props.btnTitle}
           url="#"
           className="btnGrpOrange"
@@ -31,15 +33,18 @@ class Dropdown extends React.Component {
         />
         <Button
           button
-          dropdown
+          hidden
           title="Toggle Dropdown"
           url="#"
           className="btnDropdownOrange"
           ariaHaspopup
           ariaExpanded={false}
-          isToggleOn={this.state.toggled}
+          toggled={this.handleToggleChange}
         />
-        <div className={styles.dropdown} data-toggled={this.handleToggleChange}>
+        <div
+          className={styles.dropdown}
+          data-toggled={this.state.toggled ? 'toggled' : null}
+        >
           {this.props.items.map(item => (
             <a className={styles.dropdownItem} href={item.url}>
               {item.title}

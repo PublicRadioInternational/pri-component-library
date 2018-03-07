@@ -8,82 +8,60 @@ import PropTypes from 'prop-types';
 import styles from './Button.css';
 import globalStyles from '../../00_global/global.css';
 
-function ifDropdown(dropdown, title) {
-  if (dropdown) {
+function ifHidden(hidden, title) {
+  if (hidden) {
     return <span className={globalStyles.hidden}>{title}</span>;
   }
   return { title };
 }
 
-function createButton(
-  button,
-  dropdown,
-  title,
-  url,
-  className,
-  ariaHaspopup,
-  ariaExpanded,
-  toggleOpen,
-  isToggleOn
-) {
-  if (button === false) {
-    return (
-      <a href={url} className={styles[className]}>
-        <span className="text-label">{title}</span>
-      </a>
-    );
-  }
-
-  return (
-    <button
-      type="button"
-      className={styles[className]}
-      data-toggle={isToggleOn ? 'toggled' : null}
-      aria-haspopup={ariaHaspopup}
-      aria-expanded={ariaExpanded}
-      onClick={toggleOpen}
-    >
-      {ifDropdown(dropdown, title)}
-    </button>
-  );
-}
-
 class Button extends Component {
-  constructor() {
-    super();
-    this.handleClick = this.handleClick.bind(this);
+  constructor(props) {
+    super(props);
+    // This binding is necessary to make `this` work in the callback
+    this.toggleChange = this.toggleChange.bind(this);
   }
-  handleClick() {
-    this.props.isToggleOn(true);
+  toggleChange() {
+    this.props.toggled(!this.props.toggled);
   }
   render() {
     const {
       button,
-      dropdown,
-      title,
-      url,
-      className,
-      ariaHaspopup,
-      ariaExpanded
-    } = this.props;
-    return createButton(
-      button,
-      dropdown,
+      hidden,
       title,
       url,
       className,
       ariaHaspopup,
       ariaExpanded,
-      this.handleClick,
-      this.props.isToggleOn
+      toggled
+    } = this.props;
+    if (button === false) {
+      return (
+        <a href={url} className={styles[className]} onClick={this.toggleChange}>
+          <span className="text-label">{title}</span>
+        </a>
+      );
+    }
+
+    return (
+      <button
+        type="button"
+        className={styles[className]}
+        data-toggle={toggled ? 'toggled' : null}
+        aria-haspopup={ariaHaspopup}
+        aria-expanded={ariaExpanded}
+        onClick={this.toggleChange}
+      >
+        {ifHidden(hidden, title)}
+      </button>
     );
   }
 }
 
 Button.propTypes = {
   button: PropTypes.bool,
-  dropdown: PropTypes.bool.isRequired,
-  isToggleOn: PropTypes.bool.isRequired,
+  hidden: PropTypes.bool.isRequired,
+  toggled: PropTypes.bool,
   title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
@@ -94,7 +72,8 @@ Button.propTypes = {
 Button.defaultProps = {
   button: false,
   ariaHaspopup: false,
-  ariaExpanded: false
+  ariaExpanded: false,
+  toggled: false
 };
 
 export default Button;
