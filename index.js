@@ -4,8 +4,9 @@
  */
 
 import Button from './src/components/Atoms/Button/Button.component';
-import Dropdown from './src/components/Atoms/Dropdown/Dropdown.component';
+import {
+  Dropdown,
+  DropdownItem
+} from './src/components/Atoms/Dropdown/Dropdown.component';
 
-export { Button }; // eslint-disable-line
-
-export { Dropdown }; // eslint-disable-line
+export { Button, Dropdown, DropdownItem }; // eslint-disable-line
