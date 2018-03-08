@@ -16,10 +16,15 @@ export default class Button extends Component {
     isHidden: PropTypes.bool,
     title: PropTypes.string.isRequired,
     url: PropTypes.string,
-    className: PropTypes.string,
     ariaHaspopup: PropTypes.bool,
     ariaExpanded: PropTypes.bool,
-    onClick: PropTypes.func
+    onClick: PropTypes.func,
+    className: PropTypes.oneOf([
+      'btn',
+      'btnOrange',
+      'btnGrpOrange',
+      'btnDropdownOrange'
+    ])
   };
 
   static defaultProps = {

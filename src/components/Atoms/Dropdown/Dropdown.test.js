@@ -1,11 +1,12 @@
 /**
  * @file Dropdown.test.js
- * Contains tests for Button.js.
+ * Contains tests for Dropdown.component.js.
  */
 
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Dropdown, DropdownItem } from './Dropdown.component';
+import Dropdown from './Dropdown.component';
+import DropdownItem from '../DropdownItem/DropdownItem.component';
 
 describe('<Dropdown />', () => {
   const dropdown = () => (

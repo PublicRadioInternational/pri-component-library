@@ -1,0 +1,9 @@
+.dropdownItem {
+  clear: both;
+  color: blue;
+  display: block;
+  font-size: 0.875em;
+  font-weight: 400;
+  padding: 0.25rem 1.5rem;
+  width: 100%;
+}

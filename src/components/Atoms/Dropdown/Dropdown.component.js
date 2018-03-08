@@ -1,6 +1,6 @@
 /**
  * @file Dropdown.component.js
- * Creates dropdown component.
+ * Exports a dropdown component.
  */
 
 import React, { Component } from 'react';
@@ -11,7 +11,7 @@ import Button from '../Button/Button.component';
 /**
  * Component that renders a Dropdown menu button.
  */
-export class Dropdown extends Component {
+export default class Dropdown extends Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
     children: PropTypes.arrayOf(PropTypes.object),
@@ -66,31 +66,6 @@ export class Dropdown extends Component {
           {children}
         </div>
       </div>
-    );
-  }
-}
-
-/**
- * Component that renders a dropdown menu item.
- */
-export class DropdownItem extends Component {
-  static propTypes = {
-    title: PropTypes.string.isRequired,
-    url: PropTypes.string,
-    onClick: PropTypes.func
-  };
-
-  static defaultProps = {
-    url: null,
-    onClick: () => {}
-  };
-
-  render() {
-    const { title, url, onClick } = this.props;
-    return (
-      <a className={styles.dropdownItem} href={url} onClick={() => onClick()}>
-        {title}
-      </a>
     );
   }
 }

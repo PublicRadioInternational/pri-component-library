@@ -8,7 +8,8 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
 import Button from './Button/Button.component';
-import { Dropdown, DropdownItem } from './Dropdown/Dropdown.component';
+import Dropdown from './Dropdown/Dropdown.component';
+import DropdownItem from './DropdownItem/DropdownItem.component';
 
 /**
  * Add storybook definition for buttons.
