@@ -17,60 +17,53 @@ function ifHidden(hidden, title) {
 
 class Button extends Component {
   static propTypes = {
-    button: PropTypes.bool,
-    hidden: PropTypes.bool.isRequired,
-    toggled: PropTypes.func,
+    isHidden: PropTypes.bool,
     title: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
+    url: PropTypes.string,
     className: PropTypes.string.isRequired,
     ariaHaspopup: PropTypes.bool,
-    ariaExpanded: PropTypes.bool
+    ariaExpanded: PropTypes.bool,
+    handleClick: PropTypes.func
   };
 
   static defaultProps = {
-    button: false,
+    isHidden: false,
     ariaHaspopup: false,
     ariaExpanded: false,
-    toggled: () => {}
+    url: false,
+    handleClick: () => {},
   };
 
-  constructor(props) {
-    super(props);
-    // This binding is necessary to make `this` work in the callback
-    this.toggleChange = this.toggleChange.bind(this);
-  }
-  toggleChange() {
-    this.props.toggled(!this.props.toggled);
-  }
   render() {
     const {
-      button,
-      hidden,
+      isHidden,
       title,
       url,
       className,
       ariaHaspopup,
       ariaExpanded,
-      toggled
+      handleClick
     } = this.props;
-    if (button === false) {
+
+    // If a URL is provided, this button is simply a link.
+    if (url) {
       return (
-        <a href={url} className={styles[className]} onClick={this.toggleChange}>
+        <a href={url} className={styles[className]} onClick={() => handleClick()}>
           <span className="text-label">{title}</span>
         </a>
       );
     }
 
+    // No URL was specified, this button is not a link. Return a button with 
     return (
       <button
         type="button"
         className={styles[className]}
-        data-toggle={toggled ? 'toggled' : null}
         aria-haspopup={ariaHaspopup}
         aria-expanded={ariaExpanded}
-        onClick={this.toggleChange}
+        onClick={() => handleToggle()}
       >
-        {ifHidden(hidden, title)}
+        {ifHidden(isHidden, title)}
       </button>
     );
   }

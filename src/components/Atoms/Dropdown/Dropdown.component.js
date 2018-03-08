@@ -26,20 +26,17 @@ class Dropdown extends React.Component {
         <Button
           hidden={false}
           title={this.props.btnTitle}
-          url="#"
           className="btnGrpOrange"
           ariaHaspopup
           ariaExpanded={false}
         />
         <Button
-          button
-          hidden
+          isHidden
           title="Toggle Dropdown"
-          url="#"
           className="btnDropdownOrange"
           ariaHaspopup
           ariaExpanded={false}
-          toggled={this.handleToggleChange}
+          clickHandler={this.handleToggleChange}
         />
         <div
           className={styles.dropdown}
