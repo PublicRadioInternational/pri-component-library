@@ -16,3 +16,5 @@ rules:
   strict: 0
   react/jsx-filename-extension: [1, { "extensions": [".js", ".jsx"] }]
   import/no-extraneous-dependencies: 0
+  react/prefer-stateless-function: 0
+  react/no-multi-comp: 0
