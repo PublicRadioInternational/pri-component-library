@@ -19,12 +19,9 @@ export default class Button extends Component {
     ariaHaspopup: PropTypes.bool,
     ariaExpanded: PropTypes.bool,
     onClick: PropTypes.func,
-    className: PropTypes.oneOf([
-      'btn',
-      'btnOrange',
-      'btnGrpOrange',
-      'btnDropdownOrange'
-    ])
+    group: PropTypes.bool,
+    dropdown: PropTypes.bool,
+    color: PropTypes.oneOf(['Orange', 'White'])
   };
 
   static defaultProps = {
@@ -32,7 +29,9 @@ export default class Button extends Component {
     ariaHaspopup: false,
     ariaExpanded: false,
     url: null,
-    className: 'btn',
+    color: 'White',
+    group: false,
+    dropdown: false,
     onClick: () => {}
   };
 
@@ -41,11 +40,18 @@ export default class Button extends Component {
       isHidden,
       title,
       url,
-      className,
+      color,
       ariaHaspopup,
       ariaExpanded,
-      onClick
+      onClick,
+      group,
+      dropdown
     } = this.props;
+
+    // Generate a class name based on the group, dropdown, and color values.
+    const className = `btn${group ? 'Grp' : ''}${
+      dropdown ? 'Dropdown' : ''
+    }${color}`;
 
     // If a URL is provided, this button is simply a link.
     if (url) {

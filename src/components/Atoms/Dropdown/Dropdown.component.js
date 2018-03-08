@@ -15,11 +15,13 @@ export default class Dropdown extends Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
     children: PropTypes.arrayOf(PropTypes.object),
-    onClick: PropTypes.func
+    onClick: PropTypes.func,
+    color: PropTypes.oneOf(['Orange', 'White'])
   };
 
   static defaultProps = {
     children: [],
+    color: 'White',
     onClick: () => {}
   };
 
@@ -43,23 +45,25 @@ export default class Dropdown extends Component {
   }
 
   render() {
-    const { title, onClick, children } = this.props;
+    const { title, onClick, children, color } = this.props;
     const { isOpen } = this.state;
 
     return (
-      <div className={styles.btnGroup}>
+      <div className={styles.dropdownGrp}>
         <Button
-          title={title}
+          group
           ariaHaspopup
-          className="btnGrpOrange"
+          title={title}
+          color={color}
           onClick={() => onClick()}
         />
         <Button
           isHidden
-          title={`Toggle ${title} Dropdown`}
-          className="btnDropdownOrange"
+          dropdown
           ariaHaspopup
+          color={color}
           ariaExpanded={false}
+          title={`Toggle ${title} Dropdown`}
           onClick={() => this.handleToggle()}
         />
         <div className={styles.dropdown} data-open={isOpen}>

@@ -6,7 +6,7 @@
 @value copy from fonts;
 
 /* Group */
-.btnGroup {
+.dropdownGrp {
   display: flex;
   position: relative;
   vertical-align: middle;

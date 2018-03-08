@@ -19,22 +19,32 @@ storiesOf('Atoms/Buttons', module)
     <Button title="Listen" onClick={action('button-clicked')} />
   ))
   .add('Orange', () => (
-    <Button
-      title="Donate"
-      onClick={action('button-clicked')}
-      className="btnOrange"
-    />
+    <Button title="Donate" onClick={action('button-clicked')} color="Orange" />
   ));
 
 /**
  * Add storybook definition for Dropdowns.
  */
-storiesOf('Atoms/Dropdown', module).add('Default', () => (
-  <Dropdown title="Listen" onClick={action('drowndown-button-clicked')}>
-    <DropdownItem title="Google" url="https://google.com" />
-    <DropdownItem
-      title="Custom Action"
-      onClick={action('dropdown-button-item-clicked')}
-    />
-  </Dropdown>
-));
+storiesOf('Atoms/Dropdown', module)
+  .add('Default', () => (
+    <Dropdown title="Listen" onClick={action('drowndown-button-clicked')}>
+      <DropdownItem title="Google" url="https://google.com" />
+      <DropdownItem
+        title="Custom Action"
+        onClick={action('dropdown-button-item-clicked')}
+      />
+    </Dropdown>
+  ))
+  .add('Orange', () => (
+    <Dropdown
+      title="Listen"
+      color="Orange"
+      onClick={action('drowndown-button-clicked')}
+    >
+      <DropdownItem title="Google" url="https://google.com" />
+      <DropdownItem
+        title="Custom Action"
+        onClick={action('dropdown-button-item-clicked')}
+      />
+    </Dropdown>
+  ));
