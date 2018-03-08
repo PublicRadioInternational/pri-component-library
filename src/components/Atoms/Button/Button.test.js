@@ -35,7 +35,7 @@ describe('<Button />', () => {
     expect(span.text()).toBe(title);
   });
 
-  it('Renders correctly', () => {
+  it('Matches the snapshot', () => {
     const component = renderer.create(
       <Button title={title} url={url} hidden={hidden} className="btnOrange" />
     );

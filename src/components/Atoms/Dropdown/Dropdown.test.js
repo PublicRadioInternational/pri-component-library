@@ -5,26 +5,15 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Dropdown from './Dropdown.component';
+import { Dropdown, DropdownItem } from './Dropdown.component';
 
 describe('<Dropdown />', () => {
-  const btnTitle = 'Listen';
-  const items = [
-    {
-      id: 1,
-      url: 'http://google.com',
-      title: 'Google.com'
-    },
-    {
-      id: 2,
-      url: '/',
-      title: 'Local url'
-    }
-  ];
-
-  it('Renders correctly', () => {
+  it('Matches the snapshot', () => {
     const component = renderer.create(
-      <Dropdown btnTitle={btnTitle} items={items} />
+      <Dropdown title="Listen" onClick={() => {}}>
+        <DropdownItem title="Google" url="https://google.com" />
+        <DropdownItem title="Custom Action" onClick={() => {}} />
+      </Dropdown>
     );
     expect(component.toJSON()).toMatchSnapshot();
   });

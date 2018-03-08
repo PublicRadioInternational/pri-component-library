@@ -1,49 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Dropdown /> Renders correctly 1`] = `
+exports[`<Dropdown /> Matches the snapshot 1`] = `
 <div
   className="btnGroup"
 >
-  <a
+  <button
+    aria-expanded={false}
+    aria-haspopup={true}
     className="btnGrpOrange"
-    href="#"
     onClick={[Function]}
+    type="button"
   >
     <span
-      className="text-label"
+      className={null}
     >
       Listen
     </span>
-  </a>
+  </button>
   <button
     aria-expanded={false}
     aria-haspopup={true}
     className="btnDropdownOrange"
-    data-toggle="toggled"
     onClick={[Function]}
     type="button"
   >
     <span
       className="hidden"
     >
-      Toggle Dropdown
+      Toggle Listen Dropdown
     </span>
   </button>
   <div
     className="dropdown"
-    data-toggled={null}
+    data-open={false}
   >
     <a
       className="dropdownItem"
-      href="http://google.com"
+      href="https://google.com"
+      onClick={[Function]}
     >
-      Google.com
+      Google
     </a>
     <a
       className="dropdownItem"
-      href="/"
+      href={null}
+      onClick={[Function]}
     >
-      Local url
+      Custom Action
     </a>
   </div>
 </div>
