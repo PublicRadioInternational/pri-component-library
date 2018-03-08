@@ -51,7 +51,7 @@ export default class Button extends Component {
       );
     }
 
-    // No URL was specified, this button is not a link. Return a button with
+    // No URL was specified, this button is not a link. Return a button instead.
     return (
       <button
         type="button"
