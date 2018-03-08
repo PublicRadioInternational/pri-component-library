@@ -6,42 +6,34 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+
 import Button from './Button/Button.component';
-import Dropdown from './Dropdown/Dropdown.component';
+import { Dropdown, DropdownItem } from './Dropdown/Dropdown.component';
 
-storiesOf('Atoms/Buttons', module).add('Default', () => (
-  <Button
-    onClick={action('button-clicked')}
-    title="Listen"
-    url="#"
-    dropdown={false}
-    className="btn"
-  />
-));
+/**
+ * Add storybook definition for buttons.
+ */
+storiesOf('Atoms/Buttons', module)
+  .add('Default', () => (
+    <Button title="Listen" onClick={action('button-clicked')} />
+  ))
+  .add('Orange', () => (
+    <Button
+      title="Donate"
+      onClick={action('button-clicked')}
+      className="btnOrange"
+    />
+  ));
 
-storiesOf('Atoms/Buttons', module).add('Orange', () => (
-  <Button
-    onClick={action('button-clicked')}
-    title="Donate"
-    url="#"
-    className="btnOrange"
-  />
-));
-
+/**
+ * Add storybook definition for Dropdowns.
+ */
 storiesOf('Atoms/Dropdown', module).add('Default', () => (
-  <Dropdown
-    btnTitle="Listen"
-    items={[
-      {
-        id: 1,
-        url: 'http://google.com',
-        title: 'Google.com'
-      },
-      {
-        id: 2,
-        url: '/',
-        title: 'Local url'
-      }
-    ]}
-  />
+  <Dropdown title="Listen" onClick={action('drowndown-button-clicked')}>
+    <DropdownItem title="Google" url="https://google.com" />
+    <DropdownItem
+      title="Custom Action"
+      onClick={action('dropdown-button-item-clicked')}
+    />
+  </Dropdown>
 ));

@@ -8,30 +8,27 @@ import PropTypes from 'prop-types';
 import styles from './Button.css';
 import globalStyles from '../../00_global/global.css';
 
-function ifHidden(hidden, title) {
-  if (hidden) {
-    return <span className={globalStyles.hidden}>{title}</span>;
-  }
-  return { title };
-}
-
-class Button extends Component {
+/**
+ * Component that renders a link, or a button with a click handler.
+ */
+export default class Button extends Component {
   static propTypes = {
     isHidden: PropTypes.bool,
     title: PropTypes.string.isRequired,
     url: PropTypes.string,
-    className: PropTypes.string.isRequired,
+    className: PropTypes.string,
     ariaHaspopup: PropTypes.bool,
     ariaExpanded: PropTypes.bool,
-    handleClick: PropTypes.func
+    onClick: PropTypes.func
   };
 
   static defaultProps = {
     isHidden: false,
     ariaHaspopup: false,
     ariaExpanded: false,
-    url: false,
-    handleClick: () => {},
+    url: null,
+    className: 'btn',
+    onClick: () => {}
   };
 
   render() {
@@ -42,31 +39,29 @@ class Button extends Component {
       className,
       ariaHaspopup,
       ariaExpanded,
-      handleClick
+      onClick
     } = this.props;
 
     // If a URL is provided, this button is simply a link.
     if (url) {
       return (
-        <a href={url} className={styles[className]} onClick={() => handleClick()}>
+        <a href={url} className={styles[className]} onClick={() => onClick()}>
           <span className="text-label">{title}</span>
         </a>
       );
     }
 
-    // No URL was specified, this button is not a link. Return a button with 
+    // No URL was specified, this button is not a link. Return a button with
     return (
       <button
         type="button"
         className={styles[className]}
         aria-haspopup={ariaHaspopup}
         aria-expanded={ariaExpanded}
-        onClick={() => handleToggle()}
+        onClick={() => onClick()}
       >
-        {ifHidden(isHidden, title)}
+        <span className={isHidden ? globalStyles.hidden : null}>{title}</span>
       </button>
     );
   }
 }
-
-export default Button;

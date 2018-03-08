@@ -3,59 +3,94 @@
  * Creates dropdown component.
  */
 
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './Dropdown.css';
 import Button from '../Button/Button.component';
 
-// const Dropdown = ({ items, btnTitle, isToggled }) => (
-class Dropdown extends React.Component {
+/**
+ * Component that renders a Dropdown menu button.
+ */
+export class Dropdown extends Component {
+  static propTypes = {
+    title: PropTypes.string.isRequired,
+    children: PropTypes.arrayOf(PropTypes.object),
+    onClick: PropTypes.func
+  };
+
+  static defaultProps = {
+    children: [],
+    onClick: () => {}
+  };
+
+  /**
+   * Constructs this class and sets up default state.
+   *
+   * @param {object} props - Property values for this component.
+   */
   constructor(props) {
     super(props);
-    this.handleToggleChange = this.handleToggleChange.bind(this);
-    this.state = { toggled: false };
+    this.state = { isOpen: false };
   }
-  handleToggleChange() {
+
+  /**
+   * Toggles open state.
+   */
+  handleToggle() {
     this.setState(prevState => ({
-      toggled: !prevState.toggled
+      isOpen: !prevState.isOpen
     }));
   }
+
   render() {
+    const { title, onClick, children } = this.props;
+    const { isOpen } = this.state;
+
     return (
       <div className={styles.btnGroup}>
         <Button
-          hidden={false}
-          title={this.props.btnTitle}
-          className="btnGrpOrange"
+          title={title}
           ariaHaspopup
-          ariaExpanded={false}
+          className="btnGrpOrange"
+          onClick={() => onClick()}
         />
         <Button
           isHidden
-          title="Toggle Dropdown"
+          title={`Toggle ${title} Dropdown`}
           className="btnDropdownOrange"
           ariaHaspopup
           ariaExpanded={false}
-          clickHandler={this.handleToggleChange}
+          onClick={() => this.handleToggle()}
         />
-        <div
-          className={styles.dropdown}
-          data-toggled={this.state.toggled ? 'toggled' : null}
-        >
-          {this.props.items.map(item => (
-            <a className={styles.dropdownItem} href={item.url} key={item.id}>
-              {item.title}
-            </a>
-          ))}
+        <div className={styles.dropdown} data-open={isOpen}>
+          {children}
         </div>
       </div>
     );
   }
 }
 
-Dropdown.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.object).isRequired,
-  btnTitle: PropTypes.string.isRequired
-};
+/**
+ * Component that renders a dropdown menu item.
+ */
+export class DropdownItem extends Component {
+  static propTypes = {
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string,
+    onClick: PropTypes.func
+  };
 
-export default Dropdown;
+  static defaultProps = {
+    url: null,
+    onClick: () => {}
+  };
+
+  render() {
+    const { title, url, onClick } = this.props;
+    return (
+      <a className={styles.dropdownItem} href={url} onClick={() => onClick()}>
+        {title}
+      </a>
+    );
+  }
+}
