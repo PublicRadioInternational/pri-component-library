@@ -8,13 +8,15 @@ import renderer from 'react-test-renderer';
 import { Dropdown, DropdownItem } from './Dropdown.component';
 
 describe('<Dropdown />', () => {
+  const dropdown = () => (
+    <Dropdown title="Listen" onClick={() => {}}>
+      <DropdownItem title="Google" url="https://google.com" />
+      <DropdownItem title="Custom Action" onClick={() => {}} />
+    </Dropdown>
+  );
+
   it('Matches the snapshot', () => {
-    const component = renderer.create(
-      <Dropdown title="Listen" onClick={() => {}}>
-        <DropdownItem title="Google" url="https://google.com" />
-        <DropdownItem title="Custom Action" onClick={() => {}} />
-      </Dropdown>
-    );
+    const component = renderer.create(dropdown());
     expect(component.toJSON()).toMatchSnapshot();
   });
 });

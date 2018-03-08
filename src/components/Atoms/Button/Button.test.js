@@ -32,12 +32,12 @@ describe('<Button />', () => {
 
   it('Handles Link click events', () => {
     linkWrapper.find('a').simulate('click');
-    expect(onClick).toBeCalled();
+    expect(onClick).toHaveBeenCalledTimes(1);
   });
 
   it('Handles Button click events', () => {
     buttonWrapper.find('button').simulate('click');
-    expect(onClick).toBeCalled();
+    expect(onClick).toHaveBeenCalledTimes(2);
   });
 
   it('Matches the Link snapshot', () => {
