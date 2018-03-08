@@ -2,12 +2,12 @@
 
 exports[`<Dropdown /> Matches the snapshot 1`] = `
 <div
-  className="btnGroup"
+  className="dropdownGrp"
 >
   <button
     aria-expanded={false}
     aria-haspopup={true}
-    className="btnGrpOrange"
+    className="btnGrpWhite"
     onClick={[Function]}
     type="button"
   >
@@ -20,7 +20,7 @@ exports[`<Dropdown /> Matches the snapshot 1`] = `
   <button
     aria-expanded={false}
     aria-haspopup={true}
-    className="btnDropdownOrange"
+    className="btnDropdownWhite"
     onClick={[Function]}
     type="button"
   >
