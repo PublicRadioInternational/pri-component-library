@@ -11,34 +11,42 @@ import Button from './Button.component';
 describe('<Button />', () => {
   const title = 'test';
   const url = 'https://google.com';
-  const hidden = false;
+  const onClick = jest.fn();
 
-  const wrapper = shallow(
-    <Button title={title} url={url} hidden={hidden} className="btnOrange" />
+  const link = () => (
+    <Button
+      title={title}
+      url={url}
+      isHidden={false}
+      onClick={onClick}
+      className="btnOrange"
+    />
   );
 
-  const anchor = wrapper.find('a');
-  it('Creates a valid anchor tag', () => {
-    expect(anchor).not.toBeNull();
+  const button = () => (
+    <Button title={title} isHidden={false} onClick={onClick} />
+  );
+
+  const linkWrapper = shallow(link());
+  const buttonWrapper = shallow(button());
+
+  it('Handles Link click events', () => {
+    linkWrapper.find('a').simulate('click');
+    expect(onClick).toBeCalled();
   });
 
-  it('Applies classes correctly', () => {
-    expect(anchor.hasClass('btnOrange')).toBe(true);
+  it('Handles Button click events', () => {
+    buttonWrapper.find('button').simulate('click');
+    expect(onClick).toBeCalled();
   });
 
-  it('Sets the correct button URL', () => {
-    expect(anchor.prop('href')).toBe(url);
+  it('Matches the Link snapshot', () => {
+    const component = renderer.create(link()).toJSON();
+    expect(component).toMatchSnapshot();
   });
 
-  const span = wrapper.find('span');
-  it('Renders the correct title', () => {
-    expect(span.text()).toBe(title);
-  });
-
-  it('Matches the snapshot', () => {
-    const component = renderer.create(
-      <Button title={title} url={url} hidden={hidden} className="btnOrange" />
-    );
-    expect(component.toJSON()).toMatchSnapshot();
+  it('Matches the Button snapshot', () => {
+    const component = renderer.create(button()).toJSON();
+    expect(component).toMatchSnapshot();
   });
 });
