@@ -27,7 +27,11 @@ storiesOf('Atoms/Buttons', module)
  */
 storiesOf('Atoms/Dropdown', module)
   .add('Default', () => (
-    <Dropdown title="Listen" onClick={action('drowndown-button-clicked')}>
+    <Dropdown
+      url="https://google.com"
+      title="Listen"
+      onClick={action('drowndown-button-clicked')}
+    >
       <DropdownItem title="Google" url="https://google.com" />
       <DropdownItem
         title="Custom Action"

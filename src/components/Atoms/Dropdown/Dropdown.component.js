@@ -16,12 +16,14 @@ export default class Dropdown extends Component {
     title: PropTypes.string.isRequired,
     children: PropTypes.arrayOf(PropTypes.object),
     onClick: PropTypes.func,
+    url: PropTypes.string,
     color: PropTypes.oneOf(['Orange', 'White'])
   };
 
   static defaultProps = {
     children: [],
     color: 'White',
+    url: null,
     onClick: () => {}
   };
 
@@ -45,7 +47,7 @@ export default class Dropdown extends Component {
   }
 
   render() {
-    const { title, onClick, children, color } = this.props;
+    const { title, onClick, children, color, url } = this.props;
     const { isOpen } = this.state;
 
     return (
@@ -53,6 +55,7 @@ export default class Dropdown extends Component {
         <Button
           group
           ariaHaspopup
+          url={url}
           title={title}
           color={color}
           onClick={() => onClick()}

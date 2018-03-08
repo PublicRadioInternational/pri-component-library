@@ -4,19 +4,17 @@ exports[`<Dropdown /> Matches the snapshot 1`] = `
 <div
   className="dropdownGrp"
 >
-  <button
-    aria-expanded={false}
-    aria-haspopup={true}
+  <a
     className="btnGrpWhite"
+    href="https://google.com"
     onClick={[Function]}
-    type="button"
   >
     <span
-      className={null}
+      className="text-label"
     >
       Listen
     </span>
-  </button>
+  </a>
   <button
     aria-expanded={false}
     aria-haspopup={true}

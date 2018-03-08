@@ -10,7 +10,7 @@ import DropdownItem from '../DropdownItem/DropdownItem.component';
 
 describe('<Dropdown />', () => {
   const dropdown = () => (
-    <Dropdown title="Listen" onClick={() => {}}>
+    <Dropdown url="https://google.com" title="Listen" onClick={() => {}}>
       <DropdownItem title="Google" url="https://google.com" />
       <DropdownItem title="Custom Action" onClick={() => {}} />
     </Dropdown>
