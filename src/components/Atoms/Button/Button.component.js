@@ -16,6 +16,24 @@ function ifHidden(hidden, title) {
 }
 
 class Button extends Component {
+  static propTypes = {
+    button: PropTypes.bool,
+    hidden: PropTypes.bool.isRequired,
+    toggled: PropTypes.func,
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+    className: PropTypes.string.isRequired,
+    ariaHaspopup: PropTypes.bool,
+    ariaExpanded: PropTypes.bool
+  };
+
+  static defaultProps = {
+    button: false,
+    ariaHaspopup: false,
+    ariaExpanded: false,
+    toggled: () => {}
+  };
+
   constructor(props) {
     super(props);
     // This binding is necessary to make `this` work in the callback
@@ -57,23 +75,5 @@ class Button extends Component {
     );
   }
 }
-
-Button.propTypes = {
-  button: PropTypes.bool,
-  hidden: PropTypes.bool.isRequired,
-  toggled: PropTypes.func,
-  title: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
-  ariaHaspopup: PropTypes.bool,
-  ariaExpanded: PropTypes.bool
-};
-
-Button.defaultProps = {
-  button: false,
-  ariaHaspopup: false,
-  ariaExpanded: false,
-  toggled: () => {}
-};
 
 export default Button;
