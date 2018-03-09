@@ -31,21 +31,6 @@ exports[`<Dropdown /> Matches the snapshot 1`] = `
   <div
     className="dropdown"
     data-open={false}
-  >
-    <a
-      className="dropdownItem"
-      href="https://google.com"
-      onClick={[Function]}
-    >
-      Google
-    </a>
-    <a
-      className="dropdownItem"
-      href={null}
-      onClick={[Function]}
-    >
-      Custom Action
-    </a>
-  </div>
+  />
 </div>
 `;
