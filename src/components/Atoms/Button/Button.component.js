@@ -1,6 +1,6 @@
 /**
  * @file Button.component.js
- * Creates button component.
+ * Exports a classic button component.
  */
 
 import React, { Component } from 'react';

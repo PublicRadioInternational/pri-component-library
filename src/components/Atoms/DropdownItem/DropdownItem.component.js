@@ -1,5 +1,5 @@
 /**
- * @file Dropdown.component.jsItem
+ * @file DropdownItem.test.js
  * Exports a dropdown item component.
  */
 
