@@ -53,7 +53,7 @@ export default class Dropdown extends Component {
     return (
       <div className={styles.dropdownGrp}>
         <Button
-          group
+          isGroup
           ariaHaspopup
           url={url}
           title={title}
@@ -62,7 +62,7 @@ export default class Dropdown extends Component {
         />
         <Button
           isHidden
-          dropdown
+          isDropdown
           ariaHaspopup
           color={color}
           ariaExpanded={false}

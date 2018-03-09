@@ -14,43 +14,43 @@ import globalStyles from '../../00_global/global.css';
 export default class Button extends Component {
   static propTypes = {
     isHidden: PropTypes.bool,
+    isGroup: PropTypes.bool,
+    isDropdown: PropTypes.bool,
     title: PropTypes.string.isRequired,
     url: PropTypes.string,
     ariaHaspopup: PropTypes.bool,
     ariaExpanded: PropTypes.bool,
     onClick: PropTypes.func,
-    group: PropTypes.bool,
-    dropdown: PropTypes.bool,
     color: PropTypes.oneOf(['Orange', 'White'])
   };
 
   static defaultProps = {
     isHidden: false,
+    isGroup: false,
+    isDropdown: false,
     ariaHaspopup: false,
     ariaExpanded: false,
     url: null,
     color: 'White',
-    group: false,
-    dropdown: false,
     onClick: () => {}
   };
 
   render() {
     const {
       isHidden,
+      isGroup,
+      isDropdown,
       title,
       url,
       color,
       ariaHaspopup,
       ariaExpanded,
-      onClick,
-      group,
-      dropdown
+      onClick
     } = this.props;
 
     // Generate a class name based on the group, dropdown, and color values.
-    const className = `btn${group ? 'Grp' : ''}${
-      dropdown ? 'Dropdown' : ''
+    const className = `btn${isGroup ? 'Grp' : ''}${
+      isDropdown ? 'Dropdown' : ''
     }${color}`;
 
     // If a URL is provided, this button is simply a link.
