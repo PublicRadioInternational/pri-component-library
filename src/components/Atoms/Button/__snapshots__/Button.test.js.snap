@@ -2,25 +2,19 @@
 
 exports[`<Button /> Matches the Button snapshot 1`] = `
 <button
-  aria-expanded={false}
-  aria-haspopup={false}
-  className="btnWhite"
-  onClick={[Function]}
+  className="btnWhite "
+  onClick={[MockFunction]}
   type="button"
 >
-  <span
-    className={null}
-  >
-    test
-  </span>
+  test
 </button>
 `;
 
 exports[`<Button /> Matches the Link snapshot 1`] = `
 <a
-  className="btnWhite"
+  className="btnWhite "
   href="https://google.com"
-  onClick={[Function]}
+  onClick={[MockFunction]}
 >
   <span
     className="text-label"

@@ -10,21 +10,24 @@ import { shallow } from 'enzyme';
 import DropdownItem from './DropdownItem.component';
 
 describe('<DropdownItem />', () => {
-  const onClick = jest.fn();
-
-  const item = () => (
-    <DropdownItem title="Google" url="https://google.com" onClick={onClick} />
-  );
-
-  const itemWrapper = shallow(item());
-
   it('Handles Link click events', () => {
+    const onClick = jest.fn();
+    const itemWrapper = shallow(
+      <DropdownItem url="https://google.com" onClick={onClick}>
+        Google
+      </DropdownItem>
+    );
     itemWrapper.find('a').simulate('click');
     expect(onClick).toHaveBeenCalledTimes(1);
   });
 
   it('Matches the Link snapshot', () => {
-    const component = renderer.create(item());
+    const onClick = jest.fn();
+    const component = renderer.create(
+      <DropdownItem url="https://google.com" onClick={onClick}>
+        Google
+      </DropdownItem>
+    );
     expect(component.toJSON()).toMatchSnapshot();
   });
 });

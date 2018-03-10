@@ -4,7 +4,7 @@ exports[`<DropdownItem /> Matches the Link snapshot 1`] = `
 <a
   className="dropdownItem"
   href="https://google.com"
-  onClick={[Function]}
+  onClick={[MockFunction]}
 >
   Google
 </a>

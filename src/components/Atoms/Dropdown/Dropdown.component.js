@@ -5,6 +5,7 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Downshift from 'downshift';
 import styles from './Dropdown.css';
 import Button from '../Button/Button.component';
 
@@ -14,7 +15,10 @@ import Button from '../Button/Button.component';
 export default class Dropdown extends Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
-    children: PropTypes.arrayOf(PropTypes.object),
+    children: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.node),
+      PropTypes.node
+    ]),
     onClick: PropTypes.func,
     url: PropTypes.string,
     color: PropTypes.oneOf(['Orange', 'White'])
@@ -27,52 +31,30 @@ export default class Dropdown extends Component {
     onClick: () => {}
   };
 
-  /**
-   * Constructs this class and sets up default state.
-   *
-   * @param {object} props - Property values for this component.
-   */
-  constructor(props) {
-    super(props);
-    this.state = { isOpen: false };
-  }
-
-  /**
-   * Toggles open state.
-   */
-  handleToggle() {
-    this.setState(prevState => ({
-      isOpen: !prevState.isOpen
-    }));
-  }
-
   render() {
     const { title, onClick, children, color, url } = this.props;
-    const { isOpen } = this.state;
 
     return (
-      <div className={styles.dropdownGrp}>
-        <Button
-          isGroup
-          ariaHaspopup
-          url={url}
-          title={title}
-          color={color}
-          onClick={() => onClick()}
-        />
-        <Button
-          isHidden
-          isDropdown
-          ariaHaspopup
-          color={color}
-          ariaExpanded={false}
-          title={`Toggle ${title} Dropdown`}
-          onClick={() => this.handleToggle()}
-        />
-        <div className={styles.dropdown} data-open={isOpen}>
-          {children}
-        </div>
-      </div>
+      <Downshift>
+        {({ isOpen, getButtonProps }) => (
+          <div className={styles.dropdownGrp}>
+            <Button
+              className={styles.btnGrp}
+              url={url}
+              color={color}
+              onClick={onClick}
+            >
+              {title}
+            </Button>
+            <Button
+              {...getButtonProps()}
+              className={styles[`btnDropdown${color}`]}
+              color={color}
+            />
+            {isOpen ? <div className={styles.dropdown}>{children}</div> : null}
+          </div>
+        )}
+      </Downshift>
     );
   }
 }

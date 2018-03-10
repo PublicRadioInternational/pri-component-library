@@ -16,10 +16,12 @@ import DropdownItem from './DropdownItem/DropdownItem.component';
  */
 storiesOf('Atoms/Buttons', module)
   .add('Default', () => (
-    <Button title="Listen" onClick={action('button-clicked')} />
+    <Button onClick={action('button-clicked')}>Listen</Button>
   ))
   .add('Orange', () => (
-    <Button title="Donate" onClick={action('button-clicked')} color="Orange" />
+    <Button onClick={action('button-clicked')} color="Orange">
+      Donate
+    </Button>
   ));
 
 /**
@@ -32,11 +34,10 @@ storiesOf('Atoms/Dropdown', module)
       title="Listen"
       onClick={action('drowndown-button-clicked')}
     >
-      <DropdownItem title="Google" url="https://google.com" />
-      <DropdownItem
-        title="Custom Action"
-        onClick={action('dropdown-button-item-clicked')}
-      />
+      <DropdownItem url="https://google.com">Google</DropdownItem>
+      <DropdownItem onClick={action('dropdown-button-item-clicked')}>
+        Custom Action
+      </DropdownItem>
     </Dropdown>
   ))
   .add('Orange', () => (
@@ -45,10 +46,9 @@ storiesOf('Atoms/Dropdown', module)
       color="Orange"
       onClick={action('drowndown-button-clicked')}
     >
-      <DropdownItem title="Google" url="https://google.com" />
-      <DropdownItem
-        title="Custom Action"
-        onClick={action('dropdown-button-item-clicked')}
-      />
+      <DropdownItem url="https://google.com">Google</DropdownItem>
+      <DropdownItem onClick={action('dropdown-button-item-clicked')}>
+        Custom Action
+      </DropdownItem>
     </Dropdown>
   ));

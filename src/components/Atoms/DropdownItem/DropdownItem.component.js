@@ -12,7 +12,10 @@ import styles from './DropdownItem.css';
  */
 export default class DropdownItem extends Component {
   static propTypes = {
-    title: PropTypes.string.isRequired,
+    children: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.node),
+      PropTypes.node
+    ]).isRequired,
     url: PropTypes.string,
     onClick: PropTypes.func
   };
@@ -23,10 +26,10 @@ export default class DropdownItem extends Component {
   };
 
   render() {
-    const { title, url, onClick } = this.props;
+    const { children, url, onClick } = this.props;
     return (
-      <a className={styles.dropdownItem} href={url} onClick={() => onClick()}>
-        {title}
+      <a className={styles.dropdownItem} href={url} onClick={onClick}>
+        {children}
       </a>
     );
   }
