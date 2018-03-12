@@ -1,3 +1,7 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value blue from colors;
+
 .dropdownItem {
   clear: both;
   color: blue;
