@@ -14,10 +14,7 @@ export default class Button extends Component {
   static propTypes = {
     url: PropTypes.string,
     onClick: PropTypes.func,
-    children: PropTypes.oneOfType([
-      PropTypes.arrayOf(PropTypes.node),
-      PropTypes.node
-    ]),
+    children: PropTypes.node,
     color: PropTypes.string,
     className: PropTypes.string
   };
