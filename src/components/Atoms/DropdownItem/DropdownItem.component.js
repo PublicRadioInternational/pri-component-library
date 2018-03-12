@@ -12,10 +12,7 @@ import styles from './DropdownItem.css';
  */
 export default class DropdownItem extends Component {
   static propTypes = {
-    children: PropTypes.oneOfType([
-      PropTypes.arrayOf(PropTypes.node),
-      PropTypes.node
-    ]).isRequired,
+    children: PropTypes.node.isRequired,
     url: PropTypes.string,
     onClick: PropTypes.func
   };

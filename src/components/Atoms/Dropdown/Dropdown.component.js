@@ -15,10 +15,7 @@ import Button from '../Button/Button.component';
 export default class Dropdown extends Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
-    children: PropTypes.oneOfType([
-      PropTypes.arrayOf(PropTypes.node),
-      PropTypes.node
-    ]),
+    children: PropTypes.node,
     onClick: PropTypes.func,
     url: PropTypes.string,
     color: PropTypes.oneOf(['Orange', 'White'])

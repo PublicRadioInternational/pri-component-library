@@ -11,11 +11,12 @@ import Button from './Button.component';
 describe('<Button />', () => {
   const title = 'test';
   const url = 'https://google.com';
+  const className = 'White';
 
   it('Handles Link click events', () => {
     const onClick = jest.fn();
     const linkWrapper = shallow(
-      <Button title={title} url={url} onClick={onClick}>
+      <Button title={title} url={url} onClick={onClick} className={className}>
         test
       </Button>
     );
@@ -25,7 +26,11 @@ describe('<Button />', () => {
 
   it('Handles Button click events', () => {
     const onClick = jest.fn();
-    const buttonWrapper = shallow(<Button onClick={onClick}>test</Button>);
+    const buttonWrapper = shallow(
+      <Button onClick={onClick} className={className}>
+        test
+      </Button>
+    );
     buttonWrapper.find('button').simulate('click');
     expect(onClick).toHaveBeenCalledTimes(1);
   });
@@ -34,7 +39,7 @@ describe('<Button />', () => {
     const onClick = jest.fn();
     const component = renderer
       .create(
-        <Button title={title} url={url} onClick={onClick}>
+        <Button title={title} url={url} onClick={onClick} className={className}>
           test
         </Button>
       )
@@ -45,7 +50,11 @@ describe('<Button />', () => {
   it('Matches the Button snapshot', () => {
     const onClick = jest.fn();
     const component = renderer
-      .create(<Button onClick={onClick}>test</Button>)
+      .create(
+        <Button onClick={onClick} className={className}>
+          test
+        </Button>
+      )
       .toJSON();
     expect(component).toMatchSnapshot();
   });
