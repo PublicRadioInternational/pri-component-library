@@ -2,6 +2,9 @@
 
 exports[`<Button /> Matches the Button snapshot 1`] = `
 <button
+  aria-expanded={false}
+  aria-haspopup={false}
+  aria-label={null}
   className="btnWhite White"
   onClick={[MockFunction]}
   type="button"

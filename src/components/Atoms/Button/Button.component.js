@@ -34,6 +34,9 @@ function Button(props) {
       type="button"
       className={`${styles[buttonClass]} ${className}`}
       onClick={onClick}
+      aria-expanded={props['aria-expanded']}
+      aria-label={props['aria-label']}
+      aria-haspopup={props['aria-haspopup']}
     >
       {children}
     </button>
@@ -45,14 +48,20 @@ Button.propTypes = {
   onClick: PropTypes.func,
   children: PropTypes.node,
   color: PropTypes.string,
-  className: PropTypes.string.isRequired
+  className: PropTypes.string.isRequired,
+  'aria-expanded': PropTypes.bool,
+  'aria-label': PropTypes.string,
+  'aria-haspopup': PropTypes.bool
 };
 
 Button.defaultProps = {
   url: null,
   color: 'White',
   children: null,
-  onClick: () => {}
+  onClick: () => {},
+  'aria-expanded': false,
+  'aria-label': null,
+  'aria-haspopup': false
 };
 
 export default Button;

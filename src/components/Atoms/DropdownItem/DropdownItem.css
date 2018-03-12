@@ -1,16 +1,24 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value blue from colors;
+@value blue, orange, white from colors;
+
+/* import fonts... */
+@value fonts: "../../00_global/fonts.css";
+@value heading from fonts;
 
 .dropdownItem {
   clear: both;
   color: blue;
   display: block;
-  font-size: 0.875em;
-  font-weight: 400;
-  padding: 0.25rem 1.5rem;
-  width: 100%;
+  font: 400 0.875em heading;
+  padding: 0.4rem 1.5rem;
+  width: 70%;
   border: none;
   cursor: pointer;
-  text-decoration-line: underline;
+  text-decoration: none;
+}
+
+.dropdownItem:hover {
+  background-color: orange;
+  color: white;
 }

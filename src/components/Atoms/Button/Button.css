@@ -15,7 +15,7 @@
   font: 700 1rem copy;
   letter-spacing: 0.05rem;
   line-height: 1.5;
-  padding: 0.375rem 0.75rem;
+  padding: 0.375rem 0.85rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -25,6 +25,12 @@
 
 .btn:hover {
   background-color: white;
+}
+
+.btn:active,
+.btn[aria-expanded='true'] {
+  background-color: grayDark;
+  color: white;
 }
 
 .btnWhite {
@@ -38,6 +44,8 @@
   color: white;
 }
 
-.btnOrange:hover {
+.btnOrange:hover,
+.btnOrange:active,
+.btnOrange[aria-expanded='true'] {
   background-color: orangeDark;
 }

@@ -16,6 +16,9 @@ exports[`<Dropdown /> Matches the snapshot 1`] = `
     </span>
   </a>
   <button
+    aria-expanded={false}
+    aria-haspopup={true}
+    aria-label="open menu"
     className="btnWhite btnDropdownWhite"
     onClick={[Function]}
     type="button"
