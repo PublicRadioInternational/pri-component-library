@@ -1,13 +1,153 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Header /> Matches the Header snapshot 1`] = `
-<svg
-  className={null}
-  fill="currentcolor"
-  viewBox={undefined}
+<header
+  className="siteHeader"
 >
-  <use
-    xlinkHref="#undefined"
-  />
-</svg>
+  <a
+    className="logo"
+    href="/"
+  >
+    <svg
+      className={null}
+      fill="currentcolor"
+      viewBox={undefined}
+    >
+      <use
+        xlinkHref="#undefined"
+      />
+    </svg>
+  </a>
+  <div
+    className="buttons"
+  >
+    <div
+      className="dropdownGrp button"
+    >
+      <a
+        className="btnWhite btnGrp"
+        href="https://www.pri.org/listen"
+        onClick={[Function]}
+      >
+        <svg
+          className="inlineSvg"
+          fill="currentcolor"
+          viewBox={undefined}
+        >
+          <use
+            xlinkHref="#undefined"
+          />
+        </svg>
+        <span
+          className="text-label"
+        >
+          Listen
+        </span>
+      </a>
+      <button
+        aria-expanded={false}
+        aria-haspopup={true}
+        aria-label="open menu"
+        className="btnWhite btnDropdownWhite"
+        onClick={[Function]}
+        type="button"
+      />
+    </div>
+    <div
+      className="dropdownGrp button"
+    >
+      <a
+        className="btnWhite btnGrp"
+        href="https://www.pri.org/newsletters"
+        onClick={[Function]}
+      >
+        <svg
+          className="inlineSvg"
+          fill="currentcolor"
+          viewBox={undefined}
+        >
+          <use
+            xlinkHref="#undefined"
+          />
+        </svg>
+        <span
+          className="text-label"
+        >
+          Newsletters
+        </span>
+      </a>
+      <button
+        aria-expanded={false}
+        aria-haspopup={true}
+        aria-label="open menu"
+        className="btnWhite btnDropdownWhite"
+        onClick={[Function]}
+        type="button"
+      />
+    </div>
+    <div
+      className="dropdownGrp button"
+    >
+      <a
+        className="btnWhite btnGrp"
+        href="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#"
+        onClick={[Function]}
+      >
+        <svg
+          className="inlineSvg"
+          fill="currentcolor"
+          viewBox={undefined}
+        >
+          <use
+            xlinkHref="#undefined"
+          />
+        </svg>
+        <span
+          className="text-label"
+        >
+          Search
+        </span>
+      </a>
+      <button
+        aria-expanded={false}
+        aria-haspopup={true}
+        aria-label="open menu"
+        className="btnWhite btnDropdownWhite"
+        onClick={[Function]}
+        type="button"
+      />
+    </div>
+    <div
+      className="dropdownGrp button"
+    >
+      <button
+        aria-expanded={false}
+        aria-haspopup={false}
+        aria-label={null}
+        className="btnOrange btnGrp"
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          className="inlineSvg"
+          fill="currentcolor"
+          viewBox={undefined}
+        >
+          <use
+            xlinkHref="#undefined"
+          />
+        </svg>
+        Donate
+      </button>
+      <button
+        aria-expanded={false}
+        aria-haspopup={true}
+        aria-label="open menu"
+        className="btnOrange btnDropdownOrange"
+        onClick={[Function]}
+        type="button"
+      />
+    </div>
+  </div>
+</header>
 `;

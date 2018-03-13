@@ -19,11 +19,11 @@
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
-  left: 0;
   margin: 0.125rem 0 0;
-  min-width: 10rem;
+  min-width: 13rem;
   padding: 0.5rem 0;
   position: absolute;
+  right: 0;
   top: 100%;
   z-index: 1;
 }

@@ -26,7 +26,7 @@ const Icon = props => {
 
 Icon.propTypes = {
   // Worth automatically creating these from the files in ./svg sometime?
-  svg: PropTypes.oneOf(['heart', 'envelope', 'search', 'volume', 'pri'])
+  svg: PropTypes.oneOf(['heart', 'envelope', 'search', 'volume', 'pri', 'play'])
     .isRequired,
   className: PropTypes.string,
   inline: PropTypes.bool
