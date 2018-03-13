@@ -59,3 +59,6 @@ typings/
 
 # Builds.
 dist
+
+# Local environment
+.DS_Store
