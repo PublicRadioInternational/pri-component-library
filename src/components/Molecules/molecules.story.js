@@ -13,7 +13,7 @@ import DropdownItem from '../Atoms/DropdownItem/DropdownItem.component';
 /**
  * Add storybook definition for Dropdowns.
  */
-storiesOf('Atoms/Dropdown', module)
+storiesOf('Molecules/Dropdown', module)
   .add('Default', () => (
     <Dropdown
       url="https://google.com"

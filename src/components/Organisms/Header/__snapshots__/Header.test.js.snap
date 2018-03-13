@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> Matches the Header snapshot 1`] = `
+<svg
+  className={null}
+  fill="currentcolor"
+  viewBox={undefined}
+>
+  <use
+    xlinkHref="#undefined"
+  />
+</svg>
+`;
