@@ -7,7 +7,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Downshift from 'downshift';
 import styles from './Dropdown.css';
-import Button from '../Button/Button.component';
+import Button from '../../Atoms/Button/Button.component';
 
 /**
  * Component that renders a Dropdown menu button.
