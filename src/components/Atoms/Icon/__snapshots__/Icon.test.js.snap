@@ -2,7 +2,7 @@
 
 exports[`<Icon /> Matches the Icon snapshot 1`] = `
 <svg
-  className="inlineSvg"
+  className={null}
   fill="currentcolor"
   viewBox={undefined}
 >

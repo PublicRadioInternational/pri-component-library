@@ -9,10 +9,8 @@ import renderer from 'react-test-renderer';
 import Icon from './Icon.component';
 
 describe('<Icon />', () => {
-  const icon = 'heart';
-
   it('Matches the Icon snapshot', () => {
-    const component = renderer.create(<Icon svg={icon} />).toJSON();
+    const component = renderer.create(<Icon svg="heart" />).toJSON();
     expect(component).toMatchSnapshot();
   });
 });

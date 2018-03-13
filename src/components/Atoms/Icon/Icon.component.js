@@ -10,22 +10,30 @@ import styles from './Icon.css';
 /**
  * Component that renders a link, or a button with a click handler.
  */
-function Icon(props) {
-  const { svg } = props;
+const Icon = props => {
+  const { svg, className, inline } = props;
   const icon = require(`./svg/${svg}.svg`); // eslint-disable-line
   return (
     <svg
       viewBox={icon.default.viewBox}
-      className={styles.inlineSvg}
+      className={inline ? styles.inlineSvg : className}
       fill="currentcolor"
     >
       <use xlinkHref={`#${icon.default.id}`} />
     </svg>
   );
-}
+};
 
 Icon.propTypes = {
-  svg: PropTypes.string.isRequired
+  // Worth automatically creating these from the files in ./svg sometime?
+  svg: PropTypes.oneOf(['heart', 'envelope', 'search', 'volume']).isRequired,
+  className: PropTypes.string,
+  inline: PropTypes.bool
+};
+
+Icon.defaultProps = {
+  className: null,
+  inline: false
 };
 
 export default Icon;
