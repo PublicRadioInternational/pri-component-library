@@ -11,7 +11,7 @@ import Icon from '../Icon/Icon.component';
 /**
  * Component that renders a link, or a button with a click handler.
  */
-function Button(props) {
+const Button = props => {
   const { url, onClick, className, children, color, icon } = props;
   // Generate a class name based on the color.
   const buttonClass = `btn${color}`;
@@ -24,7 +24,7 @@ function Button(props) {
         className={`${styles[buttonClass]} ${className}`}
         onClick={onClick}
       >
-        {icon && <Icon svg={icon} />}
+        {icon && <Icon svg={icon} inline />}
         <span className="text-label">{children}</span>
       </a>
     );
@@ -40,11 +40,11 @@ function Button(props) {
       aria-label={props['aria-label']}
       aria-haspopup={props['aria-haspopup']}
     >
-      {icon ? <Icon svg={icon} /> : null}
+      {icon ? <Icon svg={icon} inline /> : null}
       {children}
     </button>
   );
-}
+};
 
 Button.propTypes = {
   url: PropTypes.string,
