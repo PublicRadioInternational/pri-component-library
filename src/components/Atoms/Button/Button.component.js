@@ -24,7 +24,7 @@ function Button(props) {
         className={`${styles[buttonClass]} ${className}`}
         onClick={onClick}
       >
-        {icon ? <Icon svg={icon} /> : null}
+        {icon && <Icon svg={icon} />}
         <span className="text-label">{children}</span>
       </a>
     );
