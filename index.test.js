@@ -4,8 +4,10 @@
  */
 
 import path from 'path';
-import glob from 'glob';
 import * as Components from './index';
+
+const { promisify } = require('util');
+const glob = promisify(require('glob'));
 
 describe('index', () => {
   it('Exports valid component objects', () => {
