@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DropdownItem /> Matches the Link snapshot 1`] = `
+<a
+  className="dropdownItem"
+  href="https://google.com"
+  onClick={[MockFunction]}
+>
+  Google
+</a>
+`;

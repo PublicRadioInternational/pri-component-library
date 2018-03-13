@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> Matches the Button snapshot 1`] = `
+<button
+  aria-expanded={false}
+  aria-haspopup={false}
+  aria-label={null}
+  className="btnWhite White"
+  onClick={[MockFunction]}
+  type="button"
+>
+  test
+</button>
+`;
+
+exports[`<Button /> Matches the Link snapshot 1`] = `
+<a
+  className="btnWhite White"
+  href="https://google.com"
+  onClick={[MockFunction]}
+>
+  <span
+    className="text-label"
+  >
+    test
+  </span>
+</a>
+`;

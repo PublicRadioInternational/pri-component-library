@@ -1,0 +1,51 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value white, whiteDark, grayLighter, gray, grayDark, orange, orangeDark from colors;
+/* import fonts... */
+@value fonts: "../../00_global/fonts.css";
+@value copy from fonts;
+
+.btn {
+  background-color: whiteDark;
+  border: 1px solid grayLighter;
+  border-radius: 0.25rem;
+  color: grayDark;
+  cursor: pointer;
+  display: inline-block;
+  font: 700 1rem copy;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+  padding: 0.375rem 0.85rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+  background-color: white;
+}
+
+.btn:active,
+.btn[aria-expanded='true'] {
+  background-color: grayDark;
+  color: white;
+}
+
+.btnWhite {
+  composes: btn;
+}
+
+.btnOrange {
+  composes: btn;
+  background-color: orange;
+  border: none;
+  color: white;
+}
+
+.btnOrange:hover,
+.btnOrange:active,
+.btnOrange[aria-expanded='true'] {
+  background-color: orangeDark;
+}
