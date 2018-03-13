@@ -50,7 +50,7 @@ Button.propTypes = {
   url: PropTypes.string,
   onClick: PropTypes.func,
   children: PropTypes.node,
-  color: PropTypes.string,
+  color: PropTypes.oneOf(['Orange', 'White']),
   className: PropTypes.string,
   'aria-expanded': PropTypes.bool,
   'aria-label': PropTypes.string,
