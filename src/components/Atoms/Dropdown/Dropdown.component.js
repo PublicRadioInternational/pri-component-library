@@ -18,18 +18,20 @@ export default class Dropdown extends Component {
     children: PropTypes.node,
     onClick: PropTypes.func,
     url: PropTypes.string,
-    color: PropTypes.oneOf(['Orange', 'White'])
+    color: PropTypes.oneOf(['Orange', 'White']),
+    icon: PropTypes.string
   };
 
   static defaultProps = {
     children: [],
     color: 'White',
     url: null,
-    onClick: () => {}
+    onClick: () => {},
+    icon: null
   };
 
   render() {
-    const { title, onClick, children, color, url } = this.props;
+    const { title, onClick, children, color, url, icon } = this.props;
 
     return (
       <Downshift>
@@ -40,6 +42,7 @@ export default class Dropdown extends Component {
               url={url}
               color={color}
               onClick={onClick}
+              icon={icon}
             >
               {title}
             </Button>

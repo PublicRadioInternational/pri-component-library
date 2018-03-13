@@ -6,12 +6,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Button.css';
+import Icon from '../Icon/Icon.component';
 
 /**
  * Component that renders a link, or a button with a click handler.
  */
 function Button(props) {
-  const { url, onClick, className, children, color } = props;
+  const { url, onClick, className, children, color, icon } = props;
   // Generate a class name based on the color.
   const buttonClass = `btn${color}`;
 
@@ -23,6 +24,7 @@ function Button(props) {
         className={`${styles[buttonClass]} ${className}`}
         onClick={onClick}
       >
+        {icon ? <Icon svg={icon} /> : null}
         <span className="text-label">{children}</span>
       </a>
     );
@@ -38,6 +40,7 @@ function Button(props) {
       aria-label={props['aria-label']}
       aria-haspopup={props['aria-haspopup']}
     >
+      {icon ? <Icon svg={icon} /> : null}
       {children}
     </button>
   );
@@ -48,20 +51,23 @@ Button.propTypes = {
   onClick: PropTypes.func,
   children: PropTypes.node,
   color: PropTypes.string,
-  className: PropTypes.string.isRequired,
+  className: PropTypes.string,
   'aria-expanded': PropTypes.bool,
   'aria-label': PropTypes.string,
-  'aria-haspopup': PropTypes.bool
+  'aria-haspopup': PropTypes.bool,
+  icon: PropTypes.string
 };
 
 Button.defaultProps = {
   url: null,
   color: 'White',
+  className: null,
   children: null,
   onClick: () => {},
   'aria-expanded': false,
   'aria-label': null,
-  'aria-haspopup': false
+  'aria-haspopup': false,
+  icon: null
 };
 
 export default Button;
