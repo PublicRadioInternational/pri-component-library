@@ -2,8 +2,10 @@
 
 exports[`<Icon /> Matches the Icon snapshot 1`] = `
 <svg
+  aria-hidden={null}
   className={null}
   fill="currentcolor"
+  title={null}
   viewBox={undefined}
 >
   <use

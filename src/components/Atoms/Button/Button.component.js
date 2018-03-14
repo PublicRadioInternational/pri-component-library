@@ -27,7 +27,7 @@ const Button = props => {
         } ${className && className}`}
         onClick={onClick}
       >
-        {icon && <Icon svg={icon} inline />}
+        {icon && <Icon svg={icon} inline aria-hidden />}
         <span
           className={`${styles.textLabel} ${small && styles.textLabelMobile}`}
         >
@@ -45,11 +45,15 @@ const Button = props => {
         small ? styles[buttonMobileClass] : styles[buttonClass]
       } ${className && className}`}
       onClick={onClick}
-      aria-expanded={props['aria-expanded']}
+      aria-expanded={
+        props['aria-expanded'] === true ? props['aria-expanded'] : null
+      }
       aria-label={props['aria-label']}
-      aria-haspopup={props['aria-haspopup']}
+      aria-haspopup={
+        props['aria-haspopup'] === true ? props['aria-haspopup'] : null
+      }
     >
-      {icon ? <Icon svg={icon} inline /> : null}
+      {icon ? <Icon svg={icon} inline aria-hidden /> : null}
       {children}
     </button>
   );

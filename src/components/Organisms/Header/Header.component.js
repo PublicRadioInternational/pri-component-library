@@ -15,7 +15,7 @@ import DropdownItem from '../../Atoms/DropdownItem/DropdownItem.component';
 const Header = () => (
   <header className={styles.siteHeader}>
     <a href="/" className={styles.logo}>
-      <Icon svg="pri" />
+      <Icon svg="pri" title="PRI" />
     </a>
 
     <div className={styles.buttons}>
@@ -28,12 +28,6 @@ const Header = () => (
       >
         <DropdownItem url="https://www.pri.org/listen">
           Live Stream
-        </DropdownItem>
-        <DropdownItem url="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#">
-          Latest Episodes
-        </DropdownItem>
-        <DropdownItem url="https://www.pri.org/music-heard-on-air">
-          Music Heard on the Air
         </DropdownItem>
         <DropdownItem url="https://www.pri.org/podcasts-program">
           Podcasts by Program
