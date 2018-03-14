@@ -4,7 +4,10 @@
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
 @value copy from fonts;
+/* import breakpoints */
+@value header as bp-header from "../../00_global/breakpoints.css";
 
+/* Generic */
 .btn {
   background-color: whiteDark;
   border: 1px solid grayLighter;
@@ -33,12 +36,14 @@
   color: white;
 }
 
-.btnWhite {
+/* Colors */
+.btnWhite,
+.btnOrange,
+.btnMobile {
   composes: btn;
 }
 
 .btnOrange {
-  composes: btn;
   background-color: orange;
   border: none;
   color: white;
@@ -48,4 +53,45 @@
 .btnOrange:active,
 .btnOrange[aria-expanded='true'] {
   background-color: orangeDark;
+}
+
+/* Mobile version */
+.btnMobileWhite {
+  color: grayDark;
+}
+
+.btnMobileOrange {
+  color: orange;
+}
+
+@media bp-header {
+  .btnMobileOrange {
+    color: white;
+  }
+}
+
+.btnMobile.btnOrange:hover {
+  background: none;
+}
+
+@media bp-header {
+  .btnMobileWhite {
+    composes: btn;
+  }
+
+  .btnMobileOrange {
+    composes: btnOrange;
+  }
+}
+
+.btnHide,
+.textLabelMobile {
+  display: none;
+}
+
+@media bp-header {
+  .btnHide,
+  .textLabelMobile {
+    display: inline-block;
+  }
 }

@@ -2,7 +2,7 @@
 
 exports[`<Dropdown /> Matches the snapshot 1`] = `
 <div
-  className="dropdownGrp"
+  className="dropdownGrp null"
 >
   <a
     className="btnWhite btnGrp"
@@ -10,13 +10,13 @@ exports[`<Dropdown /> Matches the snapshot 1`] = `
     onClick={[MockFunction]}
   >
     <span
-      className="text-label"
+      className="textLabel false"
     >
       Listen
     </span>
   </a>
   <button
-    aria-expanded={false}
+    aria-expanded={null}
     aria-haspopup={true}
     aria-label="open menu"
     className="btnWhite btnDropdownWhite"

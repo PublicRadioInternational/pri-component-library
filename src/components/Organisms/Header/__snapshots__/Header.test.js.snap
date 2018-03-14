@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> Matches the Header snapshot 1`] = `
+<header
+  className="siteHeader"
+>
+  <a
+    className="logo"
+    href="/"
+  >
+    <svg
+      aria-hidden={null}
+      className={null}
+      fill="currentcolor"
+      viewBox={undefined}
+    >
+      <title>
+        PRI
+      </title>
+      <use
+        xlinkHref="#undefined"
+      />
+    </svg>
+  </a>
+  <div
+    className="buttons"
+  >
+    <div
+      className="dropdownGrp button"
+    >
+      <a
+        className="btnMobileWhite btnGrp"
+        href="https://www.pri.org/listen"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden={true}
+          className="inlineSvg"
+          fill="currentcolor"
+          viewBox={undefined}
+        >
+          <use
+            xlinkHref="#undefined"
+          />
+        </svg>
+        <span
+          className="textLabel textLabelMobile"
+        >
+          Listen
+        </span>
+      </a>
+      <button
+        aria-expanded={null}
+        aria-haspopup={true}
+        aria-label="open menu"
+        className="btnMobileWhite btnDropdownWhite"
+        onClick={[Function]}
+        type="button"
+      />
+    </div>
+    <div
+      className="dropdownGrp button"
+    >
+      <a
+        className="btnMobileWhite btnGrp"
+        href="https://www.pri.org/newsletters"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden={true}
+          className="inlineSvg"
+          fill="currentcolor"
+          viewBox={undefined}
+        >
+          <use
+            xlinkHref="#undefined"
+          />
+        </svg>
+        <span
+          className="textLabel textLabelMobile"
+        >
+          Newsletters
+        </span>
+      </a>
+      <button
+        aria-expanded={null}
+        aria-haspopup={true}
+        aria-label="open menu"
+        className="btnMobileWhite btnDropdownWhite"
+        onClick={[Function]}
+        type="button"
+      />
+    </div>
+    <div
+      className="dropdownGrp button"
+    >
+      <a
+        className="btnMobileWhite btnGrp"
+        href="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden={true}
+          className="inlineSvg"
+          fill="currentcolor"
+          viewBox={undefined}
+        >
+          <use
+            xlinkHref="#undefined"
+          />
+        </svg>
+        <span
+          className="textLabel textLabelMobile"
+        >
+          Search
+        </span>
+      </a>
+      <button
+        aria-expanded={null}
+        aria-haspopup={true}
+        aria-label="open menu"
+        className="btnMobileWhite btnDropdownWhite"
+        onClick={[Function]}
+        type="button"
+      />
+    </div>
+    <div
+      className="dropdownGrp button"
+    >
+      <a
+        className="btnMobileOrange btnGrp"
+        href="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden={true}
+          className="inlineSvg"
+          fill="currentcolor"
+          viewBox={undefined}
+        >
+          <use
+            xlinkHref="#undefined"
+          />
+        </svg>
+        <span
+          className="textLabel textLabelMobile"
+        >
+          Donate
+        </span>
+      </a>
+      <button
+        aria-expanded={null}
+        aria-haspopup={true}
+        aria-label="open menu"
+        className="btnMobileOrange btnDropdownOrange"
+        onClick={[Function]}
+        type="button"
+      />
+    </div>
+  </div>
+</header>
+`;

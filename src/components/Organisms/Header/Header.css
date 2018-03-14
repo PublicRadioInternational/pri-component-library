@@ -1,0 +1,21 @@
+.siteHeader {
+  border-bottom: 3px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.logo {
+  align-self: center;
+  width: 113px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+}
+
+.button {
+  margin-left: 0.75em;
+}
