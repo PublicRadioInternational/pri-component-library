@@ -16,7 +16,7 @@ const Icon = props => {
   return (
     <svg
       viewBox={icon.default.viewBox}
-      className={inline ? styles.inlineSvg : className}
+      className={inline ? styles.inlineSvg : className && className}
       fill="currentcolor"
     >
       <use xlinkHref={`#${icon.default.id}`} />

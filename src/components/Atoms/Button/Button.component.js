@@ -24,7 +24,7 @@ const Button = props => {
         href={url}
         className={`${
           small ? styles[buttonMobileClass] : styles[buttonClass]
-        } ${className}`}
+        } ${className && className}`}
         onClick={onClick}
       >
         {icon && <Icon svg={icon} inline />}
@@ -43,7 +43,7 @@ const Button = props => {
       type="button"
       className={`${
         small ? styles[buttonMobileClass] : styles[buttonClass]
-      } ${className}`}
+      } ${className && className}`}
       onClick={onClick}
       aria-expanded={props['aria-expanded']}
       aria-label={props['aria-label']}

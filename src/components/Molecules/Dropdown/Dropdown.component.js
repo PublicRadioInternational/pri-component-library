@@ -49,7 +49,7 @@ export default class Dropdown extends Component {
     return (
       <Downshift>
         {({ isOpen, getButtonProps }) => (
-          <div className={`${styles.dropdownGrp} ${className}`}>
+          <div className={`${styles.dropdownGrp} ${className && className}`}>
             <Button
               className={styles.btnGrp}
               url={url}
