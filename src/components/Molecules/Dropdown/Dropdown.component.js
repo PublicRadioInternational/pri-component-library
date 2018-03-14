@@ -20,7 +20,8 @@ export default class Dropdown extends Component {
     url: PropTypes.string,
     color: PropTypes.oneOf(['Orange', 'White']),
     icon: PropTypes.string,
-    className: PropTypes.string
+    className: PropTypes.string,
+    small: PropTypes.bool
   };
 
   static defaultProps = {
@@ -29,7 +30,8 @@ export default class Dropdown extends Component {
     url: null,
     onClick: () => {},
     icon: null,
-    className: null
+    className: null,
+    small: false
   };
 
   render() {
@@ -40,7 +42,8 @@ export default class Dropdown extends Component {
       color,
       url,
       icon,
-      className
+      className,
+      small
     } = this.props;
 
     return (
@@ -53,6 +56,7 @@ export default class Dropdown extends Component {
               color={color}
               onClick={onClick}
               icon={icon}
+              small={small}
             >
               {title}
             </Button>
@@ -60,6 +64,7 @@ export default class Dropdown extends Component {
               {...getButtonProps()}
               className={styles[`btnDropdown${color}`]}
               color={color}
+              small={small}
             />
             {isOpen ? <div className={styles.dropdown}>{children}</div> : null}
           </div>

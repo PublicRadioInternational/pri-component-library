@@ -27,7 +27,8 @@ function Header() {
           title="Listen"
           onClick={action('drowndown-button-clicked')}
           icon="play"
-          className={styles.button}
+          className={`${styles.button}`}
+          small
         >
           <DropdownItem url="https://www.pri.org/listen">
             Live Stream
@@ -55,6 +56,7 @@ function Header() {
           onClick={action('drowndown-button-clicked')}
           icon="envelope"
           className={styles.button}
+          small
         >
           <DropdownItem url="https://www.pri.org/listen">
             Live Stream
@@ -82,16 +84,19 @@ function Header() {
           onClick={action('drowndown-button-clicked')}
           icon="search"
           className={styles.button}
+          small
         >
           <DropdownItem>Search</DropdownItem>
         </Dropdown>
 
         <Dropdown
+          url="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#"
           title="Donate"
           color="Orange"
           onClick={action('drowndown-button-clicked')}
           icon="heart"
           className={styles.button}
+          small
         >
           <DropdownItem url="https://www.pri.org/donate/index.html?utm_source=navigation&utm_medium=website&utm_campaign=donations">
             Give Now

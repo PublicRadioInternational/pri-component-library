@@ -1,7 +1,16 @@
+/* import breakpoints */
+@value header as bp-header from "../../00_global/breakpoints.css";
+
 .inlineSvg {
   display: inline-block;
   margin-right: 8px;
   position: relative;
   top: 2px;
-  width: 16px;
+  width: 30px;
+}
+
+@media bp-header {
+  .inlineSvg {
+    width: 16px;
+  }
 }

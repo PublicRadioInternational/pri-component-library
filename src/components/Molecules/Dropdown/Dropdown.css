@@ -7,6 +7,10 @@
 @value copy from fonts;
 
 /* Group */
+.dropdownGrpSmall {
+  display: none;
+}
+
 .dropdownGrp {
   display: flex;
   position: relative;

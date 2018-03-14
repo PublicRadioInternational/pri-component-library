@@ -10,7 +10,7 @@ exports[`<Dropdown /> Matches the snapshot 1`] = `
     onClick={[MockFunction]}
   >
     <span
-      className="text-label"
+      className="textLabel false"
     >
       Listen
     </span>

@@ -25,7 +25,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       className="dropdownGrp button"
     >
       <a
-        className="btnWhite btnGrp"
+        className="btnMobileWhite btnGrp"
         href="https://www.pri.org/listen"
         onClick={[Function]}
       >
@@ -39,7 +39,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           />
         </svg>
         <span
-          className="text-label"
+          className="textLabel textLabelMobile"
         >
           Listen
         </span>
@@ -48,7 +48,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
         aria-expanded={false}
         aria-haspopup={true}
         aria-label="open menu"
-        className="btnWhite btnDropdownWhite"
+        className="btnMobileWhite btnDropdownWhite"
         onClick={[Function]}
         type="button"
       />
@@ -57,7 +57,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       className="dropdownGrp button"
     >
       <a
-        className="btnWhite btnGrp"
+        className="btnMobileWhite btnGrp"
         href="https://www.pri.org/newsletters"
         onClick={[Function]}
       >
@@ -71,7 +71,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           />
         </svg>
         <span
-          className="text-label"
+          className="textLabel textLabelMobile"
         >
           Newsletters
         </span>
@@ -80,7 +80,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
         aria-expanded={false}
         aria-haspopup={true}
         aria-label="open menu"
-        className="btnWhite btnDropdownWhite"
+        className="btnMobileWhite btnDropdownWhite"
         onClick={[Function]}
         type="button"
       />
@@ -89,7 +89,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       className="dropdownGrp button"
     >
       <a
-        className="btnWhite btnGrp"
+        className="btnMobileWhite btnGrp"
         href="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#"
         onClick={[Function]}
       >
@@ -103,7 +103,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           />
         </svg>
         <span
-          className="text-label"
+          className="textLabel textLabelMobile"
         >
           Search
         </span>
@@ -112,7 +112,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
         aria-expanded={false}
         aria-haspopup={true}
         aria-label="open menu"
-        className="btnWhite btnDropdownWhite"
+        className="btnMobileWhite btnDropdownWhite"
         onClick={[Function]}
         type="button"
       />
@@ -120,13 +120,10 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
     <div
       className="dropdownGrp button"
     >
-      <button
-        aria-expanded={false}
-        aria-haspopup={false}
-        aria-label={null}
-        className="btnOrange btnGrp"
+      <a
+        className="btnMobileOrange btnGrp"
+        href="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#"
         onClick={[Function]}
-        type="button"
       >
         <svg
           className="inlineSvg"
@@ -137,13 +134,17 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             xlinkHref="#undefined"
           />
         </svg>
-        Donate
-      </button>
+        <span
+          className="textLabel textLabelMobile"
+        >
+          Donate
+        </span>
+      </a>
       <button
         aria-expanded={false}
         aria-haspopup={true}
         aria-label="open menu"
-        className="btnOrange btnDropdownOrange"
+        className="btnMobileOrange btnDropdownOrange"
         onClick={[Function]}
         type="button"
       />
