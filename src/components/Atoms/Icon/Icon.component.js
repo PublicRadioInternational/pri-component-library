@@ -18,9 +18,9 @@ const Icon = props => {
       viewBox={icon.default.viewBox}
       className={inline ? styles.inlineSvg : className && className}
       fill="currentcolor"
-      title={title}
       aria-hidden={props['aria-hidden'] === true ? props['aria-hidden'] : null}
     >
+      {title && <title>{title}</title>}
       <use xlinkHref={`#${icon.default.id}`} />
     </svg>
   );

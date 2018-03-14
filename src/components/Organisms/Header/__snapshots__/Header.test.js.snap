@@ -12,9 +12,11 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       aria-hidden={null}
       className={null}
       fill="currentcolor"
-      title="PRI"
       viewBox={undefined}
     >
+      <title>
+        PRI
+      </title>
       <use
         xlinkHref="#undefined"
       />
@@ -35,7 +37,6 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           aria-hidden={true}
           className="inlineSvg"
           fill="currentcolor"
-          title={null}
           viewBox={undefined}
         >
           <use
@@ -69,7 +70,6 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           aria-hidden={true}
           className="inlineSvg"
           fill="currentcolor"
-          title={null}
           viewBox={undefined}
         >
           <use
@@ -103,7 +103,6 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           aria-hidden={true}
           className="inlineSvg"
           fill="currentcolor"
-          title={null}
           viewBox={undefined}
         >
           <use
@@ -137,7 +136,6 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           aria-hidden={true}
           className="inlineSvg"
           fill="currentcolor"
-          title={null}
           viewBox={undefined}
         >
           <use
