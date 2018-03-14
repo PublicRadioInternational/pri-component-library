@@ -45,6 +45,7 @@ function Header() {
           <DropdownItem url="https://www.pri.org/ways-listen">
             Ways to Listen
           </DropdownItem>
+          <DropdownItem />
           <DropdownItem url="https://www.pri.org/shows">
             All Programs & Podcasts
           </DropdownItem>
@@ -58,12 +59,12 @@ function Header() {
           className={styles.button}
           small
         >
-          <DropdownItem url="https://www.pri.org/listen">
-            Live Stream
-          </DropdownItem>
+          <DropdownItem heading="Daily Newsletters" />
           <DropdownItem url="https://www.pri.org/get-scan-your-inbox-each-weekday">
             The Scan
           </DropdownItem>
+          <DropdownItem />
+          <DropdownItem heading="Weekly Newsletters" />
           <DropdownItem url="https://www.pri.org/subscribe-across-womens-lives-weekly-newsletter">
             Across Women{"'"}s Lives
           </DropdownItem>
@@ -73,6 +74,7 @@ function Header() {
           <DropdownItem url="https://www.pri.org/subscribe-safemode-weekly-digest">
             Global Security
           </DropdownItem>
+          <DropdownItem />
           <DropdownItem url="https://www.pri.org/user/me/newsletters">
             Manage My Newsletters
           </DropdownItem>
@@ -110,6 +112,7 @@ function Header() {
           <DropdownItem url="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#">
             Donation FAQ
           </DropdownItem>
+          <DropdownItem />
           <DropdownItem url="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#">
             Manage My Donations
           </DropdownItem>

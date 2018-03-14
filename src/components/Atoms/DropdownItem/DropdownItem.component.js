@@ -12,22 +12,30 @@ import styles from './DropdownItem.css';
  */
 export default class DropdownItem extends Component {
   static propTypes = {
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node,
     url: PropTypes.string,
+    heading: PropTypes.string,
     onClick: PropTypes.func
   };
 
   static defaultProps = {
+    children: [],
     url: null,
+    heading: null,
     onClick: () => {}
   };
 
   render() {
-    const { children, url, onClick } = this.props;
-    return (
-      <a className={styles.dropdownItem} href={url} onClick={onClick}>
-        {children}
-      </a>
-    );
+    const { children, url, onClick, heading } = this.props;
+    if (url) {
+      return (
+        <a className={styles.dropdownItem} href={url} onClick={onClick}>
+          {children}
+        </a>
+      );
+    } else if (heading) {
+      return <h3 className={styles.dropdownHeading}>{heading}</h3>;
+    }
+    return <hr className={styles.dropdownHr} />;
   }
 }
