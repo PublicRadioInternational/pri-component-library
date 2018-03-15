@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value white, whiteDark, grayLighter, gray, grayDark, orange, orangeDark from colors;
+@value white, whiteDark, grayLighter, gray, grayLight, grayDark, orange, orangeDark from colors;
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
 @value copy from fonts;
@@ -80,7 +80,7 @@
 
 /* Mobile Icon versions */
 .btnMobileWhite {
-  color: grayDark;
+  color: grayLight;
 }
 
 .btnMobileOrange {
