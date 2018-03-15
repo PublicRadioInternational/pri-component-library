@@ -39,7 +39,7 @@
 .btn,
 .btnWhite,
 .btnOrange {
-  composes: btn;
+  @mixin btn;
 }
 
 .btn:hover,
