@@ -8,7 +8,7 @@
 @value header as bp-header from "../../00_global/breakpoints.css";
 
 /* Generic */
-.btn {
+@define-mixin btn {
   background-color: whiteDark;
   border: 1px solid grayLighter;
   border-radius: 0.25rem;
@@ -26,36 +26,59 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.btn:hover {
+@define-mixin btnWhiteHover {
   background-color: white;
 }
 
-.btn:active,
-.btn[aria-expanded='true'] {
+@define-mixin btnWhiteActive {
   background-color: grayDark;
   color: white;
 }
 
-/* Colors */
+/* Inherits button always */
+.btn,
 .btnWhite,
-.btnOrange,
-.btnMobile {
+.btnOrange {
   composes: btn;
 }
 
-.btnOrange {
+.btn:hover,
+.btnWhite:hover,
+.btnMobileWhite:hover {
+  @mixin btnWhiteHover;
+}
+
+.btn:active,
+.btn[aria-expanded='true'],
+.btnWhite:active,
+.btnWhite[aria-expanded='true'],
+.btnMobileWhite:active,
+.btnMobileWhite[aria-expanded='true'] {
+  @mixin btnWhiteActive;
+}
+
+/* Colors */
+@define-mixin btnOrange {
   background-color: orange;
   border: none;
   color: white;
 }
 
-.btnOrange:hover,
-.btnOrange:active,
-.btnOrange[aria-expanded='true'] {
+@define-mixin btnOrangeHover {
   background-color: orangeDark;
 }
 
-/* Mobile version */
+.btnOrange {
+  @mixin btnOrange;
+}
+
+.btnOrange:hover,
+.btnOrange:active,
+.btnOrange[aria-expanded='true'] {
+  @mixin btnOrangeHover;
+}
+
+/* Mobile Icon versions */
 .btnMobileWhite {
   color: grayDark;
 }
@@ -64,33 +87,34 @@
   color: orange;
 }
 
-@media bp-header {
-  .btnMobileOrange {
-    color: white;
-  }
-}
-
-.btnMobile.btnOrange:hover {
+.btnOrange:hover {
   background: none;
 }
 
 @media bp-header {
-  .btnMobileWhite {
-    composes: btn;
-  }
-
+  .btnMobileWhite,
   .btnMobileOrange {
-    composes: btnOrange;
+    @mixin btn;
   }
 }
 
-.btnHide,
+@media bp-header {
+  .btnMobileOrange {
+    @mixin btnOrange;
+  }
+
+  .btnMobileOrange:hover,
+  .btnMobileOrange:active,
+  .btnMobileOrange[aria-expanded='true'] {
+    @mixin btnOrangeHover;
+  }
+}
+
 .textLabelMobile {
   display: none;
 }
 
 @media bp-header {
-  .btnHide,
   .textLabelMobile {
     display: inline-block;
   }
