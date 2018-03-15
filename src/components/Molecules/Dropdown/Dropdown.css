@@ -6,6 +6,9 @@
 @value fonts: "../../00_global/fonts.css";
 @value copy from fonts;
 
+/* import breakpoints */
+@value header as bp-header from "../../00_global/breakpoints.css";
+
 /* Group */
 .dropdownGrpSmall {
   display: none;
@@ -33,8 +36,10 @@
   z-index: 1;
 }
 
-.btnGrp {
-  border-radius: 0.25rem 0 0 0.25rem;
+@media bp-header {
+  .btnGrp {
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
 }
 
 .btnDropdown {
@@ -65,4 +70,14 @@
 
 .btnDropdownOrange::after {
   border-top: 0.4em solid white;
+}
+
+.btnHide {
+  display: none;
+}
+
+@media bp-header {
+  .btnHide {
+    display: inline-block;
+  }
 }

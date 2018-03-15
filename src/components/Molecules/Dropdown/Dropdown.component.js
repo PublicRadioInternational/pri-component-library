@@ -62,7 +62,7 @@ export default class Dropdown extends Component {
             </Button>
             <Button
               {...getButtonProps()}
-              className={styles[`btnDropdown${color}`]}
+              className={`${styles[`btnDropdown${color}`]} ${styles.btnHide}`}
               color={color}
               small={small}
             />

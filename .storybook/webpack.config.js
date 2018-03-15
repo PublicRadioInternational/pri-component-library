@@ -14,6 +14,15 @@ module.exports = {
               importLoaders: true,
               localIdentName: '[name]__[local]___[hash:base64:5]'
             }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => [
+                require('postcss-mixins'),
+                require('autoprefixer')
+              ]
+            }
           }
         ]
       },
