@@ -27,7 +27,9 @@ jobs:
         name: Deploy and release.
         command: |
           if [ "${CIRCLE_BRANCH}" == "master" ]; then
+            git config --global user.email "digitalmedia@pri.org"
+            git config --global user.name "PRI Bender"
             git fetch --tags
-            yarn semantic-release
+            #yarn semantic-release
             yarn deploy
           fi
