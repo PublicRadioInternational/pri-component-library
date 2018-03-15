@@ -10,7 +10,7 @@ import Dropdown from '../../Molecules/Dropdown/Dropdown.component';
 import DropdownItem from '../../Atoms/DropdownItem/DropdownItem.component';
 
 /**
- * Component that renders a link, or a button with a click handler.
+ * Component that renders the header.
  */
 const Header = () => (
   <header className={styles.siteHeader}>

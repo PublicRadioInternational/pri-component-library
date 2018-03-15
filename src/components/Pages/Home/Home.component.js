@@ -8,7 +8,7 @@ import styles from './Home.css';
 import Header from '../../Organisms/Header/Header.component';
 
 /**
- * Component that renders a link, or a button with a click handler.
+ * Component that renders the homepage.
  */
 const Home = () => (
   <div className={styles.outerWrap}>
