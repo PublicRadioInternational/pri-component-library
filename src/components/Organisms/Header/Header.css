@@ -1,4 +1,5 @@
 .siteHeader {
+  background-color: white;
   border-bottom: 3px solid #ddd;
   display: flex;
   justify-content: space-between;
