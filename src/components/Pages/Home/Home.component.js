@@ -1,6 +1,6 @@
 /**
- * @file Header.component.js
- * Exports the site header.
+ * @file Home.component.js
+ * Exports the homepage.
  */
 
 import React from 'react';
