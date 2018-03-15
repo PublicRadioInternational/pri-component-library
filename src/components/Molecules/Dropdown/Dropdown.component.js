@@ -7,6 +7,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Downshift from 'downshift';
 import styles from './Dropdown.css';
+import ButtonLink from '../../Atoms/Button/ButtonLink.component';
 import Button from '../../Atoms/Button/Button.component';
 
 /**
@@ -50,7 +51,7 @@ export default class Dropdown extends Component {
       <Downshift>
         {({ isOpen, getButtonProps }) => (
           <div className={`${styles.dropdownGrp} ${className && className}`}>
-            <Button
+            <ButtonLink
               className={styles.btnGrp}
               url={url}
               color={color}
@@ -59,7 +60,7 @@ export default class Dropdown extends Component {
               small={small}
             >
               {title}
-            </Button>
+            </ButtonLink>
             <Button
               {...getButtonProps()}
               className={`${styles[`btnDropdown${color}`]} ${styles.btnHide}`}

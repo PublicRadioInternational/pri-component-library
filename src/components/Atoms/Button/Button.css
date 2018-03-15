@@ -119,3 +119,21 @@
     display: inline-block;
   }
 }
+
+/* Input Specific */
+.inputWrap {
+  position: relative;
+}
+
+.inputBtn {
+  @composes: btnWhite;
+}
+
+.inputWithIcon {
+  padding: 0.375rem 0.85rem 0.375rem 2rem;
+}
+
+.inputWithIcon:active {
+  background-color: grayLighter;
+  color: grayDark;
+}

@@ -11,56 +11,49 @@ import Icon from '../Icon/Icon.component';
 /**
  * Component that renders a link, or a button with a click handler.
  */
-const Button = props => {
-  const { onClick, className, children, color, icon, small } = props;
+const ButtonLink = props => {
+  const { url, onClick, className, children, color, icon, small } = props;
   // Generate a class name based on the color.
   const buttonClass = `btn${color}`;
   const buttonMobileClass = `btnMobile${color}`;
 
-  // No URL was specified, this button is not a link. Return a button instead.
+  // If a URL is provided, this button is simply a link.
   return (
-    <button
-      type="button"
+    <a
+      href={url}
       className={`${
         small ? styles[buttonMobileClass] : styles[buttonClass]
       } ${className && className}`}
       onClick={onClick}
-      aria-expanded={
-        props['aria-expanded'] === true ? props['aria-expanded'] : null
-      }
-      aria-label={props['aria-label']}
-      aria-haspopup={
-        props['aria-haspopup'] === true ? props['aria-haspopup'] : null
-      }
     >
-      {icon ? <Icon svg={icon} inline aria-hidden /> : null}
-      {children}
-    </button>
+      {icon && <Icon svg={icon} inline aria-hidden />}
+      <span
+        className={`${styles.textLabel} ${small && styles.textLabelMobile}`}
+      >
+        {children}
+      </span>
+    </a>
   );
 };
 
-Button.propTypes = {
+ButtonLink.propTypes = {
+  url: PropTypes.string,
   onClick: PropTypes.func,
   children: PropTypes.node,
   color: PropTypes.oneOf(['Orange', 'White']),
   className: PropTypes.string,
-  'aria-expanded': PropTypes.bool,
-  'aria-label': PropTypes.string,
-  'aria-haspopup': PropTypes.bool,
   icon: PropTypes.string,
   small: PropTypes.bool
 };
 
-Button.defaultProps = {
+ButtonLink.defaultProps = {
+  url: null,
   color: 'White',
   className: null,
   children: null,
   onClick: () => {},
-  'aria-expanded': false,
-  'aria-label': null,
-  'aria-haspopup': false,
   icon: null,
   small: false
 };
 
-export default Button;
+export default ButtonLink;
