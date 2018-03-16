@@ -18,7 +18,7 @@ const Icon = props => {
       viewBox={icon.default.viewBox}
       className={
         inline
-          ? `${styles.inlineSvg} && ${styles[className]}`
+          ? `${styles.inlineSvg} ${className && styles[className]}`
           : className && styles[className]
       }
       fill="currentcolor"

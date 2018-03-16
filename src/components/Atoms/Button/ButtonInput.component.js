@@ -1,6 +1,6 @@
 /**
- * @file Button.component.js
- * Exports a classic button component.
+ * @file ButtonInput.component.js
+ * Exports an input button component.
  */
 
 import React from 'react';
@@ -9,7 +9,7 @@ import styles from './Button.css';
 import Icon from '../Icon/Icon.component';
 
 /**
- * Component that renders a link, or a button with a click handler.
+ * Component that renders an input button with a click handler.
  */
 const ButtonInput = props => {
   const { onClick, className, value, color, icon, small } = props;
@@ -17,7 +17,6 @@ const ButtonInput = props => {
   const buttonClass = `btn${color}`;
   const buttonMobileClass = `btnMobile${color}`;
 
-  // No URL was specified, this button is not a link. Return a button instead.
   return (
     <div className={styles.inputWrap}>
       {icon ? (

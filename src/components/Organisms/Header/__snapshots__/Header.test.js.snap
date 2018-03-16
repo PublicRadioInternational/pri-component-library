@@ -35,7 +35,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       >
         <svg
           aria-hidden={true}
-          className="inlineSvg && null"
+          className="inlineSvg null"
           fill="currentcolor"
           viewBox={undefined}
         >
@@ -68,7 +68,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       >
         <svg
           aria-hidden={true}
-          className="inlineSvg && null"
+          className="inlineSvg null"
           fill="currentcolor"
           viewBox={undefined}
         >
@@ -101,7 +101,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       >
         <svg
           aria-hidden={true}
-          className="inlineSvg && null"
+          className="inlineSvg null"
           fill="currentcolor"
           viewBox={undefined}
         >
@@ -134,7 +134,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       >
         <svg
           aria-hidden={true}
-          className="inlineSvg && null"
+          className="inlineSvg null"
           fill="currentcolor"
           viewBox={undefined}
         >

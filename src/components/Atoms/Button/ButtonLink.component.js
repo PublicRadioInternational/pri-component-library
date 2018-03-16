@@ -1,6 +1,6 @@
 /**
- * @file Button.component.js
- * Exports a classic button component.
+ * @file ButtonLink.component.js
+ * Exports a button link component.
  */
 
 import React from 'react';
@@ -9,7 +9,7 @@ import styles from './Button.css';
 import Icon from '../Icon/Icon.component';
 
 /**
- * Component that renders a link, or a button with a click handler.
+ * Component that renders a link button with a click handler.
  */
 const ButtonLink = props => {
   const { url, onClick, className, children, color, icon, small } = props;
@@ -17,7 +17,6 @@ const ButtonLink = props => {
   const buttonClass = `btn${color}`;
   const buttonMobileClass = `btnMobile${color}`;
 
-  // If a URL is provided, this button is simply a link.
   return (
     <a
       href={url}
