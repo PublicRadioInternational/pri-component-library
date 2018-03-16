@@ -9,7 +9,7 @@ import styles from './Button.css';
 import Icon from '../Icon/Icon.component';
 
 /**
- * Component that renders a link, or a button with a click handler.
+ * Component that renders a button with a click handler.
  */
 const Button = props => {
   const { onClick, className, children, color, icon, small } = props;
@@ -17,7 +17,6 @@ const Button = props => {
   const buttonClass = `btn${color}`;
   const buttonMobileClass = `btnMobile${color}`;
 
-  // No URL was specified, this button is not a link. Return a button instead.
   return (
     <button
       type="button"

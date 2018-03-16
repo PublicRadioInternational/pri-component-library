@@ -43,17 +43,14 @@
 }
 
 .btn:hover,
-.btnWhite:hover,
-.btnMobileWhite:hover {
+.btnWhite:hover {
   @mixin btnWhiteHover;
 }
 
 .btn:active,
 .btn[aria-expanded='true'],
 .btnWhite:active,
-.btnWhite[aria-expanded='true'],
-.btnMobileWhite:active,
-.btnMobileWhite[aria-expanded='true'] {
+.btnWhite[aria-expanded='true'] {
   @mixin btnWhiteActive;
 }
 
@@ -87,18 +84,21 @@
   color: orange;
 }
 
-.btnOrange:hover {
-  background: none;
-}
-
 @media bp-header {
   .btnMobileWhite,
   .btnMobileOrange {
     @mixin btn;
   }
-}
 
-@media bp-header {
+  .btnMobileWhite:hover {
+    @mixin btnWhiteHover;
+  }
+
+  .btnMobileWhite:active,
+  .btnMobileWhite[aria-expanded='true'] {
+    @mixin btnWhiteActive;
+  }
+
   .btnMobileOrange {
     @mixin btnOrange;
   }
