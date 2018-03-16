@@ -60,7 +60,12 @@ export default class Dropdown extends Component {
               small={small}
             >
               {icon ? <Icon svg={icon} inline aria-hidden /> : null}
-              {title}
+              <span
+                className={`${styles.textLabel} ${small &&
+                  styles.textLabelMobile}`}
+              >
+                {title}
+              </span>
             </ButtonLink>
             <Button
               {...getButtonProps()}

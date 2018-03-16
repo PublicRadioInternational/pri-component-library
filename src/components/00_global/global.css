@@ -1,4 +1,4 @@
-.hidden {
+@define-mixin hidden {
   height: 0;
   left: 0;
   overflow: hidden;

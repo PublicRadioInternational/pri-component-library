@@ -24,11 +24,7 @@ const ButtonLink = props => {
       } ${className && className}`}
       onClick={onClick}
     >
-      <span
-        className={`${styles.textLabel} ${small && styles.textLabelMobile}`}
-      >
-        {children}
-      </span>
+      {children}
     </a>
   );
 };
