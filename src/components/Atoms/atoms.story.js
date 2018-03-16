@@ -11,8 +11,6 @@ import Button from './Button/Button.component';
 import ButtonLink from './Button/ButtonLink.component';
 import ButtonInput from './Button/ButtonInput.component';
 
-import envelope from './Icon/svg/envelope.svg';
-
 /**
  * Add storybook definition for buttons.
  */
@@ -25,18 +23,13 @@ storiesOf('Atoms/Buttons', module)
       Donate
     </Button>
   ))
-  .add('Icon', () => (
-    <Button onClick={action('button-clicked')} svg={envelope}>
-      Newsletters
-    </Button>
-  ))
   .add('Input', () => (
     <ButtonInput onClick={action('button-clicked')} value="Submit" />
   ))
   .add('Input with Icon', () => (
     <ButtonInput
       onClick={action('button-clicked')}
-      svg={envelope}
       value="Submit"
+      icon="heart"
     />
   ));

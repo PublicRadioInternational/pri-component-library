@@ -6,24 +6,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Button.css';
-import Icon from '../Icon/Icon.component';
+import Icon from '../Svg/Icons.component';
 
 /**
  * Component that renders an input button with a click handler.
  */
 const ButtonInput = props => {
-  const { onClick, className, value, color, svg, small } = props;
+  const { onClick, className, value, color, icon, small } = props;
   // Generate a class name based on the color.
   const buttonClass = `btn${color}`;
   const buttonMobileClass = `btnMobile${color}`;
 
   return (
     <div className={styles.inputWrap}>
-      {svg ? <Icon svg={svg} inline aria-hidden className="inputIcon" /> : null}
+      {icon ? (
+        <Icon icon={icon} inline aria-hidden className="inputIcon" />
+      ) : null}
       <input
         className={`${
           small ? styles[buttonMobileClass] : styles[buttonClass]
-        } ${className && className} ${styles.inputBtn} ${svg &&
+        } ${className && className} ${styles.inputBtn} ${icon &&
           styles.inputWithIcon}`}
         type="submit"
         onClick={onClick}
@@ -38,7 +40,7 @@ ButtonInput.propTypes = {
   value: PropTypes.string,
   color: PropTypes.oneOf(['Orange', 'White']),
   className: PropTypes.string,
-  svg: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  icon: PropTypes.string,
   small: PropTypes.bool
 };
 
@@ -47,7 +49,7 @@ ButtonInput.defaultProps = {
   className: null,
   value: null,
   onClick: () => {},
-  svg: null,
+  icon: null,
   small: false
 };
 

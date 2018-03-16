@@ -6,11 +6,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Icon from './Icon.component';
+import Icon from './Icons.component';
 
 describe('<Icon />', () => {
   it('Matches the Icon snapshot', () => {
-    const component = renderer.create(<Icon svg="heart" />).toJSON();
+    const component = renderer.create(<Icon icon="heart" />).toJSON();
     expect(component).toMatchSnapshot();
   });
 });

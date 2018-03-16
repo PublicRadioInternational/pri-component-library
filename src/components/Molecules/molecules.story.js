@@ -10,8 +10,6 @@ import { action } from '@storybook/addon-actions';
 import Dropdown from './Dropdown/Dropdown.component';
 import DropdownItem from '../Atoms/DropdownItem/DropdownItem.component';
 
-import heart from '../Atoms/Icon/svg/heart.svg';
-
 /**
  * Add storybook definition for Dropdowns.
  */
@@ -34,8 +32,8 @@ storiesOf('Molecules/Dropdown', module)
       title="Donate"
       color="Orange"
       onClick={action('drowndown-button-clicked')}
-      svg={heart}
       small
+      icon="heart"
     >
       <DropdownItem url="https://google.com">Google</DropdownItem>
       <DropdownItem onClick={action('dropdown-button-item-clicked')}>
