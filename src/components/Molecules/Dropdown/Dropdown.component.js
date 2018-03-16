@@ -7,7 +7,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Downshift from 'downshift';
 import styles from './Dropdown.css';
+import ButtonLink from '../../Atoms/Button/ButtonLink.component';
 import Button from '../../Atoms/Button/Button.component';
+import Icon from '../../Atoms/Icon/Icon.component';
 
 /**
  * Component that renders a Dropdown menu button.
@@ -50,16 +52,21 @@ export default class Dropdown extends Component {
       <Downshift>
         {({ isOpen, getButtonProps }) => (
           <div className={`${styles.dropdownGrp} ${className && className}`}>
-            <Button
+            <ButtonLink
               className={styles.btnGrp}
               url={url}
               color={color}
               onClick={onClick}
-              icon={icon}
               small={small}
             >
-              {title}
-            </Button>
+              {icon ? <Icon svg={icon} inline aria-hidden /> : null}
+              <span
+                className={`${styles.textLabel} ${small &&
+                  styles.textLabelMobile}`}
+              >
+                {title}
+              </span>
+            </ButtonLink>
             <Button
               {...getButtonProps()}
               className={`${styles[`btnDropdown${color}`]} ${styles.btnHide}`}

@@ -81,3 +81,13 @@
     display: inline-block;
   }
 }
+
+.textLabelMobile {
+  display: none;
+}
+
+@media bp-header {
+  .textLabelMobile {
+    display: inline-block;
+  }
+}

@@ -16,7 +16,11 @@ const Icon = props => {
   return (
     <svg
       viewBox={icon.default.viewBox}
-      className={inline ? styles.inlineSvg : className && className}
+      className={
+        inline
+          ? `${styles.inlineSvg} ${className && styles[className]}`
+          : className && styles[className]
+      }
       fill="currentcolor"
       aria-hidden={props['aria-hidden'] === true ? props['aria-hidden'] : null}
     >
