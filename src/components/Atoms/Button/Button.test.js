@@ -6,6 +6,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
+import ButtonLink from './ButtonLink.component';
+import ButtonInput from './ButtonInput.component';
 import Button from './Button.component';
 
 describe('<Button />', () => {
@@ -16,9 +18,14 @@ describe('<Button />', () => {
   it('Handles Link click events', () => {
     const onClick = jest.fn();
     const linkWrapper = shallow(
-      <Button title={title} url={url} onClick={onClick} className={className}>
+      <ButtonLink
+        title={title}
+        url={url}
+        onClick={onClick}
+        className={className}
+      >
         test
-      </Button>
+      </ButtonLink>
     );
     linkWrapper.find('a').simulate('click');
     expect(onClick).toHaveBeenCalledTimes(1);
@@ -32,6 +39,17 @@ describe('<Button />', () => {
       </Button>
     );
     buttonWrapper.find('button').simulate('click');
+    expect(onClick).toHaveBeenCalledTimes(1);
+  });
+
+  it('Handles Input click events', () => {
+    const onClick = jest.fn();
+    const linkWrapper = shallow(
+      <ButtonInput value={title} onClick={onClick} className={className}>
+        test
+      </ButtonInput>
+    );
+    linkWrapper.find('input').simulate('click');
     expect(onClick).toHaveBeenCalledTimes(1);
   });
 

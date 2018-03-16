@@ -14,3 +14,11 @@
     width: 16px;
   }
 }
+
+.inputIcon {
+  cursor: pointer;
+  left: 10px;
+  margin-top: -9px;
+  position: absolute;
+  top: 50%;
+}
