@@ -9,6 +9,7 @@ import Downshift from 'downshift';
 import styles from './Dropdown.css';
 import ButtonLink from '../../Atoms/Button/ButtonLink.component';
 import Button from '../../Atoms/Button/Button.component';
+import Icon from '../../Atoms/Icon/Icon.component';
 
 /**
  * Component that renders a Dropdown menu button.
@@ -56,9 +57,9 @@ export default class Dropdown extends Component {
               url={url}
               color={color}
               onClick={onClick}
-              icon={icon}
               small={small}
             >
+              {icon ? <Icon svg={icon} inline aria-hidden /> : null}
               {title}
             </ButtonLink>
             <Button

@@ -6,13 +6,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Button.css';
-import Icon from '../Icon/Icon.component';
 
 /**
  * Component that renders a link button with a click handler.
  */
 const ButtonLink = props => {
-  const { url, onClick, className, children, color, icon, small } = props;
+  const { url, onClick, className, children, color, small } = props;
   // Generate a class name based on the color.
   const buttonClass = `btn${color}`;
   const buttonMobileClass = `btnMobile${color}`;
@@ -25,7 +24,6 @@ const ButtonLink = props => {
       } ${className && className}`}
       onClick={onClick}
     >
-      {icon && <Icon svg={icon} inline aria-hidden />}
       <span
         className={`${styles.textLabel} ${small && styles.textLabelMobile}`}
       >
@@ -41,7 +39,6 @@ ButtonLink.propTypes = {
   children: PropTypes.node,
   color: PropTypes.oneOf(['Orange', 'White']),
   className: PropTypes.string,
-  icon: PropTypes.string,
   small: PropTypes.bool
 };
 
@@ -51,7 +48,6 @@ ButtonLink.defaultProps = {
   className: null,
   children: null,
   onClick: () => {},
-  icon: null,
   small: false
 };
 

@@ -33,19 +33,19 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
         href="https://www.pri.org/listen"
         onClick={[Function]}
       >
-        <svg
-          aria-hidden={true}
-          className="inlineSvg null"
-          fill="currentcolor"
-          viewBox={undefined}
-        >
-          <use
-            xlinkHref="#undefined"
-          />
-        </svg>
         <span
           className="textLabel textLabelMobile"
         >
+          <svg
+            aria-hidden={true}
+            className="inlineSvg null"
+            fill="currentcolor"
+            viewBox={undefined}
+          >
+            <use
+              xlinkHref="#undefined"
+            />
+          </svg>
           Listen
         </span>
       </a>
@@ -66,19 +66,19 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
         href="https://www.pri.org/newsletters"
         onClick={[Function]}
       >
-        <svg
-          aria-hidden={true}
-          className="inlineSvg null"
-          fill="currentcolor"
-          viewBox={undefined}
-        >
-          <use
-            xlinkHref="#undefined"
-          />
-        </svg>
         <span
           className="textLabel textLabelMobile"
         >
+          <svg
+            aria-hidden={true}
+            className="inlineSvg null"
+            fill="currentcolor"
+            viewBox={undefined}
+          >
+            <use
+              xlinkHref="#undefined"
+            />
+          </svg>
           Newsletters
         </span>
       </a>
@@ -99,19 +99,19 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
         href="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#"
         onClick={[Function]}
       >
-        <svg
-          aria-hidden={true}
-          className="inlineSvg null"
-          fill="currentcolor"
-          viewBox={undefined}
-        >
-          <use
-            xlinkHref="#undefined"
-          />
-        </svg>
         <span
           className="textLabel textLabelMobile"
         >
+          <svg
+            aria-hidden={true}
+            className="inlineSvg null"
+            fill="currentcolor"
+            viewBox={undefined}
+          >
+            <use
+              xlinkHref="#undefined"
+            />
+          </svg>
           Search
         </span>
       </a>
@@ -132,19 +132,19 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
         href="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#"
         onClick={[Function]}
       >
-        <svg
-          aria-hidden={true}
-          className="inlineSvg null"
-          fill="currentcolor"
-          viewBox={undefined}
-        >
-          <use
-            xlinkHref="#undefined"
-          />
-        </svg>
         <span
           className="textLabel textLabelMobile"
         >
+          <svg
+            aria-hidden={true}
+            className="inlineSvg null"
+            fill="currentcolor"
+            viewBox={undefined}
+          >
+            <use
+              xlinkHref="#undefined"
+            />
+          </svg>
           Donate
         </span>
       </a>
