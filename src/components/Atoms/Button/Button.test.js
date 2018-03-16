@@ -45,19 +45,17 @@ describe('<Button />', () => {
   it('Handles Input click events', () => {
     const onClick = jest.fn();
     const linkWrapper = shallow(
-      <ButtonInput value={title} onClick={onClick} className={className}>
-        test
-      </ButtonInput>
+      <ButtonInput value={title} onClick={onClick} className={className} />
     );
     linkWrapper.find('input').simulate('click');
     expect(onClick).toHaveBeenCalledTimes(1);
   });
 
-  it('Matches the Link snapshot', () => {
+  it('Matches the Button snapshot', () => {
     const onClick = jest.fn();
     const component = renderer
       .create(
-        <Button title={title} url={url} onClick={onClick} className={className}>
+        <Button title={title} onClick={onClick} className={className}>
           test
         </Button>
       )
@@ -65,13 +63,28 @@ describe('<Button />', () => {
     expect(component).toMatchSnapshot();
   });
 
-  it('Matches the Button snapshot', () => {
+  it('Matches the Button Link snapshot', () => {
     const onClick = jest.fn();
     const component = renderer
       .create(
-        <Button onClick={onClick} className={className}>
+        <ButtonLink
+          title={title}
+          url={url}
+          onClick={onClick}
+          className={className}
+        >
           test
-        </Button>
+        </ButtonLink>
+      )
+      .toJSON();
+    expect(component).toMatchSnapshot();
+  });
+
+  it('Matches the Button Input snapshot', () => {
+    const onClick = jest.fn();
+    const component = renderer
+      .create(
+        <ButtonInput value={title} onClick={onClick} className={className} />
       )
       .toJSON();
     expect(component).toMatchSnapshot();
