@@ -12,10 +12,9 @@ import styles from './Icon.css';
  */
 const Icon = props => {
   const { svg, className, inline, title } = props;
-  const icon = require(`./svg/${svg}.svg`); // eslint-disable-line
   return (
     <svg
-      viewBox={icon.default.viewBox}
+      viewBox={svg.viewBox}
       className={
         inline
           ? `${styles.inlineSvg} ${className && styles[className]}`
@@ -25,14 +24,13 @@ const Icon = props => {
       aria-hidden={props['aria-hidden'] === true ? props['aria-hidden'] : null}
     >
       {title && <title>{title}</title>}
-      <use xlinkHref={`#${icon.default.id}`} />
+      <use xlinkHref={`#${svg.id}`} />
     </svg>
   );
 };
 
 Icon.propTypes = {
-  svg: PropTypes.oneOf(['heart', 'envelope', 'search', 'volume', 'pri', 'play'])
-    .isRequired,
+  svg: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
   className: PropTypes.string,
   inline: PropTypes.bool,
   title: PropTypes.string,

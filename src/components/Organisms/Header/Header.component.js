@@ -8,6 +8,12 @@ import styles from './Header.css';
 import Icon from '../../Atoms/Icon/Icon.component';
 import Dropdown from '../../Molecules/Dropdown/Dropdown.component';
 import DropdownItem from '../../Atoms/DropdownItem/DropdownItem.component';
+// SVGs
+import pri from '../../Atoms/Icon/svg/pri.svg';
+import play from '../../Atoms/Icon/svg/play.svg';
+import envelope from '../../Atoms/Icon/svg/envelope.svg';
+import search from '../../Atoms/Icon/svg/search.svg';
+import heart from '../../Atoms/Icon/svg/heart.svg';
 
 /**
  * Component that renders a link, or a button with a click handler.
@@ -15,14 +21,14 @@ import DropdownItem from '../../Atoms/DropdownItem/DropdownItem.component';
 const Header = () => (
   <header className={styles.siteHeader}>
     <a href="/" className={styles.logo}>
-      <Icon svg="pri" title="PRI" />
+      <Icon svg={pri} title="PRI" />
     </a>
 
     <div className={styles.buttons}>
       <Dropdown
         url="https://www.pri.org/listen"
         title="Listen"
-        icon="play"
+        svg={play}
         className={`${styles.button}`}
         small
       >
@@ -44,7 +50,7 @@ const Header = () => (
       <Dropdown
         url="https://www.pri.org/newsletters"
         title="Newsletters"
-        icon="envelope"
+        svg={envelope}
         className={styles.button}
         small
       >
@@ -72,7 +78,7 @@ const Header = () => (
       <Dropdown
         url="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#"
         title="Search"
-        icon="search"
+        svg={search}
         className={styles.button}
         small
       >
@@ -83,7 +89,7 @@ const Header = () => (
         url="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#"
         title="Donate"
         color="Orange"
-        icon="heart"
+        svg={heart}
         className={styles.button}
         small
       >

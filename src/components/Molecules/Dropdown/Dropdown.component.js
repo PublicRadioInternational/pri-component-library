@@ -21,7 +21,7 @@ export default class Dropdown extends Component {
     onClick: PropTypes.func,
     url: PropTypes.string,
     color: PropTypes.oneOf(['Orange', 'White']),
-    icon: PropTypes.string,
+    svg: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     className: PropTypes.string,
     small: PropTypes.bool
   };
@@ -31,7 +31,7 @@ export default class Dropdown extends Component {
     color: 'White',
     url: null,
     onClick: () => {},
-    icon: null,
+    svg: null,
     className: null,
     small: false
   };
@@ -43,7 +43,7 @@ export default class Dropdown extends Component {
       children,
       color,
       url,
-      icon,
+      svg,
       className,
       small
     } = this.props;
@@ -59,7 +59,7 @@ export default class Dropdown extends Component {
               onClick={onClick}
               small={small}
             >
-              {icon ? <Icon svg={icon} inline aria-hidden /> : null}
+              {svg ? <Icon svg={svg} inline aria-hidden /> : null}
               <span
                 className={`${styles.textLabel} ${small &&
                   styles.textLabelMobile}`}
