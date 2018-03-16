@@ -12,13 +12,13 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       aria-hidden={null}
       className={null}
       fill="currentcolor"
-      viewBox={undefined}
+      viewBox="viewBox"
     >
       <title>
         PRI
       </title>
       <use
-        xlinkHref="#undefined"
+        xlinkHref="#id"
       />
     </svg>
   </a>
@@ -37,10 +37,10 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           aria-hidden={true}
           className="inlineSvg null"
           fill="currentcolor"
-          viewBox={undefined}
+          viewBox="viewBox"
         >
           <use
-            xlinkHref="#undefined"
+            xlinkHref="#id"
           />
         </svg>
         <span
@@ -70,10 +70,10 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           aria-hidden={true}
           className="inlineSvg null"
           fill="currentcolor"
-          viewBox={undefined}
+          viewBox="viewBox"
         >
           <use
-            xlinkHref="#undefined"
+            xlinkHref="#id"
           />
         </svg>
         <span
@@ -103,10 +103,10 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           aria-hidden={true}
           className="inlineSvg null"
           fill="currentcolor"
-          viewBox={undefined}
+          viewBox="viewBox"
         >
           <use
-            xlinkHref="#undefined"
+            xlinkHref="#id"
           />
         </svg>
         <span
@@ -136,10 +136,10 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           aria-hidden={true}
           className="inlineSvg null"
           fill="currentcolor"
-          viewBox={undefined}
+          viewBox="viewBox"
         >
           <use
-            xlinkHref="#undefined"
+            xlinkHref="#id"
           />
         </svg>
         <span

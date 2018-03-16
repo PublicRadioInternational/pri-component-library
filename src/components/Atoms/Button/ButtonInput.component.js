@@ -12,20 +12,18 @@ import Icon from '../Icon/Icon.component';
  * Component that renders an input button with a click handler.
  */
 const ButtonInput = props => {
-  const { onClick, className, value, color, icon, small } = props;
+  const { onClick, className, value, color, svg, small } = props;
   // Generate a class name based on the color.
   const buttonClass = `btn${color}`;
   const buttonMobileClass = `btnMobile${color}`;
 
   return (
     <div className={styles.inputWrap}>
-      {icon ? (
-        <Icon svg={icon} inline aria-hidden className="inputIcon" />
-      ) : null}
+      {svg ? <Icon svg={svg} inline aria-hidden className="inputIcon" /> : null}
       <input
         className={`${
           small ? styles[buttonMobileClass] : styles[buttonClass]
-        } ${className && className} ${styles.inputBtn} ${icon &&
+        } ${className && className} ${styles.inputBtn} ${svg &&
           styles.inputWithIcon}`}
         type="submit"
         onClick={onClick}
@@ -40,7 +38,7 @@ ButtonInput.propTypes = {
   value: PropTypes.string,
   color: PropTypes.oneOf(['Orange', 'White']),
   className: PropTypes.string,
-  icon: PropTypes.string,
+  svg: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   small: PropTypes.bool
 };
 
@@ -49,7 +47,7 @@ ButtonInput.defaultProps = {
   className: null,
   value: null,
   onClick: () => {},
-  icon: null,
+  svg: null,
   small: false
 };
 
