@@ -15,7 +15,7 @@ import DropdownItem from '../../Atoms/DropdownItem/DropdownItem.component';
 const Header = () => (
   <header className={styles.siteHeader}>
     <a href="/" className={styles.logo}>
-      <Icon svg="pri" title="PRI" />
+      <Icon svg="pri" title="PRI" className="disableHover" />
     </a>
 
     <div className={styles.buttons}>

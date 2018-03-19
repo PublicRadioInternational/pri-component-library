@@ -13,7 +13,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
     >
       <svg
         aria-hidden={null}
-        className={null}
+        className="disableHover"
         fill="currentcolor"
         viewBox={undefined}
       >
