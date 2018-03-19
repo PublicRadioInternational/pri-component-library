@@ -36,7 +36,7 @@ const Header = () => (
         <DropdownItem url="https://www.pri.org/ways-listen">
           Ways to Listen
         </DropdownItem>
-        <DropdownItem hr />
+        <DropdownItem isHr />
         <DropdownItem url="https://www.pri.org/shows">
           All Programs & Podcasts
         </DropdownItem>
@@ -53,7 +53,7 @@ const Header = () => (
         <DropdownItem url="https://www.pri.org/get-scan-your-inbox-each-weekday">
           The Scan
         </DropdownItem>
-        <DropdownItem hr />
+        <DropdownItem isHr />
         <DropdownItem heading="Weekly Newsletters" />
         <DropdownItem url="https://www.pri.org/subscribe-across-womens-lives-weekly-newsletter">
           Across Women{"'"}s Lives
@@ -64,7 +64,7 @@ const Header = () => (
         <DropdownItem url="https://www.pri.org/subscribe-safemode-weekly-digest">
           Global Security
         </DropdownItem>
-        <DropdownItem hr />
+        <DropdownItem isHr />
         <DropdownItem url="https://www.pri.org/user/me/newsletters">
           Manage My Newsletters
         </DropdownItem>
