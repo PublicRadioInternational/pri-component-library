@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Search /> Matches the snapshot 1`] = `
+<div
+  className="search"
+>
+  <input
+    className="searchText"
+    placeholder="Search for..."
+    type="text"
+  />
+  <div
+    className="inputWrap"
+  >
+    <input
+      className="btnWhite searchBtn inputBtn null"
+      onClick={[Function]}
+      type="submit"
+      value="Go!"
+    />
+  </div>
+</div>
+`;

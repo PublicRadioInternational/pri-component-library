@@ -8,6 +8,7 @@ import styles from './Header.css';
 import PriLogo from '../../Atoms/Svg/PriLogo.component';
 import Dropdown from '../../Molecules/Dropdown/Dropdown.component';
 import DropdownItem from '../../Atoms/DropdownItem/DropdownItem.component';
+import Search from '../../Molecules/Search/Search.component';
 
 /**
  * Component that renders a link, or a button with a click handler.
@@ -35,7 +36,7 @@ const Header = () => (
         <DropdownItem url="https://www.pri.org/ways-listen">
           Ways to Listen
         </DropdownItem>
-        <DropdownItem />
+        <DropdownItem hr />
         <DropdownItem url="https://www.pri.org/shows">
           All Programs & Podcasts
         </DropdownItem>
@@ -52,7 +53,7 @@ const Header = () => (
         <DropdownItem url="https://www.pri.org/get-scan-your-inbox-each-weekday">
           The Scan
         </DropdownItem>
-        <DropdownItem />
+        <DropdownItem hr />
         <DropdownItem heading="Weekly Newsletters" />
         <DropdownItem url="https://www.pri.org/subscribe-across-womens-lives-weekly-newsletter">
           Across Women{"'"}s Lives
@@ -63,7 +64,7 @@ const Header = () => (
         <DropdownItem url="https://www.pri.org/subscribe-safemode-weekly-digest">
           Global Security
         </DropdownItem>
-        <DropdownItem />
+        <DropdownItem hr />
         <DropdownItem url="https://www.pri.org/user/me/newsletters">
           Manage My Newsletters
         </DropdownItem>
@@ -76,7 +77,9 @@ const Header = () => (
         small
         icon="search"
       >
-        <DropdownItem>Search</DropdownItem>
+        <DropdownItem>
+          <Search />
+        </DropdownItem>
       </Dropdown>
 
       <Dropdown
@@ -98,10 +101,6 @@ const Header = () => (
         </DropdownItem>
         <DropdownItem url="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#">
           Donation FAQ
-        </DropdownItem>
-        <DropdownItem />
-        <DropdownItem url="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#">
-          Manage My Donations
         </DropdownItem>
       </Dropdown>
     </div>
