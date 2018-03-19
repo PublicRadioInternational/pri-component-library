@@ -1,6 +1,10 @@
 /* import breakpoints */
 @value header as bp-header from "../../00_global/breakpoints.css";
 
+.svg {
+  fill: currentcolor;
+}
+
 .inlineSvg {
   display: inline-block;
   margin-right: 8px;
@@ -11,6 +15,7 @@
 
 @media bp-header {
   .inlineSvg {
+    height: 16px;
     width: 16px;
   }
 }
