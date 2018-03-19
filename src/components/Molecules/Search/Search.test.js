@@ -1,6 +1,6 @@
 /**
- * @file Dropdown.test.js
- * Contains tests for Dropdown.component.js.
+ * @file Search.test.js
+ * Contains tests for Search.component.js.
  */
 
 import React from 'react';
