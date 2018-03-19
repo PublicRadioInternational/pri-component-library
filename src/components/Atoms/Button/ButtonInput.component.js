@@ -20,7 +20,7 @@ const ButtonInput = props => {
   return (
     <div className={styles.inputWrap}>
       {icon ? (
-        <Icon icon={icon} inline aria-hidden className="inputIcon" />
+        <Icon name={icon} inline ariaHidden className="inputIcon" />
       ) : null}
       <input
         className={`${

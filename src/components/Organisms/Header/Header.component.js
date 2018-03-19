@@ -5,7 +5,7 @@
 
 import React from 'react';
 import styles from './Header.css';
-import Pri from '../../Atoms/Svg/Pri.component';
+import PriLogo from '../../Atoms/Svg/PriLogo.component';
 import Dropdown from '../../Molecules/Dropdown/Dropdown.component';
 import DropdownItem from '../../Atoms/DropdownItem/DropdownItem.component';
 
@@ -15,7 +15,7 @@ import DropdownItem from '../../Atoms/DropdownItem/DropdownItem.component';
 const Header = () => (
   <header className={styles.siteHeader}>
     <a href="/" className={styles.logo}>
-      <Pri title="PRI" />
+      <PriLogo title="PRI" />
     </a>
 
     <div className={styles.buttons}>

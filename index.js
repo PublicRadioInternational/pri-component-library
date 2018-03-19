@@ -9,7 +9,7 @@ import ButtonInput from './src/components/Atoms/Button/ButtonInput.component';
 import Dropdown from './src/components/Molecules/Dropdown/Dropdown.component';
 import DropdownItem from './src/components/Atoms/DropdownItem/DropdownItem.component';
 import Icons from './src/components/Atoms/Svg/Icons.component';
-import Pri from './src/components/Atoms/Svg/Pri.component';
+import PriLogo from './src/components/Atoms/Svg/PriLogo.component';
 import Header from './src/components/Organisms/Header/Header.component';
 
 export {
@@ -18,7 +18,7 @@ export {
   ButtonLink,
   DropdownItem,
   Icons,
-  Pri,
+  PriLogo,
   Dropdown,
   Header
 }; // eslint-disable-line

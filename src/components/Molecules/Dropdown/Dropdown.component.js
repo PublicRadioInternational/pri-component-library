@@ -59,7 +59,7 @@ export default class Dropdown extends Component {
               onClick={onClick}
               small={small}
             >
-              {icon ? <Icon icon={icon} inline aria-hidden /> : null}
+              {icon ? <Icon name={icon} inline ariaHidden /> : null}
               <span
                 className={`${styles.textLabel} ${small &&
                   styles.textLabelMobile}`}

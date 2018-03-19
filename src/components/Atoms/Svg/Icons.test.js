@@ -10,7 +10,7 @@ import Icon from './Icons.component';
 
 describe('<Icon />', () => {
   it('Matches the Icon snapshot', () => {
-    const component = renderer.create(<Icon icon="heart" />).toJSON();
+    const component = renderer.create(<Icon name="heart" />).toJSON();
     expect(component).toMatchSnapshot();
   });
 });
