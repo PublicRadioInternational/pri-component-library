@@ -5,7 +5,7 @@
 
 import React from 'react';
 import styles from './Header.css';
-import Icon from '../../Atoms/Icon/Icon.component';
+import PriLogo from '../../Atoms/Svg/PriLogo.component';
 import Dropdown from '../../Molecules/Dropdown/Dropdown.component';
 import DropdownItem from '../../Atoms/DropdownItem/DropdownItem.component';
 
@@ -15,16 +15,16 @@ import DropdownItem from '../../Atoms/DropdownItem/DropdownItem.component';
 const Header = () => (
   <header className={styles.siteHeader}>
     <a href="/" className={styles.logo}>
-      <Icon svg="pri" title="PRI" className="disableHover" />
+      <PriLogo title="PRI" className="disableHover" />
     </a>
 
     <div className={styles.buttons}>
       <Dropdown
         url="https://www.pri.org/listen"
         title="Listen"
-        icon="play"
-        className={`${styles.button}`}
+        className={styles.button}
         small
+        icon="play"
       >
         <DropdownItem url="https://www.pri.org/listen">
           Live Stream
@@ -44,9 +44,9 @@ const Header = () => (
       <Dropdown
         url="https://www.pri.org/newsletters"
         title="Newsletters"
-        icon="envelope"
         className={styles.button}
         small
+        icon="envelope"
       >
         <DropdownItem heading="Daily Newsletters" />
         <DropdownItem url="https://www.pri.org/get-scan-your-inbox-each-weekday">
@@ -72,9 +72,9 @@ const Header = () => (
       <Dropdown
         url="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#"
         title="Search"
-        icon="search"
         className={styles.button}
         small
+        icon="search"
       >
         <DropdownItem>Search</DropdownItem>
       </Dropdown>
@@ -83,9 +83,9 @@ const Header = () => (
         url="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#"
         title="Donate"
         color="Orange"
-        icon="heart"
         className={styles.button}
         small
+        icon="heart"
       >
         <DropdownItem url="https://www.pri.org/donate/index.html?utm_source=navigation&utm_medium=website&utm_campaign=donations">
           Give Now

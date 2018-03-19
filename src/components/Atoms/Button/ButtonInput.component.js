@@ -6,7 +6,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Button.css';
-import Icon from '../Icon/Icon.component';
+import Icon from '../Svg/Icons.component';
 
 /**
  * Component that renders an input button with a click handler.
@@ -20,7 +20,7 @@ const ButtonInput = props => {
   return (
     <div className={styles.inputWrap}>
       {icon ? (
-        <Icon svg={icon} inline aria-hidden className="inputIcon" />
+        <Icon name={icon} inline ariaHidden className="inputIcon" />
       ) : null}
       <input
         className={`${

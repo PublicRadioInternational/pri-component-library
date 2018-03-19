@@ -9,7 +9,7 @@ import Downshift from 'downshift';
 import styles from './Dropdown.css';
 import ButtonLink from '../../Atoms/Button/ButtonLink.component';
 import Button from '../../Atoms/Button/Button.component';
-import Icon from '../../Atoms/Icon/Icon.component';
+import Icon from '../../Atoms/Svg/Icons.component';
 
 /**
  * Component that renders a Dropdown menu button.
@@ -59,7 +59,7 @@ export default class Dropdown extends Component {
               onClick={onClick}
               small={small}
             >
-              {icon ? <Icon svg={icon} inline aria-hidden /> : null}
+              {icon ? <Icon name={icon} inline ariaHidden /> : null}
               <span
                 className={`${styles.textLabel} ${small &&
                   styles.textLabelMobile}`}

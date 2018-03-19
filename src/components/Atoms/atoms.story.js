@@ -23,18 +23,13 @@ storiesOf('Atoms/Buttons', module)
       Donate
     </Button>
   ))
-  .add('Icon', () => (
-    <Button onClick={action('button-clicked')} icon="envelope">
-      Newsletters
-    </Button>
-  ))
   .add('Input', () => (
     <ButtonInput onClick={action('button-clicked')} value="Submit" />
   ))
   .add('Input with Icon', () => (
     <ButtonInput
       onClick={action('button-clicked')}
-      icon="envelope"
       value="Submit"
+      icon="heart"
     />
   ));
