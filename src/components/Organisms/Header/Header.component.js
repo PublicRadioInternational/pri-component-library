@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Header.css';
 import PriLogo from '../../Atoms/Svg/PriLogo.component';
 import Dropdown from '../../Molecules/Dropdown/Dropdown.component';
@@ -13,7 +14,7 @@ import Search from '../../Molecules/Search/Search.component';
 /**
  * Component that renders a link, or a button with a click handler.
  */
-const Header = () => (
+const Header = ({ baseUrl }) => (
   <header className={styles.siteHeader}>
     <a href="/" className={styles.logo}>
       <PriLogo title="PRI" />
@@ -21,51 +22,51 @@ const Header = () => (
 
     <div className={styles.buttons}>
       <Dropdown
-        url="https://www.pri.org/listen"
+        url={`${baseUrl}/listen`}
         title="Listen"
         className={styles.button}
         small
         icon="play"
       >
-        <DropdownItem url="https://www.pri.org/listen">
-          Live Stream
-        </DropdownItem>
-        <DropdownItem url="https://www.pri.org/podcasts-program">
+        <DropdownItem url={`${baseUrl}/listen`}>Live Stream</DropdownItem>
+        <DropdownItem url={`${baseUrl}/podcasts-program`}>
           Podcasts by Program
         </DropdownItem>
-        <DropdownItem url="https://www.pri.org/ways-listen">
+        <DropdownItem url={`${baseUrl}/ways-listen`}>
           Ways to Listen
         </DropdownItem>
         <DropdownItem isHr />
-        <DropdownItem url="https://www.pri.org/shows">
+        <DropdownItem url={`${baseUrl}/shows`}>
           All Programs & Podcasts
         </DropdownItem>
       </Dropdown>
 
       <Dropdown
-        url="https://www.pri.org/newsletters"
+        url={`${baseUrl}/newsletters`}
         title="Newsletters"
         className={styles.button}
         small
         icon="envelope"
       >
         <DropdownItem heading="Daily Newsletters" />
-        <DropdownItem url="https://www.pri.org/get-scan-your-inbox-each-weekday">
+        <DropdownItem url={`${baseUrl}/get-scan-your-inbox-each-weekday`}>
           The Scan
         </DropdownItem>
         <DropdownItem isHr />
         <DropdownItem heading="Weekly Newsletters" />
-        <DropdownItem url="https://www.pri.org/subscribe-across-womens-lives-weekly-newsletter">
+        <DropdownItem
+          url={`${baseUrl}/subscribe-across-womens-lives-weekly-newsletter`}
+        >
           Across Women{"'"}s Lives
         </DropdownItem>
-        <DropdownItem url="https://www.pri.org/subscribe-global-nation-newsletter">
+        <DropdownItem url={`${baseUrl}/subscribe-global-nation-newsletter`}>
           Global Nation
         </DropdownItem>
-        <DropdownItem url="https://www.pri.org/subscribe-safemode-weekly-digest">
+        <DropdownItem url={`${baseUrl}/subscribe-safemode-weekly-digest`}>
           Global Security
         </DropdownItem>
         <DropdownItem isHr />
-        <DropdownItem url="https://www.pri.org/user/me/newsletters">
+        <DropdownItem url={`${baseUrl}/user/me/newsletters`}>
           Manage My Newsletters
         </DropdownItem>
       </Dropdown>
@@ -78,7 +79,7 @@ const Header = () => (
         icon="search"
       >
         <DropdownItem>
-          <Search />
+          <Search baseUrl={baseUrl} />
         </DropdownItem>
       </Dropdown>
 
@@ -90,7 +91,9 @@ const Header = () => (
         small
         icon="heart"
       >
-        <DropdownItem url="https://www.pri.org/donate/index.html?utm_source=navigation&utm_medium=website&utm_campaign=donations">
+        <DropdownItem
+          url={`${baseUrl}/donate/index.html?utm_source=navigation&utm_medium=website&utm_campaign=donations`}
+        >
           Give Now
         </DropdownItem>
         <DropdownItem url="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#">
@@ -106,5 +109,13 @@ const Header = () => (
     </div>
   </header>
 );
+
+Header.propTypes = {
+  baseUrl: PropTypes.string
+};
+
+Header.defaultProps = {
+  baseUrl: 'https://www.pri.org'
+};
 
 export default Header;

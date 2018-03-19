@@ -11,4 +11,6 @@ import Header from './Header/Header.component';
 /**
  * Add storybook definition for Dropdowns.
  */
-storiesOf('Organisms/Header', module).add('Default', () => <Header />);
+storiesOf('Organisms/Header', module).add('Default', () => (
+  <Header baseUrl="https://www.pri.org" />
+));

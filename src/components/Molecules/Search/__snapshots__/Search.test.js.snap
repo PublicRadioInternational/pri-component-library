@@ -1,11 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Search /> Matches the snapshot 1`] = `
-<div
+<form
   className="search"
+  onSubmit={[Function]}
 >
   <input
     className="searchText"
+    onChange={[Function]}
     placeholder="Search for..."
     type="text"
   />
@@ -19,5 +21,5 @@ exports[`<Search /> Matches the snapshot 1`] = `
       value="Go!"
     />
   </div>
-</div>
+</form>
 `;

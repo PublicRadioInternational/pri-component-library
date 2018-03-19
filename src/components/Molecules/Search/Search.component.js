@@ -3,22 +3,65 @@
  * Exports a search form component.
  */
 
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styles from './Search.css';
 import ButtonInput from '../../Atoms/Button/ButtonInput.component';
 
 /**
  * Component that renders a Search form.
  */
-const Search = () => (
-  <div className={styles.search}>
-    <input
-      type="text"
-      className={styles.searchText}
-      placeholder="Search for..."
-    />
-    <ButtonInput value="Go!" className={styles.searchBtn} />
-  </div>
-);
+export default class Search extends Component {
+  static defaultProps = {
+    baseUrl: PropTypes.string
+  };
 
-export default Search;
+  static propTypes = {
+    baseUrl: 'https://www.pri.org'
+  };
+
+  state = {
+    searchFieldValue: null
+  };
+
+  /**
+   * Handles field update actions.
+   *
+   * @param {object} event - Event object from action.
+   */
+  handleFieldUpdate = event => {
+    event.persist();
+    this.setState(() => ({
+      searchFieldValue: event.target.value || null
+    }));
+  };
+
+  /**
+   * Handles search form submit.
+   *
+   * @param {object} event - Event object from action.
+   */
+  handleFormSubmit = event => {
+    event.preventDefault();
+    const { searchFieldValue } = this.state;
+    const { baseUrl } = this.props;
+
+    // TODO: Once the search page is built out in the new frontend, this should
+    // be adjusted such that it uses the correct routing methods.
+    window.location.href = `${baseUrl}/search/node?search_api_views_fulltext=${searchFieldValue}`;
+  };
+
+  render() {
+    return (
+      <form className={styles.search} onSubmit={this.handleFormSubmit}>
+        <input
+          type="text"
+          className={styles.searchText}
+          placeholder="Search for..."
+          onChange={this.handleFieldUpdate}
+        />
+        <ButtonInput value="Go!" className={styles.searchBtn} />
+      </form>
+    );
+  }
+}
