@@ -6,12 +6,17 @@
 @value fonts: "../../00_global/fonts.css";
 @value heading from fonts;
 
+.dropdownItem,
+.dropdownHeading,
+.dropdownSpace {
+  padding: 0.4rem 1.5rem;
+}
+
 .dropdownItem {
   clear: both;
   color: blue;
   display: block;
   font: 400 0.875em heading;
-  padding: 0.4rem 1.5rem;
   width: 77%;
   border: none;
   cursor: pointer;
@@ -28,11 +33,14 @@
   font: 800 0.875em heading;
   font-weight: bold;
   margin: 0;
-  padding: 0.4rem 1.5rem;
 }
 
 .dropdownHr {
   border: none;
   height: 1px;
   background-color: grayLighter;
+}
+
+.dropdownForm {
+  width: 225px;
 }

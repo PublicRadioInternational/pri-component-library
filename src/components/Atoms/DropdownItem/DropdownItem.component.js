@@ -15,18 +15,20 @@ export default class DropdownItem extends Component {
     children: PropTypes.node,
     url: PropTypes.string,
     heading: PropTypes.string,
-    onClick: PropTypes.func
+    onClick: PropTypes.func,
+    isHr: PropTypes.bool
   };
 
   static defaultProps = {
     children: [],
     url: null,
     heading: null,
-    onClick: () => {}
+    onClick: () => {},
+    isHr: false
   };
 
   render() {
-    const { children, url, onClick, heading } = this.props;
+    const { children, url, onClick, heading, isHr } = this.props;
     if (url) {
       return (
         <a className={styles.dropdownItem} href={url} onClick={onClick}>
@@ -35,7 +37,13 @@ export default class DropdownItem extends Component {
       );
     } else if (heading) {
       return <h3 className={styles.dropdownHeading}>{heading}</h3>;
+    } else if (isHr) {
+      return <hr className={styles.dropdownHr} />;
     }
-    return <hr className={styles.dropdownHr} />;
+    return (
+      <div className={`${styles.dropdownSpace} ${styles.dropdownForm}`}>
+        {children}
+      </div>
+    );
   }
 }

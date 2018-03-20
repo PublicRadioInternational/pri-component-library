@@ -11,6 +11,7 @@ import Dropdown from './Dropdown/Dropdown.component';
 import DropdownItem from '../Atoms/DropdownItem/DropdownItem.component';
 
 import Menu from './Menu/Menu.component';
+import Search from './Search/Search.component';
 
 /**
  * Add storybook definition for Molecules.
@@ -44,6 +45,9 @@ storiesOf('Molecules/Dropdown', module)
     </Dropdown>
   ));
 
+/**
+ * Add storybook definition for Menus.
+ */
 storiesOf('Molecules/Menu', module).add('Simple', () => (
   <Menu
     menuItems={[
@@ -52,3 +56,8 @@ storiesOf('Molecules/Menu', module).add('Simple', () => (
     ]}
   />
 ));
+
+/**
+ * Add storybook definition for Search.
+ */
+storiesOf('Molecules/Search', module).add('Default', () => <Search />);

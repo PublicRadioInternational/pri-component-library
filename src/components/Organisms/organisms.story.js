@@ -12,6 +12,8 @@ import Footer from './Footer/Footer.component';
 /**
  * Add storybook definition for Organisms.
  */
-storiesOf('Organisms/Header', module).add('Site Header', () => <Header />);
+storiesOf('Organisms/Header', module).add('Default', () => (
+  <Header baseUrl="https://www.pri.org" />
+));
 
 storiesOf('Organisms/Footer', module).add('Site Footer', () => <Footer />);
