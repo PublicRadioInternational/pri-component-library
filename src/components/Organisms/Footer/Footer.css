@@ -21,13 +21,17 @@
   font: 500 0.75em copy;
   line-height: 2em;
   color: grayLight;
-  padding: 2rem;
+  padding: 1rem;
+}
+
+.sponsor {
+  margin: 0 6px;
 }
 
 .footerBtm {
   border-top: 1px solid #ddd;
   color: grayLight;
   font: 500 0.75em copy;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }

@@ -7,6 +7,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Footer.css';
 
+import PriLogo from '../../Atoms/Svg/PriLogo.component';
 import List from '../../Molecules/List/List.component';
 
 /**
@@ -16,18 +17,11 @@ const Footer = ({ baseUrl }) => (
   <footer className={styles.siteFooter}>
     <section className={styles.sponsors}>
       <a href="/">
-        <img
-          className={styles.menuImg}
-          height="48"
-          width="466"
-          alt="Public Radio International"
-          title="Public Radio International"
-          typeof="foaf:Image"
-          src="https://media.pri.org/s3fs-public/styles/large/public/different-voice.png"
-        />
+        <PriLogo fillColor="#aaa" title="PRI" className="disableHover" />
       </a>
       <p>Major funding provided by:</p>
       <a
+        className={styles.sponsor}
         href="http://www.gatesfoundation.org/"
         target="_blank"
         rel="noopener noreferrer"
@@ -42,6 +36,7 @@ const Footer = ({ baseUrl }) => (
         />
       </a>
       <a
+        className={styles.sponsor}
         href="https://www.macfound.org/"
         target="_blank"
         rel="noopener noreferrer"
