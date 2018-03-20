@@ -5,34 +5,34 @@
 @value fonts: "../../00_global/fonts.css";
 @value copy from fonts;
 
-.menu {
+.list {
   margin: 6px 0;
   padding: 0;
 }
 
-.menuItem {
+.listItem {
   display: inline;
   padding: 0 0 0 6px;
   text-align: center;
 }
 
-.menuItem::after {
+.listItem::after {
   color: grayLight;
   content: ' | ';
   font-size: 13px;
 }
 
-.menuItem:last-child::after {
+.listItem:last-child::after {
   content: '';
 }
 
-.menuLink {
+.listLink {
   color: grayLight;
   font: 13px copy;
   padding-right: 6px;
   text-decoration: none;
 }
 
-.menuLink:hover {
+.listLink:hover {
   color: orange;
 }

@@ -1,24 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Menu /> Matches the Menu snapshot 1`] = `
+exports[`<List /> Matches the List snapshot 1`] = `
 <ul
-  className="menu"
+  className="list"
 >
   <li
-    className="menuItem"
+    className="listItem"
   >
     <a
-      className="menuLink"
+      className="listLink"
       href="http://google.com"
     >
       Google
     </a>
   </li>
   <li
-    className="menuItem"
+    className="listItem"
   >
     <a
-      className="menuLink"
+      className="listLink"
       href="http://yahoo.com"
     >
       Yahoo

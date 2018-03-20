@@ -10,7 +10,7 @@ import { action } from '@storybook/addon-actions';
 import Dropdown from './Dropdown/Dropdown.component';
 import DropdownItem from '../Atoms/DropdownItem/DropdownItem.component';
 
-import Menu from './Menu/Menu.component';
+import List from './List/List.component';
 import Search from './Search/Search.component';
 
 /**
@@ -46,11 +46,11 @@ storiesOf('Molecules/Dropdown', module)
   ));
 
 /**
- * Add storybook definition for Menus.
+ * Add storybook definition for Lists.
  */
-storiesOf('Molecules/Menu', module).add('Simple', () => (
-  <Menu
-    menuItems={[
+storiesOf('Molecules/List', module).add('Simple', () => (
+  <List
+    listItems={[
       { name: 'Google', url: 'http://google.com' },
       { name: 'Yahoo', url: 'http://yahoo.com' }
     ]}

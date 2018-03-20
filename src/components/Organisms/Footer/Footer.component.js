@@ -7,7 +7,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Footer.css';
 
-import Menu from '../../Molecules/Menu/Menu.component';
+import List from '../../Molecules/List/List.component';
 
 /**
  * Component that renders the footer.
@@ -59,8 +59,8 @@ const Footer = ({ baseUrl }) => (
     </section>
 
     <section className={styles.footerBtm}>
-      <Menu
-        menuItems={[
+      <List
+        listItems={[
           { name: 'About PRI', url: `${baseUrl}/about-pri` },
           { name: 'Contact Us', url: `${baseUrl}/priorg-contact` },
           { name: 'Donate', url: `${baseUrl}/team` },
