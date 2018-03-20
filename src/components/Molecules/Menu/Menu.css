@@ -1,0 +1,18 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value grayLight from colors;
+
+.menu {
+  margin: 6px 0;
+}
+
+.menuitem {
+  display: inline;
+  padding: 0 0 0 6px;
+  text-align: center;
+}
+
+.menuLink {
+  color: grayLight;
+  padding-right: 6px;
+}

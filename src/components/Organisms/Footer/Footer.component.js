@@ -6,6 +6,8 @@
 import React from 'react';
 import styles from './Footer.css';
 
+import Menu from '../../Molecules/Menu/Menu.component';
+
 /**
  * Component that renders the footer.
  */
@@ -53,6 +55,8 @@ const Footer = () => (
       </a>
       <p>A Partner of OZY Media News</p>
     </section>
+
+    <Menu />
   </footer>
 );
 

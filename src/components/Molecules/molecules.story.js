@@ -10,8 +10,10 @@ import { action } from '@storybook/addon-actions';
 import Dropdown from './Dropdown/Dropdown.component';
 import DropdownItem from '../Atoms/DropdownItem/DropdownItem.component';
 
+import Menu from './Menu/Menu.component';
+
 /**
- * Add storybook definition for Dropdowns.
+ * Add storybook definition for Molecules.
  */
 storiesOf('Molecules/Dropdown', module)
   .add('Default', () => (
@@ -41,3 +43,5 @@ storiesOf('Molecules/Dropdown', module)
       </DropdownItem>
     </Dropdown>
   ));
+
+storiesOf('Organisms/Menu', module).add('Default', () => <Menu />);

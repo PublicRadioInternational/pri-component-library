@@ -54,5 +54,8 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
       A Partner of OZY Media News
     </p>
   </section>
+  <ul
+    className="menu"
+  />
 </footer>
 `;
