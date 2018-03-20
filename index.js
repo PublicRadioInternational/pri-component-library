@@ -11,6 +11,7 @@ import DropdownItem from './src/components/Atoms/DropdownItem/DropdownItem.compo
 import Icons from './src/components/Atoms/Svg/Icons.component';
 import PriLogo from './src/components/Atoms/Svg/PriLogo.component';
 import Header from './src/components/Organisms/Header/Header.component';
+import Home from './src/components/Pages/Home/Home.component';
 
 export {
   Button,
@@ -20,5 +21,6 @@ export {
   Icons,
   PriLogo,
   Dropdown,
-  Header
+  Header,
+  Home
 }; // eslint-disable-line
