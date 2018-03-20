@@ -10,6 +10,8 @@ import { action } from '@storybook/addon-actions';
 import Dropdown from './Dropdown/Dropdown.component';
 import DropdownItem from '../Atoms/DropdownItem/DropdownItem.component';
 
+import Search from './Search/Search.component';
+
 /**
  * Add storybook definition for Dropdowns.
  */
@@ -41,3 +43,8 @@ storiesOf('Molecules/Dropdown', module)
       </DropdownItem>
     </Dropdown>
   ));
+
+/**
+ * Add storybook definition for Dropdowns.
+ */
+storiesOf('Molecules/Search', module).add('Default', () => <Search />);
