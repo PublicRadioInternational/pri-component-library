@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<List /> Matches the List snapshot 1`] = `
+<ul
+  className="list"
+>
+  <li
+    className="listItem"
+  >
+    <a
+      className="listLink"
+      href="http://google.com"
+    >
+      Google
+    </a>
+  </li>
+  <li
+    className="listItem"
+  >
+    <a
+      className="listLink"
+      href="http://yahoo.com"
+    >
+      Yahoo
+    </a>
+  </li>
+</ul>
+`;

@@ -1,6 +1,6 @@
 /**
- * @file Button.test.js
- * Contains tests for Button.component.js.
+ * @file Header.test.js
+ * Contains tests for Header.component.js.
  */
 
 import React from 'react';
