@@ -1,0 +1,19 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value grayLight, grayLighter from colors;
+/* import fonts... */
+@value fonts: "../../00_global/fonts.css";
+@value copy from fonts;
+
+.siteFooter {
+}
+
+.sponsors {
+  background: grayLighter;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  font: 500 0.75em copy;
+  line-height: 2em;
+  color: grayLight;
+  padding: 2rem;
+}
