@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Footer.css';
 
 import Menu from '../../Molecules/Menu/Menu.component';
@@ -11,7 +12,7 @@ import Menu from '../../Molecules/Menu/Menu.component';
 /**
  * Component that renders the footer.
  */
-const Footer = () => (
+const Footer = ({ baseUrl }) => (
   <footer className={styles.siteFooter}>
     <section className={styles.sponsors}>
       <a href="/">
@@ -56,8 +57,32 @@ const Footer = () => (
       <p>A Partner of OZY Media News</p>
     </section>
 
-    <Menu />
+    <section className={styles.footerBtm}>
+      <Menu
+        menuItems={[
+          { name: 'About PRI', url: `${baseUrl}/about-pri` },
+          { name: 'Contact Us', url: `${baseUrl}/priorg-contact` },
+          { name: 'Donate', url: `${baseUrl}/team` },
+          {
+            name: 'Meet the PRI.org Team',
+            url: `${baseUrl}/donate/general?utm_source=footerNav&utm_medium=website&utm_campaign=donations`
+          },
+          { name: 'Privacy policy', url: `${baseUrl}/privacy` },
+          { name: 'Terms of use', url: `${baseUrl}/terms` }
+        ]}
+      />
+
+      <p>&copy; 2018 Public Radio International</p>
+    </section>
   </footer>
 );
+
+Footer.propTypes = {
+  baseUrl: PropTypes.string
+};
+
+Footer.defaultProps = {
+  baseUrl: 'https://www.pri.org'
+};
 
 export default Footer;

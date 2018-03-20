@@ -3,5 +3,26 @@
 exports[`<Menu /> Matches the Menu snapshot 1`] = `
 <ul
   className="menu"
-/>
+>
+  <li
+    className="menuItem"
+  >
+    <a
+      className="menuLink"
+      href="http://google.com"
+    >
+      Google
+    </a>
+  </li>
+  <li
+    className="menuItem"
+  >
+    <a
+      className="menuLink"
+      href="http://yahoo.com"
+    >
+      Yahoo
+    </a>
+  </li>
+</ul>
 `;

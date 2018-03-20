@@ -54,8 +54,76 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
       A Partner of OZY Media News
     </p>
   </section>
-  <ul
-    className="menu"
-  />
+  <section
+    className="footerBtm"
+  >
+    <ul
+      className="menu"
+    >
+      <li
+        className="menuItem"
+      >
+        <a
+          className="menuLink"
+          href="https://www.pri.org/about-pri"
+        >
+          About PRI
+        </a>
+      </li>
+      <li
+        className="menuItem"
+      >
+        <a
+          className="menuLink"
+          href="https://www.pri.org/priorg-contact"
+        >
+          Contact Us
+        </a>
+      </li>
+      <li
+        className="menuItem"
+      >
+        <a
+          className="menuLink"
+          href="https://www.pri.org/team"
+        >
+          Donate
+        </a>
+      </li>
+      <li
+        className="menuItem"
+      >
+        <a
+          className="menuLink"
+          href="https://www.pri.org/donate/general?utm_source=footerNav&utm_medium=website&utm_campaign=donations"
+        >
+          Meet the PRI.org Team
+        </a>
+      </li>
+      <li
+        className="menuItem"
+      >
+        <a
+          className="menuLink"
+          href="https://www.pri.org/privacy"
+        >
+          Privacy policy
+        </a>
+      </li>
+      <li
+        className="menuItem"
+      >
+        <a
+          className="menuLink"
+          href="https://www.pri.org/terms"
+        >
+          Terms of use
+        </a>
+      </li>
+    </ul>
+    <p>
+      © 2018 Public Radio International
+    </p>
+  </section>
 </footer>
 `;

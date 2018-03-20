@@ -6,14 +6,22 @@
 @value copy from fonts;
 
 .siteFooter {
+  background: grayLighter;
 }
 
 .sponsors {
-  background: grayLighter;
   border-top: 1px solid #ddd;
   text-align: center;
   font: 500 0.75em copy;
   line-height: 2em;
   color: grayLight;
   padding: 2rem;
+}
+
+.footerBtm {
+  border-top: 1px solid #ddd;
+  color: grayLight;
+  font: 500 0.75em copy;
+  padding: 2rem;
+  text-align: center;
 }

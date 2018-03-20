@@ -10,7 +10,16 @@ import Menu from './Menu.component';
 
 describe('<Menu />', () => {
   it('Matches the Menu snapshot', () => {
-    const component = renderer.create(<Menu />).toJSON();
+    const component = renderer
+      .create(
+        <Menu
+          menuItems={[
+            { name: 'Google', url: 'http://google.com' },
+            { name: 'Yahoo', url: 'http://yahoo.com' }
+          ]}
+        />
+      )
+      .toJSON();
     expect(component).toMatchSnapshot();
   });
 });

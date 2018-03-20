@@ -1,18 +1,37 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value grayLight from colors;
+@value grayLight, orange from colors;
+/* import fonts... */
+@value fonts: "../../00_global/fonts.css";
+@value copy from fonts;
 
 .menu {
   margin: 6px 0;
 }
 
-.menuitem {
+.menuItem {
   display: inline;
   padding: 0 0 0 6px;
   text-align: center;
 }
 
+.menuItem::after {
+  color: grayLight;
+  content: ' | ';
+  font-size: 13px;
+}
+
+.menuItem:last-child::after {
+  content: '';
+}
+
 .menuLink {
   color: grayLight;
+  font: 13px copy;
   padding-right: 6px;
+  text-decoration: none;
+}
+
+.menuLink:hover {
+  color: orange;
 }
