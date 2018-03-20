@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> Matches the Header snapshot 1`] = `
+<footer
+  className="siteFooter"
+>
+  <section
+    className="sponsors"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="Public Radio International"
+        height="48"
+        src="https://media.pri.org/s3fs-public/styles/large/public/different-voice.png"
+        title="Public Radio International"
+        typeof="foaf:Image"
+        width="466"
+      />
+    </a>
+    <p>
+      Major funding provided by:
+    </p>
+    <a
+      href="http://www.gatesfoundation.org/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Bill &amp; Melinda Gates Foundation"
+        height="52"
+        src="https://cdn1.pri.org/sites/all/themes/pri/images/logo-gates-color.jpg"
+        title="Bill &amp; Melinda Gates Foundation"
+        typeof="foaf:Image"
+        width="149"
+      />
+    </a>
+    <a
+      href="https://www.macfound.org/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="MacArthur Foundation"
+        height="52"
+        src="https://media.pri.org/s3fs-public/logo-macarthur-color.jpg"
+        title="MacArthur Foundation"
+        typeof="foaf:Image"
+        width="149"
+      />
+    </a>
+    <p>
+      A Partner of OZY Media News
+    </p>
+  </section>
+</footer>
+`;
