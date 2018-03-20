@@ -1,6 +1,6 @@
 /**
- * @file atoms.story.js
- * Story configuration for Atoms.
+ * @file organisms.story.js
+ * Story configuration for Organisms.
  */
 
 import React from 'react';
@@ -10,7 +10,7 @@ import Header from './Header/Header.component';
 import Footer from './Footer/Footer.component';
 
 /**
- * Add storybook definition for Dropdowns.
+ * Add storybook definition for Organisms.
  */
 storiesOf('Organisms/Header', module).add('Site Header', () => <Header />);
 

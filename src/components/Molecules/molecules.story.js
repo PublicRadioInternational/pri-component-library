@@ -1,6 +1,6 @@
 /**
- * @file atoms.story.js
- * Story configuration for Atoms.
+ * @file molecules.story.js
+ * Story configuration for Molecules.
  */
 
 import React from 'react';
