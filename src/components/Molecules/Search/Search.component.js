@@ -12,11 +12,11 @@ import ButtonInput from '../../Atoms/Button/ButtonInput.component';
  * Component that renders a Search form.
  */
 export default class Search extends Component {
-  static defaultProps = {
+  static propTypes = {
     baseUrl: PropTypes.string
   };
 
-  static propTypes = {
+  static defaultProps = {
     baseUrl: 'https://www.pri.org'
   };
 
