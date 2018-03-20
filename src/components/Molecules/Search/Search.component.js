@@ -20,9 +20,14 @@ export default class Search extends Component {
     baseUrl: 'https://www.pri.org'
   };
 
-  state = {
-    searchFieldValue: null
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchFieldValue: null
+    };
+    this.handleFieldUpdate = this.handleFieldUpdate.bind(this);
+    this.handleFormSubmit = this.handleFormSubmit.bind(this);
+  }
 
   /**
    * Handles field update actions.
