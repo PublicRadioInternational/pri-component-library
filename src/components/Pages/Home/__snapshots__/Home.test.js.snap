@@ -190,6 +190,38 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
   <div
     className="drawerBg"
   />
+  <main
+    className="mainContainer"
+  >
+    <div
+      className="mainList"
+    >
+      <p>
+        Main List
+      </p>
+    </div>
+    <div
+      className="latestContent"
+    >
+      <p>
+        Latest Content
+      </p>
+    </div>
+    <div
+      className="callouts"
+    >
+      <p>
+        Callouts
+      </p>
+    </div>
+    <div
+      className="mainList2"
+    >
+      <p>
+        Main List Two
+      </p>
+    </div>
+  </main>
   <footer
     className="siteFooter"
   >

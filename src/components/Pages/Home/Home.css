@@ -5,6 +5,9 @@
 @value fonts: "../../00_global/fonts.css";
 @value copy from fonts;
 
+/* import breakpoints */
+@value header as bp-header from "../../00_global/breakpoints.css";
+
 .outerWrap {
   background: grayLighter;
   color: grayDark;
@@ -23,4 +26,27 @@
   opacity: 0.001;
   transform: translateZ(0);
   visibility: hidden;
+}
+
+/* Main Content */
+@media bp-header {
+  .mainContainer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .mainList {
+    grid-column: 2 / span 1;
+  }
+
+  .latestContent {
+    grid-column: 3 / span 1;
+  }
+
+  .callouts {
+    grid-column: 1 / span 1;
+    grid-row: row1-start / 1;
+  }
 }
