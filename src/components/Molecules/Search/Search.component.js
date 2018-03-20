@@ -53,7 +53,9 @@ export default class Search extends Component {
 
     // TODO: Once the search page is built out in the new frontend, this should
     // be adjusted such that it uses the correct routing methods.
-    window.location.href = `${baseUrl}/search/node?search_api_views_fulltext=${searchFieldValue}`;
+    window.location.assign(
+      `${baseUrl}/search/node?search_api_views_fulltext=${searchFieldValue}`
+    );
   };
 
   render() {

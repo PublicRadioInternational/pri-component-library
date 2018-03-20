@@ -9,19 +9,20 @@ import { mount } from 'enzyme';
 import Search from './Search.component';
 
 describe('<Search />', () => {
-  // it('Handles form submit events', () => {
-  //   const onSubmit = jest.fn();
-  //   const wrapper = mount(<Search />);
-  //   wrapper.simulate('click');
-  //   expect(onSubmit).toHaveBeenCalledTimes(1);
-  // });
-
   it('Handles input onChange events', () => {
     const wrapper = mount(<Search />);
     const input = wrapper.find('input[type="text"]');
     input.instance().value = 'test';
     input.simulate('change');
     expect(wrapper.state('searchFieldValue')).toBe('test');
+  });
+
+  it('Handles form submit events', () => {
+    window.location.assign = jest.fn();
+    const wrapper = mount(<Search />);
+    const button = wrapper.find('form');
+    button.simulate('submit');
+    expect(window.location.assign).toHaveBeenCalledTimes(1);
   });
 
   it('Matches the snapshot', () => {
