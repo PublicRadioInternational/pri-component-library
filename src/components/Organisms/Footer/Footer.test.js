@@ -9,7 +9,7 @@ import renderer from 'react-test-renderer';
 import Footer from './Footer.component';
 
 describe('<Footer />', () => {
-  it('Matches the Header snapshot', () => {
+  it('Matches the Footer snapshot', () => {
     const component = renderer.create(<Footer />).toJSON();
     expect(component).toMatchSnapshot();
   });
