@@ -12,6 +12,7 @@ import Icons from './src/components/Atoms/Svg/Icons.component';
 import PriLogo from './src/components/Atoms/Svg/PriLogo.component';
 import Search from './src/components/Molecules/Search/Search.component';
 import Header from './src/components/Organisms/Header/Header.component';
+import Home from './src/components/Pages/Home/Home.component';
 
 export {
   Button,
@@ -22,5 +23,6 @@ export {
   PriLogo,
   Dropdown,
   Search,
-  Header
+  Header,
+  Home
 }; // eslint-disable-line

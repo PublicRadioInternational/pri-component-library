@@ -12,12 +12,12 @@ import DropdownItem from '../../Atoms/DropdownItem/DropdownItem.component';
 import Search from '../../Molecules/Search/Search.component';
 
 /**
- * Component that renders a link, or a button with a click handler.
+ * Component that renders the header.
  */
 const Header = ({ baseUrl }) => (
   <header className={styles.siteHeader}>
     <a href="/" className={styles.logo}>
-      <PriLogo title="PRI" />
+      <PriLogo title="PRI" className="disableHover" />
     </a>
 
     <div className={styles.buttons}>
