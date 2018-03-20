@@ -17,6 +17,7 @@ const Footer = ({ baseUrl }) => (
     <section className={styles.sponsors}>
       <a href="/">
         <img
+          className={styles.menuImg}
           height="48"
           width="466"
           alt="Public Radio International"

@@ -44,7 +44,7 @@ storiesOf('Molecules/Dropdown', module)
     </Dropdown>
   ));
 
-storiesOf('Molecules/Menu', module).add('Default', () => (
+storiesOf('Molecules/Menu', module).add('Simple', () => (
   <Menu
     menuItems={[
       { name: 'Google', url: 'http://google.com' },

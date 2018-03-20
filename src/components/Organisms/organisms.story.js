@@ -12,6 +12,6 @@ import Footer from './Footer/Footer.component';
 /**
  * Add storybook definition for Dropdowns.
  */
-storiesOf('Organisms/Header', module).add('Default', () => <Header />);
+storiesOf('Organisms/Header', module).add('Site Header', () => <Header />);
 
-storiesOf('Organisms/Footer', module).add('Default', () => <Footer />);
+storiesOf('Organisms/Footer', module).add('Site Footer', () => <Footer />);

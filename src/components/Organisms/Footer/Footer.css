@@ -9,6 +9,12 @@
   background: grayLighter;
 }
 
+.menuImg {
+  height: auto;
+  max-width: 466px;
+  width: 100%;
+}
+
 .sponsors {
   border-top: 1px solid #ddd;
   text-align: center;
