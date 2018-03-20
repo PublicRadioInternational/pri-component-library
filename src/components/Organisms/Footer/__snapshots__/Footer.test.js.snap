@@ -49,7 +49,7 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
       <img
         alt="Bill &amp; Melinda Gates Foundation"
         height="52"
-        src="https://cdn1.pri.org/sites/all/themes/pri/images/logo-gates-color.jpg"
+        src="test-file-stub"
         title="Bill &amp; Melinda Gates Foundation"
         typeof="foaf:Image"
         width="149"
@@ -64,7 +64,7 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
       <img
         alt="MacArthur Foundation"
         height="52"
-        src="https://media.pri.org/s3fs-public/logo-macarthur-color.jpg"
+        src="test-file-stub"
         title="MacArthur Foundation"
         typeof="foaf:Image"
         width="149"

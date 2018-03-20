@@ -10,6 +10,9 @@ import styles from './Footer.css';
 import PriLogo from '../../Atoms/Svg/PriLogo.component';
 import List from '../../Molecules/List/List.component';
 
+import gatesSponsorImg from './images/gates.jpg';
+import macarthurSponsorImg from './images/macarthur.jpg';
+
 /**
  * Component that renders the footer.
  */
@@ -32,7 +35,7 @@ const Footer = ({ baseUrl }) => (
           alt="Bill &amp;amp; Melinda Gates Foundation"
           title="Bill &amp;amp; Melinda Gates Foundation"
           typeof="foaf:Image"
-          src="https://cdn1.pri.org/sites/all/themes/pri/images/logo-gates-color.jpg"
+          src={gatesSponsorImg}
         />
       </a>
       <a
@@ -47,7 +50,7 @@ const Footer = ({ baseUrl }) => (
           alt="MacArthur Foundation"
           title="MacArthur Foundation"
           typeof="foaf:Image"
-          src="https://media.pri.org/s3fs-public/logo-macarthur-color.jpg"
+          src={macarthurSponsorImg}
         />
       </a>
       <p>A Partner of OZY Media News</p>
