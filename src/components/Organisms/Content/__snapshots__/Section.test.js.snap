@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Section /> Matches the Section snapshot 1`] = `
+<section
+  className="className && null"
+/>
+`;

@@ -12,6 +12,8 @@ import Search from './src/components/Molecules/Search/Search.component';
 import DropdownItem from './src/components/Atoms/DropdownItem/DropdownItem.component';
 import Icons from './src/components/Atoms/Svg/Icons.component';
 import PriLogo from './src/components/Atoms/Svg/PriLogo.component';
+import Aside from './src/components/Organisms/Content/Aside.component';
+import Section from './src/components/Organisms/Content/Section.component';
 import Footer from './src/components/Organisms/Footer/Footer.component';
 import Header from './src/components/Organisms/Header/Header.component';
 import Main from './src/components/Organisms/Main/Main.component';
@@ -27,6 +29,8 @@ export {
   Dropdown,
   List,
   Search,
+  Aside,
+  Section,
   Footer,
   Header,
   Main,

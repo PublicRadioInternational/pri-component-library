@@ -4,33 +4,33 @@ exports[`<Main /> Matches the Main content area snapshot 1`] = `
 <main
   className="mainContainer"
 >
-  <div
-    className="mainList"
+  <section
+    className="className && mainList"
   >
     <p>
       Main List
     </p>
-  </div>
-  <div
-    className="latestContent"
+  </section>
+  <aside
+    className="className && latestContent"
   >
     <p>
       Latest Content
     </p>
-  </div>
-  <div
-    className="callouts"
+  </aside>
+  <aside
+    className="className && callouts"
   >
     <p>
       Callouts
     </p>
-  </div>
-  <div
-    className="mainList2"
+  </aside>
+  <section
+    className="className && mainList2"
   >
     <p>
       Main List Two
     </p>
-  </div>
+  </section>
 </main>
 `;

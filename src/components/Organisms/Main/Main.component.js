@@ -6,23 +6,26 @@
 import React from 'react';
 import styles from './Main.css';
 
+import Aside from '../Content/Aside.component';
+import Section from '../Content/Section.component';
+
 /**
  * Component that renders the main content area.
  */
 const Main = () => (
   <main className={styles.mainContainer}>
-    <div className={styles.mainList}>
+    <Section className={styles.mainList}>
       <p>Main List</p>
-    </div>
-    <div className={styles.latestContent}>
+    </Section>
+    <Aside className={styles.latestContent}>
       <p>Latest Content</p>
-    </div>
-    <div className={styles.callouts}>
+    </Aside>
+    <Aside className={styles.callouts}>
       <p>Callouts</p>
-    </div>
-    <div className={styles.mainList2}>
+    </Aside>
+    <Section className={styles.mainList2}>
       <p>Main List Two</p>
-    </div>
+    </Section>
   </main>
 );
 
