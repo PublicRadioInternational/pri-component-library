@@ -22,6 +22,11 @@ import Home from './src/components/Pages/Home/Home.component';
 import resetStyles from './src/components/00_global/reset.css';
 import globalStyles from './src/components/00_global/global.css';
 
+const Styles = {
+  resetStyles,
+  globalStyles
+};
+
 export {
   Button,
   ButtonInput,
@@ -38,8 +43,5 @@ export {
   Header,
   Main,
   Home,
-  styles: {
-    resetStyles,
-    globalStyles
-  }
+  Styles
 }; // eslint-disable-line
