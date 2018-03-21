@@ -3,8 +3,7 @@
 @value grayLighter, grayDark from colors;
 
 /* import breakpoints */
-@value header as bp-header from "../../00_global/breakpoints.css";
-@value medium as bp-medium from "../../00_global/breakpoints.css";
+@value header as bp-header, medium as bp-medium, maxWidth as bp-maxWidth from "../../00_global/breakpoints.css";
 
 .drawerBg {
   background: rgba(0, 0, 0, 0.5);
@@ -24,6 +23,12 @@
 .mainContainer {
   margin: 1rem 1rem 2rem;
   max-width: 1200px;
+}
+
+@media bp-maxWidth {
+  .mainContainer {
+    margin: 1rem auto 2rem;
+  }
 }
 
 .mainList,
