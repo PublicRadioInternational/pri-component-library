@@ -1,9 +1,12 @@
-@define-mixin hidden {
-  height: 0;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  visibility: hidden;
-  width: 0;
+/* import colors... */
+@value colors: "./colors.css";
+@value grayLighter, grayDark from colors;
+
+body {
+  background: grayLighter;
+  color: grayDark;
+  font: 400 1rem 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial,
+    'Nimbus Sans L', sans-serif;
+  line-height: 1.5;
+  text-align: left;
 }

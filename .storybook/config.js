@@ -5,6 +5,9 @@
 
 import { configure } from '@storybook/react';
 
+import styles from '../src/components/00_global/reset.css';
+import globalStyles from '../src/components/00_global/global.css';
+
 /**
  * Loads story files.
  */

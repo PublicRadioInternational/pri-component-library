@@ -1,9 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
 @value grayLight, orange from colors;
-/* import fonts... */
-@value fonts: "../../00_global/fonts.css";
-@value copy from fonts;
 
 .list {
   margin: 6px 0;
@@ -28,7 +25,7 @@
 
 .listLink {
   color: grayLight;
-  font: 13px copy;
+  font-size: 13px;
   padding-right: 6px;
   text-decoration: none;
 }

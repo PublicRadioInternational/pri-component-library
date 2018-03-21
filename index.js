@@ -14,6 +14,7 @@ import Icons from './src/components/Atoms/Svg/Icons.component';
 import PriLogo from './src/components/Atoms/Svg/PriLogo.component';
 import Footer from './src/components/Organisms/Footer/Footer.component';
 import Header from './src/components/Organisms/Header/Header.component';
+import Main from './src/components/Organisms/Main/Main.component';
 import Home from './src/components/Pages/Home/Home.component';
 
 export {
@@ -28,5 +29,6 @@ export {
   Search,
   Footer,
   Header,
+  Main,
   Home
 }; // eslint-disable-line
