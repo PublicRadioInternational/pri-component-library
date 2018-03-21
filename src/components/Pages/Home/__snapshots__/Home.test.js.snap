@@ -185,9 +185,6 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       </div>
     </div>
   </header>
-  <div
-    className="drawerBg"
-  />
   <main
     className="mainContainer"
   >
