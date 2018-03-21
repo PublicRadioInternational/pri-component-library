@@ -13,7 +13,7 @@ import Footer from '../../Organisms/Footer/Footer.component';
  * Component that renders the homepage.
  */
 const Home = () => (
-  <div className={styles.outerWrap}>
+  <div>
     <Header />
     <div className={styles.drawerBg} />
     <main className={styles.mainContainer}>

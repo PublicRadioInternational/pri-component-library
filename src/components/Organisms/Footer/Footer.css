@@ -25,7 +25,8 @@
 .footerBtm {
   border-top: 1px solid #ddd;
   color: grayLight;
-  font: 500 0.75em copy;
+  font-size: 0.75em;
+  font-weight: 500;
   padding: 1rem;
   text-align: center;
 }
