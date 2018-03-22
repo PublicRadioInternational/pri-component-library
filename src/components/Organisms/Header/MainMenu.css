@@ -1,6 +1,10 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value gray, grayLighter, orange from colors;
+@value gray, grayLighter, orange, orangeDark from colors;
+
+/* import fonts... */
+@value fonts: "../../00_global/fonts.css";
+@value heading from fonts;
 
 .wrapper {
   overflow-y: auto;
@@ -22,14 +26,46 @@
   cursor: pointer;
   display: flex;
   float: right;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   padding: 0;
 }
 
 .headerText {
   clear: both;
+  padding-top: 20px;
 }
 
 .headerLogo {
-  width: 50%;
+  width: 36%;
+}
+
+/* Buttons */
+.btnGroup {
+  display: flex;
+  margin: 14px 0 2px;
+}
+
+.btnHeaderLeft,
+.btnHeaderMiddle,
+.btnHeaderRight {
+  font: normal 0.875rem/1.5 heading;
+  letter-spacing: 0;
+  padding: 0.475rem 0.5rem;
+  text-transform: none;
+}
+
+.btnHeaderLeft {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btnHeaderMiddle {
+  border-left: 1px solid orangeDark;
+  border-radius: 0;
+}
+
+.btnHeaderRight {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-left: 1px solid orangeDark;
 }

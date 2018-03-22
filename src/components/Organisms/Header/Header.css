@@ -64,7 +64,7 @@
   top: 0;
   transform: translateX(-100%);
   transition: 0.3s;
-  width: 300px;
+  width: 360px;
   z-index: 100;
 }
 

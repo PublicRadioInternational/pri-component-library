@@ -10,21 +10,24 @@ import styles from './MainMenu.css';
 
 import Icon from '../../Atoms/Svg/Icons.component';
 import PriLogo from '../../Atoms/Svg/PriLogo.component';
+import ButtonLink from '../../Atoms/Button/ButtonLink.component';
 
 /**
  * Component that renders the main site menu.
  */
 export default class MainMenu extends Component {
   static propTypes = {
-    toggleOpen: PropTypes.func
+    toggleOpen: PropTypes.func,
+    baseUrl: PropTypes.string
   };
 
   static defaultProps = {
-    toggleOpen: false
+    toggleOpen: false,
+    baseUrl: 'https://www.pri.org/'
   };
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -33,51 +36,49 @@ export default class MainMenu extends Component {
   }
 
   render() {
+    const { baseUrl } = this.props;
     return (
       <div className={styles.mainMenu}>
         <div className={styles.wrapper}>
           <div className={styles.header}>
             <button className={styles.closeMenu} onClick={this.handleClick}>
-              <Icon name="left" inline className="inlineLink" />
+              <Icon name="left" inline ariaHidden className="inlineLink" />
               Close
             </button>
             <div className={styles.headerText}>
               <div className={styles.headerLogo}>
                 <PriLogo fillColor="#fff" title="PRI" className="maxWidth" />
               </div>
-              <h3>
-                <span className="pri icon-pri" aria-label="PRI" />
-              </h3>
               <p>
                 Our mission is to serve audiences as a distinctive content
                 source for information, insights and cultural experiences
                 essential to living in our diverse, interconnected world.
               </p>
-              <div className="btn-group">
-                <a
-                  href="https://www.pri.org/about-pri"
-                  className="btn btn-danger"
+              <div className={styles.btnGroup}>
+                <ButtonLink
+                  color="Orange"
+                  className={styles.btnHeaderLeft}
+                  url={`${baseUrl}about-pri`}
                 >
-                  <span
-                    className="oi oi-info"
-                    title="info"
-                    aria-hidden="true"
-                  />{' '}
+                  <Icon name="info" inline ariaHidden />
                   Our Story
-                </a>
-                <a
-                  href="https://www.pri.org/priorg-contact"
-                  className="btn btn-danger"
+                </ButtonLink>
+                <ButtonLink
+                  color="Orange"
+                  className={styles.btnHeaderMiddle}
+                  url={`${baseUrl}priorg-contact`}
                 >
-                  <span className="oi oi-envelope-closed" aria-hidden="true" />{' '}
+                  <Icon name="envelope" inline ariaHidden />
                   Contact Us
-                </a>
-                <a
-                  href="https://www.pri.org/donate/index.html?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations"
-                  className="btn btn-danger"
+                </ButtonLink>
+                <ButtonLink
+                  color="Orange"
+                  className={styles.btnHeaderRight}
+                  url={`${baseUrl}donate/index.html?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations`}
                 >
-                  <span className="oi oi-heart" aria-hidden="true" /> Donate
-                </a>
+                  <Icon name="heart" inline ariaHidden />
+                  Donate
+                </ButtonLink>
               </div>
             </div>
           </div>

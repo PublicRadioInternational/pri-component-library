@@ -26,7 +26,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               onClick={[Function]}
             >
               <svg
-                aria-hidden={null}
+                aria-hidden={true}
                 aria-labelledby={null}
                 className="inlineSvg inlineLink svg"
                 height={28}
@@ -73,50 +73,71 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   />
                 </svg>
               </div>
-              <h3>
-                <span
-                  aria-label="PRI"
-                  className="pri icon-pri"
-                />
-              </h3>
               <p>
                 Our mission is to serve audiences as a distinctive content source for information, insights and cultural experiences essential to living in our diverse, interconnected world.
               </p>
               <div
-                className="btn-group"
+                className="btnGroup"
               >
                 <a
-                  className="btn btn-danger"
+                  className="btnOrange btnHeaderLeft"
                   href="https://www.pri.org/about-pri"
+                  onClick={[Function]}
                 >
-                  <span
-                    aria-hidden="true"
-                    className="oi oi-info"
-                    title="info"
-                  />
-                   
+                  <svg
+                    aria-hidden={true}
+                    aria-labelledby={null}
+                    className="inlineSvg null svg"
+                    height={28}
+                    version={1.1}
+                    viewBox="0 0 28 28"
+                    width={28}
+                  >
+                    <path
+                      d="M16.247 4.733c0 1.684 1.271 2.825 2.84 2.825s2.842-1.142 2.842-2.825c0-1.685-1.272-2.826-2.842-2.826-1.568 0-2.84 1.141-2.84 2.826zM10.096 14.375c0 0.334-0.061 1.163 0.008 1.662l2.479-2.983c0.513-0.562 1.106-0.955 1.409-0.849s0.47 0.463 0.371 0.795l-4.103 13.59c-0.473 1.588 0.421 3.148 2.599 3.504 3.189 0 5.084-2.158 6.948-4.955 0-0.334 0.111-1.213 0.044-1.713l-2.479 2.982c-0.514 0.562-1.151 0.955-1.455 0.85-0.28-0.098-0.444-0.41-0.389-0.721l4.132-13.653c0.344-1.734-0.59-3.312-2.564-3.514-2.076 0.001-5.136 2.209-7 5.005z"
+                    />
+                  </svg>
                   Our Story
                 </a>
                 <a
-                  className="btn btn-danger"
+                  className="btnOrange btnHeaderMiddle"
                   href="https://www.pri.org/priorg-contact"
+                  onClick={[Function]}
                 >
-                  <span
-                    aria-hidden="true"
-                    className="oi oi-envelope-closed"
-                  />
-                   
+                  <svg
+                    aria-hidden={true}
+                    aria-labelledby={null}
+                    className="inlineSvg null svg"
+                    height={28}
+                    version={1.1}
+                    viewBox="0 0 28 28"
+                    width={28}
+                  >
+                    <path
+                      d="M23.031 14.266l0.609 0.797c0.172 0.219 0.125 0.516-0.078 0.688-1.563 1.219-5.156 3.984-5.313 4.109-1.109 0.906-2.609 2.156-4.234 2.141h-0.031c-1.625 0-3.125-1.234-4.234-2.141-0.172-0.141-3.641-2.812-5.172-4-0.219-0.172-0.266-0.469-0.094-0.688l0.578-0.812c0.172-0.234 0.5-0.281 0.719-0.094 1.062 0.828 2.562 1.984 4.781 3.687 0.781 0.594 2.328 2.047 3.422 2.047h0.031c1.094 0 2.641-1.453 3.422-2.047 2.297-1.766 3.828-2.938 4.891-3.781 0.219-0.172 0.531-0.125 0.703 0.094zM26 25.5v-14.5c-1.563-1.453-1.328-1.328-8.563-6.922-0.781-0.609-2.328-2.078-3.422-2.078h-0.031c-1.094 0-2.641 1.469-3.422 2.078-7.234 5.594-7 5.469-8.563 6.922v14.5c0 0.266 0.234 0.5 0.5 0.5h23c0.266 0 0.5-0.234 0.5-0.5zM28 11v14.5c0 1.375-1.125 2.5-2.5 2.5h-23c-1.375 0-2.5-1.125-2.5-2.5v-14.5c0-0.562 0.234-1.094 0.641-1.469 3.203-2.969 6.891-5.547 9.109-7.375 1.094-0.906 2.609-2.156 4.234-2.156h0.031c1.625 0 3.141 1.25 4.234 2.156 2.063 1.703 5.984 4.469 9.109 7.375 0.406 0.375 0.641 0.906 0.641 1.469z"
+                    />
+                  </svg>
                   Contact Us
                 </a>
                 <a
-                  className="btn btn-danger"
-                  href="https://www.pri.org/donate/index.html?utm_source=navigation&utm_medium=website&utm_campaign=donations"
+                  className="btnOrange btnHeaderRight"
+                  href="https://www.pri.org/donate/index.html?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations"
+                  onClick={[Function]}
                 >
-                  <span
-                    aria-hidden="true"
-                    className="oi oi-heart"
-                  />
-                   Donate
+                  <svg
+                    aria-hidden={true}
+                    aria-labelledby={null}
+                    className="inlineSvg null svg"
+                    height={28}
+                    version={1.1}
+                    viewBox="0 0 28 28"
+                    width={28}
+                  >
+                    <path
+                      d="M14 26c-0.25 0-0.5-0.094-0.688-0.281l-9.75-9.406c-0.125-0.109-3.563-3.25-3.563-7 0-4.578 2.797-7.313 7.469-7.313 2.734 0 5.297 2.156 6.531 3.375 1.234-1.219 3.797-3.375 6.531-3.375 4.672 0 7.469 2.734 7.469 7.313 0 3.75-3.437 6.891-3.578 7.031l-9.734 9.375c-0.187 0.187-0.438 0.281-0.688 0.281z"
+                    />
+                  </svg>
+                  Donate
                 </a>
               </div>
             </div>
