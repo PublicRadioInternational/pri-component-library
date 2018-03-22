@@ -38,6 +38,13 @@ const Icon = props => {
         );
       case 'play':
         return <path d="M6 4l20 12-20 12z" />;
+      case 'menu':
+        return (
+          <path
+            fill="currentcolor"
+            d="M3 5h18v2.016h-18v-2.016z M3 12.984v-1.969h18v1.969h-18z M3 19v-2.016h18v2.016h-18z"
+          />
+        );
       default:
         return null;
     }
@@ -65,8 +72,14 @@ const Icon = props => {
 };
 
 Icon.propTypes = {
-  name: PropTypes.oneOf(['heart', 'envelope', 'search', 'volume', 'play'])
-    .isRequired,
+  name: PropTypes.oneOf([
+    'heart',
+    'envelope',
+    'search',
+    'volume',
+    'play',
+    'menu'
+  ]).isRequired,
   title: PropTypes.string,
   className: PropTypes.string,
   inline: PropTypes.bool,

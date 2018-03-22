@@ -1,3 +1,6 @@
+/* import breakpoints */
+@value small as bp-small from "../../00_global/breakpoints.css";
+
 .siteHeader {
   background-color: white;
   border-bottom: 3px solid #ddd;
@@ -6,17 +9,22 @@
   padding: 0.5rem 1rem;
 }
 
-.logo {
-  align-self: center;
-  width: 113px;
-}
-
 .buttons {
   display: flex;
-  justify-content: flex-end;
-  width: 83%;
 }
 
 .button {
   margin-left: 0.75em;
 }
+
+.newsletterBtn {
+  display: none;
+}
+
+@media bp-small {
+  .newsletterBtn {
+    display: flex;
+  }
+}
+
+/* Menu */

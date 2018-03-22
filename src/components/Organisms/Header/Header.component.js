@@ -6,6 +6,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Header.css';
+import Icon from '../../Atoms/Svg/Icons.component';
 import PriLogo from '../../Atoms/Svg/PriLogo.component';
 import Dropdown from '../../Molecules/Dropdown/Dropdown.component';
 import DropdownItem from '../../Atoms/DropdownItem/DropdownItem.component';
@@ -16,9 +17,14 @@ import Search from '../../Molecules/Search/Search.component';
  */
 const Header = ({ baseUrl }) => (
   <header className={styles.siteHeader}>
-    <a href="/" className={styles.logo}>
-      <PriLogo title="PRI" className="disableHover" />
-    </a>
+    <div>
+      <span className={styles.menuBtn}>
+        <Icon name="menu" className="menuIcon" />
+      </span>
+      <a href="/" className={styles.logo}>
+        <PriLogo title="PRI" className="siteLogo" />
+      </a>
+    </div>
 
     <div className={styles.buttons}>
       <Dropdown
@@ -44,7 +50,7 @@ const Header = ({ baseUrl }) => (
       <Dropdown
         url={`${baseUrl}/newsletters`}
         title="Newsletters"
-        className={styles.button}
+        className={`${styles.button} ${styles.newsletterBtn}`}
         small
         icon="envelope"
       >
