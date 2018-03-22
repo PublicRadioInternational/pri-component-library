@@ -12,8 +12,8 @@ import styles from './MainMenu.css';
  */
 const MainMenu = () => (
   <div className={styles.mainMenu}>
-    <div className="content">
-      <div className="drawer-header">
+    <div className={styles.wrapper}>
+      <div className={styles.header}>
         <button className="close-drawer">
           <span className="oi oi-chevron-left" aria-label="close menu" /> Close
         </button>

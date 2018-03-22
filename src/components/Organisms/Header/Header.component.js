@@ -33,6 +33,10 @@ export default class Header extends Component {
     const { baseUrl } = this.props;
     return (
       <header className={styles.siteHeader}>
+        <button
+          className={`${styles.bg} ${this.state.isMenuOpen && styles.bgOpen}`}
+          onClick={this.handleClick}
+        />
         <div
           className={`${styles.mainMenu} ${this.state.isMenuOpen &&
             styles.mainMenuOpen}`}

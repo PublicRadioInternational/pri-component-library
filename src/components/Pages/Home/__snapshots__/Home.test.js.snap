@@ -5,6 +5,10 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
   <header
     className="siteHeader"
   >
+    <button
+      className="bg false"
+      onClick={[Function]}
+    />
     <div
       className="mainMenu false"
     >
@@ -12,10 +16,10 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
         className="mainMenu"
       >
         <div
-          className="content"
+          className="wrapper"
         >
           <div
-            className="drawer-header"
+            className="header"
           >
             <button
               className="close-drawer"

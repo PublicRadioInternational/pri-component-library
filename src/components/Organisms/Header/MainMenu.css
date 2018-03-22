@@ -1,0 +1,15 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value gray, grayLighter, orange from colors;
+
+.wrapper {
+  overflow-y: auto;
+  position: relative;
+}
+
+.header {
+  background-color: gray;
+  border-top: 3px solid orange;
+  padding: 15px 15px 20px;
+  color: grayLighter;
+}

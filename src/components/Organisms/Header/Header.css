@@ -28,21 +28,45 @@
 }
 
 /* Menu */
+.bg {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  height: 100%;
+  left: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -99;
+  transform: translateZ(0);
+  visibility: hidden;
+}
+
+.bgOpen {
+  visibility: visible;
+  z-index: 99;
+}
+
 .menuBtn {
   background: none;
   border: none;
+  height: 33px;
+  margin-right: 11px;
   padding: 0;
   position: relative;
-  top: 5px;
+  top: 3px;
+  width: 36px;
 }
 
 .mainMenu {
-  left: -300px;
   position: fixed;
   top: 0;
+  transform: translateX(-110%);
+  transition: 0.3s;
   width: 300px;
+  z-index: 100;
 }
 
 .mainMenuOpen {
-  left: 0;
+  transform: translateX(0);
 }
