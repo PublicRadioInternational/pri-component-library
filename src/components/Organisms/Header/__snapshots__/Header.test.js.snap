@@ -22,12 +22,14 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
         >
           <button
             className="close-drawer"
+            onClick={[Function]}
           >
             <span
               aria-label="close menu"
               className="oi oi-chevron-left"
             />
-             Close
+             
+            Close
           </button>
           <div
             className="text"

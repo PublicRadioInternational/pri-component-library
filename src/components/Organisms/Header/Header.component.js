@@ -20,10 +20,10 @@ export default class Header extends Component {
   constructor(props) {
     super(props);
     this.state = { isMenuOpen: false };
-    this.handleClick = this.handleClick.bind(this);
+    this.toggleOpen = this.toggleOpen.bind(this);
   }
 
-  handleClick() {
+  toggleOpen() {
     this.setState(prevState => ({
       isMenuOpen: !prevState.isMenuOpen
     }));
@@ -35,16 +35,16 @@ export default class Header extends Component {
       <header className={styles.siteHeader}>
         <button
           className={`${styles.bg} ${this.state.isMenuOpen && styles.bgOpen}`}
-          onClick={this.handleClick}
+          onClick={this.toggleOpen}
         />
         <div
           className={`${styles.mainMenu} ${this.state.isMenuOpen &&
             styles.mainMenuOpen}`}
         >
-          <MainMenu />
+          <MainMenu toggleOpen={this.toggleOpen} />
         </div>
         <div>
-          <button className={styles.menuBtn} onClick={this.handleClick}>
+          <button className={styles.menuBtn} onClick={this.toggleOpen}>
             <Icon name="menu" className="menuIcon" />
           </button>
           <a href="/" className={styles.logo}>
