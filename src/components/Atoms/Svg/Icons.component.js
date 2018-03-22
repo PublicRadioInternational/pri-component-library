@@ -45,6 +45,10 @@ const Icon = props => {
             d="M3 5h18v2.016h-18v-2.016z M3 12.984v-1.969h18v1.969h-18z M3 19v-2.016h18v2.016h-18z"
           />
         );
+      case 'left':
+        return (
+          <path d="M14.414 5.586c-0.78-0.781-2.048-0.781-2.828 0l-6.415 6.414 6.415 6.414c0.39 0.391 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828l-3.585-3.586 3.585-3.586c0.781-0.781 0.781-2.047 0-2.828z" />
+        );
       default:
         return null;
     }
@@ -78,7 +82,8 @@ Icon.propTypes = {
     'search',
     'volume',
     'play',
-    'menu'
+    'menu',
+    'left'
   ]).isRequired,
   title: PropTypes.string,
   className: PropTypes.string,

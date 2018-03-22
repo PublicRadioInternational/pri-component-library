@@ -8,6 +8,9 @@ import PropTypes from 'prop-types';
 
 import styles from './MainMenu.css';
 
+import Icon from '../../Atoms/Svg/Icons.component';
+import PriLogo from '../../Atoms/Svg/PriLogo.component';
+
 /**
  * Component that renders the main site menu.
  */
@@ -34,11 +37,14 @@ export default class MainMenu extends Component {
       <div className={styles.mainMenu}>
         <div className={styles.wrapper}>
           <div className={styles.header}>
-            <button className="close-drawer" onClick={this.handleClick}>
-              <span className="oi oi-chevron-left" aria-label="close menu" />{' '}
+            <button className={styles.closeMenu} onClick={this.handleClick}>
+              <Icon name="left" inline className="inlineLink" />
               Close
             </button>
-            <div className="text">
+            <div className={styles.headerText}>
+              <div className={styles.headerLogo}>
+                <PriLogo fillColor="#fff" title="PRI" className="maxWidth" />
+              </div>
               <h3>
                 <span className="pri icon-pri" aria-label="PRI" />
               </h3>

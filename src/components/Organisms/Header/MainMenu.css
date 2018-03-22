@@ -13,3 +13,23 @@
   padding: 15px 15px 20px;
   color: grayLighter;
 }
+
+.closeMenu {
+  align-items: center;
+  background: none;
+  border: none;
+  color: grayLighter;
+  cursor: pointer;
+  display: flex;
+  float: right;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.headerText {
+  clear: both;
+}
+
+.headerLogo {
+  width: 50%;
+}

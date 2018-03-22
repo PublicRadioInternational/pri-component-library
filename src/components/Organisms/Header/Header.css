@@ -59,9 +59,10 @@
 }
 
 .mainMenu {
+  left: 0;
   position: fixed;
   top: 0;
-  transform: translateX(-110%);
+  transform: translateX(-100%);
   transition: 0.3s;
   width: 300px;
   z-index: 100;
