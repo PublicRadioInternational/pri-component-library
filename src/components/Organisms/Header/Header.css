@@ -28,3 +28,21 @@
 }
 
 /* Menu */
+.menuBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  position: relative;
+  top: 5px;
+}
+
+.mainMenu {
+  left: -300px;
+  position: fixed;
+  top: 0;
+  width: 300px;
+}
+
+.mainMenuOpen {
+  left: 0;
+}

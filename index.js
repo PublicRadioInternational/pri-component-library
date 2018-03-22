@@ -16,6 +16,7 @@ import Aside from './src/components/Organisms/Content/Aside.component';
 import Section from './src/components/Organisms/Content/Section.component';
 import Footer from './src/components/Organisms/Footer/Footer.component';
 import Header from './src/components/Organisms/Header/Header.component';
+import MainMenu from './src/components/Organisms/Header/MainMenu.component';
 import Main from './src/components/Organisms/Main/Main.component';
 import Home from './src/components/Pages/Home/Home.component';
 
@@ -41,6 +42,7 @@ export {
   Section,
   Footer,
   Header,
+  MainMenu,
   Main,
   Home,
   Styles
