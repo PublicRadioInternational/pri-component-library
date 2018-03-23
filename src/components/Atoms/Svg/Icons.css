@@ -7,63 +7,9 @@
 
 .inlineSvg {
   display: inline-block;
+  height: 16px;
   margin-right: 8px;
   position: relative;
   top: 2px;
-  width: 21px;
-}
-
-@media bp-small {
-  .inlineSvg {
-    width: 24px;
-  }
-}
-
-@media bp-header {
-  .inlineSvg {
-    height: 16px;
-    width: 16px;
-  }
-}
-
-.inlineLink {
-  height: 20px;
-  margin: 0;
-  width: 20px;
-}
-
-.inputIcon {
-  cursor: pointer;
-  left: 10px;
-  margin-top: -9px;
-  position: absolute;
-  top: 50%;
-}
-
-.maxWidth {
-  max-width: 100%;
-}
-
-/* Specific Icons */
-.siteLogo {
-  pointer-events: none;
-  position: relative;
-  top: 2px;
-  width: 123px;
-}
-
-.menuIcon {
-  color: #4b4b4b;
-  cursor: pointer;
-  height: 35px;
-  float: left;
-  width: 41px;
-}
-
-.menuIcon:hover {
-  color: black;
-}
-
-.menuIcon:active {
-  opacity: 0.8;
+  width: 16px;
 }

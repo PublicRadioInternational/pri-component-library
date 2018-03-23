@@ -61,10 +61,8 @@ const Icon = props => {
     <svg
       className={
         inline
-          ? `${styles.inlineSvg} ${className && styles[className]} ${
-              styles.svg
-            }`
-          : className && styles[className]
+          ? `${styles.inlineSvg} ${className && className} ${styles.svg}`
+          : className && className
       }
       height={height}
       width={width}

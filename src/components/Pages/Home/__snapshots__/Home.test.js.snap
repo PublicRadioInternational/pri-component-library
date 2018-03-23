@@ -1175,7 +1175,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <svg
             aria-hidden={true}
             aria-labelledby={null}
-            className="inlineSvg null svg"
+            className="inlineSvg mobileSmallIcon svg"
             height={28}
             version={1.1}
             viewBox="0 0 28 28"
@@ -1211,7 +1211,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <svg
             aria-hidden={true}
             aria-labelledby={null}
-            className="inlineSvg null svg"
+            className="inlineSvg mobileSmallIcon svg"
             height={28}
             version={1.1}
             viewBox="0 0 28 28"
@@ -1247,7 +1247,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <svg
             aria-hidden={true}
             aria-labelledby={null}
-            className="inlineSvg null svg"
+            className="inlineSvg mobileSmallIcon svg"
             height={28}
             version={1.1}
             viewBox="0 0 28 28"
@@ -1283,7 +1283,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <svg
             aria-hidden={true}
             aria-labelledby={null}
-            className="inlineSvg null svg"
+            className="inlineSvg mobileSmallIcon svg"
             height={28}
             version={1.1}
             viewBox="0 0 28 28"

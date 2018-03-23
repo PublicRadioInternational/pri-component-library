@@ -42,12 +42,21 @@ export default class MainMenu extends Component {
         <div className={styles.wrapper}>
           <div className={styles.header}>
             <button className={styles.closeMenu} onClick={this.handleClick}>
-              <Icon name="left" inline ariaHidden className="inlineLink" />
+              <Icon
+                name="left"
+                inline
+                ariaHidden
+                className={styles.inlineLink}
+              />
               Close
             </button>
             <div className={styles.headerText}>
               <div className={styles.headerLogo}>
-                <PriLogo fillColor="#fff" title="PRI" className="maxWidth" />
+                <PriLogo
+                  fillColor="#fff"
+                  title="PRI"
+                  className={styles.maxWidth}
+                />
               </div>
               <p>
                 Our mission is to serve audiences as a distinctive content

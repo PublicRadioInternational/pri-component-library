@@ -45,10 +45,10 @@ export default class Header extends Component {
         </div>
         <div>
           <button className={styles.menuBtn} onClick={this.toggleOpen}>
-            <Icon name="menu" className="menuIcon" />
+            <Icon name="menu" className={styles.menuIcon} />
           </button>
           <a href="/" className={styles.logo}>
-            <PriLogo title="PRI" className="siteLogo" />
+            <PriLogo title="PRI" className={styles.siteLogo} />
           </a>
         </div>
 
@@ -57,6 +57,7 @@ export default class Header extends Component {
             url={`${baseUrl}/listen`}
             title="Listen"
             className={styles.button}
+            iconClass={styles.mobileSmallIcon}
             small
             icon="play"
           >
@@ -77,6 +78,7 @@ export default class Header extends Component {
             url={`${baseUrl}/newsletters`}
             title="Newsletters"
             className={`${styles.button} ${styles.newsletterBtn}`}
+            iconClass={styles.mobileSmallIcon}
             small
             icon="envelope"
           >
@@ -107,6 +109,7 @@ export default class Header extends Component {
             url="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#"
             title="Search"
             className={styles.button}
+            iconClass={styles.mobileSmallIcon}
             small
             icon="search"
           >
@@ -120,6 +123,7 @@ export default class Header extends Component {
             title="Donate"
             color="Orange"
             className={styles.button}
+            iconClass={styles.mobileSmallIcon}
             small
             icon="heart"
           >
