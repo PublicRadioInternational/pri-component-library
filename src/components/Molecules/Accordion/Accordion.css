@@ -1,0 +1,124 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value whiteDark, gray, grayLighter, grayDark, orange, orangeDark, blue, yellow, green from colors;
+
+/* import fonts... */
+@value fonts: "../../00_global/fonts.css";
+@value heading from fonts;
+
+.accordionItem {
+  border-left: 3px solid orange;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.accordionItem:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordionItemBlue {
+  border-left-color: blue;
+}
+
+.accordionItemYellow {
+  border-left-color: yellow;
+}
+
+.accordionItemGreen {
+  border-left-color: green;
+}
+
+.accordionItemOrange {
+  border-left-color: orange;
+}
+
+.accordionTop {
+  cursor: pointer;
+}
+
+.accordionTopHeading {
+  margin-bottom: 0;
+}
+
+.accordionTopLink {
+  background: whiteDark;
+  color: grayDark;
+  display: block;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.accordionTopLink:hover {
+  background: blue;
+  color: white;
+}
+
+.iconDown {
+  fill: currentcolor;
+  float: right;
+  margin-top: -5px;
+  transition: transform 300ms ease-out;
+  transform: rotate(-90deg);
+}
+
+.iconUp {
+  margin-top: 0;
+  transform: rotate(90deg);
+}
+
+.accordionContent {
+  display: none;
+}
+
+.accordionContentOpen {
+  display: block;
+}
+
+.accordionContentMenu {
+  margin: 0;
+  padding: 0;
+}
+
+.accordionContentMenuItem {
+  border-bottom: 1px dotted grayLighter;
+  display: block;
+  list-style: none;
+  line-height: 1.1;
+  padding: 0;
+  text-align: left;
+}
+
+.accordionContentMenuItem::after {
+  content: '';
+}
+
+.accordionContentMenuLink {
+  display: block;
+  font: 0.875em heading;
+  padding: 10px 15px;
+}
+
+.accordionContentMenuLink:hover {
+  background-color: blue;
+  color: white;
+}
+
+.accordionTopLinkYellow:hover,
+.accordionContentMenuLinkYellow:hover {
+  background: yellow;
+  color: inherit;
+}
+
+.accordionTopLinkOrange:hover,
+.accordionContentMenuLinkOrange:hover {
+  background: orange;
+}
+
+.accordionTopLinkGreen:hover,
+.accordionContentMenuLinkGreen:hover {
+  background: green;
+}

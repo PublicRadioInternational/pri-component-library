@@ -11,6 +11,7 @@ import styles from './MainMenu.css';
 import Icon from '../../Atoms/Svg/Icons.component';
 import PriLogo from '../../Atoms/Svg/PriLogo.component';
 import ButtonLink from '../../Atoms/Button/ButtonLink.component';
+import Accordion from '../../Molecules/Accordion/Accordion.component';
 
 /**
  * Component that renders the main site menu.
@@ -22,7 +23,7 @@ export default class MainMenu extends Component {
   };
 
   static defaultProps = {
-    toggleOpen: false,
+    toggleOpen: () => {},
     baseUrl: 'https://www.pri.org/'
   };
 
@@ -87,741 +88,350 @@ export default class MainMenu extends Component {
         </div>
         <div>
           <div
-            id="accordion"
-            className={styles.accordion}
+            className={styles.accordionMenu}
             role="tablist"
             aria-multiselectable="true"
           >
-            <div
-              className={`${styles.accordionItem} ${styles.accordionItemBlue}`}
-            >
-              <div className={styles.accordionTop} role="tab" id="headingOne">
-                <h5 className={styles.accordionTopHeading}>
-                  <a
-                    className={styles.accordionTopLink}
-                    date-toggle={styles.accordionContent}
-                    date-parent="#accordion"
-                    href="#collapseNews"
-                    aria-expanded="true"
-                    aria-controls="collapseNews"
-                  >
-                    News Programs
-                    <Icon name="left" ariaHidden className={styles.iconDown} />
-                  </a>
-                </h5>
-              </div>
-              <div
-                id="collapseNews"
-                className={styles.accordionContent}
-                role="tabpanel"
-                aria-labelledby="headingOne"
-              >
-                <ul className={styles.accordionContentMenu}>
-                  <li className={styles.accordionContentMenuItem}>
-                    <a
-                      className={styles.accordionContentMenuLink}
-                      href="https://www.pri.org/programs/america-abroad"
-                    >
-                      America Abroad
-                    </a>
-                  </li>
-                  <li className={styles.accordionContentMenuItem}>
-                    <a
-                      className={styles.accordionContentMenuLink}
-                      href="https://www.pri.org/programs/it-happens"
-                    >
-                      As it Happens
-                    </a>
-                  </li>
-                  <li className={styles.accordionContentMenuItem}>
-                    <a
-                      className={styles.accordionContentMenuLink}
-                      href="https://www.pri.org/programs/boston-calling"
-                    >
-                      Boston Calling
-                    </a>
-                  </li>
-                  <li className={styles.accordionContentMenuItem}>
-                    <a
-                      className={styles.accordionContentMenuLink}
-                      href="https://www.pri.org/programs/day-6"
-                    >
-                      Day 6
-                    </a>
-                  </li>
-                  <li className={styles.accordionContentMenuItem}>
-                    <a
-                      className={styles.accordionContentMenuLink}
-                      href="https://www.pri.org/programs/innovation-hub"
-                    >
-                      Innovation Hub
-                    </a>
-                  </li>
-                  <li className={styles.accordionContentMenuItem}>
-                    <a
-                      className={styles.accordionContentMenuLink}
-                      href="https://www.pri.org/programs/living-earth"
-                    >
-                      Living on Earth
-                    </a>
-                  </li>
-                  <li className={styles.accordionContentMenuItem}>
-                    <a
-                      className={styles.accordionContentMenuLink}
-                      href="https://www.pri.org/programs/the-world"
-                    >
-                      PRI{"'"}s The World
-                    </a>
-                  </li>
-                  <li className={styles.accordionContentMenuItem}>
-                    <a href="https://www.pri.org/programs/takeaway">
-                      The Takeaway
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              className={`${styles.accordionItem} ${
-                styles.accordionItemYellow
-              }`}
-            >
-              <div className={styles.accordionTop} role="tab" id="headingOne">
-                <h5 className={styles.accordionTopHeading}>
-                  <a
-                    className={styles.accordionTopLink}
-                    date-toggle={styles.accordionContent}
-                    date-parent="#accordion"
-                    href="#collapseVariety"
-                    aria-expanded="true"
-                    aria-controls="collapseNews"
-                  >
-                    Music &amp; Variety Programs
-                    <Icon name="left" ariaHidden className={styles.iconDown} />
-                  </a>
-                </h5>
-              </div>
-              <div
-                id="collapseVariety"
-                className={styles.accordionContent}
-                role="tabpanel"
-                aria-labelledby="headingOne"
-              >
-                <div className="card-block">
-                  <ul className={styles.accordionContentMenu}>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/programs/afropop-worldwide"
-                      >
-                        Afropop Worldwide
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/programs/echoes"
-                      >
-                        Echoes
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/programs/jazz-after-hours"
-                      >
-                        Jazz After Hours
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/programs/live-wire"
-                      >
-                        Live Wire
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/programs/on-story"
-                      >
-                        On Story
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/programs/out-open"
-                      >
-                        Out in the Open
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/programs/pittsburgh-symphony-orchestra"
-                      >
-                        Pittsburgh Symphony Orchestra
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/programs/q-cbc"
-                      >
-                        q from the CBC
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/programs/selected-shorts"
-                      >
-                        Selected Shorts
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/programs/studio-360"
-                      >
-                        Studio 360
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div
-              className={`${styles.accordionItem} ${styles.accordionItemGreen}`}
-            >
-              <div className={styles.accordionTop} role="tab" id="headingOne">
-                <h5 className={styles.accordionTopHeading}>
-                  <a
-                    className={styles.accordionTopLink}
-                    date-toggle={styles.accordionContent}
-                    date-parent="#accordion"
-                    href="#collapsePodcasts"
-                    aria-expanded="true"
-                    aria-controls="collapsePodcasts"
-                  >
-                    Podcasts
-                    <Icon name="left" ariaHidden className={styles.iconDown} />
-                  </a>
-                </h5>
-              </div>
-              <div
-                id="collapsePodcasts"
-                className={styles.accordionContent}
-                role="tabpanel"
-                aria-labelledby="headingOne"
-              >
-                <div className="card-block">
-                  <ul className={styles.accordionContentMenu}>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/programs/lbjs-war"
-                      >
-                        LBJ{"'"}s War
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/programs/otherhood"
-                      >
-                        Otherhood
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/programs/podcast-playlist"
-                      >
-                        Podcast Playlist
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/programs/science-happiness"
-                      >
-                        Science of Happiness
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/programs/world-words"
-                      >
-                        The World in Words
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/programs/things-go-boom"
-                      >
-                        Things That Go Boom
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div
-              className={`${styles.accordionItem} ${
-                styles.accordionItemOrange
-              }`}
-            >
-              <div className={styles.accordionTop} role="tab" id="headingOne">
-                <h5 className={styles.accordionTopHeading}>
-                  <a
-                    className={styles.accordionTopLink}
-                    date-toggle={styles.accordionContent}
-                    date-parent="#accordion"
-                    href="#collapseListen"
-                    aria-expanded="true"
-                    aria-controls="collapseListen"
-                  >
-                    Listen
-                    <Icon name="left" ariaHidden className={styles.iconDown} />
-                  </a>
-                </h5>
-              </div>
-              <div
-                id="collapseListen"
-                className={styles.accordionContent}
-                role="tabpanel"
-                aria-labelledby="headingOne"
-              >
-                <div className="card-block">
-                  <ul className={styles.accordionContentMenu}>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/listen"
-                      >
-                        Live Stream
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/podcasts-program"
-                      >
-                        Podcasts by Program
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/ways-listen"
-                      >
-                        Ways to Listen
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div
-              className={`${styles.accordionItem} ${styles.accordionItemBlue}`}
-            >
-              <div className={styles.accordionTop} role="tab" id="headingTwo">
-                <h5 className={styles.accordionTopHeading}>
-                  <a
-                    className={styles.accordionTopLink}
-                    date-toggle={styles.accordionContent}
-                    date-parent="#accordion"
-                    href="#collapseFeatures"
-                    aria-expanded="false"
-                    aria-controls="collapseFeatures"
-                  >
-                    Features
-                    <Icon name="left" ariaHidden className={styles.iconDown} />
-                  </a>
-                </h5>
-              </div>
-              <div
-                id="collapseFeatures"
-                className={styles.accordionContent}
-                role="tabpanel"
-                aria-labelledby="headingTwo"
-              >
-                <div className="card-block">
-                  <ul className={styles.accordionContentMenu}>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/verticals/across-womens-lives"
-                      >
-                        Across Women{"'"}s Lives
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/verticals/global-nation"
-                      >
-                        Global Nation
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/verticals/global-security"
-                      >
-                        Global Security
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/verticals/livable-planet"
-                      >
-                        Livable Planet
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/programs/globalpost"
-                      >
-                        GlobalPost
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/collections/global-hit"
-                      >
-                        Global Hit
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/collections/global-satire"
-                      >
-                        Global Satire
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/music-heard-on-air"
-                      >
-                        Music Heard on Air
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div
-              className={`${styles.accordionItem} ${
-                styles.accordionItemYellow
-              }`}
-            >
-              <div className={styles.accordionTop} role="tab" id="headingTwo">
-                <h5 className={styles.accordionTopHeading}>
-                  <a
-                    className={styles.accordionTopLink}
-                    date-toggle={styles.accordionContent}
-                    date-parent="#accordion"
-                    href="#collapseCategories"
-                    aria-expanded="false"
-                    aria-controls="collapseCategories"
-                  >
-                    Categories
-                    <Icon name="left" ariaHidden className={styles.iconDown} />
-                  </a>
-                </h5>
-              </div>
-              <div
-                id="collapseCategories"
-                className={styles.accordionContent}
-                role="tabpanel"
-                aria-labelledby="headingTwo"
-              >
-                <div className="card-block">
-                  <ul className={styles.accordionContentMenu}>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/sections/arts-culture-media"
-                      >
-                        Arts &amp; Entertainment
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/sections/conflict-justice"
-                      >
-                        Conflict &amp; Justice
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/sections/culture"
-                      >
-                        Culture &amp; Society
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/sections/development-education"
-                      >
-                        Development &amp; Education
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/sections/health-medicine"
-                      >
-                        Health &amp; Medicine
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/sections/history"
-                      >
-                        History
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/verticals/global-nation"
-                      >
-                        Immigration
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/sections/business-economics-and-jobs"
-                      >
-                        Money
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/sections/politics"
-                      >
-                        Politics
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/sections/science-tech-environment"
-                      >
-                        Science &amp; Environment
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/sections/technology"
-                      >
-                        Technology
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/verticals/across-womens-lives"
-                      >
-                        Women &amp; Girls
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div
-              className={`${styles.accordionItem} ${styles.accordionItemGreen}`}
-            >
-              <div className={styles.accordionTop} role="tab" id="headingThree">
-                <h5 className={styles.accordionTopHeading}>
-                  <a
-                    className={styles.accordionTopLink}
-                    date-toggle={styles.accordionContent}
-                    date-parent="#accordion"
-                    href="#collapseAbout"
-                    aria-expanded="false"
-                    aria-controls="collapseAbout"
-                  >
-                    About PRI
-                    <Icon name="left" ariaHidden className={styles.iconDown} />
-                  </a>
-                </h5>
-              </div>
-              <div
-                id="collapseAbout"
-                className={styles.accordionContent}
-                role="tabpanel"
-                aria-labelledby="headingThree"
-              >
-                <div className="card-block">
-                  <ul className={styles.accordionContentMenu}>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/about-pri"
-                      >
-                        About Us
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/financials"
-                      >
-                        Annual Report
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/priorg-contact"
-                      >
-                        Contact Us
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/financials"
-                      >
-                        Financials
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/team"
-                      >
-                        Meet the PRI.org team
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/work-us"
-                      >
-                        Work with Us
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div
-              className={`${styles.accordionItem} ${
-                styles.accordionItemOrange
-              }`}
-            >
-              <div className={styles.accordionTop} role="tab" id="headingThree">
-                <h5 className={styles.accordionTopHeading}>
-                  <a
-                    className={styles.accordionTopLink}
-                    date-toggle={styles.accordionContent}
-                    date-parent="#accordion"
-                    href="#collapseGiving"
-                    aria-expanded="false"
-                    aria-controls="collapseGiving"
-                  >
-                    Giving
-                    <Icon name="left" ariaHidden className={styles.iconDown} />
-                  </a>
-                </h5>
-              </div>
-              <div
-                id="collapseGiving"
-                className={styles.accordionContent}
-                role="tabpanel"
-                aria-labelledby="headingThree"
-              >
-                <div className="card-block">
-                  <ul className={styles.accordionContentMenu}>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a
-                        className={styles.accordionContentMenuLink}
-                        href="https://www.pri.org/donate/index.html?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations"
-                      >
-                        Donate
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a className={styles.accordionContentMenuLink} href="/">
-                        Donor Benefits
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a className={styles.accordionContentMenuLink} href="/">
-                        Annual Report
-                      </a>
-                    </li>
-                    <li className={styles.accordionContentMenuItem}>
-                      <a className={styles.accordionContentMenuLink} href="/">
-                        Donation FAQs
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            <Accordion
+              color="Blue"
+              accordionTitle="News Programs"
+              accordionList={[
+                {
+                  name: 'America Abroad',
+                  url: `${baseUrl}programs/america-abroad`
+                },
+                {
+                  name: 'As it Happens',
+                  url: `${baseUrl}programs/it-happens`
+                },
+                {
+                  name: 'Boston Calling',
+                  url: `${baseUrl}programs/boston-calling`
+                },
+                {
+                  name: 'Day 6',
+                  url: `${baseUrl}programs/day-6`
+                },
+                {
+                  name: 'Innovation Hub',
+                  url: `${baseUrl}programs/innovation-hub`
+                },
+                {
+                  name: 'Living on Earth',
+                  url: `${baseUrl}programs/living-earth`
+                },
+                {
+                  name: "PRI's The World",
+                  url: `${baseUrl}programs/the-world`
+                },
+                { name: 'The Takeaway', url: `${baseUrl}programs/takeaway` }
+              ]}
+            />
+            <Accordion
+              color="Yellow"
+              accordionTitle="Music & Variety Programs"
+              accordionList={[
+                {
+                  name: 'Afropop Worldwide',
+                  url: `${baseUrl}programs/afropop-worldwide`
+                },
+                {
+                  name: 'Echoes',
+                  url: `${baseUrl}programs/echoes`
+                },
+                {
+                  name: 'Jazz After Hours',
+                  url: `${baseUrl}programs/jazz-after-hours`
+                },
+                {
+                  name: 'Live Wire',
+                  url: `${baseUrl}programs/live-wire`
+                },
+                {
+                  name: 'On Story',
+                  url: `${baseUrl}programs/on-story`
+                },
+                {
+                  name: 'Out in the Open',
+                  url: `${baseUrl}programs/out-open`
+                },
+                {
+                  name: 'Pittsburgh Symphony Orchestra',
+                  url: `${baseUrl}programs/pittsburgh-symphony-orchestra`
+                },
+                {
+                  name: 'q from the CBC',
+                  url: `${baseUrl}programs/selected-shorts`
+                },
+                { name: 'Studio 360', url: `${baseUrl}programs/studio-360` }
+              ]}
+            />
+            <Accordion
+              color="Green"
+              accordionTitle="Podcasts"
+              accordionList={[
+                {
+                  name: "LBJ's War",
+                  url: `${baseUrl}programs/lbjs-war`
+                },
+                {
+                  name: 'Otherhood',
+                  url: `${baseUrl}programs/otherhood`
+                },
+                {
+                  name: 'Podcast Playlist',
+                  url: `${baseUrl}programs/podcast-playlist`
+                },
+                {
+                  name: 'Science of Happiness',
+                  url: `${baseUrl}programs/science-happiness`
+                },
+                {
+                  name: 'The World in Words',
+                  url: `${baseUrl}programs/world-words`
+                },
+                {
+                  name: 'Things That Go Boom',
+                  url: `${baseUrl}programs/things-go-boom`
+                }
+              ]}
+            />
+            <Accordion
+              color="Orange"
+              accordionTitle="Listen"
+              accordionList={[
+                {
+                  name: 'Live Stream',
+                  url: `${baseUrl}listen`
+                },
+                {
+                  name: 'Podcasts by Program',
+                  url: `${baseUrl}podcasts-program`
+                },
+                {
+                  name: 'Ways to Listen',
+                  url: `${baseUrl}ways-listen`
+                }
+              ]}
+            />
+            <Accordion
+              accordionTitle="Features"
+              accordionList={[
+                {
+                  name: "Across Women's Lives",
+                  url: `${baseUrl}verticals/across-womens-lives`
+                },
+                {
+                  name: 'Global Nation',
+                  url: `${baseUrl}verticals/global-nation`
+                },
+                {
+                  name: 'Global Security',
+                  url: `${baseUrl}verticals/global-security`
+                },
+                {
+                  name: 'Livable Planet',
+                  url: `${baseUrl}verticals/livable-planet`
+                },
+                {
+                  name: 'GlobalPost',
+                  url: `${baseUrl}programs/globalpost`
+                },
+                {
+                  name: 'Global Hit',
+                  url: `${baseUrl}collections/global-hit`
+                },
+                {
+                  name: 'Global Satire',
+                  url: `${baseUrl}collections/global-satire`
+                },
+                {
+                  name: 'Music Heard on Air',
+                  url: `${baseUrl}music-heard-on-air`
+                }
+              ]}
+            />
+            <Accordion
+              color="Yellow"
+              accordionTitle="Categories"
+              accordionList={[
+                {
+                  name: 'Arts & Entertainment',
+                  url: `${baseUrl}sections/arts-culture-media`
+                },
+                {
+                  name: 'Conflict & Justice',
+                  url: `${baseUrl}sections/conflict-justice`
+                },
+                {
+                  name: 'Culture & Society',
+                  url: `${baseUrl}sections/culture`
+                },
+                {
+                  name: 'Development & Education',
+                  url: `${baseUrl}sections/development-educatio`
+                },
+                {
+                  name: 'Health & Medicine',
+                  url: `${baseUrl}sections/health-medicine`
+                },
+                {
+                  name: 'History',
+                  url: `${baseUrl}sections/history`
+                },
+                {
+                  name: 'Immigration',
+                  url: `${baseUrl}verticals/global-nation`
+                },
+                {
+                  name: 'Money',
+                  url: `${baseUrl}sections/business-economics-and-jobs`
+                },
+                { name: 'Politics', url: `${baseUrl}sections/politics` },
+                {
+                  name: 'Science & Environment',
+                  url: `${baseUrl}sections/science-tech-environment`
+                },
+                { name: 'Technology', url: `${baseUrl}sections/technology` },
+                {
+                  name: 'Women & Girls',
+                  url: `${baseUrl}verticals/across-womens-lives`
+                }
+              ]}
+            />
+            <Accordion
+              color="Green"
+              accordionTitle="About PRI"
+              accordionList={[
+                {
+                  name: 'About Us',
+                  url: `${baseUrl}about-pri`
+                },
+                {
+                  name: 'Annual Report',
+                  url: `${baseUrl}financials`
+                },
+                {
+                  name: 'Contact Us',
+                  url: `${baseUrl}priorg-contact`
+                },
+                {
+                  name: 'Financials',
+                  url: `${baseUrl}financials`
+                },
+                {
+                  name: 'Meet the PRI.org team',
+                  url: `${baseUrl}team`
+                },
+                {
+                  name: 'Work with Us',
+                  url: `${baseUrl}work-us`
+                }
+              ]}
+            />
+            <Accordion
+              color="Orange"
+              accordionTitle="Giving"
+              accordionList={[
+                {
+                  name: 'Donate',
+                  url: `${baseUrl}donate/index.html?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations`
+                },
+                {
+                  name: 'Donor Benefits',
+                  url: `${baseUrl}`
+                },
+                {
+                  name: 'Annual Report',
+                  url: `${baseUrl}`
+                },
+                {
+                  name: 'Donation FAQs',
+                  url: `${baseUrl}`
+                }
+              ]}
+            />
           </div>
         </div>
-        <div className="drawer-footer">
-          <ul className="social-menu">
-            <li className="social-item facebook">
-              <a
-                href="https://www.facebook.com/publicradiointernational"
-                title="Follow PRI on Facebook"
-              >
-                <i className="ss-icon ss-social">Facebook</i>
-              </a>
-            </li>
-            <li className="social-item twitter">
-              <a href="https://twitter.com/pri" title="Follow PRI on Twitter">
-                <i className="ss-icon ss-social">Twitter</i>
-              </a>
-            </li>
-            <li className="social-item newsletter">
-              <a
-                href="https://www.pri.org/newsletters"
+        <ul className={styles.socialMenu}>
+          <li className={styles.socialMenuItem}>
+            <a
+              className={styles.socialMenuLink}
+              href="https://www.facebook.com/publicradiointernational"
+              title="Follow PRI on Facebook"
+            >
+              <Icon
+                name="facebook"
+                title="Facebook"
+                fillColor="currentcolor"
+                className={styles.socialMenuIcon}
+              />
+            </a>
+          </li>
+          <li className={styles.socialMenuItem}>
+            <a
+              className={styles.socialMenuLink}
+              href="https://twitter.com/pri"
+              title="Follow PRI on Twitter"
+            >
+              <Icon
+                name="twitter"
+                title="Twitter"
+                fillColor="currentcolor"
+                className={styles.socialMenuIcon}
+              />
+            </a>
+          </li>
+          <li className={styles.socialMenuItem}>
+            <a
+              className={styles.socialMenuLink}
+              href="https://www.pri.org/newsletters"
+              title="Subscribe to our Newsletters"
+            >
+              <Icon
+                name="envelope"
                 title="Subscribe to our Newsletters"
-              >
-                <i className="oi oi-envelope-open" aria-label="Newsletters" />
-              </a>
-            </li>
-            <li className="social-item rss">
-              <a
-                href="https://www.pri.org/stories/feed/everything"
-                title="PRI RSS Feed"
-              >
-                <i className="ss-icon ss-social">RSS</i>
-              </a>
-            </li>
-            <li className="social-item login">
-              <a href="https://www.pri.org/user/me" title="My Account">
-                <i className="oi oi-person" aria-label="Login" />
-              </a>
-            </li>
-          </ul>
-        </div>
+                fillColor="currentcolor"
+                className={`${styles.socialMenuIcon} ${
+                  styles.socialMenuIconFull
+                }`}
+              />
+            </a>
+          </li>
+          <li className={styles.socialMenuItem}>
+            <a
+              className={styles.socialMenuLink}
+              href="https://www.pri.org/stories/feed/everything"
+              title="PRI RSS Feed"
+            >
+              <Icon
+                name="rss"
+                title="RSS"
+                fillColor="currentcolor"
+                className={`${styles.socialMenuIcon} ${
+                  styles.socialMenuIconFull
+                }`}
+              />
+            </a>
+          </li>
+          <li className={styles.socialMenuItem}>
+            <a
+              className={styles.socialMenuLink}
+              href="https://www.pri.org/user/me"
+              title="My Account"
+            >
+              <Icon
+                name="user"
+                title="Login"
+                aria-label="Login"
+                fillColor="currentcolor"
+                className={`${styles.socialMenuIcon} ${
+                  styles.socialMenuIconFull
+                } ${styles.socialMenuIconFullLg}`}
+              />
+            </a>
+          </li>
+        </ul>
       </div>
     );
   }
