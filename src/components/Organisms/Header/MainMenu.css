@@ -1,18 +1,19 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value gray, grayLighter, orange, orangeDark from colors;
+@value whiteDark, gray, grayLighter, grayDark, orange, orangeDark, blue, yellow, green from colors;
 
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
 @value heading from fonts;
 
 .wrapper {
+  background-color: gray;
+  height: 100%;
   overflow-y: auto;
   position: relative;
 }
 
 .header {
-  background-color: gray;
   border-top: 3px solid orange;
   padding: 15px 15px 20px;
   color: grayLighter;
@@ -78,4 +79,86 @@
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   border-left: 1px solid orangeDark;
+}
+
+/* Accordion */
+.accordion {
+  background: whiteDark;
+  padding: 10px;
+}
+
+.accordionItem {
+  border-left: 3px solid #d3401e;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.accordionItemBlue {
+  border-left-color: blue;
+}
+
+.accordionItemYellow {
+  border-left-color: yellow;
+}
+
+.accordionItemGreen {
+  border-left-color: green;
+}
+
+.accordionItemOrange {
+  border-left-color: orange;
+}
+
+.accordionTop {
+  cursor: pointer;
+}
+
+.accordionTopHeading {
+  margin-bottom: 0;
+}
+
+.accordionTopLink {
+  background: whiteDark;
+  color: grayDark;
+  display: block;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.accordionTopLink:hover {
+  background: blue;
+  color: white;
+}
+
+.iconDown {
+  fill: currentcolor;
+  float: right;
+  margin-top: -5px;
+  transition: transform 300ms ease-out;
+  transform: rotate(-90deg);
+}
+
+.accordionContent {
+  display: none;
+}
+
+.accordionContentMenu {
+  margin: 0;
+  padding: 0;
+}
+
+.accordionContentMenuItem {
+  border-bottom: 1px dotted grayLighter;
+  list-style: none;
+  line-height: 1.1;
+}
+
+.accordionContentMenuLink {
+  display: block;
+  font: 0.875em heading;
+  padding: 10px 15px;
 }

@@ -64,6 +64,7 @@
 
 @define-mixin btnOrangeHover {
   background-color: orangeDark;
+  color: white;
 }
 
 .btnOrange {
@@ -79,6 +80,10 @@
 /* Mobile Icon versions */
 .btnMobileWhite {
   color: grayLight;
+}
+
+.btnMobileWhite:hover {
+  color: grayDark;
 }
 
 .btnMobileOrange {

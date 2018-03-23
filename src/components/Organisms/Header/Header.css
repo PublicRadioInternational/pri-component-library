@@ -103,7 +103,10 @@ svg.mobileSmallIcon {
 }
 
 .mainMenu {
+  height: 100%;
+  min-height: 100vh;
   left: 0;
+  overflow-y: scroll;
   position: fixed;
   top: 0;
   transform: translateX(-100%);
