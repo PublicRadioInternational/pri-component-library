@@ -17,17 +17,13 @@ import MainMenu from './MainMenu.component';
  * Component that renders the header.
  */
 export default class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { isMenuOpen: false };
-    this.toggleOpen = this.toggleOpen.bind(this);
-  }
+  state = { isMenuOpen: false };
 
-  toggleOpen() {
+  toggleOpen = () => {
     this.setState(prevState => ({
       isMenuOpen: !prevState.isMenuOpen
     }));
-  }
+  };
 
   render() {
     const { baseUrl } = this.props;
@@ -106,7 +102,7 @@ export default class Header extends Component {
           </Dropdown>
 
           <Dropdown
-            url="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#"
+            url={`${baseUrl}search/node`}
             title="Search"
             className={styles.button}
             iconClass={styles.mobileSmallIcon}

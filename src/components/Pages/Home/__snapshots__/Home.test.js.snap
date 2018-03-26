@@ -1377,7 +1377,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       >
         <a
           className="btnMobileWhite btnGrp"
-          href="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#"
+          href="https://www.pri.orgsearch/node"
           onClick={[Function]}
         >
           <svg
