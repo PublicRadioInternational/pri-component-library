@@ -6,15 +6,30 @@
 @value fonts: "../../00_global/fonts.css";
 @value heading from fonts;
 
+/* import breakpoints */
+@value min as bp-min from "../../00_global/breakpoints.css";
+
 .wrapper {
   background-color: gray;
+  flex-flow: column;
   height: 100%;
-  overflow-y: auto;
+  overflow-y: scroll;
   position: relative;
+}
+
+@media bp-min {
+  .wrapper {
+    display: flex;
+  }
+
+  .wrapperOpen {
+    display: block;
+  }
 }
 
 .header {
   border-top: 3px solid orange;
+  flex: 1 0 183px;
   padding: 15px 15px 20px;
   color: grayLighter;
 }
@@ -52,55 +67,77 @@
 
 /* Buttons */
 .btnGroup {
-  display: flex;
   margin: 14px 0 2px;
+}
+
+@media bp-min {
+  display: flex;
 }
 
 .btnHeaderLeft,
 .btnHeaderMiddle,
 .btnHeaderRight {
+  display: block;
   font: normal 0.875rem/1.5 heading;
   letter-spacing: 0;
-  padding: 0.475rem 0.5rem;
+  margin-bottom: 0.3rem;
+  padding: 0.275rem 0.5rem;
   text-transform: none;
 }
 
-.btnHeaderLeft {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
+@media bp-min {
+  .btnHeaderLeft,
+  .btnHeaderMiddle,
+  .btnHeaderRight {
+    display: inline-block;
+    padding: 0.475rem 0.5rem;
+  }
+
+  .btnHeaderLeft {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .btnHeaderMiddle {
+    border-left: 1px solid orangeDark;
+    border-radius: 0;
+  }
+
+  .btnHeaderRight {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-left: 1px solid orangeDark;
+  }
 }
 
-.btnHeaderMiddle {
-  border-left: 1px solid orangeDark;
-  border-radius: 0;
-}
-
-.btnHeaderRight {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  border-left: 1px solid orangeDark;
-}
-
+/* Accordion Nav */
 .accordionMenu {
   background: whiteDark;
-  min-height: calc(100vh - (265px + 57px));
+  flex: 1 1 auto;
   padding: 10px;
 }
 
 /* Social Links */
 .socialMenu {
+  background-color: gray;
   display: flex;
+  flex: 0 1 57px;
   justify-content: space-between;
-  padding: 1rem;
 }
 
 .socialMenuItem {
   display: inline-block;
+  overflow: hidden;
 }
 
 .socialMenuLink {
   color: gray;
   display: block;
+  padding: 1rem;
+}
+
+.socialMenuLink:hover {
+  background-color: orange;
 }
 
 .socialMenuIcon {
@@ -114,7 +151,7 @@
 .socialMenuIconFull {
   background: none;
   border-radius: 0;
-  color: white;
+  color: #ddd;
   height: 25px;
   padding: 0;
   width: 25px;
@@ -123,8 +160,4 @@
 .socialMenuIconFullLg {
   height: 37px;
   width: 33px;
-}
-
-.socialMenuIconFull:hover {
-  color: orange;
 }

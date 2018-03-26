@@ -33,13 +33,13 @@ export default class MainMenu extends Component {
   }
 
   handleClick() {
-    this.props.toggleOpen(true);
+    this.props.toggleOpen();
   }
 
   render() {
     const { baseUrl } = this.props;
     return (
-      <div className={styles.wrapper}>
+      <div className={`${styles.wrapper}`}>
         <div className={styles.header}>
           <button className={styles.closeMenu} onClick={this.handleClick}>
             <Icon name="left" inline ariaHidden className={styles.inlineLink} />
@@ -86,272 +86,270 @@ export default class MainMenu extends Component {
             </div>
           </div>
         </div>
-        <div>
-          <div
-            className={styles.accordionMenu}
-            role="tablist"
-            aria-multiselectable="true"
-          >
-            <Accordion
-              color="Blue"
-              accordionTitle="News Programs"
-              accordionList={[
-                {
-                  name: 'America Abroad',
-                  url: `${baseUrl}programs/america-abroad`
-                },
-                {
-                  name: 'As it Happens',
-                  url: `${baseUrl}programs/it-happens`
-                },
-                {
-                  name: 'Boston Calling',
-                  url: `${baseUrl}programs/boston-calling`
-                },
-                {
-                  name: 'Day 6',
-                  url: `${baseUrl}programs/day-6`
-                },
-                {
-                  name: 'Innovation Hub',
-                  url: `${baseUrl}programs/innovation-hub`
-                },
-                {
-                  name: 'Living on Earth',
-                  url: `${baseUrl}programs/living-earth`
-                },
-                {
-                  name: "PRI's The World",
-                  url: `${baseUrl}programs/the-world`
-                },
-                { name: 'The Takeaway', url: `${baseUrl}programs/takeaway` }
-              ]}
-            />
-            <Accordion
-              color="Yellow"
-              accordionTitle="Music & Variety Programs"
-              accordionList={[
-                {
-                  name: 'Afropop Worldwide',
-                  url: `${baseUrl}programs/afropop-worldwide`
-                },
-                {
-                  name: 'Echoes',
-                  url: `${baseUrl}programs/echoes`
-                },
-                {
-                  name: 'Jazz After Hours',
-                  url: `${baseUrl}programs/jazz-after-hours`
-                },
-                {
-                  name: 'Live Wire',
-                  url: `${baseUrl}programs/live-wire`
-                },
-                {
-                  name: 'On Story',
-                  url: `${baseUrl}programs/on-story`
-                },
-                {
-                  name: 'Out in the Open',
-                  url: `${baseUrl}programs/out-open`
-                },
-                {
-                  name: 'Pittsburgh Symphony Orchestra',
-                  url: `${baseUrl}programs/pittsburgh-symphony-orchestra`
-                },
-                {
-                  name: 'q from the CBC',
-                  url: `${baseUrl}programs/selected-shorts`
-                },
-                { name: 'Studio 360', url: `${baseUrl}programs/studio-360` }
-              ]}
-            />
-            <Accordion
-              color="Green"
-              accordionTitle="Podcasts"
-              accordionList={[
-                {
-                  name: "LBJ's War",
-                  url: `${baseUrl}programs/lbjs-war`
-                },
-                {
-                  name: 'Otherhood',
-                  url: `${baseUrl}programs/otherhood`
-                },
-                {
-                  name: 'Podcast Playlist',
-                  url: `${baseUrl}programs/podcast-playlist`
-                },
-                {
-                  name: 'Science of Happiness',
-                  url: `${baseUrl}programs/science-happiness`
-                },
-                {
-                  name: 'The World in Words',
-                  url: `${baseUrl}programs/world-words`
-                },
-                {
-                  name: 'Things That Go Boom',
-                  url: `${baseUrl}programs/things-go-boom`
-                }
-              ]}
-            />
-            <Accordion
-              color="Orange"
-              accordionTitle="Listen"
-              accordionList={[
-                {
-                  name: 'Live Stream',
-                  url: `${baseUrl}listen`
-                },
-                {
-                  name: 'Podcasts by Program',
-                  url: `${baseUrl}podcasts-program`
-                },
-                {
-                  name: 'Ways to Listen',
-                  url: `${baseUrl}ways-listen`
-                }
-              ]}
-            />
-            <Accordion
-              accordionTitle="Features"
-              accordionList={[
-                {
-                  name: "Across Women's Lives",
-                  url: `${baseUrl}verticals/across-womens-lives`
-                },
-                {
-                  name: 'Global Nation',
-                  url: `${baseUrl}verticals/global-nation`
-                },
-                {
-                  name: 'Global Security',
-                  url: `${baseUrl}verticals/global-security`
-                },
-                {
-                  name: 'Livable Planet',
-                  url: `${baseUrl}verticals/livable-planet`
-                },
-                {
-                  name: 'GlobalPost',
-                  url: `${baseUrl}programs/globalpost`
-                },
-                {
-                  name: 'Global Hit',
-                  url: `${baseUrl}collections/global-hit`
-                },
-                {
-                  name: 'Global Satire',
-                  url: `${baseUrl}collections/global-satire`
-                },
-                {
-                  name: 'Music Heard on Air',
-                  url: `${baseUrl}music-heard-on-air`
-                }
-              ]}
-            />
-            <Accordion
-              color="Yellow"
-              accordionTitle="Categories"
-              accordionList={[
-                {
-                  name: 'Arts & Entertainment',
-                  url: `${baseUrl}sections/arts-culture-media`
-                },
-                {
-                  name: 'Conflict & Justice',
-                  url: `${baseUrl}sections/conflict-justice`
-                },
-                {
-                  name: 'Culture & Society',
-                  url: `${baseUrl}sections/culture`
-                },
-                {
-                  name: 'Development & Education',
-                  url: `${baseUrl}sections/development-educatio`
-                },
-                {
-                  name: 'Health & Medicine',
-                  url: `${baseUrl}sections/health-medicine`
-                },
-                {
-                  name: 'History',
-                  url: `${baseUrl}sections/history`
-                },
-                {
-                  name: 'Immigration',
-                  url: `${baseUrl}verticals/global-nation`
-                },
-                {
-                  name: 'Money',
-                  url: `${baseUrl}sections/business-economics-and-jobs`
-                },
-                { name: 'Politics', url: `${baseUrl}sections/politics` },
-                {
-                  name: 'Science & Environment',
-                  url: `${baseUrl}sections/science-tech-environment`
-                },
-                { name: 'Technology', url: `${baseUrl}sections/technology` },
-                {
-                  name: 'Women & Girls',
-                  url: `${baseUrl}verticals/across-womens-lives`
-                }
-              ]}
-            />
-            <Accordion
-              color="Green"
-              accordionTitle="About PRI"
-              accordionList={[
-                {
-                  name: 'About Us',
-                  url: `${baseUrl}about-pri`
-                },
-                {
-                  name: 'Annual Report',
-                  url: `${baseUrl}financials`
-                },
-                {
-                  name: 'Contact Us',
-                  url: `${baseUrl}priorg-contact`
-                },
-                {
-                  name: 'Financials',
-                  url: `${baseUrl}financials`
-                },
-                {
-                  name: 'Meet the PRI.org team',
-                  url: `${baseUrl}team`
-                },
-                {
-                  name: 'Work with Us',
-                  url: `${baseUrl}work-us`
-                }
-              ]}
-            />
-            <Accordion
-              color="Orange"
-              accordionTitle="Giving"
-              accordionList={[
-                {
-                  name: 'Donate',
-                  url: `${baseUrl}donate/index.html?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations`
-                },
-                {
-                  name: 'Donor Benefits',
-                  url: `${baseUrl}`
-                },
-                {
-                  name: 'Annual Report',
-                  url: `${baseUrl}`
-                },
-                {
-                  name: 'Donation FAQs',
-                  url: `${baseUrl}`
-                }
-              ]}
-            />
-          </div>
+        <div
+          className={styles.accordionMenu}
+          role="tablist"
+          aria-multiselectable="true"
+        >
+          <Accordion
+            color="Blue"
+            accordionTitle="News Programs"
+            accordionList={[
+              {
+                name: 'America Abroad',
+                url: `${baseUrl}programs/america-abroad`
+              },
+              {
+                name: 'As it Happens',
+                url: `${baseUrl}programs/it-happens`
+              },
+              {
+                name: 'Boston Calling',
+                url: `${baseUrl}programs/boston-calling`
+              },
+              {
+                name: 'Day 6',
+                url: `${baseUrl}programs/day-6`
+              },
+              {
+                name: 'Innovation Hub',
+                url: `${baseUrl}programs/innovation-hub`
+              },
+              {
+                name: 'Living on Earth',
+                url: `${baseUrl}programs/living-earth`
+              },
+              {
+                name: "PRI's The World",
+                url: `${baseUrl}programs/the-world`
+              },
+              { name: 'The Takeaway', url: `${baseUrl}programs/takeaway` }
+            ]}
+          />
+          <Accordion
+            color="Yellow"
+            accordionTitle="Music & Variety Programs"
+            accordionList={[
+              {
+                name: 'Afropop Worldwide',
+                url: `${baseUrl}programs/afropop-worldwide`
+              },
+              {
+                name: 'Echoes',
+                url: `${baseUrl}programs/echoes`
+              },
+              {
+                name: 'Jazz After Hours',
+                url: `${baseUrl}programs/jazz-after-hours`
+              },
+              {
+                name: 'Live Wire',
+                url: `${baseUrl}programs/live-wire`
+              },
+              {
+                name: 'On Story',
+                url: `${baseUrl}programs/on-story`
+              },
+              {
+                name: 'Out in the Open',
+                url: `${baseUrl}programs/out-open`
+              },
+              {
+                name: 'Pittsburgh Symphony Orchestra',
+                url: `${baseUrl}programs/pittsburgh-symphony-orchestra`
+              },
+              {
+                name: 'q from the CBC',
+                url: `${baseUrl}programs/selected-shorts`
+              },
+              { name: 'Studio 360', url: `${baseUrl}programs/studio-360` }
+            ]}
+          />
+          <Accordion
+            color="Green"
+            accordionTitle="Podcasts"
+            accordionList={[
+              {
+                name: "LBJ's War",
+                url: `${baseUrl}programs/lbjs-war`
+              },
+              {
+                name: 'Otherhood',
+                url: `${baseUrl}programs/otherhood`
+              },
+              {
+                name: 'Podcast Playlist',
+                url: `${baseUrl}programs/podcast-playlist`
+              },
+              {
+                name: 'Science of Happiness',
+                url: `${baseUrl}programs/science-happiness`
+              },
+              {
+                name: 'The World in Words',
+                url: `${baseUrl}programs/world-words`
+              },
+              {
+                name: 'Things That Go Boom',
+                url: `${baseUrl}programs/things-go-boom`
+              }
+            ]}
+          />
+          <Accordion
+            color="Orange"
+            accordionTitle="Listen"
+            accordionList={[
+              {
+                name: 'Live Stream',
+                url: `${baseUrl}listen`
+              },
+              {
+                name: 'Podcasts by Program',
+                url: `${baseUrl}podcasts-program`
+              },
+              {
+                name: 'Ways to Listen',
+                url: `${baseUrl}ways-listen`
+              }
+            ]}
+          />
+          <Accordion
+            accordionTitle="Features"
+            accordionList={[
+              {
+                name: "Across Women's Lives",
+                url: `${baseUrl}verticals/across-womens-lives`
+              },
+              {
+                name: 'Global Nation',
+                url: `${baseUrl}verticals/global-nation`
+              },
+              {
+                name: 'Global Security',
+                url: `${baseUrl}verticals/global-security`
+              },
+              {
+                name: 'Livable Planet',
+                url: `${baseUrl}verticals/livable-planet`
+              },
+              {
+                name: 'GlobalPost',
+                url: `${baseUrl}programs/globalpost`
+              },
+              {
+                name: 'Global Hit',
+                url: `${baseUrl}collections/global-hit`
+              },
+              {
+                name: 'Global Satire',
+                url: `${baseUrl}collections/global-satire`
+              },
+              {
+                name: 'Music Heard on Air',
+                url: `${baseUrl}music-heard-on-air`
+              }
+            ]}
+          />
+          <Accordion
+            color="Yellow"
+            accordionTitle="Categories"
+            accordionList={[
+              {
+                name: 'Arts & Entertainment',
+                url: `${baseUrl}sections/arts-culture-media`
+              },
+              {
+                name: 'Conflict & Justice',
+                url: `${baseUrl}sections/conflict-justice`
+              },
+              {
+                name: 'Culture & Society',
+                url: `${baseUrl}sections/culture`
+              },
+              {
+                name: 'Development & Education',
+                url: `${baseUrl}sections/development-educatio`
+              },
+              {
+                name: 'Health & Medicine',
+                url: `${baseUrl}sections/health-medicine`
+              },
+              {
+                name: 'History',
+                url: `${baseUrl}sections/history`
+              },
+              {
+                name: 'Immigration',
+                url: `${baseUrl}verticals/global-nation`
+              },
+              {
+                name: 'Money',
+                url: `${baseUrl}sections/business-economics-and-jobs`
+              },
+              { name: 'Politics', url: `${baseUrl}sections/politics` },
+              {
+                name: 'Science & Environment',
+                url: `${baseUrl}sections/science-tech-environment`
+              },
+              { name: 'Technology', url: `${baseUrl}sections/technology` },
+              {
+                name: 'Women & Girls',
+                url: `${baseUrl}verticals/across-womens-lives`
+              }
+            ]}
+          />
+          <Accordion
+            color="Green"
+            accordionTitle="About PRI"
+            accordionList={[
+              {
+                name: 'About Us',
+                url: `${baseUrl}about-pri`
+              },
+              {
+                name: 'Annual Report',
+                url: `${baseUrl}financials`
+              },
+              {
+                name: 'Contact Us',
+                url: `${baseUrl}priorg-contact`
+              },
+              {
+                name: 'Financials',
+                url: `${baseUrl}financials`
+              },
+              {
+                name: 'Meet the PRI.org team',
+                url: `${baseUrl}team`
+              },
+              {
+                name: 'Work with Us',
+                url: `${baseUrl}work-us`
+              }
+            ]}
+          />
+          <Accordion
+            color="Orange"
+            accordionTitle="Giving"
+            accordionList={[
+              {
+                name: 'Donate',
+                url: `${baseUrl}donate/index.html?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations`
+              },
+              {
+                name: 'Donor Benefits',
+                url: `${baseUrl}`
+              },
+              {
+                name: 'Annual Report',
+                url: `${baseUrl}`
+              },
+              {
+                name: 'Donation FAQs',
+                url: `${baseUrl}`
+              }
+            ]}
+          />
         </div>
         <ul className={styles.socialMenu}>
           <li className={styles.socialMenuItem}>

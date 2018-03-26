@@ -44,7 +44,7 @@
   background: whiteDark;
   color: grayDark;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 42px 10px 15px;
   font-weight: bold;
   font-size: 1rem;
   text-decoration: none;
@@ -60,6 +60,7 @@
 .iconDown {
   fill: currentcolor;
   float: right;
+  margin-right: -30px;
   margin-top: -5px;
   transition: transform 300ms ease-out;
   transform: rotate(-90deg);
