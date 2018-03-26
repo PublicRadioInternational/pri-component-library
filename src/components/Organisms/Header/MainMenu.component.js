@@ -354,7 +354,7 @@ export default class MainMenu extends Component {
         <ul className={styles.socialMenu}>
           <li className={styles.socialMenuItem}>
             <a
-              className={styles.socialMenuLink}
+              className={`${styles.socialMenuLink} ${styles.socialMenuLinkFB}`}
               href="https://www.facebook.com/publicradiointernational"
               title="Follow PRI on Facebook"
             >
@@ -368,7 +368,7 @@ export default class MainMenu extends Component {
           </li>
           <li className={styles.socialMenuItem}>
             <a
-              className={styles.socialMenuLink}
+              className={`${styles.socialMenuLink} ${styles.socialMenuLinkTW}`}
               href="https://twitter.com/pri"
               title="Follow PRI on Twitter"
             >
@@ -382,7 +382,7 @@ export default class MainMenu extends Component {
           </li>
           <li className={styles.socialMenuItem}>
             <a
-              className={styles.socialMenuLink}
+              className={`${styles.socialMenuLink} ${styles.socialMenuLinkEM}`}
               href="https://www.pri.org/newsletters"
               title="Subscribe to our Newsletters"
             >
@@ -398,7 +398,7 @@ export default class MainMenu extends Component {
           </li>
           <li className={styles.socialMenuItem}>
             <a
-              className={styles.socialMenuLink}
+              className={`${styles.socialMenuLink} ${styles.socialMenuLinkRSS}`}
               href="https://www.pri.org/stories/feed/everything"
               title="PRI RSS Feed"
             >
@@ -407,14 +407,16 @@ export default class MainMenu extends Component {
                 title="RSS"
                 fillColor="currentcolor"
                 className={`${styles.socialMenuIcon} ${
-                  styles.socialMenuIconFull
+                  styles.socialMenuIconRSS
                 }`}
               />
             </a>
           </li>
           <li className={styles.socialMenuItem}>
             <a
-              className={styles.socialMenuLink}
+              className={`${styles.socialMenuLink} ${
+                styles.socialMenuLinkLogin
+              }`}
               href="https://www.pri.org/user/me"
               title="My Account"
             >

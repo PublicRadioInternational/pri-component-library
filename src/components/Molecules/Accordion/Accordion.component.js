@@ -52,6 +52,8 @@ export default class Accordion extends Component {
             <a
               className={`${styles.accordionTopLink} ${
                 styles[accordionTopLinkColor]
+              } ${
+                this.state.revealed === true ? styles.accordionTopLinkOpen : ''
               }`}
               date-toggle={styles.accordionContent}
               date-parent="#accordion"

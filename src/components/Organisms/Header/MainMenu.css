@@ -20,10 +20,7 @@
 @media bp-min {
   .wrapper {
     display: flex;
-  }
-
-  .wrapperOpen {
-    display: block;
+    overflow-y: auto;
   }
 }
 
@@ -136,8 +133,27 @@
   padding: 1rem;
 }
 
-.socialMenuLink:hover {
+.socialMenuLinkFB:hover {
+  background-color: #5179bb;
+  color: #5179bb;
+}
+
+.socialMenuLinkTW:hover {
+  background-color: #1da1f2;
+  color: #1da1f2;
+}
+
+.socialMenuLinkEM:hover {
   background-color: orange;
+}
+
+.socialMenuLinkRSS:hover {
+  background-color: green;
+  color: green;
+}
+
+.socialMenuLinkLogin:hover {
+  background-color: blue;
 }
 
 .socialMenuIcon {
@@ -155,6 +171,12 @@
   height: 25px;
   padding: 0;
   width: 25px;
+}
+
+.socialMenuIconRSS {
+  height: 23px;
+  padding: 2px 2px 2px 3px;
+  width: 22px;
 }
 
 .socialMenuIconFullLg {

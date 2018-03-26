@@ -150,7 +150,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           <a
             aria-controls="collapseNews"
             aria-expanded="true"
-            className="accordionTopLink accordionTopLinkBlue"
+            className="accordionTopLink accordionTopLinkBlue "
             date-parent="#accordion"
             date-toggle="accordionContent"
             href="#collapseNews"
@@ -279,7 +279,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           <a
             aria-controls="collapseNews"
             aria-expanded="true"
-            className="accordionTopLink accordionTopLinkYellow"
+            className="accordionTopLink accordionTopLinkYellow "
             date-parent="#accordion"
             date-toggle="accordionContent"
             href="#collapseNews"
@@ -418,7 +418,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           <a
             aria-controls="collapseNews"
             aria-expanded="true"
-            className="accordionTopLink accordionTopLinkGreen"
+            className="accordionTopLink accordionTopLinkGreen "
             date-parent="#accordion"
             date-toggle="accordionContent"
             href="#collapseNews"
@@ -527,7 +527,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           <a
             aria-controls="collapseNews"
             aria-expanded="true"
-            className="accordionTopLink accordionTopLinkOrange"
+            className="accordionTopLink accordionTopLinkOrange "
             date-parent="#accordion"
             date-toggle="accordionContent"
             href="#collapseNews"
@@ -606,7 +606,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           <a
             aria-controls="collapseNews"
             aria-expanded="true"
-            className="accordionTopLink accordionTopLinkBlue"
+            className="accordionTopLink accordionTopLinkBlue "
             date-parent="#accordion"
             date-toggle="accordionContent"
             href="#collapseNews"
@@ -735,7 +735,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           <a
             aria-controls="collapseNews"
             aria-expanded="true"
-            className="accordionTopLink accordionTopLinkYellow"
+            className="accordionTopLink accordionTopLinkYellow "
             date-parent="#accordion"
             date-toggle="accordionContent"
             href="#collapseNews"
@@ -904,7 +904,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           <a
             aria-controls="collapseNews"
             aria-expanded="true"
-            className="accordionTopLink accordionTopLinkGreen"
+            className="accordionTopLink accordionTopLinkGreen "
             date-parent="#accordion"
             date-toggle="accordionContent"
             href="#collapseNews"
@@ -1013,7 +1013,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           <a
             aria-controls="collapseNews"
             aria-expanded="true"
-            className="accordionTopLink accordionTopLinkOrange"
+            className="accordionTopLink accordionTopLinkOrange "
             date-parent="#accordion"
             date-toggle="accordionContent"
             href="#collapseNews"
@@ -1097,7 +1097,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
       className="socialMenuItem"
     >
       <a
-        className="socialMenuLink"
+        className="socialMenuLink socialMenuLinkFB"
         href="https://www.facebook.com/publicradiointernational"
         title="Follow PRI on Facebook"
       >
@@ -1124,7 +1124,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
       className="socialMenuItem"
     >
       <a
-        className="socialMenuLink"
+        className="socialMenuLink socialMenuLinkTW"
         href="https://twitter.com/pri"
         title="Follow PRI on Twitter"
       >
@@ -1151,7 +1151,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
       className="socialMenuItem"
     >
       <a
-        className="socialMenuLink"
+        className="socialMenuLink socialMenuLinkEM"
         href="https://www.pri.org/newsletters"
         title="Subscribe to our Newsletters"
       >
@@ -1178,14 +1178,14 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
       className="socialMenuItem"
     >
       <a
-        className="socialMenuLink"
+        className="socialMenuLink socialMenuLinkRSS"
         href="https://www.pri.org/stories/feed/everything"
         title="PRI RSS Feed"
       >
         <svg
           aria-hidden={null}
           aria-labelledby="RSS"
-          className="socialMenuIcon socialMenuIconFull"
+          className="socialMenuIcon socialMenuIconRSS"
           fill="currentcolor"
           height={28}
           version={1.1}
@@ -1196,7 +1196,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             RSS
           </title>
           <path
-            d="M4.259 23.467c-2.35 0-4.259 1.917-4.259 4.252 0 2.349 1.909 4.244 4.259 4.244 2.358 0 4.265-1.895 4.265-4.244-0-2.336-1.907-4.252-4.265-4.252zM0.005 10.873v6.133c3.993 0 7.749 1.562 10.577 4.391 2.825 2.822 4.384 6.595 4.384 10.603h6.16c-0-11.651-9.478-21.127-21.121-21.127zM0.012 0v6.136c14.243 0 25.836 11.604 25.836 25.864h6.152c0-17.64-14.352-32-31.988-32z"
+            d="M5.984 10.078c5.484 0 9.938 4.453 9.938 9.938h-2.859c0-3.891-3.188-7.078-7.078-7.078v-2.859zM5.984 4.453c8.578 0 15.563 6.984 15.563 15.563h-2.813c0-7.031-5.719-12.75-12.75-12.75v-2.813zM5.984 17.813c0-1.219 0.984-2.156 2.203-2.156s2.156 0.938 2.156 2.156-0.938 2.203-2.156 2.203-2.203-0.984-2.203-2.203z"
           />
         </svg>
       </a>
@@ -1205,7 +1205,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
       className="socialMenuItem"
     >
       <a
-        className="socialMenuLink"
+        className="socialMenuLink socialMenuLinkLogin"
         href="https://www.pri.org/user/me"
         title="My Account"
       >

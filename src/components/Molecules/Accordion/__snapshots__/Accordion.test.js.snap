@@ -14,7 +14,7 @@ exports[`<Accordion /> Matches the List snapshot 1`] = `
       <a
         aria-controls="collapseNews"
         aria-expanded="true"
-        className="accordionTopLink accordionTopLinkBlue"
+        className="accordionTopLink accordionTopLinkBlue "
         date-parent="#accordion"
         date-toggle="accordionContent"
         href="#collapseNews"

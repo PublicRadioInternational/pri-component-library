@@ -52,6 +52,10 @@
   letter-spacing: 0.05rem;
 }
 
+.accordionTopLinkOpen {
+  background: white;
+}
+
 .accordionTopLink:hover {
   background: blue;
   color: white;
@@ -67,6 +71,7 @@
 }
 
 .iconUp {
+  margin-right: -26px;
   margin-top: 0;
   transform: rotate(90deg);
 }
@@ -76,6 +81,7 @@
 }
 
 .accordionContentOpen {
+  background-color: white;
   display: block;
 }
 
@@ -98,6 +104,7 @@
 }
 
 .accordionContentMenuLink {
+  color: blue;
   display: block;
   font: 0.875em heading;
   padding: 10px 15px;

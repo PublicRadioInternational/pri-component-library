@@ -98,7 +98,7 @@ svg.mobileSmallIcon {
   margin-right: 11px;
   padding: 0;
   position: relative;
-  top: 3px;
+  top: 5px;
   width: 36px;
 }
 
@@ -106,7 +106,7 @@ svg.mobileSmallIcon {
   height: 100%;
   min-height: 100vh;
   left: 0;
-  overflow-y: scroll;
+  overflow: hidden;
   position: fixed;
   top: 0;
   transform: translateX(-100%);
