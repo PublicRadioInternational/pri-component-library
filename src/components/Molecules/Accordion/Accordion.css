@@ -65,14 +65,11 @@
   fill: currentcolor;
   float: right;
   margin-right: -30px;
-  margin-top: -5px;
   transition: transform 300ms ease-out;
   transform: rotate(-90deg);
 }
 
 .iconUp {
-  margin-right: -26px;
-  margin-top: 0;
   transform: rotate(90deg);
 }
 

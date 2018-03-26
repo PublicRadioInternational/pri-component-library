@@ -175,7 +175,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                   fill="currentcolor"
                   height={28}
                   version={1.1}
-                  viewBox="0 0 28 28"
+                  viewBox="-2 -2 28 28"
                   width={28}
                 >
                   <path
@@ -304,7 +304,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                   fill="currentcolor"
                   height={28}
                   version={1.1}
-                  viewBox="0 0 28 28"
+                  viewBox="-2 -2 28 28"
                   width={28}
                 >
                   <path
@@ -443,7 +443,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                   fill="currentcolor"
                   height={28}
                   version={1.1}
-                  viewBox="0 0 28 28"
+                  viewBox="-2 -2 28 28"
                   width={28}
                 >
                   <path
@@ -552,7 +552,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                   fill="currentcolor"
                   height={28}
                   version={1.1}
-                  viewBox="0 0 28 28"
+                  viewBox="-2 -2 28 28"
                   width={28}
                 >
                   <path
@@ -631,7 +631,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                   fill="currentcolor"
                   height={28}
                   version={1.1}
-                  viewBox="0 0 28 28"
+                  viewBox="-2 -2 28 28"
                   width={28}
                 >
                   <path
@@ -760,7 +760,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                   fill="currentcolor"
                   height={28}
                   version={1.1}
-                  viewBox="0 0 28 28"
+                  viewBox="-2 -2 28 28"
                   width={28}
                 >
                   <path
@@ -929,7 +929,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                   fill="currentcolor"
                   height={28}
                   version={1.1}
-                  viewBox="0 0 28 28"
+                  viewBox="-2 -2 28 28"
                   width={28}
                 >
                   <path
@@ -1038,7 +1038,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                   fill="currentcolor"
                   height={28}
                   version={1.1}
-                  viewBox="0 0 28 28"
+                  viewBox="-2 -2 28 28"
                   width={28}
                 >
                   <path

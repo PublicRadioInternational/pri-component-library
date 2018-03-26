@@ -70,6 +70,7 @@ export default class Accordion extends Component {
                 className={`${styles.iconDown} ${
                   this.state.revealed === true ? styles.iconUp : ''
                 }`}
+                viewBox="-2 -2 28 28"
               />
             </a>
           </h5>
