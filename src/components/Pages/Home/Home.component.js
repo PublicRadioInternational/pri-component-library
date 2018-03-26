@@ -6,7 +6,7 @@
 import React from 'react';
 
 import Header from '../../Organisms/Header/Header.component';
-import Main from '../../Organisms/Main/Main.component';
+import Layout from '../../Organisms/Main/Layout.component';
 import Footer from '../../Organisms/Footer/Footer.component';
 
 /**
@@ -15,7 +15,7 @@ import Footer from '../../Organisms/Footer/Footer.component';
 const Home = () => (
   <div>
     <Header />
-    <Main />
+    <Layout />
     <Footer />
   </div>
 );
