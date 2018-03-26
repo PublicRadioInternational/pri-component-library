@@ -1,6 +1,6 @@
 /**
  * @file LayoutMain.component.js
- * Exports a main content section.
+ * Exports a main list content section.
  */
 
 import React from 'react';
