@@ -48,8 +48,8 @@
     "prettier": "prettier --write \"**/*.{js,jsx}\"",
     "precommit": "lint-staged && yarn lint && yarn test",
     "semantic-release": "semantic-release",
-    "start": "start-storybook -p 9001 -c .storybook",
-    "build": "build-storybook -c .storybook -o dist",
+    "start": "NODE_ENV=development start-storybook -p 9001 -c .storybook",
+    "build": "NODE_ENV=production build-storybook -c .storybook -o dist",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d dist"
   },
