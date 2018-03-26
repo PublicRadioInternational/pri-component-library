@@ -19,6 +19,9 @@ describe('index', () => {
         return filename.split('.')[0] || null;
       });
 
+      // Delete one-off style exports.
+      delete Components.Styles;
+
       expect(Object.keys(Components)).toEqual(components);
     });
   });

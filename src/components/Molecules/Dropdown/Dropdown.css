@@ -2,10 +2,6 @@
 @value colors: "../../00_global/colors.css";
 @value blue, orangeDark from colors;
 
-/* import fonts... */
-@value fonts: "../../00_global/fonts.css";
-@value copy from fonts;
-
 /* import breakpoints */
 @value header as bp-header from "../../00_global/breakpoints.css";
 

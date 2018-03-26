@@ -27,3 +27,7 @@
   position: absolute;
   top: 50%;
 }
+
+.disableHover {
+  pointer-events: none;
+}
