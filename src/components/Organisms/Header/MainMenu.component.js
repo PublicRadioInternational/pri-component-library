@@ -335,18 +335,6 @@ export default class MainMenu extends Component {
               {
                 name: 'Donate',
                 url: `${baseUrl}donate/index.html?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations`
-              },
-              {
-                name: 'Donor Benefits',
-                url: `${baseUrl}`
-              },
-              {
-                name: 'Annual Report',
-                url: `${baseUrl}`
-              },
-              {
-                name: 'Donation FAQs',
-                url: `${baseUrl}`
               }
             ]}
           />

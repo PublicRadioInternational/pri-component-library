@@ -1067,36 +1067,6 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                     Donate
                   </a>
                 </li>
-                <li
-                  className="listItem accordionContentMenuItem"
-                >
-                  <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkOrange"
-                    href="https://www.pri.org/"
-                  >
-                    Donor Benefits
-                  </a>
-                </li>
-                <li
-                  className="listItem accordionContentMenuItem"
-                >
-                  <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkOrange"
-                    href="https://www.pri.org/"
-                  >
-                    Annual Report
-                  </a>
-                </li>
-                <li
-                  className="listItem accordionContentMenuItem"
-                >
-                  <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkOrange"
-                    href="https://www.pri.org/"
-                  >
-                    Donation FAQs
-                  </a>
-                </li>
               </ul>
             </div>
           </div>
@@ -1379,7 +1349,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       >
         <a
           className="btnMobileWhite btnGrp"
-          href="https://www.pri.orgsearch/node"
+          href="https://www.pri.org/search/node"
           onClick={[Function]}
         >
           <svg

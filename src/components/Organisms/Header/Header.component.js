@@ -102,7 +102,7 @@ export default class Header extends Component {
           </Dropdown>
 
           <Dropdown
-            url={`${baseUrl}search/node`}
+            url={`${baseUrl}/search/node`}
             title="Search"
             className={styles.button}
             iconClass={styles.mobileSmallIcon}
@@ -127,15 +127,6 @@ export default class Header extends Component {
               url={`${baseUrl}/donate/index.html?utm_source=navigation&utm_medium=website&utm_campaign=donations`}
             >
               Give Now
-            </DropdownItem>
-            <DropdownItem url="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#">
-              Donor Benefits
-            </DropdownItem>
-            <DropdownItem url="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#">
-              Annual Report
-            </DropdownItem>
-            <DropdownItem url="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#">
-              Donation FAQ
             </DropdownItem>
           </Dropdown>
         </div>
