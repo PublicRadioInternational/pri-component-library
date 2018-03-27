@@ -1526,10 +1526,10 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
         target="_blank"
       >
         <img
-          alt="Bill &amp; Melinda Gates Foundation"
+          alt="Bill & Melinda Gates Foundation"
           height="52"
           src="test-file-stub"
-          title="Bill &amp; Melinda Gates Foundation"
+          title="Bill & Melinda Gates Foundation"
           typeof="foaf:Image"
           width="149"
         />

@@ -18,6 +18,12 @@ import Section from './src/components/Organisms/Content/Section.component';
 import Footer from './src/components/Organisms/Footer/Footer.component';
 import Header from './src/components/Organisms/Header/Header.component';
 import MainMenu from './src/components/Organisms/Header/MainMenu.component';
+import Layout from './src/components/Organisms/Main/Layout.component';
+import LayoutAsideCallouts from './src/components/Organisms/Main/LayoutAsideCallouts.component';
+import LayoutAsideLatest from './src/components/Organisms/Main/LayoutAsideLatest.component';
+import LayoutMain from './src/components/Organisms/Main/LayoutMain.component';
+import LayoutMainList from './src/components/Organisms/Main/LayoutMainList.component';
+import LayoutMainList2 from './src/components/Organisms/Main/LayoutMainList2.component';
 import Main from './src/components/Organisms/Main/Main.component';
 import Home from './src/components/Pages/Home/Home.component';
 
@@ -45,6 +51,12 @@ export {
   Footer,
   Header,
   MainMenu,
+  Layout,
+  LayoutAsideCallouts,
+  LayoutAsideLatest,
+  LayoutMain,
+  LayoutMainList,
+  LayoutMainList2,
   Main,
   Home,
   Styles
