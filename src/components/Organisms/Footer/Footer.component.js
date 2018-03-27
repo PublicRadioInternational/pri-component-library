@@ -32,8 +32,8 @@ const Footer = ({ baseUrl }) => (
         <img
           height="52"
           width="149"
-          alt="Bill &amp;amp; Melinda Gates Foundation"
-          title="Bill &amp;amp; Melinda Gates Foundation"
+          alt="Bill &amp; Melinda Gates Foundation"
+          title="Bill &amp; Melinda Gates Foundation"
           typeof="foaf:Image"
           src={gatesSponsorImg}
         />
