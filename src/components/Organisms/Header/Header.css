@@ -9,6 +9,10 @@
   padding: 0.5rem 1rem;
 }
 
+.branding {
+  flex: 1;
+}
+
 .menuIcon {
   color: #4b4b4b;
   cursor: pointer;
@@ -29,7 +33,8 @@
   pointer-events: none;
   position: relative;
   top: 3px;
-  width: 123px;
+  max-width: 123px;
+  width: 61%;
 }
 
 .buttons {
@@ -37,7 +42,13 @@
 }
 
 .button {
-  margin-left: 0.75em;
+  margin-left: 0.4em;
+}
+
+@media bp-small {
+  .button {
+    margin-left: 0.75em;
+  }
 }
 
 svg.mobileSmallIcon {

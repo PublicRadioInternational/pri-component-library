@@ -65,6 +65,7 @@
   fill: currentcolor;
   float: right;
   margin-right: -30px;
+  margin-top: -4px;
   transition: transform 300ms ease-out;
   transform: rotate(-90deg);
 }

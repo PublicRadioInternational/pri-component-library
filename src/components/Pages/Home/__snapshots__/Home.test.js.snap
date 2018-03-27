@@ -1242,7 +1242,9 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
         </ul>
       </div>
     </div>
-    <div>
+    <div
+      className="branding"
+    >
       <button
         className="menuBtn"
         onClick={[Function]}

@@ -39,7 +39,7 @@ export default class Header extends Component {
         >
           <MainMenu toggleOpen={this.toggleOpen} />
         </div>
-        <div>
+        <div className={styles.branding}>
           <button className={styles.menuBtn} onClick={this.toggleOpen}>
             <Icon name="menu" className={styles.menuIcon} />
           </button>
