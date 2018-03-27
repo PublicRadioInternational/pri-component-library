@@ -103,16 +103,20 @@ svg.mobileSmallIcon {
 }
 
 .mainMenu {
-  height: 100%;
-  min-height: 100vh;
-  left: 0;
   overflow: hidden;
+  overflow-y: auto;
   position: fixed;
+  left: 0;
   top: 0;
+  max-width: 360px;
+  height: 100vh;
   transform: translateX(-100%);
   transition: 0.3s;
-  max-width: 360px;
   z-index: 100;
+}
+
+.mainMenu::-webkit-scrollbar {
+  display: none;
 }
 
 .mainMenuOpen {
