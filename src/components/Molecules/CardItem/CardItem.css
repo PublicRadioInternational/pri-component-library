@@ -1,0 +1,58 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value grayLighter, gray, orange from colors;
+
+.cardItem {
+  border-bottom: 1px solid grayLighter;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.titleWrap {
+  vertical-align: middle;
+  flex: 0 1 63%;
+  margin-right: 4%;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.link {
+  color: gray;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: orange;
+}
+
+.image {
+  margin: 0;
+  vertical-align: top;
+  flex: 0 1 30%;
+  margin-left: 3%;
+}
+
+.blurb {
+  flex: 0 1 100%;
+  margin-top: 1rem;
+}
+
+.iconLink {
+  color: white;
+  position: relative;
+}
+
+.icon {
+  background-color: orange;
+  border-radius: 18px;
+  height: 20px;
+  fill: currentColor;
+  left: 3px;
+  padding: 1px;
+  position: absolute;
+  top: 1px;
+  width: 20px;
+}
