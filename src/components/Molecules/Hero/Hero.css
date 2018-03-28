@@ -75,8 +75,19 @@
   }
 }
 
+.iconLink {
+  color: white;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.iconLink:hover {
+  color: grayLighter;
+}
+
 .icon {
   height: 30px;
+  padding: 1px 1px 0;
   width: 30px;
 }
 

@@ -24,7 +24,7 @@ exports[`<Hero /> Matches the Hero snapshot 1`] = `
       <svg
         aria-hidden={null}
         aria-labelledby={null}
-        className="icon"
+        className="svg icon roundIcon"
         fill="currentcolor"
         height={28}
         version={1.1}

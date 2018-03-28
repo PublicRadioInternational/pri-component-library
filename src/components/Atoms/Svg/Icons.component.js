@@ -25,7 +25,7 @@ const Icon = props => {
   const iconClass = cx({
     svg: true,
     [className]: className && className,
-    [inlineSvg]: inline,
+    inlineSvg: inline,
     roundIcon: isRoundIcon
   });
   const iconPath = iconName => {

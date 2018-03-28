@@ -44,7 +44,7 @@ const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large, hasAudio }) => (
       {blurb}
       {hasAudio && (
         <a className={styles.iconLink} href={url}>
-          <Icon name="volume" className={styles.icon} />
+          <Icon name="volume" className={styles.icon} isRoundIcon />
         </a>
       )}
     </p>

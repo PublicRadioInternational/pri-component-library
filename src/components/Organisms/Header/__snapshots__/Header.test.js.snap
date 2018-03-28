@@ -24,7 +24,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           <svg
             aria-hidden={true}
             aria-labelledby={null}
-            className="inlineSvg inlineLink svg"
+            className="svg inlineLink inlineSvg"
             fill="currentcolor"
             height={28}
             version={1.1}
@@ -84,7 +84,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               <svg
                 aria-hidden={true}
                 aria-labelledby={null}
-                className="inlineSvg null svg"
+                className="svg inlineSvg"
                 fill="currentcolor"
                 height={28}
                 version={1.1}
@@ -105,7 +105,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               <svg
                 aria-hidden={true}
                 aria-labelledby={null}
-                className="inlineSvg null svg"
+                className="svg inlineSvg"
                 fill="currentcolor"
                 height={28}
                 version={1.1}
@@ -126,7 +126,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               <svg
                 aria-hidden={true}
                 aria-labelledby={null}
-                className="inlineSvg null svg"
+                className="svg inlineSvg"
                 fill="currentcolor"
                 height={28}
                 version={1.1}
@@ -171,7 +171,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                 <svg
                   aria-hidden={true}
                   aria-labelledby={null}
-                  className="iconDown "
+                  className="svg iconDown "
                   fill="currentcolor"
                   height={28}
                   version={1.1}
@@ -300,7 +300,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                 <svg
                   aria-hidden={true}
                   aria-labelledby={null}
-                  className="iconDown "
+                  className="svg iconDown "
                   fill="currentcolor"
                   height={28}
                   version={1.1}
@@ -439,7 +439,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                 <svg
                   aria-hidden={true}
                   aria-labelledby={null}
-                  className="iconDown "
+                  className="svg iconDown "
                   fill="currentcolor"
                   height={28}
                   version={1.1}
@@ -548,7 +548,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                 <svg
                   aria-hidden={true}
                   aria-labelledby={null}
-                  className="iconDown "
+                  className="svg iconDown "
                   fill="currentcolor"
                   height={28}
                   version={1.1}
@@ -627,7 +627,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                 <svg
                   aria-hidden={true}
                   aria-labelledby={null}
-                  className="iconDown "
+                  className="svg iconDown "
                   fill="currentcolor"
                   height={28}
                   version={1.1}
@@ -756,7 +756,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                 <svg
                   aria-hidden={true}
                   aria-labelledby={null}
-                  className="iconDown "
+                  className="svg iconDown "
                   fill="currentcolor"
                   height={28}
                   version={1.1}
@@ -925,7 +925,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                 <svg
                   aria-hidden={true}
                   aria-labelledby={null}
-                  className="iconDown "
+                  className="svg iconDown "
                   fill="currentcolor"
                   height={28}
                   version={1.1}
@@ -1034,7 +1034,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                 <svg
                   aria-hidden={true}
                   aria-labelledby={null}
-                  className="iconDown "
+                  className="svg iconDown "
                   fill="currentcolor"
                   height={28}
                   version={1.1}
@@ -1084,7 +1084,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             <svg
               aria-hidden={null}
               aria-labelledby="Facebook"
-              className="socialMenuIcon"
+              className="svg socialMenuIcon"
               fill="currentcolor"
               height={28}
               version={1.1}
@@ -1111,7 +1111,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             <svg
               aria-hidden={null}
               aria-labelledby="Twitter"
-              className="socialMenuIcon"
+              className="svg socialMenuIcon"
               fill="currentcolor"
               height={28}
               version={1.1}
@@ -1138,7 +1138,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             <svg
               aria-hidden={null}
               aria-labelledby="Subscribe to our Newsletters"
-              className="socialMenuIcon socialMenuIconFull"
+              className="svg socialMenuIcon socialMenuIconFull"
               fill="currentcolor"
               height={28}
               version={1.1}
@@ -1165,7 +1165,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             <svg
               aria-hidden={null}
               aria-labelledby="RSS"
-              className="socialMenuIcon socialMenuIconRSS"
+              className="svg socialMenuIcon socialMenuIconRSS"
               fill="currentcolor"
               height={28}
               version={1.1}
@@ -1192,7 +1192,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             <svg
               aria-hidden={null}
               aria-labelledby="Login"
-              className="socialMenuIcon socialMenuIconFull socialMenuIconFullLg"
+              className="svg socialMenuIcon socialMenuIconFull socialMenuIconFullLg"
               fill="currentcolor"
               height={28}
               version={1.1}
@@ -1221,7 +1221,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       <svg
         aria-hidden={null}
         aria-labelledby={null}
-        className="menuIcon"
+        className="svg menuIcon"
         fill="currentcolor"
         height={28}
         version={1.1}
@@ -1280,7 +1280,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
         <svg
           aria-hidden={true}
           aria-labelledby={null}
-          className="inlineSvg mobileSmallIcon svg"
+          className="svg mobileSmallIcon inlineSvg"
           fill="currentcolor"
           height={28}
           version={1.1}
@@ -1317,7 +1317,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
         <svg
           aria-hidden={true}
           aria-labelledby={null}
-          className="inlineSvg mobileSmallIcon svg"
+          className="svg mobileSmallIcon inlineSvg"
           fill="currentcolor"
           height={28}
           version={1.1}
@@ -1354,7 +1354,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
         <svg
           aria-hidden={true}
           aria-labelledby={null}
-          className="inlineSvg mobileSmallIcon svg"
+          className="svg mobileSmallIcon inlineSvg"
           fill="currentcolor"
           height={28}
           version={1.1}
@@ -1391,7 +1391,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
         <svg
           aria-hidden={true}
           aria-labelledby={null}
-          className="inlineSvg mobileSmallIcon svg"
+          className="svg mobileSmallIcon inlineSvg"
           fill="currentcolor"
           height={28}
           version={1.1}
