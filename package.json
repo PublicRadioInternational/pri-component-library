@@ -3,8 +3,7 @@
   "version": "0.0.0-development",
   "description": "Contains a node module that exports PRI's React components.",
   "main": "index.js",
-  "repository":
-    "git@github.com:PublicRadioInternational/pri-component-library.git",
+  "repository": "git@github.com:PublicRadioInternational/pri-component-library.git",
   "author": "PRI",
   "license": "UNLICENSED",
   "private": true,
@@ -22,25 +21,40 @@
     "node": ">=8.4.0"
   },
   "lint-staged": {
-    "**/*.{js,jsx,json,css}": ["prettier --write", "git add"]
+    "**/*.{js,jsx,json,css}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "release": {
-    "verifyConditions": ["@semantic-release/github"],
-    "publish": ["@semantic-release/github"],
-    "success": ["@semantic-release/github"],
-    "fail": ["@semantic-release/github"]
+    "verifyConditions": [
+      "@semantic-release/github"
+    ],
+    "publish": [
+      "@semantic-release/github"
+    ],
+    "success": [
+      "@semantic-release/github"
+    ],
+    "fail": [
+      "@semantic-release/github"
+    ]
   },
   "jest": {
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     },
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-        "<rootDir>/__mocks__/fileMock.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less|svg)$": "identity-obj-proxy"
     },
-    "setupFiles": ["<rootDir>/jest.setup.js"],
-    "testPathIgnorePatterns": ["<rootDir>/.next/", "<rootDir>/node_modules/"]
+    "setupFiles": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/.next/",
+      "<rootDir>/node_modules/"
+    ]
   },
   "scripts": {
     "commitmsg": "commitlint -e $GIT_PARAMS",
@@ -87,6 +101,7 @@
   "dependencies": {
     "babel-plugin-macros": "^2.2.0",
     "babel-preset-stage-0": "^6.24.1",
+    "classnames": "^2.2.5",
     "downshift": "^1.30.0",
     "postcss-mixins": "^6.2.0",
     "react": "^16.2.0",

@@ -5,7 +5,10 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames/bind';
 import styles from './Icons.css';
+
+const cx = classNames.bind(styles);
 
 const Icon = props => {
   const {
@@ -16,8 +19,15 @@ const Icon = props => {
     height,
     width,
     version,
-    viewBox
+    viewBox,
+    isRoundIcon
   } = props;
+  const iconClass = cx({
+    svg: true,
+    [className]: className && className,
+    [inlineSvg]: inline,
+    roundIcon: isRoundIcon
+  });
   const iconPath = iconName => {
     switch (iconName) {
       case 'heart':
@@ -75,11 +85,7 @@ const Icon = props => {
   };
   return (
     <svg
-      className={
-        inline
-          ? `${styles.inlineSvg} ${className && className} ${styles.svg}`
-          : className && className
-      }
+      className={iconClass}
       height={height}
       width={width}
       version={version}
@@ -116,7 +122,8 @@ Icon.propTypes = {
   height: PropTypes.number,
   width: PropTypes.number,
   version: PropTypes.number,
-  viewBox: PropTypes.string
+  viewBox: PropTypes.string,
+  isRoundIcon: PropTypes.bool
 };
 
 Icon.defaultProps = {
@@ -127,7 +134,8 @@ Icon.defaultProps = {
   height: 28,
   width: 28,
   version: 1.1,
-  viewBox: '0 0 28 28'
+  viewBox: '0 0 28 28',
+  isRoundIcon: false
 };
 
 export default Icon;

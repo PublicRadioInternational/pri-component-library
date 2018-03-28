@@ -17,7 +17,7 @@ const Hero = ({ title, summary, hasAudio, category, imgSrc, imgAlt, url }) => (
     <div className={styles.text}>
       {hasAudio && (
         <a className={styles.iconLink} href={url}>
-          <Icon name="volume" className={styles.icon} />
+          <Icon name="volume" className={styles.icon} isRoundIcon />
         </a>
       )}
       <h2>

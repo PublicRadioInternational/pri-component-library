@@ -13,3 +13,22 @@
   top: 2px;
   width: 16px;
 }
+
+.roundIconLink {
+  color: white;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.roundIconLink:hover {
+  color: grayLighter;
+}
+
+@define-mixin roundIcon {
+  background-color: orange;
+  border-radius: 18px;
+  height: 22px;
+  fill: currentColor;
+  padding: 1px 1px 0;
+  width: 22px;
+}

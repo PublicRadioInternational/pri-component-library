@@ -75,22 +75,8 @@
   }
 }
 
-.iconLink {
-  color: white;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.iconLink:hover {
-  color: grayLighter;
-}
-
 .icon {
-  background-color: orange;
-  border-radius: 18px;
   height: 30px;
-  fill: currentColor;
-  padding: 1px 1px 0;
   width: 30px;
 }
 
