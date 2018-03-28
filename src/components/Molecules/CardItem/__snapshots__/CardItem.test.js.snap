@@ -52,6 +52,7 @@ exports[`<CardItem /> Matches the Card Item snapshot 1`] = `
         aria-hidden={null}
         aria-labelledby={null}
         className="icon"
+        fill="currentcolor"
         height={28}
         version={1.1}
         viewBox="0 0 28 28"

@@ -6,6 +6,7 @@
 import Button from './src/components/Atoms/Button/Button.component';
 import ButtonLink from './src/components/Atoms/Button/ButtonLink.component';
 import ButtonInput from './src/components/Atoms/Button/ButtonInput.component';
+import Accordion from './src/components/Molecules/Accordion/Accordion.component';
 import Dropdown from './src/components/Molecules/Dropdown/Dropdown.component';
 import List from './src/components/Molecules/List/List.component';
 import Search from './src/components/Molecules/Search/Search.component';
@@ -17,6 +18,7 @@ import Aside from './src/components/Organisms/Content/Aside.component';
 import Section from './src/components/Organisms/Content/Section.component';
 import Footer from './src/components/Organisms/Footer/Footer.component';
 import Header from './src/components/Organisms/Header/Header.component';
+import MainMenu from './src/components/Organisms/Header/MainMenu.component';
 import Layout from './src/components/Organisms/Main/Layout.component';
 import LayoutAsideCallouts from './src/components/Organisms/Main/LayoutAsideCallouts.component';
 import LayoutAsideLatest from './src/components/Organisms/Main/LayoutAsideLatest.component';
@@ -41,6 +43,7 @@ export {
   DropdownItem,
   Icons,
   PriLogo,
+  Accordion,
   CardItem,
   Dropdown,
   List,
@@ -49,6 +52,7 @@ export {
   Section,
   Footer,
   Header,
+  MainMenu,
   Layout,
   LayoutAsideCallouts,
   LayoutAsideLatest,

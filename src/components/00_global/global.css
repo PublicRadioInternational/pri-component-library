@@ -1,14 +1,44 @@
 /* import colors... */
 @value colors: "./colors.css";
-@value grayLighter, grayDark from colors;
+@value grayLighter, gray, grayDark, orange, blue from colors;
+
+/* import fonts... */
+@value fonts: "./fonts.css";
+@value copy, heading from fonts;
 
 body {
   background: grayLighter;
   color: grayDark;
-  font: 400 1rem 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial,
-    'Nimbus Sans L', sans-serif;
+  font: 400 1rem copy;
   line-height: 1.5;
   text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: gray;
+  font-family: heading;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+a {
+  color: blue;
+}
+
+a:hover {
+  color: orange;
 }
 
 img {
