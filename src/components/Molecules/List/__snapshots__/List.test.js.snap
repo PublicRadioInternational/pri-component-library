@@ -3,7 +3,7 @@
 exports[`<List /> Matches the List snapshot 1`] = `
 <div
   aria-labelledby={null}
-  className="null "
+  className=""
   role={null}
 >
   <ul

@@ -47,7 +47,7 @@
     "lint": "eslint --ext .jsx,.js .",
     "test": "NODE_ENV=development jest --verbose --coverage --no-cache",
     "snapshot": "NODE_ENV=development jest -u",
-    "prettier": "prettier --write \"**/*.{js,jsx}\"",
+    "prettier": "prettier --write \"**/*.{js,jsx,json,css}\"",
     "precommit": "lint-staged && yarn lint && yarn test",
     "semantic-release": "semantic-release",
     "start": "NODE_ENV=development start-storybook -p 9001 -c .storybook",
@@ -88,6 +88,7 @@
   "dependencies": {
     "babel-plugin-macros": "^2.2.0",
     "babel-preset-stage-0": "^6.24.1",
+    "classnames": "^2.2.5",
     "downshift": "^1.30.0",
     "postcss-mixins": "^6.2.0",
     "react": "^16.2.0",

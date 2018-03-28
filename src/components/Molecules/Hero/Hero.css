@@ -1,0 +1,117 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value gray, orange, grayLighter from colors;
+
+/* import breakpoints */
+@value small as bp-small, medium as bp-medium, header as bp-header from "../../00_global/breakpoints.css";
+
+.hero {
+  background: black;
+  border-bottom: 1px solid gray;
+  color: #ddd;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  position: relative;
+  text-align: center;
+  text-shadow: 1px 0px 20px gray;
+}
+
+.figure {
+  height: 100%;
+  left: 0;
+  margin: 0;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.figure::after {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 1;
+  box-shadow: inset 0px 15px 100px 0px black;
+}
+
+.img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.text {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 175px 15px 30px;
+  position: relative;
+  text-shadow: 0 1px 0 #000;
+  width: 93%;
+  z-index: 3;
+}
+
+@media bp-small {
+  .text {
+    max-width: 540px;
+  }
+}
+
+@media bp-medium {
+  .text {
+    max-width: 720px;
+  }
+}
+
+@media bp-header {
+  .text {
+    max-width: 720px;
+  }
+}
+
+.iconLink {
+  color: white;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.iconLink:hover {
+  color: grayLighter;
+}
+
+.icon {
+  height: 30px;
+  padding: 1px 1px 0;
+  width: 30px;
+}
+
+.title {
+  color: #ddd;
+  display: block;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.title:hover {
+  color: white;
+}
+
+.summary {
+  font-size: 1.2rem;
+}
+
+.category {
+  color: #ddd;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.category:hover {
+  color: white;
+}

@@ -15,7 +15,7 @@ exports[`<Search /> Matches the snapshot 1`] = `
     className="inputWrap"
   >
     <input
-      className="btnWhite searchBtn inputBtn null"
+      className="inputBtn btnWhite searchBtn"
       onClick={[Function]}
       type="submit"
       value="Go!"
