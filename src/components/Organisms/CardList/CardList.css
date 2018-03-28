@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value grayLighter, blue from colors;
+@value grayLighter, blue, world, americaAbroad, globalPost, liveWire, livingEarth, otherhood, playdate, scienceHappiness, sciFri, studio, takeaway, thingsBoom, undiscovered, acrossWomensLives, globalNation, globalSecurity, livablePlanet from colors;
 
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
