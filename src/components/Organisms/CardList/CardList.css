@@ -14,8 +14,21 @@
   word-wrap: break-word;
 }
 
-.world {
-  border-top: 3px solid blue;
+.world,
+.global-nation {
+  border-top-color: blue;
+}
+
+.globalpost {
+  border-top-color: #5179bb;
+}
+
+.global-security {
+  border-top-color: #ffde16;
+}
+
+.awl {
+  border-top-color: #9caf16;
 }
 
 .header {
