@@ -29,7 +29,7 @@ storiesOf('Organisms/CardList', module).add('Card List', () => (
       imgAlt="Alt Text"
       blurb="Ten years after Kosovo declared its independence from Serbia, Serbs and Albanians in Kosovo remain deeply divided — even over food."
       large
-      audio
+      hasAudio
     />
     <CardItem
       title="50 years on, India is celebrating the Beatles' infamous trip to the country"
@@ -44,7 +44,7 @@ storiesOf('Organisms/CardList', module).add('Card List', () => (
       imgSrc="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/DeLauro.jpg?itok=gprExR5S"
       imgAlt="Alt Text"
       blurb="NAFTA has governed the rules of trade between the US, Mexico and Canada since 1994. Today, many progressives who dislike NAFTA say President Trump is giving them the best chance in a generation to rewrite the rules of trade. "
-      audio
+      hasAudio
     />
     <CardItem
       title="A cartoonist in Equatorial Guinea has been cleared of charges, but he's still in jail"
@@ -59,7 +59,7 @@ storiesOf('Organisms/CardList', module).add('Card List', () => (
       imgSrc="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/GettyImages-925030722_master.jpg?itok=LSMUCQbS"
       imgAlt="Alt Text"
       blurb="An Egyptian court has sentenced one of its country's top singers to six months in prison for a comment she made about the Nile River. Pop singer Sherine made a crack about getting ill from drinking from the river when she was asked by a fan to sing, 'Have You Ever Drunk From the Nile.'"
-      audio
+      hasAudio
     />
   </CardList>
 ));

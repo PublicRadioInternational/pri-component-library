@@ -12,7 +12,7 @@ import Icon from '../../Atoms/Svg/Icons.component';
 /**
  * Component that renders a Card Item.
  */
-const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large, audio }) => (
+const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large, hasAudio }) => (
   <article
     className={`${styles.cardItem} ${large ? styles.cardItemLg : undefined}`}
     typeof="sioc:Item foaf:Document"
@@ -42,7 +42,7 @@ const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large, audio }) => (
     </figure>
     <p className={`${styles.blurb} ${large ? styles.blurbLg : undefined}`}>
       {blurb}
-      {audio && (
+      {hasAudio && (
         <a className={styles.iconLink} href={url}>
           <Icon name="volume" className={styles.icon} />
         </a>
@@ -58,7 +58,7 @@ CardItem.propTypes = {
   imgAlt: PropTypes.string,
   blurb: PropTypes.string,
   large: PropTypes.bool,
-  audio: PropTypes.bool
+  hasAudio: PropTypes.bool
 };
 
 CardItem.defaultProps = {
@@ -66,7 +66,7 @@ CardItem.defaultProps = {
   imgAlt: null,
   blurb: null,
   large: false,
-  audio: false
+  hasAudio: false
 };
 
 export default CardItem;
