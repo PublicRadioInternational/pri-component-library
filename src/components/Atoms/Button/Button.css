@@ -64,6 +64,7 @@
 
 @define-mixin btnOrangeHover {
   background-color: orangeDark;
+  color: white;
 }
 
 .btnOrange {
@@ -79,6 +80,10 @@
 /* Mobile Icon versions */
 .btnMobileWhite {
   color: grayLight;
+}
+
+.btnMobileWhite:hover {
+  color: grayDark;
 }
 
 .btnMobileOrange {
@@ -114,6 +119,14 @@
 /* Input Specific */
 .inputWrap {
   position: relative;
+}
+
+svg.inputIcon {
+  cursor: pointer;
+  left: 10px;
+  margin-top: -9px;
+  position: absolute;
+  top: 50%;
 }
 
 .inputBtn {

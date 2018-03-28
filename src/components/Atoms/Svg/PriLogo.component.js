@@ -21,8 +21,8 @@ const PriLogo = ({
   <svg
     className={
       inline
-        ? `${styles.inlineSvg} ${className && styles[className]}`
-        : className && styles[className]
+        ? `${styles.inlineSvg} ${className && className}`
+        : className && className
     }
     height={height}
     width={width}
