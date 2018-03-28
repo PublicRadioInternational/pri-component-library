@@ -14,6 +14,7 @@ import DropdownItem from './src/components/Atoms/DropdownItem/DropdownItem.compo
 import Icons from './src/components/Atoms/Svg/Icons.component';
 import PriLogo from './src/components/Atoms/Svg/PriLogo.component';
 import CardItem from './src/components/Molecules/CardItem/CardItem.component';
+import Hero from './src/components/Molecules/Hero/Hero.component';
 import Aside from './src/components/Organisms/Content/Aside.component';
 import Section from './src/components/Organisms/Content/Section.component';
 import Footer from './src/components/Organisms/Footer/Footer.component';
@@ -46,6 +47,7 @@ export {
   Accordion,
   CardItem,
   Dropdown,
+  Hero,
   List,
   Search,
   Aside,
