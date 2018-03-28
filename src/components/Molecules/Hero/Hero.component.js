@@ -8,33 +8,23 @@ import PropTypes from 'prop-types';
 
 import Icon from '../../Atoms/Svg/Icons.component';
 
-const Hero = ({ title, summary, hasAudio, category, imgSrc, imgAlt, url }) => {
-  const audioIcon = () => {
-    if (hasAudio) {
-      return (
+const Hero = ({ title, summary, hasAudio, category, imgSrc, imgAlt, url }) => (
+  <article typeof="sioc:Item foaf:Document">
+    <figure>
+      <img src={imgSrc} alt={imgAlt} />
+    </figure>
+    <div>
+      {hasAudio && (
         <a href={url}>
           <Icon name="volume" />
         </a>
-      );
-    }
-
-    return '';
-  };
-
-  return (
-    <article typeof="sioc:Item foaf:Document">
-      <figure>
-        <img src={imgSrc} alt={imgAlt} />
-      </figure>
-      <div>
-        {audioIcon()}
-        <h1>{title}</h1>
-        <p>{summary}</p>
-        <strong>{category}</strong>
-      </div>
-    </article>
-  );
-};
+      )}
+      <h1>{title}</h1>
+      <p>{summary}</p>
+      <strong>{category}</strong>
+    </div>
+  </article>
+);
 
 Hero.propTypes = {
   title: PropTypes.string.isRequired,
