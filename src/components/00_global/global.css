@@ -23,6 +23,11 @@ h6 {
   font-weight: bold;
   color: gray;
   font-family: heading;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 h3 {
@@ -39,4 +44,9 @@ a {
 
 a:hover {
   color: orange;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
 }

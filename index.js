@@ -13,6 +13,7 @@ import Search from './src/components/Molecules/Search/Search.component';
 import DropdownItem from './src/components/Atoms/DropdownItem/DropdownItem.component';
 import Icons from './src/components/Atoms/Svg/Icons.component';
 import PriLogo from './src/components/Atoms/Svg/PriLogo.component';
+import CardItem from './src/components/Molecules/CardItem/CardItem.component';
 import Aside from './src/components/Organisms/Content/Aside.component';
 import Section from './src/components/Organisms/Content/Section.component';
 import Footer from './src/components/Organisms/Footer/Footer.component';
@@ -43,6 +44,7 @@ export {
   Icons,
   PriLogo,
   Accordion,
+  CardItem,
   Dropdown,
   List,
   Search,

@@ -12,6 +12,7 @@ import DropdownItem from '../Atoms/DropdownItem/DropdownItem.component';
 
 import List from './List/List.component';
 import Search from './Search/Search.component';
+import CardItem from './CardItem/CardItem.component';
 
 /**
  * Add storybook definition for Molecules.
@@ -61,3 +62,27 @@ storiesOf('Molecules/List', module).add('Simple', () => (
  * Add storybook definition for Search.
  */
 storiesOf('Molecules/Search', module).add('Default', () => <Search />);
+
+/**
+ * Add storybook definition for CardItem.
+ */
+storiesOf('Molecules/CardItem', module).add('Default', () => (
+  <CardItem
+    title="50 years on, India is celebrating the Beatles' infamous trip to the country"
+    url="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+    imgSrc="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
+    imgAlt="Alt Text"
+    blurb="When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. "
+  />
+));
+
+storiesOf('Molecules/CardItem', module).add('Large', () => (
+  <CardItem
+    title="50 years on, India is celebrating the Beatles' infamous trip to the country"
+    url="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+    imgSrc="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/180302copbridge.jpg?itok=52GppaOv"
+    imgAlt="Alt Text"
+    blurb="When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. "
+    large
+  />
+));
