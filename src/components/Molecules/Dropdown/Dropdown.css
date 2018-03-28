@@ -1,10 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value blue, orangeDark from colors;
-
-/* import fonts... */
-@value fonts: "../../00_global/fonts.css";
-@value copy from fonts;
+@value blue, orangeDark, whiteDark from colors;
 
 /* import breakpoints */
 @value header as bp-header from "../../00_global/breakpoints.css";
@@ -12,6 +8,10 @@
 /* Group */
 .dropdownGrpSmall {
   display: none;
+}
+
+.mobileSmall {
+  content: 'test';
 }
 
 .dropdownGrp {
@@ -63,6 +63,10 @@
   composes: btnDropdown;
 }
 
+.btnDropdownWhite[aria-expanded='true']::after {
+  border-top-color: whiteDark;
+}
+
 .btnDropdownOrange {
   composes: btnDropdown;
   border-left: 1px solid orangeDark;
@@ -78,6 +82,16 @@
 
 @media bp-header {
   .btnHide {
+    display: inline-block;
+  }
+}
+
+.textLabelMobile {
+  display: none;
+}
+
+@media bp-header {
+  .textLabelMobile {
     display: inline-block;
   }
 }

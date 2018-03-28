@@ -1,11 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<DropdownItem /> Matches the Link snapshot 1`] = `
+exports[`<DropdownItem /> Matches the Dropdown Item HR snapshot 1`] = `
+<hr
+  className="dropdownHr"
+/>
+`;
+
+exports[`<DropdownItem /> Matches the Dropdown Item Heading snapshot 1`] = `
+<h3
+  className="dropdownHeading"
+>
+  Google
+</h3>
+`;
+
+exports[`<DropdownItem /> Matches the Dropdown Item Link snapshot 1`] = `
 <a
   className="dropdownItem"
   href="https://google.com"
-  onClick={[MockFunction]}
+  onClick={[Function]}
 >
   Google
 </a>
+`;
+
+exports[`<DropdownItem /> Matches the Dropdown Item any children snapshot 1`] = `
+<div
+  className="dropdownSpace dropdownForm"
+/>
 `;

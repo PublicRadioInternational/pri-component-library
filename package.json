@@ -1,5 +1,5 @@
 {
-  "name": "pri-component-library",
+  "name": "@publicradiointl/pri-component-library",
   "version": "0.0.0-development",
   "description": "Contains a node module that exports PRI's React components.",
   "main": "index.js",
@@ -7,7 +7,6 @@
     "git@github.com:PublicRadioInternational/pri-component-library.git",
   "author": "PRI",
   "license": "UNLICENSED",
-  "private": true,
   "contributors": [
     {
       "name": "Patrick Coffey",
@@ -25,8 +24,9 @@
     "**/*.{js,jsx,json,css}": ["prettier --write", "git add"]
   },
   "release": {
-    "verifyConditions": ["@semantic-release/github"],
-    "publish": ["@semantic-release/github"],
+    "verifyConditions": ["@semantic-release/npm", "@semantic-release/github"],
+    "prepare": ["@semantic-release/npm"],
+    "publish": ["@semantic-release/npm", "@semantic-release/github"],
     "success": ["@semantic-release/github"],
     "fail": ["@semantic-release/github"]
   },
@@ -35,6 +35,8 @@
       "^.+\\.jsx?$": "babel-jest"
     },
     "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less|svg)$": "identity-obj-proxy"
     },
     "setupFiles": ["<rootDir>/jest.setup.js"],
@@ -48,8 +50,8 @@
     "prettier": "prettier --write \"**/*.{js,jsx}\"",
     "precommit": "lint-staged && yarn lint && yarn test",
     "semantic-release": "semantic-release",
-    "start": "start-storybook -p 9001 -c .storybook",
-    "build": "build-storybook -c .storybook -o dist",
+    "start": "NODE_ENV=development start-storybook -p 9001 -c .storybook",
+    "build": "NODE_ENV=production build-storybook -c .storybook -o dist",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d dist"
   },
@@ -57,6 +59,7 @@
     "@commitlint/cli": "^6.1.2",
     "@commitlint/config-angular": "^6.1.2",
     "@semantic-release/github": "^4.0.3",
+    "@semantic-release/npm": "^3.2.2",
     "@storybook/addon-actions": "^3.3.15",
     "@storybook/react": "^3.3.14",
     "babel-eslint": "^8.2.2",
@@ -77,8 +80,7 @@
     "lint-staged": "^7.0.0",
     "prettier": "^1.11.1",
     "react-test-renderer": "^16.2.0",
-    "semantic-release": "^15.0.0",
-    "svg-sprite-loader": "^3.7.1"
+    "semantic-release": "^15.0.0"
   },
   "publishConfig": {
     "access": "restricted"

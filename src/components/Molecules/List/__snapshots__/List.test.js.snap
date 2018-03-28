@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<List /> Matches the List snapshot 1`] = `
+<div
+  aria-labelledby={null}
+  className="null "
+  role={null}
+>
+  <ul
+    className="list null"
+  >
+    <li
+      className="listItem null"
+    >
+      <a
+        className="listLink null"
+        href="http://google.com"
+      >
+        Google
+      </a>
+    </li>
+    <li
+      className="listItem null"
+    >
+      <a
+        className="listLink null"
+        href="http://yahoo.com"
+      >
+        Yahoo
+      </a>
+    </li>
+  </ul>
+</div>
+`;

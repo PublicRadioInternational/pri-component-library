@@ -1,9 +1,52 @@
-.hidden {
-  height: 0;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  visibility: hidden;
-  width: 0;
+/* import colors... */
+@value colors: "./colors.css";
+@value grayLighter, gray, grayDark, orange, blue from colors;
+
+/* import fonts... */
+@value fonts: "./fonts.css";
+@value copy, heading from fonts;
+
+body {
+  background: grayLighter;
+  color: grayDark;
+  font: 400 1rem copy;
+  line-height: 1.5;
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: gray;
+  font-family: heading;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+a {
+  color: blue;
+}
+
+a:hover {
+  color: orange;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
 }

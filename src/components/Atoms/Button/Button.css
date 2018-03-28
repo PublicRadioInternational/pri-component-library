@@ -18,6 +18,7 @@
   font: 700 1rem copy;
   letter-spacing: 0.05rem;
   line-height: 1.5;
+  margin: 0;
   padding: 0.375rem 0.85rem;
   text-align: center;
   text-decoration: none;
@@ -43,17 +44,14 @@
 }
 
 .btn:hover,
-.btnWhite:hover,
-.btnMobileWhite:hover {
+.btnWhite:hover {
   @mixin btnWhiteHover;
 }
 
 .btn:active,
 .btn[aria-expanded='true'],
 .btnWhite:active,
-.btnWhite[aria-expanded='true'],
-.btnMobileWhite:active,
-.btnMobileWhite[aria-expanded='true'] {
+.btnWhite[aria-expanded='true'] {
   @mixin btnWhiteActive;
 }
 
@@ -66,6 +64,7 @@
 
 @define-mixin btnOrangeHover {
   background-color: orangeDark;
+  color: white;
 }
 
 .btnOrange {
@@ -83,12 +82,12 @@
   color: grayLight;
 }
 
-.btnMobileOrange {
-  color: orange;
+.btnMobileWhite:hover {
+  color: grayDark;
 }
 
-.btnOrange:hover {
-  background: none;
+.btnMobileOrange {
+  color: orange;
 }
 
 @media bp-header {
@@ -96,9 +95,16 @@
   .btnMobileOrange {
     @mixin btn;
   }
-}
 
-@media bp-header {
+  .btnMobileWhite:hover {
+    @mixin btnWhiteHover;
+  }
+
+  .btnMobileWhite:active,
+  .btnMobileWhite[aria-expanded='true'] {
+    @mixin btnWhiteActive;
+  }
+
   .btnMobileOrange {
     @mixin btnOrange;
   }
@@ -110,12 +116,28 @@
   }
 }
 
-.textLabelMobile {
-  display: none;
+/* Input Specific */
+.inputWrap {
+  position: relative;
 }
 
-@media bp-header {
-  .textLabelMobile {
-    display: inline-block;
-  }
+svg.inputIcon {
+  cursor: pointer;
+  left: 10px;
+  margin-top: -9px;
+  position: absolute;
+  top: 50%;
+}
+
+.inputBtn {
+  @composes: btnWhite;
+}
+
+.inputWithIcon {
+  padding: 0.375rem 0.85rem 0.375rem 2rem;
+}
+
+.inputWithIcon:active {
+  background-color: grayLighter;
+  color: grayDark;
 }

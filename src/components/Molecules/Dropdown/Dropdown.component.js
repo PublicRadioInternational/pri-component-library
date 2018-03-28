@@ -7,7 +7,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Downshift from 'downshift';
 import styles from './Dropdown.css';
+import ButtonLink from '../../Atoms/Button/ButtonLink.component';
 import Button from '../../Atoms/Button/Button.component';
+import Icon from '../../Atoms/Svg/Icons.component';
 
 /**
  * Component that renders a Dropdown menu button.
@@ -21,6 +23,7 @@ export default class Dropdown extends Component {
     color: PropTypes.oneOf(['Orange', 'White']),
     icon: PropTypes.string,
     className: PropTypes.string,
+    iconClass: PropTypes.string,
     small: PropTypes.bool
   };
 
@@ -31,6 +34,7 @@ export default class Dropdown extends Component {
     onClick: () => {},
     icon: null,
     className: null,
+    iconClass: null,
     small: false
   };
 
@@ -43,6 +47,7 @@ export default class Dropdown extends Component {
       url,
       icon,
       className,
+      iconClass,
       small
     } = this.props;
 
@@ -50,16 +55,23 @@ export default class Dropdown extends Component {
       <Downshift>
         {({ isOpen, getButtonProps }) => (
           <div className={`${styles.dropdownGrp} ${className && className}`}>
-            <Button
+            <ButtonLink
               className={styles.btnGrp}
               url={url}
               color={color}
               onClick={onClick}
-              icon={icon}
               small={small}
             >
-              {title}
-            </Button>
+              {icon ? (
+                <Icon name={icon} inline className={iconClass} ariaHidden />
+              ) : null}
+              <span
+                className={`${styles.textLabel} ${small &&
+                  styles.textLabelMobile}`}
+              >
+                {title}
+              </span>
+            </ButtonLink>
             <Button
               {...getButtonProps()}
               className={`${styles[`btnDropdown${color}`]} ${styles.btnHide}`}

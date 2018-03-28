@@ -1,0 +1,15 @@
+/* import breakpoints */
+@value header as bp-header, small as bp-small from "../../00_global/breakpoints.css";
+
+.svg {
+  fill: currentcolor;
+}
+
+.inlineSvg {
+  display: inline-block;
+  height: 16px;
+  margin-right: 8px;
+  position: relative;
+  top: 2px;
+  width: 16px;
+}
