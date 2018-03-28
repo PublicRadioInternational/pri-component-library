@@ -9,9 +9,16 @@ import renderer from 'react-test-renderer';
 import CardItem from './CardItem.component';
 
 describe('<CardItem />', () => {
-  it('Matches the Card Item snapshot', () => {
+  it('Matches the Card Item Default snapshot', () => {
     const component = renderer
       .create(<CardItem url="/" title="Test Title" />)
+      .toJSON();
+    expect(component).toMatchSnapshot();
+  });
+
+  it('Matches the Card Item Large snapshot', () => {
+    const component = renderer
+      .create(<CardItem url="/" title="Test Title" large />)
       .toJSON();
     expect(component).toMatchSnapshot();
   });

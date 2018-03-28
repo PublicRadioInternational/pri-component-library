@@ -12,10 +12,13 @@ import Icon from '../../Atoms/Svg/Icons.component';
 /**
  * Component that renders a Card.
  */
-const CardItem = ({ url, title, imgSrc, imgAlt, blurb }) => (
-  <article className={styles.cardItem} typeof="sioc:Item foaf:Document">
-    <div className={styles.titleWrap}>
-      <h2 className={styles.title}>
+const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large }) => (
+  <article
+    className={`${styles.cardItem} ${large && styles.cardItemLg}`}
+    typeof="sioc:Item foaf:Document"
+  >
+    <div className={`${styles.titleWrap} ${large && styles.titleWrapLg}`}>
+      <h2 className={`${!large && styles.title}`}>
         <a className={styles.link} href={url}>
           {title}
         </a>
@@ -23,12 +26,17 @@ const CardItem = ({ url, title, imgSrc, imgAlt, blurb }) => (
       <span property="dc:title" content={title} />
       <span property="sioc:num_replies" content="0" datatype="xsd:integer" />
     </div>
-    <figure className={styles.image}>
+    <figure className={`${styles.image} ${large && styles.imageLg}`}>
       <a href={url}>
-        <img typeof="foaf:Image" src={imgSrc} alt={imgAlt} />
+        <img
+          typeof="foaf:Image"
+          src={imgSrc}
+          alt={imgAlt}
+          className={large && styles.imgLg}
+        />
       </a>
     </figure>
-    <p className={styles.blurb}>
+    <p className={`${styles.blurb} ${large && styles.blurbLg}`}>
       {blurb}
       <a className={styles.iconLink} href={url}>
         <Icon name="volume" className={styles.icon} />
@@ -42,13 +50,15 @@ CardItem.propTypes = {
   title: PropTypes.string.isRequired,
   imgSrc: PropTypes.string,
   imgAlt: PropTypes.string,
-  blurb: PropTypes.string
+  blurb: PropTypes.string,
+  large: PropTypes.bool
 };
 
 CardItem.defaultProps = {
   imgSrc: null,
   imgAlt: null,
-  blurb: null
+  blurb: null,
+  large: false
 };
 
 export default CardItem;
