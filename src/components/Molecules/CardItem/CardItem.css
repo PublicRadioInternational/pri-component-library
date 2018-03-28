@@ -16,9 +16,11 @@
   padding: 0;
 }
 
-.titleWrap {
-  flex: 0 1 63%;
-  margin-right: 4%;
+@media bp-min {
+  .titleWrap {
+    flex: 0 1 63%;
+    margin-right: 4%;
+  }
 }
 
 .titleWrapLg {
