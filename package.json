@@ -7,6 +7,7 @@
     "git@github.com:PublicRadioInternational/pri-component-library.git",
   "author": "PRI",
   "license": "UNLICENSED",
+  "private": false,
   "contributors": [
     {
       "name": "Patrick Coffey",
