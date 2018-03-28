@@ -25,11 +25,6 @@ export default class Accordion extends Component {
     color: 'Blue'
   };
 
-  constructor(props) {
-    super(props);
-    this.reveal = this.reveal.bind(this);
-  }
-
   state = { revealed: false };
 
   reveal = e => {
