@@ -14,21 +14,76 @@
   word-wrap: break-word;
 }
 
+.boston-calling,
 .world,
-.global-nation {
-  border-top-color: blue;
+.world-words {
+  border-top-color: world;
+}
+
+.america-abroad {
+  border-top-color: americaAbroad;
 }
 
 .globalpost {
-  border-top-color: #5179bb;
+  border-top-color: globalPost;
+}
+
+.live-wire {
+  border-top-color: liveWire;
+}
+
+.living-earth {
+  border-top-color: livingEarth;
+}
+
+.otherhood {
+  border-top-color: otherhood;
+}
+
+.playdate {
+  border-top-color: playdate;
+}
+
+.science-happiness {
+  border-top-color: scienceHappiness;
+}
+
+.science-friday {
+  border-top-color: sciFri;
+}
+
+.studio-360,
+.studio {
+  border-top-color: studio;
+}
+
+.takeaway {
+  border-top-color: takeaway;
+}
+
+.things-go-boom {
+  border-top-color: thingsBoom;
+}
+
+.undiscovered {
+  border-top-color: undiscovered;
+}
+
+.across-womens-lives,
+.awl {
+  border-top-color: acrossWomensLives;
+}
+
+.global-nation {
+  border-top-color: globalNation;
 }
 
 .global-security {
-  border-top-color: #ffde16;
+  border-top-color: globalSecurity;
 }
 
-.awl {
-  border-top-color: #9caf16;
+.livable-planet {
+  border-top-color: livablePlanet;
 }
 
 .header {
@@ -42,6 +97,7 @@
   display: flex;
   font-weight: bold;
   text-decoration: none;
+  color: blue;
 }
 
 .logo {
