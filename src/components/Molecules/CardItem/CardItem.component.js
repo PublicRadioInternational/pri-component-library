@@ -14,11 +14,15 @@ import Icon from '../../Atoms/Svg/Icons.component';
  */
 const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large }) => (
   <article
-    className={`${styles.cardItem} ${large && styles.cardItemLg}`}
+    className={`${styles.cardItem} ${large ? styles.cardItemLg : undefined}`}
     typeof="sioc:Item foaf:Document"
   >
-    <div className={`${styles.titleWrap} ${large && styles.titleWrapLg}`}>
-      <h2 className={`${!large && styles.title}`}>
+    <div
+      className={`${styles.titleWrap} ${
+        large ? styles.titleWrapLg : undefined
+      }`}
+    >
+      <h2 className={`${!large ? styles.title : undefined}`}>
         <a className={styles.link} href={url}>
           {title}
         </a>
@@ -26,17 +30,17 @@ const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large }) => (
       <span property="dc:title" content={title} />
       <span property="sioc:num_replies" content="0" datatype="xsd:integer" />
     </div>
-    <figure className={`${styles.image} ${large && styles.imageLg}`}>
+    <figure className={`${styles.image} ${large ? styles.imageLg : undefined}`}>
       <a href={url}>
         <img
           typeof="foaf:Image"
           src={imgSrc}
           alt={imgAlt}
-          className={large && styles.imgLg}
+          className={`${styles.img} ${large ? styles.imgLg : undefined}`}
         />
       </a>
     </figure>
-    <p className={`${styles.blurb} ${large && styles.blurbLg}`}>
+    <p className={`${styles.blurb} ${large ? styles.blurbLg : undefined}`}>
       {blurb}
       <a className={styles.iconLink} href={url}>
         <Icon name="volume" className={styles.icon} />

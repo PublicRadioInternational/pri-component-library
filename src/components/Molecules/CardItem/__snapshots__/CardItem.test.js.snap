@@ -2,11 +2,11 @@
 
 exports[`<CardItem /> Matches the Card Item Default snapshot 1`] = `
 <article
-  className="cardItem false"
+  className="cardItem undefined"
   typeof="sioc:Item foaf:Document"
 >
   <div
-    className="titleWrap false"
+    className="titleWrap undefined"
   >
     <h2
       className="title"
@@ -29,21 +29,21 @@ exports[`<CardItem /> Matches the Card Item Default snapshot 1`] = `
     />
   </div>
   <figure
-    className="image false"
+    className="image undefined"
   >
     <a
       href="/"
     >
       <img
         alt={null}
-        className={false}
+        className="img undefined"
         src={null}
         typeof="foaf:Image"
       />
     </a>
   </figure>
   <p
-    className="blurb false"
+    className="blurb undefined"
   >
     <a
       className="iconLink"
@@ -77,7 +77,7 @@ exports[`<CardItem /> Matches the Card Item Large snapshot 1`] = `
     className="titleWrap titleWrapLg"
   >
     <h2
-      className="false"
+      className="undefined"
     >
       <a
         className="link"
@@ -104,7 +104,7 @@ exports[`<CardItem /> Matches the Card Item Large snapshot 1`] = `
     >
       <img
         alt={null}
-        className="imgLg"
+        className="img imgLg"
         src={null}
         typeof="foaf:Image"
       />

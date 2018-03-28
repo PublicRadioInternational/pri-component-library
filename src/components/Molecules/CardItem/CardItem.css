@@ -2,6 +2,9 @@
 @value colors: "../../00_global/colors.css";
 @value grayLighter, gray, orange from colors;
 
+/* import breakpoints */
+@value min as bp-min from "../../00_global/breakpoints.css";
+
 .cardItem {
   border-bottom: 1px solid grayLighter;
   display: flex;
@@ -47,6 +50,16 @@
   flex: 0 1 100%;
   order: -1;
   margin-left: 0;
+}
+
+.img {
+  display: none;
+}
+
+@media bp-min {
+  .img {
+    display: block;
+  }
 }
 
 .imgLg {
