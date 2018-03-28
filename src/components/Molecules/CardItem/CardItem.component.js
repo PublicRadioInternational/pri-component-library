@@ -1,6 +1,6 @@
 /**
- * @file Card.component.js
- * Exports a card component.
+ * @file CardItem.component.js
+ * Exports a card item component.
  */
 
 import React from 'react';
@@ -10,9 +10,9 @@ import styles from './CardItem.css';
 import Icon from '../../Atoms/Svg/Icons.component';
 
 /**
- * Component that renders a Card.
+ * Component that renders a Card Item.
  */
-const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large }) => (
+const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large, audio }) => (
   <article
     className={`${styles.cardItem} ${large ? styles.cardItemLg : undefined}`}
     typeof="sioc:Item foaf:Document"
@@ -42,9 +42,11 @@ const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large }) => (
     </figure>
     <p className={`${styles.blurb} ${large ? styles.blurbLg : undefined}`}>
       {blurb}
-      <a className={styles.iconLink} href={url}>
-        <Icon name="volume" className={styles.icon} />
-      </a>
+      {audio && (
+        <a className={styles.iconLink} href={url}>
+          <Icon name="volume" className={styles.icon} />
+        </a>
+      )}
     </p>
   </article>
 );
@@ -55,14 +57,16 @@ CardItem.propTypes = {
   imgSrc: PropTypes.string,
   imgAlt: PropTypes.string,
   blurb: PropTypes.string,
-  large: PropTypes.bool
+  large: PropTypes.bool,
+  audio: PropTypes.bool
 };
 
 CardItem.defaultProps = {
   imgSrc: null,
   imgAlt: null,
   blurb: null,
-  large: false
+  large: false,
+  audio: false
 };
 
 export default CardItem;

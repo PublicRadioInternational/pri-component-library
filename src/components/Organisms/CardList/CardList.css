@@ -1,0 +1,37 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value grayLighter, blue from colors;
+
+/* import fonts... */
+@value fonts: "../../00_global/fonts.css";
+@value heading from fonts;
+
+.list {
+  background: white;
+  border-top: 3px solid #ddd;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+}
+
+.world {
+  border-top: 3px solid blue;
+}
+
+.header {
+  border-bottom: 1px solid grayLighter;
+  padding: 0.5rem 1rem 0.7rem;
+  font-family: heading;
+}
+
+.logoLink {
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo {
+  margin-right: 10px;
+  width: 50px;
+}
