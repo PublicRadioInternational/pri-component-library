@@ -28,15 +28,16 @@ export default class Accordion extends Component {
   constructor(props) {
     super(props);
     this.reveal = this.reveal.bind(this);
-    this.state = { revealed: false };
   }
 
-  reveal(e) {
+  state = { revealed: false };
+
+  reveal = e => {
     e.preventDefault();
     this.setState(prevState => ({
       revealed: !prevState.revealed
     }));
-  }
+  };
 
   render() {
     const { accordionList, color, accordionTitle } = this.props;
