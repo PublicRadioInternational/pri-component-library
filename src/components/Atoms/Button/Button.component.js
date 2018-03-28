@@ -18,7 +18,7 @@ const Button = props => {
   // Generate a class name based on the color.
   const buttonClass = cx({
     [`btn${color}`]: !small,
-    [className]: className && className,
+    [className]: className,
     [`btnMobile${color}`]: small
   });
 
