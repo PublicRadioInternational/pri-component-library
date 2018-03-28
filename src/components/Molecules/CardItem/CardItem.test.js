@@ -1,6 +1,6 @@
 /**
- * @file Card.test.js
- * Contains tests for Card.component.js.
+ * @file CardItem.test.js
+ * Contains tests for CardItem.component.js.
  */
 
 import React from 'react';

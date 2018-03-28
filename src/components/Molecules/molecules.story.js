@@ -73,6 +73,7 @@ storiesOf('Molecules/CardItem', module).add('Default', () => (
     imgSrc="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
     imgAlt="Alt Text"
     blurb="When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. "
+    audio
   />
 ));
 

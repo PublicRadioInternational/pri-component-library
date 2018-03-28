@@ -15,6 +15,7 @@ import Icons from './src/components/Atoms/Svg/Icons.component';
 import PriLogo from './src/components/Atoms/Svg/PriLogo.component';
 import CardItem from './src/components/Molecules/CardItem/CardItem.component';
 import Aside from './src/components/Organisms/Content/Aside.component';
+import CardList from './src/components/Organisms/CardList/CardList.component';
 import Section from './src/components/Organisms/Content/Section.component';
 import Footer from './src/components/Organisms/Footer/Footer.component';
 import Header from './src/components/Organisms/Header/Header.component';
@@ -48,6 +49,7 @@ export {
   Dropdown,
   List,
   Search,
+  CardList,
   Aside,
   Section,
   Footer,
