@@ -3,7 +3,8 @@
   "version": "0.0.0-development",
   "description": "Contains a node module that exports PRI's React components.",
   "main": "index.js",
-  "repository": "git@github.com:PublicRadioInternational/pri-component-library.git",
+  "repository":
+    "git@github.com:PublicRadioInternational/pri-component-library.git",
   "author": "PRI",
   "license": "UNLICENSED",
   "private": false,
@@ -21,47 +22,32 @@
     "node": ">=8.4.0"
   },
   "lint-staged": {
-    "**/*.{js,jsx,json,css}": [
-      "prettier --write",
-      "git add"
-    ]
+    "**/*.{js,jsx,json,css}": ["prettier --write", "git add"]
   },
   "release": {
-    "verifyConditions": [
-      "@semantic-release/github"
-    ],
-    "publish": [
-      "@semantic-release/github"
-    ],
-    "success": [
-      "@semantic-release/github"
-    ],
-    "fail": [
-      "@semantic-release/github"
-    ]
+    "verifyConditions": ["@semantic-release/github"],
+    "publish": ["@semantic-release/github"],
+    "success": ["@semantic-release/github"],
+    "fail": ["@semantic-release/github"]
   },
   "jest": {
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     },
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less|svg)$": "identity-obj-proxy"
     },
-    "setupFiles": [
-      "<rootDir>/jest.setup.js"
-    ],
-    "testPathIgnorePatterns": [
-      "<rootDir>/.next/",
-      "<rootDir>/node_modules/"
-    ]
+    "setupFiles": ["<rootDir>/jest.setup.js"],
+    "testPathIgnorePatterns": ["<rootDir>/.next/", "<rootDir>/node_modules/"]
   },
   "scripts": {
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "eslint --ext .jsx,.js .",
     "test": "NODE_ENV=development jest --verbose --coverage --no-cache",
     "snapshot": "NODE_ENV=development jest -u",
-    "prettier": "prettier --write \"**/*.{js,jsx}\"",
+    "prettier": "prettier --write \"**/*.{js,jsx,json,css}\"",
     "precommit": "lint-staged && yarn lint && yarn test",
     "semantic-release": "semantic-release",
     "start": "NODE_ENV=development start-storybook -p 9001 -c .storybook",
