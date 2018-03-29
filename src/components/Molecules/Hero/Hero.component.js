@@ -9,7 +9,16 @@ import styles from './Hero.css';
 
 import Icon from '../../Atoms/Svg/Icons.component';
 
-const Hero = ({ title, summary, hasAudio, category, imgSrc, imgAlt, url }) => (
+const Hero = ({
+  title,
+  summary,
+  hasAudio,
+  category,
+  categoryUrl,
+  imgSrc,
+  imgAlt,
+  url
+}) => (
   <article typeof="sioc:Item foaf:Document" className={styles.hero}>
     <figure className={styles.figure}>
       <img className={styles.img} src={imgSrc} alt={imgAlt} />
@@ -26,7 +35,7 @@ const Hero = ({ title, summary, hasAudio, category, imgSrc, imgAlt, url }) => (
         </a>
       </h2>
       <p className={styles.summary}>{summary}</p>
-      <a className={styles.category} href={url}>
+      <a className={styles.category} href={categoryUrl || url}>
         {category}
       </a>
     </div>
@@ -37,6 +46,7 @@ Hero.propTypes = {
   title: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
+  categoryUrl: PropTypes.string,
   imgSrc: PropTypes.string.isRequired,
   imgAlt: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
@@ -44,7 +54,8 @@ Hero.propTypes = {
 };
 
 Hero.defaultProps = {
-  hasAudio: false
+  hasAudio: false,
+  categoryUrl: false
 };
 
 export default Hero;
