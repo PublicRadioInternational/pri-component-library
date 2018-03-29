@@ -3,6 +3,7 @@
  * Exports all components available in this project.
  */
 
+import ArticleItem from './src/components/Atoms/Article/ArticleItem.component';
 import Button from './src/components/Atoms/Button/Button.component';
 import ButtonLink from './src/components/Atoms/Button/ButtonLink.component';
 import ButtonInput from './src/components/Atoms/Button/ButtonInput.component';
@@ -38,6 +39,7 @@ const Styles = {
 };
 
 export {
+  ArticleItem,
   Button,
   ButtonInput,
   ButtonLink,
