@@ -89,7 +89,7 @@ CardItem.propTypes = {
   title: PropTypes.string,
   imgSrc: PropTypes.string,
   imgAlt: PropTypes.string,
-  blurb: PropTypes.string,
+  blurb: PropTypes.node,
   large: PropTypes.bool,
   hasAudio: PropTypes.bool
 };
