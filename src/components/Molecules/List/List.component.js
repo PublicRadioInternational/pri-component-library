@@ -5,7 +5,10 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames/bind';
 import styles from './List.css';
+
+const cx = classNames.bind(styles);
 
 /**
  * Component that renders a list.
@@ -48,6 +51,11 @@ export default class List extends Component {
       classNameOpen
     } = this.props;
 
+    const listWrapClasses = cx({
+      [className]: className && className,
+      [classNameOpen]: reveal === true
+    });
+
     const items = listItems.map(item => (
       <li className={`${styles.listItem} ${liClass}`} key={item.name}>
         <a className={`${styles.listLink} ${linkClass}`} href={item.url}>
@@ -57,7 +65,7 @@ export default class List extends Component {
     ));
     return (
       <div
-        className={`${className} ${reveal === true ? classNameOpen : ''}`}
+        className={listWrapClasses}
         role={role}
         aria-labelledby={ariaLabelledby}
       >

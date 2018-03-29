@@ -5,51 +5,58 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames/bind';
 import styles from './CardItem.css';
 
 import Icon from '../../Atoms/Svg/Icons.component';
 
+const cx = classNames.bind(styles);
+
 /**
  * Component that renders a Card Item.
  */
-const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large, hasAudio }) => (
-  <article
-    className={`${styles.cardItem} ${large ? styles.cardItemLg : undefined}`}
-    typeof="sioc:Item foaf:Document"
-  >
-    <div
-      className={`${styles.titleWrap} ${
-        large ? styles.titleWrapLg : undefined
-      }`}
+const CardItem = props => {
+  const { url, title, imgSrc, imgAlt, blurb, large, hasAudio } = props;
+  const largeClasses = element =>
+    cx({
+      [element]: true,
+      [`${element}Lg`]: large
+    });
+  return (
+    <article
+      className={largeClasses('cardItem')}
+      typeof="sioc:Item foaf:Document"
     >
-      <h2 className={`${!large ? styles.title : undefined}`}>
-        <a className={styles.link} href={url}>
-          {title}
+      <div className={largeClasses('titleWrap')}>
+        <h2 className={`${!large && styles.title}`}>
+          <a className={styles.link} href={url}>
+            {title}
+          </a>
+        </h2>
+        <span property="dc:title" content={title} />
+        <span property="sioc:num_replies" content="0" datatype="xsd:integer" />
+      </div>
+      <figure className={largeClasses('image')}>
+        <a href={url}>
+          <img
+            typeof="foaf:Image"
+            src={imgSrc}
+            alt={imgAlt}
+            className={largeClasses('img')}
+          />
         </a>
-      </h2>
-      <span property="dc:title" content={title} />
-      <span property="sioc:num_replies" content="0" datatype="xsd:integer" />
-    </div>
-    <figure className={`${styles.image} ${large ? styles.imageLg : undefined}`}>
-      <a href={url}>
-        <img
-          typeof="foaf:Image"
-          src={imgSrc}
-          alt={imgAlt}
-          className={`${styles.img} ${large ? styles.imgLg : undefined}`}
-        />
-      </a>
-    </figure>
-    <p className={`${styles.blurb} ${large ? styles.blurbLg : undefined}`}>
-      {blurb}
-      {hasAudio && (
-        <a className={styles.iconLink} href={url}>
-          <Icon name="volume" className={styles.icon} />
-        </a>
-      )}
-    </p>
-  </article>
-);
+      </figure>
+      <p className={largeClasses('blurb')}>
+        {blurb}
+        {hasAudio && (
+          <a className={styles.iconLink} href={url}>
+            <Icon name="volume" className={styles.icon} isRoundIcon />
+          </a>
+        )}
+      </p>
+    </article>
+  );
+};
 
 CardItem.propTypes = {
   url: PropTypes.string.isRequired,

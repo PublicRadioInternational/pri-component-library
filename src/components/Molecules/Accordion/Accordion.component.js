@@ -5,10 +5,13 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames/bind';
 import styles from './Accordion.css';
 
 import Icon from '../../Atoms/Svg/Icons.component';
 import List from '../../Molecules/List/List.component';
+
+const cx = classNames.bind(styles);
 
 /**
  * Component that renders an accordion.
@@ -40,17 +43,22 @@ export default class Accordion extends Component {
     const accordionItemColor = `accordionItem${color}`;
     const accordionTopLinkColor = `accordionTopLink${color}`;
     const accordionContentMenuLinkColor = `accordionContentMenuLink${color}`;
+    const accordionTopLinkClasses = cx({
+      accordionTopLink: true,
+      [accordionTopLinkColor]: color,
+      accordionTopLinkOpen: this.state.revealed === true
+    });
+    const iconClasses = cx({
+      iconDown: true,
+      iconUp: this.state.revealed === true
+    });
 
     return (
       <div className={`${styles.accordionItem} ${styles[accordionItemColor]}`}>
         <div className={styles.accordionTop} role="tab">
           <h5 className={styles.accordionTopHeading}>
             <a
-              className={`${styles.accordionTopLink} ${
-                styles[accordionTopLinkColor]
-              } ${
-                this.state.revealed === true ? styles.accordionTopLinkOpen : ''
-              }`}
+              className={accordionTopLinkClasses}
               date-toggle={styles.accordionContent}
               date-parent="#accordion"
               href="#collapseNews"
@@ -63,9 +71,7 @@ export default class Accordion extends Component {
               <Icon
                 name="left"
                 ariaHidden
-                className={`${styles.iconDown} ${
-                  this.state.revealed === true ? styles.iconUp : ''
-                }`}
+                className={iconClasses}
                 viewBox="-2 -2 28 28"
               />
             </a>
