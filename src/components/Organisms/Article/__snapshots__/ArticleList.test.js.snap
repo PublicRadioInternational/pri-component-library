@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ArticleItem /> Matches the Article List with more link snapshot 1`] = `
+<section
+  className="className && section"
+>
+  <header
+    className="header"
+  >
+    Test Title
+  </header>
+  <span>
+    Test Item One
+  </span>
+  <span>
+    test Item Two
+  </span>
+  <footer
+    className="footer"
+  >
+    <a
+      className="btnBlue null"
+      href="more/"
+      onClick={[Function]}
+    >
+      More Stories
+    </a>
+  </footer>
+</section>
+`;
+
+exports[`<ArticleItem /> Matches the Article List without more link snapshot 1`] = `
+<section
+  className="className && section"
+>
+  <header
+    className="header"
+  >
+    Test Title
+  </header>
+  <span>
+    Test Item One
+  </span>
+  <span>
+    test Item Two
+  </span>
+</section>
+`;

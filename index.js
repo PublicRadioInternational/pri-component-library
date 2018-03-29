@@ -4,6 +4,7 @@
  */
 
 import ArticleItem from './src/components/Atoms/Article/ArticleItem.component';
+import ArticleList from './src/components/Organisms/Article/ArticleList.component';
 import Button from './src/components/Atoms/Button/Button.component';
 import ButtonLink from './src/components/Atoms/Button/ButtonLink.component';
 import ButtonInput from './src/components/Atoms/Button/ButtonInput.component';
@@ -39,6 +40,7 @@ const Styles = {
 };
 
 export {
+  // Atoms.
   ArticleItem,
   Button,
   ButtonInput,
@@ -46,11 +48,14 @@ export {
   DropdownItem,
   Icons,
   PriLogo,
+  // Molecules.
   Accordion,
   CardItem,
   Dropdown,
   List,
   Search,
+  // Organisms.
+  ArticleList,
   CardList,
   Aside,
   Section,
@@ -64,6 +69,8 @@ export {
   LayoutMainList,
   LayoutMainList2,
   Main,
+  // Pages.
   Home,
+  // Global.
   Styles
 }; // eslint-disable-line
