@@ -51,7 +51,7 @@ exports[`<Hero /> Matches the Hero snapshot 1`] = `
     </p>
     <a
       className="category"
-      href="https://google.com"
+      href="https://bing.com"
     >
       GlobalPost
     </a>
