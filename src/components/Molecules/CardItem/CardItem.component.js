@@ -13,10 +13,36 @@ import Icon from '../../Atoms/Svg/Icons.component';
 const cx = classNames.bind(styles);
 
 /**
+ * Takes an optional link and title, and returns a title structure.
+ *
+ * @param {string} title - Title string.
+ * @param {string} link - Optional url to which {title} should link.
+ * @param {string} className - Class that should be applied to title wrapper.
+ *
+ * @returns {object|null}
+ *   Depending on whether or not a link, or a title is provided, this method
+ *   will return a title, a linked title.
+ */
+const CardTitle = (title, link = null, className = '') => {
+  // If both a link and a title exist, return a linked title.
+  if (link && title) {
+    return (
+      <a className={className} href={link}>
+        {title}
+      </a>
+    );
+  } else if (title) {
+    // If there is just a title, return just the title.
+    return title;
+  }
+
+  return null;
+};
+
+/**
  * Component that renders a Card Item.
  */
-const CardItem = props => {
-  const { url, title, imgSrc, imgAlt, blurb, large, hasAudio } = props;
+const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large, hasAudio }) => {
   const largeClasses = element =>
     cx({
       [element]: true,
@@ -28,12 +54,12 @@ const CardItem = props => {
       typeof="sioc:Item foaf:Document"
     >
       <div className={largeClasses('titleWrap')}>
-        <h2 className={`${!large && styles.title}`}>
-          <a className={styles.link} href={url}>
-            {title}
-          </a>
-        </h2>
-        <span property="dc:title" content={title} />
+        {title && (
+          <h2 className={`${!large && styles.title}`}>
+            {CardTitle(title, url, styles.link)}
+          </h2>
+        )}
+        {title && <span property="dc:title" content={title} />}
         <span property="sioc:num_replies" content="0" datatype="xsd:integer" />
       </div>
       <figure className={largeClasses('image')}>
@@ -59,8 +85,8 @@ const CardItem = props => {
 };
 
 CardItem.propTypes = {
-  url: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  url: PropTypes.string,
+  title: PropTypes.string,
   imgSrc: PropTypes.string,
   imgAlt: PropTypes.string,
   blurb: PropTypes.string,
@@ -72,6 +98,8 @@ CardItem.defaultProps = {
   imgSrc: null,
   imgAlt: null,
   blurb: null,
+  url: null,
+  title: null,
   large: false,
   hasAudio: false
 };
