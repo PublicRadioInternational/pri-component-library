@@ -25,27 +25,7 @@ const CardList = ({ category, children, url, src, categoryDescription }) => (
 );
 
 CardList.propTypes = {
-  category: PropTypes.oneOf([
-    'world',
-    'america-abroad',
-    'boston-calling',
-    'global-post',
-    'live-wire',
-    'living-earth',
-    'otherhood',
-    'playdate',
-    'science-happiness',
-    'sci-fri',
-    'studio',
-    'takeaway',
-    'things-go-boom',
-    'undiscovered',
-    'world-words',
-    'across-womens-lives',
-    'global-nation',
-    'global-security',
-    'livable-planet'
-  ]),
+  category: PropTypes.string,
   children: PropTypes.node,
   url: PropTypes.string,
   src: PropTypes.string,
@@ -53,7 +33,7 @@ CardList.propTypes = {
 };
 
 CardList.defaultProps = {
-  category: '',
+  category: 'world',
   children: [],
   url: null,
   src: null,
