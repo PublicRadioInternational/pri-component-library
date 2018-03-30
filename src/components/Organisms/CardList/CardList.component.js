@@ -16,7 +16,9 @@ const CardList = ({ category, children, url, src, categoryDescription }) => (
   <Section className={`${styles.list} ${styles[category]}`}>
     <header className={styles.header}>
       <a href={url} className={styles.logoLink}>
-        <img src={src} alt={categoryDescription} className={styles.logo} />
+        {src && (
+          <img src={src} alt={categoryDescription} className={styles.logo} />
+        )}
         {categoryDescription}
       </a>
     </header>
@@ -25,7 +27,7 @@ const CardList = ({ category, children, url, src, categoryDescription }) => (
 );
 
 CardList.propTypes = {
-  category: PropTypes.oneOf(['world']),
+  category: PropTypes.string,
   children: PropTypes.node,
   url: PropTypes.string,
   src: PropTypes.string,
@@ -33,7 +35,7 @@ CardList.propTypes = {
 };
 
 CardList.defaultProps = {
-  category: '',
+  category: 'world',
   children: [],
   url: null,
   src: null,

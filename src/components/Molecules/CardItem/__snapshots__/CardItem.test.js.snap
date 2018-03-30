@@ -2,11 +2,11 @@
 
 exports[`<CardItem /> Matches the Card Item Default snapshot 1`] = `
 <article
-  className="cardItem undefined"
+  className="cardItem"
   typeof="sioc:Item foaf:Document"
 >
   <div
-    className="titleWrap undefined"
+    className="titleWrap"
   >
     <h2
       className="title"
@@ -29,22 +29,24 @@ exports[`<CardItem /> Matches the Card Item Default snapshot 1`] = `
     />
   </div>
   <figure
-    className="image undefined"
+    className="image"
   >
     <a
       href="/"
     >
       <img
-        alt={null}
-        className="img undefined"
-        src={null}
+        alt="Placeholder Image"
+        className="img"
+        src="http://placehold.it/1920x1080.png"
         typeof="foaf:Image"
       />
     </a>
   </figure>
   <p
-    className="blurb undefined"
-  />
+    className="blurb"
+  >
+    Test Teaser
+  </p>
 </article>
 `;
 
@@ -57,7 +59,7 @@ exports[`<CardItem /> Matches the Card Item Large snapshot 1`] = `
     className="titleWrap titleWrapLg"
   >
     <h2
-      className="undefined"
+      className="false"
     >
       <a
         className="link"
@@ -81,6 +83,40 @@ exports[`<CardItem /> Matches the Card Item Large snapshot 1`] = `
   >
     <a
       href="/"
+    >
+      <img
+        alt={null}
+        className="img imgLg"
+        src={null}
+        typeof="foaf:Image"
+      />
+    </a>
+  </figure>
+  <p
+    className="blurb blurbLg"
+  />
+</article>
+`;
+
+exports[`<CardItem /> Matches the Card Item No Link or Title snapshot 1`] = `
+<article
+  className="cardItem cardItemLg"
+  typeof="sioc:Item foaf:Document"
+>
+  <div
+    className="titleWrap titleWrapLg"
+  >
+    <span
+      content="0"
+      datatype="xsd:integer"
+      property="sioc:num_replies"
+    />
+  </div>
+  <figure
+    className="image imageLg"
+  >
+    <a
+      href={null}
     >
       <img
         alt={null}

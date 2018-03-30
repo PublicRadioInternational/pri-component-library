@@ -60,7 +60,6 @@ storiesOf('Organisms/CardList', module)
       />
       <CardItem
         title="Egyptian singer faces the prospect of prison over a joke about the Nile"
-        url="https://interactive-dev.pri.org/stories/2017-07-24/clearing-mines-and-explosives-mosul"
         imgSrc="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/GettyImages-925030722_master.jpg?itok=LSMUCQbS"
         imgAlt="Alt Text"
         blurb="An Egyptian court has sentenced one of its country's top singers to six months in prison for a comment she made about the Nile River. Pop singer Sherine made a crack about getting ill from drinking from the river when she was asked by a fan to sing, 'Have You Ever Drunk From the Nile.'"

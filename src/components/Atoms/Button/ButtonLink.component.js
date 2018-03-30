@@ -5,7 +5,10 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames/bind';
 import styles from './Button.css';
+
+const cx = classNames.bind(styles);
 
 /**
  * Component that renders a link button with a click handler.
@@ -13,17 +16,14 @@ import styles from './Button.css';
 const ButtonLink = props => {
   const { url, onClick, className, children, color, small } = props;
   // Generate a class name based on the color.
-  const buttonClass = `btn${color}`;
-  const buttonMobileClass = `btnMobile${color}`;
+  const buttonClass = cx({
+    [`btn${color}`]: !small,
+    [className]: className && className,
+    [`btnMobile${color}`]: small
+  });
 
   return (
-    <a
-      href={url}
-      className={`${
-        small ? styles[buttonMobileClass] : styles[buttonClass]
-      } ${className && className}`}
-      onClick={onClick}
-    >
+    <a href={url} className={buttonClass} onClick={onClick}>
       {children}
     </a>
   );
