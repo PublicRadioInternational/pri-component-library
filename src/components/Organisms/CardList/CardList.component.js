@@ -16,7 +16,9 @@ const CardList = ({ category, children, url, src, categoryDescription }) => (
   <Section className={`${styles.list} ${styles[category]}`}>
     <header className={styles.header}>
       <a href={url} className={styles.logoLink}>
-        <img src={src} alt={categoryDescription} className={styles.logo} />
+        {src && (
+          <img src={src} alt={categoryDescription} className={styles.logo} />
+        )}
         {categoryDescription}
       </a>
     </header>
