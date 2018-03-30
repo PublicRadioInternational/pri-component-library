@@ -99,6 +99,17 @@ storiesOf('Molecules/CardItem', module)
     />
   ));
 
+storiesOf('Molecules/CardItem', module)
+  .addDecorator(checkA11y)
+  .add('Freeform', () => (
+    <CardItem
+      freeform
+      title="50 years on, India is celebrating the Beatles' infamous trip to the country"
+      url="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+      blurb="When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. "
+    />
+  ));
+
 /**
  * Add storybook definition for Hero.
  */
