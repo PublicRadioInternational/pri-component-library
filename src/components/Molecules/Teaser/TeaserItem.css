@@ -6,7 +6,7 @@
 @value medium as bp-med from "../../00_global/breakpoints.css";
 
 .teaserItem {
-  padding: 1rem;
+  padding: 0.875rem;
   border-bottom: 1px solid grayLighter;
 }
 
@@ -43,6 +43,7 @@
 
 .program {
   display: none;
+  margin: 0;
 }
 
 .program .link {
@@ -55,16 +56,12 @@
   color: orange;
 }
 
-.icon {
+.link .icon {
   background-color: orange;
   border-radius: 18px;
   height: 20px;
-  fill: white;
+  fill: white !important;
   margin-right: 0.25rem;
   vertical-align: top;
   width: 20px;
-}
-
-.link:hover .icon {
-  fill: grayLighter;
 }
