@@ -21,7 +21,7 @@ storiesOf('Organisms/CardList', module)
   .add('Card List', () => (
     <CardList
       src="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
-      category="world"
+      category="pris-the-world"
       url="#"
       categoryDescription="PRIs The World"
     >
