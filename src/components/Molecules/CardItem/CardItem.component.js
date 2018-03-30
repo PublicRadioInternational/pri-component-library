@@ -16,15 +16,15 @@ const cx = classNames.bind(styles);
  * Takes an optional link and title, and returns a title structure.
  *
  * @param {node} item - Renderable node.
- * @param {string} link - Optional url to which {title} should link.
- * @param {string} className - Class that should be applied to title wrapper.
+ * @param {string} link - Optional url to which {item} should link.
+ * @param {string} className - Class that should be applied to item wrapper.
  *
  * @returns {object|null}
  *   If a link path is provided, this method will return item wrapped in a link
  *   tag. If a link is not provided, it'll return the item carte blanc.
  */
 const linkedItem = (item, link = null, className = '') => {
-  // If both a link and a title exist, return a linked title.
+  // If both a link and an item exist, return the item wrapped by an anchor tag.
   if (link && item) {
     return (
       <a className={className} href={link}>
