@@ -14,14 +14,12 @@
   word-wrap: break-word;
 }
 
-.boston-calling,
-.world,
-.world-words {
-  border-top-color: world;
-}
-
 .america-abroad {
   border-top-color: americaAbroad;
+}
+
+.boston-calling {
+  border-top-color: bostonCalling;
 }
 
 .globalpost {
@@ -32,7 +30,7 @@
   border-top-color: liveWire;
 }
 
-.living-earth {
+.living-on-earth {
   border-top-color: livingEarth;
 }
 
@@ -44,7 +42,11 @@
   border-top-color: playdate;
 }
 
-.science-happiness {
+.pris-the-world {
+  border-top-color: world;
+}
+
+.science-of-happiness {
   border-top-color: scienceHappiness;
 }
 
@@ -52,16 +54,19 @@
   border-top-color: sciFri;
 }
 
-.studio-360,
-.studio {
+.studio-360 {
   border-top-color: studio;
 }
 
-.takeaway {
+.the-takeaway {
   border-top-color: takeaway;
 }
 
-.things-go-boom {
+.the-world-in-words {
+  border-top-color: worldWords;
+}
+
+.things-that-go-boom {
   border-top-color: thingsBoom;
 }
 
@@ -69,8 +74,7 @@
   border-top-color: undiscovered;
 }
 
-.across-womens-lives,
-.awl {
+.across-womens-lives {
   border-top-color: acrossWomensLives;
 }
 
