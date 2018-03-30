@@ -3,8 +3,8 @@
  * Exports all components available in this project.
  */
 
-import ArticleItem from './src/components/Atoms/Article/ArticleItem.component';
-import ArticleList from './src/components/Organisms/Article/ArticleList.component';
+import TeaserItem from './src/components/Molecules/Teaser/TeaserItem.component';
+import TeaserList from './src/components/Organisms/Teaser/TeaserList.component';
 import Button from './src/components/Atoms/Button/Button.component';
 import ButtonLink from './src/components/Atoms/Button/ButtonLink.component';
 import ButtonInput from './src/components/Atoms/Button/ButtonInput.component';
@@ -42,7 +42,6 @@ const Styles = {
 
 export {
   // Atoms.
-  ArticleItem,
   Button,
   ButtonInput,
   ButtonLink,
@@ -56,8 +55,8 @@ export {
   Hero,
   List,
   Search,
+  TeaserItem,
   // Organisms.
-  ArticleList,
   CardList,
   Aside,
   Section,
@@ -71,6 +70,7 @@ export {
   LayoutMainList,
   LayoutMainList2,
   Main,
+  TeaserList,
   // Pages.
   Home,
   // Global.

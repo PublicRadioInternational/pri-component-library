@@ -1,18 +1,18 @@
 /**
- * @file ArticleItem.test.js
- * Contains tests for ArticleItem.component.js.
+ * @file TeaserItem.test.js
+ * Contains tests for TeaserItem.component.js.
  */
 
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import ArticleItem from './ArticleItem.component';
+import TeaserItem from './TeaserItem.component';
 
-describe('<ArticleItem />', () => {
-  it('Matches the Article Item Default snapshot', () => {
+describe('<TeaserItem />', () => {
+  it('Matches the Teaser Item Default snapshot', () => {
     const component = renderer
       .create(
-        <ArticleItem
+        <TeaserItem
           title="Test Title"
           url="/"
           programTitle="test Program"
@@ -24,16 +24,16 @@ describe('<ArticleItem />', () => {
     expect(component).toMatchSnapshot();
   });
 
-  it('Matches the Article Item without program snapshot', () => {
+  it('Matches the Teaser Item without program snapshot', () => {
     const component = renderer
-      .create(<ArticleItem title="Test Title" url="/" hasAudio />)
+      .create(<TeaserItem title="Test Title" url="/" hasAudio />)
       .toJSON();
     expect(component).toMatchSnapshot();
   });
 
-  it('Matches the Article Item without program or audio snapshot', () => {
+  it('Matches the Teaser Item without program or audio snapshot', () => {
     const component = renderer
-      .create(<ArticleItem title="Test Title" url="/" />)
+      .create(<TeaserItem title="Test Title" url="/" />)
       .toJSON();
     expect(component).toMatchSnapshot();
   });

@@ -5,21 +5,21 @@
 /* import breakpoints */
 @value medium as bp-med from "../../00_global/breakpoints.css";
 
-.articleItem {
+.teaserItem {
   padding: 1rem;
   border-bottom: 1px solid grayLighter;
 }
 
-.articleItem:first-of-type {
+.teaserItem:first-of-type {
   border-top: 1px solid grayLighter;
 }
 
 @media bp-med {
-  .articleItem .program {
+  .teaserItem .program {
     display: block;
   }
 
-  .articleItem .title {
+  .teaserItem .title {
     font-weight: bold;
   }
 }

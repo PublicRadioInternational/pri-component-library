@@ -1,19 +1,19 @@
 /**
- * @file ArticleItem.component.js
+ * @file TeaserItem.component.js
  * Exports a article item component.
  */
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './ArticleItem.css';
+import styles from './TeaserItem.css';
 
 import Icon from '../../Atoms/Svg/Icons.component';
 
 /**
  * Component that renders an Article Item.
  */
-const ArticleItem = ({ title, url, programTitle, programUrl, hasAudio }) => (
-  <article className={styles.articleItem} typeof="sioc:Item foaf:Document">
+const TeaserItem = ({ title, url, programTitle, programUrl, hasAudio }) => (
+  <article className={styles.teaserItem} typeof="sioc:Item foaf:Document">
     <div className={styles.titleWrap}>
       <h4 className={styles.title}>
         <a className={styles.link} href={url}>
@@ -33,7 +33,7 @@ const ArticleItem = ({ title, url, programTitle, programUrl, hasAudio }) => (
   </article>
 );
 
-ArticleItem.propTypes = {
+TeaserItem.propTypes = {
   url: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   programTitle: PropTypes.string,
@@ -41,10 +41,10 @@ ArticleItem.propTypes = {
   hasAudio: PropTypes.bool
 };
 
-ArticleItem.defaultProps = {
+TeaserItem.defaultProps = {
   programTitle: null,
   programUrl: null,
   hasAudio: false
 };
 
-export default ArticleItem;
+export default TeaserItem;

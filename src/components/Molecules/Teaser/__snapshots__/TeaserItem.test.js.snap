@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ArticleItem /> Matches the Article Item Default snapshot 1`] = `
+exports[`<TeaserItem /> Matches the Teaser Item Default snapshot 1`] = `
 <article
-  className="articleItem"
+  className="teaserItem"
   typeof="sioc:Item foaf:Document"
 >
   <div
@@ -18,7 +18,7 @@ exports[`<ArticleItem /> Matches the Article Item Default snapshot 1`] = `
         <svg
           aria-hidden={null}
           aria-labelledby={null}
-          className="icon"
+          className="svg icon"
           fill="currentcolor"
           height={28}
           version={1.1}
@@ -50,9 +50,9 @@ exports[`<ArticleItem /> Matches the Article Item Default snapshot 1`] = `
 </article>
 `;
 
-exports[`<ArticleItem /> Matches the Article Item without program or audio snapshot 1`] = `
+exports[`<TeaserItem /> Matches the Teaser Item without program or audio snapshot 1`] = `
 <article
-  className="articleItem"
+  className="teaserItem"
   typeof="sioc:Item foaf:Document"
 >
   <div
@@ -76,9 +76,9 @@ exports[`<ArticleItem /> Matches the Article Item without program or audio snaps
 </article>
 `;
 
-exports[`<ArticleItem /> Matches the Article Item without program snapshot 1`] = `
+exports[`<TeaserItem /> Matches the Teaser Item without program snapshot 1`] = `
 <article
-  className="articleItem"
+  className="teaserItem"
   typeof="sioc:Item foaf:Document"
 >
   <div
@@ -94,7 +94,7 @@ exports[`<ArticleItem /> Matches the Article Item without program snapshot 1`] =
         <svg
           aria-hidden={null}
           aria-labelledby={null}
-          className="icon"
+          className="svg icon"
           fill="currentcolor"
           height={28}
           version={1.1}

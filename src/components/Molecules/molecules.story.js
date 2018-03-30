@@ -14,6 +14,7 @@ import DropdownItem from '../Atoms/DropdownItem/DropdownItem.component';
 import List from './List/List.component';
 import Search from './Search/Search.component';
 import CardItem from './CardItem/CardItem.component';
+import TeaserItem from './Teaser/TeaserItem.component';
 import Hero from './Hero/Hero.component';
 
 /**
@@ -114,5 +115,34 @@ storiesOf('Molecules/Hero', module)
       categoryUrl="https://bing.com"
       imgSrc="https://media.pri.org/s3fs-public/styles/feature_large/public/story/images/JL1_8064.JPG?itok=WfGYKL2U"
       imgAlt="Opioid Addiction"
+    />
+  ));
+
+/**
+ * Add storybook definition for Teaser items (for lists).
+ */
+storiesOf('Molecules/Teaser', module)
+  .addDecorator(checkA11y)
+  .add('TeaserItem Full', () => (
+    <TeaserItem
+      title="For poor and minority children, excessive air pollution creates a toxic learning environment"
+      url="stories/2018-03-03/poor-and-minority-children-excessive-air-pollution-creates-toxic-learning"
+      programTitle="Living on Earth"
+      programUrl="programs/living-earth"
+      hasAudio
+    />
+  ))
+  .add('TeaserItem No audio', () => (
+    <TeaserItem
+      title="Progressives in Congress side with Trump on trade"
+      url="stories/2018-03-06/progressives-side-trump-trade"
+      programTitle="PRI's The World"
+      programUrl="programs/the-world"
+    />
+  ))
+  .add('TeaserItem No program', () => (
+    <TeaserItem
+      title="North Korea says it's willing to hold talks with the US and halt nuclear pursuit while negotiations last"
+      url="stories/2018-03-06/north-korea-says-its-willing-hold-talks-us-and-halt-nuclear-pursuit-while"
     />
   ));

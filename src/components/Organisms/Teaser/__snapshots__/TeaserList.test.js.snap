@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ArticleItem /> Matches the Article List with more link snapshot 1`] = `
+exports[`<TeaserItem /> Matches the Teaser List with more link snapshot 1`] = `
 <section
   className="className && section"
 >
@@ -19,7 +19,7 @@ exports[`<ArticleItem /> Matches the Article List with more link snapshot 1`] = 
     className="footer"
   >
     <a
-      className="btnBlue null"
+      className="btnBlue"
       href="more/"
       onClick={[Function]}
     >
@@ -29,7 +29,7 @@ exports[`<ArticleItem /> Matches the Article List with more link snapshot 1`] = 
 </section>
 `;
 
-exports[`<ArticleItem /> Matches the Article List without more link snapshot 1`] = `
+exports[`<TeaserItem /> Matches the Teaser List without more link snapshot 1`] = `
 <section
   className="className && section"
 >
