@@ -45,6 +45,7 @@
   text-decoration: none;
 }
 
+.blurb h2 a,
 .link {
   color: gray;
   text-decoration: none;
@@ -88,6 +89,18 @@
 
 .blurbLg {
   padding: 0 1rem;
+}
+
+.blurb a {
+  text-decoration: none;
+}
+
+.blurb a:hover {
+  color: orange;
+}
+
+.blurb p {
+  margin-top: 1rem;
 }
 
 .iconLink {
