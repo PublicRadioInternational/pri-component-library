@@ -14,6 +14,8 @@ import DropdownItem from '../Atoms/DropdownItem/DropdownItem.component';
 import List from './List/List.component';
 import Search from './Search/Search.component';
 import CardItem from './CardItem/CardItem.component';
+import CtaMessage from './CtaMessage/CtaMessage.component';
+import CtaPrompt from './CtaPrompt/CtaPrompt.component';
 import Hero from './Hero/Hero.component';
 
 /**
@@ -97,6 +99,60 @@ storiesOf('Molecules/CardItem', module)
       blurb="When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. "
       large
     />
+  ));
+
+/**
+ * Add storybook definition for CtaPrompt.
+ */
+storiesOf('Molecules/CtaPrompt', module)
+  .addDecorator(checkA11y)
+  .add('Push Down', () => (
+    <CtaPrompt>
+      <CtaMessage
+        data={{
+          name: 'push_down',
+          hash: '123abcd',
+          showLogo: true,
+          title: 'Google is the #1 search engine.',
+          description: "Don't belive us? Google it.",
+          action: {
+            label: 'Google It',
+            btnColor: 'Orange',
+            url: 'https://www.google.com/'
+          },
+          dismiss: {
+            label: 'Yey, I know'
+          }
+        }}
+      />
+    </CtaPrompt>
+  ));
+
+/**
+ * Add storybook definition for CtaPrompt.
+ */
+storiesOf('Molecules/CtaPrompt', module)
+  .addDecorator(checkA11y)
+  .add('Load Under', () => (
+    <CtaPrompt type="loadUnder">
+      <CtaMessage
+        data={{
+          name: 'load_under',
+          hash: '123abcd',
+          showLogo: true,
+          title: 'Google is the #1 search engine.',
+          description: "Don't belive us? Google it.",
+          action: {
+            label: 'Google It',
+            btnColor: 'Orange',
+            url: 'https://www.google.com/'
+          },
+          dismiss: {
+            label: 'Yey, I know'
+          }
+        }}
+      />
+    </CtaPrompt>
   ));
 
 /**
