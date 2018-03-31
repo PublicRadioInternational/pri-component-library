@@ -7,6 +7,8 @@ import Button from './src/components/Atoms/Button/Button.component';
 import ButtonLink from './src/components/Atoms/Button/ButtonLink.component';
 import ButtonInput from './src/components/Atoms/Button/ButtonInput.component';
 import Accordion from './src/components/Molecules/Accordion/Accordion.component';
+import CtaMessage from './src/components/Molecules/CtaMessage/CtaMessage.component';
+import CtaPrompt from './src/components/Molecules/CtaPrompt/CtaPrompt.component';
 import Dropdown from './src/components/Molecules/Dropdown/Dropdown.component';
 import List from './src/components/Molecules/List/List.component';
 import Search from './src/components/Molecules/Search/Search.component';
@@ -47,6 +49,8 @@ export {
   PriLogo,
   Accordion,
   CardItem,
+  CtaMessage,
+  CtaPrompt,
   Dropdown,
   Hero,
   List,

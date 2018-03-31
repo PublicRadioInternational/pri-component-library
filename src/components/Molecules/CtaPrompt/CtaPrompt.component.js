@@ -32,7 +32,6 @@ export default class CtaPrompt extends Component {
     };
 
     if (props.children) {
-      const { shownMessage } = this.state;
       const children = (props.children.length
         ? props.children
         : [props.children]
@@ -47,7 +46,7 @@ export default class CtaPrompt extends Component {
         // Show first message that either:
         // - Doesn't have a cookie.
         // - Cookie value doesn't match message hash.
-        if (!shownMessage && (!hash || hash !== data.hash)) {
+        if (!this.state.shownMessage && (!hash || hash !== data.hash)) {
           this.state.shownMessage = msg;
         }
       });

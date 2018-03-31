@@ -125,12 +125,26 @@ storiesOf('Molecules/CtaPrompt', module)
           }
         }}
       />
+      <CtaMessage
+        data={{
+          name: 'push_down_2',
+          hash: '123abcd',
+          showLogo: false,
+          title: 'Bing is pretty good, too.',
+          description: 'Need to be sure? Google it.',
+          action: {
+            label: 'Google It',
+            btnColor: 'Orange',
+            url: 'https://www.google.com/'
+          },
+          dismiss: {
+            label: 'Nah, I doubt it'
+          }
+        }}
+      />
     </CtaPrompt>
   ));
 
-/**
- * Add storybook definition for CtaPrompt.
- */
 storiesOf('Molecules/CtaPrompt', module)
   .addDecorator(checkA11y)
   .add('Load Under', () => (
@@ -143,12 +157,29 @@ storiesOf('Molecules/CtaPrompt', module)
           title: 'Google is the #1 search engine.',
           description: "Don't belive us? Google it.",
           action: {
-            label: 'Google It',
+            label: 'Google It >',
             btnColor: 'Orange',
             url: 'https://www.google.com/'
           },
           dismiss: {
             label: 'Yey, I know'
+          }
+        }}
+      />
+      <CtaMessage
+        data={{
+          name: 'load_under_2',
+          hash: '123abcd',
+          showLogo: false,
+          title: 'Bing is pretty good, too.',
+          description: 'Need to be sure? Google it.',
+          action: {
+            label: 'Google It',
+            btnColor: 'Orange',
+            url: 'https://www.google.com/'
+          },
+          dismiss: {
+            label: 'Nah, I doubt it'
           }
         }}
       />

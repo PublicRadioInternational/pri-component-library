@@ -23,40 +23,25 @@ export default class CtaMessage extends Component {
     onClosePrompt: PropTypes.func,
     type: PropTypes.oneOf(['pushDown', 'loadUnder', 'modal']),
     data: PropTypes.shape({
-      name: PropTypes.string,
-      hash: PropTypes.string,
+      name: PropTypes.string.isRquired,
+      hash: PropTypes.string.isRequired,
       showLogo: PropTypes.bool,
       title: PropTypes.string,
       description: PropTypes.string,
       action: PropTypes.shape({
-        label: PropTypes.string,
+        label: PropTypes.string.isRequired,
         btnColor: ButtonLink.propTypes.color,
-        url: PropTypes.string
+        url: PropTypes.string.isRequired
       }),
       dismiss: PropTypes.shape({
-        label: PropTypes.string
+        label: PropTypes.string.isRequired
       })
-    })
+    }).isRequired
   };
 
   static defaultProps = {
     onClosePrompt: () => {},
-    type: null,
-    data: {
-      name: null,
-      hash: null,
-      showLogo: false,
-      title: null,
-      description: null,
-      action: {
-        label: 'Yes',
-        btnColor: 'Orange',
-        url: '/'
-      },
-      dismiss: {
-        label: 'Dismiss'
-      }
-    }
+    type: null
   };
 
   constructor(props) {
