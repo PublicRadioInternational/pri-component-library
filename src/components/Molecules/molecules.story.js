@@ -16,7 +16,6 @@ import List from './List/List.component';
 import Search from './Search/Search.component';
 import CardItem from './CardItem/CardItem.component';
 import CtaMessage from './CtaMessage/CtaMessage.component';
-import CtaPrompt from './CtaPrompt/CtaPrompt.component';
 import TeaserItem from './Teaser/TeaserItem.component';
 import Hero from './Hero/Hero.component';
 
@@ -117,88 +116,51 @@ storiesOf('Molecules/CardItem', module)
   ));
 
 /**
- * Add storybook definition for CtaPrompt.
+ * Add storybook definition for CtaMessage.
  */
-storiesOf('Molecules/CtaPrompt', module)
+storiesOf('Molecules/CtaMessage', module)
   .addDecorator(checkA11y)
   .add('Push Down', () => (
-    <CtaPrompt>
-      <CtaMessage
-        data={{
-          name: 'push_down',
-          hash: '123abcd',
-          showLogo: true,
-          title: 'Google is the #1 search engine.',
-          description: "Don't belive us? Google it.",
-          action: {
-            label: 'Google It',
-            btnColor: 'Orange',
-            url: 'https://www.google.com/'
-          },
-          dismiss: {
-            label: 'Yey, I know'
-          }
-        }}
-      />
-      <CtaMessage
-        data={{
-          name: 'push_down_2',
-          hash: '123abcd',
-          showLogo: false,
-          title: 'Bing is pretty good, too.',
-          description: 'Need to be sure? Google it.',
-          action: {
-            label: 'Google It',
-            btnColor: 'Orange',
-            url: 'https://www.google.com/'
-          },
-          dismiss: {
-            label: 'Nah, I doubt it'
-          }
-        }}
-      />
-    </CtaPrompt>
+    <CtaMessage
+      data={{
+        name: 'push_down',
+        hash: '123abcd',
+        showLogo: true,
+        title: 'Google is the #1 search engine.',
+        description: "Don't belive us? Google it.",
+        action: {
+          label: 'Google It',
+          btnColor: 'Orange',
+          url: 'https://www.google.com/'
+        },
+        dismiss: {
+          label: 'Yey, I know'
+        }
+      }}
+    />
   ));
 
-storiesOf('Molecules/CtaPrompt', module)
+storiesOf('Molecules/CtaMessage', module)
   .addDecorator(checkA11y)
   .add('Load Under', () => (
-    <CtaPrompt type="loadUnder">
-      <CtaMessage
-        data={{
-          name: 'load_under',
-          hash: '123abcd',
-          showLogo: true,
-          title: 'Google is the #1 search engine.',
-          description: "Don't belive us? Google it.",
-          action: {
-            label: 'Google It >',
-            btnColor: 'Orange',
-            url: 'https://www.google.com/'
-          },
-          dismiss: {
-            label: 'Yey, I know'
-          }
-        }}
-      />
-      <CtaMessage
-        data={{
-          name: 'load_under_2',
-          hash: '123abcd',
-          showLogo: false,
-          title: 'Bing is pretty good, too.',
-          description: 'Need to be sure? Google it.',
-          action: {
-            label: 'Google It',
-            btnColor: 'Orange',
-            url: 'https://www.google.com/'
-          },
-          dismiss: {
-            label: 'Nah, I doubt it'
-          }
-        }}
-      />
-    </CtaPrompt>
+    <CtaMessage
+      type="loadUnder"
+      data={{
+        name: 'load_under',
+        hash: '123abcd',
+        showLogo: false,
+        title: 'Google is the #1 search engine.',
+        description: "Don't belive us? Google it.",
+        action: {
+          label: 'Google It >',
+          btnColor: 'Blue',
+          url: 'https://www.google.com/'
+        },
+        dismiss: {
+          label: 'Yey, I know'
+        }
+      }}
+    />
   ));
 
 /**
