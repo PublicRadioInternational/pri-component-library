@@ -71,7 +71,7 @@ const CardItem = ({
       <div className={largeClasses('titleWrap')}>
         {title && (
           <h2
-            className={`${!large && styles.title} ${freeformClasses(
+            className={`${!large ? styles.title : ''} ${freeformClasses(
               'freeformTitle'
             )}`}
           >

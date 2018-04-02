@@ -60,7 +60,7 @@ exports[`<CardItem /> Matches the Card Item Large snapshot 1`] = `
     className="titleWrap titleWrapLg"
   >
     <h2
-      className="false "
+      className=" "
     >
       <a
         className="link "
