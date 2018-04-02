@@ -85,7 +85,7 @@ export default class CtaPrompt extends Component {
     const output = shownMessage
       ? React.cloneElement(shownMessage, {
           // Pass cloase prompt handler to message.
-          onClosePrompt: this.closePrompt.bind(this),
+          onClose: this.closePrompt.bind(this),
           // Fill in type from prompt if missing from message.
           type: shownMessage.props.type || this.props.type
         })

@@ -20,7 +20,7 @@ const cx = classNames.bind(styles);
  */
 export default class CtaMessage extends Component {
   static propTypes = {
-    onClosePrompt: PropTypes.func,
+    onClose: PropTypes.func,
     type: PropTypes.oneOf(['pushDown', 'loadUnder', 'modal']),
     data: PropTypes.shape({
       name: PropTypes.string.isRquired,
@@ -40,7 +40,7 @@ export default class CtaMessage extends Component {
   };
 
   static defaultProps = {
-    onClosePrompt: () => {},
+    onClose: () => {},
     type: null
   };
 
@@ -53,12 +53,12 @@ export default class CtaMessage extends Component {
   }
 
   handleActionClick = () => {
-    this.props.onClosePrompt();
+    this.props.onClose();
   };
 
   handleDismissClick = e => {
     e.preventDefault();
-    this.props.onClosePrompt();
+    this.props.onClose();
   };
 
   render() {
