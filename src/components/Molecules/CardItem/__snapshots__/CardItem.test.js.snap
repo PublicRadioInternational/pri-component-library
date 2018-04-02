@@ -9,10 +9,10 @@ exports[`<CardItem /> Matches the Card Item Default snapshot 1`] = `
     className="titleWrap"
   >
     <h2
-      className="title"
+      className="title "
     >
       <a
-        className="link"
+        className="link "
         href="/"
       >
         Test Title
@@ -32,6 +32,7 @@ exports[`<CardItem /> Matches the Card Item Default snapshot 1`] = `
     className="image"
   >
     <a
+      className=""
       href="/"
     >
       <img
@@ -59,10 +60,10 @@ exports[`<CardItem /> Matches the Card Item Large snapshot 1`] = `
     className="titleWrap titleWrapLg"
   >
     <h2
-      className="false"
+      className="false "
     >
       <a
-        className="link"
+        className="link "
         href="/"
       >
         Test Title
@@ -78,34 +79,29 @@ exports[`<CardItem /> Matches the Card Item Large snapshot 1`] = `
       property="sioc:num_replies"
     />
   </div>
-  <figure
-    className="image imageLg"
-  >
-    <a
-      href="/"
-    >
-      <img
-        alt={null}
-        className="img imgLg"
-        src={null}
-        typeof="foaf:Image"
-      />
-    </a>
-  </figure>
   <p
     className="blurb blurbLg"
   />
 </article>
 `;
 
-exports[`<CardItem /> Matches the Card Item No Link or Title snapshot 1`] = `
+exports[`<CardItem /> Matches the Card Item No Link  snapshot 1`] = `
 <article
-  className="cardItem cardItemLg"
+  className="cardItem"
   typeof="sioc:Item foaf:Document"
 >
   <div
-    className="titleWrap titleWrapLg"
+    className="titleWrap"
   >
+    <h2
+      className="title freeformTitle"
+    >
+      Test Title
+    </h2>
+    <span
+      content="Test Title"
+      property="dc:title"
+    />
     <span
       content="0"
       datatype="xsd:integer"
@@ -113,21 +109,17 @@ exports[`<CardItem /> Matches the Card Item No Link or Title snapshot 1`] = `
     />
   </div>
   <figure
-    className="image imageLg"
+    className="image"
   >
-    <a
-      href={null}
-    >
-      <img
-        alt={null}
-        className="img imgLg"
-        src={null}
-        typeof="foaf:Image"
-      />
-    </a>
+    <img
+      alt={null}
+      className="img"
+      src="http://placehold.it/1920x1080.png"
+      typeof="foaf:Image"
+    />
   </figure>
   <p
-    className="blurb blurbLg"
+    className="blurb"
   />
 </article>
 `;
