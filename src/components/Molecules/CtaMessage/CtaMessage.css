@@ -15,7 +15,7 @@
 }
 
 @define-mixin loadUnderBtn {
-  padding: 0 5px;
+  padding: 0 0.3rem;
   line-height: 1.6rem;
 }
 
