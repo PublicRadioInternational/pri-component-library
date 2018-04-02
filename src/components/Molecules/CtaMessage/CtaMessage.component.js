@@ -101,19 +101,18 @@ export default class CtaMessage extends Component {
           {action && (
             <div className={styles.actions}>
               <ButtonLink
+                className={styles.actionBtn}
                 url={action.url}
                 color={action.btnColor}
                 onClick={this.handleActionClick}
-                small={isLoadUnder}
               >
                 {action.label}
               </ButtonLink>
               {dismiss && (
                 <Button
-                  className={styles.dismiss}
+                  className={styles.dismissBtn}
                   color="Dark"
                   onClick={this.handleDismissClick}
-                  small={isLoadUnder}
                 >
                   {dismiss.label}
                 </Button>
