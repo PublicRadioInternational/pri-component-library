@@ -115,6 +115,25 @@ describe('<CtaMessage />', () => {
     expect(component).toMatchSnapshot();
   });
 
+  it('Matches the CTA Message Blue Action button snapshot', () => {
+    const component = renderer
+      .create(
+        <CtaMessage
+          data={{
+            name: 'test_1',
+            hash: '1234abcd',
+            action: {
+              label: 'Do it',
+              url: 'https://www.google.com/',
+              btnColor: 'Blue'
+            }
+          }}
+        />
+      )
+      .toJSON();
+    expect(component).toMatchSnapshot();
+  });
+
   it('Matches the CTA Message Dismiss button snapshot', () => {
     const component = renderer
       .create(
