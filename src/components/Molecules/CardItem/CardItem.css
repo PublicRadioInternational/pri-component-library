@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value grayLighter, gray, orange from colors;
+@value grayLighter, grayDark, blue, gray, orange from colors;
 
 /* import breakpoints */
 @value min as bp-min from "../../00_global/breakpoints.css";
@@ -33,6 +33,19 @@
   font-size: 1.5rem;
 }
 
+.freeformTitle {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: grayDark;
+}
+
+.freeformLink {
+  color: blue;
+  text-decoration: none;
+}
+
+.blurb h2 a,
 .link {
   color: gray;
   text-decoration: none;
@@ -76,6 +89,18 @@
 
 .blurbLg {
   padding: 0 1rem;
+}
+
+.blurb a {
+  text-decoration: none;
+}
+
+.blurb a:hover {
+  color: orange;
+}
+
+.blurb p {
+  margin-top: 1rem;
 }
 
 .iconLink {

@@ -31,8 +31,16 @@ describe('<CardItem />', () => {
     expect(component).toMatchSnapshot();
   });
 
-  it('Matches the Card Item No Link or Title snapshot', () => {
-    const component = renderer.create(<CardItem large />).toJSON();
+  it('Matches the Card Item No Link  snapshot', () => {
+    const component = renderer
+      .create(
+        <CardItem
+          title="Test Title"
+          imgSrc="http://placehold.it/1920x1080.png"
+          freeform
+        />
+      )
+      .toJSON();
     expect(component).toMatchSnapshot();
   });
 });

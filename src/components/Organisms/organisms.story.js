@@ -7,6 +7,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from '@storybook/addon-a11y';
 
+import TeaserList from './Teaser/TeaserList.component';
+import TeaserItem from '../Molecules/Teaser/TeaserItem.component';
 import CardList from './CardList/CardList.component';
 import CardItem from '../Molecules/CardItem/CardItem.component';
 import Header from './Header/Header.component';
@@ -64,6 +66,42 @@ storiesOf('Organisms/CardList', module)
         hasAudio
       />
     </CardList>
+  ));
+
+storiesOf('Organisms/TeaserList', module)
+  .addDecorator(checkA11y)
+  .add('Article List', () => (
+    <TeaserList
+      title="Latest Content"
+      moreTitle="More Stories"
+      moreUrl="stories/more"
+    >
+      <TeaserItem
+        title="For poor and minority children, excessive air pollution creates a toxic learning environment"
+        url="stories/2018-03-03/poor-and-minority-children-excessive-air-pollution-creates-toxic-learning"
+        programTitle="Living on Earth"
+        programUrl="programs/living-earth"
+        hasAudio
+      />
+      <TeaserItem
+        title="Progressives in Congress side with Trump on trade"
+        url="stories/2018-03-06/progressives-side-trump-trade"
+        programTitle="PRI's The World"
+        programUrl="programs/the-world"
+        hasAudio
+      />
+      <TeaserItem
+        title="North Korea says it's willing to hold talks with the US and halt nuclear pursuit while negotiations last"
+        url="stories/2018-03-06/north-korea-says-its-willing-hold-talks-us-and-halt-nuclear-pursuit-while"
+      />
+      <TeaserItem
+        title="Yet anther article with an incredible title from the world"
+        url="stories/2018-03-06/yet-another-incredible-taco"
+        programTitle="PRI's The World"
+        programUrl="programs/the-world"
+        hasAudio
+      />
+    </TeaserList>
   ));
 
 storiesOf('Organisms/Header', module)
