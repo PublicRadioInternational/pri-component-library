@@ -113,6 +113,7 @@
 @media bp-medium {
   .loadUnder .logo {
     display: inline-block;
+    vertical-align: middle;
   }
 
   .loadUnder .actions {
