@@ -44,14 +44,6 @@ export default class CtaMessage extends Component {
     type: null
   };
 
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      isShown: true
-    };
-  }
-
   handleActionClick = () => {
     this.props.onClose();
   };
@@ -64,7 +56,6 @@ export default class CtaMessage extends Component {
   render() {
     const { type, data } = this.props;
     const { showLogo, title, description, action, dismiss } = data;
-    const { isShown } = this.state;
     const isLoadUnder = type === 'loadUnder';
     const promptClass = cx({
       prompt: !type,
@@ -80,7 +71,7 @@ export default class CtaMessage extends Component {
           height: 19
         };
 
-    const output = isShown ? (
+    return (
       <div className={promptClass}>
         <button className={styles.close} onClick={this.handleDismissClick}>
           <Icon name="cross" width={18} height={18} />
@@ -121,8 +112,6 @@ export default class CtaMessage extends Component {
           )}
         </div>
       </div>
-    ) : null;
-
-    return output;
+    );
   }
 }
