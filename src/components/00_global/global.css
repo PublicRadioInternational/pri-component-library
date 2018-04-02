@@ -46,10 +46,13 @@ a:hover {
   color: orange;
 }
 
-img,
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 iframe,
 video {
-  height: auto;
   max-width: 100%;
 }
 
