@@ -23,7 +23,9 @@ export default class List extends Component {
     role: PropTypes.string,
     ariaLabelledby: PropTypes.string,
     reveal: PropTypes.bool,
-    classNameOpen: PropTypes.string
+    classNameOpen: PropTypes.string,
+    title: PropTypes.string,
+    titleClass: PropTypes.string
   };
 
   static defaultProps = {
@@ -35,7 +37,9 @@ export default class List extends Component {
     role: null,
     ariaLabelledby: null,
     reveal: false,
-    classNameOpen: null
+    classNameOpen: null,
+    title: null,
+    titleClass: null
   };
 
   render() {
@@ -48,7 +52,9 @@ export default class List extends Component {
       liClass,
       linkClass,
       reveal,
-      classNameOpen
+      classNameOpen,
+      title,
+      titleClass
     } = this.props;
 
     const listWrapClasses = cx({
@@ -69,6 +75,7 @@ export default class List extends Component {
         role={role}
         aria-labelledby={ariaLabelledby}
       >
+        {title && <h2 className={titleClass}>{title}</h2>}
         <ul className={`${styles.list} ${ulClass}`}>{items}</ul>
       </div>
     );

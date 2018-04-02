@@ -15,6 +15,7 @@ import List from './List/List.component';
 import Search from './Search/Search.component';
 import CardItem from './CardItem/CardItem.component';
 import Hero from './Hero/Hero.component';
+import MenuList from './MenuList/MenuList.component';
 
 /**
  * Add storybook definition for Molecules.
@@ -114,5 +115,30 @@ storiesOf('Molecules/Hero', module)
       categoryUrl="https://bing.com"
       imgSrc="https://media.pri.org/s3fs-public/styles/feature_large/public/story/images/JL1_8064.JPG?itok=WfGYKL2U"
       imgAlt="Opioid Addiction"
+    />
+  ));
+
+const baseUrl = 'https://www.pri.org';
+storiesOf('Organisms/MenuList', module)
+  .addDecorator(checkA11y)
+  .add('Menu List', () => (
+    <MenuList
+      label="Quick Links"
+      menuListItems={[
+        { name: "PRI's The World", url: `${baseUrl}/programs/the-world` },
+        { name: 'Studio360', url: `${baseUrl}/programs/studio-360` },
+        { name: 'GlobalPost', url: `${baseUrl}/programs/globalpost` },
+        {
+          name: "Across Women's Lives",
+          url: `${baseUrl}/verticals/across-womens-lives`
+        },
+        { name: 'Global Nation', url: `${baseUrl}/verticals/global-nation` },
+        {
+          name: 'Global Security',
+          url: `${baseUrl}/verticals/global-security`
+        },
+        { name: 'Livable Planet', url: `${baseUrl}/verticals/livable-planet` },
+        { name: 'View all Programs & Podcasts', url: `${baseUrl}/shows` }
+      ]}
     />
   ));
