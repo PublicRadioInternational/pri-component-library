@@ -42,11 +42,25 @@ const linkedItem = (item, link = null, className = '') => {
 /**
  * Component that renders a Card Item.
  */
-const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large, hasAudio }) => {
+const CardItem = ({
+  url,
+  title,
+  imgSrc,
+  imgAlt,
+  blurb,
+  large,
+  hasAudio,
+  freeform
+}) => {
   const largeClasses = element =>
     cx({
       [element]: true,
       [`${element}Lg`]: large
+    });
+
+  const freeformClasses = element =>
+    cx({
+      [element]: freeform
     });
 
   return (
@@ -56,8 +70,16 @@ const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large, hasAudio }) => {
     >
       <div className={largeClasses('titleWrap')}>
         {title && (
-          <h2 className={!large ? styles.title : ''}>
-            {linkedItem(title, url, styles.link)}
+          <h2
+            className={`${!large && styles.title} ${freeformClasses(
+              'freeformTitle'
+            )}`}
+          >
+            {linkedItem(
+              title,
+              url,
+              `${styles.link} ${freeformClasses('freeformLink')}`
+            )}
           </h2>
         )}
         {title && <span property="dc:title" content={title} />}
@@ -95,7 +117,8 @@ CardItem.propTypes = {
   imgAlt: PropTypes.string,
   blurb: PropTypes.node,
   large: PropTypes.bool,
-  hasAudio: PropTypes.bool
+  hasAudio: PropTypes.bool,
+  freeform: PropTypes.bool
 };
 
 CardItem.defaultProps = {
@@ -105,7 +128,8 @@ CardItem.defaultProps = {
   url: null,
   title: null,
   large: false,
-  hasAudio: false
+  hasAudio: false,
+  freeform: false
 };
 
 export default CardItem;

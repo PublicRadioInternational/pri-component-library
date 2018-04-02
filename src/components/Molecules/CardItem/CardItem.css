@@ -33,6 +33,18 @@
   font-size: 1.5rem;
 }
 
+.freeformTitle {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: grayDark;
+}
+
+.freeformLink {
+  color: blue;
+  text-decoration: none;
+}
+
 .blurb h2 a,
 .link {
   color: gray;
