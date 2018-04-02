@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value white, whiteDark, grayLighter, gray, grayLight, grayDark, grayDarker, orange, orangeDark, orangeDarker, blue from colors;
+@value white, whiteDark, grayLighter, gray, grayLight, grayDark, grayDarker, orange, orangeDark, orangeDarker, blue, blueDark from colors;
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
 @value copy from fonts;
@@ -66,6 +66,17 @@
 
 @define-mixin btnOrangeHover {
   background-color: orangeDark;
+  color: white;
+}
+
+@define-mixin btnBlue {
+  background-color: blue;
+  border: 1px solid blueDark;
+  color: white;
+}
+
+@define-mixin btnBlueHover {
+  background-color: blueDark;
   color: white;
 }
 
@@ -160,6 +171,10 @@
 
   .btnMobileOrange {
     @mixin btnOrange;
+  }
+
+  .btnMobileBlue {
+    @mixin btnBlue;
   }
 
   .btnMobileOrange:hover,

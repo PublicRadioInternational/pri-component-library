@@ -15,25 +15,25 @@ const cx = classNames.bind(styles);
 /**
  * Takes an optional link and title, and returns a title structure.
  *
- * @param {string} title - Title string.
- * @param {string} link - Optional url to which {title} should link.
- * @param {string} className - Class that should be applied to title wrapper.
+ * @param {node} item - Renderable node.
+ * @param {string} link - Optional url to which {item} should link.
+ * @param {string} className - Class that should be applied to item wrapper.
  *
  * @returns {object|null}
- *   Depending on whether or not a link, or a title is provided, this method
- *   will return a title, a linked title.
+ *   If a link path is provided, this method will return item wrapped in a link
+ *   tag. If a link is not provided, it'll return the item carte blanc.
  */
-const CardTitle = (title, link = null, className = '') => {
-  // If both a link and a title exist, return a linked title.
-  if (link && title) {
+const linkedItem = (item, link = null, className = '') => {
+  // If both a link and an item exist, return the item wrapped by an anchor tag.
+  if (link && item) {
     return (
       <a className={className} href={link}>
-        {title}
+        {item}
       </a>
     );
-  } else if (title) {
-    // If there is just a title, return just the title.
-    return title;
+  } else if (item) {
+    // If there is just an, return just the item.
+    return item;
   }
 
   return null;
@@ -42,12 +42,27 @@ const CardTitle = (title, link = null, className = '') => {
 /**
  * Component that renders a Card Item.
  */
-const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large, hasAudio }) => {
+const CardItem = ({
+  url,
+  title,
+  imgSrc,
+  imgAlt,
+  blurb,
+  large,
+  hasAudio,
+  freeform
+}) => {
   const largeClasses = element =>
     cx({
       [element]: true,
       [`${element}Lg`]: large
     });
+
+  const freeformClasses = element =>
+    cx({
+      [element]: freeform
+    });
+
   return (
     <article
       className={largeClasses('cardItem')}
@@ -55,23 +70,34 @@ const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large, hasAudio }) => {
     >
       <div className={largeClasses('titleWrap')}>
         {title && (
-          <h2 className={`${!large && styles.title}`}>
-            {CardTitle(title, url, styles.link)}
+          <h2
+            className={`${!large && styles.title} ${freeformClasses(
+              'freeformTitle'
+            )}`}
+          >
+            {linkedItem(
+              title,
+              url,
+              `${styles.link} ${freeformClasses('freeformLink')}`
+            )}
           </h2>
         )}
         {title && <span property="dc:title" content={title} />}
         <span property="sioc:num_replies" content="0" datatype="xsd:integer" />
       </div>
-      <figure className={largeClasses('image')}>
-        <a href={url}>
-          <img
-            typeof="foaf:Image"
-            src={imgSrc}
-            alt={imgAlt}
-            className={largeClasses('img')}
-          />
-        </a>
-      </figure>
+      {imgSrc && (
+        <figure className={largeClasses('image')}>
+          {linkedItem(
+            <img
+              typeof="foaf:Image"
+              src={imgSrc}
+              alt={imgAlt}
+              className={largeClasses('img')}
+            />,
+            url
+          )}
+        </figure>
+      )}
       <p className={largeClasses('blurb')}>
         {blurb}
         {hasAudio && (
@@ -91,7 +117,8 @@ CardItem.propTypes = {
   imgAlt: PropTypes.string,
   blurb: PropTypes.node,
   large: PropTypes.bool,
-  hasAudio: PropTypes.bool
+  hasAudio: PropTypes.bool,
+  freeform: PropTypes.bool
 };
 
 CardItem.defaultProps = {
@@ -101,7 +128,8 @@ CardItem.defaultProps = {
   url: null,
   title: null,
   large: false,
-  hasAudio: false
+  hasAudio: false,
+  freeform: false
 };
 
 export default CardItem;
