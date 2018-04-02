@@ -52,6 +52,7 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
+    padding-right: 3%;
   }
 
   .latestContent {
@@ -69,9 +70,12 @@
 
   .mainList2 {
     -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     -ms-grid-row: 2;
     -ms-grid-row-span: 2;
     grid-row: row1-start / 2;
+    grid-column: 1 / span 2;
+    padding-right: 3%;
   }
 }
 
@@ -83,7 +87,7 @@
 
   .mainList {
     -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2 / span 1;
     padding: 0 3%;
   }
@@ -105,9 +109,10 @@
 
   .mainList2 {
     -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
+    -ms-grid-column-span: 1;
     -ms-grid-row: 2;
     grid-row: row1-start / 2;
+    grid-column: 2 / span 1;
     padding: 0 3%;
   }
 }

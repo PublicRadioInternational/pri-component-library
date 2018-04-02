@@ -46,11 +46,21 @@ a:hover {
   color: orange;
 }
 
-img {
+img,
+iframe,
+video {
   height: auto;
   max-width: 100%;
 }
 
 p {
   margin-bottom: 1rem;
+}
+
+blockquote {
+  border-left: 3px solid orange;
+  font-family: 'Raleway', sans-serif;
+  color: gray;
+  font-size: 1.2em;
+  padding-left: 1rem;
 }
