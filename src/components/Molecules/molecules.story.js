@@ -167,7 +167,7 @@ storiesOf('Molecules/Teaser', module)
 const baseUrl = 'https://www.pri.org';
 storiesOf('Molecules/MenuList', module)
   .addDecorator(checkA11y)
-  .add('Menu List', () => (
+  .add('Quick Links', () => (
     <MenuList
       label="Quick Links"
       menuListItems={[

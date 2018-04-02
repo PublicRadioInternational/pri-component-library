@@ -70,7 +70,9 @@ export default class List extends Component {
     const items = listItems.map(item => (
       <li className={`${styles.listItem} ${liClass}`} key={item.name}>
         <a
-          className={`${linkClasses} ${styles[item.itemLinkClass]}`}
+          className={`${linkClasses} ${
+            item.itemLinkClass !== undefined ? styles[item.itemLinkClass] : ''
+          }`}
           href={item.url}
         >
           {item.name}

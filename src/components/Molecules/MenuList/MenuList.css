@@ -19,10 +19,11 @@
 }
 
 .menuListLink {
-  display: block;
-  padding: 3px 0 3px 10px;
-  color: gray;
   border-left: 2px solid orange;
+  color: gray;
+  display: block;
+  line-height: 1.5;
+  padding: 3px 0 3px 10px;
 }
 
 .menuListLink:hover {
