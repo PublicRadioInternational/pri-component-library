@@ -24,6 +24,10 @@ export default class CtaPrompt extends Component {
     type: null
   };
 
+  static get cookiePrefix() {
+    return cookiePrefix;
+  }
+
   constructor(props) {
     super(props);
 
@@ -31,31 +35,29 @@ export default class CtaPrompt extends Component {
       shownMessage: null
     };
 
-    if (props.children) {
-      const children = (props.children.length
-        ? props.children
-        : [props.children]
-      ).filter(child => child.type === CtaMessage);
+    const children = (props.children.length
+      ? props.children
+      : [props.children]
+    ).filter(child => child.type === CtaMessage);
 
-      // Determine which (if any) message should be shown.
-      children.forEach(msg => {
-        const { data } = msg.props;
+    // Determine which (if any) message should be shown.
+    children.forEach(msg => {
+      const { data } = msg.props;
 
-        const hash = this.getCookie(data.name);
+      const hash = this.getCookie(data.name);
 
-        // Show first message that either:
-        // - Doesn't have a cookie.
-        // - Cookie value doesn't match message hash.
-        if (!this.state.shownMessage && (!hash || hash !== data.hash)) {
-          this.state.shownMessage = msg;
-        }
-      });
-    }
+      // Show first message that either:
+      // - Doesn't have a cookie.
+      // - Cookie value doesn't match message hash.
+      if (!this.state.shownMessage && (!hash || hash !== data.hash)) {
+        this.state.shownMessage = msg;
+      }
+    });
   }
 
   getCookie = name => {
     const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${cookiePrefix}${name}=`);
+    const parts = value.split(`; ${CtaPrompt.cookiePrefix}${name}=`);
     return parts.length === 2
       ? parts
           .pop()
@@ -65,7 +67,7 @@ export default class CtaPrompt extends Component {
   };
 
   setCookie = (name, hash) => {
-    document.cookie = `${cookiePrefix}${name}=${hash}; path=/`;
+    document.cookie = `${CtaPrompt.cookiePrefix}${name}=${hash}; path=/`;
   };
 
   closePrompt = () => {
