@@ -33,7 +33,7 @@ ButtonLink.propTypes = {
   url: PropTypes.string,
   onClick: PropTypes.func,
   children: PropTypes.node,
-  color: PropTypes.oneOf(['Orange', 'White']),
+  color: PropTypes.oneOf(['Orange', 'White', 'Blue']),
   className: PropTypes.string,
   small: PropTypes.bool
 };

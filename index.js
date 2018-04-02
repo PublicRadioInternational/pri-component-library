@@ -3,6 +3,8 @@
  * Exports all components available in this project.
  */
 
+import TeaserItem from './src/components/Molecules/Teaser/TeaserItem.component';
+import TeaserList from './src/components/Organisms/Teaser/TeaserList.component';
 import Button from './src/components/Atoms/Button/Button.component';
 import ButtonLink from './src/components/Atoms/Button/ButtonLink.component';
 import ButtonInput from './src/components/Atoms/Button/ButtonInput.component';
@@ -39,18 +41,22 @@ const Styles = {
 };
 
 export {
+  // Atoms.
   Button,
   ButtonInput,
   ButtonLink,
   DropdownItem,
   Icons,
   PriLogo,
+  // Molecules.
   Accordion,
   CardItem,
   Dropdown,
   Hero,
   List,
   Search,
+  TeaserItem,
+  // Organisms.
   CardList,
   Aside,
   Section,
@@ -64,6 +70,9 @@ export {
   LayoutMainList,
   LayoutMainList2,
   Main,
+  TeaserList,
+  // Pages.
   Home,
+  // Global.
   Styles
 }; // eslint-disable-line

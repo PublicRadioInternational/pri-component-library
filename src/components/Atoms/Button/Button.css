@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value white, whiteDark, grayLighter, gray, grayLight, grayDark, orange, orangeDark from colors;
+@value white, whiteDark, grayLighter, gray, grayLight, grayDark, orange, orangeDark, blue, blueDark from colors;
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
 @value copy from fonts;
@@ -39,7 +39,8 @@
 /* Inherits button always */
 .btn,
 .btnWhite,
-.btnOrange {
+.btnOrange,
+.btnBlue {
   @mixin btn;
 }
 
@@ -67,6 +68,17 @@
   color: white;
 }
 
+@define-mixin btnBlue {
+  background-color: blue;
+  border: 1px solid blueDark;
+  color: white;
+}
+
+@define-mixin btnBlueHover {
+  background-color: blueDark;
+  color: white;
+}
+
 .btnOrange {
   @mixin btnOrange;
 }
@@ -75,6 +87,16 @@
 .btnOrange:active,
 .btnOrange[aria-expanded='true'] {
   @mixin btnOrangeHover;
+}
+
+.btnBlue {
+  @mixin btnBlue;
+}
+
+.btnBlue:hover,
+.btnBlue:active,
+.btnBlue[aria-expanded='true'] {
+  @mixin btnBlueHover;
 }
 
 /* Mobile Icon versions */
@@ -92,7 +114,8 @@
 
 @media bp-header {
   .btnMobileWhite,
-  .btnMobileOrange {
+  .btnMobileOrange,
+  .btnMobileBlue {
     @mixin btn;
   }
 
@@ -107,6 +130,10 @@
 
   .btnMobileOrange {
     @mixin btnOrange;
+  }
+
+  .btnMobileBlue {
+    @mixin btnBlue;
   }
 
   .btnMobileOrange:hover,
