@@ -75,10 +75,6 @@
   margin-left: 1rem;
 }
 
-.loadUnder .title {
-  font-size: 1rem;
-}
-
 .loadUnder .content > * {
   display: inline-block;
   margin-bottom: 0;
@@ -86,6 +82,10 @@
 
 .loadUnder .content * + * {
   margin-left: 0.5rem;
+}
+
+.loadUnder .title {
+  font-size: 1rem;
 }
 
 .loadUnder .close {
@@ -99,21 +99,24 @@
   display: none;
 }
 
+.loadUnder .logo + * {
+  margin-left: 0;
+}
+
+.loadUnder .actions {
+  display: block;
+}
+
 .loadUnder .actionBtn,
 .loadUnder .dismissBtn {
   @mixin loadUnderBtn;
-}
-
-@media bp-small {
-  .loadUnder .actions {
-    display: block;
-  }
 }
 
 @media bp-medium {
   .loadUnder .logo {
     display: inline-block;
     vertical-align: middle;
+    margin-right: 0.5em;
   }
 
   .loadUnder .actions {
