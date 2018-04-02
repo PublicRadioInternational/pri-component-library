@@ -51,7 +51,7 @@ exports[`<Accordion /> Matches the List snapshot 1`] = `
         className="listItem accordionContentMenuItem"
       >
         <a
-          className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+          className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
           href="http://google.com"
         >
           Google
@@ -61,7 +61,7 @@ exports[`<Accordion /> Matches the List snapshot 1`] = `
         className="listItem accordionContentMenuItem"
       >
         <a
-          className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+          className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
           href="http://yahoo.com"
         >
           Yahoo

@@ -1,0 +1,32 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value gray, orange from colors;
+
+.menuListtitle {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+.menuListItem {
+  display: block;
+  padding: 0;
+  text-align: left;
+}
+
+.menuListItem::after {
+  display: none;
+}
+
+.menuListLink {
+  border-left: 2px solid orange;
+  color: gray;
+  display: block;
+  line-height: 1.5;
+  padding: 3px 0 3px 10px;
+}
+
+.menuListLink:hover {
+  background-color: orange;
+  color: white;
+}

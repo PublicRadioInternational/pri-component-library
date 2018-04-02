@@ -198,7 +198,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
                     href="https://www.pri.org/programs/america-abroad"
                   >
                     America Abroad
@@ -208,7 +208,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
                     href="https://www.pri.org/programs/it-happens"
                   >
                     As it Happens
@@ -218,7 +218,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
                     href="https://www.pri.org/programs/boston-calling"
                   >
                     Boston Calling
@@ -228,7 +228,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
                     href="https://www.pri.org/programs/day-6"
                   >
                     Day 6
@@ -238,7 +238,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
                     href="https://www.pri.org/programs/innovation-hub"
                   >
                     Innovation Hub
@@ -248,7 +248,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
                     href="https://www.pri.org/programs/living-earth"
                   >
                     Living on Earth
@@ -258,7 +258,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
                     href="https://www.pri.org/programs/the-world"
                   >
                     PRI's The World
@@ -268,7 +268,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
                     href="https://www.pri.org/programs/takeaway"
                   >
                     The Takeaway
@@ -327,7 +327,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/programs/afropop-worldwide"
                   >
                     Afropop Worldwide
@@ -337,7 +337,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/programs/echoes"
                   >
                     Echoes
@@ -347,7 +347,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/programs/jazz-after-hours"
                   >
                     Jazz After Hours
@@ -357,7 +357,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/programs/live-wire"
                   >
                     Live Wire
@@ -367,7 +367,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/programs/on-story"
                   >
                     On Story
@@ -377,7 +377,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/programs/out-open"
                   >
                     Out in the Open
@@ -387,7 +387,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/programs/pittsburgh-symphony-orchestra"
                   >
                     Pittsburgh Symphony Orchestra
@@ -397,7 +397,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/programs/selected-shorts"
                   >
                     q from the CBC
@@ -407,7 +407,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/programs/studio-360"
                   >
                     Studio 360
@@ -466,7 +466,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
                     href="https://www.pri.org/programs/lbjs-war"
                   >
                     LBJ's War
@@ -476,7 +476,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
                     href="https://www.pri.org/programs/otherhood"
                   >
                     Otherhood
@@ -486,7 +486,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
                     href="https://www.pri.org/programs/podcast-playlist"
                   >
                     Podcast Playlist
@@ -496,7 +496,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
                     href="https://www.pri.org/programs/science-happiness"
                   >
                     Science of Happiness
@@ -506,7 +506,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
                     href="https://www.pri.org/programs/world-words"
                   >
                     The World in Words
@@ -516,7 +516,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
                     href="https://www.pri.org/programs/things-go-boom"
                   >
                     Things That Go Boom
@@ -575,7 +575,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkOrange"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkOrange "
                     href="https://www.pri.org/listen"
                   >
                     Live Stream
@@ -585,7 +585,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkOrange"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkOrange "
                     href="https://www.pri.org/podcasts-program"
                   >
                     Podcasts by Program
@@ -595,7 +595,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkOrange"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkOrange "
                     href="https://www.pri.org/ways-listen"
                   >
                     Ways to Listen
@@ -654,7 +654,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
                     href="https://www.pri.org/verticals/across-womens-lives"
                   >
                     Across Women's Lives
@@ -664,7 +664,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
                     href="https://www.pri.org/verticals/global-nation"
                   >
                     Global Nation
@@ -674,7 +674,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
                     href="https://www.pri.org/verticals/global-security"
                   >
                     Global Security
@@ -684,7 +684,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
                     href="https://www.pri.org/verticals/livable-planet"
                   >
                     Livable Planet
@@ -694,7 +694,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
                     href="https://www.pri.org/programs/globalpost"
                   >
                     GlobalPost
@@ -704,7 +704,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
                     href="https://www.pri.org/collections/global-hit"
                   >
                     Global Hit
@@ -714,7 +714,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
                     href="https://www.pri.org/collections/global-satire"
                   >
                     Global Satire
@@ -724,7 +724,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
                     href="https://www.pri.org/music-heard-on-air"
                   >
                     Music Heard on Air
@@ -783,7 +783,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/sections/arts-culture-media"
                   >
                     Arts & Entertainment
@@ -793,7 +793,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/sections/conflict-justice"
                   >
                     Conflict & Justice
@@ -803,7 +803,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/sections/culture"
                   >
                     Culture & Society
@@ -813,7 +813,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/sections/development-educatio"
                   >
                     Development & Education
@@ -823,7 +823,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/sections/health-medicine"
                   >
                     Health & Medicine
@@ -833,7 +833,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/sections/history"
                   >
                     History
@@ -843,7 +843,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/verticals/global-nation"
                   >
                     Immigration
@@ -853,7 +853,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/sections/business-economics-and-jobs"
                   >
                     Money
@@ -863,7 +863,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/sections/politics"
                   >
                     Politics
@@ -873,7 +873,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/sections/science-tech-environment"
                   >
                     Science & Environment
@@ -883,7 +883,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/sections/technology"
                   >
                     Technology
@@ -893,7 +893,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
                     href="https://www.pri.org/verticals/across-womens-lives"
                   >
                     Women & Girls
@@ -952,7 +952,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
                     href="https://www.pri.org/about-pri"
                   >
                     About Us
@@ -962,7 +962,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
                     href="https://www.pri.org/financials"
                   >
                     Annual Report
@@ -972,7 +972,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
                     href="https://www.pri.org/priorg-contact"
                   >
                     Contact Us
@@ -982,7 +982,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
                     href="https://www.pri.org/financials"
                   >
                     Financials
@@ -992,7 +992,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
                     href="https://www.pri.org/team"
                   >
                     Meet the PRI.org team
@@ -1002,7 +1002,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
                     href="https://www.pri.org/work-us"
                   >
                     Work with Us
@@ -1061,7 +1061,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   className="listItem accordionContentMenuItem"
                 >
                   <a
-                    className="listLink accordionContentMenuLink accordionContentMenuLinkOrange"
+                    className="listLink accordionContentMenuLink accordionContentMenuLinkOrange "
                     href="https://www.pri.org/donate/index.html?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations"
                   >
                     Donate
@@ -1540,7 +1540,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             className="listItem null"
           >
             <a
-              className="listLink null"
+              className="listLink "
               href="https://www.pri.org/about-pri"
             >
               About PRI
@@ -1550,7 +1550,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             className="listItem null"
           >
             <a
-              className="listLink null"
+              className="listLink "
               href="https://www.pri.org/priorg-contact"
             >
               Contact Us
@@ -1560,7 +1560,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             className="listItem null"
           >
             <a
-              className="listLink null"
+              className="listLink "
               href="https://www.pri.org/team"
             >
               Donate
@@ -1570,7 +1570,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             className="listItem null"
           >
             <a
-              className="listLink null"
+              className="listLink "
               href="https://www.pri.org/donate/general?utm_source=footerNav&utm_medium=website&utm_campaign=donations"
             >
               Meet the PRI.org Team
@@ -1580,7 +1580,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             className="listItem null"
           >
             <a
-              className="listLink null"
+              className="listLink "
               href="https://www.pri.org/privacy"
             >
               Privacy policy
@@ -1590,7 +1590,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             className="listItem null"
           >
             <a
-              className="listLink null"
+              className="listLink "
               href="https://www.pri.org/terms"
             >
               Terms of use

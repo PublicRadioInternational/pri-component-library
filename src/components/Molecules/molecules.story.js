@@ -17,6 +17,7 @@ import Search from './Search/Search.component';
 import CardItem from './CardItem/CardItem.component';
 import TeaserItem from './Teaser/TeaserItem.component';
 import Hero from './Hero/Hero.component';
+import MenuList from './MenuList/MenuList.component';
 
 /**
  * Add storybook definition for Molecules.
@@ -158,5 +159,54 @@ storiesOf('Molecules/Teaser', module)
     <TeaserItem
       title="North Korea says it's willing to hold talks with the US and halt nuclear pursuit while negotiations last"
       url="stories/2018-03-06/north-korea-says-its-willing-hold-talks-us-and-halt-nuclear-pursuit-while"
+    />
+  ));
+/**
+ * Add storybook definition for Menu Lists.
+ */
+const baseUrl = 'https://www.pri.org';
+storiesOf('Molecules/MenuList', module)
+  .addDecorator(checkA11y)
+  .add('Quick Links', () => (
+    <MenuList
+      label="Quick Links"
+      menuListItems={[
+        {
+          name: "PRI's The World",
+          url: `${baseUrl}/programs/the-world`,
+          itemLinkClass: 'world'
+        },
+        {
+          name: 'Studio360',
+          url: `${baseUrl}/programs/studio-360`,
+          itemLinkClass: 'studio'
+        },
+        {
+          name: 'GlobalPost',
+          url: `${baseUrl}/programs/globalpost`,
+          itemLinkClass: 'globalPost'
+        },
+        {
+          name: "Across Women's Lives",
+          url: `${baseUrl}/verticals/across-womens-lives`,
+          itemLinkClass: 'acrossWomensLives'
+        },
+        {
+          name: 'Global Nation',
+          url: `${baseUrl}/verticals/global-nation`,
+          itemLinkClass: 'globalNation'
+        },
+        {
+          name: 'Global Security',
+          url: `${baseUrl}/verticals/global-security`,
+          itemLinkClass: 'globalSecurity'
+        },
+        {
+          name: 'Livable Planet',
+          url: `${baseUrl}/verticals/livable-planet`,
+          itemLinkClass: 'livablePlanet'
+        },
+        { name: 'View all Programs & Podcasts', url: `${baseUrl}/shows` }
+      ]}
     />
   ));
