@@ -119,25 +119,47 @@ storiesOf('Molecules/Hero', module)
   ));
 
 const baseUrl = 'https://www.pri.org';
-storiesOf('Organisms/MenuList', module)
+storiesOf('Molecules/MenuList', module)
   .addDecorator(checkA11y)
   .add('Menu List', () => (
     <MenuList
       label="Quick Links"
       menuListItems={[
-        { name: "PRI's The World", url: `${baseUrl}/programs/the-world` },
-        { name: 'Studio360', url: `${baseUrl}/programs/studio-360` },
-        { name: 'GlobalPost', url: `${baseUrl}/programs/globalpost` },
+        {
+          name: "PRI's The World",
+          url: `${baseUrl}/programs/the-world`,
+          itemLinkClass: 'world'
+        },
+        {
+          name: 'Studio360',
+          url: `${baseUrl}/programs/studio-360`,
+          itemLinkClass: 'studio'
+        },
+        {
+          name: 'GlobalPost',
+          url: `${baseUrl}/programs/globalpost`,
+          itemLinkClass: 'globalPost'
+        },
         {
           name: "Across Women's Lives",
-          url: `${baseUrl}/verticals/across-womens-lives`
+          url: `${baseUrl}/verticals/across-womens-lives`,
+          itemLinkClass: 'acrossWomensLives'
         },
-        { name: 'Global Nation', url: `${baseUrl}/verticals/global-nation` },
+        {
+          name: 'Global Nation',
+          url: `${baseUrl}/verticals/global-nation`,
+          itemLinkClass: 'globalNation'
+        },
         {
           name: 'Global Security',
-          url: `${baseUrl}/verticals/global-security`
+          url: `${baseUrl}/verticals/global-security`,
+          itemLinkClass: 'globalSecurity'
         },
-        { name: 'Livable Planet', url: `${baseUrl}/verticals/livable-planet` },
+        {
+          name: 'Livable Planet',
+          url: `${baseUrl}/verticals/livable-planet`,
+          itemLinkClass: 'livablePlanet'
+        },
         { name: 'View all Programs & Podcasts', url: `${baseUrl}/shows` }
       ]}
     />

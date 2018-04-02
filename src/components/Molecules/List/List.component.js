@@ -58,13 +58,21 @@ export default class List extends Component {
     } = this.props;
 
     const listWrapClasses = cx({
-      [className]: className && className,
+      [className]: className,
       [classNameOpen]: reveal === true
+    });
+
+    const linkClasses = cx({
+      listLink: true,
+      [linkClass]: linkClass
     });
 
     const items = listItems.map(item => (
       <li className={`${styles.listItem} ${liClass}`} key={item.name}>
-        <a className={`${styles.listLink} ${linkClass}`} href={item.url}>
+        <a
+          className={`${linkClasses} ${styles[item.itemLinkClass]}`}
+          href={item.url}
+        >
           {item.name}
         </a>
       </li>

@@ -13,7 +13,7 @@ exports[`<List /> Matches the List snapshot 1`] = `
       className="listItem null"
     >
       <a
-        className="listLink null"
+        className="listLink undefined"
         href="http://google.com"
       >
         Google
@@ -23,7 +23,7 @@ exports[`<List /> Matches the List snapshot 1`] = `
       className="listItem null"
     >
       <a
-        className="listLink null"
+        className="listLink undefined"
         href="http://yahoo.com"
       >
         Yahoo
