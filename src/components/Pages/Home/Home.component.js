@@ -16,6 +16,7 @@ import LayoutMainList2 from '../../Organisms/Main/LayoutMainList2.component';
 
 import Hero from '../../Molecules/Hero/Hero.component';
 import MenuList from '../../Molecules/MenuList/MenuList.component';
+import TextBlock from '../../Molecules/TextBlock/TextBlock.component';
 import CardList from '../../Organisms/CardList/CardList.component';
 import CardItem from '../../Molecules/CardItem/CardItem.component';
 import TeaserList from '../../Organisms/Teaser/TeaserList.component';
@@ -161,6 +162,13 @@ const Home = ({ baseUrl }) => (
             },
             { name: 'View all Programs & Podcasts', url: `${baseUrl}/shows` }
           ]}
+        />
+        <TextBlock
+          title="About PRI"
+          body="By giving voice to our dynamic world, we inspire connection, action and hope."
+          button="About Us"
+          color="Blue"
+          url={`${baseUrl}/about-pri`}
         />
       </LayoutAsideCallouts>
       <LayoutMainList2>
