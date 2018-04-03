@@ -2,6 +2,10 @@
 @value fonts: "../../00_global/fonts.css";
 @value heading from fonts;
 
+.textBlock {
+  margin-bottom: 1rem;
+}
+
 .header {
   font-size: 1rem;
   font-weight: normal;
