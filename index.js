@@ -3,6 +3,7 @@
  * Exports all components available in this project.
  */
 
+import BlockList from './src/components/Organisms/BlockList/BlockList.component';
 import TextBlock from './src/components/Molecules/TextBlock/TextBlock.component';
 import TeaserItem from './src/components/Molecules/Teaser/TeaserItem.component';
 import TeaserList from './src/components/Organisms/Teaser/TeaserList.component';
@@ -61,6 +62,7 @@ export {
   TeaserItem,
   TextBlock,
   // Organisms.
+  BlockList,
   CardList,
   Aside,
   Section,

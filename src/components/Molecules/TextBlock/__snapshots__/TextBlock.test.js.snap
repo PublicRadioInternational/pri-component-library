@@ -4,16 +4,19 @@ exports[`<TextBlock /> Matches the Text Block snapshot 1`] = `
 <div
   className="textBlock"
 >
-  <h2
+  <h3
     className="header"
   >
     About
-  </h2>
+  </h3>
   <p
     className="body"
   >
     By giving voice to our dynamic world, we inspire connection, action and hope.
   </p>
+  <div
+    className="btnWrap inputWrap"
+  />
   <a
     className="btnnull btn"
     href="/about"
