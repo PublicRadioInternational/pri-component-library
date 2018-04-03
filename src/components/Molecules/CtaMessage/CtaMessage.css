@@ -18,6 +18,7 @@
   padding: 0 0.27rem;
   font-size: 0.8rem;
   line-height: 1.6rem;
+  white-space: nowrap;
 }
 
 .pushDown {
@@ -108,8 +109,8 @@
   margin: 10px auto;
 }
 
-.loadUnder .actions > * + * {
-  margin-left: 1rem;
+.loadUnder .actions > * {
+  margin: 0.5rem 0.5rem;
 }
 
 .loadUnder .actionBtn,
