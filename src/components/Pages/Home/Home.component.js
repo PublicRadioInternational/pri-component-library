@@ -239,6 +239,10 @@ const Home = ({ baseUrl }) => (
             alt
             title="Subscribe to our Podcasts"
             body="The Science of Happiness is now #2 on iTunes"
+            button="Subscribe to Podcasts"
+            color="Orange"
+            url={`${baseUrl}/shows`}
+            icon="volume"
           >
             <a href={`${baseUrl}/shows`}>
               <img
