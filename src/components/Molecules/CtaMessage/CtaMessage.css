@@ -19,7 +19,6 @@
   line-height: 1.6rem;
 }
 
-.prompt,
 .pushDown {
   @mixin prompt;
 

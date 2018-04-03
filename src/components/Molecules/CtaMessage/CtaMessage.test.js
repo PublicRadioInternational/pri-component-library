@@ -10,89 +10,30 @@ import CtaMessage from './CtaMessage.component';
 
 describe('<CtaMessage />', () => {
   it('Matches the CTA Message Default snapshot', () => {
-    const component = renderer
-      .create(
-        <CtaMessage
-          data={{
-            name: 'test_1',
-            hash: '1234abcd'
-          }}
-        />
-      )
-      .toJSON();
+    const component = renderer.create(<CtaMessage />).toJSON();
     expect(component).toMatchSnapshot();
   });
 
   it('Matches the CTA Message Logo snapshot', () => {
-    const component = renderer
-      .create(
-        <CtaMessage
-          data={{
-            name: 'test_1',
-            hash: '1234abcd',
-            showLogo: true
-          }}
-        />
-      )
-      .toJSON();
+    const component = renderer.create(<CtaMessage showLogo />).toJSON();
     expect(component).toMatchSnapshot();
   });
 
   it('Logo is small for loadUnder', () => {
-    const wrapper = mount(
-      <CtaMessage
-        type="loadUnder"
-        data={{
-          name: 'test_1',
-          hash: '1234abcd',
-          showLogo: true
-        }}
-      />
-    );
+    const wrapper = mount(<CtaMessage type="loadUnder" showLogo />);
     expect(wrapper.find('.logo svg').prop('width')).toEqual(90);
   });
 
   it('Matches the CTA Message Title snapshot', () => {
     const component = renderer
-      .create(
-        <CtaMessage
-          data={{
-            name: 'test_1',
-            hash: '1234abcd',
-            title: 'Test #1'
-          }}
-        />
-      )
-      .toJSON();
-    expect(component).toMatchSnapshot();
-  });
-
-  it('Matches the CTA Message Title snapshot', () => {
-    const component = renderer
-      .create(
-        <CtaMessage
-          data={{
-            name: 'test_1',
-            hash: '1234abcd',
-            title: 'Test title'
-          }}
-        />
-      )
+      .create(<CtaMessage title="Test Title" />)
       .toJSON();
     expect(component).toMatchSnapshot();
   });
 
   it('Matches the CTA Message Decription snapshot', () => {
     const component = renderer
-      .create(
-        <CtaMessage
-          data={{
-            name: 'test_1',
-            hash: '1234abcd',
-            description: 'Test description...'
-          }}
-        />
-      )
+      .create(<CtaMessage description="Test description" />)
       .toJSON();
     expect(component).toMatchSnapshot();
   });
@@ -101,13 +42,9 @@ describe('<CtaMessage />', () => {
     const component = renderer
       .create(
         <CtaMessage
-          data={{
-            name: 'test_1',
-            hash: '1234abcd',
-            action: {
-              label: 'Do it',
-              url: 'https://www.google.com/'
-            }
+          action={{
+            label: 'Yes',
+            url: 'https://www.google.com/'
           }}
         />
       )
@@ -119,14 +56,10 @@ describe('<CtaMessage />', () => {
     const component = renderer
       .create(
         <CtaMessage
-          data={{
-            name: 'test_1',
-            hash: '1234abcd',
-            action: {
-              label: 'Do it',
-              url: 'https://www.google.com/',
-              btnColor: 'Blue'
-            }
+          action={{
+            label: 'Yes',
+            url: 'https://www.google.com/',
+            btnColor: 'Blue'
           }}
         />
       )
@@ -138,16 +71,13 @@ describe('<CtaMessage />', () => {
     const component = renderer
       .create(
         <CtaMessage
-          data={{
-            name: 'test_1',
-            hash: '1234abcd',
-            action: {
-              label: 'Do it',
-              url: 'https://www.google.com/'
-            },
-            dismiss: {
-              label: "Don't do it"
-            }
+          action={{
+            label: 'Yes',
+            url: 'https://www.google.com/',
+            btnColor: 'Blue'
+          }}
+          dismiss={{
+            label: 'No'
           }}
         />
       )
@@ -157,19 +87,7 @@ describe('<CtaMessage />', () => {
 
   it('onPromptClose handler is called when close is click', () => {
     const actionFn = jest.fn();
-    const wrapper = mount(
-      <CtaMessage
-        onClose={actionFn}
-        data={{
-          name: 'test_1',
-          hash: '1234abcd',
-          action: {
-            label: 'Do it',
-            url: 'https://www.google.com/'
-          }
-        }}
-      />
-    );
+    const wrapper = mount(<CtaMessage onClose={actionFn} />);
     wrapper.find('button.close').simulate('click');
     expect(actionFn).toHaveBeenCalled();
   });
@@ -179,13 +97,9 @@ describe('<CtaMessage />', () => {
     const wrapper = mount(
       <CtaMessage
         onClose={actionFn}
-        data={{
-          name: 'test_1',
-          hash: '1234abcd',
-          action: {
-            label: 'Do it',
-            url: 'https://www.google.com/'
-          }
+        action={{
+          label: 'Yes',
+          url: 'https://www.google.com/'
         }}
       />
     );
@@ -198,16 +112,13 @@ describe('<CtaMessage />', () => {
     const wrapper = mount(
       <CtaMessage
         onClose={actionFn}
-        data={{
-          name: 'test_1',
-          hash: '1234abcd',
-          action: {
-            label: 'Do it',
-            url: 'https://www.google.com/'
-          },
-          dismiss: {
-            label: "Don't do it"
-          }
+        action={{
+          label: 'Yes',
+          url: 'https://www.google.com/',
+          btnColor: 'Blue'
+        }}
+        dismiss={{
+          label: 'No'
         }}
       />
     );

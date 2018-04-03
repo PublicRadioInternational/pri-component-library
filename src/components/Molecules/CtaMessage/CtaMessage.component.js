@@ -19,29 +19,32 @@ const cx = classNames.bind(styles);
  * Component that renders a CTA (Call to action) message.
  */
 export default class CtaMessage extends Component {
+  static messageTypes = ['pushDown', 'loadUnder'];
+
   static propTypes = {
     onClose: PropTypes.func,
-    type: PropTypes.oneOf(['pushDown', 'loadUnder', 'modal']),
-    data: PropTypes.shape({
-      name: PropTypes.string.isRquired,
-      hash: PropTypes.string.isRequired,
-      showLogo: PropTypes.bool,
-      title: PropTypes.string,
-      description: PropTypes.string,
-      action: PropTypes.shape({
-        label: PropTypes.string.isRequired,
-        btnColor: ButtonLink.propTypes.color,
-        url: PropTypes.string.isRequired
-      }),
-      dismiss: PropTypes.shape({
-        label: PropTypes.string.isRequired
-      })
-    }).isRequired
+    type: PropTypes.oneOf(CtaMessage.messageTypes),
+    showLogo: PropTypes.bool,
+    title: PropTypes.string,
+    description: PropTypes.string,
+    action: PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      btnColor: ButtonLink.propTypes.color,
+      url: PropTypes.string.isRequired
+    }),
+    dismiss: PropTypes.shape({
+      label: PropTypes.string.isRequired
+    })
   };
 
   static defaultProps = {
     onClose: () => {},
-    type: null
+    type: CtaMessage.messageTypes[0],
+    showLogo: false,
+    title: null,
+    description: null,
+    action: null,
+    dismiss: null
   };
 
   handleActionClick = () => {
@@ -54,11 +57,9 @@ export default class CtaMessage extends Component {
   };
 
   render() {
-    const { type, data } = this.props;
-    const { showLogo, title, description, action, dismiss } = data;
+    const { type, showLogo, title, description, action, dismiss } = this.props;
     const isLoadUnder = type === 'loadUnder';
     const promptClass = cx({
-      prompt: !type,
       [type]: type
     });
     const logoSize = !isLoadUnder

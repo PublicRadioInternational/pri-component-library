@@ -2,7 +2,7 @@
 
 exports[`<CtaMessage /> Matches the CTA Message Action button snapshot 1`] = `
 <div
-  className="prompt"
+  className="pushDown"
 >
   <button
     className="close"
@@ -34,7 +34,7 @@ exports[`<CtaMessage /> Matches the CTA Message Action button snapshot 1`] = `
         href="https://www.google.com/"
         onClick={[Function]}
       >
-        Do it
+        Yes
       </a>
     </div>
   </div>
@@ -43,7 +43,7 @@ exports[`<CtaMessage /> Matches the CTA Message Action button snapshot 1`] = `
 
 exports[`<CtaMessage /> Matches the CTA Message Blue Action button snapshot 1`] = `
 <div
-  className="prompt"
+  className="pushDown"
 >
   <button
     className="close"
@@ -75,7 +75,7 @@ exports[`<CtaMessage /> Matches the CTA Message Blue Action button snapshot 1`] 
         href="https://www.google.com/"
         onClick={[Function]}
       >
-        Do it
+        Yes
       </a>
     </div>
   </div>
@@ -84,7 +84,7 @@ exports[`<CtaMessage /> Matches the CTA Message Blue Action button snapshot 1`] 
 
 exports[`<CtaMessage /> Matches the CTA Message Decription snapshot 1`] = `
 <div
-  className="prompt"
+  className="pushDown"
 >
   <button
     className="close"
@@ -111,7 +111,7 @@ exports[`<CtaMessage /> Matches the CTA Message Decription snapshot 1`] = `
     <p
       className="description"
     >
-      Test description...
+      Test description
     </p>
   </div>
 </div>
@@ -119,7 +119,7 @@ exports[`<CtaMessage /> Matches the CTA Message Decription snapshot 1`] = `
 
 exports[`<CtaMessage /> Matches the CTA Message Default snapshot 1`] = `
 <div
-  className="prompt"
+  className="pushDown"
 >
   <button
     className="close"
@@ -148,7 +148,7 @@ exports[`<CtaMessage /> Matches the CTA Message Default snapshot 1`] = `
 
 exports[`<CtaMessage /> Matches the CTA Message Dismiss button snapshot 1`] = `
 <div
-  className="prompt"
+  className="pushDown"
 >
   <button
     className="close"
@@ -176,11 +176,11 @@ exports[`<CtaMessage /> Matches the CTA Message Dismiss button snapshot 1`] = `
       className="actions"
     >
       <a
-        className="btnWhite actionBtn"
+        className="btnBlue actionBtn"
         href="https://www.google.com/"
         onClick={[Function]}
       >
-        Do it
+        Yes
       </a>
       <button
         aria-expanded={null}
@@ -190,7 +190,7 @@ exports[`<CtaMessage /> Matches the CTA Message Dismiss button snapshot 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Don't do it
+        No
       </button>
     </div>
   </div>
@@ -199,7 +199,7 @@ exports[`<CtaMessage /> Matches the CTA Message Dismiss button snapshot 1`] = `
 
 exports[`<CtaMessage /> Matches the CTA Message Logo snapshot 1`] = `
 <div
-  className="prompt"
+  className="pushDown"
 >
   <button
     className="close"
@@ -259,7 +259,7 @@ exports[`<CtaMessage /> Matches the CTA Message Logo snapshot 1`] = `
 
 exports[`<CtaMessage /> Matches the CTA Message Title snapshot 1`] = `
 <div
-  className="prompt"
+  className="pushDown"
 >
   <button
     className="close"
@@ -286,42 +286,7 @@ exports[`<CtaMessage /> Matches the CTA Message Title snapshot 1`] = `
     <h3
       className="title"
     >
-      Test #1
-    </h3>
-  </div>
-</div>
-`;
-
-exports[`<CtaMessage /> Matches the CTA Message Title snapshot 2`] = `
-<div
-  className="prompt"
->
-  <button
-    className="close"
-    onClick={[Function]}
-  >
-    <svg
-      aria-hidden={null}
-      aria-labelledby={null}
-      className="svg"
-      fill="currentcolor"
-      height={18}
-      version={1.1}
-      viewBox="0 0 28 28"
-      width={18}
-    >
-      <path
-        d="M27.745 22.495c-0-0-0-0-0-0l-8.494-8.494 8.494-8.494c0-0 0-0 0-0 0.091-0.091 0.158-0.198 0.2-0.312 0.116-0.311 0.050-0.675-0.2-0.925l-4.013-4.013c-0.25-0.25-0.614-0.316-0.925-0.2-0.114 0.042-0.221 0.109-0.312 0.2 0 0-0 0-0 0l-8.494 8.494-8.494-8.494c-0-0-0-0-0-0-0.091-0.091-0.198-0.158-0.312-0.2-0.311-0.116-0.675-0.050-0.925 0.2l-4.013 4.013c-0.25 0.25-0.316 0.614-0.2 0.925 0.042 0.114 0.109 0.221 0.2 0.312 0 0 0 0 0 0l8.494 8.494-8.494 8.494c-0 0-0 0-0 0-0.091 0.091-0.157 0.198-0.2 0.312-0.116 0.311-0.050 0.675 0.2 0.925l4.013 4.013c0.25 0.25 0.614 0.316 0.925 0.2 0.114-0.042 0.221-0.109 0.312-0.2 0-0 0-0 0-0l8.494-8.494 8.494 8.494c0 0 0 0 0 0 0.092 0.091 0.198 0.158 0.312 0.2 0.311 0.116 0.675 0.050 0.925-0.2l4.013-4.013c0.25-0.25 0.316-0.614 0.2-0.925-0.042-0.114-0.109-0.221-0.2-0.312z"
-      />
-    </svg>
-  </button>
-  <div
-    className="content"
-  >
-    <h3
-      className="title"
-    >
-      Test title
+      Test Title
     </h3>
   </div>
 </div>

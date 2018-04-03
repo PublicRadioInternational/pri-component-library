@@ -122,20 +122,16 @@ storiesOf('Molecules/CtaMessage', module)
   .addDecorator(checkA11y)
   .add('Push Down', () => (
     <CtaMessage
-      data={{
-        name: 'push_down',
-        hash: '123abcd',
-        showLogo: true,
-        title: 'Google is the #1 search engine.',
-        description: "Don't belive us? Google it.",
-        action: {
-          label: 'Google It',
-          btnColor: 'Orange',
-          url: 'https://www.google.com/'
-        },
-        dismiss: {
-          label: 'Yey, I know'
-        }
+      showLogo
+      title="Google is the #1 search engine."
+      description="Don't belive us? Google it."
+      action={{
+        label: 'Google It',
+        btnColor: 'Orange',
+        url: 'https://www.google.com/'
+      }}
+      dismiss={{
+        label: 'Yey, I know'
       }}
     />
   ));
@@ -145,20 +141,15 @@ storiesOf('Molecules/CtaMessage', module)
   .add('Load Under', () => (
     <CtaMessage
       type="loadUnder"
-      data={{
-        name: 'load_under',
-        hash: '123abcd',
-        showLogo: false,
-        title: 'Google is the #1 search engine.',
-        description: "Don't belive us? Google it.",
-        action: {
-          label: 'Google It >',
-          btnColor: 'Blue',
-          url: 'https://www.google.com/'
-        },
-        dismiss: {
-          label: 'Yey, I know'
-        }
+      title="Google is the #1 search engine."
+      description="Don't belive us? Google it."
+      action={{
+        label: 'Google It',
+        btnColor: 'Blue',
+        url: 'https://www.google.com/'
+      }}
+      dismiss={{
+        label: 'Yey, I know'
       }}
     />
   ));
