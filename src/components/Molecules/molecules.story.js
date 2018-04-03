@@ -18,6 +18,7 @@ import CardItem from './CardItem/CardItem.component';
 import TeaserItem from './Teaser/TeaserItem.component';
 import Hero from './Hero/Hero.component';
 import MenuList from './MenuList/MenuList.component';
+import TextBlock from './TextBlock/TextBlock.component';
 
 /**
  * Add storybook definition for Molecules.
@@ -208,5 +209,20 @@ storiesOf('Molecules/MenuList', module)
         },
         { name: 'View all Programs & Podcasts', url: `${baseUrl}/shows` }
       ]}
+    />
+  ));
+
+/**
+ * Add storybook definition for Teaser items (for lists).
+ */
+storiesOf('Molecules/TextBlock', module)
+  .addDecorator(checkA11y)
+  .add('About', () => (
+    <TextBlock
+      title="About PRI"
+      body="By giving voice to our dynamic world, we inspire connection, action and hope."
+      button="About Us"
+      color="Blue"
+      url={`${baseUrl}/about-pri`}
     />
   ));
