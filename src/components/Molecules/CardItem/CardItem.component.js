@@ -99,7 +99,7 @@ const CardItem = ({
               url={url}
               className={`${styles.link} ${freeformClasses('freeformLink')}`}
             >
-              {title},
+              {title}
             </LinkedItem>
           </h2>
         )}
