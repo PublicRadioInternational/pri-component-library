@@ -169,6 +169,7 @@ const Home = ({ baseUrl }) => (
           button="About Us"
           color="Blue"
           url={`${baseUrl}/about-pri`}
+          icon="info"
         />
       </LayoutAsideCallouts>
       <LayoutMainList2>

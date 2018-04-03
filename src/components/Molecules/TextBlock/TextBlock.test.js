@@ -17,6 +17,7 @@ describe('<TextBlock />', () => {
           body="By giving voice to our dynamic world, we inspire connection, action and hope."
           button="About Us"
           url="/about"
+          icon="info"
         />
       )
       .toJSON();
