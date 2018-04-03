@@ -1,0 +1,25 @@
+/* import fonts... */
+@value fonts: "../../00_global/fonts.css";
+@value heading from fonts;
+
+.header {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.body {
+  font-size: 0.87rem;
+}
+
+.btn {
+  font: 0.875rem heading;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.btnIcon {
+  height: 13px;
+  margin-right: 3px;
+  top: 0;
+  width: 12px;
+}

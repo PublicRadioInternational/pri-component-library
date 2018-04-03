@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value white, whiteDark, grayLighter, gray, grayLight, grayDark, orange, orangeDark, blue, blueDark from colors;
+@value white, whiteDark, grayLighter, gray, grayLight, grayDark, orange, orangeDark, blue, blueMed from colors;
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
 @value copy from fonts;
@@ -70,12 +70,12 @@
 
 @define-mixin btnBlue {
   background-color: blue;
-  border: 1px solid blueDark;
+  border: 1px solid blueMed;
   color: white;
 }
 
 @define-mixin btnBlueHover {
-  background-color: blueDark;
+  background-color: blueMed;
   color: white;
 }
 
