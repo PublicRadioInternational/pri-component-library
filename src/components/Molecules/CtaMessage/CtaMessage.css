@@ -15,7 +15,8 @@
 }
 
 @define-mixin loadUnderBtn {
-  padding: 0 0.3rem;
+  padding: 0 0.27rem;
+  font-size: 0.8rem;
   line-height: 1.6rem;
 }
 
@@ -67,7 +68,7 @@
 
 .description {
   font-size: 1.1rem;
-  line-height: 2rem;
+  line-height: 1.4rem;
 }
 
 .actions * + * {
@@ -79,7 +80,7 @@
   margin-bottom: 0;
 }
 
-.loadUnder .content * + * {
+.loadUnder .content > * + * {
   margin-left: 0.5rem;
 }
 
@@ -104,6 +105,11 @@
 
 .loadUnder .actions {
   display: block;
+  margin: 10px auto;
+}
+
+.loadUnder .actions > * + * {
+  margin-left: 1rem;
 }
 
 .loadUnder .actionBtn,
@@ -125,6 +131,7 @@
 
   .loadUnder .actions {
     display: inline-block;
+    margin: 0 0 0 0.5rem;
   }
 
   .loadUnder .dismissBtn {
