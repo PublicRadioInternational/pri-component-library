@@ -170,7 +170,14 @@ svg.inputIcon {
 }
 
 /* Buttons in children */
+@define-mixin btnSmall {
+  font: 0.875rem 'Raleway', sans-serif;
+  letter-spacing: 0;
+  padding: 0.5rem 0.7rem;
+  text-transform: none;
+}
 .btnWrap input[type='submit'] {
   @mixin btn;
   @mixin btnOrange;
+  @mixin btnSmall;
 }
