@@ -122,6 +122,7 @@ storiesOf('Molecules/CtaMessage', module)
   .addDecorator(checkA11y)
   .add('Push Down', () => (
     <CtaMessage
+      onClose={action('close-prompt')}
       showLogo
       title="Google is the #1 search engine."
       description="Don't belive us? Google it."
@@ -140,6 +141,7 @@ storiesOf('Molecules/CtaMessage', module)
   .addDecorator(checkA11y)
   .add('Load Under', () => (
     <CtaMessage
+      onClose={action('close-prompt')}
       type="loadUnder"
       title="Google is the #1 search engine."
       description="Don't belive us? Google it."
