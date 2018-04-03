@@ -1420,36 +1420,847 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       </div>
     </div>
   </header>
+  <article
+    className="hero"
+    typeof="sioc:Item foaf:Document"
+  >
+    <figure
+      className="figure"
+    >
+      <img
+        alt="Opioid Addiction"
+        className="img"
+        src="https://media.pri.org/s3fs-public/styles/feature_large/public/story/images/JL1_8064.JPG?itok=WfGYKL2U"
+      />
+    </figure>
+    <div
+      className="text"
+    >
+      <a
+        className="iconLink"
+        href="https://google.com"
+      >
+        <svg
+          aria-hidden={null}
+          aria-labelledby={null}
+          className="svg icon roundIcon"
+          fill="currentcolor"
+          height={28}
+          version={1.1}
+          viewBox="0 0 28 28"
+          width={28}
+        >
+          <path
+            d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
+          />
+        </svg>
+      </a>
+      <h2>
+        <a
+          className="title"
+          href="https://google.com"
+        >
+          Opioid addicts are turning to a clinic in Mexico to break their addiction, but there's a catch. The treatment is illegal in the US.
+        </a>
+      </h2>
+      <p
+        className="summary"
+      >
+        Ibogaine is a powerful hallucinogenic drug that has been shown to have surprising success in treating addiction. But it comes with risks that, so far, have made its use in the US illegal.
+      </p>
+      <a
+        className="category"
+        href="https://bing.com"
+      >
+        GlobalPost
+      </a>
+    </div>
+  </article>
   <main
     className="mainContainer"
   >
     <section
       className="className && mainList"
     >
-      <p>
-        Main List
-      </p>
+      <section
+        className="className && list pris-the-world"
+      >
+        <header
+          className="header"
+        >
+          <a
+            className="logoLink"
+            href="#"
+          >
+            <img
+              alt="PRIs The World"
+              className="logo"
+              src="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
+            />
+            PRIs The World
+          </a>
+        </header>
+        <article
+          className="cardItem cardItemLg"
+          typeof="sioc:Item foaf:Document"
+        >
+          <div
+            className="titleWrap titleWrapLg"
+          >
+            <h2
+              className=" "
+            >
+              <a
+                className="link "
+                href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+              >
+                There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco
+              </a>
+            </h2>
+            <span
+              content="There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco"
+              property="dc:title"
+            />
+            <span
+              content="0"
+              datatype="xsd:integer"
+              property="sioc:num_replies"
+            />
+          </div>
+          <figure
+            className="image imageLg"
+          >
+            <a
+              className=""
+              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            >
+              <img
+                alt="Alt Text"
+                className="img imgLg"
+                src="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/180302copbridge.jpg?itok=52GppaOv"
+                typeof="foaf:Image"
+              />
+            </a>
+          </figure>
+          <p
+            className="blurb blurbLg"
+          >
+            Ten years after Kosovo declared its independence from Serbia, Serbs and Albanians in Kosovo remain deeply divided — even over food.
+            <a
+              className="iconLink"
+              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            >
+              <svg
+                aria-hidden={null}
+                aria-labelledby={null}
+                className="svg icon roundIcon"
+                fill="currentcolor"
+                height={28}
+                version={1.1}
+                viewBox="0 0 28 28"
+                width={28}
+              >
+                <path
+                  d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
+                />
+              </svg>
+            </a>
+          </p>
+        </article>
+        <article
+          className="cardItem"
+          typeof="sioc:Item foaf:Document"
+        >
+          <div
+            className="titleWrap"
+          >
+            <h2
+              className="title "
+            >
+              <a
+                className="link "
+                href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+              >
+                50 years on, India is celebrating the Beatles' infamous trip to the country
+              </a>
+            </h2>
+            <span
+              content="50 years on, India is celebrating the Beatles' infamous trip to the country"
+              property="dc:title"
+            />
+            <span
+              content="0"
+              datatype="xsd:integer"
+              property="sioc:num_replies"
+            />
+          </div>
+          <figure
+            className="image"
+          >
+            <a
+              className=""
+              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            >
+              <img
+                alt="Alt Text"
+                className="img"
+                src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
+                typeof="foaf:Image"
+              />
+            </a>
+          </figure>
+          <p
+            className="blurb"
+          >
+            When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. 
+          </p>
+        </article>
+        <article
+          className="cardItem"
+          typeof="sioc:Item foaf:Document"
+        >
+          <div
+            className="titleWrap"
+          >
+            <h2
+              className="title "
+            >
+              <a
+                className="link "
+                href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+              >
+                Progressives in Congress side with Trump on trade
+              </a>
+            </h2>
+            <span
+              content="Progressives in Congress side with Trump on trade"
+              property="dc:title"
+            />
+            <span
+              content="0"
+              datatype="xsd:integer"
+              property="sioc:num_replies"
+            />
+          </div>
+          <figure
+            className="image"
+          >
+            <a
+              className=""
+              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            >
+              <img
+                alt="Alt Text"
+                className="img"
+                src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/DeLauro.jpg?itok=gprExR5S"
+                typeof="foaf:Image"
+              />
+            </a>
+          </figure>
+          <p
+            className="blurb"
+          >
+            NAFTA has governed the rules of trade between the US, Mexico and Canada since 1994. Today, many progressives who dislike NAFTA say President Trump is giving them the best chance in a generation to rewrite the rules of trade. 
+            <a
+              className="iconLink"
+              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            >
+              <svg
+                aria-hidden={null}
+                aria-labelledby={null}
+                className="svg icon roundIcon"
+                fill="currentcolor"
+                height={28}
+                version={1.1}
+                viewBox="0 0 28 28"
+                width={28}
+              >
+                <path
+                  d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
+                />
+              </svg>
+            </a>
+          </p>
+        </article>
+        <article
+          className="cardItem"
+          typeof="sioc:Item foaf:Document"
+        >
+          <div
+            className="titleWrap"
+          >
+            <h2
+              className="title "
+            >
+              <a
+                className="link "
+                href="https://interactive-dev.pri.org/stories/2017-07-24/clearing-mines-and-explosives-mosul"
+              >
+                A cartoonist in Equatorial Guinea has been cleared of charges, but he's still in jail
+              </a>
+            </h2>
+            <span
+              content="A cartoonist in Equatorial Guinea has been cleared of charges, but he's still in jail"
+              property="dc:title"
+            />
+            <span
+              content="0"
+              datatype="xsd:integer"
+              property="sioc:num_replies"
+            />
+          </div>
+          <figure
+            className="image"
+          >
+            <a
+              className=""
+              href="https://interactive-dev.pri.org/stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            >
+              <img
+                alt="Alt Text"
+                className="img"
+                src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/GettyImages-925030722_master.jpg?itok=LSMUCQbS"
+                typeof="foaf:Image"
+              />
+            </a>
+          </figure>
+          <p
+            className="blurb"
+          >
+            Charges against a jailed cartoonist from Equatorial Guinea have been dropped, so why is he still in jail?
+          </p>
+        </article>
+        <article
+          className="cardItem"
+          typeof="sioc:Item foaf:Document"
+        >
+          <div
+            className="titleWrap"
+          >
+            <h2
+              className="title "
+            >
+              Egyptian singer faces the prospect of prison over a joke about the Nile
+            </h2>
+            <span
+              content="Egyptian singer faces the prospect of prison over a joke about the Nile"
+              property="dc:title"
+            />
+            <span
+              content="0"
+              datatype="xsd:integer"
+              property="sioc:num_replies"
+            />
+          </div>
+          <figure
+            className="image"
+          >
+            <img
+              alt="Alt Text"
+              className="img"
+              src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/GettyImages-925030722_master.jpg?itok=LSMUCQbS"
+              typeof="foaf:Image"
+            />
+          </figure>
+          <p
+            className="blurb"
+          >
+            An Egyptian court has sentenced one of its country's top singers to six months in prison for a comment she made about the Nile River. Pop singer Sherine made a crack about getting ill from drinking from the river when she was asked by a fan to sing, 'Have You Ever Drunk From the Nile.'
+            <a
+              className="iconLink"
+              href={null}
+            >
+              <svg
+                aria-hidden={null}
+                aria-labelledby={null}
+                className="svg icon roundIcon"
+                fill="currentcolor"
+                height={28}
+                version={1.1}
+                viewBox="0 0 28 28"
+                width={28}
+              >
+                <path
+                  d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
+                />
+              </svg>
+            </a>
+          </p>
+        </article>
+      </section>
     </section>
     <aside
       className="className && latestContent"
     >
-      <p>
-        Latest Content
-      </p>
+      <section
+        className="className && section"
+      >
+        <header
+          className="header"
+        >
+          Latest Content
+        </header>
+        <article
+          className="teaserItem"
+          typeof="sioc:Item foaf:Document"
+        >
+          <div
+            className="titleWrap"
+          >
+            <h4
+              className="title"
+            >
+              <a
+                className="link"
+                href="stories/2018-03-03/poor-and-minority-children-excessive-air-pollution-creates-toxic-learning"
+              >
+                <svg
+                  aria-hidden={null}
+                  aria-labelledby={null}
+                  className="svg icon"
+                  fill="currentcolor"
+                  height={28}
+                  version={1.1}
+                  viewBox="0 0 28 28"
+                  width={28}
+                >
+                  <path
+                    d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
+                  />
+                </svg>
+                For poor and minority children, excessive air pollution creates a toxic learning environment
+              </a>
+            </h4>
+            <span
+              content="For poor and minority children, excessive air pollution creates a toxic learning environment"
+              property="dc:title"
+            />
+          </div>
+          <p
+            className="program"
+          >
+            <a
+              className="link"
+              href="programs/living-earth"
+            >
+              Living on Earth
+            </a>
+          </p>
+        </article>
+        <article
+          className="teaserItem"
+          typeof="sioc:Item foaf:Document"
+        >
+          <div
+            className="titleWrap"
+          >
+            <h4
+              className="title"
+            >
+              <a
+                className="link"
+                href="stories/2018-03-06/progressives-side-trump-trade"
+              >
+                <svg
+                  aria-hidden={null}
+                  aria-labelledby={null}
+                  className="svg icon"
+                  fill="currentcolor"
+                  height={28}
+                  version={1.1}
+                  viewBox="0 0 28 28"
+                  width={28}
+                >
+                  <path
+                    d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
+                  />
+                </svg>
+                Progressives in Congress side with Trump on trade
+              </a>
+            </h4>
+            <span
+              content="Progressives in Congress side with Trump on trade"
+              property="dc:title"
+            />
+          </div>
+          <p
+            className="program"
+          >
+            <a
+              className="link"
+              href="programs/the-world"
+            >
+              PRI's The World
+            </a>
+          </p>
+        </article>
+        <article
+          className="teaserItem"
+          typeof="sioc:Item foaf:Document"
+        >
+          <div
+            className="titleWrap"
+          >
+            <h4
+              className="title"
+            >
+              <a
+                className="link"
+                href="stories/2018-03-06/north-korea-says-its-willing-hold-talks-us-and-halt-nuclear-pursuit-while"
+              >
+                North Korea says it's willing to hold talks with the US and halt nuclear pursuit while negotiations last
+              </a>
+            </h4>
+            <span
+              content="North Korea says it's willing to hold talks with the US and halt nuclear pursuit while negotiations last"
+              property="dc:title"
+            />
+          </div>
+        </article>
+        <article
+          className="teaserItem"
+          typeof="sioc:Item foaf:Document"
+        >
+          <div
+            className="titleWrap"
+          >
+            <h4
+              className="title"
+            >
+              <a
+                className="link"
+                href="stories/2018-03-06/yet-another-incredible-taco"
+              >
+                <svg
+                  aria-hidden={null}
+                  aria-labelledby={null}
+                  className="svg icon"
+                  fill="currentcolor"
+                  height={28}
+                  version={1.1}
+                  viewBox="0 0 28 28"
+                  width={28}
+                >
+                  <path
+                    d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
+                  />
+                </svg>
+                Yet anther article with an incredible title from the world
+              </a>
+            </h4>
+            <span
+              content="Yet anther article with an incredible title from the world"
+              property="dc:title"
+            />
+          </div>
+          <p
+            className="program"
+          >
+            <a
+              className="link"
+              href="programs/the-world"
+            >
+              PRI's The World
+            </a>
+          </p>
+        </article>
+        <footer
+          className="footer"
+        >
+          <a
+            className="btnBlue"
+            href="stories/more"
+            onClick={[Function]}
+          >
+            More Stories
+          </a>
+        </footer>
+      </section>
     </aside>
     <aside
       className="className && callouts"
     >
-      <p>
-        Callouts
-      </p>
+      <div
+        aria-labelledby={null}
+        className="menuList"
+        role={null}
+      >
+        <h2
+          className="menuListtitle"
+        >
+          Quick Links
+        </h2>
+        <ul
+          className="list null"
+        >
+          <li
+            className="listItem menuListItem"
+          >
+            <a
+              className="listLink menuListLink world"
+              href="https://www.pri.org/programs/the-world"
+            >
+              PRI's The World
+            </a>
+          </li>
+          <li
+            className="listItem menuListItem"
+          >
+            <a
+              className="listLink menuListLink studio"
+              href="https://www.pri.org/programs/studio-360"
+            >
+              Studio360
+            </a>
+          </li>
+          <li
+            className="listItem menuListItem"
+          >
+            <a
+              className="listLink menuListLink globalPost"
+              href="https://www.pri.org/programs/globalpost"
+            >
+              GlobalPost
+            </a>
+          </li>
+          <li
+            className="listItem menuListItem"
+          >
+            <a
+              className="listLink menuListLink acrossWomensLives"
+              href="https://www.pri.org/verticals/across-womens-lives"
+            >
+              Across Women's Lives
+            </a>
+          </li>
+          <li
+            className="listItem menuListItem"
+          >
+            <a
+              className="listLink menuListLink globalNation"
+              href="https://www.pri.org/verticals/global-nation"
+            >
+              Global Nation
+            </a>
+          </li>
+          <li
+            className="listItem menuListItem"
+          >
+            <a
+              className="listLink menuListLink globalSecurity"
+              href="https://www.pri.org/verticals/global-security"
+            >
+              Global Security
+            </a>
+          </li>
+          <li
+            className="listItem menuListItem"
+          >
+            <a
+              className="listLink menuListLink livablePlanet"
+              href="https://www.pri.org/verticals/livable-planet"
+            >
+              Livable Planet
+            </a>
+          </li>
+          <li
+            className="listItem menuListItem"
+          >
+            <a
+              className="listLink menuListLink "
+              href="https://www.pri.org/shows"
+            >
+              View all Programs & Podcasts
+            </a>
+          </li>
+        </ul>
+      </div>
     </aside>
     <section
       className="className && mainList2"
     >
-      <p>
-        Main List Two
-      </p>
+      <section
+        className="className && list pris-globalpost"
+      >
+        <header
+          className="header"
+        >
+          <a
+            className="logoLink"
+            href="#"
+          >
+            <img
+              alt="GlobalPost"
+              className="logo"
+              src="https://media.pri.org/s3fs-public/styles/medium_square/public/logo_gp.png"
+            />
+            GlobalPost
+          </a>
+        </header>
+        <article
+          className="cardItem cardItemLg"
+          typeof="sioc:Item foaf:Document"
+        >
+          <div
+            className="titleWrap titleWrapLg"
+          >
+            <h2
+              className=" "
+            >
+              <a
+                className="link "
+                href="#"
+              >
+                How the murder of a young woman turned Italy's elections into a referendum on immigration
+              </a>
+            </h2>
+            <span
+              content="How the murder of a young woman turned Italy's elections into a referendum on immigration"
+              property="dc:title"
+            />
+            <span
+              content="0"
+              datatype="xsd:integer"
+              property="sioc:num_replies"
+            />
+          </div>
+          <figure
+            className="image imageLg"
+          >
+            <a
+              className=""
+              href="#"
+            >
+              <img
+                alt="Alt Text"
+                className="img imgLg"
+                src="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/RTS1M7QU%20(1).jpg?itok=SCBMIFU_"
+                typeof="foaf:Image"
+              />
+            </a>
+          </figure>
+          <p
+            className="blurb blurbLg"
+          >
+            Little more than a month ago, no one had heard of Macerata. Then the murder of Pamela Mastropietro thrust the small town in central Italy onto the national stage, and the whole course of a pivotal national election was altered.
+          </p>
+        </article>
+        <article
+          className="cardItem"
+          typeof="sioc:Item foaf:Document"
+        >
+          <div
+            className="titleWrap"
+          >
+            <h2
+              className="title "
+            >
+              <a
+                className="link "
+                href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+              >
+                Instagram art project spreads awareness about femicides in Mexico
+              </a>
+            </h2>
+            <span
+              content="Instagram art project spreads awareness about femicides in Mexico"
+              property="dc:title"
+            />
+            <span
+              content="0"
+              datatype="xsd:integer"
+              property="sioc:num_replies"
+            />
+          </div>
+          <figure
+            className="image"
+          >
+            <a
+              className=""
+              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            >
+              <img
+                alt="Alt Text"
+                className="img"
+                src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/fem.jpg?itok=GvblSbSw"
+                typeof="foaf:Image"
+              />
+            </a>
+          </figure>
+          <p
+            className="blurb"
+          >
+            No estamos todas is an Instagram project dedicated to visualizing the issue of femicide in Mexico with original illustrations.
+          </p>
+        </article>
+        <article
+          className="cardItem"
+          typeof="sioc:Item foaf:Document"
+        >
+          <div
+            className="titleWrap"
+          >
+            <h2
+              className="title "
+            >
+              <a
+                className="link "
+                href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+              >
+                When this Univision anchor interviewed a head of the KKK, he called her the n-word
+              </a>
+            </h2>
+            <span
+              content="When this Univision anchor interviewed a head of the KKK, he called her the n-word"
+              property="dc:title"
+            />
+            <span
+              content="0"
+              datatype="xsd:integer"
+              property="sioc:num_replies"
+            />
+          </div>
+          <figure
+            className="image"
+          >
+            <a
+              className=""
+              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            >
+              <img
+                alt="Alt Text"
+                className="img"
+                src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/IliaCalderon_david001.jpg?itok=Be7CbPFn"
+                typeof="foaf:Image"
+              />
+            </a>
+          </figure>
+          <p
+            className="blurb"
+          >
+            Ilia Calderón doesn't back down in an interview. And she's determined to allow people growing up like she did see their own experience in her stories.
+            <a
+              className="iconLink"
+              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            >
+              <svg
+                aria-hidden={null}
+                aria-labelledby={null}
+                className="svg icon roundIcon"
+                fill="currentcolor"
+                height={28}
+                version={1.1}
+                viewBox="0 0 28 28"
+                width={28}
+              >
+                <path
+                  d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
+                />
+              </svg>
+            </a>
+          </p>
+        </article>
+      </section>
     </section>
   </main>
   <footer
