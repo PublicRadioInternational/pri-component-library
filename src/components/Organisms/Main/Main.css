@@ -81,8 +81,8 @@
 
 @media bp-header {
   .mainContainer {
-    -ms-grid-columns: 19% 54% 27%;
-    grid-template-columns: 19% 54% 27%;
+    -ms-grid-columns: 17.5% 57.5% 25%;
+    grid-template-columns: 17.5% 57.5% 25%;
   }
 
   .mainList {
