@@ -168,3 +168,9 @@ svg.inputIcon {
   background-color: grayLighter;
   color: grayDark;
 }
+
+/* Buttons in children */
+.btnWrap input[type='submit'] {
+  @mixin btn;
+  @mixin btnOrange;
+}

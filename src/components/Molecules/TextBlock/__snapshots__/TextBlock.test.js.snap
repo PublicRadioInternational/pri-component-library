@@ -14,6 +14,9 @@ exports[`<TextBlock /> Matches the Text Block snapshot 1`] = `
   >
     By giving voice to our dynamic world, we inspire connection, action and hope.
   </p>
+  <div
+    className="btnWrap inputWrap"
+  />
   <a
     className="btnnull btn"
     href="/about"

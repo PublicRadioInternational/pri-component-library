@@ -8,6 +8,9 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import styles from './TextBlock.css';
 
+import buttonStyles from '../../Atoms/Button/Button.css';
+import inputStyles from '../../Atoms/Form/Form.css';
+
 import ButtonLink from '../../Atoms/Button/ButtonLink.component';
 import Icon from '../../Atoms/Svg/Icons.component';
 
@@ -36,7 +39,9 @@ const TextBlock = ({
     <div className={altClasses('textBlock')}>
       <h3 className={altClasses('header')}>{title}</h3>
       <p className={altClasses('body')}>{body}</p>
-      {children}
+      <div className={`${buttonStyles.btnWrap} ${inputStyles.inputWrap}`}>
+        {children}
+      </div>
       {button && (
         <ButtonLink className={styles.btn} url={url} color={color}>
           <Icon name={icon} inline className={styles.btnIcon} />
