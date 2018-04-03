@@ -34,7 +34,7 @@ const TextBlock = ({
 
   return (
     <div className={altClasses('textBlock')}>
-      <h2 className={altClasses('header')}>{title}</h2>
+      <h3 className={altClasses('header')}>{title}</h3>
       <p className={altClasses('body')}>{body}</p>
       {children}
       {button && (

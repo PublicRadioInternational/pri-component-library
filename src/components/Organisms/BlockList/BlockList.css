@@ -1,0 +1,37 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value whiteDark, grayDark from colors;
+
+.blockList {
+  background: whiteDark;
+  margin-bottom: 1rem;
+}
+
+.title {
+  border-bottom: 1px dotted #ddd;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.list > * {
+  border-top: 1px dotted #ddd;
+  counter-increment: my-counter;
+}
+
+.list > *::before {
+  background: #ddd;
+  border-radius: 50%;
+  color: grayDark;
+  content: counter(my-counter);
+  display: block;
+  font-size: 1rem;
+  height: 20px;
+  line-height: 1.2;
+  margin: 0 auto 3px;
+  width: 20px;
+}
+
+.list > *:first-child {
+  border-top: none;
+}

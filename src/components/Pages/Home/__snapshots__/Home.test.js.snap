@@ -2078,11 +2078,11 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       <div
         className="textBlock"
       >
-        <h2
+        <h3
           className="header"
         >
           About PRI
-        </h2>
+        </h3>
         <p
           className="body"
         >
