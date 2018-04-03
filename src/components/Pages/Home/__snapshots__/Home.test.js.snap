@@ -1797,190 +1797,194 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
     <aside
       className="className && latestContent"
     >
-      <section
-        className="className && section"
+      <div
+        className="sticky sticky"
       >
-        <header
-          className="header"
+        <section
+          className="className && section"
         >
-          Latest Content
-        </header>
-        <article
-          className="teaserItem"
-          typeof="sioc:Item foaf:Document"
-        >
-          <div
-            className="titleWrap"
+          <header
+            className="header"
           >
-            <h4
-              className="title"
+            Latest Content
+          </header>
+          <article
+            className="teaserItem"
+            typeof="sioc:Item foaf:Document"
+          >
+            <div
+              className="titleWrap"
+            >
+              <h4
+                className="title"
+              >
+                <a
+                  className="link"
+                  href="stories/2018-03-03/poor-and-minority-children-excessive-air-pollution-creates-toxic-learning"
+                >
+                  <svg
+                    aria-hidden={null}
+                    aria-labelledby={null}
+                    className="svg icon"
+                    fill="currentcolor"
+                    height={28}
+                    version={1.1}
+                    viewBox="0 0 28 28"
+                    width={28}
+                  >
+                    <path
+                      d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
+                    />
+                  </svg>
+                  For poor and minority children, excessive air pollution creates a toxic learning environment
+                </a>
+              </h4>
+              <span
+                content="For poor and minority children, excessive air pollution creates a toxic learning environment"
+                property="dc:title"
+              />
+            </div>
+            <p
+              className="program"
             >
               <a
                 className="link"
-                href="stories/2018-03-03/poor-and-minority-children-excessive-air-pollution-creates-toxic-learning"
+                href="programs/living-earth"
               >
-                <svg
-                  aria-hidden={null}
-                  aria-labelledby={null}
-                  className="svg icon"
-                  fill="currentcolor"
-                  height={28}
-                  version={1.1}
-                  viewBox="0 0 28 28"
-                  width={28}
-                >
-                  <path
-                    d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
-                  />
-                </svg>
-                For poor and minority children, excessive air pollution creates a toxic learning environment
+                Living on Earth
               </a>
-            </h4>
-            <span
-              content="For poor and minority children, excessive air pollution creates a toxic learning environment"
-              property="dc:title"
-            />
-          </div>
-          <p
-            className="program"
+            </p>
+          </article>
+          <article
+            className="teaserItem"
+            typeof="sioc:Item foaf:Document"
+          >
+            <div
+              className="titleWrap"
+            >
+              <h4
+                className="title"
+              >
+                <a
+                  className="link"
+                  href="stories/2018-03-06/progressives-side-trump-trade"
+                >
+                  <svg
+                    aria-hidden={null}
+                    aria-labelledby={null}
+                    className="svg icon"
+                    fill="currentcolor"
+                    height={28}
+                    version={1.1}
+                    viewBox="0 0 28 28"
+                    width={28}
+                  >
+                    <path
+                      d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
+                    />
+                  </svg>
+                  Progressives in Congress side with Trump on trade
+                </a>
+              </h4>
+              <span
+                content="Progressives in Congress side with Trump on trade"
+                property="dc:title"
+              />
+            </div>
+            <p
+              className="program"
+            >
+              <a
+                className="link"
+                href="programs/the-world"
+              >
+                PRI's The World
+              </a>
+            </p>
+          </article>
+          <article
+            className="teaserItem"
+            typeof="sioc:Item foaf:Document"
+          >
+            <div
+              className="titleWrap"
+            >
+              <h4
+                className="title"
+              >
+                <a
+                  className="link"
+                  href="stories/2018-03-06/north-korea-says-its-willing-hold-talks-us-and-halt-nuclear-pursuit-while"
+                >
+                  North Korea says it's willing to hold talks with the US and halt nuclear pursuit while negotiations last
+                </a>
+              </h4>
+              <span
+                content="North Korea says it's willing to hold talks with the US and halt nuclear pursuit while negotiations last"
+                property="dc:title"
+              />
+            </div>
+          </article>
+          <article
+            className="teaserItem"
+            typeof="sioc:Item foaf:Document"
+          >
+            <div
+              className="titleWrap"
+            >
+              <h4
+                className="title"
+              >
+                <a
+                  className="link"
+                  href="stories/2018-03-06/yet-another-incredible-taco"
+                >
+                  <svg
+                    aria-hidden={null}
+                    aria-labelledby={null}
+                    className="svg icon"
+                    fill="currentcolor"
+                    height={28}
+                    version={1.1}
+                    viewBox="0 0 28 28"
+                    width={28}
+                  >
+                    <path
+                      d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
+                    />
+                  </svg>
+                  Yet anther article with an incredible title from the world
+                </a>
+              </h4>
+              <span
+                content="Yet anther article with an incredible title from the world"
+                property="dc:title"
+              />
+            </div>
+            <p
+              className="program"
+            >
+              <a
+                className="link"
+                href="programs/the-world"
+              >
+                PRI's The World
+              </a>
+            </p>
+          </article>
+          <footer
+            className="footer"
           >
             <a
-              className="link"
-              href="programs/living-earth"
+              className="btnBlue"
+              href="stories/more"
+              onClick={[Function]}
             >
-              Living on Earth
+              More Stories
             </a>
-          </p>
-        </article>
-        <article
-          className="teaserItem"
-          typeof="sioc:Item foaf:Document"
-        >
-          <div
-            className="titleWrap"
-          >
-            <h4
-              className="title"
-            >
-              <a
-                className="link"
-                href="stories/2018-03-06/progressives-side-trump-trade"
-              >
-                <svg
-                  aria-hidden={null}
-                  aria-labelledby={null}
-                  className="svg icon"
-                  fill="currentcolor"
-                  height={28}
-                  version={1.1}
-                  viewBox="0 0 28 28"
-                  width={28}
-                >
-                  <path
-                    d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
-                  />
-                </svg>
-                Progressives in Congress side with Trump on trade
-              </a>
-            </h4>
-            <span
-              content="Progressives in Congress side with Trump on trade"
-              property="dc:title"
-            />
-          </div>
-          <p
-            className="program"
-          >
-            <a
-              className="link"
-              href="programs/the-world"
-            >
-              PRI's The World
-            </a>
-          </p>
-        </article>
-        <article
-          className="teaserItem"
-          typeof="sioc:Item foaf:Document"
-        >
-          <div
-            className="titleWrap"
-          >
-            <h4
-              className="title"
-            >
-              <a
-                className="link"
-                href="stories/2018-03-06/north-korea-says-its-willing-hold-talks-us-and-halt-nuclear-pursuit-while"
-              >
-                North Korea says it's willing to hold talks with the US and halt nuclear pursuit while negotiations last
-              </a>
-            </h4>
-            <span
-              content="North Korea says it's willing to hold talks with the US and halt nuclear pursuit while negotiations last"
-              property="dc:title"
-            />
-          </div>
-        </article>
-        <article
-          className="teaserItem"
-          typeof="sioc:Item foaf:Document"
-        >
-          <div
-            className="titleWrap"
-          >
-            <h4
-              className="title"
-            >
-              <a
-                className="link"
-                href="stories/2018-03-06/yet-another-incredible-taco"
-              >
-                <svg
-                  aria-hidden={null}
-                  aria-labelledby={null}
-                  className="svg icon"
-                  fill="currentcolor"
-                  height={28}
-                  version={1.1}
-                  viewBox="0 0 28 28"
-                  width={28}
-                >
-                  <path
-                    d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
-                  />
-                </svg>
-                Yet anther article with an incredible title from the world
-              </a>
-            </h4>
-            <span
-              content="Yet anther article with an incredible title from the world"
-              property="dc:title"
-            />
-          </div>
-          <p
-            className="program"
-          >
-            <a
-              className="link"
-              href="programs/the-world"
-            >
-              PRI's The World
-            </a>
-          </p>
-        </article>
-        <footer
-          className="footer"
-        >
-          <a
-            className="btnBlue"
-            href="stories/more"
-            onClick={[Function]}
-          >
-            More Stories
-          </a>
-        </footer>
-      </section>
+          </footer>
+        </section>
+      </div>
     </aside>
     <aside
       className="className && callouts"
