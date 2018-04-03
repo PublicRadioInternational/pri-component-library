@@ -43,11 +43,11 @@ exports[`<CardItem /> Matches the Card Item Default snapshot 1`] = `
       />
     </a>
   </figure>
-  <p
+  <div
     className="blurb"
   >
     Test Teaser
-  </p>
+  </div>
 </article>
 `;
 
@@ -79,7 +79,7 @@ exports[`<CardItem /> Matches the Card Item Large snapshot 1`] = `
       property="sioc:num_replies"
     />
   </div>
-  <p
+  <div
     className="blurb blurbLg"
   />
 </article>
@@ -118,7 +118,7 @@ exports[`<CardItem /> Matches the Card Item No Link  snapshot 1`] = `
       typeof="foaf:Image"
     />
   </figure>
-  <p
+  <div
     className="blurb"
   />
 </article>

@@ -98,14 +98,14 @@ const CardItem = ({
           )}
         </figure>
       )}
-      <p className={largeClasses('blurb')}>
+      <div className={largeClasses('blurb')}>
         {blurb}
         {hasAudio && (
           <a className={styles.iconLink} href={url}>
             <Icon name="volume" className={styles.icon} isRoundIcon />
           </a>
         )}
-      </p>
+      </div>
     </article>
   );
 };
