@@ -16,7 +16,6 @@ exports[`<CardItem /> Matches the Card Item Default snapshot 1`] = `
         href="/"
       >
         Test Title
-        ,
       </a>
     </h2>
     <span
@@ -68,7 +67,6 @@ exports[`<CardItem /> Matches the Card Item Large snapshot 1`] = `
         href="/"
       >
         Test Title
-        ,
       </a>
     </h2>
     <span
@@ -99,7 +97,6 @@ exports[`<CardItem /> Matches the Card Item No Link  snapshot 1`] = `
       className="title freeformTitle"
     >
       Test Title
-      ,
     </h2>
     <span
       content="Test Title"
