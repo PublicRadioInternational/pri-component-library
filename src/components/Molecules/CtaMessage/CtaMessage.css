@@ -3,7 +3,7 @@
 @value gray, orange, grayLighter from colors;
 
 /* import breakpoints */
-@value small as bp-small, medium as bp-medium from "../../00_global/breakpoints.css";
+@value medium as bp-medium from "../../00_global/breakpoints.css";
 
 @define-mixin prompt {
   display: block;
@@ -22,7 +22,7 @@
 .pushDown {
   @mixin prompt;
 
-  padding: 35px 55px;
+  display: none;
 }
 
 .loadUnder {
@@ -112,6 +112,11 @@
 }
 
 @media bp-medium {
+  .pushDown {
+    display: block;
+    padding: 35px 55px;
+  }
+
   .loadUnder .logo {
     display: inline-block;
     vertical-align: middle;
