@@ -87,6 +87,10 @@
   margin-top: 1rem;
 }
 
+div.blurb {
+  margin-top: 0;
+}
+
 .blurbLg {
   padding: 0 1rem;
 }
