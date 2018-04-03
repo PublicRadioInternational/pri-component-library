@@ -13,30 +13,50 @@ import Icon from '../../Atoms/Svg/Icons.component';
 const cx = classNames.bind(styles);
 
 /**
- * Takes an optional link and title, and returns a title structure.
- *
- * @param {node} item - Renderable node.
- * @param {string} link - Optional url to which {item} should link.
- * @param {string} className - Class that should be applied to item wrapper.
- *
- * @returns {object|null}
- *   If a link path is provided, this method will return item wrapped in a link
- *   tag. If a link is not provided, it'll return the item carte blanc.
+ * Renders it's children, linked to a given url.
  */
-const linkedItem = (item, link = null, className = '') => {
-  // If both a link and an item exist, return the item wrapped by an anchor tag.
-  if (link && item) {
+const LinkedItem = ({ url, children, className }) => {
+  if (url) {
     return (
-      <a className={className} href={link}>
-        {item}
+      <a className={className} href={url}>
+        {children}
       </a>
     );
-  } else if (item) {
-    // If there is just an, return just the item.
-    return item;
   }
 
-  return null;
+  return children || null;
+};
+
+LinkedItem.propTypes = {
+  url: PropTypes.string,
+  className: PropTypes.string,
+  children: PropTypes.node.isRequired
+};
+
+LinkedItem.defaultProps = {
+  url: null,
+  className: null
+};
+
+/**
+ * Renders blurb content in a paragraph or a div, if freeform is true.
+ */
+const BlurbContent = ({ freeform, children, className }) => {
+  if (freeform) {
+    return <div className={className}>{children}</div>;
+  }
+
+  return <p className={className}>{children}</p>;
+};
+
+BlurbContent.propTypes = {
+  freeform: PropTypes.bool.isRequired,
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string
+};
+
+BlurbContent.defaultProps = {
+  className: null
 };
 
 /**
@@ -75,11 +95,12 @@ const CardItem = ({
               'freeformTitle'
             )}`}
           >
-            {linkedItem(
-              title,
-              url,
-              `${styles.link} ${freeformClasses('freeformLink')}`
-            )}
+            <LinkedItem
+              url={url}
+              className={`${styles.link} ${freeformClasses('freeformLink')}`}
+            >
+              {title},
+            </LinkedItem>
           </h2>
         )}
         {title && <span property="dc:title" content={title} />}
@@ -87,25 +108,24 @@ const CardItem = ({
       </div>
       {imgSrc && (
         <figure className={largeClasses('image')}>
-          {linkedItem(
+          <LinkedItem url={url}>
             <img
               typeof="foaf:Image"
               src={imgSrc}
               alt={imgAlt}
               className={largeClasses('img')}
-            />,
-            url
-          )}
+            />
+          </LinkedItem>
         </figure>
       )}
-      <div className={largeClasses('blurb')}>
+      <BlurbContent freeform={freeform} className={largeClasses('blurb')}>
         {blurb}
         {hasAudio && (
           <a className={styles.iconLink} href={url}>
             <Icon name="volume" className={styles.icon} isRoundIcon />
           </a>
         )}
-      </div>
+      </BlurbContent>
     </article>
   );
 };
