@@ -6,10 +6,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
-import styles from './TextBlock.css';
-
 import buttonStyles from '../../Atoms/Button/Button.css';
 import inputStyles from '../../Atoms/Form/Form.css';
+import styles from './TextBlock.css';
 
 import ButtonLink from '../../Atoms/Button/ButtonLink.component';
 import Icon from '../../Atoms/Svg/Icons.component';
