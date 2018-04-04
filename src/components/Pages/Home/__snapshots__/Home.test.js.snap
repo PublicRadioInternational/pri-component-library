@@ -1794,6 +1794,13 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
     >
       <div
         className="sticky sticky"
+        style={
+          Object {
+            "position": "sticky",
+            "top": 0,
+            "zIndex": 1,
+          }
+        }
       >
         <section
           className="className && section"

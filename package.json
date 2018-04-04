@@ -97,6 +97,6 @@
     "postcss-mixins": "^6.2.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "stickyfilljs": "^2.0.3"
+    "react-sticky-fill": "^0.8.4"
   }
 }

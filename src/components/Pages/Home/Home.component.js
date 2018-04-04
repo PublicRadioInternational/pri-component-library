@@ -20,7 +20,7 @@ import TextBlock from '../../Molecules/TextBlock/TextBlock.component';
 import BlockList from '../../Organisms/BlockList/BlockList.component';
 import CardList from '../../Organisms/CardList/CardList.component';
 import CardItem from '../../Molecules/CardItem/CardItem.component';
-import Sticky from '../../Molecules/Sticky/Sticky.component';
+import StickyItem from '../../Molecules/StickyItem/StickyItem.component';
 import TeaserList from '../../Organisms/Teaser/TeaserList.component';
 import TeaserItem from '../../Molecules/Teaser/TeaserItem.component';
 
@@ -91,7 +91,7 @@ const Home = ({ baseUrl }) => (
         </CardList>
       </LayoutMainList>
       <LayoutAsideLatest>
-        <Sticky>
+        <StickyItem>
           <TeaserList
             title="Latest Content"
             moreTitle="More Stories"
@@ -123,7 +123,7 @@ const Home = ({ baseUrl }) => (
               hasAudio
             />
           </TeaserList>
-        </Sticky>
+        </StickyItem>
       </LayoutAsideLatest>
       <LayoutAsideCallouts>
         <MenuList
