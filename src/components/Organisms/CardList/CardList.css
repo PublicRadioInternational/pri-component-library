@@ -91,19 +91,22 @@
 
 .header {
   border-bottom: 1px solid grayLighter;
+  min-height: 50px;
   padding: 0.5rem 1rem 0.7rem;
   font-family: heading;
 }
 
 .logoLink {
   align-items: center;
+  color: blue;
   display: flex;
   font-weight: bold;
+  min-height: 50px;
   text-decoration: none;
-  color: blue;
 }
 
 .logo {
+  display: block;
   margin-right: 10px;
   width: 50px;
 }

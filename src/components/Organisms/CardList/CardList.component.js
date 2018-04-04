@@ -19,7 +19,7 @@ const CardList = ({ category, children, url, src, categoryDescription }) => (
         {src && (
           <img src={src} alt={categoryDescription} className={styles.logo} />
         )}
-        {categoryDescription}
+        <span>{categoryDescription}</span>
       </a>
     </header>
     {children}
