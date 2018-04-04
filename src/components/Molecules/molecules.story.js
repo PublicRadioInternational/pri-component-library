@@ -15,6 +15,7 @@ import DropdownItem from '../Atoms/DropdownItem/DropdownItem.component';
 import List from './List/List.component';
 import Search from './Search/Search.component';
 import CardItem from './CardItem/CardItem.component';
+import CtaMessage from './CtaMessage/CtaMessage.component';
 import TeaserItem from './Teaser/TeaserItem.component';
 import Hero from './Hero/Hero.component';
 import MenuList from './MenuList/MenuList.component';
@@ -113,6 +114,47 @@ storiesOf('Molecules/CardItem', module)
       blurb={Parser(
         '<h2>Header within a freeform body</h2><h2><a href="#">Header within a freeform body and has a link</a></h2><blockquote><p>"Science and stories for a meaningful life. Hosted by award-winning professor Dacher Keltner, The Science of Happiness highlights the most provocative and practical findings to have emerged from the ground-breaking science of compassion, gratitude, mindfulness, and awe."</p></blockquote><p>Science and stories for a meaningful life. Hosted by award-winning professor Dacher Keltner, The Science of Happiness highlights the most provocative and practical findings to have emerged from the ground-breaking science of compassion, gratitude, mindfulness, and awe. A co-production with the Greater Good Science Center at UC Berkeley. <a href="#">This is a link</a></p>'
       )}
+    />
+  ));
+
+/**
+ * Add storybook definition for CtaMessage.
+ */
+storiesOf('Molecules/CtaMessage', module)
+  .addDecorator(checkA11y)
+  .add('Push Down', () => (
+    <CtaMessage
+      onClose={action('close-prompt')}
+      showLogo
+      title="Google is the #1 search engine."
+      description="Don't belive us? Google it."
+      action={{
+        label: 'Google It',
+        btnColor: 'Orange',
+        url: 'https://www.google.com/'
+      }}
+      dismiss={{
+        label: 'Yey, I know'
+      }}
+    />
+  ));
+
+storiesOf('Molecules/CtaMessage', module)
+  .addDecorator(checkA11y)
+  .add('Load Under', () => (
+    <CtaMessage
+      onClose={action('close-prompt')}
+      type="loadUnder"
+      title="Google is the #1 search engine."
+      description="Don't belive us? Google it."
+      action={{
+        label: 'Google It',
+        btnColor: 'Blue',
+        url: 'https://www.google.com/'
+      }}
+      dismiss={{
+        label: 'Yey, I know'
+      }}
     />
   ));
 

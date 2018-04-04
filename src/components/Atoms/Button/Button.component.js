@@ -43,7 +43,7 @@ const Button = props => {
 Button.propTypes = {
   onClick: PropTypes.func,
   children: PropTypes.node,
-  color: PropTypes.oneOf(['Orange', 'White']),
+  color: PropTypes.oneOf(['Orange', 'White', 'Dark', 'Blue']),
   className: PropTypes.string,
   'aria-expanded': PropTypes.bool,
   'aria-label': PropTypes.string,
