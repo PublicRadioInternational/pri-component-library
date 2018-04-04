@@ -16,6 +16,7 @@ import Dropdown from './src/components/Molecules/Dropdown/Dropdown.component';
 import List from './src/components/Molecules/List/List.component';
 import MenuList from './src/components/Molecules/MenuList/MenuList.component';
 import Search from './src/components/Molecules/Search/Search.component';
+import StickyItem from './src/components/Molecules/StickyItem/StickyItem.component';
 import DropdownItem from './src/components/Atoms/DropdownItem/DropdownItem.component';
 import Icons from './src/components/Atoms/Svg/Icons.component';
 import PriLogo from './src/components/Atoms/Svg/PriLogo.component';
@@ -61,6 +62,7 @@ export {
   List,
   MenuList,
   Search,
+  StickyItem,
   TeaserItem,
   TextBlock,
   // Organisms.

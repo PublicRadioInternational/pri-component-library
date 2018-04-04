@@ -20,6 +20,7 @@ import TextBlock from '../../Molecules/TextBlock/TextBlock.component';
 import BlockList from '../../Organisms/BlockList/BlockList.component';
 import CardList from '../../Organisms/CardList/CardList.component';
 import CardItem from '../../Molecules/CardItem/CardItem.component';
+import StickyItem from '../../Molecules/StickyItem/StickyItem.component';
 import TeaserList from '../../Organisms/Teaser/TeaserList.component';
 import TeaserItem from '../../Molecules/Teaser/TeaserItem.component';
 
@@ -90,37 +91,39 @@ const Home = ({ baseUrl }) => (
         </CardList>
       </LayoutMainList>
       <LayoutAsideLatest>
-        <TeaserList
-          title="Latest Content"
-          moreTitle="More Stories"
-          moreUrl="stories/more"
-        >
-          <TeaserItem
-            title="For poor and minority children, excessive air pollution creates a toxic learning environment"
-            url="stories/2018-03-03/poor-and-minority-children-excessive-air-pollution-creates-toxic-learning"
-            programTitle="Living on Earth"
-            programUrl="programs/living-earth"
-            hasAudio
-          />
-          <TeaserItem
-            title="Progressives in Congress side with Trump on trade"
-            url="stories/2018-03-06/progressives-side-trump-trade"
-            programTitle="PRI's The World"
-            programUrl="programs/the-world"
-            hasAudio
-          />
-          <TeaserItem
-            title="North Korea says it's willing to hold talks with the US and halt nuclear pursuit while negotiations last"
-            url="stories/2018-03-06/north-korea-says-its-willing-hold-talks-us-and-halt-nuclear-pursuit-while"
-          />
-          <TeaserItem
-            title="Yet anther article with an incredible title from the world"
-            url="stories/2018-03-06/yet-another-incredible-taco"
-            programTitle="PRI's The World"
-            programUrl="programs/the-world"
-            hasAudio
-          />
-        </TeaserList>
+        <StickyItem>
+          <TeaserList
+            title="Latest Content"
+            moreTitle="More Stories"
+            moreUrl="stories/more"
+          >
+            <TeaserItem
+              title="For poor and minority children, excessive air pollution creates a toxic learning environment"
+              url="stories/2018-03-03/poor-and-minority-children-excessive-air-pollution-creates-toxic-learning"
+              programTitle="Living on Earth"
+              programUrl="programs/living-earth"
+              hasAudio
+            />
+            <TeaserItem
+              title="Progressives in Congress side with Trump on trade"
+              url="stories/2018-03-06/progressives-side-trump-trade"
+              programTitle="PRI's The World"
+              programUrl="programs/the-world"
+              hasAudio
+            />
+            <TeaserItem
+              title="North Korea says it's willing to hold talks with the US and halt nuclear pursuit while negotiations last"
+              url="stories/2018-03-06/north-korea-says-its-willing-hold-talks-us-and-halt-nuclear-pursuit-while"
+            />
+            <TeaserItem
+              title="Yet anther article with an incredible title from the world"
+              url="stories/2018-03-06/yet-another-incredible-taco"
+              programTitle="PRI's The World"
+              programUrl="programs/the-world"
+              hasAudio
+            />
+          </TeaserList>
+        </StickyItem>
       </LayoutAsideLatest>
       <LayoutAsideCallouts>
         <MenuList
