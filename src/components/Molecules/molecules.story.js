@@ -213,7 +213,7 @@ storiesOf('Molecules/MenuList', module)
   ));
 
 /**
- * Add storybook definition for Teaser items (for lists).
+ * Add storybook definition for Text Blocks.
  */
 storiesOf('Molecules/TextBlock', module)
   .addDecorator(checkA11y)
@@ -224,5 +224,20 @@ storiesOf('Molecules/TextBlock', module)
       button="About Us"
       color="Blue"
       url={`${baseUrl}/about-pri`}
+      icon="info"
+    />
+  ));
+
+storiesOf('Molecules/TextBlock', module)
+  .addDecorator(checkA11y)
+  .add('Donate', () => (
+    <TextBlock
+      alt
+      title="We are Public Media"
+      body="Make a donation"
+      button="Donate"
+      color="Orange"
+      url={`${baseUrl}/donate/index.html?utm_source=navigation&utm_medium=website&utm_campaign=donations`}
+      icon="heart"
     />
   ));

@@ -15,6 +15,9 @@ import Header from './Header/Header.component';
 import Footer from './Footer/Footer.component';
 import Main from './Main/Main.component';
 
+import TextBlock from '../Molecules/TextBlock/TextBlock.component';
+import BlockList from './BlockList/BlockList.component';
+
 /**
  * Add storybook definition for Organisms.
  */
@@ -115,3 +118,92 @@ storiesOf('Organisms/Footer', module)
 storiesOf('Organisms/Main', module)
   .addDecorator(checkA11y)
   .add('Main Content Area', () => <Main />);
+
+/**
+ * Add storybook definition for Block Lists.
+ */
+const baseUrl = 'https://www.pri.org';
+storiesOf('Organisms/BlockList', module)
+  .addDecorator(checkA11y)
+  .add('3 Ways', () => (
+    <BlockList title="Three ways to support PRI">
+      <TextBlock
+        alt
+        title="We are Public Media"
+        body="Make a donation"
+        button="Donate"
+        color="Orange"
+        url={`${baseUrl}/donate/index.html?utm_source=navigation&utm_medium=website&utm_campaign=donations`}
+        icon="heart"
+      />
+      <TextBlock
+        alt
+        title="Subscribe to our Newsletters"
+        body="Sign up for The Scan, PRI's daily newsletter"
+      >
+        <form
+          className="campaignmonitor-subscribe-form campaignmonitor-subscribe-form-the-scan hideSubmitButton-processed"
+          method="post"
+          id="campaignmonitor-subscribe-form"
+          acceptCharset="UTF-8"
+        >
+          <span>
+            <span className="form-item form-type-textfield form-item-email GoogleAnalyticsET-processed">
+              <input
+                type="text"
+                id="edit-email"
+                name="email"
+                placeholder="Your Email"
+                size="60"
+                maxLength="200"
+                className="form-text required"
+              />
+            </span>
+            <input
+              type="hidden"
+              name="list_id"
+              value="986c7a3cd11f67a0ee74fabf7c05f6c0"
+            />
+            <input
+              type="submit"
+              id="edit-submit--3"
+              name="op"
+              value="Subscribe"
+              className="form-submit btn btn-danger"
+            />
+            <input
+              type="hidden"
+              name="form_build_id"
+              value="form-uYRO0cZswFet_TYFqbNrw-kMFvijHbWLD1cT_HTHdR8"
+            />
+            <input
+              type="hidden"
+              name="form_token"
+              value="oP_Zt4SgcglXt9S2vr05DzI-RIQ2wXetfco4D159-cg"
+            />
+            <input
+              type="hidden"
+              name="form_id"
+              value="campaignmonitor_subscribe_form"
+            />
+          </span>
+        </form>
+      </TextBlock>
+      <TextBlock
+        alt
+        title="Subscribe to our Podcasts"
+        body="The Science of Happiness is now #2 on iTunes"
+        button="Subscribe to Podcasts"
+        color="Orange"
+        url={`${baseUrl}/shows`}
+        icon="volume"
+      >
+        <a href={`${baseUrl}/shows`}>
+          <img
+            src="https://media.pri.org/s3fs-public/styles/medium_square/public/ScienceOfHappiness.jpg?itok=w_A0ovSx"
+            alt="Science of Happiness"
+          />
+        </a>
+      </TextBlock>
+    </BlockList>
+  ));
