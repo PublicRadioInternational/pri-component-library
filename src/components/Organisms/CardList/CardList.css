@@ -91,7 +91,6 @@
 
 .header {
   border-bottom: 1px solid grayLighter;
-  min-height: 50px;
   padding: 0.5rem 1rem 0.7rem;
   font-family: heading;
 }
