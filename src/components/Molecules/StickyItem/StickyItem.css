@@ -1,5 +1,10 @@
-.sticky {
-  position: sticky;
-  top: 0;
-  z-index: 1;
+/* import breakpoints */
+@value header as bp-header from "../../00_global/breakpoints.css";
+
+@media bp-header {
+  .sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
 }
