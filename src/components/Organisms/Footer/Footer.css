@@ -8,8 +8,6 @@
 .siteFooter {
   background: grayLighter;
   clear: both;
-  position: relative;
-  z-index: 2;
 }
 
 .sponsors {
