@@ -3,6 +3,8 @@
  * Exports all components available in this project.
  */
 
+import BlockList from './src/components/Organisms/BlockList/BlockList.component';
+import TextBlock from './src/components/Molecules/TextBlock/TextBlock.component';
 import TeaserItem from './src/components/Molecules/Teaser/TeaserItem.component';
 import TeaserList from './src/components/Organisms/Teaser/TeaserList.component';
 import Button from './src/components/Atoms/Button/Button.component';
@@ -12,6 +14,7 @@ import Accordion from './src/components/Molecules/Accordion/Accordion.component'
 import CtaMessage from './src/components/Molecules/CtaMessage/CtaMessage.component';
 import Dropdown from './src/components/Molecules/Dropdown/Dropdown.component';
 import List from './src/components/Molecules/List/List.component';
+import MenuList from './src/components/Molecules/MenuList/MenuList.component';
 import Search from './src/components/Molecules/Search/Search.component';
 import DropdownItem from './src/components/Atoms/DropdownItem/DropdownItem.component';
 import Icons from './src/components/Atoms/Svg/Icons.component';
@@ -56,9 +59,12 @@ export {
   Dropdown,
   Hero,
   List,
+  MenuList,
   Search,
   TeaserItem,
+  TextBlock,
   // Organisms.
+  BlockList,
   CardList,
   Aside,
   Section,

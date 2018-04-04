@@ -32,7 +32,7 @@ exports[`<CardItem /> Matches the Card Item Default snapshot 1`] = `
     className="image"
   >
     <a
-      className=""
+      className={null}
       href="/"
     >
       <img
@@ -60,7 +60,7 @@ exports[`<CardItem /> Matches the Card Item Large snapshot 1`] = `
     className="titleWrap titleWrapLg"
   >
     <h2
-      className="false "
+      className=" "
     >
       <a
         className="link "
@@ -118,7 +118,7 @@ exports[`<CardItem /> Matches the Card Item No Link  snapshot 1`] = `
       typeof="foaf:Image"
     />
   </figure>
-  <p
+  <div
     className="blurb"
   />
 </article>

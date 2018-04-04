@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value white, whiteDark, grayLighter, gray, grayLight, grayDark, grayDarker, orange, orangeDark, orangeDarker, blue, blueDark from colors;
+@value white, whiteDark, grayLighter, gray, grayLight, grayDark, grayDarker, orange, orangeDark, orangeDarker, blue, blueMed, blueDark from colors;
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
 @value copy from fonts;
@@ -71,12 +71,12 @@
 
 @define-mixin btnBlue {
   background-color: blue;
-  border: 1px solid blueDark;
+  border: 1px solid blueMed;
   color: white;
 }
 
 @define-mixin btnBlueHover {
-  background-color: blueDark;
+  background-color: blueMed;
   color: white;
 }
 
@@ -228,4 +228,17 @@ svg.inputIcon {
 .inputWithIcon:active {
   background-color: grayLighter;
   color: grayDark;
+}
+
+/* Buttons in children */
+@define-mixin btnSmall {
+  font: 0.875rem 'Raleway', sans-serif;
+  letter-spacing: 0;
+  padding: 0.5rem 0.7rem;
+  text-transform: none;
+}
+.btnWrap input[type='submit'] {
+  @mixin btn;
+  @mixin btnOrange;
+  @mixin btnSmall;
 }

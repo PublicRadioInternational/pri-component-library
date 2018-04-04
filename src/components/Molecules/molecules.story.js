@@ -18,6 +18,8 @@ import CardItem from './CardItem/CardItem.component';
 import CtaMessage from './CtaMessage/CtaMessage.component';
 import TeaserItem from './Teaser/TeaserItem.component';
 import Hero from './Hero/Hero.component';
+import MenuList from './MenuList/MenuList.component';
+import TextBlock from './TextBlock/TextBlock.component';
 
 /**
  * Add storybook definition for Molecules.
@@ -110,7 +112,7 @@ storiesOf('Molecules/CardItem', module)
       title="50 years on, India is celebrating the Beatles' infamous trip to the country"
       url="stories/2017-07-24/clearing-mines-and-explosives-mosul"
       blurb={Parser(
-        '<h2>Header within a freeform body</h2><h2><a href="#">Header within a freeform body and has a link</a></h2><p>Science and stories for a meaningful life. Hosted by award-winning professor Dacher Keltner, The Science of Happiness highlights the most provocative and practical findings to have emerged from the ground-breaking science of compassion, gratitude, mindfulness, and awe. A co-production with the Greater Good Science Center at UC Berkeley. <a href="#">This is a link</a></p>'
+        '<h2>Header within a freeform body</h2><h2><a href="#">Header within a freeform body and has a link</a></h2><blockquote><p>"Science and stories for a meaningful life. Hosted by award-winning professor Dacher Keltner, The Science of Happiness highlights the most provocative and practical findings to have emerged from the ground-breaking science of compassion, gratitude, mindfulness, and awe."</p></blockquote><p>Science and stories for a meaningful life. Hosted by award-winning professor Dacher Keltner, The Science of Happiness highlights the most provocative and practical findings to have emerged from the ground-breaking science of compassion, gratitude, mindfulness, and awe. A co-production with the Greater Good Science Center at UC Berkeley. <a href="#">This is a link</a></p>'
       )}
     />
   ));
@@ -200,5 +202,84 @@ storiesOf('Molecules/Teaser', module)
     <TeaserItem
       title="North Korea says it's willing to hold talks with the US and halt nuclear pursuit while negotiations last"
       url="stories/2018-03-06/north-korea-says-its-willing-hold-talks-us-and-halt-nuclear-pursuit-while"
+    />
+  ));
+/**
+ * Add storybook definition for Menu Lists.
+ */
+const baseUrl = 'https://www.pri.org';
+storiesOf('Molecules/MenuList', module)
+  .addDecorator(checkA11y)
+  .add('Quick Links', () => (
+    <MenuList
+      label="Quick Links"
+      menuListItems={[
+        {
+          name: "PRI's The World",
+          url: `${baseUrl}/programs/the-world`,
+          itemLinkClass: 'world'
+        },
+        {
+          name: 'Studio360',
+          url: `${baseUrl}/programs/studio-360`,
+          itemLinkClass: 'studio'
+        },
+        {
+          name: 'GlobalPost',
+          url: `${baseUrl}/programs/globalpost`,
+          itemLinkClass: 'globalPost'
+        },
+        {
+          name: "Across Women's Lives",
+          url: `${baseUrl}/verticals/across-womens-lives`,
+          itemLinkClass: 'acrossWomensLives'
+        },
+        {
+          name: 'Global Nation',
+          url: `${baseUrl}/verticals/global-nation`,
+          itemLinkClass: 'globalNation'
+        },
+        {
+          name: 'Global Security',
+          url: `${baseUrl}/verticals/global-security`,
+          itemLinkClass: 'globalSecurity'
+        },
+        {
+          name: 'Livable Planet',
+          url: `${baseUrl}/verticals/livable-planet`,
+          itemLinkClass: 'livablePlanet'
+        },
+        { name: 'View all Programs & Podcasts', url: `${baseUrl}/shows` }
+      ]}
+    />
+  ));
+
+/**
+ * Add storybook definition for Text Blocks.
+ */
+storiesOf('Molecules/TextBlock', module)
+  .addDecorator(checkA11y)
+  .add('About', () => (
+    <TextBlock
+      title="About PRI"
+      body="By giving voice to our dynamic world, we inspire connection, action and hope."
+      button="About Us"
+      color="Blue"
+      url={`${baseUrl}/about-pri`}
+      icon="info"
+    />
+  ));
+
+storiesOf('Molecules/TextBlock', module)
+  .addDecorator(checkA11y)
+  .add('Donate', () => (
+    <TextBlock
+      alt
+      title="We are Public Media"
+      body="Make a donation"
+      button="Donate"
+      color="Orange"
+      url={`${baseUrl}/donate/index.html?utm_source=navigation&utm_medium=website&utm_campaign=donations`}
+      icon="heart"
     />
   ));

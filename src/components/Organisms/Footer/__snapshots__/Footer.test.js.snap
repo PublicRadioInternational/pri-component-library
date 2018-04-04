@@ -89,7 +89,7 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
           className="listItem null"
         >
           <a
-            className="listLink null"
+            className="listLink "
             href="https://www.pri.org/about-pri"
           >
             About PRI
@@ -99,7 +99,7 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
           className="listItem null"
         >
           <a
-            className="listLink null"
+            className="listLink "
             href="https://www.pri.org/priorg-contact"
           >
             Contact Us
@@ -109,7 +109,7 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
           className="listItem null"
         >
           <a
-            className="listLink null"
+            className="listLink "
             href="https://www.pri.org/team"
           >
             Donate
@@ -119,7 +119,7 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
           className="listItem null"
         >
           <a
-            className="listLink null"
+            className="listLink "
             href="https://www.pri.org/donate/general?utm_source=footerNav&utm_medium=website&utm_campaign=donations"
           >
             Meet the PRI.org Team
@@ -129,7 +129,7 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
           className="listItem null"
         >
           <a
-            className="listLink null"
+            className="listLink "
             href="https://www.pri.org/privacy"
           >
             Privacy policy
@@ -139,7 +139,7 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
           className="listItem null"
         >
           <a
-            className="listLink null"
+            className="listLink "
             href="https://www.pri.org/terms"
           >
             Terms of use

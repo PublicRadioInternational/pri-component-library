@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BlockList /> Matches the Block List snapshot 1`] = `
+<div
+  className="blockList"
+>
+  <h2
+    className="title"
+  >
+    Three Ways to Support PRI
+  </h2>
+  <div
+    className="list"
+  />
+</div>
+`;
