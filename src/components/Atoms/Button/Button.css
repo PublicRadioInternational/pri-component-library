@@ -176,8 +176,13 @@ svg.inputIcon {
   padding: 0.5rem 0.7rem;
   text-transform: none;
 }
+
 .btnWrap input[type='submit'] {
   @mixin btn;
   @mixin btnOrange;
   @mixin btnSmall;
+}
+
+.btnWrap input[type='submit']:hover {
+  @mixin btnOrangeHover;
 }
