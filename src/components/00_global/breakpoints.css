@@ -4,6 +4,8 @@
 
 @value medium: (min-width: 768px);
 
+@value max-medium: (max-width: 768px);
+
 @value header: (min-width: 884px);
 
 @value maxWidth: (min-width: 1240px);

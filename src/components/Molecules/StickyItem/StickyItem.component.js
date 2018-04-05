@@ -3,7 +3,7 @@
  * Exports a Sticky component (sticks to window on scroll).
  */
 
-import Sticky from 'react-sticky-fill';
+import Sticky from 'react-sticky-el';
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './StickyItem.css';
@@ -12,7 +12,13 @@ import styles from './StickyItem.css';
  * Component that renders a Sticky Element.
  */
 const StickyItem = ({ children }) => (
-  <Sticky className={`sticky ${styles.sticky}`}>{children}</Sticky>
+  <Sticky
+    hideOnBoundaryHit={false}
+    boundaryElement="main"
+    className={styles.sticky}
+  >
+    {children}
+  </Sticky>
 );
 
 StickyItem.propTypes = {
