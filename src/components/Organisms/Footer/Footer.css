@@ -6,6 +6,7 @@
 @value copy from fonts;
 
 .siteFooter {
+  margin-top: 2rem;
   background: grayLighter;
   clear: both;
 }

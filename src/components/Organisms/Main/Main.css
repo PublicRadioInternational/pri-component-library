@@ -25,17 +25,27 @@
   max-width: 1200px;
 }
 
+.mainContainer:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 @media bp-maxWidth {
   .mainContainer {
     margin: 1rem auto 2rem;
   }
 }
 
-.mainList,
 .mainList2,
 .latestContent,
 .callouts {
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.mainList > * + *,
+.mainList2 > * + * {
+  margin-top: 1rem;
 }
 
 @media bp-medium {
@@ -46,10 +56,18 @@
     width: 64%;
   }
 
+  .mainList2 {
+    margin-top: 1rem;
+  }
+
   .latestContent,
   .callouts {
     float: right;
     width: 33%;
+  }
+
+  .latestContent {
+    margin-top: 0;
   }
 }
 
@@ -60,6 +78,10 @@
   .callouts {
     float: none;
     width: auto;
+  }
+
+  .callouts {
+    margin-top: 0;
   }
 
   .mainContainer {

@@ -287,6 +287,29 @@ const Home = ({ baseUrl }) => (
             hasAudio
           />
         </CardList>
+        <CardList
+          src="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
+          category="pris-the-world"
+          url="#"
+          categoryDescription="PRIs The World"
+        >
+          <CardItem
+            title="There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco"
+            url="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            imgSrc="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/180302copbridge.jpg?itok=52GppaOv"
+            imgAlt="Alt Text"
+            blurb="Ten years after Kosovo declared its independence from Serbia, Serbs and Albanians in Kosovo remain deeply divided — even over food."
+            large
+            hasAudio
+          />
+          <CardItem
+            title="50 years on, India is celebrating the Beatles' infamous trip to the country"
+            url="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            imgSrc="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
+            imgAlt="Alt Text"
+            blurb="When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. "
+          />
+        </CardList>
       </LayoutMainList2>
     </LayoutMain>
     <Footer />
