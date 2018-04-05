@@ -119,7 +119,7 @@ const CardItem = ({
         </figure>
       )}
       <BlurbContent freeform={freeform} className={largeClasses('blurb')}>
-        {blurb}
+        {blurb ? <div dangerouslySetInnerHTML={{ __html: blurb }} /> : null}
         {hasAudio && (
           <a className={styles.iconLink} href={url}>
             <Icon name="volume" className={styles.icon} isRoundIcon />

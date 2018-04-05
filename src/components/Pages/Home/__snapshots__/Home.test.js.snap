@@ -1547,7 +1547,13 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb blurbLg"
           >
-            Ten years after Kosovo declared its independence from Serbia, Serbs and Albanians in Kosovo remain deeply divided — even over food.
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Ten years after Kosovo declared its independence from Serbia, Serbs and Albanians in Kosovo remain deeply divided — even over food.",
+                }
+              }
+            />
             <a
               className="iconLink"
               href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
@@ -1614,7 +1620,13 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb"
           >
-            When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. 
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. ",
+                }
+              }
+            />
           </p>
         </article>
         <article
@@ -1662,7 +1674,13 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb"
           >
-            NAFTA has governed the rules of trade between the US, Mexico and Canada since 1994. Today, many progressives who dislike NAFTA say President Trump is giving them the best chance in a generation to rewrite the rules of trade. 
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "NAFTA has governed the rules of trade between the US, Mexico and Canada since 1994. Today, many progressives who dislike NAFTA say President Trump is giving them the best chance in a generation to rewrite the rules of trade. ",
+                }
+              }
+            />
             <a
               className="iconLink"
               href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
@@ -1729,7 +1747,13 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb"
           >
-            Charges against a jailed cartoonist from Equatorial Guinea have been dropped, so why is he still in jail?
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Charges against a jailed cartoonist from Equatorial Guinea have been dropped, so why is he still in jail?",
+                }
+              }
+            />
           </p>
         </article>
         <article
@@ -1767,7 +1791,13 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb"
           >
-            An Egyptian court has sentenced one of its country's top singers to six months in prison for a comment she made about the Nile River. Pop singer Sherine made a crack about getting ill from drinking from the river when she was asked by a fan to sing, 'Have You Ever Drunk From the Nile.'
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "An Egyptian court has sentenced one of its country's top singers to six months in prison for a comment she made about the Nile River. Pop singer Sherine made a crack about getting ill from drinking from the river when she was asked by a fan to sing, 'Have You Ever Drunk From the Nile.'",
+                }
+              }
+            />
             <a
               className="iconLink"
               href={null}
@@ -2365,7 +2395,13 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb blurbLg"
           >
-            Little more than a month ago, no one had heard of Macerata. Then the murder of Pamela Mastropietro thrust the small town in central Italy onto the national stage, and the whole course of a pivotal national election was altered.
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Little more than a month ago, no one had heard of Macerata. Then the murder of Pamela Mastropietro thrust the small town in central Italy onto the national stage, and the whole course of a pivotal national election was altered.",
+                }
+              }
+            />
           </p>
         </article>
         <article
@@ -2413,7 +2449,13 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb"
           >
-            No estamos todas is an Instagram project dedicated to visualizing the issue of femicide in Mexico with original illustrations.
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "No estamos todas is an Instagram project dedicated to visualizing the issue of femicide in Mexico with original illustrations.",
+                }
+              }
+            />
           </p>
         </article>
         <article
@@ -2461,7 +2503,13 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb"
           >
-            Ilia Calderón doesn't back down in an interview. And she's determined to allow people growing up like she did see their own experience in her stories.
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Ilia Calderón doesn't back down in an interview. And she's determined to allow people growing up like she did see their own experience in her stories.",
+                }
+              }
+            />
             <a
               className="iconLink"
               href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
