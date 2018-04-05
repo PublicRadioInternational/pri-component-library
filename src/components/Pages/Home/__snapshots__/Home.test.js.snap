@@ -1793,14 +1793,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       className="className && latestContent"
     >
       <div
-        className="sticky sticky"
-        style={
-          Object {
-            "position": "sticky",
-            "top": 0,
-            "zIndex": 1,
-          }
-        }
+        className="sticky"
       >
         <section
           className="className && section"
