@@ -94,6 +94,7 @@
     -ms-grid-row-span: 2;
     grid-column: 3 / span 1;
     grid-row: 1 / span 2;
+    margin-bottom: 0;
   }
 
   .callouts {
