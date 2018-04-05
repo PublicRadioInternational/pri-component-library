@@ -8,6 +8,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './StickyItem.css';
 
+global.window = {
+  addEventListener: Sticky,
+  removeEventListener: Sticky
+};
+
 /**
  * Component that renders a Sticky Element.
  */
