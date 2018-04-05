@@ -97,13 +97,15 @@
 
 .logoLink {
   align-items: center;
+  color: blue;
   display: flex;
   font-weight: bold;
+  min-height: 50px;
   text-decoration: none;
-  color: blue;
 }
 
 .logo {
+  display: block;
   margin-right: 10px;
   width: 50px;
 }

@@ -1497,7 +1497,9 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               className="logo"
               src="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
             />
-            PRIs The World
+            <span>
+              PRIs The World
+            </span>
           </a>
         </header>
         <article
@@ -2313,7 +2315,9 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               className="logo"
               src="https://media.pri.org/s3fs-public/styles/medium_square/public/logo_gp.png"
             />
-            GlobalPost
+            <span>
+              GlobalPost
+            </span>
           </a>
         </header>
         <article
