@@ -37,15 +37,10 @@
   }
 }
 
-.mainList2,
+.mainList,
 .latestContent,
 .callouts {
-  margin-top: 2rem;
-}
-
-.mainList > * + *,
-.mainList2 > * + * {
-  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 @media bp-medium {
@@ -56,18 +51,14 @@
     width: 64%;
   }
 
-  .mainList2 {
-    margin-top: 1rem;
+  .mainList {
+    margin-bottom: 1rem;
   }
 
   .latestContent,
   .callouts {
     float: right;
     width: 33%;
-  }
-
-  .latestContent {
-    margin-top: 0;
   }
 }
 
@@ -78,10 +69,6 @@
   .callouts {
     float: none;
     width: auto;
-  }
-
-  .callouts {
-    margin-top: 0;
   }
 
   .mainContainer {
