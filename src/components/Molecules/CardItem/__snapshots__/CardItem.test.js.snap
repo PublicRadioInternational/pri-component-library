@@ -46,7 +46,13 @@ exports[`<CardItem /> Matches the Card Item Default snapshot 1`] = `
   <p
     className="blurb"
   >
-    Test Teaser
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Test Teaser",
+        }
+      }
+    />
   </p>
 </article>
 `;

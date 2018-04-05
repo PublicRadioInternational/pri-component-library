@@ -4,7 +4,6 @@
  */
 
 import React from 'react';
-import Parser from 'html-react-parser';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions';
@@ -111,9 +110,9 @@ storiesOf('Molecules/CardItem', module)
       freeform
       title="50 years on, India is celebrating the Beatles' infamous trip to the country"
       url="stories/2017-07-24/clearing-mines-and-explosives-mosul"
-      blurb={Parser(
+      blurb={
         '<h2>Header within a freeform body</h2><h2><a href="#">Header within a freeform body and has a link</a></h2><blockquote><p>"Science and stories for a meaningful life. Hosted by award-winning professor Dacher Keltner, The Science of Happiness highlights the most provocative and practical findings to have emerged from the ground-breaking science of compassion, gratitude, mindfulness, and awe."</p></blockquote><p>Science and stories for a meaningful life. Hosted by award-winning professor Dacher Keltner, The Science of Happiness highlights the most provocative and practical findings to have emerged from the ground-breaking science of compassion, gratitude, mindfulness, and awe. A co-production with the Greater Good Science Center at UC Berkeley. <a href="#">This is a link</a></p>'
-      )}
+      }
     />
   ));
 
