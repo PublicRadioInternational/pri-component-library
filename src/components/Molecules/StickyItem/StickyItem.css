@@ -1,10 +1,9 @@
 /* import breakpoints */
-@value header as bp-header from "../../00_global/breakpoints.css";
+@value max-medium as bp-medium from "../../00_global/breakpoints.css";
 
-@media bp-header {
+/* Disable sticky on mobile */
+@media bp-medium {
   .sticky {
-    position: sticky;
-    top: 0;
-    z-index: 1;
+    position: relative !important;
   }
 }
