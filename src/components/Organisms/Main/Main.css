@@ -25,6 +25,12 @@
   max-width: 1200px;
 }
 
+.mainContainer:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 @media bp-maxWidth {
   .mainContainer {
     margin: 1rem auto 2rem;
@@ -32,7 +38,6 @@
 }
 
 .mainList,
-.mainList2,
 .latestContent,
 .callouts {
   margin-bottom: 2rem;
@@ -44,6 +49,10 @@
     float: left;
     padding-right: 3%;
     width: 64%;
+  }
+
+  .mainList {
+    margin-bottom: 1rem;
   }
 
   .latestContent,
@@ -85,6 +94,7 @@
     -ms-grid-row-span: 2;
     grid-column: 3 / span 1;
     grid-row: 1 / span 2;
+    margin-bottom: 0;
   }
 
   .callouts {
