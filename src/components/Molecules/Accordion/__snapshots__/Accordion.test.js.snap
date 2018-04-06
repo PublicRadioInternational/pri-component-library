@@ -18,7 +18,6 @@ exports[`<Accordion /> Matches the List snapshot 1`] = `
         date-parent="#accordion"
         date-toggle="accordionContent"
         href="#null"
-        id="newsPrograms"
         onClick={[Function]}
       >
         Test

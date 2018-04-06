@@ -37,7 +37,11 @@ export default class Header extends Component {
 
     return (
       <header className={styles.siteHeader}>
-        <button className={bgClasses} onClick={this.toggleOpen} />
+        <button
+          className={bgClasses}
+          onClick={this.toggleOpen}
+          aria-label="Close Overlay"
+        />
         <div
           className={`${styles.mainMenu} ${this.state.isMenuOpen &&
             styles.mainMenuOpen}`}
@@ -45,7 +49,11 @@ export default class Header extends Component {
           <MainMenu toggleOpen={this.toggleOpen} />
         </div>
         <div className={styles.branding}>
-          <button className={styles.menuBtn} onClick={this.toggleOpen}>
+          <button
+            className={styles.menuBtn}
+            onClick={this.toggleOpen}
+            aria-label="Open Menu"
+          >
             <Icon name="menu" className={styles.menuIcon} />
           </button>
           <a href="/" className={styles.logo}>

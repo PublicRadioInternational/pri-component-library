@@ -67,7 +67,6 @@ export default class Accordion extends Component {
               aria-expanded="true"
               aria-controls={listId}
               onClick={this.reveal}
-              id="newsPrograms"
             >
               {accordionTitle}
               <Icon

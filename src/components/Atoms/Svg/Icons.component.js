@@ -17,6 +17,7 @@ const Icon = props => {
     className,
     inline,
     height,
+    ariaLabelledby,
     ariaLabel,
     width,
     version,
@@ -96,7 +97,7 @@ const Icon = props => {
       version={version}
       viewBox={viewBox}
       aria-label={ariaLabel}
-      aria-labelledby={title}
+      aria-labelledby={ariaLabelledby}
       aria-hidden={props.ariaHidden || null}
       fill="currentcolor"
     >
@@ -125,6 +126,7 @@ Icon.propTypes = {
   title: PropTypes.string,
   className: PropTypes.string,
   inline: PropTypes.bool,
+  ariaLabelledby: PropTypes.string,
   ariaLabel: PropTypes.string,
   ariaHidden: PropTypes.bool,
   height: PropTypes.number,
@@ -138,6 +140,7 @@ Icon.defaultProps = {
   title: null,
   className: null,
   inline: false,
+  ariaLabelledby: null,
   ariaLabel: null,
   ariaHidden: false,
   height: 28,

@@ -5,6 +5,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
   className="siteHeader"
 >
   <button
+    aria-label="Close Overlay"
     className="bg"
     onClick={[Function]}
   />
@@ -167,7 +168,6 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                 date-parent="#accordion"
                 date-toggle="accordionContent"
                 href="#NewsMenu"
-                id="newsPrograms"
                 onClick={[Function]}
               >
                 News Programs
@@ -298,7 +298,6 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                 date-parent="#accordion"
                 date-toggle="accordionContent"
                 href="#MusicVarietyMenu"
-                id="newsPrograms"
                 onClick={[Function]}
               >
                 Music & Variety Programs
@@ -439,7 +438,6 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                 date-parent="#accordion"
                 date-toggle="accordionContent"
                 href="#PodcastsMenu"
-                id="newsPrograms"
                 onClick={[Function]}
               >
                 Podcasts
@@ -550,7 +548,6 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                 date-parent="#accordion"
                 date-toggle="accordionContent"
                 href="#ListenMenu"
-                id="newsPrograms"
                 onClick={[Function]}
               >
                 Listen
@@ -631,7 +628,6 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                 date-parent="#accordion"
                 date-toggle="accordionContent"
                 href="#FeaturesMenu"
-                id="newsPrograms"
                 onClick={[Function]}
               >
                 Features
@@ -762,7 +758,6 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                 date-parent="#accordion"
                 date-toggle="accordionContent"
                 href="#CategoriesMenu"
-                id="newsPrograms"
                 onClick={[Function]}
               >
                 Categories
@@ -933,7 +928,6 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                 date-parent="#accordion"
                 date-toggle="accordionContent"
                 href="#AboutMenu"
-                id="newsPrograms"
                 onClick={[Function]}
               >
                 About PRI
@@ -1044,7 +1038,6 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
                 date-parent="#accordion"
                 date-toggle="accordionContent"
                 href="#GivingMenu"
-                id="newsPrograms"
                 onClick={[Function]}
               >
                 Giving
@@ -1103,7 +1096,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             <svg
               aria-hidden={null}
               aria-label={null}
-              aria-labelledby="Facebook"
+              aria-labelledby={null}
               className="svg socialMenuIcon"
               fill="currentcolor"
               height={28}
@@ -1131,7 +1124,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             <svg
               aria-hidden={null}
               aria-label={null}
-              aria-labelledby="Twitter"
+              aria-labelledby={null}
               className="svg socialMenuIcon"
               fill="currentcolor"
               height={28}
@@ -1159,7 +1152,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             <svg
               aria-hidden={null}
               aria-label={null}
-              aria-labelledby="Subscribe to our Newsletters"
+              aria-labelledby={null}
               className="svg socialMenuIcon socialMenuIconFull"
               fill="currentcolor"
               height={28}
@@ -1187,7 +1180,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             <svg
               aria-hidden={null}
               aria-label={null}
-              aria-labelledby="RSS"
+              aria-labelledby={null}
               className="svg socialMenuIcon socialMenuIconRSS"
               fill="currentcolor"
               height={28}
@@ -1215,7 +1208,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             <svg
               aria-hidden={null}
               aria-label={null}
-              aria-labelledby="Login"
+              aria-labelledby={null}
               className="svg socialMenuIcon socialMenuIconFull socialMenuIconFullLg"
               fill="currentcolor"
               height={28}
@@ -1239,6 +1232,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
     className="branding"
   >
     <button
+      aria-label="Open Menu"
       className="menuBtn"
       onClick={[Function]}
     >
@@ -1325,7 +1319,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       <button
         aria-expanded={null}
         aria-haspopup={true}
-        aria-label="open menu"
+        aria-label="Open Dropdown"
         className="btnDropdownWhite btnHide btnMobileWhite"
         onClick={[Function]}
         type="button"
@@ -1363,7 +1357,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       <button
         aria-expanded={null}
         aria-haspopup={true}
-        aria-label="open menu"
+        aria-label="Open Dropdown"
         className="btnDropdownWhite btnHide btnMobileWhite"
         onClick={[Function]}
         type="button"
@@ -1401,7 +1395,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       <button
         aria-expanded={null}
         aria-haspopup={true}
-        aria-label="open menu"
+        aria-label="Open Dropdown"
         className="btnDropdownWhite btnHide btnMobileWhite"
         onClick={[Function]}
         type="button"
@@ -1439,7 +1433,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       <button
         aria-expanded={null}
         aria-haspopup={true}
-        aria-label="open menu"
+        aria-label="Open Dropdown"
         className="btnDropdownOrange btnHide btnMobileOrange"
         onClick={[Function]}
         type="button"

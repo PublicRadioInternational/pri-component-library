@@ -157,7 +157,6 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             date-parent="#accordion"
             date-toggle="accordionContent"
             href="#NewsMenu"
-            id="newsPrograms"
             onClick={[Function]}
           >
             News Programs
@@ -288,7 +287,6 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             date-parent="#accordion"
             date-toggle="accordionContent"
             href="#MusicVarietyMenu"
-            id="newsPrograms"
             onClick={[Function]}
           >
             Music & Variety Programs
@@ -429,7 +427,6 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             date-parent="#accordion"
             date-toggle="accordionContent"
             href="#PodcastsMenu"
-            id="newsPrograms"
             onClick={[Function]}
           >
             Podcasts
@@ -540,7 +537,6 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             date-parent="#accordion"
             date-toggle="accordionContent"
             href="#ListenMenu"
-            id="newsPrograms"
             onClick={[Function]}
           >
             Listen
@@ -621,7 +617,6 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             date-parent="#accordion"
             date-toggle="accordionContent"
             href="#FeaturesMenu"
-            id="newsPrograms"
             onClick={[Function]}
           >
             Features
@@ -752,7 +747,6 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             date-parent="#accordion"
             date-toggle="accordionContent"
             href="#CategoriesMenu"
-            id="newsPrograms"
             onClick={[Function]}
           >
             Categories
@@ -923,7 +917,6 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             date-parent="#accordion"
             date-toggle="accordionContent"
             href="#AboutMenu"
-            id="newsPrograms"
             onClick={[Function]}
           >
             About PRI
@@ -1034,7 +1027,6 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             date-parent="#accordion"
             date-toggle="accordionContent"
             href="#GivingMenu"
-            id="newsPrograms"
             onClick={[Function]}
           >
             Giving
@@ -1093,7 +1085,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         <svg
           aria-hidden={null}
           aria-label={null}
-          aria-labelledby="Facebook"
+          aria-labelledby={null}
           className="svg socialMenuIcon"
           fill="currentcolor"
           height={28}
@@ -1121,7 +1113,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         <svg
           aria-hidden={null}
           aria-label={null}
-          aria-labelledby="Twitter"
+          aria-labelledby={null}
           className="svg socialMenuIcon"
           fill="currentcolor"
           height={28}
@@ -1149,7 +1141,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         <svg
           aria-hidden={null}
           aria-label={null}
-          aria-labelledby="Subscribe to our Newsletters"
+          aria-labelledby={null}
           className="svg socialMenuIcon socialMenuIconFull"
           fill="currentcolor"
           height={28}
@@ -1177,7 +1169,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         <svg
           aria-hidden={null}
           aria-label={null}
-          aria-labelledby="RSS"
+          aria-labelledby={null}
           className="svg socialMenuIcon socialMenuIconRSS"
           fill="currentcolor"
           height={28}
@@ -1205,7 +1197,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         <svg
           aria-hidden={null}
           aria-label={null}
-          aria-labelledby="Login"
+          aria-labelledby={null}
           className="svg socialMenuIcon socialMenuIconFull socialMenuIconFullLg"
           fill="currentcolor"
           height={28}
