@@ -7,7 +7,18 @@
     "git@github.com:PublicRadioInternational/pri-component-library.git",
   "author": "PRI",
   "license": "UNLICENSED",
+  "publishConfig": {
+    "access": "public"
+  },
   "contributors": [
+    {
+      "name": "Brandon Hundt",
+      "email": "bhundt@pri.org"
+    },
+    {
+      "name": "Rick Peterman",
+      "email": "rpeterman@pri.org"
+    },
     {
       "name": "Patrick Coffey",
       "email": "patrickcoffey48@gmail.com"
@@ -81,9 +92,6 @@
     "prettier": "^1.11.1",
     "react-test-renderer": "^16.2.0",
     "semantic-release": "^15.0.0"
-  },
-  "publishConfig": {
-    "access": "restricted"
   },
   "dependencies": {
     "babel-plugin-macros": "^2.2.0",
