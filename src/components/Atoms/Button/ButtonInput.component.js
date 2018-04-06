@@ -5,8 +5,11 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames/bind';
 import styles from './Button.css';
 import Icon from '../Svg/Icons.component';
+
+const cx = classNames.bind(styles);
 
 /**
  * Component that renders an input button with a click handler.
@@ -14,19 +17,21 @@ import Icon from '../Svg/Icons.component';
 const ButtonInput = props => {
   const { onClick, className, value, color, icon, small } = props;
   // Generate a class name based on the color.
-  const buttonClass = `btn${color}`;
-  const buttonMobileClass = `btnMobile${color}`;
+  const buttonClass = cx({
+    inputBtn: true,
+    [`btn${color}`]: !small,
+    [className]: className && className,
+    [`btnMobile${color}`]: small,
+    inputWithIcon: icon
+  });
 
   return (
     <div className={styles.inputWrap}>
       {icon ? (
-        <Icon name={icon} inline ariaHidden className="inputIcon" />
+        <Icon name={icon} inline ariaHidden className={styles.inputIcon} />
       ) : null}
       <input
-        className={`${
-          small ? styles[buttonMobileClass] : styles[buttonClass]
-        } ${className && className} ${styles.inputBtn} ${icon &&
-          styles.inputWithIcon}`}
+        className={buttonClass}
         type="submit"
         onClick={onClick}
         value={value}

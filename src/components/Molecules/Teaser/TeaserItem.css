@@ -1,0 +1,67 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value grayLighter, gray, orange, blue, white, whiteDark from colors;
+
+/* import breakpoints */
+@value medium as bp-med from "../../00_global/breakpoints.css";
+
+.teaserItem {
+  padding: 0.875rem;
+  border-bottom: 1px solid grayLighter;
+}
+
+.teaserItem:first-of-type {
+  border-top: 1px solid grayLighter;
+}
+
+@media bp-med {
+  .teaserItem .program {
+    display: block;
+  }
+
+  .teaserItem .title {
+    font-weight: bold;
+  }
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  color: gray;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: orange;
+}
+
+.program {
+  display: none;
+  margin: 0;
+}
+
+.program .link {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: blue;
+}
+
+.program .link:hover {
+  color: orange;
+}
+
+.link .icon {
+  background-color: orange;
+  border-radius: 18px;
+  height: 20px;
+  fill: white !important;
+  margin-right: 0.25rem;
+  vertical-align: top;
+  width: 20px;
+}

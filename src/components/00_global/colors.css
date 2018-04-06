@@ -2,11 +2,39 @@
 @value whiteDark: #f7f7f7;
 @value grayLighter: #eee;
 @value grayLight: #8c8c94;
-@value gray: #33333c;
+@value grayDarker: #444;
 @value grayDark: #555;
+@value gray: #33333c;
 @value black: #000;
 
 @value blue: #4188bc;
-
+@value blueLight: #e8f1f7;
+@value blueMed: #3978a5;
+@value blueDark: #0062cc;
+@value green: #9caf16;
+@value greenLight: #98c93e;
 @value orange: #d3401e;
 @value orangeDark: #b8381a;
+@value orangeDarker: #832813;
+@value yellow: #ffde16;
+
+@value world: #00a0de;
+@value americaAbroad: #235e7c;
+@value bostonCalling: world;
+@value globalPost: #ce2427;
+@value liveWire: #cd212c;
+@value livingEarth: #310133;
+@value otherhood: #70200a;
+@value playdate: #fe276b;
+@value scienceHappiness: yellow;
+@value sciFri: #f0502d;
+@value studio: #ed1b24;
+@value takeaway: #eb022d;
+@value thingsBoom: #da2835;
+@value undiscovered: #0096d4;
+@value worldWords: world;
+@value acrossWomensLives: greenLight;
+
+@value globalNation: blue;
+@value globalSecurity: yellow;
+@value livablePlanet: green;

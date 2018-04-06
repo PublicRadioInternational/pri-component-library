@@ -1,0 +1,15 @@
+/* import fonts... */
+@value fonts: "../../00_global/fonts.css";
+@value heading from fonts;
+
+@define-mixin inputText {
+  font: 1rem heading;
+  margin-bottom: 0.5rem;
+  max-width: 88%;
+  padding: 0.4rem 0.5rem;
+  position: relative;
+}
+
+.inputWrap input[type='text'] {
+  @mixin inputText;
+}

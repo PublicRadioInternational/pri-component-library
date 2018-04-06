@@ -1,0 +1,145 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value gray, orange, grayLighter from colors;
+
+/* import breakpoints */
+@value medium as bp-medium from "../../00_global/breakpoints.css";
+
+@define-mixin prompt {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background-color: gray;
+  color: grayLighter;
+  text-align: center;
+}
+
+@define-mixin loadUnderBtn {
+  padding: 0 0.27rem;
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+  white-space: nowrap;
+}
+
+.pushDown {
+  @mixin prompt;
+
+  display: none;
+}
+
+.loadUnder {
+  @mixin prompt;
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  padding: 12px 42px;
+  border-top: 2px solid orange;
+}
+
+.close {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 10px;
+  background: none;
+  border: none;
+
+  color: currentColor;
+
+  cursor: pointer;
+}
+
+.close:hover {
+  color: orange;
+}
+
+.logo {
+  margin-bottom: 1rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+.actions * + * {
+  margin-left: 1rem;
+}
+
+.loadUnder .content > * {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.loadUnder .content > * + * {
+  margin-left: 0.5rem;
+}
+
+.loadUnder .title {
+  font-size: 1rem;
+}
+
+.loadUnder .close {
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px;
+}
+
+.loadUnder .logo,
+.loadUnder .close {
+  display: none;
+}
+
+.loadUnder .logo + * {
+  margin-left: 0;
+}
+
+.loadUnder .actions {
+  display: block;
+  margin: 10px auto;
+}
+
+.loadUnder .actions > * {
+  margin: 0.5rem 0.5rem;
+}
+
+.loadUnder .actionBtn,
+.loadUnder .dismissBtn {
+  @mixin loadUnderBtn;
+}
+
+@media bp-medium {
+  .pushDown {
+    display: block;
+    padding: 35px 55px;
+  }
+
+  .loadUnder .logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5em;
+  }
+
+  .loadUnder .actions {
+    display: inline-block;
+    margin: 0 0 0 0.5rem;
+  }
+
+  .loadUnder .dismissBtn {
+    display: none;
+  }
+
+  .loadUnder .close {
+    display: block;
+  }
+}

@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value grayLight, orange from colors;
+@value grayLight, orange, world, studio, globalPost, acrossWomensLives, globalNation, globalSecurity, livablePlanet from colors;
 
 .list {
   margin: 6px 0;
@@ -33,4 +33,61 @@
 
 .listLink:hover {
   color: orange;
+}
+
+a.world {
+  border-left-color: world;
+}
+
+a.world:hover {
+  background: world;
+}
+
+a.studio {
+  border-left-color: studio;
+}
+
+a.studio:hover {
+  background: studio;
+}
+
+a.globalPost {
+  border-left-color: globalPost;
+}
+
+a.globalPost:hover {
+  background: globalPost;
+}
+
+a.acrossWomensLives {
+  border-left-color: acrossWomensLives;
+}
+
+a.acrossWomensLives:hover {
+  background: acrossWomensLives;
+}
+
+a.globalNation {
+  border-left-color: globalNation;
+}
+
+a.globalNation:hover {
+  background: globalNation;
+}
+
+a.globalSecurity {
+  border-left-color: globalSecurity;
+}
+
+a.globalSecurity:hover {
+  background: globalSecurity;
+  color: black;
+}
+
+a.livablePlanet {
+  border-left-color: livablePlanet;
+}
+
+a.livablePlanet:hover {
+  background: livablePlanet;
 }

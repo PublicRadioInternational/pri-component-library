@@ -47,10 +47,10 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
       target="_blank"
     >
       <img
-        alt="Bill &amp; Melinda Gates Foundation"
+        alt="Bill & Melinda Gates Foundation"
         height="52"
         src="test-file-stub"
-        title="Bill &amp; Melinda Gates Foundation"
+        title="Bill & Melinda Gates Foundation"
         typeof="foaf:Image"
         width="149"
       />
@@ -77,70 +77,76 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
   <section
     className="footerBtm"
   >
-    <ul
-      className="list"
+    <div
+      aria-labelledby={null}
+      className=""
+      role={null}
     >
-      <li
-        className="listItem"
+      <ul
+        className="list null"
       >
-        <a
-          className="listLink"
-          href="https://www.pri.org/about-pri"
+        <li
+          className="listItem null"
         >
-          About PRI
-        </a>
-      </li>
-      <li
-        className="listItem"
-      >
-        <a
-          className="listLink"
-          href="https://www.pri.org/priorg-contact"
+          <a
+            className="listLink "
+            href="https://www.pri.org/about-pri"
+          >
+            About PRI
+          </a>
+        </li>
+        <li
+          className="listItem null"
         >
-          Contact Us
-        </a>
-      </li>
-      <li
-        className="listItem"
-      >
-        <a
-          className="listLink"
-          href="https://www.pri.org/team"
+          <a
+            className="listLink "
+            href="https://www.pri.org/priorg-contact"
+          >
+            Contact Us
+          </a>
+        </li>
+        <li
+          className="listItem null"
         >
-          Donate
-        </a>
-      </li>
-      <li
-        className="listItem"
-      >
-        <a
-          className="listLink"
-          href="https://www.pri.org/donate/general?utm_source=footerNav&utm_medium=website&utm_campaign=donations"
+          <a
+            className="listLink "
+            href="https://www.pri.org/team"
+          >
+            Donate
+          </a>
+        </li>
+        <li
+          className="listItem null"
         >
-          Meet the PRI.org Team
-        </a>
-      </li>
-      <li
-        className="listItem"
-      >
-        <a
-          className="listLink"
-          href="https://www.pri.org/privacy"
+          <a
+            className="listLink "
+            href="https://www.pri.org/donate/general?utm_source=footerNav&utm_medium=website&utm_campaign=donations"
+          >
+            Meet the PRI.org Team
+          </a>
+        </li>
+        <li
+          className="listItem null"
         >
-          Privacy policy
-        </a>
-      </li>
-      <li
-        className="listItem"
-      >
-        <a
-          className="listLink"
-          href="https://www.pri.org/terms"
+          <a
+            className="listLink "
+            href="https://www.pri.org/privacy"
+          >
+            Privacy policy
+          </a>
+        </li>
+        <li
+          className="listItem null"
         >
-          Terms of use
-        </a>
-      </li>
-    </ul>
+          <a
+            className="listLink "
+            href="https://www.pri.org/terms"
+          >
+            Terms of use
+          </a>
+        </li>
+      </ul>
+    </div>
     <p>
       © 2018 Public Radio International
     </p>

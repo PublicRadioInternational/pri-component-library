@@ -23,6 +23,7 @@ export default class Dropdown extends Component {
     color: PropTypes.oneOf(['Orange', 'White']),
     icon: PropTypes.string,
     className: PropTypes.string,
+    iconClass: PropTypes.string,
     small: PropTypes.bool
   };
 
@@ -33,6 +34,7 @@ export default class Dropdown extends Component {
     onClick: () => {},
     icon: null,
     className: null,
+    iconClass: null,
     small: false
   };
 
@@ -45,6 +47,7 @@ export default class Dropdown extends Component {
       url,
       icon,
       className,
+      iconClass,
       small
     } = this.props;
 
@@ -59,7 +62,9 @@ export default class Dropdown extends Component {
               onClick={onClick}
               small={small}
             >
-              {icon ? <Icon name={icon} inline ariaHidden /> : null}
+              {icon ? (
+                <Icon name={icon} inline className={iconClass} ariaHidden />
+              ) : null}
               <span
                 className={`${styles.textLabel} ${small &&
                   styles.textLabelMobile}`}

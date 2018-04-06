@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Accordion /> Matches the List snapshot 1`] = `
+<div
+  className="accordionItem accordionItemBlue"
+>
+  <div
+    className="accordionTop"
+    role="tab"
+  >
+    <h5
+      className="accordionTopHeading"
+    >
+      <a
+        aria-controls="collapseNews"
+        aria-expanded="true"
+        className="accordionTopLink accordionTopLinkBlue"
+        date-parent="#accordion"
+        date-toggle="accordionContent"
+        href="#collapseNews"
+        id="newsPrograms"
+        onClick={[Function]}
+      >
+        Test
+        <svg
+          aria-hidden={true}
+          aria-labelledby={null}
+          className="svg iconDown"
+          fill="currentcolor"
+          height={28}
+          version={1.1}
+          viewBox="-2 -2 28 28"
+          width={28}
+        >
+          <path
+            d="M14.414 5.586c-0.78-0.781-2.048-0.781-2.828 0l-6.415 6.414 6.415 6.414c0.39 0.391 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828l-3.585-3.586 3.585-3.586c0.781-0.781 0.781-2.047 0-2.828z"
+          />
+        </svg>
+      </a>
+    </h5>
+  </div>
+  <div
+    aria-labelledby="newsPrograms"
+    className="accordionContent"
+    role="tabpanel"
+  >
+    <ul
+      className="list accordionContentMenu"
+    >
+      <li
+        className="listItem accordionContentMenuItem"
+      >
+        <a
+          className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
+          href="http://google.com"
+        >
+          Google
+        </a>
+      </li>
+      <li
+        className="listItem accordionContentMenuItem"
+      >
+        <a
+          className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
+          href="http://yahoo.com"
+        >
+          Yahoo
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

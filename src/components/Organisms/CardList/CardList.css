@@ -1,0 +1,116 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value grayLighter, blue, world, americaAbroad, globalPost, liveWire, livingEarth, otherhood, playdate, scienceHappiness, sciFri, studio, takeaway, thingsBoom, undiscovered, acrossWomensLives, globalNation, globalSecurity, livablePlanet from colors;
+
+/* import fonts... */
+@value fonts: "../../00_global/fonts.css";
+@value heading from fonts;
+
+.list {
+  background: white;
+  border-top: 3px solid #ddd;
+  border-radius: 0.25rem;
+  word-wrap: break-word;
+  margin-bottom: 1rem;
+}
+
+.list:last-child {
+  margin-bottom: 0;
+}
+
+.america-abroad {
+  border-top-color: americaAbroad;
+}
+
+.boston-calling {
+  border-top-color: bostonCalling;
+}
+
+.globalpost {
+  border-top-color: globalPost;
+}
+
+.live-wire {
+  border-top-color: liveWire;
+}
+
+.living-on-earth {
+  border-top-color: livingEarth;
+}
+
+.otherhood {
+  border-top-color: otherhood;
+}
+
+.playdate {
+  border-top-color: playdate;
+}
+
+.pris-the-world {
+  border-top-color: world;
+}
+
+.science-of-happiness {
+  border-top-color: scienceHappiness;
+}
+
+.science-friday {
+  border-top-color: sciFri;
+}
+
+.studio-360 {
+  border-top-color: studio;
+}
+
+.the-takeaway {
+  border-top-color: takeaway;
+}
+
+.the-world-in-words {
+  border-top-color: worldWords;
+}
+
+.things-that-go-boom {
+  border-top-color: thingsBoom;
+}
+
+.undiscovered {
+  border-top-color: undiscovered;
+}
+
+.across-womens-lives {
+  border-top-color: acrossWomensLives;
+}
+
+.global-nation {
+  border-top-color: globalNation;
+}
+
+.global-security {
+  border-top-color: globalSecurity;
+}
+
+.livable-planet {
+  border-top-color: livablePlanet;
+}
+
+.header {
+  border-bottom: 1px solid grayLighter;
+  padding: 0.5rem 1rem 0.7rem;
+  font-family: heading;
+}
+
+.logoLink {
+  align-items: center;
+  color: blue;
+  display: flex;
+  font-weight: bold;
+  min-height: 50px;
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  margin-right: 10px;
+  width: 50px;
+}

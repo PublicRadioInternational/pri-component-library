@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { checkA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions';
 
 import Button from './Button/Button.component';
@@ -15,6 +16,7 @@ import ButtonInput from './Button/ButtonInput.component';
  * Add storybook definition for buttons.
  */
 storiesOf('Atoms/Buttons', module)
+  .addDecorator(checkA11y)
   .add('Default', () => (
     <ButtonLink onClick={action('button-clicked')}>Listen</ButtonLink>
   ))

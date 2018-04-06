@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value white, whiteDark, grayLighter, gray, grayLight, grayDark, orange, orangeDark from colors;
+@value white, whiteDark, grayLighter, gray, grayLight, grayDark, grayDarker, orange, orangeDark, orangeDarker, blue, blueMed, blueDark from colors;
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
 @value copy from fonts;
@@ -17,9 +17,9 @@
   display: inline-block;
   font: 700 1rem copy;
   letter-spacing: 0.05rem;
-  line-height: 1.5;
+  line-height: 2.25;
   margin: 0;
-  padding: 0.375rem 0.85rem;
+  padding: 0 0.85rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -39,7 +39,9 @@
 /* Inherits button always */
 .btn,
 .btnWhite,
-.btnOrange {
+.btnOrange,
+.btnDark,
+.btnBlue {
   @mixin btn;
 }
 
@@ -58,12 +60,24 @@
 /* Colors */
 @define-mixin btnOrange {
   background-color: orange;
-  border: none;
+  border-color: transparent;
   color: white;
 }
 
 @define-mixin btnOrangeHover {
   background-color: orangeDark;
+  color: white;
+}
+
+@define-mixin btnBlue {
+  background-color: blue;
+  border: 1px solid blueMed;
+  color: white;
+}
+
+@define-mixin btnBlueHover {
+  background-color: blueMed;
+  color: white;
 }
 
 .btnOrange {
@@ -76,18 +90,73 @@
   @mixin btnOrangeHover;
 }
 
+/* Colors */
+@define-mixin btnDark {
+  background-color: grayDarker;
+  border-color: transparent;
+  color: white;
+}
+
+@define-mixin btnDarkHover {
+  background-color: orangeDarker;
+  color: white;
+}
+
+.btnDark {
+  @mixin btnDark;
+}
+
+.btnDark:hover,
+.btnDark:active,
+.btnDark[aria-expanded='true'] {
+  @mixin btnDarkHover;
+}
+
+/* Colors */
+@define-mixin btnBlue {
+  background-color: blue;
+  border-color: transparent;
+  color: white;
+}
+
+@define-mixin btnBlueHover {
+  background-color: orange;
+  color: white;
+}
+
+.btnBlue {
+  @mixin btnBlue;
+}
+
+.btnBlue:hover,
+.btnBlue:active,
+.btnBlue[aria-expanded='true'] {
+  @mixin btnBlueHover;
+}
+
 /* Mobile Icon versions */
-.btnMobileWhite {
+.btnMobileWhite,
+.btnMobileDark {
   color: grayLight;
+}
+
+.btnMobileWhite:hover {
+  color: grayDark;
 }
 
 .btnMobileOrange {
   color: orange;
 }
 
+.btnMobileBlue {
+  color: blue;
+}
+
 @media bp-header {
   .btnMobileWhite,
-  .btnMobileOrange {
+  .btnMobileOrange,
+  .btnMobileDark,
+  .btnMobileBlue {
     @mixin btn;
   }
 
@@ -104,16 +173,48 @@
     @mixin btnOrange;
   }
 
+  .btnMobileBlue {
+    @mixin btnBlue;
+  }
+
   .btnMobileOrange:hover,
   .btnMobileOrange:active,
   .btnMobileOrange[aria-expanded='true'] {
     @mixin btnOrangeHover;
+  }
+
+  .btnMobileDark {
+    @mixin btnDark;
+  }
+
+  .btnMobileDark:hover,
+  .btnMobileDark:active,
+  .btnMobileDark[aria-expanded='true'] {
+    @mixin btnDarkHover;
+  }
+
+  .btnMobileBlue {
+    @mixin btnBlue;
+  }
+
+  .btnMobileBlue:hover,
+  .btnMobileBlue:active,
+  .btnMobileBlue[aria-expanded='true'] {
+    @mixin btnBlueHover;
   }
 }
 
 /* Input Specific */
 .inputWrap {
   position: relative;
+}
+
+svg.inputIcon {
+  cursor: pointer;
+  left: 10px;
+  margin-top: -9px;
+  position: absolute;
+  top: 50%;
 }
 
 .inputBtn {
@@ -127,4 +228,22 @@
 .inputWithIcon:active {
   background-color: grayLighter;
   color: grayDark;
+}
+
+/* Buttons in children */
+@define-mixin btnSmall {
+  font: 0.875rem 'Raleway', sans-serif;
+  letter-spacing: 0;
+  padding: 0.5rem 0.7rem;
+  text-transform: none;
+}
+
+.btnWrap input[type='submit'] {
+  @mixin btn;
+  @mixin btnOrange;
+  @mixin btnSmall;
+}
+
+.btnWrap input[type='submit']:hover {
+  @mixin btnOrangeHover;
 }
