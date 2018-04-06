@@ -33,7 +33,6 @@ const PriLogo = props => {
       width={width}
       version={version}
       viewBox={viewBox}
-      aria-labelledby={title}
       fill="currentcolor"
       aria-hidden={ariaHidden || null}
     >

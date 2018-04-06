@@ -26,7 +26,12 @@ const Hero = ({
     <div className={styles.text}>
       {hasAudio && (
         <a className={styles.iconLink} href={url}>
-          <Icon name="volume" className={styles.icon} isRoundIcon />
+          <Icon
+            name="volume"
+            className={styles.icon}
+            isRoundIcon
+            ariaLabel="Audio"
+          />
         </a>
       )}
       <h2>

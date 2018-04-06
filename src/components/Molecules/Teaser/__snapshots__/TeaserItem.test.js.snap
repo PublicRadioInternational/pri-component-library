@@ -17,6 +17,7 @@ exports[`<TeaserItem /> Matches the Teaser Item Default snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
+          aria-label={null}
           aria-labelledby={null}
           className="svg icon"
           fill="currentcolor"
@@ -93,6 +94,7 @@ exports[`<TeaserItem /> Matches the Teaser Item without program snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
+          aria-label={null}
           aria-labelledby={null}
           className="svg icon"
           fill="currentcolor"

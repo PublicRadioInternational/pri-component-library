@@ -24,6 +24,7 @@ exports[`<TextBlock /> Matches the Text Block snapshot 1`] = `
   >
     <svg
       aria-hidden={null}
+      aria-label={null}
       aria-labelledby={null}
       className="svg btnIcon inlineSvg"
       fill="currentcolor"

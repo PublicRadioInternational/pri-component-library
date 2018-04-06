@@ -13,6 +13,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
     >
       <svg
         aria-hidden={true}
+        aria-label={null}
         aria-labelledby={null}
         className="svg inlineLink inlineSvg"
         fill="currentcolor"
@@ -35,7 +36,6 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
-          aria-labelledby="PRI"
           className="maxWidth"
           fill="currentcolor"
           height={32}
@@ -73,6 +73,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         >
           <svg
             aria-hidden={true}
+            aria-label={null}
             aria-labelledby={null}
             className="svg inlineSvg"
             fill="currentcolor"
@@ -94,6 +95,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         >
           <svg
             aria-hidden={true}
+            aria-label={null}
             aria-labelledby={null}
             className="svg inlineSvg"
             fill="currentcolor"
@@ -115,6 +117,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         >
           <svg
             aria-hidden={true}
+            aria-label={null}
             aria-labelledby={null}
             className="svg inlineSvg"
             fill="currentcolor"
@@ -160,6 +163,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             News Programs
             <svg
               aria-hidden={true}
+              aria-label={null}
               aria-labelledby={null}
               className="svg iconDown"
               fill="currentcolor"
@@ -289,6 +293,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             Music & Variety Programs
             <svg
               aria-hidden={true}
+              aria-label={null}
               aria-labelledby={null}
               className="svg iconDown"
               fill="currentcolor"
@@ -428,6 +433,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             Podcasts
             <svg
               aria-hidden={true}
+              aria-label={null}
               aria-labelledby={null}
               className="svg iconDown"
               fill="currentcolor"
@@ -537,6 +543,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             Listen
             <svg
               aria-hidden={true}
+              aria-label={null}
               aria-labelledby={null}
               className="svg iconDown"
               fill="currentcolor"
@@ -616,6 +623,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             Features
             <svg
               aria-hidden={true}
+              aria-label={null}
               aria-labelledby={null}
               className="svg iconDown"
               fill="currentcolor"
@@ -745,6 +753,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             Categories
             <svg
               aria-hidden={true}
+              aria-label={null}
               aria-labelledby={null}
               className="svg iconDown"
               fill="currentcolor"
@@ -914,6 +923,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             About PRI
             <svg
               aria-hidden={true}
+              aria-label={null}
               aria-labelledby={null}
               className="svg iconDown"
               fill="currentcolor"
@@ -1023,6 +1033,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             Giving
             <svg
               aria-hidden={true}
+              aria-label={null}
               aria-labelledby={null}
               className="svg iconDown"
               fill="currentcolor"
@@ -1073,6 +1084,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
+          aria-label={null}
           aria-labelledby="Facebook"
           className="svg socialMenuIcon"
           fill="currentcolor"
@@ -1100,6 +1112,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
+          aria-label={null}
           aria-labelledby="Twitter"
           className="svg socialMenuIcon"
           fill="currentcolor"
@@ -1127,6 +1140,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
+          aria-label={null}
           aria-labelledby="Subscribe to our Newsletters"
           className="svg socialMenuIcon socialMenuIconFull"
           fill="currentcolor"
@@ -1154,6 +1168,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
+          aria-label={null}
           aria-labelledby="RSS"
           className="svg socialMenuIcon socialMenuIconRSS"
           fill="currentcolor"
@@ -1181,6 +1196,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
+          aria-label={null}
           aria-labelledby="Login"
           className="svg socialMenuIcon socialMenuIconFull socialMenuIconFullLg"
           fill="currentcolor"

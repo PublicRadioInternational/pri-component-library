@@ -24,6 +24,7 @@ exports[`<Accordion /> Matches the List snapshot 1`] = `
         Test
         <svg
           aria-hidden={true}
+          aria-label={null}
           aria-labelledby={null}
           className="svg iconDown"
           fill="currentcolor"

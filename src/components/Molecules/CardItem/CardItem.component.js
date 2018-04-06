@@ -122,7 +122,12 @@ const CardItem = ({
         {blurb}
         {hasAudio && (
           <a className={styles.iconLink} href={url}>
-            <Icon name="volume" className={styles.icon} isRoundIcon />
+            <Icon
+              name="volume"
+              className={styles.icon}
+              isRoundIcon
+              ariaLabel="Audio"
+            />
           </a>
         )}
       </BlurbContent>

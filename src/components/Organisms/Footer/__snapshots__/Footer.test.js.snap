@@ -12,7 +12,6 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
     >
       <svg
         aria-hidden={null}
-        aria-labelledby="PRI"
         className="disableHover"
         fill="currentcolor"
         height={32}

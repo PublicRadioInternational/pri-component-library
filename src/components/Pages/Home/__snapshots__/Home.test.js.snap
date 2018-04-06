@@ -24,6 +24,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           >
             <svg
               aria-hidden={true}
+              aria-label={null}
               aria-labelledby={null}
               className="svg inlineLink inlineSvg"
               fill="currentcolor"
@@ -46,7 +47,6 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             >
               <svg
                 aria-hidden={null}
-                aria-labelledby="PRI"
                 className="maxWidth"
                 fill="currentcolor"
                 height={32}
@@ -84,6 +84,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               >
                 <svg
                   aria-hidden={true}
+                  aria-label={null}
                   aria-labelledby={null}
                   className="svg inlineSvg"
                   fill="currentcolor"
@@ -105,6 +106,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               >
                 <svg
                   aria-hidden={true}
+                  aria-label={null}
                   aria-labelledby={null}
                   className="svg inlineSvg"
                   fill="currentcolor"
@@ -126,6 +128,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               >
                 <svg
                   aria-hidden={true}
+                  aria-label={null}
                   aria-labelledby={null}
                   className="svg inlineSvg"
                   fill="currentcolor"
@@ -171,6 +174,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   News Programs
                   <svg
                     aria-hidden={true}
+                    aria-label={null}
                     aria-labelledby={null}
                     className="svg iconDown"
                     fill="currentcolor"
@@ -300,6 +304,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   Music & Variety Programs
                   <svg
                     aria-hidden={true}
+                    aria-label={null}
                     aria-labelledby={null}
                     className="svg iconDown"
                     fill="currentcolor"
@@ -439,6 +444,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   Podcasts
                   <svg
                     aria-hidden={true}
+                    aria-label={null}
                     aria-labelledby={null}
                     className="svg iconDown"
                     fill="currentcolor"
@@ -548,6 +554,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   Listen
                   <svg
                     aria-hidden={true}
+                    aria-label={null}
                     aria-labelledby={null}
                     className="svg iconDown"
                     fill="currentcolor"
@@ -627,6 +634,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   Features
                   <svg
                     aria-hidden={true}
+                    aria-label={null}
                     aria-labelledby={null}
                     className="svg iconDown"
                     fill="currentcolor"
@@ -756,6 +764,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   Categories
                   <svg
                     aria-hidden={true}
+                    aria-label={null}
                     aria-labelledby={null}
                     className="svg iconDown"
                     fill="currentcolor"
@@ -925,6 +934,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   About PRI
                   <svg
                     aria-hidden={true}
+                    aria-label={null}
                     aria-labelledby={null}
                     className="svg iconDown"
                     fill="currentcolor"
@@ -1034,6 +1044,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   Giving
                   <svg
                     aria-hidden={true}
+                    aria-label={null}
                     aria-labelledby={null}
                     className="svg iconDown"
                     fill="currentcolor"
@@ -1084,6 +1095,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             >
               <svg
                 aria-hidden={null}
+                aria-label={null}
                 aria-labelledby="Facebook"
                 className="svg socialMenuIcon"
                 fill="currentcolor"
@@ -1111,6 +1123,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             >
               <svg
                 aria-hidden={null}
+                aria-label={null}
                 aria-labelledby="Twitter"
                 className="svg socialMenuIcon"
                 fill="currentcolor"
@@ -1138,6 +1151,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             >
               <svg
                 aria-hidden={null}
+                aria-label={null}
                 aria-labelledby="Subscribe to our Newsletters"
                 className="svg socialMenuIcon socialMenuIconFull"
                 fill="currentcolor"
@@ -1165,6 +1179,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             >
               <svg
                 aria-hidden={null}
+                aria-label={null}
                 aria-labelledby="RSS"
                 className="svg socialMenuIcon socialMenuIconRSS"
                 fill="currentcolor"
@@ -1192,6 +1207,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             >
               <svg
                 aria-hidden={null}
+                aria-label={null}
                 aria-labelledby="Login"
                 className="svg socialMenuIcon socialMenuIconFull socialMenuIconFullLg"
                 fill="currentcolor"
@@ -1221,6 +1237,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
+          aria-label={null}
           aria-labelledby={null}
           className="svg menuIcon"
           fill="currentcolor"
@@ -1241,7 +1258,6 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
-          aria-labelledby="PRI"
           className="siteLogo"
           fill="currentcolor"
           height={32}
@@ -1280,6 +1296,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
         >
           <svg
             aria-hidden={true}
+            aria-label={null}
             aria-labelledby={null}
             className="svg mobileSmallIcon inlineSvg"
             fill="currentcolor"
@@ -1317,6 +1334,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
         >
           <svg
             aria-hidden={true}
+            aria-label={null}
             aria-labelledby={null}
             className="svg mobileSmallIcon inlineSvg"
             fill="currentcolor"
@@ -1354,6 +1372,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
         >
           <svg
             aria-hidden={true}
+            aria-label={null}
             aria-labelledby={null}
             className="svg mobileSmallIcon inlineSvg"
             fill="currentcolor"
@@ -1391,6 +1410,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
         >
           <svg
             aria-hidden={true}
+            aria-label={null}
             aria-labelledby={null}
             className="svg mobileSmallIcon inlineSvg"
             fill="currentcolor"
@@ -1442,6 +1462,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
+          aria-label="Audio"
           aria-labelledby={null}
           className="svg icon roundIcon"
           fill="currentcolor"
@@ -1493,7 +1514,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             href="#"
           >
             <img
-              alt="PRIs The World"
+              alt=""
               className="logo"
               src="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
             />
@@ -1554,6 +1575,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             >
               <svg
                 aria-hidden={null}
+                aria-label="Audio"
                 aria-labelledby={null}
                 className="svg icon roundIcon"
                 fill="currentcolor"
@@ -1669,6 +1691,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             >
               <svg
                 aria-hidden={null}
+                aria-label="Audio"
                 aria-labelledby={null}
                 className="svg icon roundIcon"
                 fill="currentcolor"
@@ -1774,6 +1797,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             >
               <svg
                 aria-hidden={null}
+                aria-label="Audio"
                 aria-labelledby={null}
                 className="svg icon roundIcon"
                 fill="currentcolor"
@@ -1821,6 +1845,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                 >
                   <svg
                     aria-hidden={null}
+                    aria-label={null}
                     aria-labelledby={null}
                     className="svg icon"
                     fill="currentcolor"
@@ -1868,6 +1893,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                 >
                   <svg
                     aria-hidden={null}
+                    aria-label={null}
                     aria-labelledby={null}
                     className="svg icon"
                     fill="currentcolor"
@@ -1938,6 +1964,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                 >
                   <svg
                     aria-hidden={null}
+                    aria-label={null}
                     aria-labelledby={null}
                     className="svg icon"
                     fill="currentcolor"
@@ -2104,6 +2131,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
         >
           <svg
             aria-hidden={null}
+            aria-label={null}
             aria-labelledby={null}
             className="svg btnIcon inlineSvg"
             fill="currentcolor"
@@ -2157,6 +2185,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             >
               <svg
                 aria-hidden={null}
+                aria-label={null}
                 aria-labelledby={null}
                 className="svg btnIcon inlineSvg"
                 fill="currentcolor"
@@ -2275,6 +2304,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             >
               <svg
                 aria-hidden={null}
+                aria-label={null}
                 aria-labelledby={null}
                 className="svg btnIcon inlineSvg"
                 fill="currentcolor"
@@ -2311,7 +2341,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             href="#"
           >
             <img
-              alt="GlobalPost"
+              alt=""
               className="logo"
               src="https://media.pri.org/s3fs-public/styles/medium_square/public/logo_gp.png"
             />
@@ -2468,6 +2498,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             >
               <svg
                 aria-hidden={null}
+                aria-label="Audio"
                 aria-labelledby={null}
                 className="svg icon roundIcon"
                 fill="currentcolor"
@@ -2497,7 +2528,6 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
-          aria-labelledby="PRI"
           className="disableHover"
           fill="currentcolor"
           height={32}

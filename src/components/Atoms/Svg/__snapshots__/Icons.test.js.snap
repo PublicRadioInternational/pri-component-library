@@ -3,6 +3,7 @@
 exports[`<Icon /> Matches the Icon snapshot 1`] = `
 <svg
   aria-hidden={null}
+  aria-label={null}
   aria-labelledby={null}
   className="svg"
   fill="currentcolor"
