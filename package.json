@@ -64,7 +64,7 @@
     "start": "start-storybook -p 9001 -c .storybook",
     "build": "build-storybook -c .storybook -o dist",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist ; npm publish"
   },
   "devDependencies": {
     "@commitlint/cli": "^6.1.2",
