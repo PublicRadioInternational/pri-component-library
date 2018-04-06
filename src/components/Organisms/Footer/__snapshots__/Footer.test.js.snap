@@ -79,6 +79,7 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
     <div
       aria-labelledby={null}
       className=""
+      id={null}
       role={null}
     >
       <ul

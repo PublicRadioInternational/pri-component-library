@@ -12,12 +12,12 @@ exports[`<Accordion /> Matches the List snapshot 1`] = `
       className="accordionTopHeading"
     >
       <a
-        aria-controls="collapseNews"
+        aria-controls={null}
         aria-expanded="true"
         className="accordionTopLink accordionTopLinkBlue"
         date-parent="#accordion"
         date-toggle="accordionContent"
-        href="#collapseNews"
+        href="#null"
         id="newsPrograms"
         onClick={[Function]}
       >
@@ -41,8 +41,9 @@ exports[`<Accordion /> Matches the List snapshot 1`] = `
     </h5>
   </div>
   <div
-    aria-labelledby="newsPrograms"
+    aria-labelledby="Test"
     className="accordionContent"
+    id={null}
     role="tabpanel"
   >
     <ul

@@ -161,12 +161,12 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               className="accordionTopHeading"
             >
               <a
-                aria-controls="collapseNews"
+                aria-controls="NewsMenu"
                 aria-expanded="true"
                 className="accordionTopLink accordionTopLinkBlue"
                 date-parent="#accordion"
                 date-toggle="accordionContent"
-                href="#collapseNews"
+                href="#NewsMenu"
                 id="newsPrograms"
                 onClick={[Function]}
               >
@@ -190,8 +190,9 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             </h5>
           </div>
           <div
-            aria-labelledby="newsPrograms"
+            aria-labelledby="News Programs"
             className="accordionContent"
+            id="NewsMenu"
             role="tabpanel"
           >
             <ul
@@ -291,12 +292,12 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               className="accordionTopHeading"
             >
               <a
-                aria-controls="collapseNews"
+                aria-controls="MusicVarietyMenu"
                 aria-expanded="true"
                 className="accordionTopLink accordionTopLinkYellow"
                 date-parent="#accordion"
                 date-toggle="accordionContent"
-                href="#collapseNews"
+                href="#MusicVarietyMenu"
                 id="newsPrograms"
                 onClick={[Function]}
               >
@@ -320,8 +321,9 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             </h5>
           </div>
           <div
-            aria-labelledby="newsPrograms"
+            aria-labelledby="Music & Variety Programs"
             className="accordionContent"
+            id="MusicVarietyMenu"
             role="tabpanel"
           >
             <ul
@@ -431,12 +433,12 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               className="accordionTopHeading"
             >
               <a
-                aria-controls="collapseNews"
+                aria-controls="PodcastsMenu"
                 aria-expanded="true"
                 className="accordionTopLink accordionTopLinkGreen"
                 date-parent="#accordion"
                 date-toggle="accordionContent"
-                href="#collapseNews"
+                href="#PodcastsMenu"
                 id="newsPrograms"
                 onClick={[Function]}
               >
@@ -460,8 +462,9 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             </h5>
           </div>
           <div
-            aria-labelledby="newsPrograms"
+            aria-labelledby="Podcasts"
             className="accordionContent"
+            id="PodcastsMenu"
             role="tabpanel"
           >
             <ul
@@ -541,12 +544,12 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               className="accordionTopHeading"
             >
               <a
-                aria-controls="collapseNews"
+                aria-controls="ListenMenu"
                 aria-expanded="true"
                 className="accordionTopLink accordionTopLinkOrange"
                 date-parent="#accordion"
                 date-toggle="accordionContent"
-                href="#collapseNews"
+                href="#ListenMenu"
                 id="newsPrograms"
                 onClick={[Function]}
               >
@@ -570,8 +573,9 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             </h5>
           </div>
           <div
-            aria-labelledby="newsPrograms"
+            aria-labelledby="Listen"
             className="accordionContent"
+            id="ListenMenu"
             role="tabpanel"
           >
             <ul
@@ -621,12 +625,12 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               className="accordionTopHeading"
             >
               <a
-                aria-controls="collapseNews"
+                aria-controls="FeaturesMenu"
                 aria-expanded="true"
                 className="accordionTopLink accordionTopLinkBlue"
                 date-parent="#accordion"
                 date-toggle="accordionContent"
-                href="#collapseNews"
+                href="#FeaturesMenu"
                 id="newsPrograms"
                 onClick={[Function]}
               >
@@ -650,8 +654,9 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             </h5>
           </div>
           <div
-            aria-labelledby="newsPrograms"
+            aria-labelledby="Features"
             className="accordionContent"
+            id="FeaturesMenu"
             role="tabpanel"
           >
             <ul
@@ -751,12 +756,12 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               className="accordionTopHeading"
             >
               <a
-                aria-controls="collapseNews"
+                aria-controls="CategoriesMenu"
                 aria-expanded="true"
                 className="accordionTopLink accordionTopLinkYellow"
                 date-parent="#accordion"
                 date-toggle="accordionContent"
-                href="#collapseNews"
+                href="#CategoriesMenu"
                 id="newsPrograms"
                 onClick={[Function]}
               >
@@ -780,8 +785,9 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             </h5>
           </div>
           <div
-            aria-labelledby="newsPrograms"
+            aria-labelledby="Categories"
             className="accordionContent"
+            id="CategoriesMenu"
             role="tabpanel"
           >
             <ul
@@ -921,12 +927,12 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               className="accordionTopHeading"
             >
               <a
-                aria-controls="collapseNews"
+                aria-controls="AboutMenu"
                 aria-expanded="true"
                 className="accordionTopLink accordionTopLinkGreen"
                 date-parent="#accordion"
                 date-toggle="accordionContent"
-                href="#collapseNews"
+                href="#AboutMenu"
                 id="newsPrograms"
                 onClick={[Function]}
               >
@@ -950,8 +956,9 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             </h5>
           </div>
           <div
-            aria-labelledby="newsPrograms"
+            aria-labelledby="About PRI"
             className="accordionContent"
+            id="AboutMenu"
             role="tabpanel"
           >
             <ul
@@ -1031,12 +1038,12 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               className="accordionTopHeading"
             >
               <a
-                aria-controls="collapseNews"
+                aria-controls="GivingMenu"
                 aria-expanded="true"
                 className="accordionTopLink accordionTopLinkOrange"
                 date-parent="#accordion"
                 date-toggle="accordionContent"
-                href="#collapseNews"
+                href="#GivingMenu"
                 id="newsPrograms"
                 onClick={[Function]}
               >
@@ -1060,8 +1067,9 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             </h5>
           </div>
           <div
-            aria-labelledby="newsPrograms"
+            aria-labelledby="Giving"
             className="accordionContent"
+            id="GivingMenu"
             role="tabpanel"
           >
             <ul

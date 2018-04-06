@@ -20,12 +20,14 @@ export default class Accordion extends Component {
   static propTypes = {
     accordionList: PropTypes.arrayOf(PropTypes.object),
     color: PropTypes.oneOf(['Blue', 'Orange', 'Yellow', 'Green']),
-    accordionTitle: PropTypes.string.isRequired
+    accordionTitle: PropTypes.string.isRequired,
+    listId: PropTypes.string
   };
 
   static defaultProps = {
     accordionList: {},
-    color: 'Blue'
+    color: 'Blue',
+    listId: null
   };
 
   state = { revealed: false };
@@ -38,7 +40,7 @@ export default class Accordion extends Component {
   };
 
   render() {
-    const { accordionList, color, accordionTitle } = this.props;
+    const { accordionList, color, accordionTitle, listId } = this.props;
     // Generate a class name based on the color.
     const accordionItemColor = `accordionItem${color}`;
     const accordionTopLinkColor = `accordionTopLink${color}`;
@@ -61,9 +63,9 @@ export default class Accordion extends Component {
               className={accordionTopLinkClasses}
               date-toggle={styles.accordionContent}
               date-parent="#accordion"
-              href="#collapseNews"
+              href={`#${listId}`}
               aria-expanded="true"
-              aria-controls="collapseNews"
+              aria-controls={listId}
               onClick={this.reveal}
               id="newsPrograms"
             >
@@ -78,10 +80,11 @@ export default class Accordion extends Component {
           </h5>
         </div>
         <List
+          id={listId}
           className={styles.accordionContent}
           reveal={this.state.revealed}
           role="tabpanel"
-          ariaLabelledby="newsPrograms"
+          ariaLabelledby={accordionTitle}
           ulClass={styles.accordionContentMenu}
           classNameOpen={styles.accordionContentOpen}
           liClass={styles.accordionContentMenuItem}
