@@ -5,6 +5,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
   className="siteHeader"
 >
   <button
+    aria-label="Close Overlay"
     className="bg"
     onClick={[Function]}
   />
@@ -23,6 +24,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
         >
           <svg
             aria-hidden={true}
+            aria-label={null}
             aria-labelledby={null}
             className="svg inlineLink inlineSvg"
             fill="currentcolor"
@@ -45,7 +47,6 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           >
             <svg
               aria-hidden={null}
-              aria-labelledby="PRI"
               className="maxWidth"
               fill="currentcolor"
               height={32}
@@ -83,6 +84,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             >
               <svg
                 aria-hidden={true}
+                aria-label={null}
                 aria-labelledby={null}
                 className="svg inlineSvg"
                 fill="currentcolor"
@@ -104,6 +106,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             >
               <svg
                 aria-hidden={true}
+                aria-label={null}
                 aria-labelledby={null}
                 className="svg inlineSvg"
                 fill="currentcolor"
@@ -125,6 +128,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             >
               <svg
                 aria-hidden={true}
+                aria-label={null}
                 aria-labelledby={null}
                 className="svg inlineSvg"
                 fill="currentcolor"
@@ -158,18 +162,18 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               className="accordionTopHeading"
             >
               <a
-                aria-controls="collapseNews"
+                aria-controls="NewsMenu"
                 aria-expanded="true"
                 className="accordionTopLink accordionTopLinkBlue"
                 date-parent="#accordion"
                 date-toggle="accordionContent"
-                href="#collapseNews"
-                id="newsPrograms"
+                href="#NewsMenu"
                 onClick={[Function]}
               >
                 News Programs
                 <svg
                   aria-hidden={true}
+                  aria-label={null}
                   aria-labelledby={null}
                   className="svg iconDown"
                   fill="currentcolor"
@@ -186,8 +190,9 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             </h5>
           </div>
           <div
-            aria-labelledby="newsPrograms"
+            aria-labelledby="News Programs"
             className="accordionContent"
+            id="NewsMenu"
             role="tabpanel"
           >
             <ul
@@ -287,18 +292,18 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               className="accordionTopHeading"
             >
               <a
-                aria-controls="collapseNews"
+                aria-controls="MusicVarietyMenu"
                 aria-expanded="true"
                 className="accordionTopLink accordionTopLinkYellow"
                 date-parent="#accordion"
                 date-toggle="accordionContent"
-                href="#collapseNews"
-                id="newsPrograms"
+                href="#MusicVarietyMenu"
                 onClick={[Function]}
               >
                 Music & Variety Programs
                 <svg
                   aria-hidden={true}
+                  aria-label={null}
                   aria-labelledby={null}
                   className="svg iconDown"
                   fill="currentcolor"
@@ -315,8 +320,9 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             </h5>
           </div>
           <div
-            aria-labelledby="newsPrograms"
+            aria-labelledby="Music & Variety Programs"
             className="accordionContent"
+            id="MusicVarietyMenu"
             role="tabpanel"
           >
             <ul
@@ -426,18 +432,18 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               className="accordionTopHeading"
             >
               <a
-                aria-controls="collapseNews"
+                aria-controls="PodcastsMenu"
                 aria-expanded="true"
                 className="accordionTopLink accordionTopLinkGreen"
                 date-parent="#accordion"
                 date-toggle="accordionContent"
-                href="#collapseNews"
-                id="newsPrograms"
+                href="#PodcastsMenu"
                 onClick={[Function]}
               >
                 Podcasts
                 <svg
                   aria-hidden={true}
+                  aria-label={null}
                   aria-labelledby={null}
                   className="svg iconDown"
                   fill="currentcolor"
@@ -454,8 +460,9 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             </h5>
           </div>
           <div
-            aria-labelledby="newsPrograms"
+            aria-labelledby="Podcasts"
             className="accordionContent"
+            id="PodcastsMenu"
             role="tabpanel"
           >
             <ul
@@ -535,18 +542,18 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               className="accordionTopHeading"
             >
               <a
-                aria-controls="collapseNews"
+                aria-controls="ListenMenu"
                 aria-expanded="true"
                 className="accordionTopLink accordionTopLinkOrange"
                 date-parent="#accordion"
                 date-toggle="accordionContent"
-                href="#collapseNews"
-                id="newsPrograms"
+                href="#ListenMenu"
                 onClick={[Function]}
               >
                 Listen
                 <svg
                   aria-hidden={true}
+                  aria-label={null}
                   aria-labelledby={null}
                   className="svg iconDown"
                   fill="currentcolor"
@@ -563,8 +570,9 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             </h5>
           </div>
           <div
-            aria-labelledby="newsPrograms"
+            aria-labelledby="Listen"
             className="accordionContent"
+            id="ListenMenu"
             role="tabpanel"
           >
             <ul
@@ -614,18 +622,18 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               className="accordionTopHeading"
             >
               <a
-                aria-controls="collapseNews"
+                aria-controls="FeaturesMenu"
                 aria-expanded="true"
                 className="accordionTopLink accordionTopLinkBlue"
                 date-parent="#accordion"
                 date-toggle="accordionContent"
-                href="#collapseNews"
-                id="newsPrograms"
+                href="#FeaturesMenu"
                 onClick={[Function]}
               >
                 Features
                 <svg
                   aria-hidden={true}
+                  aria-label={null}
                   aria-labelledby={null}
                   className="svg iconDown"
                   fill="currentcolor"
@@ -642,8 +650,9 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             </h5>
           </div>
           <div
-            aria-labelledby="newsPrograms"
+            aria-labelledby="Features"
             className="accordionContent"
+            id="FeaturesMenu"
             role="tabpanel"
           >
             <ul
@@ -743,18 +752,18 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               className="accordionTopHeading"
             >
               <a
-                aria-controls="collapseNews"
+                aria-controls="CategoriesMenu"
                 aria-expanded="true"
                 className="accordionTopLink accordionTopLinkYellow"
                 date-parent="#accordion"
                 date-toggle="accordionContent"
-                href="#collapseNews"
-                id="newsPrograms"
+                href="#CategoriesMenu"
                 onClick={[Function]}
               >
                 Categories
                 <svg
                   aria-hidden={true}
+                  aria-label={null}
                   aria-labelledby={null}
                   className="svg iconDown"
                   fill="currentcolor"
@@ -771,8 +780,9 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             </h5>
           </div>
           <div
-            aria-labelledby="newsPrograms"
+            aria-labelledby="Categories"
             className="accordionContent"
+            id="CategoriesMenu"
             role="tabpanel"
           >
             <ul
@@ -912,18 +922,18 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               className="accordionTopHeading"
             >
               <a
-                aria-controls="collapseNews"
+                aria-controls="AboutMenu"
                 aria-expanded="true"
                 className="accordionTopLink accordionTopLinkGreen"
                 date-parent="#accordion"
                 date-toggle="accordionContent"
-                href="#collapseNews"
-                id="newsPrograms"
+                href="#AboutMenu"
                 onClick={[Function]}
               >
                 About PRI
                 <svg
                   aria-hidden={true}
+                  aria-label={null}
                   aria-labelledby={null}
                   className="svg iconDown"
                   fill="currentcolor"
@@ -940,8 +950,9 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             </h5>
           </div>
           <div
-            aria-labelledby="newsPrograms"
+            aria-labelledby="About PRI"
             className="accordionContent"
+            id="AboutMenu"
             role="tabpanel"
           >
             <ul
@@ -1021,18 +1032,18 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               className="accordionTopHeading"
             >
               <a
-                aria-controls="collapseNews"
+                aria-controls="GivingMenu"
                 aria-expanded="true"
                 className="accordionTopLink accordionTopLinkOrange"
                 date-parent="#accordion"
                 date-toggle="accordionContent"
-                href="#collapseNews"
-                id="newsPrograms"
+                href="#GivingMenu"
                 onClick={[Function]}
               >
                 Giving
                 <svg
                   aria-hidden={true}
+                  aria-label={null}
                   aria-labelledby={null}
                   className="svg iconDown"
                   fill="currentcolor"
@@ -1049,8 +1060,9 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             </h5>
           </div>
           <div
-            aria-labelledby="newsPrograms"
+            aria-labelledby="Giving"
             className="accordionContent"
+            id="GivingMenu"
             role="tabpanel"
           >
             <ul
@@ -1083,7 +1095,8 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           >
             <svg
               aria-hidden={null}
-              aria-labelledby="Facebook"
+              aria-label={null}
+              aria-labelledby={null}
               className="svg socialMenuIcon"
               fill="currentcolor"
               height={28}
@@ -1110,7 +1123,8 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           >
             <svg
               aria-hidden={null}
-              aria-labelledby="Twitter"
+              aria-label={null}
+              aria-labelledby={null}
               className="svg socialMenuIcon"
               fill="currentcolor"
               height={28}
@@ -1137,7 +1151,8 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           >
             <svg
               aria-hidden={null}
-              aria-labelledby="Subscribe to our Newsletters"
+              aria-label={null}
+              aria-labelledby={null}
               className="svg socialMenuIcon socialMenuIconFull"
               fill="currentcolor"
               height={28}
@@ -1164,7 +1179,8 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           >
             <svg
               aria-hidden={null}
-              aria-labelledby="RSS"
+              aria-label={null}
+              aria-labelledby={null}
               className="svg socialMenuIcon socialMenuIconRSS"
               fill="currentcolor"
               height={28}
@@ -1191,7 +1207,8 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
           >
             <svg
               aria-hidden={null}
-              aria-labelledby="Login"
+              aria-label={null}
+              aria-labelledby={null}
               className="svg socialMenuIcon socialMenuIconFull socialMenuIconFullLg"
               fill="currentcolor"
               height={28}
@@ -1215,11 +1232,13 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
     className="branding"
   >
     <button
+      aria-label="Open Menu"
       className="menuBtn"
       onClick={[Function]}
     >
       <svg
         aria-hidden={null}
+        aria-label={null}
         aria-labelledby={null}
         className="svg menuIcon"
         fill="currentcolor"
@@ -1240,7 +1259,6 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
     >
       <svg
         aria-hidden={null}
-        aria-labelledby="PRI"
         className="siteLogo"
         fill="currentcolor"
         height={32}
@@ -1279,6 +1297,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       >
         <svg
           aria-hidden={true}
+          aria-label={null}
           aria-labelledby={null}
           className="svg mobileSmallIcon inlineSvg"
           fill="currentcolor"
@@ -1300,7 +1319,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       <button
         aria-expanded={null}
         aria-haspopup={true}
-        aria-label="open menu"
+        aria-label="Open Dropdown"
         className="btnDropdownWhite btnHide btnMobileWhite"
         onClick={[Function]}
         type="button"
@@ -1316,6 +1335,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       >
         <svg
           aria-hidden={true}
+          aria-label={null}
           aria-labelledby={null}
           className="svg mobileSmallIcon inlineSvg"
           fill="currentcolor"
@@ -1337,7 +1357,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       <button
         aria-expanded={null}
         aria-haspopup={true}
-        aria-label="open menu"
+        aria-label="Open Dropdown"
         className="btnDropdownWhite btnHide btnMobileWhite"
         onClick={[Function]}
         type="button"
@@ -1353,6 +1373,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       >
         <svg
           aria-hidden={true}
+          aria-label={null}
           aria-labelledby={null}
           className="svg mobileSmallIcon inlineSvg"
           fill="currentcolor"
@@ -1374,7 +1395,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       <button
         aria-expanded={null}
         aria-haspopup={true}
-        aria-label="open menu"
+        aria-label="Open Dropdown"
         className="btnDropdownWhite btnHide btnMobileWhite"
         onClick={[Function]}
         type="button"
@@ -1390,6 +1411,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       >
         <svg
           aria-hidden={true}
+          aria-label={null}
           aria-labelledby={null}
           className="svg mobileSmallIcon inlineSvg"
           fill="currentcolor"
@@ -1411,7 +1433,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       <button
         aria-expanded={null}
         aria-haspopup={true}
-        aria-label="open menu"
+        aria-label="Open Dropdown"
         className="btnDropdownOrange btnHide btnMobileOrange"
         onClick={[Function]}
         type="button"

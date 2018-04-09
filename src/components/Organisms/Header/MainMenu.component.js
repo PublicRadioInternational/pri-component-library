@@ -94,6 +94,7 @@ export default class MainMenu extends Component {
           <Accordion
             color="Blue"
             accordionTitle="News Programs"
+            listId="NewsMenu"
             accordionList={[
               {
                 name: 'America Abroad',
@@ -129,6 +130,7 @@ export default class MainMenu extends Component {
           <Accordion
             color="Yellow"
             accordionTitle="Music & Variety Programs"
+            listId="MusicVarietyMenu"
             accordionList={[
               {
                 name: 'Afropop Worldwide',
@@ -168,6 +170,7 @@ export default class MainMenu extends Component {
           <Accordion
             color="Green"
             accordionTitle="Podcasts"
+            listId="PodcastsMenu"
             accordionList={[
               {
                 name: "LBJ's War",
@@ -198,6 +201,7 @@ export default class MainMenu extends Component {
           <Accordion
             color="Orange"
             accordionTitle="Listen"
+            listId="ListenMenu"
             accordionList={[
               {
                 name: 'Live Stream',
@@ -215,6 +219,7 @@ export default class MainMenu extends Component {
           />
           <Accordion
             accordionTitle="Features"
+            listId="FeaturesMenu"
             accordionList={[
               {
                 name: "Across Women's Lives",
@@ -253,6 +258,7 @@ export default class MainMenu extends Component {
           <Accordion
             color="Yellow"
             accordionTitle="Categories"
+            listId="CategoriesMenu"
             accordionList={[
               {
                 name: 'Arts & Entertainment',
@@ -301,6 +307,7 @@ export default class MainMenu extends Component {
           <Accordion
             color="Green"
             accordionTitle="About PRI"
+            listId="AboutMenu"
             accordionList={[
               {
                 name: 'About Us',
@@ -331,6 +338,7 @@ export default class MainMenu extends Component {
           <Accordion
             color="Orange"
             accordionTitle="Giving"
+            listId="GivingMenu"
             accordionList={[
               {
                 name: 'Donate',

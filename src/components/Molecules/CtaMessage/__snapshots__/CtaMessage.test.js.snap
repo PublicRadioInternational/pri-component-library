@@ -10,6 +10,7 @@ exports[`<CtaMessage /> Matches the CTA Message Action button snapshot 1`] = `
   >
     <svg
       aria-hidden={null}
+      aria-label="Close"
       aria-labelledby={null}
       className="svg"
       fill="currentcolor"
@@ -51,6 +52,7 @@ exports[`<CtaMessage /> Matches the CTA Message Blue Action button snapshot 1`] 
   >
     <svg
       aria-hidden={null}
+      aria-label="Close"
       aria-labelledby={null}
       className="svg"
       fill="currentcolor"
@@ -92,6 +94,7 @@ exports[`<CtaMessage /> Matches the CTA Message Decription snapshot 1`] = `
   >
     <svg
       aria-hidden={null}
+      aria-label="Close"
       aria-labelledby={null}
       className="svg"
       fill="currentcolor"
@@ -127,6 +130,7 @@ exports[`<CtaMessage /> Matches the CTA Message Default snapshot 1`] = `
   >
     <svg
       aria-hidden={null}
+      aria-label="Close"
       aria-labelledby={null}
       className="svg"
       fill="currentcolor"
@@ -156,6 +160,7 @@ exports[`<CtaMessage /> Matches the CTA Message Dismiss button snapshot 1`] = `
   >
     <svg
       aria-hidden={null}
+      aria-label="Close"
       aria-labelledby={null}
       className="svg"
       fill="currentcolor"
@@ -207,6 +212,7 @@ exports[`<CtaMessage /> Matches the CTA Message Logo snapshot 1`] = `
   >
     <svg
       aria-hidden={null}
+      aria-label="Close"
       aria-labelledby={null}
       className="svg"
       fill="currentcolor"
@@ -228,7 +234,6 @@ exports[`<CtaMessage /> Matches the CTA Message Logo snapshot 1`] = `
     >
       <svg
         aria-hidden={null}
-        aria-labelledby="PRI"
         className=""
         fill="currentcolor"
         height={26}
@@ -267,6 +272,7 @@ exports[`<CtaMessage /> Matches the CTA Message Title snapshot 1`] = `
   >
     <svg
       aria-hidden={null}
+      aria-label="Close"
       aria-labelledby={null}
       className="svg"
       fill="currentcolor"
