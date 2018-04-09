@@ -5,6 +5,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import sharedStyles from '../../00_global/shared.css';
 
 import Header from '../../Organisms/Header/Header.component';
 
@@ -198,15 +199,18 @@ const Home = ({ baseUrl }) => (
             >
               <span>
                 <span className="form-item form-type-textfield form-item-email GoogleAnalyticsET-processed">
-                  <input
-                    type="text"
-                    id="edit-email"
-                    name="email"
-                    placeholder="Your Email"
-                    size="60"
-                    maxLength="200"
-                    className="form-text required"
-                  />
+                  <label htmlFor="edit-email">
+                    <span className={sharedStyles.visuallyhidden}>Email</span>
+                    <input
+                      type="text"
+                      id="edit-email"
+                      name="email"
+                      placeholder="Your Email"
+                      size="60"
+                      maxLength="200"
+                      className="form-text required"
+                    />
+                  </label>
                 </span>
                 <input
                   type="hidden"

@@ -2234,15 +2234,24 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                   <span
                     className="form-item form-type-textfield form-item-email GoogleAnalyticsET-processed"
                   >
-                    <input
-                      className="form-text required"
-                      id="edit-email"
-                      maxLength="200"
-                      name="email"
-                      placeholder="Your Email"
-                      size="60"
-                      type="text"
-                    />
+                    <label
+                      htmlFor="edit-email"
+                    >
+                      <span
+                        className="visuallyhidden"
+                      >
+                        Email
+                      </span>
+                      <input
+                        className="form-text required"
+                        id="edit-email"
+                        maxLength="200"
+                        name="email"
+                        placeholder="Your Email"
+                        size="60"
+                        type="text"
+                      />
+                    </label>
                   </span>
                   <input
                     name="list_id"
