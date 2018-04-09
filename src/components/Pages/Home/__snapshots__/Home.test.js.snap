@@ -2558,6 +2558,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             >
               <svg
                 aria-hidden={null}
+                aria-label="Audio"
                 aria-labelledby={null}
                 className="svg icon roundIcon"
                 fill="currentcolor"
@@ -2585,7 +2586,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             href="#"
           >
             <img
-              alt="PRIs The World"
+              alt=""
               className="logo"
               src="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
             />
@@ -2639,7 +2640,13 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb blurbLg"
           >
-            Ten years after Kosovo declared its independence from Serbia, Serbs and Albanians in Kosovo remain deeply divided — even over food.
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Ten years after Kosovo declared its independence from Serbia, Serbs and Albanians in Kosovo remain deeply divided — even over food.",
+                }
+              }
+            />
             <a
               className="iconLink"
               href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
@@ -2707,7 +2714,13 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb"
           >
-            When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. 
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. ",
+                }
+              }
+            />
           </p>
         </article>
       </section>
