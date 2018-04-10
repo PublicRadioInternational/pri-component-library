@@ -8,6 +8,8 @@
 
   function IntersectionObserver(callback, opt_options) {}
 
+  IntersectionObserver.prototype.observe = function() {};
+
   window.IntersectionObserver = IntersectionObserver;
   window.IntersectionObserverEntry = IntersectionObserverEntry;
 })(window, document);
