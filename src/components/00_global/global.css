@@ -47,15 +47,17 @@ a:hover {
   color: orange;
 }
 
+img[data-src] {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
 img {
   height: auto;
   max-width: 100%;
   opacity: 1;
-  transition: opacity 0.5s;
-}
-
-img[data-src] {
-  opacity: 0;
+  transition: all 0.5s;
 }
 
 iframe,
