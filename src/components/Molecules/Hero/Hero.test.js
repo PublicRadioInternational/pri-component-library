@@ -8,6 +8,8 @@ import renderer from 'react-test-renderer';
 
 import Hero from './Hero.component';
 
+jest.mock('intersection-observer');
+
 describe('<Hero />', () => {
   it('Matches the Hero snapshot', () => {
     const component = renderer

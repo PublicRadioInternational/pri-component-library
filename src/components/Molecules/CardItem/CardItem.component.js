@@ -122,7 +122,9 @@ const CardItem = ({
         </figure>
       )}
       <BlurbContent freeform={freeform} className={largeClasses('blurb')}>
-        {blurb ? <div dangerouslySetInnerHTML={{ __html: blurb }} /> : null}
+        {blurb ? (
+          <div dangerouslySetInnerHTML={{ __html: blurb }} />
+        ) : null /* eslint-disable-line */}
         {hasAudio && (
           <a className={styles.iconLink} href={url}>
             <Icon
