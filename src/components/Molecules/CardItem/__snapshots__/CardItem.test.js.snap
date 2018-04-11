@@ -38,7 +38,7 @@ exports[`<CardItem /> Matches the Card Item Default snapshot 1`] = `
       <img
         alt="Placeholder Image"
         className="img"
-        src="http://placehold.it/1920x1080.png"
+        data-src="http://placehold.it/1920x1080.png"
         typeof="foaf:Image"
       />
     </a>
@@ -46,7 +46,7 @@ exports[`<CardItem /> Matches the Card Item Default snapshot 1`] = `
   <p
     className="blurb"
   >
-    <div
+    <span
       dangerouslySetInnerHTML={
         Object {
           "__html": "Test Teaser",
@@ -120,7 +120,7 @@ exports[`<CardItem /> Matches the Card Item No Link  snapshot 1`] = `
     <img
       alt={null}
       className="img"
-      src="http://placehold.it/1920x1080.png"
+      data-src="http://placehold.it/1920x1080.png"
       typeof="foaf:Image"
     />
   </figure>

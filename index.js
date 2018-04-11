@@ -34,6 +34,7 @@ import LayoutAsideLatest from './src/components/Organisms/Main/LayoutAsideLatest
 import LayoutMain from './src/components/Organisms/Main/LayoutMain.component';
 import LayoutMainList from './src/components/Organisms/Main/LayoutMainList.component';
 import LayoutMainList2 from './src/components/Organisms/Main/LayoutMainList2.component';
+import LazyLoad from './src/components/Atoms/LazyLoad/LazyLoad.component';
 import Main from './src/components/Organisms/Main/Main.component';
 import Home from './src/components/Pages/Home/Home.component';
 
@@ -51,6 +52,7 @@ export {
   ButtonInput,
   ButtonLink,
   DropdownItem,
+  LazyLoad,
   Icons,
   PriLogo,
   // Molecules.

@@ -9,6 +9,7 @@ import classNames from 'classnames/bind';
 import styles from './CardItem.css';
 
 import Icon from '../../Atoms/Svg/Icons.component';
+import LazyLoad from '../../Atoms/LazyLoad/LazyLoad.component';
 
 const cx = classNames.bind(styles);
 
@@ -109,17 +110,21 @@ const CardItem = ({
       {imgSrc && (
         <figure className={largeClasses('image')}>
           <LinkedItem url={url}>
-            <img
-              typeof="foaf:Image"
-              src={imgSrc}
-              alt={imgAlt}
-              className={largeClasses('img')}
-            />
+            <LazyLoad>
+              <img
+                typeof="foaf:Image"
+                data-src={imgSrc}
+                alt={imgAlt}
+                className={largeClasses('img')}
+              />
+            </LazyLoad>
           </LinkedItem>
         </figure>
       )}
       <BlurbContent freeform={freeform} className={largeClasses('blurb')}>
-        {blurb ? <div dangerouslySetInnerHTML={{ __html: blurb }} /> : null}
+        {blurb ? (
+          <span dangerouslySetInnerHTML={{ __html: blurb }} />
+        ) : null /* eslint-disable-line */}
         {hasAudio && (
           <a className={styles.iconLink} href={url}>
             <Icon
