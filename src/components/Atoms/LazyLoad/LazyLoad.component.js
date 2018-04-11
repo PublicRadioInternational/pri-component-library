@@ -3,7 +3,7 @@
  * Exports a lazy load component.
  */
 
-import 'intersection-observer'; // optional polyfill
+import 'intersection-observer';
 import Observer from '@researchgate/react-intersection-observer';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';

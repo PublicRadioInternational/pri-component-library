@@ -57,7 +57,7 @@ img {
   height: auto;
   max-width: 100%;
   opacity: 1;
-  transition: all 0.5s;
+  transition: opacity 0.5s;
 }
 
 iframe,
