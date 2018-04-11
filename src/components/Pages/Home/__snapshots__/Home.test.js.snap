@@ -1452,7 +1452,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       <img
         alt="Opioid Addiction"
         className="img"
-        src="https://media.pri.org/s3fs-public/styles/feature_large/public/story/images/JL1_8064.JPG?itok=WfGYKL2U"
+        data-src="https://media.pri.org/s3fs-public/styles/feature_large/public/story/images/JL1_8064.JPG?itok=WfGYKL2U"
       />
     </figure>
     <div
@@ -1562,7 +1562,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               <img
                 alt="Alt Text"
                 className="img imgLg"
-                src="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/180302copbridge.jpg?itok=52GppaOv"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/180302copbridge.jpg?itok=52GppaOv"
                 typeof="foaf:Image"
               />
             </a>
@@ -1570,7 +1570,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb blurbLg"
           >
-            <div
+            <span
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "Ten years after Kosovo declared its independence from Serbia, Serbs and Albanians in Kosovo remain deeply divided — even over food.",
@@ -1636,7 +1636,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               <img
                 alt="Alt Text"
                 className="img"
-                src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
                 typeof="foaf:Image"
               />
             </a>
@@ -1644,7 +1644,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb"
           >
-            <div
+            <span
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. ",
@@ -1690,7 +1690,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               <img
                 alt="Alt Text"
                 className="img"
-                src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/DeLauro.jpg?itok=gprExR5S"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/DeLauro.jpg?itok=gprExR5S"
                 typeof="foaf:Image"
               />
             </a>
@@ -1698,7 +1698,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb"
           >
-            <div
+            <span
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "NAFTA has governed the rules of trade between the US, Mexico and Canada since 1994. Today, many progressives who dislike NAFTA say President Trump is giving them the best chance in a generation to rewrite the rules of trade. ",
@@ -1764,7 +1764,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               <img
                 alt="Alt Text"
                 className="img"
-                src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/GettyImages-925030722_master.jpg?itok=LSMUCQbS"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/GettyImages-925030722_master.jpg?itok=LSMUCQbS"
                 typeof="foaf:Image"
               />
             </a>
@@ -1772,7 +1772,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb"
           >
-            <div
+            <span
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "Charges against a jailed cartoonist from Equatorial Guinea have been dropped, so why is he still in jail?",
@@ -1818,7 +1818,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               <img
                 alt="Alt Text"
                 className="img"
-                src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/GettyImages-925030722_master.jpg?itok=LSMUCQbS"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/GettyImages-925030722_master.jpg?itok=LSMUCQbS"
                 typeof="foaf:Image"
               />
             </a>
@@ -1826,7 +1826,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb"
           >
-            <div
+            <span
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "An Egyptian court has sentenced one of its country's top singers to six months in prison for a comment she made about the Nile River. Pop singer Sherine made a crack about getting ill from drinking from the river when she was asked by a fan to sing, 'Have You Ever Drunk From the Nile.'",
@@ -2439,7 +2439,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               <img
                 alt="Alt Text"
                 className="img imgLg"
-                src="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/RTS1M7QU%20(1).jpg?itok=SCBMIFU_"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/RTS1M7QU%20(1).jpg?itok=SCBMIFU_"
                 typeof="foaf:Image"
               />
             </a>
@@ -2447,7 +2447,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb blurbLg"
           >
-            <div
+            <span
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "Little more than a month ago, no one had heard of Macerata. Then the murder of Pamela Mastropietro thrust the small town in central Italy onto the national stage, and the whole course of a pivotal national election was altered.",
@@ -2493,7 +2493,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               <img
                 alt="Alt Text"
                 className="img"
-                src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/fem.jpg?itok=GvblSbSw"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/fem.jpg?itok=GvblSbSw"
                 typeof="foaf:Image"
               />
             </a>
@@ -2501,7 +2501,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb"
           >
-            <div
+            <span
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "No estamos todas is an Instagram project dedicated to visualizing the issue of femicide in Mexico with original illustrations.",
@@ -2547,7 +2547,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               <img
                 alt="Alt Text"
                 className="img"
-                src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/IliaCalderon_david001.jpg?itok=Be7CbPFn"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/IliaCalderon_david001.jpg?itok=Be7CbPFn"
                 typeof="foaf:Image"
               />
             </a>
@@ -2555,7 +2555,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb"
           >
-            <div
+            <span
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "Ilia Calderón doesn't back down in an interview. And she's determined to allow people growing up like she did see their own experience in her stories.",
@@ -2642,7 +2642,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               <img
                 alt="Alt Text"
                 className="img imgLg"
-                src="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/180302copbridge.jpg?itok=52GppaOv"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/180302copbridge.jpg?itok=52GppaOv"
                 typeof="foaf:Image"
               />
             </a>
@@ -2650,7 +2650,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb blurbLg"
           >
-            <div
+            <span
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "Ten years after Kosovo declared its independence from Serbia, Serbs and Albanians in Kosovo remain deeply divided — even over food.",
@@ -2716,7 +2716,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               <img
                 alt="Alt Text"
                 className="img"
-                src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
                 typeof="foaf:Image"
               />
             </a>
@@ -2724,7 +2724,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb"
           >
-            <div
+            <span
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. ",

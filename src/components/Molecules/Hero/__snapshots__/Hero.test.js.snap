@@ -11,7 +11,7 @@ exports[`<Hero /> Matches the Hero snapshot 1`] = `
     <img
       alt="Opioid Addiction"
       className="img"
-      src="https://media.pri.org/s3fs-public/styles/feature_large/public/story/images/JL1_8064.JPG?itok=WfGYKL2U"
+      data-src="https://media.pri.org/s3fs-public/styles/feature_large/public/story/images/JL1_8064.JPG?itok=WfGYKL2U"
     />
   </figure>
   <div
@@ -71,7 +71,7 @@ exports[`<Hero /> Matches the Hero snapshot with category url 1`] = `
     <img
       alt="Opioid Addiction"
       className="img"
-      src="https://media.pri.org/s3fs-public/styles/feature_large/public/story/images/JL1_8064.JPG?itok=WfGYKL2U"
+      data-src="https://media.pri.org/s3fs-public/styles/feature_large/public/story/images/JL1_8064.JPG?itok=WfGYKL2U"
     />
   </figure>
   <div

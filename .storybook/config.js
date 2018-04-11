@@ -3,6 +3,7 @@
  * Contains configuration for Storybook.
  */
 
+require('babel-polyfill');
 import { configure } from '@storybook/react';
 
 import styles from '../src/components/00_global/reset.css';
@@ -20,3 +21,5 @@ const loadStories = () => {
 
 // Configure storybook.
 configure(loadStories, module);
+
+window.scrollTo(0, 0);
