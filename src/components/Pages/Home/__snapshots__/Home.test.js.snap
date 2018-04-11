@@ -1791,7 +1791,12 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             <h2
               className="title "
             >
-              Egyptian singer faces the prospect of prison over a joke about the Nile
+              <a
+                className="link "
+                href={null}
+              >
+                Egyptian singer faces the prospect of prison over a joke about the Nile
+              </a>
             </h2>
             <span
               content="Egyptian singer faces the prospect of prison over a joke about the Nile"
@@ -1806,12 +1811,17 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <figure
             className="image"
           >
-            <img
-              alt="Alt Text"
-              className="img"
-              src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/GettyImages-925030722_master.jpg?itok=LSMUCQbS"
-              typeof="foaf:Image"
-            />
+            <a
+              className={null}
+              href={null}
+            >
+              <img
+                alt="Alt Text"
+                className="img"
+                src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/GettyImages-925030722_master.jpg?itok=LSMUCQbS"
+                typeof="foaf:Image"
+              />
+            </a>
           </figure>
           <p
             className="blurb"
@@ -2558,6 +2568,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             >
               <svg
                 aria-hidden={null}
+                aria-label="Audio"
                 aria-labelledby={null}
                 className="svg icon roundIcon"
                 fill="currentcolor"
@@ -2585,7 +2596,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             href="#"
           >
             <img
-              alt="PRIs The World"
+              alt=""
               className="logo"
               src="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
             />
@@ -2639,7 +2650,13 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb blurbLg"
           >
-            Ten years after Kosovo declared its independence from Serbia, Serbs and Albanians in Kosovo remain deeply divided — even over food.
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Ten years after Kosovo declared its independence from Serbia, Serbs and Albanians in Kosovo remain deeply divided — even over food.",
+                }
+              }
+            />
             <a
               className="iconLink"
               href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
@@ -2707,7 +2724,13 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <p
             className="blurb"
           >
-            When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. 
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. ",
+                }
+              }
+            />
           </p>
         </article>
       </section>

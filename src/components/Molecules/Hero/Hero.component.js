@@ -60,7 +60,7 @@ Hero.propTypes = {
 
 Hero.defaultProps = {
   hasAudio: false,
-  categoryUrl: false
+  categoryUrl: null
 };
 
 export default Hero;

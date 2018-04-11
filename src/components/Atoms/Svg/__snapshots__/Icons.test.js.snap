@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Icon /> Does not render an icon if an invalid name is provided 1`] = `
+<svg
+  aria-hidden={null}
+  aria-label={null}
+  aria-labelledby={null}
+  className="svg"
+  fill="currentcolor"
+  height={28}
+  version={1.1}
+  viewBox="0 0 28 28"
+  width={28}
+/>
+`;
+
 exports[`<Icon /> Matches the Icon snapshot 1`] = `
 <svg
   aria-hidden={null}

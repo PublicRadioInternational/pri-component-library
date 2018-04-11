@@ -15,17 +15,11 @@ const cx = classNames.bind(styles);
 /**
  * Renders it's children, linked to a given url.
  */
-const LinkedItem = ({ url, children, className }) => {
-  if (url) {
-    return (
-      <a className={className} href={url}>
-        {children}
-      </a>
-    );
-  }
-
-  return children || null;
-};
+const LinkedItem = ({ url, children, className }) => (
+  <a className={className} href={url}>
+    {children}
+  </a>
+);
 
 LinkedItem.propTypes = {
   url: PropTypes.string,
