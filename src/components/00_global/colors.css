@@ -7,7 +7,7 @@
 @value gray: #33333c;
 @value black: #000;
 
-@value blue: #4188bc;
+@value blue: #35719C;
 @value blueLight: #e8f1f7;
 @value blueMed: #3978a5;
 @value blueDark: #0062cc;
@@ -35,6 +35,6 @@
 @value worldWords: world;
 @value acrossWomensLives: greenLight;
 
-@value globalNation: blue;
+@value globalNation: #4188bc;
 @value globalSecurity: yellow;
 @value livablePlanet: green;
