@@ -5,21 +5,36 @@ exports[`<Search /> Matches the snapshot 1`] = `
   className="search"
   onSubmit={[Function]}
 >
-  <input
-    className="searchText"
-    onChange={[Function]}
-    placeholder="Search for..."
-    type="text"
-  />
-  <div
-    className="inputWrap"
+  <label
+    className="searchLabel"
+    htmlFor="search"
   >
+    <span
+      className="visuallyhidden"
+    >
+      Search for...
+    </span>
     <input
-      className="inputBtn btnWhite searchBtn"
-      onClick={[Function]}
-      type="submit"
-      value="Go!"
+      className="searchText"
+      id="search"
+      onChange={[Function]}
+      placeholder="Search for..."
+      type="text"
     />
+  </label>
+  <div
+    className="btnWrap"
+  >
+    <div
+      className="inputWrap"
+    >
+      <input
+        className="inputBtn btnWhite searchBtn"
+        onClick={[Function]}
+        type="submit"
+        value="Go!"
+      />
+    </div>
   </div>
 </form>
 `;

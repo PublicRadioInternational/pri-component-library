@@ -8,6 +8,8 @@ import renderer from 'react-test-renderer';
 
 import CardItem from './CardItem.component';
 
+jest.mock('intersection-observer');
+
 describe('<CardItem />', () => {
   it('Matches the Card Item Default snapshot', () => {
     const component = renderer

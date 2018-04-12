@@ -12,18 +12,18 @@ exports[`<Accordion /> Matches the List snapshot 1`] = `
       className="accordionTopHeading"
     >
       <a
-        aria-controls="collapseNews"
+        aria-controls={null}
         aria-expanded="true"
         className="accordionTopLink accordionTopLinkBlue"
         date-parent="#accordion"
         date-toggle="accordionContent"
-        href="#collapseNews"
-        id="newsPrograms"
+        href="#null"
         onClick={[Function]}
       >
         Test
         <svg
           aria-hidden={true}
+          aria-label={null}
           aria-labelledby={null}
           className="svg iconDown"
           fill="currentcolor"
@@ -40,8 +40,9 @@ exports[`<Accordion /> Matches the List snapshot 1`] = `
     </h5>
   </div>
   <div
-    aria-labelledby="newsPrograms"
+    aria-labelledby="Test"
     className="accordionContent"
+    id={null}
     role="tabpanel"
   >
     <ul

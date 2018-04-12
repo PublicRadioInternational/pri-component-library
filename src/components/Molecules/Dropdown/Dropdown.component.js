@@ -77,6 +77,7 @@ export default class Dropdown extends Component {
               className={`${styles[`btnDropdown${color}`]} ${styles.btnHide}`}
               color={color}
               small={small}
+              aria-label="Open Dropdown"
             />
             {isOpen ? <div className={styles.dropdown}>{children}</div> : null}
           </div>

@@ -1,10 +1,24 @@
 {
-  "presets": ["env", "stage-0", "react"],
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "Explorer 11"]
+        },
+        "useBuiltIns": true
+      }
+    ],
+    "stage-0",
+    "react"
+  ],
   "plugins": [
     "babel-plugin-macros",
-    ["transform-runtime", {
-      "polyfill": false,
-      "regenerator": true
-    }]
+    [
+      "transform-runtime",
+      {
+        "regenerator": true
+      }
+    ]
   ]
 }

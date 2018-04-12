@@ -4,6 +4,7 @@ exports[`<MenuList /> Matches the Menu List snapshot 1`] = `
 <div
   aria-labelledby={null}
   className="menuList"
+  id={null}
   role={null}
 >
   <ul

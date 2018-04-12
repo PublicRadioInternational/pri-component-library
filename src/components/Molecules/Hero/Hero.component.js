@@ -8,6 +8,7 @@ import PropTypes from 'prop-types';
 import styles from './Hero.css';
 
 import Icon from '../../Atoms/Svg/Icons.component';
+import LazyLoad from '../../Atoms/LazyLoad/LazyLoad.component';
 
 const Hero = ({
   title,
@@ -21,12 +22,19 @@ const Hero = ({
 }) => (
   <article typeof="sioc:Item foaf:Document" className={styles.hero}>
     <figure className={styles.figure}>
-      <img className={styles.img} src={imgSrc} alt={imgAlt} />
+      <LazyLoad>
+        <img className={styles.img} data-src={imgSrc} alt={imgAlt} />
+      </LazyLoad>
     </figure>
     <div className={styles.text}>
       {hasAudio && (
         <a className={styles.iconLink} href={url}>
-          <Icon name="volume" className={styles.icon} isRoundIcon />
+          <Icon
+            name="volume"
+            className={styles.icon}
+            isRoundIcon
+            ariaLabel="Audio"
+          />
         </a>
       )}
       <h2>

@@ -6,6 +6,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from '@storybook/addon-a11y';
+import sharedStyles from '../00_global/shared.css';
 
 import TeaserList from './Teaser/TeaserList.component';
 import TeaserItem from '../Molecules/Teaser/TeaserItem.component';
@@ -184,15 +185,18 @@ storiesOf('Organisms/BlockList', module)
         >
           <span>
             <span className="form-item form-type-textfield form-item-email GoogleAnalyticsET-processed">
-              <input
-                type="text"
-                id="edit-email"
-                name="email"
-                placeholder="Your Email"
-                size="60"
-                maxLength="200"
-                className="form-text required"
-              />
+              <label htmlFor="edit-email">
+                <span className={sharedStyles.visuallyhidden}>Email</span>
+                <input
+                  type="text"
+                  id="edit-email"
+                  name="email"
+                  placeholder="Your Email"
+                  size="60"
+                  maxLength="200"
+                  className="form-text required"
+                />
+              </label>
             </span>
             <input
               type="hidden"

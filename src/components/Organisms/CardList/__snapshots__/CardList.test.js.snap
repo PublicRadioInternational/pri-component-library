@@ -12,7 +12,7 @@ exports[`<CardList /> Matches the Card List snapshot 1`] = `
       href="#"
     >
       <img
-        alt="PRIs The World"
+        alt=""
         className="logo"
         src="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
       />

@@ -75,7 +75,7 @@ export default class CtaMessage extends Component {
     return (
       <div className={promptClass}>
         <button className={styles.close} onClick={this.handleDismissClick}>
-          <Icon name="cross" width={18} height={18} />
+          <Icon name="cross" width={18} height={18} ariaLabel="Close" />
         </button>
         <div className={styles.content}>
           {showLogo && (

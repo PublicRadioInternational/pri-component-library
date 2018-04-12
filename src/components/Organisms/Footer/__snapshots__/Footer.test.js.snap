@@ -12,7 +12,6 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
     >
       <svg
         aria-hidden={null}
-        aria-labelledby="PRI"
         className="disableHover"
         fill="currentcolor"
         height={32}
@@ -80,6 +79,7 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
     <div
       aria-labelledby={null}
       className=""
+      id={null}
       role={null}
     >
       <ul
