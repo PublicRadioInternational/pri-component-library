@@ -35,8 +35,8 @@
     "**/*.{js,jsx,json,css}": ["prettier --write", "git add"]
   },
   "release": {
-    "verifyConditions": ["@semantic-release/github"],
-    "publish": ["@semantic-release/github"],
+    "verifyConditions": ["@semantic-release/npm", "@semantic-release/github"],
+    "publish": ["@semantic-release/npm", "@semantic-release/github"],
     "success": ["@semantic-release/github"],
     "fail": ["@semantic-release/github"]
   },
