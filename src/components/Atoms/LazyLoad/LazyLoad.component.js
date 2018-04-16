@@ -8,6 +8,10 @@ import Observer from '@researchgate/react-intersection-observer';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+if (typeof window !== 'undefined') {
+  require('intersection-observer'); // eslint-disable-line
+}
+
 /**
  * Component that renders a Card Item.
  */
