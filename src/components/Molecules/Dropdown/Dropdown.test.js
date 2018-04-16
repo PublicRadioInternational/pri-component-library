@@ -14,7 +14,7 @@ describe('<Dropdown />', () => {
     const wrapper = mount(
       <Dropdown url="https://google.com" title="Listen" onClick={onClick} />
     );
-    wrapper.find('a.btnWhite .btnGrp').simulate('click');
+    wrapper.find('a.btnWhite.btnGrp').simulate('click');
     expect(onClick).toHaveBeenCalledTimes(1);
   });
 
