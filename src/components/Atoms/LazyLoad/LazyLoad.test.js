@@ -5,6 +5,7 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
+// import { shallow } from 'enzyme';
 
 import LazyLoad from './LazyLoad.component';
 
@@ -13,10 +14,22 @@ describe('<LazyLoad />', () => {
     const component = renderer
       .create(
         <LazyLoad>
-          <span>Lazy Load Me</span>
+          <img data-src="" alt="testing" />
         </LazyLoad>
       )
       .toJSON();
     expect(component).toMatchSnapshot();
   });
+
+  // it('Handles Interaction events', () => {
+  //   const onChange = jest.fn();
+  //   const itemWrapper = shallow(
+  //     <LazyLoad onChange={onChange}>
+  //       <img data-src="" alt="testing" />
+  //     </LazyLoad>
+  //   );
+  //   itemWrapper.simulate('change');
+  //   expect(onChange).toHaveBeenCalledTimes(1);
+  //   expect(itemWrapper).toMatchSnapshot();
+  // });
 });
