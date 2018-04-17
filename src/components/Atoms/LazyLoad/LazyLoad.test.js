@@ -42,7 +42,6 @@ describe('<LazyLoad />', () => {
     });
 
     expect(rmAttr).toHaveBeenCalledTimes(1);
-    expect(itemWrapper).toMatchSnapshot();
   });
 
   it('Does not load images unexpectedly', () => {
@@ -66,6 +65,5 @@ describe('<LazyLoad />', () => {
     });
 
     expect(rmAttr).not.toHaveBeenCalled();
-    expect(itemWrapper).toMatchSnapshot();
   });
 });
