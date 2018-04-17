@@ -117,8 +117,9 @@ const CardItem = ({
       )}
       <BlurbContent freeform={freeform} className={largeClasses('blurb')}>
         {blurb ? (
+          /* eslint-disable-next-line */
           <span dangerouslySetInnerHTML={{ __html: blurb }} />
-        ) : null /* eslint-disable-line */}
+        ) : null}
         {hasAudio && (
           <a className={styles.iconLink} href={url}>
             <Icon
