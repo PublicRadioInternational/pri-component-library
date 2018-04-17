@@ -126,7 +126,7 @@ storiesOf('Molecules/CtaMessage', module)
       onClose={action('close-prompt')}
       showLogo
       title="Google is the #1 search engine."
-      description="Don't belive us? Google it."
+      description="Don't believe us? Google it."
       action={{
         label: 'Google It',
         btnColor: 'Orange',
@@ -145,7 +145,7 @@ storiesOf('Molecules/CtaMessage', module)
       onClose={action('close-prompt')}
       type="loadUnder"
       title="Google is the #1 search engine."
-      description="Don't belive us? Google it."
+      description="Don't believe us? Google it."
       action={{
         label: 'Google It',
         btnColor: 'Blue',
