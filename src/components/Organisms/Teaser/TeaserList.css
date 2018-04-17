@@ -1,13 +1,17 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value grayDark, grayLight, whiteDark from colors;
+@value grayDark, grayLight, grayLighter, whiteDark from colors;
 
 .section {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
   background-color: whiteDark;
 }
 
 .header {
   border-top: 3px solid #ddd;
+  border-bottom: 1px solid grayLighter;
   padding: 10px 15px;
   font-size: 1rem;
   line-height: 1.2;
@@ -16,13 +20,24 @@
   font-family: 'Raleway', sans-serif;
 }
 
+.content {
+  flex-grow: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+  /*display: none;*/
+  width: 0;
+}
+
 .footer {
   padding: 1rem;
+  border-top: 1px solid grayLighter;
 }
 
 .footer a {
   display: block;
-  width: 100%;
   font-weight: normal;
   text-transform: none;
   box-sizing: border-box;

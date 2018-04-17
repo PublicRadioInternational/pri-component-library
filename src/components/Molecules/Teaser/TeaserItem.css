@@ -7,11 +7,11 @@
 
 .teaserItem {
   padding: 0.875rem;
-  border-bottom: 1px solid grayLighter;
+  border-top: 1px solid grayLighter;
 }
 
 .teaserItem:first-of-type {
-  border-top: 1px solid grayLighter;
+  border-top: none;
 }
 
 @media bp-med {
