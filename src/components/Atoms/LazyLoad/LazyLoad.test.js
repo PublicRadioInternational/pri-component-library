@@ -22,12 +22,13 @@ describe('<LazyLoad />', () => {
   });
 
   it('Handles Interaction events', () => {
-    const onChange = jest.fn();
     const itemWrapper = shallow(
-      <LazyLoad onChange={onChange}>
+      <LazyLoad>
         <img data-src="" alt="testing" />
       </LazyLoad>
     );
+
+    const rmAttr = jest.fn();
 
     itemWrapper.simulate('change', {
       isIntersecting: true,
@@ -35,10 +36,36 @@ describe('<LazyLoad />', () => {
         dataset: {
           src: 'https://placeimg.com/640/480/any'
         },
-        addEventListener: jest.fn(),
-        removeAttribute: jest.fn()
+        addEventListener: jest.fn((_, cb) => cb()),
+        removeAttribute: rmAttr
       }
     });
+
+    expect(rmAttr).toHaveBeenCalledTimes(1);
+    expect(itemWrapper).toMatchSnapshot();
+  });
+
+  it('Does not load images unexpectedly', () => {
+    const itemWrapper = shallow(
+      <LazyLoad>
+        <img data-src="" alt="testing" />
+      </LazyLoad>
+    );
+
+    const rmAttr = jest.fn();
+
+    itemWrapper.simulate('change', {
+      isIntersecting: false,
+      target: {
+        dataset: {
+          src: 'https://placeimg.com/640/480/any'
+        },
+        addEventListener: jest.fn((_, cb) => cb()),
+        removeAttribute: rmAttr
+      }
+    });
+
+    expect(rmAttr).not.toHaveBeenCalled();
     expect(itemWrapper).toMatchSnapshot();
   });
 });
