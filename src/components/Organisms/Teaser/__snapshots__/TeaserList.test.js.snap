@@ -9,12 +9,16 @@ exports[`<TeaserItem /> Matches the Teaser List with more link snapshot 1`] = `
   >
     Test Title
   </header>
-  <span>
-    Test Item One
-  </span>
-  <span>
-    test Item Two
-  </span>
+  <div
+    className="content"
+  >
+    <span>
+      Test Item One
+    </span>
+    <span>
+      test Item Two
+    </span>
+  </div>
   <footer
     className="footer"
   >
@@ -38,11 +42,15 @@ exports[`<TeaserItem /> Matches the Teaser List without more link snapshot 1`] =
   >
     Test Title
   </header>
-  <span>
-    Test Item One
-  </span>
-  <span>
-    test Item Two
-  </span>
+  <div
+    className="content"
+  >
+    <span>
+      Test Item One
+    </span>
+    <span>
+      test Item Two
+    </span>
+  </div>
 </section>
 `;
