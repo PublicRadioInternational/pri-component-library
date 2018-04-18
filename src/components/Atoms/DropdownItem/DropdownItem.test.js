@@ -19,7 +19,6 @@ describe('<DropdownItem />', () => {
     );
     itemWrapper.find('a').simulate('click');
     expect(onClick).toHaveBeenCalledTimes(1);
-    expect(itemWrapper).toMatchSnapshot();
   });
 
   it('Matches the Dropdown Item Link snapshot', () => {
