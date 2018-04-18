@@ -26,7 +26,6 @@ describe('<Dropdown />', () => {
       </Dropdown>
     );
     expect(wrapper.find('.dropdown')).toHaveLength(0);
-    expect(wrapper).toMatchSnapshot();
     wrapper.find('button.btnDropdownWhite').simulate('click');
     expect(wrapper.find('.dropdown')).toHaveLength(1);
   });
