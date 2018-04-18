@@ -16,17 +16,11 @@ const cx = classNames.bind(styles);
 /**
  * Renders it's children, linked to a given url.
  */
-const LinkedItem = ({ url, children, className }) => {
-  if (url) {
-    return (
-      <a className={className} href={url}>
-        {children}
-      </a>
-    );
-  }
-
-  return children || null;
-};
+const LinkedItem = ({ url, children, className }) => (
+  <a className={className} href={url}>
+    {children}
+  </a>
+);
 
 LinkedItem.propTypes = {
   url: PropTypes.string,
@@ -123,8 +117,9 @@ const CardItem = ({
       )}
       <BlurbContent freeform={freeform} className={largeClasses('blurb')}>
         {blurb ? (
-          <span dangerouslySetInnerHTML={{ __html: blurb }} /> // eslint-disable-line
-        ) : null /* eslint-disable-line */}
+          /* eslint-disable-next-line */
+          <span dangerouslySetInnerHTML={{ __html: blurb }} />
+        ) : null}
         {hasAudio && (
           <a className={styles.iconLink} href={url}>
             <Icon

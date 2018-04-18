@@ -38,7 +38,7 @@ export default class Search extends Component {
   handleFieldUpdate = event => {
     event.persist();
     this.setState(() => ({
-      searchFieldValue: event.target.value || null
+      searchFieldValue: event.target.value
     }));
   };
 

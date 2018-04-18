@@ -1791,7 +1791,12 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             <h2
               className="title "
             >
-              Egyptian singer faces the prospect of prison over a joke about the Nile
+              <a
+                className="link "
+                href={null}
+              >
+                Egyptian singer faces the prospect of prison over a joke about the Nile
+              </a>
             </h2>
             <span
               content="Egyptian singer faces the prospect of prison over a joke about the Nile"
@@ -1806,12 +1811,17 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <figure
             className="image"
           >
-            <img
-              alt="Alt Text"
-              className="img"
-              data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/GettyImages-925030722_master.jpg?itok=LSMUCQbS"
-              typeof="foaf:Image"
-            />
+            <a
+              className={null}
+              href={null}
+            >
+              <img
+                alt="Alt Text"
+                className="img"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/GettyImages-925030722_master.jpg?itok=LSMUCQbS"
+                typeof="foaf:Image"
+              />
+            </a>
           </figure>
           <p
             className="blurb"

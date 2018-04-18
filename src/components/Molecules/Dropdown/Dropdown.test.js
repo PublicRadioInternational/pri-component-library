@@ -14,7 +14,7 @@ describe('<Dropdown />', () => {
     const wrapper = mount(
       <Dropdown url="https://google.com" title="Listen" onClick={onClick} />
     );
-    wrapper.find('a.btnWhite .btnGrp').simulate('click');
+    wrapper.find('a.btnWhite.btnGrp').simulate('click');
     expect(onClick).toHaveBeenCalledTimes(1);
   });
 
@@ -33,7 +33,10 @@ describe('<Dropdown />', () => {
   it('Matches the snapshot', () => {
     const onClick = jest.fn();
     const component = renderer.create(
-      <Dropdown url="https://google.com" title="Listen" onClick={onClick} />
+      <Dropdown url="https://google.com" title="Listen" onClick={onClick}>
+        <span>One</span>
+        <span>Two</span>
+      </Dropdown>
     );
     expect(component.toJSON()).toMatchSnapshot();
   });

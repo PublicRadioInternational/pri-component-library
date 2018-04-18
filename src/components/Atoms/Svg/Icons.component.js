@@ -89,22 +89,29 @@ const Icon = props => {
         return null;
     }
   };
-  return (
-    <svg
-      className={iconClass}
-      height={height}
-      width={width}
-      version={version}
-      viewBox={viewBox}
-      aria-label={ariaLabel}
-      aria-labelledby={ariaLabelledby}
-      aria-hidden={props.ariaHidden || null}
-      fill="currentcolor"
-    >
-      {title && <title>{title}</title>}
-      {iconPath(name)}
-    </svg>
-  );
+
+  const icon = iconPath(name);
+
+  if (icon) {
+    return (
+      <svg
+        className={iconClass}
+        height={height}
+        width={width}
+        version={version}
+        viewBox={viewBox}
+        aria-label={ariaLabel}
+        aria-labelledby={ariaLabelledby}
+        aria-hidden={props.ariaHidden || null}
+        fill="currentcolor"
+      >
+        {title && <title>{title}</title>}
+        {icon}
+      </svg>
+    );
+  }
+
+  return null;
 };
 
 Icon.propTypes = {

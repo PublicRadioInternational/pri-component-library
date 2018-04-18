@@ -1,5 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Layout /> Matches the Layout content area snapshot 1`] = `
+<main
+  className="mainContainer"
+>
+  <section
+    className="className && mainList"
+  >
+    <p>
+      Main List
+    </p>
+  </section>
+  <aside
+    className="className && latestContent"
+  >
+    <p>
+      Latest Content
+    </p>
+  </aside>
+  <aside
+    className="className && callouts"
+  >
+    <p>
+      Callouts
+    </p>
+  </aside>
+  <section
+    className="className && mainList2"
+  >
+    <p>
+      Main List Two
+    </p>
+  </section>
+</main>
+`;
+
 exports[`<Main /> Matches the Main content area snapshot 1`] = `
 <main
   className="mainContainer"

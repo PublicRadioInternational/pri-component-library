@@ -33,7 +33,7 @@ describe('<CardItem />', () => {
     expect(component).toMatchSnapshot();
   });
 
-  it('Matches the Card Item No Link  snapshot', () => {
+  it('Matches the Card Item No Link snapshot', () => {
     const component = renderer
       .create(
         <CardItem

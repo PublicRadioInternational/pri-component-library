@@ -91,7 +91,7 @@ exports[`<CardItem /> Matches the Card Item Large snapshot 1`] = `
 </article>
 `;
 
-exports[`<CardItem /> Matches the Card Item No Link  snapshot 1`] = `
+exports[`<CardItem /> Matches the Card Item No Link snapshot 1`] = `
 <article
   className="cardItem"
   typeof="sioc:Item foaf:Document"
@@ -102,7 +102,12 @@ exports[`<CardItem /> Matches the Card Item No Link  snapshot 1`] = `
     <h2
       className="title freeformTitle"
     >
-      Test Title
+      <a
+        className="link freeformLink"
+        href={null}
+      >
+        Test Title
+      </a>
     </h2>
     <span
       content="Test Title"
@@ -117,12 +122,17 @@ exports[`<CardItem /> Matches the Card Item No Link  snapshot 1`] = `
   <figure
     className="image"
   >
-    <img
-      alt={null}
-      className="img"
-      data-src="http://placehold.it/1920x1080.png"
-      typeof="foaf:Image"
-    />
+    <a
+      className={null}
+      href={null}
+    >
+      <img
+        alt={null}
+        className="img"
+        data-src="http://placehold.it/1920x1080.png"
+        typeof="foaf:Image"
+      />
+    </a>
   </figure>
   <div
     className="blurb"
