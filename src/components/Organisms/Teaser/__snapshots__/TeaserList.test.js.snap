@@ -9,23 +9,27 @@ exports[`<TeaserItem /> Matches the Teaser List with more link snapshot 1`] = `
   >
     Test Title
   </header>
-  <span>
-    Test Item One
-  </span>
-  <span>
-    test Item Two
-  </span>
-  <footer
-    className="footer"
+  <div
+    className="inner"
   >
-    <a
-      className="btnBlue"
-      href="more/"
-      onClick={[Function]}
+    <span>
+      Test Item One
+    </span>
+    <span>
+      test Item Two
+    </span>
+    <footer
+      className="footer"
     >
-      More Stories
-    </a>
-  </footer>
+      <a
+        className="btnBlue"
+        href="more/"
+        onClick={[Function]}
+      >
+        More Stories
+      </a>
+    </footer>
+  </div>
 </section>
 `;
 
@@ -38,11 +42,15 @@ exports[`<TeaserItem /> Matches the Teaser List without more link snapshot 1`] =
   >
     Test Title
   </header>
-  <span>
-    Test Item One
-  </span>
-  <span>
-    test Item Two
-  </span>
+  <div
+    className="inner"
+  >
+    <span>
+      Test Item One
+    </span>
+    <span>
+      test Item Two
+    </span>
+  </div>
 </section>
 `;

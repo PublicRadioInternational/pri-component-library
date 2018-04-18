@@ -2,8 +2,23 @@
 @value colors: "../../00_global/colors.css";
 @value grayDark, grayLight, whiteDark from colors;
 
+/* import breakpoints */
+@value header as bp-header from "../../00_global/breakpoints.css";
+
 .section {
   background-color: whiteDark;
+}
+
+@media bp-header {
+  .inner {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 95vh;
+  }
+
+  .inner::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .header {
