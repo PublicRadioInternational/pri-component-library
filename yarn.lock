@@ -225,6 +225,13 @@
     lodash "^4.17.4"
     url-template "^2.0.8"
 
+"@researchgate/react-intersection-observer@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@researchgate/react-intersection-observer/-/react-intersection-observer-0.6.0.tgz#505f20b62c8941a035442b61ac448870afb5d8a2"
+  dependencies:
+    invariant "^2.2.2"
+    prop-types "^15.6.0"
+
 "@semantic-release/commit-analyzer@^5.0.0":
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/@semantic-release/commit-analyzer/-/commit-analyzer-5.0.2.tgz#4db92f1aaed02397393ac78309892627c88eb64a"
@@ -314,6 +321,14 @@
     into-stream "^3.1.0"
     lodash "^4.17.4"
 
+"@storybook/addon-a11y@^3.3.15":
+  version "3.3.15"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-3.3.15.tgz#00bdf940e8cc22b48652384d5f97a8dc1de51d89"
+  dependencies:
+    "@storybook/components" "^3.3.15"
+    axe-core "^2.6.0"
+    prop-types "^15.6.0"
+
 "@storybook/addon-actions@^3.3.14":
   version "3.3.14"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.3.14.tgz#b78e707b32130ad16ea8a0af62a66f23b5df502b"
@@ -367,6 +382,14 @@
 "@storybook/components@^3.3.14":
   version "3.3.14"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-3.3.14.tgz#84ffcb5ac6a7d40e145402ed0d1521e6ad1b2d4d"
+  dependencies:
+    glamor "^2.20.40"
+    glamorous "^4.11.2"
+    prop-types "^15.6.0"
+
+"@storybook/components@^3.3.15":
+  version "3.3.15"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-3.3.15.tgz#50dc213958b18a0e64c1624c50bdfdaf023609aa"
   dependencies:
     glamor "^2.20.40"
     glamorous "^4.11.2"
@@ -919,6 +942,10 @@ aws-sign2@~0.7.0:
 aws4@^1.2.1, aws4@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
+
+axe-core@^2.6.0:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-2.6.1.tgz#28772c4f76966d373acda35b9a409299dc00d1b5"
 
 axobject-query@^0.1.0:
   version "0.1.0"
@@ -1673,7 +1700,7 @@ babel-plugin-transform-undefined-to-void@^6.8.3:
   version "6.9.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-undefined-to-void/-/babel-plugin-transform-undefined-to-void-6.9.0.tgz#eb5db0554caffe9ded0206468ec0c6c3b332b9d2"
 
-babel-polyfill@6.26.0:
+babel-polyfill@6.26.0, babel-polyfill@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.26.0.tgz#379937abc67d7895970adc621f284cd966cf2153"
   dependencies:
@@ -4718,6 +4745,10 @@ inquirer@^3.0.6:
 interpret@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.1.0.tgz#7ed1b1410c6a0e0f78cf95d3b8440c63f78b8614"
+
+intersection-observer@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/intersection-observer/-/intersection-observer-0.5.0.tgz#9fe8bee3953c755b1485c38efd9633d535775ea6"
 
 into-stream@^3.1.0:
   version "3.1.0"

@@ -5,7 +5,10 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames/bind';
 import styles from './List.css';
+
+const cx = classNames.bind(styles);
 
 /**
  * Component that renders a list.
@@ -20,7 +23,10 @@ export default class List extends Component {
     role: PropTypes.string,
     ariaLabelledby: PropTypes.string,
     reveal: PropTypes.bool,
-    classNameOpen: PropTypes.string
+    classNameOpen: PropTypes.string,
+    title: PropTypes.string,
+    titleClass: PropTypes.string,
+    id: PropTypes.string
   };
 
   static defaultProps = {
@@ -32,7 +38,10 @@ export default class List extends Component {
     role: null,
     ariaLabelledby: null,
     reveal: false,
-    classNameOpen: null
+    classNameOpen: null,
+    title: null,
+    titleClass: null,
+    id: null
   };
 
   render() {
@@ -45,22 +54,42 @@ export default class List extends Component {
       liClass,
       linkClass,
       reveal,
-      classNameOpen
+      classNameOpen,
+      title,
+      titleClass,
+      id
     } = this.props;
+
+    const listWrapClasses = cx({
+      [className]: className,
+      [classNameOpen]: reveal === true
+    });
+
+    const linkClasses = cx({
+      listLink: true,
+      [linkClass]: linkClass
+    });
 
     const items = listItems.map(item => (
       <li className={`${styles.listItem} ${liClass}`} key={item.name}>
-        <a className={`${styles.listLink} ${linkClass}`} href={item.url}>
+        <a
+          className={`${linkClasses} ${
+            item.itemLinkClass !== undefined ? styles[item.itemLinkClass] : ''
+          }`}
+          href={item.url}
+        >
           {item.name}
         </a>
       </li>
     ));
     return (
       <div
-        className={`${className} ${reveal === true ? classNameOpen : ''}`}
+        className={listWrapClasses}
         role={role}
         aria-labelledby={ariaLabelledby}
+        id={id}
       >
+        {title && <h2 className={titleClass}>{title}</h2>}
         <ul className={`${styles.list} ${ulClass}`}>{items}</ul>
       </div>
     );

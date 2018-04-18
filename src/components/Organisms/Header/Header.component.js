@@ -5,6 +5,7 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames/bind';
 import styles from './Header.css';
 import Icon from '../../Atoms/Svg/Icons.component';
 import PriLogo from '../../Atoms/Svg/PriLogo.component';
@@ -12,6 +13,8 @@ import Dropdown from '../../Molecules/Dropdown/Dropdown.component';
 import DropdownItem from '../../Atoms/DropdownItem/DropdownItem.component';
 import Search from '../../Molecules/Search/Search.component';
 import MainMenu from './MainMenu.component';
+
+const cx = classNames.bind(styles);
 
 /**
  * Component that renders the header.
@@ -27,11 +30,17 @@ export default class Header extends Component {
 
   render() {
     const { baseUrl } = this.props;
+    const bgClasses = cx({
+      bg: true,
+      bgOpen: this.state.isMenuOpen
+    });
+
     return (
       <header className={styles.siteHeader}>
         <button
-          className={`${styles.bg} ${this.state.isMenuOpen && styles.bgOpen}`}
+          className={bgClasses}
           onClick={this.toggleOpen}
+          aria-label="Close Overlay"
         />
         <div
           className={`${styles.mainMenu} ${this.state.isMenuOpen &&
@@ -40,7 +49,11 @@ export default class Header extends Component {
           <MainMenu toggleOpen={this.toggleOpen} />
         </div>
         <div className={styles.branding}>
-          <button className={styles.menuBtn} onClick={this.toggleOpen}>
+          <button
+            className={styles.menuBtn}
+            onClick={this.toggleOpen}
+            aria-label="Open Menu"
+          >
             <Icon name="menu" className={styles.menuIcon} />
           </button>
           <a href="/" className={styles.logo}>

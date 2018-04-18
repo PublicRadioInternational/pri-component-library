@@ -5,7 +5,10 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames/bind';
 import styles from './Icons.css';
+
+const cx = classNames.bind(styles);
 
 const Icon = props => {
   const {
@@ -14,10 +17,19 @@ const Icon = props => {
     className,
     inline,
     height,
+    ariaLabelledby,
+    ariaLabel,
     width,
     version,
-    viewBox
+    viewBox,
+    isRoundIcon
   } = props;
+  const iconClass = cx({
+    svg: true,
+    [className]: className && className,
+    inlineSvg: inline,
+    roundIcon: isRoundIcon
+  });
   const iconPath = iconName => {
     switch (iconName) {
       case 'heart':
@@ -69,29 +81,37 @@ const Icon = props => {
         return (
           <path d="M5 5c0-2.761 2.239-5 5-5s5 2.239 5 5v0 2c0 2.761-2.239 5-5 5s-5-2.239-5-5v0-2zM0 16.68c2.86-1.685 6.301-2.68 9.974-2.68 0.009 0 0.018 0 0.027 0h-0.001c3.64 0 7.060 0.97 10 2.68v3.32h-20v-3.32z" />
         );
+      case 'cross':
+        return (
+          <path d="M27.745 22.495c-0-0-0-0-0-0l-8.494-8.494 8.494-8.494c0-0 0-0 0-0 0.091-0.091 0.158-0.198 0.2-0.312 0.116-0.311 0.050-0.675-0.2-0.925l-4.013-4.013c-0.25-0.25-0.614-0.316-0.925-0.2-0.114 0.042-0.221 0.109-0.312 0.2 0 0-0 0-0 0l-8.494 8.494-8.494-8.494c-0-0-0-0-0-0-0.091-0.091-0.198-0.158-0.312-0.2-0.311-0.116-0.675-0.050-0.925 0.2l-4.013 4.013c-0.25 0.25-0.316 0.614-0.2 0.925 0.042 0.114 0.109 0.221 0.2 0.312 0 0 0 0 0 0l8.494 8.494-8.494 8.494c-0 0-0 0-0 0-0.091 0.091-0.157 0.198-0.2 0.312-0.116 0.311-0.050 0.675 0.2 0.925l4.013 4.013c0.25 0.25 0.614 0.316 0.925 0.2 0.114-0.042 0.221-0.109 0.312-0.2 0-0 0-0 0-0l8.494-8.494 8.494 8.494c0 0 0 0 0 0 0.092 0.091 0.198 0.158 0.312 0.2 0.311 0.116 0.675 0.050 0.925-0.2l4.013-4.013c0.25-0.25 0.316-0.614 0.2-0.925-0.042-0.114-0.109-0.221-0.2-0.312z" />
+        );
       default:
         return null;
     }
   };
-  return (
-    <svg
-      className={
-        inline
-          ? `${styles.inlineSvg} ${className && className} ${styles.svg}`
-          : className && className
-      }
-      height={height}
-      width={width}
-      version={version}
-      viewBox={viewBox}
-      aria-labelledby={title}
-      aria-hidden={props.ariaHidden || null}
-      fill="currentcolor"
-    >
-      {title && <title>{title}</title>}
-      {iconPath(name)}
-    </svg>
-  );
+
+  const icon = iconPath(name);
+
+  if (icon) {
+    return (
+      <svg
+        className={iconClass}
+        height={height}
+        width={width}
+        version={version}
+        viewBox={viewBox}
+        aria-label={ariaLabel}
+        aria-labelledby={ariaLabelledby}
+        aria-hidden={props.ariaHidden || null}
+        fill="currentcolor"
+      >
+        {title && <title>{title}</title>}
+        {icon}
+      </svg>
+    );
+  }
+
+  return null;
 };
 
 Icon.propTypes = {
@@ -107,27 +127,34 @@ Icon.propTypes = {
     'facebook',
     'twitter',
     'rss',
-    'user'
+    'user',
+    'cross'
   ]).isRequired,
   title: PropTypes.string,
   className: PropTypes.string,
   inline: PropTypes.bool,
+  ariaLabelledby: PropTypes.string,
+  ariaLabel: PropTypes.string,
   ariaHidden: PropTypes.bool,
   height: PropTypes.number,
   width: PropTypes.number,
   version: PropTypes.number,
-  viewBox: PropTypes.string
+  viewBox: PropTypes.string,
+  isRoundIcon: PropTypes.bool
 };
 
 Icon.defaultProps = {
   title: null,
   className: null,
   inline: false,
+  ariaLabelledby: null,
+  ariaLabel: null,
   ariaHidden: false,
   height: 28,
   width: 28,
   version: 1.1,
-  viewBox: '0 0 28 28'
+  viewBox: '0 0 28 28',
+  isRoundIcon: false
 };
 
 export default Icon;

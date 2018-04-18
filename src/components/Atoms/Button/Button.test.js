@@ -94,7 +94,12 @@ describe('<ButtonInput />', () => {
     const onClick = jest.fn();
     const component = renderer
       .create(
-        <ButtonInput value={title} onClick={onClick} className={className} />
+        <ButtonInput
+          value={title}
+          onClick={onClick}
+          className={className}
+          icon="heart"
+        />
       )
       .toJSON();
     expect(component).toMatchSnapshot();

@@ -13,8 +13,9 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
     >
       <svg
         aria-hidden={true}
+        aria-label={null}
         aria-labelledby={null}
-        className="inlineSvg inlineLink svg"
+        className="svg inlineLink inlineSvg"
         fill="currentcolor"
         height={28}
         version={1.1}
@@ -35,7 +36,6 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
-          aria-labelledby="PRI"
           className="maxWidth"
           fill="currentcolor"
           height={32}
@@ -73,8 +73,9 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         >
           <svg
             aria-hidden={true}
+            aria-label={null}
             aria-labelledby={null}
-            className="inlineSvg null svg"
+            className="svg inlineSvg"
             fill="currentcolor"
             height={28}
             version={1.1}
@@ -94,8 +95,9 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         >
           <svg
             aria-hidden={true}
+            aria-label={null}
             aria-labelledby={null}
-            className="inlineSvg null svg"
+            className="svg inlineSvg"
             fill="currentcolor"
             height={28}
             version={1.1}
@@ -115,8 +117,9 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         >
           <svg
             aria-hidden={true}
+            aria-label={null}
             aria-labelledby={null}
-            className="inlineSvg null svg"
+            className="svg inlineSvg"
             fill="currentcolor"
             height={28}
             version={1.1}
@@ -148,20 +151,20 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           className="accordionTopHeading"
         >
           <a
-            aria-controls="collapseNews"
+            aria-controls="NewsMenu"
             aria-expanded="true"
-            className="accordionTopLink accordionTopLinkBlue "
+            className="accordionTopLink accordionTopLinkBlue"
             date-parent="#accordion"
             date-toggle="accordionContent"
-            href="#collapseNews"
-            id="newsPrograms"
+            href="#NewsMenu"
             onClick={[Function]}
           >
             News Programs
             <svg
               aria-hidden={true}
+              aria-label={null}
               aria-labelledby={null}
-              className="iconDown "
+              className="svg iconDown"
               fill="currentcolor"
               height={28}
               version={1.1}
@@ -176,8 +179,9 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         </h5>
       </div>
       <div
-        aria-labelledby="newsPrograms"
-        className="accordionContent "
+        aria-labelledby="News Programs"
+        className="accordionContent"
+        id="NewsMenu"
         role="tabpanel"
       >
         <ul
@@ -187,7 +191,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
               href="https://www.pri.org/programs/america-abroad"
             >
               America Abroad
@@ -197,7 +201,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
               href="https://www.pri.org/programs/it-happens"
             >
               As it Happens
@@ -207,7 +211,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
               href="https://www.pri.org/programs/boston-calling"
             >
               Boston Calling
@@ -217,7 +221,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
               href="https://www.pri.org/programs/day-6"
             >
               Day 6
@@ -227,7 +231,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
               href="https://www.pri.org/programs/innovation-hub"
             >
               Innovation Hub
@@ -237,7 +241,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
               href="https://www.pri.org/programs/living-earth"
             >
               Living on Earth
@@ -247,7 +251,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
               href="https://www.pri.org/programs/the-world"
             >
               PRI's The World
@@ -257,7 +261,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
               href="https://www.pri.org/programs/takeaway"
             >
               The Takeaway
@@ -277,20 +281,20 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           className="accordionTopHeading"
         >
           <a
-            aria-controls="collapseNews"
+            aria-controls="MusicVarietyMenu"
             aria-expanded="true"
-            className="accordionTopLink accordionTopLinkYellow "
+            className="accordionTopLink accordionTopLinkYellow"
             date-parent="#accordion"
             date-toggle="accordionContent"
-            href="#collapseNews"
-            id="newsPrograms"
+            href="#MusicVarietyMenu"
             onClick={[Function]}
           >
             Music & Variety Programs
             <svg
               aria-hidden={true}
+              aria-label={null}
               aria-labelledby={null}
-              className="iconDown "
+              className="svg iconDown"
               fill="currentcolor"
               height={28}
               version={1.1}
@@ -305,8 +309,9 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         </h5>
       </div>
       <div
-        aria-labelledby="newsPrograms"
-        className="accordionContent "
+        aria-labelledby="Music & Variety Programs"
+        className="accordionContent"
+        id="MusicVarietyMenu"
         role="tabpanel"
       >
         <ul
@@ -316,7 +321,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/programs/afropop-worldwide"
             >
               Afropop Worldwide
@@ -326,7 +331,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/programs/echoes"
             >
               Echoes
@@ -336,7 +341,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/programs/jazz-after-hours"
             >
               Jazz After Hours
@@ -346,7 +351,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/programs/live-wire"
             >
               Live Wire
@@ -356,7 +361,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/programs/on-story"
             >
               On Story
@@ -366,7 +371,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/programs/out-open"
             >
               Out in the Open
@@ -376,7 +381,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/programs/pittsburgh-symphony-orchestra"
             >
               Pittsburgh Symphony Orchestra
@@ -386,7 +391,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/programs/selected-shorts"
             >
               q from the CBC
@@ -396,7 +401,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/programs/studio-360"
             >
               Studio 360
@@ -416,20 +421,20 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           className="accordionTopHeading"
         >
           <a
-            aria-controls="collapseNews"
+            aria-controls="PodcastsMenu"
             aria-expanded="true"
-            className="accordionTopLink accordionTopLinkGreen "
+            className="accordionTopLink accordionTopLinkGreen"
             date-parent="#accordion"
             date-toggle="accordionContent"
-            href="#collapseNews"
-            id="newsPrograms"
+            href="#PodcastsMenu"
             onClick={[Function]}
           >
             Podcasts
             <svg
               aria-hidden={true}
+              aria-label={null}
               aria-labelledby={null}
-              className="iconDown "
+              className="svg iconDown"
               fill="currentcolor"
               height={28}
               version={1.1}
@@ -444,8 +449,9 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         </h5>
       </div>
       <div
-        aria-labelledby="newsPrograms"
-        className="accordionContent "
+        aria-labelledby="Podcasts"
+        className="accordionContent"
+        id="PodcastsMenu"
         role="tabpanel"
       >
         <ul
@@ -455,7 +461,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
               href="https://www.pri.org/programs/lbjs-war"
             >
               LBJ's War
@@ -465,7 +471,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
               href="https://www.pri.org/programs/otherhood"
             >
               Otherhood
@@ -475,7 +481,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
               href="https://www.pri.org/programs/podcast-playlist"
             >
               Podcast Playlist
@@ -485,7 +491,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
               href="https://www.pri.org/programs/science-happiness"
             >
               Science of Happiness
@@ -495,7 +501,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
               href="https://www.pri.org/programs/world-words"
             >
               The World in Words
@@ -505,7 +511,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
               href="https://www.pri.org/programs/things-go-boom"
             >
               Things That Go Boom
@@ -525,20 +531,20 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           className="accordionTopHeading"
         >
           <a
-            aria-controls="collapseNews"
+            aria-controls="ListenMenu"
             aria-expanded="true"
-            className="accordionTopLink accordionTopLinkOrange "
+            className="accordionTopLink accordionTopLinkOrange"
             date-parent="#accordion"
             date-toggle="accordionContent"
-            href="#collapseNews"
-            id="newsPrograms"
+            href="#ListenMenu"
             onClick={[Function]}
           >
             Listen
             <svg
               aria-hidden={true}
+              aria-label={null}
               aria-labelledby={null}
-              className="iconDown "
+              className="svg iconDown"
               fill="currentcolor"
               height={28}
               version={1.1}
@@ -553,8 +559,9 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         </h5>
       </div>
       <div
-        aria-labelledby="newsPrograms"
-        className="accordionContent "
+        aria-labelledby="Listen"
+        className="accordionContent"
+        id="ListenMenu"
         role="tabpanel"
       >
         <ul
@@ -564,7 +571,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkOrange"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkOrange "
               href="https://www.pri.org/listen"
             >
               Live Stream
@@ -574,7 +581,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkOrange"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkOrange "
               href="https://www.pri.org/podcasts-program"
             >
               Podcasts by Program
@@ -584,7 +591,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkOrange"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkOrange "
               href="https://www.pri.org/ways-listen"
             >
               Ways to Listen
@@ -604,20 +611,20 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           className="accordionTopHeading"
         >
           <a
-            aria-controls="collapseNews"
+            aria-controls="FeaturesMenu"
             aria-expanded="true"
-            className="accordionTopLink accordionTopLinkBlue "
+            className="accordionTopLink accordionTopLinkBlue"
             date-parent="#accordion"
             date-toggle="accordionContent"
-            href="#collapseNews"
-            id="newsPrograms"
+            href="#FeaturesMenu"
             onClick={[Function]}
           >
             Features
             <svg
               aria-hidden={true}
+              aria-label={null}
               aria-labelledby={null}
-              className="iconDown "
+              className="svg iconDown"
               fill="currentcolor"
               height={28}
               version={1.1}
@@ -632,8 +639,9 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         </h5>
       </div>
       <div
-        aria-labelledby="newsPrograms"
-        className="accordionContent "
+        aria-labelledby="Features"
+        className="accordionContent"
+        id="FeaturesMenu"
         role="tabpanel"
       >
         <ul
@@ -643,7 +651,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
               href="https://www.pri.org/verticals/across-womens-lives"
             >
               Across Women's Lives
@@ -653,7 +661,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
               href="https://www.pri.org/verticals/global-nation"
             >
               Global Nation
@@ -663,7 +671,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
               href="https://www.pri.org/verticals/global-security"
             >
               Global Security
@@ -673,7 +681,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
               href="https://www.pri.org/verticals/livable-planet"
             >
               Livable Planet
@@ -683,7 +691,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
               href="https://www.pri.org/programs/globalpost"
             >
               GlobalPost
@@ -693,7 +701,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
               href="https://www.pri.org/collections/global-hit"
             >
               Global Hit
@@ -703,7 +711,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
               href="https://www.pri.org/collections/global-satire"
             >
               Global Satire
@@ -713,7 +721,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkBlue "
               href="https://www.pri.org/music-heard-on-air"
             >
               Music Heard on Air
@@ -733,20 +741,20 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           className="accordionTopHeading"
         >
           <a
-            aria-controls="collapseNews"
+            aria-controls="CategoriesMenu"
             aria-expanded="true"
-            className="accordionTopLink accordionTopLinkYellow "
+            className="accordionTopLink accordionTopLinkYellow"
             date-parent="#accordion"
             date-toggle="accordionContent"
-            href="#collapseNews"
-            id="newsPrograms"
+            href="#CategoriesMenu"
             onClick={[Function]}
           >
             Categories
             <svg
               aria-hidden={true}
+              aria-label={null}
               aria-labelledby={null}
-              className="iconDown "
+              className="svg iconDown"
               fill="currentcolor"
               height={28}
               version={1.1}
@@ -761,8 +769,9 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         </h5>
       </div>
       <div
-        aria-labelledby="newsPrograms"
-        className="accordionContent "
+        aria-labelledby="Categories"
+        className="accordionContent"
+        id="CategoriesMenu"
         role="tabpanel"
       >
         <ul
@@ -772,7 +781,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/sections/arts-culture-media"
             >
               Arts & Entertainment
@@ -782,7 +791,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/sections/conflict-justice"
             >
               Conflict & Justice
@@ -792,7 +801,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/sections/culture"
             >
               Culture & Society
@@ -802,7 +811,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/sections/development-educatio"
             >
               Development & Education
@@ -812,7 +821,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/sections/health-medicine"
             >
               Health & Medicine
@@ -822,7 +831,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/sections/history"
             >
               History
@@ -832,7 +841,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/verticals/global-nation"
             >
               Immigration
@@ -842,7 +851,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/sections/business-economics-and-jobs"
             >
               Money
@@ -852,7 +861,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/sections/politics"
             >
               Politics
@@ -862,7 +871,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/sections/science-tech-environment"
             >
               Science & Environment
@@ -872,7 +881,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/sections/technology"
             >
               Technology
@@ -882,7 +891,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkYellow "
               href="https://www.pri.org/verticals/across-womens-lives"
             >
               Women & Girls
@@ -902,20 +911,20 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           className="accordionTopHeading"
         >
           <a
-            aria-controls="collapseNews"
+            aria-controls="AboutMenu"
             aria-expanded="true"
-            className="accordionTopLink accordionTopLinkGreen "
+            className="accordionTopLink accordionTopLinkGreen"
             date-parent="#accordion"
             date-toggle="accordionContent"
-            href="#collapseNews"
-            id="newsPrograms"
+            href="#AboutMenu"
             onClick={[Function]}
           >
             About PRI
             <svg
               aria-hidden={true}
+              aria-label={null}
               aria-labelledby={null}
-              className="iconDown "
+              className="svg iconDown"
               fill="currentcolor"
               height={28}
               version={1.1}
@@ -930,8 +939,9 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         </h5>
       </div>
       <div
-        aria-labelledby="newsPrograms"
-        className="accordionContent "
+        aria-labelledby="About PRI"
+        className="accordionContent"
+        id="AboutMenu"
         role="tabpanel"
       >
         <ul
@@ -941,7 +951,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
               href="https://www.pri.org/about-pri"
             >
               About Us
@@ -951,7 +961,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
               href="https://www.pri.org/financials"
             >
               Annual Report
@@ -961,7 +971,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
               href="https://www.pri.org/priorg-contact"
             >
               Contact Us
@@ -971,7 +981,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
               href="https://www.pri.org/financials"
             >
               Financials
@@ -981,7 +991,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
               href="https://www.pri.org/team"
             >
               Meet the PRI.org team
@@ -991,7 +1001,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
               href="https://www.pri.org/work-us"
             >
               Work with Us
@@ -1011,20 +1021,20 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           className="accordionTopHeading"
         >
           <a
-            aria-controls="collapseNews"
+            aria-controls="GivingMenu"
             aria-expanded="true"
-            className="accordionTopLink accordionTopLinkOrange "
+            className="accordionTopLink accordionTopLinkOrange"
             date-parent="#accordion"
             date-toggle="accordionContent"
-            href="#collapseNews"
-            id="newsPrograms"
+            href="#GivingMenu"
             onClick={[Function]}
           >
             Giving
             <svg
               aria-hidden={true}
+              aria-label={null}
               aria-labelledby={null}
-              className="iconDown "
+              className="svg iconDown"
               fill="currentcolor"
               height={28}
               version={1.1}
@@ -1039,8 +1049,9 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         </h5>
       </div>
       <div
-        aria-labelledby="newsPrograms"
-        className="accordionContent "
+        aria-labelledby="Giving"
+        className="accordionContent"
+        id="GivingMenu"
         role="tabpanel"
       >
         <ul
@@ -1050,7 +1061,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
             className="listItem accordionContentMenuItem"
           >
             <a
-              className="listLink accordionContentMenuLink accordionContentMenuLinkOrange"
+              className="listLink accordionContentMenuLink accordionContentMenuLinkOrange "
               href="https://www.pri.org/donate/index.html?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations"
             >
               Donate
@@ -1073,8 +1084,9 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
-          aria-labelledby="Facebook"
-          className="socialMenuIcon"
+          aria-label={null}
+          aria-labelledby={null}
+          className="svg socialMenuIcon"
           fill="currentcolor"
           height={28}
           version={1.1}
@@ -1100,8 +1112,9 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
-          aria-labelledby="Twitter"
-          className="socialMenuIcon"
+          aria-label={null}
+          aria-labelledby={null}
+          className="svg socialMenuIcon"
           fill="currentcolor"
           height={28}
           version={1.1}
@@ -1127,8 +1140,9 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
-          aria-labelledby="Subscribe to our Newsletters"
-          className="socialMenuIcon socialMenuIconFull"
+          aria-label={null}
+          aria-labelledby={null}
+          className="svg socialMenuIcon socialMenuIconFull"
           fill="currentcolor"
           height={28}
           version={1.1}
@@ -1154,8 +1168,9 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
-          aria-labelledby="RSS"
-          className="socialMenuIcon socialMenuIconRSS"
+          aria-label={null}
+          aria-labelledby={null}
+          className="svg socialMenuIcon socialMenuIconRSS"
           fill="currentcolor"
           height={28}
           version={1.1}
@@ -1181,8 +1196,9 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
       >
         <svg
           aria-hidden={null}
-          aria-labelledby="Login"
-          className="socialMenuIcon socialMenuIconFull socialMenuIconFullLg"
+          aria-label={null}
+          aria-labelledby={null}
+          className="svg socialMenuIcon socialMenuIconFull socialMenuIconFullLg"
           fill="currentcolor"
           height={28}
           version={1.1}

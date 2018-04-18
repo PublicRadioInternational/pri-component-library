@@ -5,6 +5,7 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import sharedStyles from '../../00_global/shared.css';
 import styles from './Search.css';
 import ButtonInput from '../../Atoms/Button/ButtonInput.component';
 
@@ -37,7 +38,7 @@ export default class Search extends Component {
   handleFieldUpdate = event => {
     event.persist();
     this.setState(() => ({
-      searchFieldValue: event.target.value || null
+      searchFieldValue: event.target.value
     }));
   };
 
@@ -61,13 +62,19 @@ export default class Search extends Component {
   render() {
     return (
       <form className={styles.search} onSubmit={this.handleFormSubmit}>
-        <input
-          type="text"
-          className={styles.searchText}
-          placeholder="Search for..."
-          onChange={this.handleFieldUpdate}
-        />
-        <ButtonInput value="Go!" className={styles.searchBtn} />
+        <label htmlFor="search" className={styles.searchLabel}>
+          <span className={sharedStyles.visuallyhidden}>Search for...</span>
+          <input
+            type="text"
+            className={styles.searchText}
+            placeholder="Search for..."
+            onChange={this.handleFieldUpdate}
+            id="search"
+          />
+        </label>
+        <div className={styles.btnWrap}>
+          <ButtonInput value="Go!" className={styles.searchBtn} />
+        </div>
       </form>
     );
   }

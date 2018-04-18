@@ -1,0 +1,33 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value grayDark, grayLight, whiteDark from colors;
+
+.section {
+  background-color: whiteDark;
+}
+
+.header {
+  border-top: 3px solid #ddd;
+  padding: 10px 15px;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: grayDark;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.footer {
+  padding: 1rem;
+}
+
+.footer a {
+  display: block;
+  width: 100%;
+  font-weight: normal;
+  text-transform: none;
+  box-sizing: border-box;
+}
+
+.footer a::after {
+  content: ' >';
+}

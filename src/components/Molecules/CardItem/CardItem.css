@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value grayLighter, gray, orange from colors;
+@value grayLighter, grayDark, blue, gray, orange from colors;
 
 /* import breakpoints */
 @value min as bp-min from "../../00_global/breakpoints.css";
@@ -13,7 +13,7 @@
 }
 
 .cardItemLg {
-  padding: 0;
+  padding: 0 0 2rem;
 }
 
 @media bp-min {
@@ -26,13 +26,26 @@
 .titleWrapLg {
   flex: 0 1 100%;
   margin-right: 0;
-  padding: 0.5rem 1rem 0;
+  padding: 1rem 1rem 0;
 }
 
 .title {
   font-size: 1.5rem;
 }
 
+.freeformTitle {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: grayDark;
+}
+
+.freeformLink {
+  color: blue;
+  text-decoration: none;
+}
+
+.blurb h2 a,
 .link {
   color: gray;
   text-decoration: none;
@@ -74,8 +87,24 @@
   margin-top: 1rem;
 }
 
+div.blurb {
+  margin-top: 0;
+}
+
 .blurbLg {
   padding: 0 1rem;
+}
+
+.blurb a {
+  text-decoration: none;
+}
+
+.blurb a:hover {
+  color: orange;
+}
+
+.blurb p {
+  margin-top: 1rem;
 }
 
 .iconLink {
@@ -88,12 +117,7 @@
 }
 
 .icon {
-  background-color: orange;
-  border-radius: 18px;
-  height: 20px;
-  fill: currentColor;
   left: 3px;
   position: absolute;
   top: 1px;
-  width: 20px;
 }

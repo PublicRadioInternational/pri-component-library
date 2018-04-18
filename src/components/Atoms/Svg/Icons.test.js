@@ -13,4 +13,13 @@ describe('<Icon />', () => {
     const component = renderer.create(<Icon name="heart" />).toJSON();
     expect(component).toMatchSnapshot();
   });
+
+  it('Does not render an icon if an invalid name is provided', () => {
+    const IconStub = Icon;
+    delete IconStub.propTypes.name;
+    const component = renderer
+      .create(<IconStub name="non-existent" />)
+      .toJSON();
+    expect(component).toMatchSnapshot();
+  });
 });

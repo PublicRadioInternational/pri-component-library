@@ -7,8 +7,18 @@
     "git@github.com:PublicRadioInternational/pri-component-library.git",
   "author": "PRI",
   "license": "UNLICENSED",
-  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "contributors": [
+    {
+      "name": "Brandon Hundt",
+      "email": "bhundt@pri.org"
+    },
+    {
+      "name": "Rick Peterman",
+      "email": "rpeterman@pri.org"
+    },
     {
       "name": "Patrick Coffey",
       "email": "patrickcoffey48@gmail.com"
@@ -25,8 +35,8 @@
     "**/*.{js,jsx,json,css}": ["prettier --write", "git add"]
   },
   "release": {
-    "verifyConditions": ["@semantic-release/github"],
-    "publish": ["@semantic-release/github"],
+    "verifyConditions": ["@semantic-release/npm", "@semantic-release/github"],
+    "publish": ["@semantic-release/npm", "@semantic-release/github"],
     "success": ["@semantic-release/github"],
     "fail": ["@semantic-release/github"]
   },
@@ -47,19 +57,20 @@
     "lint": "eslint --ext .jsx,.js .",
     "test": "NODE_ENV=development jest --verbose --coverage --no-cache",
     "snapshot": "NODE_ENV=development jest -u",
-    "prettier": "prettier --write \"**/*.{js,jsx}\"",
+    "prettier": "prettier --write \"**/*.{js,jsx,json,css}\"",
     "precommit": "lint-staged && yarn lint && yarn test",
     "semantic-release": "semantic-release",
     "start": "NODE_ENV=development start-storybook -p 9001 -c .storybook",
     "build": "NODE_ENV=production build-storybook -c .storybook -o dist",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist ; npm publish"
   },
   "devDependencies": {
     "@commitlint/cli": "^6.1.2",
     "@commitlint/config-angular": "^6.1.2",
     "@semantic-release/github": "^4.0.3",
     "@semantic-release/npm": "^3.2.2",
+    "@storybook/addon-a11y": "^3.3.15",
     "@storybook/addon-actions": "^3.3.15",
     "@storybook/react": "^3.3.14",
     "babel-eslint": "^8.2.2",
@@ -82,13 +93,14 @@
     "react-test-renderer": "^16.2.0",
     "semantic-release": "^15.0.0"
   },
-  "publishConfig": {
-    "access": "restricted"
-  },
   "dependencies": {
+    "@researchgate/react-intersection-observer": "^0.6.0",
     "babel-plugin-macros": "^2.2.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-stage-0": "^6.24.1",
+    "classnames": "^2.2.5",
     "downshift": "^1.30.0",
+    "intersection-observer": "^0.5.0",
     "postcss-mixins": "^6.2.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"

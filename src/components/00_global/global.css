@@ -24,6 +24,7 @@ h6 {
   color: gray;
   font-family: heading;
   line-height: 1.2;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
@@ -46,7 +47,32 @@ a:hover {
   color: orange;
 }
 
+img[data-src] {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
 img {
   height: auto;
   max-width: 100%;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+iframe,
+video {
+  max-width: 100%;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  border-left: 3px solid orange;
+  font-family: 'Raleway', sans-serif;
+  color: gray;
+  font-size: 1.2em;
+  padding-left: 1rem;
 }

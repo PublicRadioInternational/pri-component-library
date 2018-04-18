@@ -1,3 +1,7 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value grayLighter, orange from colors;
+
 /* import breakpoints */
 @value header as bp-header, small as bp-small from "../../00_global/breakpoints.css";
 
@@ -12,4 +16,16 @@
   position: relative;
   top: 2px;
   width: 16px;
+}
+
+@define-mixin roundIcon {
+  background-color: orange;
+  border-radius: 50px;
+  height: 20px;
+  fill: currentColor;
+  width: 20px;
+}
+
+.roundIcon {
+  @mixin roundIcon;
 }

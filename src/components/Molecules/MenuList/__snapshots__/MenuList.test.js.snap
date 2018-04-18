@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuList /> Matches the Menu List snapshot 1`] = `
+<div
+  aria-labelledby={null}
+  className="menuList"
+  id={null}
+  role={null}
+>
+  <ul
+    className="list null"
+  />
+</div>
+`;

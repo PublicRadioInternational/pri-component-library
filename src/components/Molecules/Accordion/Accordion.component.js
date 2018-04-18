@@ -5,10 +5,13 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import styles from './Accordion.css';
+import classNames from 'classnames/bind';
 
 import Icon from '../../Atoms/Svg/Icons.component';
 import List from '../../Molecules/List/List.component';
+import styles from './Accordion.css';
+
+const cx = classNames.bind(styles);
 
 /**
  * Component that renders an accordion.
@@ -17,12 +20,14 @@ export default class Accordion extends Component {
   static propTypes = {
     accordionList: PropTypes.arrayOf(PropTypes.object),
     color: PropTypes.oneOf(['Blue', 'Orange', 'Yellow', 'Green']),
-    accordionTitle: PropTypes.string.isRequired
+    accordionTitle: PropTypes.string.isRequired,
+    listId: PropTypes.string
   };
 
   static defaultProps = {
     accordionList: {},
-    color: 'Blue'
+    color: 'Blue',
+    listId: null
   };
 
   state = { revealed: false };
@@ -35,47 +40,50 @@ export default class Accordion extends Component {
   };
 
   render() {
-    const { accordionList, color, accordionTitle } = this.props;
+    const { accordionList, color, accordionTitle, listId } = this.props;
     // Generate a class name based on the color.
     const accordionItemColor = `accordionItem${color}`;
     const accordionTopLinkColor = `accordionTopLink${color}`;
     const accordionContentMenuLinkColor = `accordionContentMenuLink${color}`;
+    const accordionTopLinkClasses = cx({
+      accordionTopLink: true,
+      [accordionTopLinkColor]: color,
+      accordionTopLinkOpen: this.state.revealed === true
+    });
+    const iconClasses = cx({
+      iconDown: true,
+      iconUp: this.state.revealed === true
+    });
 
     return (
       <div className={`${styles.accordionItem} ${styles[accordionItemColor]}`}>
         <div className={styles.accordionTop} role="tab">
           <h5 className={styles.accordionTopHeading}>
             <a
-              className={`${styles.accordionTopLink} ${
-                styles[accordionTopLinkColor]
-              } ${
-                this.state.revealed === true ? styles.accordionTopLinkOpen : ''
-              }`}
+              className={accordionTopLinkClasses}
               date-toggle={styles.accordionContent}
               date-parent="#accordion"
-              href="#collapseNews"
+              href={`#${listId}`}
               aria-expanded="true"
-              aria-controls="collapseNews"
+              aria-controls={listId}
               onClick={this.reveal}
-              id="newsPrograms"
             >
               {accordionTitle}
               <Icon
                 name="left"
                 ariaHidden
-                className={`${styles.iconDown} ${
-                  this.state.revealed === true ? styles.iconUp : ''
-                }`}
+                className={iconClasses}
                 viewBox="-2 -2 28 28"
               />
             </a>
           </h5>
         </div>
         <List
+          id={listId}
           className={styles.accordionContent}
           reveal={this.state.revealed}
           role="tabpanel"
-          ariaLabelledby="newsPrograms"
+          ariaLabelledby={accordionTitle}
           ulClass={styles.accordionContentMenu}
           classNameOpen={styles.accordionContentOpen}
           liClass={styles.accordionContentMenuItem}
