@@ -9,6 +9,14 @@ import { configure } from '@storybook/react';
 import styles from '../src/components/00_global/reset.css';
 import globalStyles from '../src/components/00_global/global.css';
 
+// config.js
+import { setDefaults } from '@storybook/addon-info';
+
+// addon-info
+setDefaults({
+  header: false // Toggles display of header with component name and description
+});
+
 /**
  * Loads story files.
  */
