@@ -6,6 +6,16 @@
   background-color: whiteDark;
 }
 
+.inner {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 95vh;
+}
+
+.inner::-webkit-scrollbar {
+  display: none;
+}
+
 .header {
   border-top: 3px solid #ddd;
   padding: 10px 15px;

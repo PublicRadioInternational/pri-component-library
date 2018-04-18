@@ -16,14 +16,16 @@ import Section from '../Content/Section.component';
 const TeaserList = ({ title, moreTitle, moreUrl, children }) => (
   <Section className={styles.section}>
     <header className={styles.header}>{title}</header>
-    {children}
-    {moreTitle && (
-      <footer className={styles.footer}>
-        <ButtonLink url={moreUrl} color="Blue">
-          {moreTitle}
-        </ButtonLink>
-      </footer>
-    )}
+    <div className={styles.inner}>
+      {children}
+      {moreTitle && (
+        <footer className={styles.footer}>
+          <ButtonLink url={moreUrl} color="Blue">
+            {moreTitle}
+          </ButtonLink>
+        </footer>
+      )}
+    </div>
   </Section>
 );
 
