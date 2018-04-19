@@ -14,7 +14,7 @@ import { setDefaults } from '@storybook/addon-info';
 
 // addon-info
 setDefaults({
-  header: false // Toggles display of header with component name and description
+  inline: true
 });
 
 /**
