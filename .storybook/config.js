@@ -4,7 +4,7 @@
  */
 
 require('babel-polyfill');
-import { configure } from '@storybook/react';
+import { configure, addDecorator } from '@storybook/react';
 
 import styles from '../src/components/00_global/reset.css';
 import globalStyles from '../src/components/00_global/global.css';
