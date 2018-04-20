@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CtaMessage /> Matches the CTA Message Action button snapshot 1`] = `
-<div
+<aside
   className="pushDown"
 >
   <button
@@ -39,11 +39,11 @@ exports[`<CtaMessage /> Matches the CTA Message Action button snapshot 1`] = `
       </a>
     </div>
   </div>
-</div>
+</aside>
 `;
 
 exports[`<CtaMessage /> Matches the CTA Message Blue Action button snapshot 1`] = `
-<div
+<aside
   className="pushDown"
 >
   <button
@@ -81,11 +81,11 @@ exports[`<CtaMessage /> Matches the CTA Message Blue Action button snapshot 1`] 
       </a>
     </div>
   </div>
-</div>
+</aside>
 `;
 
 exports[`<CtaMessage /> Matches the CTA Message Decription snapshot 1`] = `
-<div
+<aside
   className="pushDown"
 >
   <button
@@ -117,11 +117,11 @@ exports[`<CtaMessage /> Matches the CTA Message Decription snapshot 1`] = `
       Test description
     </p>
   </div>
-</div>
+</aside>
 `;
 
 exports[`<CtaMessage /> Matches the CTA Message Default snapshot 1`] = `
-<div
+<aside
   className="pushDown"
 >
   <button
@@ -147,11 +147,11 @@ exports[`<CtaMessage /> Matches the CTA Message Default snapshot 1`] = `
   <div
     className="content"
   />
-</div>
+</aside>
 `;
 
 exports[`<CtaMessage /> Matches the CTA Message Dismiss button snapshot 1`] = `
-<div
+<aside
   className="pushDown"
 >
   <button
@@ -199,11 +199,11 @@ exports[`<CtaMessage /> Matches the CTA Message Dismiss button snapshot 1`] = `
       </button>
     </div>
   </div>
-</div>
+</aside>
 `;
 
 exports[`<CtaMessage /> Matches the CTA Message Logo snapshot 1`] = `
-<div
+<aside
   className="pushDown"
 >
   <button
@@ -259,11 +259,11 @@ exports[`<CtaMessage /> Matches the CTA Message Logo snapshot 1`] = `
       </svg>
     </div>
   </div>
-</div>
+</aside>
 `;
 
 exports[`<CtaMessage /> Matches the CTA Message Title snapshot 1`] = `
-<div
+<aside
   className="pushDown"
 >
   <button
@@ -295,5 +295,5 @@ exports[`<CtaMessage /> Matches the CTA Message Title snapshot 1`] = `
       Test Title
     </h3>
   </div>
-</div>
+</aside>
 `;
