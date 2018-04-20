@@ -65,6 +65,7 @@
   margin-bottom: 1rem;
   color: inherit;
   font-size: 1.5rem;
+  font-weight: 900;
 }
 
 .description {
@@ -86,7 +87,7 @@
 }
 
 .loadUnder .title {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .loadUnder .close {
