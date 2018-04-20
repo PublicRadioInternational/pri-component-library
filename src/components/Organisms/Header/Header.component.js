@@ -128,7 +128,7 @@ export default class Header extends Component {
           </Dropdown>
 
           <Dropdown
-            url="https://interactive-dev.pri.org/staging/prototypes/homepage/iteration-2.html#"
+            url={`${baseUrl}/donate/general?utm_source=navigation&utm_medium=website&utm_campaign=donations`}
             title="Donate"
             color="Orange"
             className={styles.button}
