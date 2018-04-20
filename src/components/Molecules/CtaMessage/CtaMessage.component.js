@@ -73,7 +73,7 @@ export default class CtaMessage extends Component {
         };
 
     return (
-      <div className={promptClass}>
+      <aside className={promptClass}>
         <button className={styles.close} onClick={this.handleDismissClick}>
           <Icon name="cross" width={18} height={18} ariaLabel="Close" />
         </button>
@@ -112,7 +112,7 @@ export default class CtaMessage extends Component {
             </div>
           )}
         </div>
-      </div>
+      </aside>
     );
   }
 }
