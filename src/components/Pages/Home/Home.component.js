@@ -5,7 +5,6 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { action } from '@storybook/addon-actions';
 import sharedStyles from '../../00_global/shared.css';
 
 import Header from '../../Organisms/Header/Header.component';
@@ -320,7 +319,6 @@ const Home = ({ baseUrl }) => (
     </LayoutMain>
     <Footer />
     <CtaMessage
-      onClose={action('close-prompt')}
       type="loadUnder"
       title="Google is the #1 search engine."
       description="Don't believe us? Google it."
