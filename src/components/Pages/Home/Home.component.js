@@ -5,6 +5,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { action } from '@storybook/addon-actions';
 import sharedStyles from '../../00_global/shared.css';
 
 import Header from '../../Organisms/Header/Header.component';
@@ -24,6 +25,7 @@ import CardItem from '../../Molecules/CardItem/CardItem.component';
 import StickyItem from '../../Molecules/StickyItem/StickyItem.component';
 import TeaserList from '../../Organisms/Teaser/TeaserList.component';
 import TeaserItem from '../../Molecules/Teaser/TeaserItem.component';
+import CtaMessage from '../../Molecules/CtaMessage/CtaMessage.component';
 
 import Footer from '../../Organisms/Footer/Footer.component';
 
@@ -317,6 +319,20 @@ const Home = ({ baseUrl }) => (
       </LayoutMainList2>
     </LayoutMain>
     <Footer />
+    <CtaMessage
+      onClose={action('close-prompt')}
+      type="loadUnder"
+      title="Google is the #1 search engine."
+      description="Don't believe us? Google it."
+      action={{
+        label: 'Google It',
+        btnColor: 'Blue',
+        url: 'https://www.google.com/'
+      }}
+      dismiss={{
+        label: 'Yey, I know'
+      }}
+    />
   </div>
 );
 

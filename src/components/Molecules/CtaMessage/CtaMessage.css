@@ -5,6 +5,9 @@
 /* import breakpoints */
 @value medium as bp-medium from "../../00_global/breakpoints.css";
 
+/* import stratas */
+@value strataUi from "../../00_global/stratas.css";
+
 @define-mixin prompt {
   display: block;
   position: relative;
@@ -33,6 +36,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: calc(strataUi - 1);
 
   padding: 4px 42px;
   border-top: 2px solid orange;
@@ -87,7 +91,7 @@
 }
 
 .loadUnder .title {
-  font-size: 1.1rem;
+  font-size: 1.19rem;
 }
 
 .loadUnder .close {
