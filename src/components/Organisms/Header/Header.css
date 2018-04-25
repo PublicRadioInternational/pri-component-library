@@ -1,6 +1,9 @@
 /* import breakpoints */
 @value small as bp-small, header as bp-header from "../../00_global/breakpoints.css";
 
+/* import stratas */
+@value strataUi, strataMenu, strataForeground, strataBackground from "../../00_global/stratas.css";
+
 .siteHeader {
   background-color: white;
   border-bottom: 3px solid #ddd;
@@ -8,7 +11,7 @@
   justify-content: space-between;
   padding: 0.5rem 1rem;
   position: relative;
-  z-index: 4;
+  z-index: strataUi;
 }
 
 .branding {
@@ -94,14 +97,14 @@ svg.mobileSmallIcon {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: -99;
+  z-index: strataBackground;
   transform: translateZ(0);
   visibility: hidden;
 }
 
 .bgOpen {
   visibility: visible;
-  z-index: 99;
+  z-index: strataForeground;
 }
 
 .menuBtn {
@@ -125,7 +128,7 @@ svg.mobileSmallIcon {
   height: 100vh;
   transform: translateX(-100%);
   transition: 0.3s;
-  z-index: 100;
+  z-index: strataMenu;
 }
 
 .mainMenu::-webkit-scrollbar {
