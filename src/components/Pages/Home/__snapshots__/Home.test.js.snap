@@ -2845,7 +2845,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           >
             <a
               className="listLink "
-              href="https://www.pri.org/team"
+              href="https://www.pri.org/donate/general?utm_source=footerNav&utm_medium=website&utm_campaign=donations"
             >
               Donate
             </a>
@@ -2855,7 +2855,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           >
             <a
               className="listLink "
-              href="https://www.pri.org/donate/general?utm_source=footerNav&utm_medium=website&utm_campaign=donations"
+              href="https://www.pri.org/team"
             >
               Meet the PRI.org Team
             </a>

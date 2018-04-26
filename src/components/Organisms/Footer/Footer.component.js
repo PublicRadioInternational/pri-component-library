@@ -61,11 +61,11 @@ const Footer = ({ baseUrl }) => (
         listItems={[
           { name: 'About PRI', url: `${baseUrl}/about-pri` },
           { name: 'Contact Us', url: `${baseUrl}/priorg-contact` },
-          { name: 'Donate', url: `${baseUrl}/team` },
           {
-            name: 'Meet the PRI.org Team',
+            name: 'Donate',
             url: `${baseUrl}/donate/general?utm_source=footerNav&utm_medium=website&utm_campaign=donations`
           },
+          { name: 'Meet the PRI.org Team', url: `${baseUrl}/team` },
           { name: 'Privacy policy', url: `${baseUrl}/privacy` },
           { name: 'Terms of use', url: `${baseUrl}/terms` }
         ]}
