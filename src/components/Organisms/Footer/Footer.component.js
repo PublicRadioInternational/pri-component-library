@@ -16,7 +16,7 @@ import macarthurSponsorImg from './images/macarthur.jpg';
 /**
  * Component that renders the footer.
  */
-const Footer = ({ baseUrl }) => (
+const Footer = ({ links }) => (
   <footer className={styles.siteFooter}>
     <section className={styles.sponsors}>
       <a href="/">
@@ -57,19 +57,7 @@ const Footer = ({ baseUrl }) => (
     </section>
 
     <section className={styles.footerBtm}>
-      <List
-        listItems={[
-          { name: 'About PRI', url: `${baseUrl}/about-pri` },
-          { name: 'Contact Us', url: `${baseUrl}/priorg-contact` },
-          { name: 'Donate', url: `${baseUrl}/team` },
-          {
-            name: 'Meet the PRI.org Team',
-            url: `${baseUrl}/donate/general?utm_source=footerNav&utm_medium=website&utm_campaign=donations`
-          },
-          { name: 'Privacy policy', url: `${baseUrl}/privacy` },
-          { name: 'Terms of use', url: `${baseUrl}/terms` }
-        ]}
-      />
+      {links && <List listItems={links} />}
 
       <p>&copy; 2018 Public Radio International</p>
     </section>
@@ -77,11 +65,16 @@ const Footer = ({ baseUrl }) => (
 );
 
 Footer.propTypes = {
-  baseUrl: PropTypes.string
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      url: PropTypes.string
+    })
+  )
 };
 
 Footer.defaultProps = {
-  baseUrl: 'https://www.pri.org'
+  links: null
 };
 
 export default Footer;
