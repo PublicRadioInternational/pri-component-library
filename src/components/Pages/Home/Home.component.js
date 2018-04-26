@@ -317,7 +317,16 @@ const Home = ({ baseUrl }) => (
         </CardList>
       </LayoutMainList2>
     </LayoutMain>
-    <Footer />
+    <Footer
+      links={[
+        { name: 'About PRI', url: '#' },
+        { name: 'Contact Us', url: '#' },
+        { name: 'Donate', url: '#' },
+        { name: 'Meet the PRI.org Team', url: '#' },
+        { name: 'Privacy policy', url: '#' },
+        { name: 'Terms of use', url: '#' }
+      ]}
+    />
     <CtaMessage
       type="loadUnder"
       title="Google is the #1 search engine."
