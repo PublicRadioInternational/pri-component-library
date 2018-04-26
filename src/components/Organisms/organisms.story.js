@@ -149,7 +149,18 @@ storiesOf('Organisms/Header', module)
 
 storiesOf('Organisms/Footer', module)
   .addDecorator(checkA11y)
-  .add('Site Footer', () => <Footer />);
+  .add('Site Footer', () => (
+    <Footer
+      links={[
+        { name: 'About PRI', url: '#' },
+        { name: 'Contact Us', url: '#' },
+        { name: 'Donate', url: '#' },
+        { name: 'Meet the PRI.org Team', url: '#' },
+        { name: 'Privacy policy', url: '#' },
+        { name: 'Terms of use', url: '#' }
+      ]}
+    />
+  ));
 
 storiesOf('Organisms/Main', module)
   .addDecorator(checkA11y)
