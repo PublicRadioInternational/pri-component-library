@@ -47,10 +47,11 @@ const Home = ({ baseUrl }) => (
     <LayoutMain>
       <LayoutMainList>
         <CardList
-          src="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
-          category="pris-the-world"
+          logo="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
+          name="pris-the-world"
+          id="card-top"
           url="#"
-          categoryDescription="PRIs The World"
+          title="PRIs The World"
         >
           <CardItem
             title="There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco"
@@ -263,10 +264,11 @@ const Home = ({ baseUrl }) => (
       </LayoutAsideCallouts>
       <LayoutMainList2>
         <CardList
-          src="https://media.pri.org/s3fs-public/styles/medium_square/public/logo_gp.png"
-          category="pris-globalpost"
+          logo="https://media.pri.org/s3fs-public/styles/medium_square/public/logo_gp.png"
+          name="globalpost"
+          id="card-1"
           url="#"
-          categoryDescription="GlobalPost"
+          title="GlobalPost"
         >
           <CardItem
             title="How the murder of a young woman turned Italy's elections into a referendum on immigration"
@@ -293,10 +295,9 @@ const Home = ({ baseUrl }) => (
           />
         </CardList>
         <CardList
-          src="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
-          category="pris-the-world"
-          url="#"
-          categoryDescription="PRIs The World"
+          name="custom-card-header"
+          id="card-2"
+          title="Custom Card Header"
         >
           <CardItem
             title="There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco"

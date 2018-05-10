@@ -1510,6 +1510,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       >
         <header
           className="header"
+          id="card-top"
         >
           <a
             className="logoLink"
@@ -1520,9 +1521,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               className="logo"
               src="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
             />
-            <span>
-              PRIs The World
-            </span>
+            PRIs The World
           </a>
         </header>
         <article
@@ -2383,10 +2382,11 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       className="className && mainList2"
     >
       <section
-        className="className && list pris-globalpost"
+        className="className && list globalpost"
       >
         <header
           className="header"
+          id="card-1"
         >
           <a
             className="logoLink"
@@ -2397,9 +2397,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               className="logo"
               src="https://media.pri.org/s3fs-public/styles/medium_square/public/logo_gp.png"
             />
-            <span>
-              GlobalPost
-            </span>
+            GlobalPost
           </a>
         </header>
         <article
@@ -2586,24 +2584,13 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
         </article>
       </section>
       <section
-        className="className && list pris-the-world"
+        className="className && list custom-card-header"
       >
         <header
           className="header"
+          id="card-2"
         >
-          <a
-            className="logoLink"
-            href="#"
-          >
-            <img
-              alt=""
-              className="logo"
-              src="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
-            />
-            <span>
-              PRIs The World
-            </span>
-          </a>
+          Custom Card Header
         </header>
         <article
           className="cardItem cardItemLg"
