@@ -18,6 +18,26 @@
   margin-bottom: 0;
 }
 
+.header {
+  border-bottom: 1px solid grayLighter;
+  padding: 0.5rem 1rem 0.7rem;
+  font-family: heading;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.logoLink {
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
 .america-abroad {
   border-top-color: americaAbroad;
 }
@@ -92,25 +112,4 @@
 
 .livable-planet {
   border-top-color: livablePlanet;
-}
-
-.header {
-  border-bottom: 1px solid grayLighter;
-  padding: 0.5rem 1rem 0.7rem;
-  font-family: heading;
-}
-
-.logoLink {
-  align-items: center;
-  color: blue;
-  display: flex;
-  font-weight: bold;
-  min-height: 50px;
-  text-decoration: none;
-}
-
-.logo {
-  display: block;
-  margin-right: 10px;
-  width: 50px;
 }

@@ -26,10 +26,11 @@ storiesOf('Organisms/CardList', module)
   .addDecorator(checkA11y)
   .add('Card List with Image', () => (
     <CardList
-      src="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
-      category="pris-the-world"
+      logo="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
+      name="pris-the-world"
+      id="program-with-logo"
       url="#"
-      categoryDescription="PRIs The World"
+      title="PRI's The World"
     >
       <CardItem
         title="There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco"
@@ -75,11 +76,69 @@ storiesOf('Organisms/CardList', module)
 storiesOf('Organisms/CardList', module)
   .addDecorator(checkA11y)
   .add('Without Image', () => (
-    <CardList
-      category="pris-the-world"
-      url="#"
-      categoryDescription="PRIs The World"
-    >
+    <CardList name="pris-the-world" url="#" title="PRI's The World">
+      <CardItem
+        title="There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco"
+        url="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+        imgSrc="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/180302copbridge.jpg?itok=52GppaOv"
+        imgAlt="Alt Text"
+        blurb="Ten years after Kosovo declared its independence from Serbia, Serbs and Albanians in Kosovo remain deeply divided — even over food."
+        large
+        hasAudio
+      />
+      <CardItem
+        title="50 years on, India is celebrating the Beatles' infamous trip to the country"
+        url="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+        imgSrc="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
+        imgAlt="Alt Text"
+        blurb="When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. "
+      />
+      <CardItem
+        title="Progressives in Congress side with Trump on trade"
+        url="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+        imgSrc="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/DeLauro.jpg?itok=gprExR5S"
+        imgAlt="Alt Text"
+        blurb="NAFTA has governed the rules of trade between the US, Mexico and Canada since 1994. Today, many progressives who dislike NAFTA say President Trump is giving them the best chance in a generation to rewrite the rules of trade. "
+        hasAudio
+      />
+    </CardList>
+  ));
+
+storiesOf('Organisms/CardList', module)
+  .addDecorator(checkA11y)
+  .add('Without URL', () => (
+    <CardList name="custom-header" title="Custom Header">
+      <CardItem
+        title="There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco"
+        url="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+        imgSrc="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/180302copbridge.jpg?itok=52GppaOv"
+        imgAlt="Alt Text"
+        blurb="Ten years after Kosovo declared its independence from Serbia, Serbs and Albanians in Kosovo remain deeply divided — even over food."
+        large
+        hasAudio
+      />
+      <CardItem
+        title="50 years on, India is celebrating the Beatles' infamous trip to the country"
+        url="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+        imgSrc="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
+        imgAlt="Alt Text"
+        blurb="When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. "
+      />
+      <CardItem
+        title="Progressives in Congress side with Trump on trade"
+        url="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+        imgSrc="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/DeLauro.jpg?itok=gprExR5S"
+        imgAlt="Alt Text"
+        blurb="NAFTA has governed the rules of trade between the US, Mexico and Canada since 1994. Today, many progressives who dislike NAFTA say President Trump is giving them the best chance in a generation to rewrite the rules of trade. "
+        hasAudio
+      />
+    </CardList>
+  ));
+
+storiesOf('Organisms/CardList', module)
+  .addDecorator(checkA11y)
+  .add('Without Header', () => (
+    <CardList name="no-header">
       <CardItem
         title="There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco"
         url="stories/2017-07-24/clearing-mines-and-explosives-mosul"

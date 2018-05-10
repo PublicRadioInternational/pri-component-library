@@ -2,25 +2,9 @@
 
 exports[`<CardList /> Matches the Card List snapshot 1`] = `
 <section
-  className="className && list world"
+  className="list null"
+  id={null}
 >
-  <header
-    className="header"
-  >
-    <a
-      className="logoLink"
-      href="#"
-    >
-      <img
-        alt=""
-        className="logo"
-        src="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
-      />
-      <span>
-        PRIs The World
-      </span>
-    </a>
-  </header>
   <span>
     One
   </span>
