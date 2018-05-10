@@ -1506,11 +1506,11 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       className="className && mainList"
     >
       <section
-        className="className && list pris-the-world"
+        className="list pris-the-world"
+        id="card-top"
       >
         <header
           className="header"
-          id="card-top"
         >
           <a
             className="logoLink"
@@ -2382,11 +2382,11 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       className="className && mainList2"
     >
       <section
-        className="className && list globalpost"
+        className="list globalpost"
+        id="card-1"
       >
         <header
           className="header"
-          id="card-1"
         >
           <a
             className="logoLink"
@@ -2584,11 +2584,11 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
         </article>
       </section>
       <section
-        className="className && list custom-card-header"
+        className="list custom-card-header"
+        id="card-2"
       >
         <header
           className="header"
-          id="card-2"
         >
           Custom Card Header
         </header>

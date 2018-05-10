@@ -2,17 +2,9 @@
 
 exports[`<CardList /> Matches the Card List snapshot 1`] = `
 <section
-  className="className && list null"
+  className="list null"
+  id={null}
 >
-  <header
-    className="header"
-    id={null}
-  >
-    <a
-      className="logoLink"
-      href="#"
-    />
-  </header>
   <span>
     One
   </span>

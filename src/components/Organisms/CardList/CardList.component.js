@@ -8,8 +8,6 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import styles from './CardList.css';
 
-import Section from '../Content/Section.component';
-
 const cx = classNames.bind(styles);
 
 /**
@@ -29,17 +27,19 @@ const CardList = ({ name, id, children, url, logo, title }) => {
   );
 
   return (
-    <Section className={cardClasses}>
-      <header id={id} className={styles.header}>
-        {(url && (
-          <a href={url} className={styles.logoLink}>
-            {headerContent}
-          </a>
-        )) ||
-          headerContent}
-      </header>
+    <section id={id} className={cardClasses}>
+      {title && (
+        <header className={styles.header}>
+          {(url && (
+            <a href={url} className={styles.logoLink}>
+              {headerContent}
+            </a>
+          )) ||
+            headerContent}
+        </header>
+      )}
       {children}
-    </Section>
+    </section>
   );
 };
 
