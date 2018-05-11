@@ -5,39 +5,60 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames/bind';
 import styles from './CardList.css';
 
-import Section from '../Content/Section.component';
+const cx = classNames.bind(styles);
 
 /**
  * Component that renders a Card List.
  */
-const CardList = ({ category, children, url, src, categoryDescription }) => (
-  <Section className={`${styles.list} ${styles[category]}`}>
-    <header className={styles.header}>
-      <a href={url} className={styles.logoLink}>
-        {src && <img src={src} alt="" className={styles.logo} />}
-        <span>{categoryDescription}</span>
-      </a>
-    </header>
-    {children}
-  </Section>
-);
+const CardList = ({ name, id, children, url, logo, title }) => {
+  const cardClasses = cx({
+    list: true,
+    [name]: styles[name]
+  });
+
+  const headerContent = (
+    <React.Fragment>
+      {logo && <img src={logo} alt="" className={styles.logo} />}
+      {title}
+    </React.Fragment>
+  );
+
+  return (
+    <section id={id} className={cardClasses}>
+      {title && (
+        <header className={styles.header}>
+          {(url && (
+            <a href={url} className={styles.logoLink}>
+              {headerContent}
+            </a>
+          )) ||
+            headerContent}
+        </header>
+      )}
+      {children}
+    </section>
+  );
+};
 
 CardList.propTypes = {
-  category: PropTypes.string,
+  name: PropTypes.string,
+  id: PropTypes.string,
   children: PropTypes.node,
   url: PropTypes.string,
-  src: PropTypes.string,
-  categoryDescription: PropTypes.string
+  logo: PropTypes.string,
+  title: PropTypes.string
 };
 
 CardList.defaultProps = {
-  category: 'world',
+  name: null,
+  id: null,
   children: [],
   url: null,
-  src: null,
-  categoryDescription: null
+  logo: null,
+  title: null
 };
 
 export default CardList;
