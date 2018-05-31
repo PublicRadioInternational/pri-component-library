@@ -89,7 +89,13 @@ export default class CtaMessage extends Component {
             </div>
           )}
           {title && <h3 className={styles.title}>{title}</h3>}
-          {description && <p className={styles.description}>{description}</p>}
+          {description ? (
+            /* eslint-disable-next-line */
+            <div
+              className={styles.description}
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
+          ) : null}
           {action && (
             <div className={styles.actions}>
               <ButtonLink

@@ -111,11 +111,14 @@ exports[`<CtaMessage /> Matches the CTA Message Decription snapshot 1`] = `
   <div
     className="content"
   >
-    <p
+    <div
       className="description"
-    >
-      Test description
-    </p>
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Test description",
+        }
+      }
+    />
   </div>
 </aside>
 `;

@@ -145,7 +145,7 @@ storiesOf('Molecules/CtaMessage', module)
       onClose={action('close-prompt')}
       type="loadUnder"
       title="Google is the #1 search engine."
-      description="Don't believe us? Google it."
+      description={`Don't believe us? <a href="http://www.google.com/" target="_blank">Google it.</a>`}
       action={{
         label: 'Google It',
         btnColor: 'Blue',
