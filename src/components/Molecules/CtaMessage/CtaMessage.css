@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value gray, orange, grayLighter from colors;
+@value gray, orange, white, grayLighter from colors;
 
 /* import breakpoints */
 @value medium as bp-medium from "../../00_global/breakpoints.css";
@@ -75,6 +75,17 @@
 .description {
   font-size: 1.1rem;
   line-height: 1.4rem;
+}
+
+.description a {
+  color: white;
+  border-bottom: 1px dotted currentColor;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.description a:hover {
+  border-bottom: none;
 }
 
 .actions * + * {

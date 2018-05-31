@@ -2905,11 +2905,14 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       >
         Google is the #1 search engine.
       </h3>
-      <p
+      <div
         className="description"
-      >
-        Don't believe us? Google it.
-      </p>
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Don't believe us? Google it.",
+          }
+        }
+      />
       <div
         className="actions"
       >
