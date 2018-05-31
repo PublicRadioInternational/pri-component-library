@@ -90,9 +90,9 @@ export default class CtaMessage extends Component {
           )}
           {title && <h3 className={styles.title}>{title}</h3>}
           {description ? (
-            /* eslint-disable-next-line */
             <div
               className={styles.description}
+              /* eslint-disable-next-line */
               dangerouslySetInnerHTML={{ __html: description }}
             />
           ) : null}
