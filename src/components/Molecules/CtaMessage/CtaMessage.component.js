@@ -96,16 +96,18 @@ export default class CtaMessage extends Component {
               dangerouslySetInnerHTML={{ __html: description }}
             />
           ) : null}
-          {action && (
+          {(action || dismiss) && (
             <div className={styles.actions}>
-              <ButtonLink
-                className={styles.actionBtn}
-                url={action.url}
-                color={action.btnColor}
-                onClick={this.handleActionClick}
-              >
-                {action.label}
-              </ButtonLink>
+              {action && (
+                <ButtonLink
+                  className={styles.actionBtn}
+                  url={action.url}
+                  color={action.btnColor}
+                  onClick={this.handleActionClick}
+                >
+                  {action.label}
+                </ButtonLink>
+              )}
               {dismiss && (
                 <Button
                   className={styles.dismissBtn}
