@@ -30,7 +30,7 @@ export default class CtaMessage extends Component {
     action: PropTypes.shape({
       label: PropTypes.string.isRequired,
       btnColor: ButtonLink.propTypes.color,
-      url: PropTypes.string.isRequired
+      url: PropTypes.string
     }),
     dismiss: PropTypes.shape({
       label: PropTypes.string.isRequired
