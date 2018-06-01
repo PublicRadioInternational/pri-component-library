@@ -157,6 +157,24 @@ storiesOf('Molecules/CtaMessage', module)
     />
   ));
 
+storiesOf('Molecules/CtaMessage', module)
+  .addDecorator(checkA11y)
+  .add('Load Under (No Action URL)', () => (
+    <CtaMessage
+      onClose={action('close-prompt')}
+      type="loadUnder"
+      title="Google is the #1 search engine."
+      description={`Don't believe us? <a href="http://www.google.com/" target="_blank">Google it.</a>`}
+      action={{
+        label: 'Google It',
+        btnColor: 'Orange'
+      }}
+      dismiss={{
+        label: 'Yey, I know'
+      }}
+    />
+  ));
+
 /**
  * Add storybook definition for Hero.
  */
