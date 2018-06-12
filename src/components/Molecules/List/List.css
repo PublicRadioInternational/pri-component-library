@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value grayLight, orange, world, studio, globalPost, acrossWomensLives, globalNation, globalSecurity, livablePlanet from colors;
+@value grayLight, orange, world, studio, globalPost, acrossWomensLives, globalNation, globalSecurity, livablePlanet, takeaway, livingEarth from colors;
 
 .list {
   margin: 6px 0;
@@ -89,4 +89,20 @@ a.livablePlanet {
 
 a.livablePlanet:hover {
   background: livablePlanet;
+}
+
+a.livingEarth {
+  border-left-color: livingEarth;
+}
+
+a.livingEarth:hover {
+  background: livingEarth;
+}
+
+a.takeaway {
+  border-left-color: takeaway;
+}
+
+a.takeaway:hover {
+  background: takeaway;
 }
