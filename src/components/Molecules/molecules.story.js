@@ -242,9 +242,19 @@ storiesOf('Molecules/MenuList', module)
           itemLinkClass: 'studio'
         },
         {
+          name: 'Takeaway',
+          url: `${baseUrl}/programs/takeaway`,
+          itemLinkClass: 'takeaway'
+        },
+        {
           name: 'GlobalPost',
           url: `${baseUrl}/programs/globalpost`,
           itemLinkClass: 'globalPost'
+        },
+        {
+          name: 'Living on Earth',
+          url: `${baseUrl}/programs/living-earth`,
+          itemLinkClass: 'livingEarth'
         },
         {
           name: "Across Women's Lives",
