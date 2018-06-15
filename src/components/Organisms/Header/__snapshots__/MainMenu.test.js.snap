@@ -494,7 +494,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
               className="listLink accordionContentMenuLink accordionContentMenuLinkGreen "
               href="https://www.pri.org/programs/science-happiness"
             >
-              Science of Happiness
+              The Science of Happiness
             </a>
           </li>
           <li
