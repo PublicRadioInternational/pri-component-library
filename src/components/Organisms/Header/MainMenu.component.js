@@ -185,7 +185,7 @@ export default class MainMenu extends Component {
                 url: `${baseUrl}programs/podcast-playlist`
               },
               {
-                name: 'Science of Happiness',
+                name: 'The Science of Happiness',
                 url: `${baseUrl}programs/science-happiness`
               },
               {
