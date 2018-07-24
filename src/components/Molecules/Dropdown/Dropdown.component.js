@@ -6,8 +6,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Downshift from 'downshift';
+import startCase from 'lodash/startCase';
 import styles from './Dropdown.css';
-import ButtonLink from '../../Atoms/Button/ButtonLink.component';
 import Button from '../../Atoms/Button/Button.component';
 import Icon from '../../Atoms/Svg/Icons.component';
 
@@ -20,7 +20,7 @@ export default class Dropdown extends Component {
     children: PropTypes.node,
     onClick: PropTypes.func,
     url: PropTypes.string,
-    color: PropTypes.oneOf(['Orange', 'White']),
+    color: PropTypes.oneOf(Button.colors),
     icon: PropTypes.string,
     className: PropTypes.string,
     iconClass: PropTypes.string,
@@ -29,7 +29,7 @@ export default class Dropdown extends Component {
 
   static defaultProps = {
     children: [],
-    color: 'White',
+    color: Button.colors[0],
     url: null,
     onClick: () => {},
     icon: null,
@@ -55,9 +55,9 @@ export default class Dropdown extends Component {
       <Downshift>
         {({ isOpen, getButtonProps }) => (
           <div className={`${styles.dropdownGrp} ${className && className}`}>
-            <ButtonLink
+            <Button
               className={styles.btnGrp}
-              url={url}
+              href={url}
               color={color}
               onClick={onClick}
               small={small}
@@ -71,10 +71,12 @@ export default class Dropdown extends Component {
               >
                 {title}
               </span>
-            </ButtonLink>
+            </Button>
             <Button
               {...getButtonProps()}
-              className={`${styles[`btnDropdown${color}`]} ${styles.btnHide}`}
+              className={`${styles[`btnDropdown${startCase(color)}`]} ${
+                styles.btnHide
+              }`}
               color={color}
               small={small}
               aria-label="Open Dropdown"

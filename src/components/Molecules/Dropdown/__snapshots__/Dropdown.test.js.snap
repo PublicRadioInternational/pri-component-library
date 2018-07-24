@@ -8,6 +8,7 @@ exports[`<Dropdown /> Matches the snapshot 1`] = `
     className="btnWhite btnGrp"
     href="https://google.com"
     onClick={[MockFunction]}
+    role="button"
   >
     <span
       className="textLabel false"
@@ -16,11 +17,15 @@ exports[`<Dropdown /> Matches the snapshot 1`] = `
     </span>
   </a>
   <button
-    aria-expanded={null}
+    aria-expanded={false}
     aria-haspopup={true}
     aria-label="Open Dropdown"
     className="btnWhite btnDropdownWhite btnHide"
+    disabled={false}
+    onBlur={[Function]}
     onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
     type="button"
   />
 </div>

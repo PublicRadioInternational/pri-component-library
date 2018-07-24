@@ -6,6 +6,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
+import startCase from 'lodash/startCase';
 import styles from './Button.css';
 
 const cx = classNames.bind(styles);
@@ -14,52 +15,83 @@ const cx = classNames.bind(styles);
  * Component that renders a button with a click handler.
  */
 const Button = props => {
-  const { onClick, className, children, color, small } = props;
+  const {
+    children,
+    className: classNameProp,
+    color,
+    component,
+    disabled,
+    onClick,
+    small,
+    type,
+    ...other
+  } = props;
   // Generate a class name based on the color.
-  const buttonClass = cx({
-    [`btn${color}`]: !small,
-    [className]: className,
-    [`btnMobile${color}`]: small
-  });
+  const className = cx(
+    {
+      [`btn${startCase(color)}`]: !small,
+      [`btnMobile${startCase(color)}`]: small
+    },
+    classNameProp
+  );
+
+  const buttonProps = {};
+
+  let ComponentProp = component;
+
+  if (ComponentProp === 'button' && other.href) {
+    ComponentProp = 'a';
+  }
+
+  if (ComponentProp === 'button' || ComponentProp === 'input') {
+    buttonProps.type = type || 'button';
+    buttonProps.disabled = disabled;
+  } else {
+    buttonProps.role = 'button';
+  }
 
   return (
-    <button
-      type="button"
-      className={buttonClass}
+    <ComponentProp
+      className={className}
       onClick={onClick}
-      aria-expanded={
-        props['aria-expanded'] === true ? props['aria-expanded'] : null
-      }
-      aria-label={props['aria-label']}
-      aria-haspopup={
-        props['aria-haspopup'] === true ? props['aria-haspopup'] : null
-      }
+      {...buttonProps}
+      {...other}
     >
       {children}
-    </button>
+    </ComponentProp>
   );
 };
 
+Button.colors = ['white', 'orange', 'dark', 'blue'];
+
 Button.propTypes = {
-  onClick: PropTypes.func,
   children: PropTypes.node,
-  color: PropTypes.oneOf(['Orange', 'White', 'Dark', 'Blue']),
   className: PropTypes.string,
-  'aria-expanded': PropTypes.bool,
-  'aria-label': PropTypes.string,
-  'aria-haspopup': PropTypes.bool,
-  small: PropTypes.bool
+  color: PropTypes.oneOf(Button.colors),
+  /**
+   * The component used for the root node.
+   * Either a string to use a DOM element or a component.
+   */
+  component: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.func,
+    PropTypes.object
+  ]),
+  disabled: PropTypes.bool,
+  onClick: PropTypes.func,
+  small: PropTypes.bool,
+  type: PropTypes.string
 };
 
 Button.defaultProps = {
-  color: 'White',
-  className: null,
   children: null,
+  className: null,
+  color: Button.colors[0],
+  component: 'button',
+  disabled: false,
   onClick: () => {},
-  'aria-expanded': false,
-  'aria-label': null,
-  'aria-haspopup': false,
-  small: false
+  small: false,
+  type: 'button'
 };
 
 export default Button;

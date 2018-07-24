@@ -60,7 +60,7 @@ export default class MainMenu extends Component {
             </p>
             <div className={styles.btnGroup}>
               <ButtonLink
-                color="Orange"
+                color="orange"
                 className={styles.btnHeaderLeft}
                 url={`${baseUrl}about-pri`}
               >
@@ -68,7 +68,7 @@ export default class MainMenu extends Component {
                 Our Story
               </ButtonLink>
               <ButtonLink
-                color="Orange"
+                color="orange"
                 className={styles.btnHeaderMiddle}
                 url={`${baseUrl}priorg-contact`}
               >
@@ -76,7 +76,7 @@ export default class MainMenu extends Component {
                 Contact Us
               </ButtonLink>
               <ButtonLink
-                color="Orange"
+                color="orange"
                 className={styles.btnHeaderRight}
                 url={`${baseUrl}donate/index.html?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations`}
               >

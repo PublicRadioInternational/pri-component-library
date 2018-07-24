@@ -41,7 +41,7 @@ storiesOf('Molecules/Dropdown', module)
     <Dropdown
       url="https://google.com"
       title="Donate"
-      color="Orange"
+      color="orange"
       onClick={action('drowndown-button-clicked')}
       small
       icon="heart"
@@ -291,7 +291,7 @@ storiesOf('Molecules/TextBlock', module)
       title="About PRI"
       body="By giving voice to our dynamic world, we inspire connection, action and hope."
       button="About Us"
-      color="Blue"
+      color="blue"
       url={`${baseUrl}/about-pri`}
       icon="info"
     />
@@ -305,7 +305,7 @@ storiesOf('Molecules/TextBlock', module)
       title="We are Public Media"
       body="Make a donation"
       button="Donate"
-      color="Orange"
+      color="orange"
       url={`${baseUrl}/donate/index.html?utm_source=navigation&utm_medium=website&utm_campaign=donations`}
       icon="heart"
     />

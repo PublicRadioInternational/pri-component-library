@@ -19,7 +19,7 @@ const TeaserList = ({ title, moreTitle, moreUrl, children }) => (
     {children}
     {moreTitle && (
       <footer className={styles.footer}>
-        <ButtonLink url={moreUrl} color="Blue">
+        <ButtonLink url={moreUrl} color="blue">
           {moreTitle}
         </ButtonLink>
       </footer>

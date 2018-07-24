@@ -111,7 +111,7 @@ export default class CtaMessage extends Component {
               {dismiss && (
                 <Button
                   className={styles.dismissBtn}
-                  color="Dark"
+                  color="dark"
                   onClick={this.handleDismissClick}
                 >
                   {dismiss.label}

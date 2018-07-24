@@ -2,11 +2,10 @@
 
 exports[`<Button /> Matches the Button snapshot 1`] = `
 <button
-  aria-expanded={null}
-  aria-haspopup={null}
-  aria-label={null}
-  className="btnWhite White"
+  className="btnWhite white"
+  disabled={false}
   onClick={[MockFunction]}
+  title="test"
   type="button"
 >
   test
@@ -33,7 +32,7 @@ exports[`<ButtonInput /> Matches the Button Input snapshot 1`] = `
     />
   </svg>
   <input
-    className="inputBtn btnWhite White inputWithIcon"
+    className="inputBtn btnWhite white inputWithIcon"
     onClick={[MockFunction]}
     type="submit"
     value="test"
@@ -43,7 +42,7 @@ exports[`<ButtonInput /> Matches the Button Input snapshot 1`] = `
 
 exports[`<ButtonLink /> Matches the Button Link snapshot 1`] = `
 <a
-  className="btnWhite White"
+  className="btnwhite white"
   href="https://google.com"
   onClick={[MockFunction]}
 >

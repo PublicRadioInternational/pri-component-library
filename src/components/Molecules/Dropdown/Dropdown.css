@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value blue, orangeDark, whiteDark from colors;
+@value blue, orangeDark, whiteDark, grayDark from colors;
 
 /* import breakpoints */
 @value header as bp-header from "../../00_global/breakpoints.css";
@@ -60,6 +60,10 @@
 
 .btnDropdownWhite {
   composes: btnDropdown;
+}
+
+.btnDropdownWhite:after {
+  border-top-color: grayDark;
 }
 
 .btnDropdownWhite[aria-expanded='true']::after {

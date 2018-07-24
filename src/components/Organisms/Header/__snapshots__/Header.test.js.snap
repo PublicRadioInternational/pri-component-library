@@ -78,7 +78,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
             className="btnGroup"
           >
             <a
-              className="btnOrange btnHeaderLeft"
+              className="btnorange btnHeaderLeft"
               href="https://www.pri.org/about-pri"
               onClick={[Function]}
             >
@@ -100,7 +100,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               Our Story
             </a>
             <a
-              className="btnOrange btnHeaderMiddle"
+              className="btnorange btnHeaderMiddle"
               href="https://www.pri.org/priorg-contact"
               onClick={[Function]}
             >
@@ -122,7 +122,7 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
               Contact Us
             </a>
             <a
-              className="btnOrange btnHeaderRight"
+              className="btnorange btnHeaderRight"
               href="https://www.pri.org/donate/index.html?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations"
               onClick={[Function]}
             >
@@ -1291,9 +1291,10 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       className="dropdownGrp button"
     >
       <a
-        className="btnGrp btnMobileWhite"
+        className="btnMobileWhite btnGrp"
         href="https://www.pri.org/listen"
         onClick={[Function]}
+        role="button"
       >
         <svg
           aria-hidden={true}
@@ -1317,11 +1318,15 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
         </span>
       </a>
       <button
-        aria-expanded={null}
+        aria-expanded={false}
         aria-haspopup={true}
         aria-label="Open Dropdown"
-        className="btnDropdownWhite btnHide btnMobileWhite"
+        className="btnMobileWhite btnDropdownWhite btnHide"
+        disabled={false}
+        onBlur={[Function]}
         onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
         type="button"
       />
     </div>
@@ -1329,9 +1334,10 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       className="dropdownGrp button newsletterBtn"
     >
       <a
-        className="btnGrp btnMobileWhite"
+        className="btnMobileWhite btnGrp"
         href="https://www.pri.org/newsletters"
         onClick={[Function]}
+        role="button"
       >
         <svg
           aria-hidden={true}
@@ -1355,11 +1361,15 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
         </span>
       </a>
       <button
-        aria-expanded={null}
+        aria-expanded={false}
         aria-haspopup={true}
         aria-label="Open Dropdown"
-        className="btnDropdownWhite btnHide btnMobileWhite"
+        className="btnMobileWhite btnDropdownWhite btnHide"
+        disabled={false}
+        onBlur={[Function]}
         onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
         type="button"
       />
     </div>
@@ -1367,9 +1377,10 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       className="dropdownGrp button"
     >
       <a
-        className="btnGrp btnMobileWhite"
+        className="btnMobileWhite btnGrp"
         href="https://www.pri.org/search/node"
         onClick={[Function]}
+        role="button"
       >
         <svg
           aria-hidden={true}
@@ -1393,11 +1404,15 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
         </span>
       </a>
       <button
-        aria-expanded={null}
+        aria-expanded={false}
         aria-haspopup={true}
         aria-label="Open Dropdown"
-        className="btnDropdownWhite btnHide btnMobileWhite"
+        className="btnMobileWhite btnDropdownWhite btnHide"
+        disabled={false}
+        onBlur={[Function]}
         onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
         type="button"
       />
     </div>
@@ -1405,9 +1420,10 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
       className="dropdownGrp button"
     >
       <a
-        className="btnGrp btnMobileOrange"
+        className="btnMobileOrange btnGrp"
         href="https://www.pri.org/donate/general?utm_source=navigation&utm_medium=website&utm_campaign=donations"
         onClick={[Function]}
+        role="button"
       >
         <svg
           aria-hidden={true}
@@ -1431,11 +1447,15 @@ exports[`<Header /> Matches the Header snapshot 1`] = `
         </span>
       </a>
       <button
-        aria-expanded={null}
+        aria-expanded={false}
         aria-haspopup={true}
         aria-label="Open Dropdown"
-        className="btnDropdownOrange btnHide btnMobileOrange"
+        className="btnMobileOrange btnDropdownOrange btnHide"
+        disabled={false}
+        onBlur={[Function]}
         onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
         type="button"
       />
     </div>

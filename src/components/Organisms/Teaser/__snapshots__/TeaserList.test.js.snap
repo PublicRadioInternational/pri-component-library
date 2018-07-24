@@ -19,7 +19,7 @@ exports[`<TeaserItem /> Matches the Teaser List with more link snapshot 1`] = `
     className="footer"
   >
     <a
-      className="btnBlue"
+      className="btnblue"
       href="more/"
       onClick={[Function]}
     >

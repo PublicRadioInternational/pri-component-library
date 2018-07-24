@@ -7,6 +7,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import styles from './Button.css';
+import Button from './Button.component';
 
 const cx = classNames.bind(styles);
 
@@ -33,14 +34,14 @@ ButtonLink.propTypes = {
   url: PropTypes.string,
   onClick: PropTypes.func,
   children: PropTypes.node,
-  color: PropTypes.oneOf(['Orange', 'White', 'Blue']),
+  color: PropTypes.oneOf(Button.colors),
   className: PropTypes.string,
   small: PropTypes.bool
 };
 
 ButtonLink.defaultProps = {
   url: null,
-  color: 'White',
+  color: Button.colors[0],
   className: null,
   children: null,
   onClick: () => {},

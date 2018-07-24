@@ -174,7 +174,7 @@ const Home = ({ baseUrl }) => (
           title="About PRI"
           body="By giving voice to our dynamic world, we inspire connection, action and hope."
           button="About Us"
-          color="Blue"
+          color="blue"
           url={`${baseUrl}/about-pri`}
           icon="info"
         />
@@ -184,7 +184,7 @@ const Home = ({ baseUrl }) => (
             title="We are Public Media"
             body="Make a donation"
             button="Donate"
-            color="Orange"
+            color="orange"
             url={`${baseUrl}/donate/index.html?utm_source=navigation&utm_medium=website&utm_campaign=donations`}
             icon="heart"
           />
@@ -249,7 +249,7 @@ const Home = ({ baseUrl }) => (
             title="Subscribe to our Podcasts"
             body="The Science of Happiness is now #2 on iTunes"
             button="Subscribe to Podcasts"
-            color="Orange"
+            color="orange"
             url={`${baseUrl}/shows`}
             icon="volume"
           >
@@ -334,7 +334,7 @@ const Home = ({ baseUrl }) => (
       description="Don't believe us? Google it."
       action={{
         label: 'Google It',
-        btnColor: 'Blue',
+        btnColor: 'blue',
         url: 'https://www.google.com/'
       }}
       dismiss={{

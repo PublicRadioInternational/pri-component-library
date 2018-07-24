@@ -59,7 +59,7 @@ describe('<CtaMessage />', () => {
           action={{
             label: 'Yes',
             url: 'https://www.google.com/',
-            btnColor: 'Blue'
+            btnColor: 'blue'
           }}
         />
       )
@@ -74,7 +74,7 @@ describe('<CtaMessage />', () => {
           action={{
             label: 'Yes',
             url: 'https://www.google.com/',
-            btnColor: 'Blue'
+            btnColor: 'blue'
           }}
           dismiss={{
             label: 'No'
@@ -115,7 +115,7 @@ describe('<CtaMessage />', () => {
         action={{
           label: 'Yes',
           url: 'https://www.google.com/',
-          btnColor: 'Blue'
+          btnColor: 'blue'
         }}
         dismiss={{
           label: 'No'

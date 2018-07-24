@@ -67,7 +67,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         className="btnGroup"
       >
         <a
-          className="btnOrange btnHeaderLeft"
+          className="btnorange btnHeaderLeft"
           href="https://www.pri.org/about-pri"
           onClick={[Function]}
         >
@@ -89,7 +89,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           Our Story
         </a>
         <a
-          className="btnOrange btnHeaderMiddle"
+          className="btnorange btnHeaderMiddle"
           href="https://www.pri.org/priorg-contact"
           onClick={[Function]}
         >
@@ -111,7 +111,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           Contact Us
         </a>
         <a
-          className="btnOrange btnHeaderRight"
+          className="btnorange btnHeaderRight"
           href="https://www.pri.org/donate/index.html?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations"
           onClick={[Function]}
         >

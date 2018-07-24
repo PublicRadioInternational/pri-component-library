@@ -12,7 +12,7 @@ import ButtonInput from './ButtonInput.component';
 
 describe('<Button />', () => {
   const title = 'test';
-  const className = 'White';
+  const className = 'white';
 
   it('Handles Button click events', () => {
     const onClick = jest.fn();
@@ -41,7 +41,7 @@ describe('<Button />', () => {
 describe('<ButtonLink />', () => {
   const title = 'test';
   const url = 'https://google.com';
-  const className = 'White';
+  const className = 'white';
 
   it('Handles Link click events', () => {
     const onClick = jest.fn();
@@ -79,7 +79,7 @@ describe('<ButtonLink />', () => {
 
 describe('<ButtonInput />', () => {
   const title = 'test';
-  const className = 'White';
+  const className = 'white';
 
   it('Handles Input click events', () => {
     const onClick = jest.fn();

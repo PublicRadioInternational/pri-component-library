@@ -31,7 +31,7 @@ exports[`<CtaMessage /> Matches the CTA Message Action button snapshot 1`] = `
       className="actions"
     >
       <a
-        className="btnWhite actionBtn"
+        className="btnwhite actionBtn"
         href="https://www.google.com/"
         onClick={[Function]}
       >
@@ -73,7 +73,7 @@ exports[`<CtaMessage /> Matches the CTA Message Blue Action button snapshot 1`] 
       className="actions"
     >
       <a
-        className="btnBlue actionBtn"
+        className="btnblue actionBtn"
         href="https://www.google.com/"
         onClick={[Function]}
       >
@@ -184,17 +184,15 @@ exports[`<CtaMessage /> Matches the CTA Message Dismiss button snapshot 1`] = `
       className="actions"
     >
       <a
-        className="btnBlue actionBtn"
+        className="btnblue actionBtn"
         href="https://www.google.com/"
         onClick={[Function]}
       >
         Yes
       </a>
       <button
-        aria-expanded={null}
-        aria-haspopup={null}
-        aria-label={null}
         className="btnDark dismissBtn"
+        disabled={false}
         onClick={[Function]}
         type="button"
       >
