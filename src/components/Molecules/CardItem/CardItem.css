@@ -48,7 +48,7 @@
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: 0;
 }
 
@@ -66,6 +66,14 @@
 
 .blurb {
   display: none;
+}
+
+.cardItem.freeform .blurb {
+  display: block;
+}
+
+.blurb h2 {
+  font-size: 1.5rem;
 }
 
 .blurb h2 a,
@@ -100,7 +108,9 @@
 }
 
 .icon {
-  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  vertical-align: top;
   margin-right: 0.25em;
 }
 
@@ -143,8 +153,16 @@
     align-self: end;
   }
 
+  .title {
+    font-size: 1.5rem;
+  }
+
   .blurb {
     display: block;
+  }
+
+  .blurb h2 {
+    font-size: 1.75rem;
   }
 
   .cardItem.normal .blurb {
@@ -153,8 +171,7 @@
     margin: 0;
   }
 
-  .cardItem.large .blurb,
-  .cardItem.freeform .blurb {
+  .cardItem.large .blurb {
     margin: 1rem 0;
     padding: 0 1rem;
   }
