@@ -20,6 +20,8 @@ import Hero from './Hero/Hero.component';
 import MenuList from './MenuList/MenuList.component';
 import TextBlock from './TextBlock/TextBlock.component';
 
+import LayoutMainList from '../Organisms/Main/LayoutMainList.component';
+
 /**
  * Add storybook definition for Molecules.
  */
@@ -78,6 +80,30 @@ storiesOf('Molecules/Search', module)
  * Add storybook definition for CardItem.
  */
 storiesOf('Molecules/CardItem', module)
+  .addDecorator(story => (
+    <div
+      style={{
+        position: 'absolute',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%',
+        minHeight: '100vh'
+      }}
+    >
+      <LayoutMainList>
+        <div
+          style={{
+            background: '#fff',
+            margin: '2rem 0',
+            maxWidth: '690px'
+          }}
+        >
+          {story()}
+        </div>
+      </LayoutMainList>
+    </div>
+  ))
   .addDecorator(checkA11y)
   .add('Default', () => (
     <CardItem
@@ -88,23 +114,17 @@ storiesOf('Molecules/CardItem', module)
       blurb="When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. "
       hasAudio
     />
-  ));
-
-storiesOf('Molecules/CardItem', module)
-  .addDecorator(checkA11y)
+  ))
   .add('Large', () => (
     <CardItem
       title="50 years on, India is celebrating the Beatles' infamous trip to the country"
       url="stories/2017-07-24/clearing-mines-and-explosives-mosul"
-      imgSrc="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/180302copbridge.jpg?itok=52GppaOv"
+      imgSrc="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
       imgAlt="Alt Text"
       blurb="When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. "
       large
     />
-  ));
-
-storiesOf('Molecules/CardItem', module)
-  .addDecorator(checkA11y)
+  ))
   .add('Freeform', () => (
     <CardItem
       freeform
