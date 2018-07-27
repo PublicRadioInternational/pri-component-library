@@ -14,26 +14,6 @@ import LazyLoad from '../../Atoms/LazyLoad/LazyLoad.component';
 const cx = classNames.bind(styles);
 
 /**
- * Renders it's children, linked to a given url.
- */
-const LinkedItem = ({ url, children, className }) => (
-  <a className={className} href={url}>
-    {children}
-  </a>
-);
-
-LinkedItem.propTypes = {
-  url: PropTypes.string,
-  className: PropTypes.string,
-  children: PropTypes.node.isRequired
-};
-
-LinkedItem.defaultProps = {
-  url: null,
-  className: null
-};
-
-/**
  * Renders blurb content in a paragraph or a div, if freeform is true.
  */
 const BlurbContent = ({ freeform, children, className }) => {
@@ -66,74 +46,60 @@ const CardItem = ({
   large,
   hasAudio,
   freeform
-}) => {
-  const largeClasses = element =>
-    cx({
-      [element]: true,
-      [`${element}Lg`]: large
-    });
-
-  const freeformClasses = element =>
-    cx({
-      [element]: freeform
-    });
-
-  return (
-    <article
-      className={largeClasses('cardItem')}
-      typeof="sioc:Item foaf:Document"
-    >
-      <div className={largeClasses('titleWrap')}>
-        {title && (
-          <h2
-            className={`${!large ? styles.title : ''} ${freeformClasses(
-              'freeformTitle'
-            )}`}
-          >
-            <LinkedItem
-              url={url}
-              className={`${styles.link} ${freeformClasses('freeformLink')}`}
-            >
-              {title}
-            </LinkedItem>
-          </h2>
-        )}
-        {title && <span property="dc:title" content={title} />}
-        <span property="sioc:num_replies" content="0" datatype="xsd:integer" />
-      </div>
-      {imgSrc && (
-        <figure className={largeClasses('image')}>
-          <LinkedItem url={url}>
+}) => (
+  <article
+    className={cx({
+      cardItem: true,
+      normal: !large && !freeform,
+      large,
+      freeform
+    })}
+    typeof="sioc:Item foaf:Document"
+  >
+    {imgSrc &&
+      !freeform && (
+        <figure className={cx('image')}>
+          <a href={url}>
             <LazyLoad>
               <img
                 typeof="foaf:Image"
                 data-src={imgSrc}
                 alt={imgAlt}
-                className={largeClasses('img')}
+                className={cx('img')}
               />
             </LazyLoad>
-          </LinkedItem>
+          </a>
         </figure>
       )}
-      <BlurbContent freeform={freeform} className={largeClasses('blurb')}>
-        {blurb ? (
-          /* eslint-disable-next-line */
-          <span dangerouslySetInnerHTML={{ __html: blurb }} />
-        ) : null}
-        {hasAudio && (
-          <a className={styles.iconLink} href={url}>
-            <Icon
-              name="volume"
-              className={styles.icon}
-              isRoundIcon
-              ariaLabel="Audio"
-            />
+    {title && (
+      <div className={`${styles.titleWrap}`}>
+        <h2 className={`${styles.title}`}>
+          <a href={url} className={`${styles.link}`}>
+            {hasAudio && (
+              <a className={styles.iconLink} href={url}>
+                <Icon
+                  name="volume"
+                  className={styles.icon}
+                  isRoundIcon
+                  ariaLabel="Audio"
+                />
+              </a>
+            )}
+            {title}
           </a>
-        )}
+        </h2>
+        {title && <span property="dc:title" content={title} />}
+        <span property="sioc:num_replies" content="0" datatype="xsd:integer" />
+      </div>
+    )}
+    {blurb && (
+      <BlurbContent freeform={freeform} className={cx('blurb')}>
+        {/* eslint-disable-next-line */}
+        <span dangerouslySetInnerHTML={{ __html: blurb }} />
       </BlurbContent>
-    </article>
-  );
-};
+    )}
+  </article>
+);
 
 CardItem.propTypes = {
   url: PropTypes.string,

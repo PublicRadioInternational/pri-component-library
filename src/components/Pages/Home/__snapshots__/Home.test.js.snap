@@ -1525,19 +1525,53 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           </a>
         </header>
         <article
-          className="cardItem cardItemLg"
+          className="cardItem large"
           typeof="sioc:Item foaf:Document"
         >
+          <figure
+            className="image"
+          >
+            <a
+              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            >
+              <img
+                alt="Alt Text"
+                className="img"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/180302copbridge.jpg?itok=52GppaOv"
+                typeof="foaf:Image"
+              />
+            </a>
+          </figure>
           <div
-            className="titleWrap titleWrapLg"
+            className="titleWrap"
           >
             <h2
-              className=" "
+              className="title"
             >
               <a
-                className="link "
+                className="link"
                 href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
               >
+                <a
+                  className="iconLink"
+                  href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+                >
+                  <svg
+                    aria-hidden={null}
+                    aria-label="Audio"
+                    aria-labelledby={null}
+                    className="svg icon roundIcon"
+                    fill="currentcolor"
+                    height={28}
+                    version={1.1}
+                    viewBox="0 0 28 28"
+                    width={28}
+                  >
+                    <path
+                      d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
+                    />
+                  </svg>
+                </a>
                 There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco
               </a>
             </h2>
@@ -1551,23 +1585,8 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               property="sioc:num_replies"
             />
           </div>
-          <figure
-            className="image imageLg"
-          >
-            <a
-              className={null}
-              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
-            >
-              <img
-                alt="Alt Text"
-                className="img imgLg"
-                data-src="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/180302copbridge.jpg?itok=52GppaOv"
-                typeof="foaf:Image"
-              />
-            </a>
-          </figure>
           <p
-            className="blurb blurbLg"
+            className="blurb"
           >
             <span
               dangerouslySetInnerHTML={
@@ -1576,40 +1595,34 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                 }
               }
             />
-            <a
-              className="iconLink"
-              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
-            >
-              <svg
-                aria-hidden={null}
-                aria-label="Audio"
-                aria-labelledby={null}
-                className="svg icon roundIcon"
-                fill="currentcolor"
-                height={28}
-                version={1.1}
-                viewBox="0 0 28 28"
-                width={28}
-              >
-                <path
-                  d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
-                />
-              </svg>
-            </a>
           </p>
         </article>
         <article
-          className="cardItem"
+          className="cardItem normal"
           typeof="sioc:Item foaf:Document"
         >
+          <figure
+            className="image"
+          >
+            <a
+              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            >
+              <img
+                alt="Alt Text"
+                className="img"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
+                typeof="foaf:Image"
+              />
+            </a>
+          </figure>
           <div
             className="titleWrap"
           >
             <h2
-              className="title "
+              className="title"
             >
               <a
-                className="link "
+                className="link"
                 href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
               >
                 50 years on, India is celebrating the Beatles' infamous trip to the country
@@ -1625,21 +1638,6 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               property="sioc:num_replies"
             />
           </div>
-          <figure
-            className="image"
-          >
-            <a
-              className={null}
-              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
-            >
-              <img
-                alt="Alt Text"
-                className="img"
-                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
-                typeof="foaf:Image"
-              />
-            </a>
-          </figure>
           <p
             className="blurb"
           >
@@ -1653,19 +1651,53 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           </p>
         </article>
         <article
-          className="cardItem"
+          className="cardItem normal"
           typeof="sioc:Item foaf:Document"
         >
+          <figure
+            className="image"
+          >
+            <a
+              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            >
+              <img
+                alt="Alt Text"
+                className="img"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/DeLauro.jpg?itok=gprExR5S"
+                typeof="foaf:Image"
+              />
+            </a>
+          </figure>
           <div
             className="titleWrap"
           >
             <h2
-              className="title "
+              className="title"
             >
               <a
-                className="link "
+                className="link"
                 href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
               >
+                <a
+                  className="iconLink"
+                  href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+                >
+                  <svg
+                    aria-hidden={null}
+                    aria-label="Audio"
+                    aria-labelledby={null}
+                    className="svg icon roundIcon"
+                    fill="currentcolor"
+                    height={28}
+                    version={1.1}
+                    viewBox="0 0 28 28"
+                    width={28}
+                  >
+                    <path
+                      d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
+                    />
+                  </svg>
+                </a>
                 Progressives in Congress side with Trump on trade
               </a>
             </h2>
@@ -1679,21 +1711,6 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               property="sioc:num_replies"
             />
           </div>
-          <figure
-            className="image"
-          >
-            <a
-              className={null}
-              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
-            >
-              <img
-                alt="Alt Text"
-                className="img"
-                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/DeLauro.jpg?itok=gprExR5S"
-                typeof="foaf:Image"
-              />
-            </a>
-          </figure>
           <p
             className="blurb"
           >
@@ -1704,40 +1721,34 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                 }
               }
             />
-            <a
-              className="iconLink"
-              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
-            >
-              <svg
-                aria-hidden={null}
-                aria-label="Audio"
-                aria-labelledby={null}
-                className="svg icon roundIcon"
-                fill="currentcolor"
-                height={28}
-                version={1.1}
-                viewBox="0 0 28 28"
-                width={28}
-              >
-                <path
-                  d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
-                />
-              </svg>
-            </a>
           </p>
         </article>
         <article
-          className="cardItem"
+          className="cardItem normal"
           typeof="sioc:Item foaf:Document"
         >
+          <figure
+            className="image"
+          >
+            <a
+              href="https://interactive-dev.pri.org/stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            >
+              <img
+                alt="Alt Text"
+                className="img"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/GettyImages-925030722_master.jpg?itok=LSMUCQbS"
+                typeof="foaf:Image"
+              />
+            </a>
+          </figure>
           <div
             className="titleWrap"
           >
             <h2
-              className="title "
+              className="title"
             >
               <a
-                className="link "
+                className="link"
                 href="https://interactive-dev.pri.org/stories/2017-07-24/clearing-mines-and-explosives-mosul"
               >
                 A cartoonist in Equatorial Guinea has been cleared of charges, but he's still in jail
@@ -1753,21 +1764,6 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               property="sioc:num_replies"
             />
           </div>
-          <figure
-            className="image"
-          >
-            <a
-              className={null}
-              href="https://interactive-dev.pri.org/stories/2017-07-24/clearing-mines-and-explosives-mosul"
-            >
-              <img
-                alt="Alt Text"
-                className="img"
-                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/GettyImages-925030722_master.jpg?itok=LSMUCQbS"
-                typeof="foaf:Image"
-              />
-            </a>
-          </figure>
           <p
             className="blurb"
           >
@@ -1781,19 +1777,53 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           </p>
         </article>
         <article
-          className="cardItem"
+          className="cardItem normal"
           typeof="sioc:Item foaf:Document"
         >
+          <figure
+            className="image"
+          >
+            <a
+              href={null}
+            >
+              <img
+                alt="Alt Text"
+                className="img"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/GettyImages-925030722_master.jpg?itok=LSMUCQbS"
+                typeof="foaf:Image"
+              />
+            </a>
+          </figure>
           <div
             className="titleWrap"
           >
             <h2
-              className="title "
+              className="title"
             >
               <a
-                className="link "
+                className="link"
                 href={null}
               >
+                <a
+                  className="iconLink"
+                  href={null}
+                >
+                  <svg
+                    aria-hidden={null}
+                    aria-label="Audio"
+                    aria-labelledby={null}
+                    className="svg icon roundIcon"
+                    fill="currentcolor"
+                    height={28}
+                    version={1.1}
+                    viewBox="0 0 28 28"
+                    width={28}
+                  >
+                    <path
+                      d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
+                    />
+                  </svg>
+                </a>
                 Egyptian singer faces the prospect of prison over a joke about the Nile
               </a>
             </h2>
@@ -1807,21 +1837,6 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               property="sioc:num_replies"
             />
           </div>
-          <figure
-            className="image"
-          >
-            <a
-              className={null}
-              href={null}
-            >
-              <img
-                alt="Alt Text"
-                className="img"
-                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/GettyImages-925030722_master.jpg?itok=LSMUCQbS"
-                typeof="foaf:Image"
-              />
-            </a>
-          </figure>
           <p
             className="blurb"
           >
@@ -1832,26 +1847,6 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                 }
               }
             />
-            <a
-              className="iconLink"
-              href={null}
-            >
-              <svg
-                aria-hidden={null}
-                aria-label="Audio"
-                aria-labelledby={null}
-                className="svg icon roundIcon"
-                fill="currentcolor"
-                height={28}
-                version={1.1}
-                viewBox="0 0 28 28"
-                width={28}
-              >
-                <path
-                  d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
-                />
-              </svg>
-            </a>
           </p>
         </article>
       </section>
@@ -2401,17 +2396,31 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           </a>
         </header>
         <article
-          className="cardItem cardItemLg"
+          className="cardItem large"
           typeof="sioc:Item foaf:Document"
         >
+          <figure
+            className="image"
+          >
+            <a
+              href="#"
+            >
+              <img
+                alt="Alt Text"
+                className="img"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/RTS1M7QU%20(1).jpg?itok=SCBMIFU_"
+                typeof="foaf:Image"
+              />
+            </a>
+          </figure>
           <div
-            className="titleWrap titleWrapLg"
+            className="titleWrap"
           >
             <h2
-              className=" "
+              className="title"
             >
               <a
-                className="link "
+                className="link"
                 href="#"
               >
                 How the murder of a young woman turned Italy's elections into a referendum on immigration
@@ -2427,23 +2436,8 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               property="sioc:num_replies"
             />
           </div>
-          <figure
-            className="image imageLg"
-          >
-            <a
-              className={null}
-              href="#"
-            >
-              <img
-                alt="Alt Text"
-                className="img imgLg"
-                data-src="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/RTS1M7QU%20(1).jpg?itok=SCBMIFU_"
-                typeof="foaf:Image"
-              />
-            </a>
-          </figure>
           <p
-            className="blurb blurbLg"
+            className="blurb"
           >
             <span
               dangerouslySetInnerHTML={
@@ -2455,17 +2449,31 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           </p>
         </article>
         <article
-          className="cardItem"
+          className="cardItem normal"
           typeof="sioc:Item foaf:Document"
         >
+          <figure
+            className="image"
+          >
+            <a
+              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            >
+              <img
+                alt="Alt Text"
+                className="img"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/fem.jpg?itok=GvblSbSw"
+                typeof="foaf:Image"
+              />
+            </a>
+          </figure>
           <div
             className="titleWrap"
           >
             <h2
-              className="title "
+              className="title"
             >
               <a
-                className="link "
+                className="link"
                 href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
               >
                 Instagram art project spreads awareness about femicides in Mexico
@@ -2481,21 +2489,6 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               property="sioc:num_replies"
             />
           </div>
-          <figure
-            className="image"
-          >
-            <a
-              className={null}
-              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
-            >
-              <img
-                alt="Alt Text"
-                className="img"
-                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/fem.jpg?itok=GvblSbSw"
-                typeof="foaf:Image"
-              />
-            </a>
-          </figure>
           <p
             className="blurb"
           >
@@ -2509,19 +2502,53 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           </p>
         </article>
         <article
-          className="cardItem"
+          className="cardItem normal"
           typeof="sioc:Item foaf:Document"
         >
+          <figure
+            className="image"
+          >
+            <a
+              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            >
+              <img
+                alt="Alt Text"
+                className="img"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/IliaCalderon_david001.jpg?itok=Be7CbPFn"
+                typeof="foaf:Image"
+              />
+            </a>
+          </figure>
           <div
             className="titleWrap"
           >
             <h2
-              className="title "
+              className="title"
             >
               <a
-                className="link "
+                className="link"
                 href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
               >
+                <a
+                  className="iconLink"
+                  href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+                >
+                  <svg
+                    aria-hidden={null}
+                    aria-label="Audio"
+                    aria-labelledby={null}
+                    className="svg icon roundIcon"
+                    fill="currentcolor"
+                    height={28}
+                    version={1.1}
+                    viewBox="0 0 28 28"
+                    width={28}
+                  >
+                    <path
+                      d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
+                    />
+                  </svg>
+                </a>
                 When this Univision anchor interviewed a head of the KKK, he called her the n-word
               </a>
             </h2>
@@ -2535,21 +2562,6 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               property="sioc:num_replies"
             />
           </div>
-          <figure
-            className="image"
-          >
-            <a
-              className={null}
-              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
-            >
-              <img
-                alt="Alt Text"
-                className="img"
-                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/IliaCalderon_david001.jpg?itok=Be7CbPFn"
-                typeof="foaf:Image"
-              />
-            </a>
-          </figure>
           <p
             className="blurb"
           >
@@ -2560,26 +2572,6 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                 }
               }
             />
-            <a
-              className="iconLink"
-              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
-            >
-              <svg
-                aria-hidden={null}
-                aria-label="Audio"
-                aria-labelledby={null}
-                className="svg icon roundIcon"
-                fill="currentcolor"
-                height={28}
-                version={1.1}
-                viewBox="0 0 28 28"
-                width={28}
-              >
-                <path
-                  d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
-                />
-              </svg>
-            </a>
           </p>
         </article>
       </section>
@@ -2593,19 +2585,53 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           Custom Card Header
         </header>
         <article
-          className="cardItem cardItemLg"
+          className="cardItem large"
           typeof="sioc:Item foaf:Document"
         >
+          <figure
+            className="image"
+          >
+            <a
+              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            >
+              <img
+                alt="Alt Text"
+                className="img"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/180302copbridge.jpg?itok=52GppaOv"
+                typeof="foaf:Image"
+              />
+            </a>
+          </figure>
           <div
-            className="titleWrap titleWrapLg"
+            className="titleWrap"
           >
             <h2
-              className=" "
+              className="title"
             >
               <a
-                className="link "
+                className="link"
                 href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
               >
+                <a
+                  className="iconLink"
+                  href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+                >
+                  <svg
+                    aria-hidden={null}
+                    aria-label="Audio"
+                    aria-labelledby={null}
+                    className="svg icon roundIcon"
+                    fill="currentcolor"
+                    height={28}
+                    version={1.1}
+                    viewBox="0 0 28 28"
+                    width={28}
+                  >
+                    <path
+                      d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
+                    />
+                  </svg>
+                </a>
                 There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco
               </a>
             </h2>
@@ -2619,23 +2645,8 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               property="sioc:num_replies"
             />
           </div>
-          <figure
-            className="image imageLg"
-          >
-            <a
-              className={null}
-              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
-            >
-              <img
-                alt="Alt Text"
-                className="img imgLg"
-                data-src="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/180302copbridge.jpg?itok=52GppaOv"
-                typeof="foaf:Image"
-              />
-            </a>
-          </figure>
           <p
-            className="blurb blurbLg"
+            className="blurb"
           >
             <span
               dangerouslySetInnerHTML={
@@ -2644,40 +2655,34 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                 }
               }
             />
-            <a
-              className="iconLink"
-              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
-            >
-              <svg
-                aria-hidden={null}
-                aria-label="Audio"
-                aria-labelledby={null}
-                className="svg icon roundIcon"
-                fill="currentcolor"
-                height={28}
-                version={1.1}
-                viewBox="0 0 28 28"
-                width={28}
-              >
-                <path
-                  d="M9 10h-4v6h4l5 5v-16l-5 5zM20.36 19.36l-1.41-1.41c1.272-1.265 2.059-3.015 2.059-4.95s-0.787-3.685-2.059-4.95l-0-0 1.41-1.41c1.634 1.625 2.645 3.874 2.645 6.36s-1.011 4.735-2.644 6.36l-0 0zM17.54 16.54l-1.42-1.42c0.542-0.543 0.877-1.292 0.877-2.12s-0.335-1.577-0.877-2.12l0 0 1.42-1.42c0.912 0.903 1.477 2.156 1.477 3.54s-0.565 2.637-1.477 3.54l-0 0z"
-                />
-              </svg>
-            </a>
           </p>
         </article>
         <article
-          className="cardItem"
+          className="cardItem normal"
           typeof="sioc:Item foaf:Document"
         >
+          <figure
+            className="image"
+          >
+            <a
+              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+            >
+              <img
+                alt="Alt Text"
+                className="img"
+                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
+                typeof="foaf:Image"
+              />
+            </a>
+          </figure>
           <div
             className="titleWrap"
           >
             <h2
-              className="title "
+              className="title"
             >
               <a
-                className="link "
+                className="link"
                 href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
               >
                 50 years on, India is celebrating the Beatles' infamous trip to the country
@@ -2693,21 +2698,6 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               property="sioc:num_replies"
             />
           </div>
-          <figure
-            className="image"
-          >
-            <a
-              className={null}
-              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
-            >
-              <img
-                alt="Alt Text"
-                className="img"
-                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
-                typeof="foaf:Image"
-              />
-            </a>
-          </figure>
           <p
             className="blurb"
           >
