@@ -57,23 +57,25 @@
 }
 
 svg.mobileSmallIcon {
-  height: 21px;
   top: 5px;
   width: 21px;
+  height: 21px;
+  vertical-align: middle;
 }
 
 @media bp-small {
   svg.mobileSmallIcon {
-    height: 24px;
     width: 24px;
+    height: 24px;
   }
 }
 
 @media bp-header {
   svg.mobileSmallIcon {
-    height: 16px;
     top: 2px;
     width: 16px;
+    height: 16px;
+    vertical-align: baseline;
   }
 }
 
