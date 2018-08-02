@@ -41,6 +41,7 @@
     "fail": ["@semantic-release/github"]
   },
   "jest": {
+    "testRegex": "../.*.story.js$",
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     },
@@ -50,6 +51,7 @@
       "\\.(css|less|svg)$": "identity-obj-proxy"
     },
     "setupFiles": ["<rootDir>/jest.setup.js"],
+    "automock": false,
     "testPathIgnorePatterns": ["<rootDir>/.next/", "<rootDir>/node_modules/"]
   },
   "scripts": {
@@ -91,10 +93,12 @@
     "husky": "^0.14.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^22.4.2",
+    "json": "^9.0.6",
     "lint-staged": "^7.0.0",
     "prettier": "^1.11.1",
     "react-test-renderer": "^16.2.0",
-    "semantic-release": "^15.0.0"
+    "semantic-release": "^15.0.0",
+    "storybook-addon-specifications": "^2.1.2"
   },
   "dependencies": {
     "@researchgate/react-intersection-observer": "^0.6.0",

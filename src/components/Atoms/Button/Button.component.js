@@ -21,7 +21,6 @@ const Button = props => {
     color,
     component,
     disabled,
-    onClick,
     small,
     type,
     ...other
@@ -44,19 +43,14 @@ const Button = props => {
   }
 
   if (ComponentProp === 'button' || ComponentProp === 'input') {
-    buttonProps.type = type || 'button';
+    buttonProps.type = type;
     buttonProps.disabled = disabled;
   } else {
     buttonProps.role = 'button';
   }
 
   return (
-    <ComponentProp
-      className={className}
-      onClick={onClick}
-      {...buttonProps}
-      {...other}
-    >
+    <ComponentProp className={className} {...buttonProps} {...other}>
       {children}
     </ComponentProp>
   );
@@ -78,7 +72,6 @@ Button.propTypes = {
     PropTypes.object
   ]),
   disabled: PropTypes.bool,
-  onClick: PropTypes.func,
   small: PropTypes.bool,
   type: PropTypes.string
 };
@@ -89,7 +82,6 @@ Button.defaultProps = {
   color: Button.colors[0],
   component: 'button',
   disabled: false,
-  onClick: () => {},
   small: false,
   type: 'button'
 };

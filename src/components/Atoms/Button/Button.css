@@ -15,7 +15,9 @@
   color: grayDark;
   cursor: pointer;
   display: inline-block;
-  font: 700 1rem copy;
+  font-family: copy;
+  font-size: 1rem;
+  font-weight: 700;
   letter-spacing: 0.05rem;
   line-height: 2.25;
   margin: 0;
@@ -232,7 +234,8 @@ svg.inputIcon {
 
 /* Buttons in children */
 @define-mixin btnSmall {
-  font: 0.875rem 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.875rem;
   letter-spacing: 0;
   padding: 0.5rem 0.7rem;
   text-transform: none;

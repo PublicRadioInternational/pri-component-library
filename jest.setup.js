@@ -6,4 +6,6 @@
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
+jest.mock('./.storybook/facade');
+
 configure({ adapter: new Adapter() });
