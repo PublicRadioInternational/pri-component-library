@@ -160,6 +160,26 @@ storiesOf('Molecules/CtaMessage', module)
 
 storiesOf('Molecules/CtaMessage', module)
   .addDecorator(checkA11y)
+  .add('Announcement', () => (
+    <CtaMessage
+      onClose={action('close-prompt')}
+      type="announcement"
+      showLogo
+      title="This is the title"
+      description="<img src=&quot;https:/media-pri-dev.s3.amazonaws.com/s3fs-public/styles/card_large/public/images/2018/08/080618-hiroshima-obama-embrace.jpg?itok=UAIeO7ma&quot; alt=&quot;test&quot; /><p>This is a paragraph of text. Note how this can hold HTML tags. Mauris rhoncus malesuada felis sit amet mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lorem cursus, suscipit ligula quis, mattis metus.</p><ul><li><a href=&quot;#&quot;>List item 1</a></li><li><a href=&quot;#&quot;>List item 2</a></li><li><a href=&quot;#&quot;>List item 3</a></li><li><a href=&quot;#&quot;>List item 4</a></li></ul>"
+      action={{
+        label: 'Google It',
+        btnColor: 'Orange',
+        url: 'https://www.google.com/'
+      }}
+      dismiss={{
+        label: 'Yey, I know'
+      }}
+    />
+  ));
+
+storiesOf('Molecules/CtaMessage', module)
+  .addDecorator(checkA11y)
   .add('Load Under', () => (
     <CtaMessage
       onClose={action('close-prompt')}

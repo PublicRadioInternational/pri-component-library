@@ -19,7 +19,7 @@ const cx = classNames.bind(styles);
  * Component that renders a CTA (Call to action) message.
  */
 export default class CtaMessage extends Component {
-  static messageTypes = ['pushDown', 'loadUnder'];
+  static messageTypes = ['pushDown', 'announcement', 'loadUnder'];
 
   static propTypes = {
     onClose: PropTypes.func,
