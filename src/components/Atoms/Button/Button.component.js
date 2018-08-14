@@ -9,6 +9,8 @@ import classNames from 'classnames/bind';
 import startCase from 'lodash/startCase';
 import styles from './Button.css';
 
+console.log('Styles: %o', styles);
+
 const cx = classNames.bind(styles);
 
 /**

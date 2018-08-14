@@ -8,8 +8,8 @@ import { configure } from '@storybook/react';
 import { configure as configureEnzyme } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
-import styles from '../src/components/00_global/reset.css';
-import globalStyles from '../src/components/00_global/global.css';
+// import styles from '../src/components/00_global/reset.css';
+// import globalStyles from '../src/components/00_global/global.css';
 
 // Configure Enzyme
 configureEnzyme({ adapter: new Adapter() });

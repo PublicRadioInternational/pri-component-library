@@ -2,20 +2,23 @@
 @value whiteDark: #f7f7f7;
 @value grayLighter: #eee;
 @value grayLight: #8c8c94;
-@value grayDarker: #444;
-@value grayDark: #555;
 @value gray: #33333c;
+@value grayDark: #555;
+@value grayDarker: #444;
 @value black: #000;
 
 @value blue: #35719C;
 @value blueLight: #e8f1f7;
 @value blueMed: #3978a5;
 @value blueDark: #0062cc;
+
 @value green: #9caf16;
 @value greenLight: #98c93e;
+
 @value orange: #d3401e;
 @value orangeDark: #b8381a;
 @value orangeDarker: #832813;
+
 @value yellow: #ffde16;
 
 @value world: #00a0de;

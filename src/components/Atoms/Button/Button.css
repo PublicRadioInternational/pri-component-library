@@ -31,6 +31,7 @@
 
 @define-mixin btnWhiteHover {
   background-color: white;
+  color: grayDark;
 }
 
 @define-mixin btnWhiteActive {

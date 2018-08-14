@@ -75,6 +75,7 @@
     "@semantic-release/npm": "^3.2.2",
     "@storybook/addon-a11y": "^3.4.8",
     "@storybook/addon-actions": "^3.4.8",
+    "@storybook/addon-info": "^3.4.8",
     "@storybook/addon-knobs": "^3.4.8",
     "@storybook/addon-viewport": "^3.4.8",
     "@storybook/react": "^3.4.8",
@@ -111,6 +112,7 @@
     "lodash": "^4.17.10",
     "postcss-mixins": "^6.2.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-jss": "^8.6.1"
   }
 }
