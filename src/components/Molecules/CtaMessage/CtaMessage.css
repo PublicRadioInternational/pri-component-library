@@ -98,6 +98,7 @@
 .announcement .description {
   display: grid;
   grid-template-columns: auto minmax(33.33%, 200px);
+  grid-column-gap: 0.8rem;
   grid-template-areas:
     'TEXT'
     'NAV';
