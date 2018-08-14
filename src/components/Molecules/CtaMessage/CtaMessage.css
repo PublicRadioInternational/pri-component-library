@@ -12,8 +12,8 @@
   display: block;
   position: relative;
   box-sizing: border-box;
-  background-color: gray;
-  color: grayLighter;
+  background-color: grayLighter;
+  color: gray;
   text-align: center;
 }
 
@@ -27,7 +27,7 @@
 .pushDown {
   @mixin prompt;
 
-  display: none;
+  // display: none;
 }
 
 .loadUnder {
@@ -61,6 +61,12 @@
   color: orange;
 }
 
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
 .logo {
   margin-bottom: 1rem;
 }
@@ -70,15 +76,26 @@
   color: inherit;
   font-size: 1.5rem;
   font-weight: 900;
+  text-align: left;
 }
 
 .description {
   font-size: 1.1rem;
   line-height: 1.4rem;
+  color: grayDark;
+  text-align: left;
+}
+
+.pushDown .description p {
+  display: none;
+}
+
+.description em,
+.description i {
+  font-style: italic;
 }
 
 .description a {
-  color: white;
   border-bottom: 1px dotted currentColor;
   font-weight: bold;
   text-decoration: none;
@@ -86,6 +103,25 @@
 
 .description a:hover {
   border-bottom: none;
+}
+
+.description ul {
+  margin-bottom: 10px;
+}
+
+.description ul li {
+  margin-bottom: 5px;
+}
+
+.description img {
+  float: right;
+  max-width: 200px;
+  margin: 0 0 15px 15px;
+  display: none;
+}
+
+.actions {
+  clear: both;
 }
 
 .actions * + * {
@@ -138,6 +174,24 @@
   .pushDown {
     display: block;
     padding: 35px 55px;
+  }
+
+  .pushDown .description p,
+  .pushDown .description img {
+    display: block;
+  }
+
+  .description ul li {
+    display: inline;
+    list-style: none;
+  }
+
+  .description ul li:after {
+    content: ' | ';
+  }
+
+  .description ul li:last-of-type:after {
+    content: '';
   }
 
   .loadUnder .logo {
