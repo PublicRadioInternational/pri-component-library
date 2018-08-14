@@ -74,7 +74,7 @@
 .title {
   margin-bottom: 1rem;
   color: inherit;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 900;
   text-align: left;
 }
@@ -179,6 +179,10 @@
   .pushDown .description p,
   .pushDown .description img {
     display: block;
+  }
+
+  .title {
+    font-size: 1.5rem;
   }
 
   .description ul li {
