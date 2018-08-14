@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value gray, orange, white, grayLighter from colors;
+@value gray, orange, white, grayLighter, grayDark from colors;
 
 /* import breakpoints */
 @value medium as bp-medium from "../../00_global/breakpoints.css";
@@ -22,6 +22,12 @@
   font-size: 0.8rem;
   line-height: 1.6rem;
   white-space: nowrap;
+}
+
+.announcement {
+  @mixin prompt;
+  background-color: grayLighter;
+  color: gray;
 }
 
 .pushDown {
@@ -61,6 +67,12 @@
   color: orange;
 }
 
+.announcement .content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
 .logo {
   margin-bottom: 1rem;
 }
@@ -72,13 +84,42 @@
   font-weight: 900;
 }
 
+.announcement .title {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
 .description {
+  margin-bottom: 1rem;
   font-size: 1.1rem;
   line-height: 1.4rem;
 }
 
+.announcement .description {
+  display: grid;
+  grid-template-columns: auto minmax(33.33%, 200px);
+  grid-column-gap: 0.8rem;
+  grid-template-areas:
+    'TEXT'
+    'NAV';
+  color: grayDark;
+  text-align: left;
+}
+
+.announcement .description p,
+.pushDown .description p {
+  display: none;
+}
+.announcement .description p {
+  grid-area: TEXT;
+}
+
+.description em,
+.description i {
+  font-style: italic;
+}
+
 .description a {
-  color: white;
   border-bottom: 1px dotted currentColor;
   font-weight: bold;
   text-decoration: none;
@@ -86,6 +127,23 @@
 
 .description a:hover {
   border-bottom: none;
+}
+
+.announcement .description ul {
+  grid-area: NAV;
+}
+
+.announcement .description ul li {
+  margin-bottom: 5px;
+}
+
+.announcement .description img {
+  grid-area: IMAGE;
+  display: none;
+}
+
+.actions {
+  clear: both;
 }
 
 .actions * + * {
@@ -135,9 +193,36 @@
 }
 
 @media bp-medium {
+  .announcement,
   .pushDown {
     display: block;
     padding: 35px 55px;
+  }
+
+  .announcement .description {
+    grid-template-areas:
+      'TEXT IMAGE'
+      'NAV IMAGE';
+  }
+
+  .announcement .description p,
+  .announcement .description img,
+  .pushDown .description p,
+  .pushDown .description img {
+    display: block;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .announcement .description ul li {
+    display: inline;
+    list-style: none;
+  }
+
+  .announcement .description ul li + li:before {
+    content: ' | ';
   }
 
   .loadUnder .logo {
