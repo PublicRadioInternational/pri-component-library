@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value gray, orange, white, grayLighter from colors;
+@value gray, orange, white, grayLighter, grayDark from colors;
 
 /* import breakpoints */
 @value medium as bp-medium from "../../00_global/breakpoints.css";
@@ -12,8 +12,8 @@
   display: block;
   position: relative;
   box-sizing: border-box;
-  background-color: grayLighter;
-  color: gray;
+  background-color: gray;
+  color: grayLighter;
   text-align: center;
 }
 
@@ -24,10 +24,16 @@
   white-space: nowrap;
 }
 
+.announcement {
+  @mixin prompt;
+  background-color: grayLighter;
+  color: gray;
+}
+
 .pushDown {
   @mixin prompt;
 
-  // display: none;
+  display: none;
 }
 
 .loadUnder {
@@ -61,7 +67,7 @@
   color: orange;
 }
 
-.content {
+.announcement .content {
   max-width: 800px;
   margin: 0 auto;
   padding: 15px;
@@ -74,20 +80,37 @@
 .title {
   margin-bottom: 1rem;
   color: inherit;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 900;
+}
+
+.announcement .title {
+  font-size: 1.2rem;
   text-align: left;
 }
 
 .description {
+  margin-bottom: 1rem;
   font-size: 1.1rem;
   line-height: 1.4rem;
+}
+
+.announcement .description {
+  display: grid;
+  grid-template-columns: auto minmax(33.33%, 200px);
+  grid-template-areas:
+    'TEXT'
+    'NAV';
   color: grayDark;
   text-align: left;
 }
 
+.announcement .description p,
 .pushDown .description p {
   display: none;
+}
+.announcement .description p {
+  grid-area: TEXT;
 }
 
 .description em,
@@ -105,18 +128,16 @@
   border-bottom: none;
 }
 
-.description ul {
-  margin-bottom: 10px;
+.announcement .description ul {
+  grid-area: NAV;
 }
 
-.description ul li {
+.announcement .description ul li {
   margin-bottom: 5px;
 }
 
-.description img {
-  float: right;
-  max-width: 200px;
-  margin: 0 0 15px 15px;
+.announcement .description img {
+  grid-area: IMAGE;
   display: none;
 }
 
@@ -171,11 +192,20 @@
 }
 
 @media bp-medium {
+  .announcement,
   .pushDown {
     display: block;
     padding: 35px 55px;
   }
 
+  .announcement .description {
+    grid-template-areas:
+      'TEXT IMAGE'
+      'NAV IMAGE';
+  }
+
+  .announcement .description p,
+  .announcement .description img,
   .pushDown .description p,
   .pushDown .description img {
     display: block;
@@ -185,17 +215,13 @@
     font-size: 1.5rem;
   }
 
-  .description ul li {
+  .announcement .description ul li {
     display: inline;
     list-style: none;
   }
 
-  .description ul li:after {
+  .announcement .description ul li + li:before {
     content: ' | ';
-  }
-
-  .description ul li:last-of-type:after {
-    content: '';
   }
 
   .loadUnder .logo {
