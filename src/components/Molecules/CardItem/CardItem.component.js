@@ -8,7 +8,6 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import styles from './CardItem.css';
 
-import Icon from '../../Atoms/Svg/Icons.component';
 import LazyLoad from '../../Atoms/LazyLoad/LazyLoad.component';
 
 const cx = classNames.bind(styles);
@@ -37,16 +36,7 @@ BlurbContent.defaultProps = {
 /**
  * Component that renders a Card Item.
  */
-const CardItem = ({
-  url,
-  title,
-  imgSrc,
-  imgAlt,
-  blurb,
-  large,
-  hasAudio,
-  freeform
-}) => (
+const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large, freeform }) => (
   <article
     className={cx({
       cardItem: true,
@@ -75,16 +65,6 @@ const CardItem = ({
       <div className={`${styles.titleWrap}`}>
         <h2 className={`${styles.title}`}>
           <a href={url} className={`${styles.link}`}>
-            {hasAudio && (
-              <a className={styles.iconLink} href={url}>
-                <Icon
-                  name="volume"
-                  className={styles.icon}
-                  isRoundIcon
-                  ariaLabel="Audio"
-                />
-              </a>
-            )}
             {title}
           </a>
         </h2>
@@ -108,7 +88,6 @@ CardItem.propTypes = {
   imgAlt: PropTypes.string,
   blurb: PropTypes.node,
   large: PropTypes.bool,
-  hasAudio: PropTypes.bool,
   freeform: PropTypes.bool
 };
 
@@ -119,7 +98,6 @@ CardItem.defaultProps = {
   url: null,
   title: null,
   large: false,
-  hasAudio: false,
   freeform: false
 };
 
