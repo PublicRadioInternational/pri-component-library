@@ -71,6 +71,9 @@ export default class Header extends Component {
             icon="play"
           >
             <DropdownItem url={`${baseUrl}/listen`}>Live Stream</DropdownItem>
+            <DropdownItem url={`${baseUrl}/live/schedule`}>
+              Live Stream Schedule
+            </DropdownItem>
             <DropdownItem url={`${baseUrl}/podcasts-program`}>
               Podcasts by Program
             </DropdownItem>
