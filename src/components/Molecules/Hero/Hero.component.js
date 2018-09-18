@@ -7,13 +7,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Hero.css';
 
-import Icon from '../../Atoms/Svg/Icons.component';
 import LazyLoad from '../../Atoms/LazyLoad/LazyLoad.component';
 
 const Hero = ({
   title,
   summary,
-  hasAudio,
   category,
   categoryUrl,
   imgSrc,
@@ -27,16 +25,6 @@ const Hero = ({
       </LazyLoad>
     </figure>
     <div className={styles.text}>
-      {hasAudio && (
-        <a className={styles.iconLink} href={url}>
-          <Icon
-            name="volume"
-            className={styles.icon}
-            isRoundIcon
-            ariaLabel="Audio"
-          />
-        </a>
-      )}
       <h2>
         <a className={styles.title} href={url}>
           {title}
@@ -57,12 +45,10 @@ Hero.propTypes = {
   categoryUrl: PropTypes.string,
   imgSrc: PropTypes.string.isRequired,
   imgAlt: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  hasAudio: PropTypes.bool
+  url: PropTypes.string.isRequired
 };
 
 Hero.defaultProps = {
-  hasAudio: false,
   categoryUrl: null
 };
 
