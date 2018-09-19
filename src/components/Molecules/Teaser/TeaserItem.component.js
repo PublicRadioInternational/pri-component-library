@@ -7,17 +7,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './TeaserItem.css';
 
-import Icon from '../../Atoms/Svg/Icons.component';
-
 /**
  * Component that renders an Article Item.
  */
-const TeaserItem = ({ title, url, programTitle, programUrl, hasAudio }) => (
+const TeaserItem = ({ title, url, programTitle, programUrl }) => (
   <article className={styles.teaserItem} typeof="sioc:Item foaf:Document">
     <div className={styles.titleWrap}>
       <h4 className={styles.title}>
         <a className={styles.link} href={url}>
-          {hasAudio && <Icon name="volume" className={styles.icon} />}
           {title}
         </a>
       </h4>
@@ -37,14 +34,12 @@ TeaserItem.propTypes = {
   url: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   programTitle: PropTypes.string,
-  programUrl: PropTypes.string,
-  hasAudio: PropTypes.bool
+  programUrl: PropTypes.string
 };
 
 TeaserItem.defaultProps = {
   programTitle: null,
-  programUrl: null,
-  hasAudio: false
+  programUrl: null
 };
 
 export default TeaserItem;
