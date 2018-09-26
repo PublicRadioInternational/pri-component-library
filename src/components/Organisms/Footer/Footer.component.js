@@ -10,7 +10,8 @@ import styles from './Footer.css';
 import PriLogo from '../../Atoms/Svg/PriLogo.component';
 import List from '../../Molecules/List/List.component';
 
-import gatesSponsorImg from './images/gates.jpg';
+import carnegieSponsorImg from './images/carnegie.jpg';
+import fordSponsorImg from './images/ford.jpg';
 import macarthurSponsorImg from './images/macarthur.jpg';
 
 /**
@@ -25,17 +26,32 @@ const Footer = ({ links }) => (
       <p>Major funding provided by:</p>
       <a
         className={styles.sponsor}
-        href="http://www.gatesfoundation.org/"
+        href="https://www.carnegie.org/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <img
           height="52"
           width="149"
-          alt="Bill &amp; Melinda Gates Foundation"
-          title="Bill &amp; Melinda Gates Foundation"
+          alt="Carnegie Corporation of New York"
+          title="Carnegie Corporation of New York"
           typeof="foaf:Image"
-          src={gatesSponsorImg}
+          src={carnegieSponsorImg}
+        />
+      </a>
+      <a
+        className={styles.sponsor}
+        href="https://www.fordfoundation.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          height="52"
+          width="149"
+          alt="Ford Foundation"
+          title="Ford Foundation"
+          typeof="foaf:Image"
+          src={fordSponsorImg}
         />
       </a>
       <a
@@ -59,7 +75,7 @@ const Footer = ({ links }) => (
     <section className={styles.footerBtm}>
       {links && <List listItems={links} />}
 
-      <p>&copy; 2018 Public Radio International</p>
+      <p>&copy; {new Date().getFullYear()} Public Radio International</p>
     </section>
   </footer>
 );

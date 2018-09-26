@@ -2588,15 +2588,30 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       </p>
       <a
         className="sponsor"
-        href="http://www.gatesfoundation.org/"
+        href="https://www.carnegie.org/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <img
-          alt="Bill & Melinda Gates Foundation"
+          alt="Carnegie Corporation of New York"
           height="52"
           src="test-file-stub"
-          title="Bill & Melinda Gates Foundation"
+          title="Carnegie Corporation of New York"
+          typeof="foaf:Image"
+          width="149"
+        />
+      </a>
+      <a
+        className="sponsor"
+        href="https://www.fordfoundation.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Ford Foundation"
+          height="52"
+          src="test-file-stub"
+          title="Ford Foundation"
           typeof="foaf:Image"
           width="149"
         />
@@ -2695,7 +2710,9 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
         </ul>
       </div>
       <p>
-        © 2018 Public Radio International
+        © 
+        2018
+         Public Radio International
       </p>
     </section>
   </footer>
