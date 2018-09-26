@@ -41,21 +41,6 @@ const Footer = ({ links }) => (
       </a>
       <a
         className={styles.sponsor}
-        href="https://www.fordfoundation.org/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          height="52"
-          width="149"
-          alt="Ford Foundation"
-          title="Ford Foundation"
-          typeof="foaf:Image"
-          src={fordSponsorImg}
-        />
-      </a>
-      <a
-        className={styles.sponsor}
         href="https://www.macfound.org/"
         target="_blank"
         rel="noopener noreferrer"
@@ -67,6 +52,21 @@ const Footer = ({ links }) => (
           title="MacArthur Foundation"
           typeof="foaf:Image"
           src={macarthurSponsorImg}
+        />
+      </a>
+      <a
+        className={styles.sponsor}
+        href="https://www.fordfoundation.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          height="52"
+          width="149"
+          alt="Ford Foundation"
+          title="Ford Foundation"
+          typeof="foaf:Image"
+          src={fordSponsorImg}
         />
       </a>
       <p>A Partner of OZY Media News</p>

@@ -2603,21 +2603,6 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       </a>
       <a
         className="sponsor"
-        href="https://www.fordfoundation.org/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <img
-          alt="Ford Foundation"
-          height="52"
-          src="test-file-stub"
-          title="Ford Foundation"
-          typeof="foaf:Image"
-          width="149"
-        />
-      </a>
-      <a
-        className="sponsor"
         href="https://www.macfound.org/"
         rel="noopener noreferrer"
         target="_blank"
@@ -2627,6 +2612,21 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           height="52"
           src="test-file-stub"
           title="MacArthur Foundation"
+          typeof="foaf:Image"
+          width="149"
+        />
+      </a>
+      <a
+        className="sponsor"
+        href="https://www.fordfoundation.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Ford Foundation"
+          height="52"
+          src="test-file-stub"
+          title="Ford Foundation"
           typeof="foaf:Image"
           width="149"
         />
