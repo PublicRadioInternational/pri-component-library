@@ -100,11 +100,6 @@ export default class Header extends Component {
             </DropdownItem>
             <DropdownItem isHr />
             <DropdownItem heading="Weekly Newsletters" />
-            <DropdownItem
-              url={`${baseUrl}/subscribe-across-womens-lives-weekly-newsletter`}
-            >
-              Across Women{"'"}s Lives
-            </DropdownItem>
             <DropdownItem url={`${baseUrl}/subscribe-global-nation-newsletter`}>
               Global Nation
             </DropdownItem>
