@@ -112,7 +112,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
         </a>
         <a
           className="btnOrange btnHeaderRight"
-          href="https://www.pri.org/donate/index.html?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations"
+          href="https://www.pri.org/donate/about?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations"
           onClick={[Function]}
         >
           <svg
@@ -1062,7 +1062,7 @@ exports[`<MainMenu /> Matches the Main Menu snapshot 1`] = `
           >
             <a
               className="listLink accordionContentMenuLink accordionContentMenuLinkOrange "
-              href="https://www.pri.org/donate/index.html?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations"
+              href="https://www.pri.org/donate/general?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations"
             >
               Donate
             </a>
