@@ -126,7 +126,7 @@ export default class Header extends Component {
           </Dropdown>
 
           <Dropdown
-            url={`${baseUrl}/donate/general?utm_source=navigation&utm_medium=website&utm_campaign=donations`}
+            url={`${baseUrl}/donate/about?utm_source=navigation&utm_medium=website&utm_campaign=donations`}
             title="Donate"
             color="Orange"
             className={styles.button}
@@ -135,7 +135,7 @@ export default class Header extends Component {
             icon="heart"
           >
             <DropdownItem
-              url={`${baseUrl}/donate/index.html?utm_source=navigation&utm_medium=website&utm_campaign=donations`}
+              url={`${baseUrl}/donate/general?utm_source=navigation&utm_medium=website&utm_campaign=donations`}
             >
               Give Now
             </DropdownItem>

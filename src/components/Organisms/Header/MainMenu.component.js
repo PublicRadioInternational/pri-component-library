@@ -78,7 +78,7 @@ export default class MainMenu extends Component {
               <ButtonLink
                 color="Orange"
                 className={styles.btnHeaderRight}
-                url={`${baseUrl}donate/index.html?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations`}
+                url={`${baseUrl}donate/about?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations`}
               >
                 <Icon name="heart" inline ariaHidden />
                 Donate
@@ -342,7 +342,7 @@ export default class MainMenu extends Component {
             accordionList={[
               {
                 name: 'Donate',
-                url: `${baseUrl}donate/index.html?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations`
+                url: `${baseUrl}donate/general?utm_source=navigation&amp;utm_medium=website&amp;utm_campaign=donations`
               }
             ]}
           />
