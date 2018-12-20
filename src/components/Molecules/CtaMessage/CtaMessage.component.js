@@ -28,12 +28,12 @@ export default class CtaMessage extends Component {
     title: PropTypes.string,
     description: PropTypes.string,
     action: PropTypes.shape({
-      label: PropTypes.string.isRequired,
+      label: PropTypes.string,
       btnColor: ButtonLink.propTypes.color,
       url: PropTypes.string
     }),
     dismiss: PropTypes.shape({
-      label: PropTypes.string.isRequired
+      label: PropTypes.string
     })
   };
 
@@ -57,7 +57,7 @@ export default class CtaMessage extends Component {
   };
 
   render() {
-    const { type, showLogo, title, description, action, dismiss } = this.props;
+    const { type, showLogo, title, description, action } = this.props;
     const isLoadUnder = type === 'loadUnder';
     const promptClass = cx({
       [type]: type
@@ -71,6 +71,12 @@ export default class CtaMessage extends Component {
           width: 90,
           height: 19
         };
+    const dismiss =
+      (!this.props.dismiss || !this.props.dismiss.label) && isLoadUnder
+        ? {
+            label: 'Dismiss'
+          }
+        : this.props.dismiss;
 
     return (
       <aside className={promptClass}>
@@ -96,7 +102,7 @@ export default class CtaMessage extends Component {
               dangerouslySetInnerHTML={{ __html: description }}
             />
           ) : null}
-          {(action || dismiss) && (
+          {((action && action.label) || (dismiss && dismiss.label)) && (
             <div className={styles.actions}>
               {action && (
                 <ButtonLink

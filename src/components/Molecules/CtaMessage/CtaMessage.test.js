@@ -85,6 +85,24 @@ describe('<CtaMessage />', () => {
     expect(component).toMatchSnapshot();
   });
 
+  it('Matches the CTA Message w/o buttons snapshot', () => {
+    const component = renderer
+      .create(
+        <CtaMessage
+          action={{
+            label: null,
+            url: null,
+            btnColor: 'Blue'
+          }}
+          dismiss={{
+            label: null
+          }}
+        />
+      )
+      .toJSON();
+    expect(component).toMatchSnapshot();
+  });
+
   it('onPromptClose handler is called when close is click', () => {
     const actionFn = jest.fn();
     const wrapper = mount(<CtaMessage onClose={actionFn} />);
