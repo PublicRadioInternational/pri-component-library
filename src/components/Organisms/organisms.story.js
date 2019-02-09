@@ -204,7 +204,21 @@ storiesOf('Organisms/TeaserList', module)
 
 storiesOf('Organisms/Header', module)
   .addDecorator(checkA11y)
-  .add('Default', () => <Header baseUrl="https://www.pri.org" />);
+  .add('Default', () => (
+    <Header
+      baseUrl="https://www.pri.org"
+      menus={{
+        headerNav: [
+          {
+            name: 'Donate',
+            url: '#',
+            icon: 'heart',
+            color: 'Orange'
+          }
+        ]
+      }}
+    />
+  ));
 
 storiesOf('Organisms/Footer', module)
   .addDecorator(checkA11y)

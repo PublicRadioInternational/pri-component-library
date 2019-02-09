@@ -5,25 +5,36 @@
 @value strataUi, strataMenu, strataForeground, strataBackground from "../../00_global/stratas.css";
 
 .siteHeader {
-  background-color: white;
-  border-bottom: 3px solid #ddd;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: 50px 123px 1fr;
+  grid-template-rows: 50px;
+  align-items: center;
   position: relative;
   z-index: strataUi;
+
+  background-color: white;
+
+  border-bottom: 3px solid #ddd;
 }
 
-.branding {
-  flex: 1;
+.menuToggle {
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-rows: 20px;
+  justify-content: center;
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 .menuIcon {
   color: #4b4b4b;
   cursor: pointer;
-  height: 35px;
-  float: left;
-  width: 41px;
+  width: 100%;
+  height: 100%;
 }
 
 .menuIcon:hover {
@@ -34,59 +45,50 @@
   opacity: 0.8;
 }
 
+.branding {
+  line-height: 0;
+}
+
+.logo {
+  display: block;
+}
+
 .siteLogo {
   pointer-events: none;
-  position: relative;
-  top: 3px;
-  max-width: 123px;
-  width: 61%;
+  width: 100%;
 }
 
 .buttons {
   display: flex;
+  justify-self: end;
+  padding: 0 0.85rem;
 }
 
 .button {
+  display: grid;
+  grid-template-columns: max-content;
+  grid-column-gap: 0.5em;
+  align-items: center;
+  justify-items: center;
+}
+
+.buttonHasIcon {
+  grid-template-columns: 1.25em max-content;
+}
+
+.button + .button {
   margin-left: 0.4em;
 }
 
 @media bp-small {
-  .button {
+  .button + .button {
     margin-left: 0.75em;
   }
 }
 
-svg.mobileSmallIcon {
-  top: 5px;
-  width: 21px;
-  height: 21px;
-  vertical-align: middle;
-}
-
-@media bp-small {
-  svg.mobileSmallIcon {
-    width: 24px;
-    height: 24px;
-  }
-}
-
-@media bp-header {
-  svg.mobileSmallIcon {
-    top: 2px;
-    width: 16px;
-    height: 16px;
-    vertical-align: baseline;
-  }
-}
-
-.newsletterBtn {
-  display: none;
-}
-
-@media bp-small {
-  .newsletterBtn {
-    display: flex;
-  }
+svg.buttonIcon {
+  width: 100%;
+  height: 100%;
 }
 
 /* Menu */
@@ -107,17 +109,6 @@ svg.mobileSmallIcon {
 .bgOpen {
   visibility: visible;
   z-index: strataForeground;
-}
-
-.menuBtn {
-  background: none;
-  border: none;
-  height: 33px;
-  margin-right: 11px;
-  padding: 0;
-  position: relative;
-  top: 5px;
-  width: 36px;
 }
 
 .mainMenu {
