@@ -21,7 +21,6 @@ const cx = classNames.bind(styles);
  */
 export default class MainMenu extends Component {
   static propTypes = {
-    toggleOpen: PropTypes.func,
     baseUrl: PropTypes.string,
     menus: PropTypes.shape({
       drawerMainNav: PropTypes.arrayOf(PropTypes.object),
@@ -31,19 +30,9 @@ export default class MainMenu extends Component {
   };
 
   static defaultProps = {
-    toggleOpen: () => {},
     baseUrl: 'https://www.pri.org/',
     menus: {}
   };
-
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    this.props.toggleOpen();
-  }
 
   render() {
     const {
