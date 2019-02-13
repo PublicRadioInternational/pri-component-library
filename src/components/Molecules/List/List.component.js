@@ -57,7 +57,8 @@ export default class List extends Component {
       classNameOpen,
       title,
       titleClass,
-      id
+      id,
+      ...other
     } = this.props;
 
     const listWrapClasses = cx({
@@ -88,6 +89,7 @@ export default class List extends Component {
         role={role}
         aria-labelledby={ariaLabelledby}
         id={id}
+        {...other}
       >
         {title && <h2 className={titleClass}>{title}</h2>}
         <ul className={`${styles.list} ${ulClass}`}>{items}</ul>

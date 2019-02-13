@@ -54,6 +54,9 @@ export default class Accordion extends Component {
       iconDown: true,
       iconUp: this.state.revealed === true
     });
+    const linkStyles = {
+      '--accordion-item-count': accordionList.length
+    };
 
     return (
       <div className={`${styles.accordionItem} ${styles[accordionItemColor]}`}>
@@ -91,6 +94,7 @@ export default class Accordion extends Component {
             styles[accordionContentMenuLinkColor]
           }`}
           listItems={accordionList}
+          style={linkStyles}
         />
       </div>
     );

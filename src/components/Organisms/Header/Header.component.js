@@ -29,9 +29,13 @@ export default class Header extends Component {
   render() {
     const { baseUrl, menus } = this.props;
     const { headerNav } = menus;
+    const drawerClasses = cx({
+      drawer: true,
+      drawerOpen: this.state.isMenuOpen
+    });
     const bgClasses = cx({
-      bg: true,
-      bgOpen: this.state.isMenuOpen
+      drawerBg: true,
+      drawerBgOpen: this.state.isMenuOpen
     });
 
     const headerNavButtons =
@@ -42,7 +46,12 @@ export default class Header extends Component {
           buttonHasIcon: icon
         });
         return (
-          <ButtonLink className={buttonClasses} color={color} url={url}>
+          <ButtonLink
+            className={buttonClasses}
+            color={color}
+            url={url}
+            key={name}
+          >
             {icon && <Icon name={icon} className={styles.buttonIcon} />} {name}
           </ButtonLink>
         );
@@ -55,11 +64,13 @@ export default class Header extends Component {
           onClick={this.toggleOpen}
           aria-label="Close Overlay"
         />
-        <div
-          className={`${styles.mainMenu} ${this.state.isMenuOpen &&
-            styles.mainMenuOpen}`}
-        >
-          <MainMenu toggleOpen={this.toggleOpen} baseUrl={baseUrl} />
+        <div className={drawerClasses}>
+          <button className={styles.drawerClose} onClick={this.toggleOpen}>
+            <Icon name="left" viewBox="0 0 21 25" ariaHidden />
+            Close
+          </button>
+
+          <MainMenu menus={menus} baseUrl={baseUrl} />
         </div>
 
         <div className={`${styles.menuToggle}`}>

@@ -15,6 +15,22 @@ describe('<Header />', () => {
     wrapper.find('.menuBtn').simulate('click');
     expect(wrapper.state().isMenuOpen).toEqual(true);
   });
+
+  it('Adds Icon element', () => {
+    const menus = {
+      headerNav: [
+        {
+          name: 'Test',
+          url: '#',
+          icon: 'heart'
+        }
+      ]
+    };
+    const wrapper = mount(<Header menus={menus} />);
+    const icon = wrapper.find('.buttons .buttonIcon');
+    expect(icon.exists()).toEqual(true);
+  });
+
   it('Matches the Header snapshot', () => {
     const component = renderer.create(<Header />).toJSON();
     expect(component).toMatchSnapshot();
