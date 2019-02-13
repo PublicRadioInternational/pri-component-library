@@ -52,6 +52,7 @@ export default class MainMenu extends Component {
     } = this.props;
     const mainNavColors = ['Blue', 'Yellow', 'Green', 'Orange'];
     const iconViewBox = {
+      facebook: '0 0 32 32',
       twitter: '0 0 32 32',
       rss: '3 3 20 20'
     };
