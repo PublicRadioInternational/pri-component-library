@@ -1,5 +1,5 @@
 /* import breakpoints */
-@value small as bp-small, header as bp-header from "../../00_global/breakpoints.css";
+@value small as bp-small, header as bp-header, min as bp-min from "../../00_global/breakpoints.css";
 
 /* import stratas */
 @value strataUi, strataMenu, strataForeground, strataBackground from "../../00_global/stratas.css";
@@ -74,10 +74,17 @@
   grid-column-gap: 0.5em;
   align-items: center;
   justify-items: center;
+
+  font-size: 0.7rem;
 }
 
-.buttonHasIcon {
-  grid-template-columns: 1.25em max-content;
+@media bp-min {
+  .button {
+    font-size: 1rem;
+  }
+  .buttonHasIcon {
+    grid-template-columns: 1.25em max-content;
+  }
 }
 
 .button + .button {
@@ -91,8 +98,14 @@
 }
 
 svg.buttonIcon {
+  display: none;
   width: 100%;
   height: 100%;
+}
+@media bp-min {
+  svg.buttonIcon {
+    display: initial;
+  }
 }
 
 /* Drawer */
