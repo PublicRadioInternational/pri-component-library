@@ -5,9 +5,13 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import sharedStyles from '../../00_global/shared.css';
+import classNames from 'classnames/bind';
+
 import styles from './Search.css';
-import ButtonInput from '../../Atoms/Button/ButtonInput.component';
+
+import Icon from '../../Atoms/Svg/Icons.component';
+
+const cx = classNames.bind(styles);
 
 /**
  * Component that renders a Search form.
@@ -48,34 +52,42 @@ export default class Search extends Component {
    * @param {object} event - Event object from action.
    */
   handleFormSubmit = event => {
-    event.preventDefault();
     const { searchFieldValue } = this.state;
     const { baseUrl } = this.props;
+    const actionStr = `${baseUrl}/search/google/${encodeURIComponent(
+      searchFieldValue
+    )}`;
 
-    // TODO: Once the search page is built out in the new frontend, this should
-    // be adjusted such that it uses the correct routing methods.
-    window.location.assign(
-      `${baseUrl}/search/node?search_api_views_fulltext=${searchFieldValue}`
-    );
+    event.target.setAttribute('action', actionStr);
   };
 
   render() {
+    const { searchFieldValue } = this.state;
+    const searchClasses = cx({
+      search: true,
+      hasValue: searchFieldValue
+    });
     return (
-      <form className={styles.search} onSubmit={this.handleFormSubmit}>
-        <label htmlFor="search" className={styles.searchLabel}>
-          <span className={sharedStyles.visuallyhidden}>Search for...</span>
+      <div className={searchClasses}>
+        <form
+          className={styles.searchForm}
+          method="POST"
+          onSubmit={this.handleFormSubmit}
+        >
+          <label htmlFor="search__field" className={styles.searchLabel}>
+            Search
+          </label>
           <input
             type="text"
-            className={styles.searchText}
-            placeholder="Search for..."
+            className={styles.searchInput}
             onChange={this.handleFieldUpdate}
-            id="search"
+            id="search__field"
           />
-        </label>
-        <div className={styles.btnWrap}>
-          <ButtonInput value="Go!" className={styles.searchBtn} />
-        </div>
-      </form>
+          <button type="submit" className={styles.searchBtn}>
+            <Icon name="search" className={styles.searchIcon} />
+          </button>
+        </form>
+      </div>
     );
   }
 }

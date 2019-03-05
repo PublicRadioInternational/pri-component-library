@@ -60,7 +60,7 @@
 /* Colors */
 @define-mixin btnOrange {
   background-color: orange;
-  border-color: transparent;
+  border-color: orangeDark;
   color: white;
 }
 

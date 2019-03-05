@@ -6,59 +6,98 @@
 @value fonts: "../../00_global/fonts.css";
 @value heading from fonts;
 
-.accordionItem {
-  border-left: 3px solid orange;
-  border-top: 1px solid #ddd;
-  border-right: 1px solid #ddd;
+@value linkHeight: 2rem;
+
+:root {
+  --card-theme-color: blue;
+  --card-text-color: white;
+  --accordion-item-count: 0;
 }
 
-.accordionItem:last-child {
+.accordionItem {
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+
+  background: whiteDark;
+
+  border: none;
+  border-left: 3px solid var(--card-theme-color);
+  border-radius: 0;
+}
+
+.accordionItem:last-of-type .accordionContent {
+  box-shadow: inset 0 -1px 0 #ddd;
+}
+
+.accordionItem:last-of-type .accordionTopLink {
   border-bottom: 1px solid #ddd;
 }
 
-.accordionItemBlue {
-  border-left-color: blue;
+/* .accordionItem:last-child {
+  border-bottom: 1px solid #ddd;
+} */
+
+.accordionItemBlue,
+.accordionContentMenuLinkBlue {
+  --card-theme-color: blue;
 }
 
-.accordionItemYellow {
-  border-left-color: yellow;
+.accordionItemYellow,
+.accordionContentMenuLinkYellow {
+  --card-theme-color: yellow;
+  --card-text-color: black;
 }
 
-.accordionItemGreen {
-  border-left-color: green;
+.accordionItemGreen,
+.accordionContentMenuLinkGreen {
+  --card-theme-color: green;
 }
 
-.accordionItemOrange {
-  border-left-color: orange;
+.accordionItemOrange,
+.accordionContentMenuLinkOrange {
+  --card-theme-color: orange;
 }
 
 .accordionTop {
-  cursor: pointer;
+  margin: 0;
+  padding: 0;
+
+  box-shadow: inset 0 1px 0 #ddd;
+
+  border: none;
+  border-radius: 0;
 }
 
 .accordionTopHeading {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .accordionTopLink {
-  background: whiteDark;
-  color: grayDark;
   display: block;
+
   padding: 10px 42px 10px 15px;
-  font-weight: bold;
+
+  border: 1px solid #ddd;
+  border-left: none;
+  border-bottom: none;
+
+  color: grayDark;
   font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.05rem;
 }
 
-.accordionTopLinkOpen {
-  background: white;
-}
-
+.accordionTopLinkOpen,
 .accordionTopLink:hover {
-  background: blue;
-  color: white;
+  background-color: var(--card-theme-color);
+  color: var(--card-text-color);
+  border-color: var(--card-theme-color) !important;
+  box-shadow: none;
 }
 
 .iconDown {
@@ -75,12 +114,17 @@
 }
 
 .accordionContent {
-  display: none;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+  overflow: hidden;
+  background: white;
 }
 
 .accordionContentOpen {
-  background-color: white;
-  display: block;
+  max-height: calc(
+    var(--accordion-item-count) * linkHeight + (var(--accordion-item-count) - 1) *
+      1px
+  );
 }
 
 .accordionContentMenu {
@@ -89,42 +133,43 @@
 }
 
 .accordionContentMenuItem {
-  border-bottom: 1px dotted grayLighter;
   display: block;
-  list-style: none;
-  line-height: 1.1;
+
   padding: 0;
+
   text-align: left;
+  line-height: 1.1;
+
+  list-style: none;
 }
 
 .accordionContentMenuItem::after {
   content: '';
 }
 
+.accordionContentMenuItem
+  + .accordionContentMenuItem
+  .accordionContentMenuLink {
+  border-top: 1px dotted grayLighter;
+}
+
 .accordionContentMenuLink {
-  color: blue;
   display: block;
-  font: 0.875em heading;
-  padding: 10px 15px;
+
+  padding: 0 15px;
+
+  border: none;
+  border-top: 1px solid transparent;
+  border-right: 1px solid #ddd;
+
+  color: blue;
+  font: 0.875rem heading;
+  line-height: linkHeight;
 }
 
 .accordionContentMenuLink:hover {
-  background-color: blue;
-  color: white;
-}
-
-.accordionTopLinkYellow:hover,
-.accordionContentMenuLinkYellow:hover {
-  background: yellow;
-  color: inherit;
-}
-
-.accordionTopLinkOrange:hover,
-.accordionContentMenuLinkOrange:hover {
-  background: orange;
-}
-
-.accordionTopLinkGreen:hover,
-.accordionContentMenuLinkGreen:hover {
-  background: green;
+  background-color: var(--card-theme-color);
+  color: var(--card-text-color);
+  border-top-style: solid !important;
+  border-color: var(--card-theme-color);
 }

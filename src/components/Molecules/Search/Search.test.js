@@ -18,11 +18,15 @@ describe('<Search />', () => {
   });
 
   it('Handles form submit events', () => {
-    window.location.assign = jest.fn();
     const wrapper = mount(<Search />);
-    const button = wrapper.find('form');
-    button.simulate('submit');
-    expect(window.location.assign).toHaveBeenCalledTimes(1);
+    const form = wrapper.find('form');
+    const input = wrapper.find('input[type="text"]');
+    input.instance().value = 'test';
+    input.simulate('change');
+    form.simulate('submit');
+    expect(form.getDOMNode().getAttribute('action')).toBe(
+      'https://www.pri.org/search/google/test'
+    );
   });
 
   it('Matches the snapshot', () => {

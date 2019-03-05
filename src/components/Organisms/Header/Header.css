@@ -1,29 +1,44 @@
 /* import breakpoints */
-@value small as bp-small, header as bp-header from "../../00_global/breakpoints.css";
+@value small as bp-small, header as bp-header, min as bp-min from "../../00_global/breakpoints.css";
 
 /* import stratas */
 @value strataUi, strataMenu, strataForeground, strataBackground from "../../00_global/stratas.css";
 
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value whiteDark, gray, grayLighter, grayDark, orange, orangeDark, blue, yellow, green from colors;
+
 .siteHeader {
-  background-color: white;
-  border-bottom: 3px solid #ddd;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: 50px 123px 1fr;
+  grid-template-rows: 50px;
+  align-items: center;
   position: relative;
   z-index: strataUi;
+
+  background-color: white;
+
+  border-bottom: 3px solid #ddd;
 }
 
-.branding {
-  flex: 1;
+.menuToggle {
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-rows: 20px;
+  justify-content: center;
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 .menuIcon {
   color: #4b4b4b;
   cursor: pointer;
-  height: 35px;
-  float: left;
-  width: 41px;
+  width: 100%;
+  height: 100%;
 }
 
 .menuIcon:hover {
@@ -34,63 +49,97 @@
   opacity: 0.8;
 }
 
+.branding {
+  line-height: 0;
+}
+
+.logo {
+  display: block;
+}
+
 .siteLogo {
   pointer-events: none;
-  position: relative;
-  top: 3px;
-  max-width: 123px;
-  width: 61%;
+  width: 100%;
 }
 
 .buttons {
   display: flex;
+  justify-self: end;
+  padding: 0 0.85rem;
 }
 
 .button {
+  display: grid;
+  grid-template-columns: max-content;
+  grid-column-gap: 0.5em;
+  align-items: center;
+  justify-items: center;
+
+  font-size: 0.7rem;
+}
+
+@media bp-min {
+  .button {
+    font-size: 1rem;
+  }
+  .buttonHasIcon {
+    grid-template-columns: 1.25em max-content;
+  }
+}
+
+.button + .button {
   margin-left: 0.4em;
 }
 
 @media bp-small {
-  .button {
+  .button + .button {
     margin-left: 0.75em;
   }
 }
 
-svg.mobileSmallIcon {
-  top: 5px;
-  width: 21px;
-  height: 21px;
-  vertical-align: middle;
+svg.buttonIcon {
+  display: none;
+  width: 100%;
+  height: 100%;
 }
-
-@media bp-small {
-  svg.mobileSmallIcon {
-    width: 24px;
-    height: 24px;
+@media bp-min {
+  svg.buttonIcon {
+    display: initial;
   }
 }
 
-@media bp-header {
-  svg.mobileSmallIcon {
-    top: 2px;
-    width: 16px;
-    height: 16px;
-    vertical-align: baseline;
-  }
+/* Drawer */
+.drawer {
+  transition: all 0.3s ease-out;
+  transform: translateX(-100%);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 360px;
+  overflow: hidden;
+  overflow-y: auto;
+  z-index: strataMenu;
+
+  box-shadow: 3px 0 16px -3px transparent;
+  box-sizing: border-box;
+
+  padding-top: 40px;
+
+  background-color: gray;
 }
 
-.newsletterBtn {
+.drawer::-webkit-scrollbar {
   display: none;
 }
 
-@media bp-small {
-  .newsletterBtn {
-    display: flex;
-  }
+.drawerOpen {
+  transform: translateX(0);
+  box-shadow: 3px 0 16px -3px rgba(0, 0, 0, 0.4);
 }
 
-/* Menu */
-.bg {
+.drawerBg {
   background: rgba(0, 0, 0, 0.5);
   border: none;
   height: 100%;
@@ -104,39 +153,27 @@ svg.mobileSmallIcon {
   visibility: hidden;
 }
 
-.bgOpen {
+.drawerBgOpen {
   visibility: visible;
   z-index: strataForeground;
 }
 
-.menuBtn {
+.drawerClose {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
+  padding: 0 0.6rem;
+
   background: none;
   border: none;
-  height: 33px;
-  margin-right: 11px;
-  padding: 0;
-  position: relative;
-  top: 5px;
-  width: 36px;
-}
 
-.mainMenu {
-  overflow: hidden;
-  overflow-y: auto;
-  position: fixed;
-  left: 0;
-  top: 0;
-  max-width: 360px;
-  height: 100vh;
-  transform: translateX(-100%);
-  transition: 0.3s;
-  z-index: strataMenu;
-}
+  color: grayLighter;
+  font-size: inherit;
+  line-height: 40px;
 
-.mainMenu::-webkit-scrollbar {
-  display: none;
-}
-
-.mainMenuOpen {
-  transform: translateX(0);
+  cursor: pointer;
 }

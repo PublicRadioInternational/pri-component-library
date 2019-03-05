@@ -10,175 +10,119 @@
 @value min as bp-min from "../../00_global/breakpoints.css";
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
   background-color: gray;
-  flex-flow: column;
-  min-height: 100vh;
-  position: relative;
 }
 
-@media bp-min {
-  .wrapper {
-    display: flex;
-    overflow-y: auto;
-  }
-}
-
-.header {
+.content {
   border-top: 3px solid orange;
   flex: 0 0 auto;
   padding: 15px 15px 20px;
   color: grayLighter;
 }
 
-.closeMenu {
-  align-items: center;
-  background: none;
-  border: none;
-  color: grayLighter;
-  cursor: pointer;
-  display: flex;
-  float: right;
-  font-size: 0.95rem;
-  padding: 0;
+/* Top Nav */
+.menuTopNav {
+  margin: 1rem;
 }
 
-.inlineLink {
-  height: 20px;
-  margin: 0;
-  width: 20px;
-}
-
-.headerText {
-  clear: both;
-  padding-top: 20px;
-}
-
-.headerLogo {
-  width: 36%;
-}
-
-.maxWidth {
-  max-width: 100%;
-}
-
-/* Buttons */
 .btnGroup {
-  margin: 14px 0 2px;
-}
-
-@media bp-min {
   display: flex;
+  justify-content: center;
 }
 
-.btnHeaderLeft,
-.btnHeaderMiddle,
-.btnHeaderRight {
-  display: block;
-  font: normal 0.875rem/1.5 heading;
-  letter-spacing: 0;
-  margin-bottom: 0.3rem;
-  padding: 0.275rem 0.5rem;
+.btnGroupBtn {
+  font-weight: normal;
   text-transform: none;
+  white-space: nowrap;
 }
 
-@media bp-min {
-  .btnHeaderLeft,
-  .btnHeaderMiddle,
-  .btnHeaderRight {
-    display: inline-block;
-    padding: 0.475rem 0.5rem;
-  }
+.btnGroupBtn:not(:only-child) {
+  flex-grow: 1;
 
-  .btnHeaderLeft {
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-  }
+  border-radius: 0;
+}
 
-  .btnHeaderMiddle {
-    border-left: 1px solid orangeDark;
-    border-radius: 0;
-  }
+.btnGroupBtn:only-child {
+  flex-grow: 0;
+}
 
-  .btnHeaderRight {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    border-left: 1px solid orangeDark;
-  }
+.btnGroupBtn:first-of-type:not(:only-child) {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.btnGroupBtn:last-of-type:not(:only-child) {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.btnGroupBtn + .btnGroupBtn {
+  border-left: 0;
 }
 
 /* Accordion Nav */
-.accordionMenu {
-  background: whiteDark;
-  flex: 1 1 auto;
+.menuMainNav {
+  flex-grow: 1;
   padding: 10px;
+  background: whiteDark;
 }
 
 /* Social Links */
 .socialMenu {
-  background-color: gray;
   display: flex;
-  flex: 0 1 57px;
-  justify-content: space-between;
-}
+  justify-content: space-evenly;
+  align-items: center;
 
-.socialMenuItem {
-  display: inline-block;
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .socialMenuLink {
+  display: flex;
+  width: 57px;
+  height: 57px;
+  align-items: center;
+  justify-content: center;
+
   color: gray;
-  display: block;
-  padding: 1rem;
+  line-height: 0;
+}
+.socialMenuLink:hover {
+  background-color: orange;
+  color: orange;
 }
 
-.socialMenuLinkFB:hover {
+.facebook:hover {
   background-color: #5179bb;
   color: #5179bb;
 }
 
-.socialMenuLinkTW:hover {
+.twitter:hover {
   background-color: #1da1f2;
   color: #1da1f2;
 }
 
-.socialMenuLinkEM:hover {
-  background-color: orange;
-}
-
-.socialMenuLinkRSS:hover {
+.rss:hover {
   background-color: green;
   color: green;
 }
 
-.socialMenuLinkLogin:hover {
-  background-color: blue;
-}
-
 .socialMenuIcon {
+  padding: 6px;
+
   background-color: #ddd;
-  border-radius: 50px;
-  height: 16px;
-  padding: 5px 3px 5px 1px;
-  width: 21px;
+  border-radius: 50%;
 }
 
-.socialMenuIconFull {
-  background: none;
-  border-radius: 0;
-  color: #ddd;
-  height: 25px;
-  padding: 0;
-  width: 25px;
-}
+.socialMenuSvg {
+  width: 20px;
+  height: 20px;
 
-.socialMenuIconRSS {
-  height: 23px;
-  padding: 2px 2px 2px 3px;
-  width: 22px;
-}
-
-.socialMenuIconFullLg {
-  height: 37px;
-  width: 33px;
+  fill: currentColor;
 }
