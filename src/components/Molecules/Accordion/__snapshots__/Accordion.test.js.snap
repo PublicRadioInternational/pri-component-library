@@ -44,6 +44,11 @@ exports[`<Accordion /> Matches the List snapshot 1`] = `
     className="accordionContent"
     id={null}
     role="tabpanel"
+    style={
+      Object {
+        "--accordion-item-count": 2,
+      }
+    }
   >
     <ul
       className="list accordionContentMenu"

@@ -1,28 +1,175 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value grayLighter, gray, orange from colors;
+
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
 @value heading from fonts;
 
 .search {
-  align-items: stretch;
-  display: flex;
+  transition: width 500ms ease-out, background-position-x 1.25s ease-in-out;
   position: relative;
-  width: 100%;
+
+  margin: 1rem;
+
+  background-image: linear-gradient(
+    45deg,
+    #777 10%,
+    rgba(211, 64, 30, 0.75) 20%,
+    rgba(53, 113, 156, 0.5) 50%,
+    grayLighter 90%
+  );
+  background-position-x: 0;
+  background-size: 4000px;
+
+  color: white;
+  font-family: heading;
+  font-size: 0.9rem;
 }
 
-.searchText {
-  background-color: white;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem 0 0 0.25rem;
-  color: #495057;
-  display: block;
-  font: 1rem heading;
-  line-height: 1.5;
-  padding: 0.375rem 0.75rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  width: 141px;
+.search::before {
+  content: '';
+  transition: bottom 200ms linear;
+  position: absolute;
+  top: 0;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+
+  background-color: gray;
+}
+
+.search:focus-within,
+.search.hasValue {
+  background-position-x: 100%;
+}
+
+.searchForm {
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.searchLabel {
+  transition: all 400ms ease-out;
+  position: absolute;
+  left: 0.5em;
+  bottom: 0.25em;
+  z-index: 2;
+
+  user-select: none;
+
+  color: #ddd;
+  font-family: inherit;
+  font-weight: normal;
+
+  pointer-events: none;
+}
+
+.searchLabel::after {
+  content: '...';
+}
+
+.search:focus-within .searchLabel,
+.search.hasValue .searchLabel {
+  transform: translate(-0.5em, -1.25em);
+  opacity: 0.5;
+}
+
+.search:focus-within .searchLabel::after,
+.search.hasValue .searchLabel::after {
+  content: '';
+}
+
+.searchInput {
+  transition: padding 200ms ease-out;
+  position: relative;
+  display: inline-flex;
+  flex-grow: 1;
+  z-index: 1;
+  overflow: hidden;
+
+  margin-top: -1em;
+  margin-right: 1em;
+  padding: 1em 0 0.15em 0.5em;
+
+  background: none;
+
+  border: none;
+
+  color: inherit;
+  font-size: 1em;
+  line-height: 1.5em;
+
+  cursor: text;
+}
+
+.searchInput::after {
+  content: '\00a0';
+}
+
+.searchInput:focus,
+.search.hasValue .searchInput {
+  outline: none;
+
+  margin-right: 1.5em;
+
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .searchBtn {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  transition: opacity 200ms linear, transform 200ms ease-out;
+  transform-origin: 50% 50%;
+  transform: rotate(90deg);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  bottom: 0.15em;
+  width: 1.5em;
+  height: 100%;
+  z-index: 1;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: none;
+
+  opacity: 0;
+
+  pointer-events: none;
+  user-select: none;
+
+  color: inherit;
+
+  cursor: pointer;
+}
+
+.searchIcon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.search.hasValue .searchBtn,
+.searchInput:focus + .searchBtn,
+.searchBtn:focus {
+  transform: rotate(0);
+  opacity: 0.5;
+  pointer-events: all;
+}
+
+.searchBtn:hover,
+.searchBtn:focus {
+  transition-delay: unset;
+  opacity: 1 !important;
+}
+
+.searchBtn:active {
+  color: orange;
 }

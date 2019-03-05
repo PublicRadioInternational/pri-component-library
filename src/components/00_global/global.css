@@ -6,6 +6,10 @@
 @value fonts: "./fonts.css";
 @value copy, heading from fonts;
 
+html {
+  font-size: 112.5%;
+}
+
 body {
   background: grayLighter;
   color: grayDark;

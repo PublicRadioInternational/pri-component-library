@@ -6,6 +6,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from '@storybook/addon-a11y';
+import styles from '@sambego/storybook-styles';
 import sharedStyles from '../00_global/shared.css';
 
 import TeaserList from './Teaser/TeaserList.component';
@@ -13,6 +14,7 @@ import TeaserItem from '../Molecules/Teaser/TeaserItem.component';
 import CardList from './CardList/CardList.component';
 import CardItem from '../Molecules/CardItem/CardItem.component';
 import Header from './Header/Header.component';
+import MainMenu from './Header/MainMenu.component';
 import Footer from './Footer/Footer.component';
 import Main from './Main/Main.component';
 
@@ -202,9 +204,159 @@ storiesOf('Organisms/TeaserList', module)
     </TeaserList>
   ));
 
+const menus = {
+  drawerTopNav: [
+    {
+      name: 'About Us',
+      url: '#'
+    },
+    {
+      name: 'Contact',
+      url: '#'
+    },
+    {
+      name: 'Donate Now',
+      url: '#'
+    }
+  ],
+  drawerMainNav: [
+    {
+      name: 'Group 1',
+      url: '#',
+      children: [
+        {
+          name: 'Live Stream',
+          url: '#'
+        },
+        {
+          name: 'Podcasts by Program',
+          url: '#'
+        },
+        {
+          name: 'Ways to Listen',
+          url: '#'
+        }
+      ]
+    },
+    {
+      name: 'Group 2',
+      url: '#',
+      children: [
+        {
+          name: 'Live Stream',
+          url: '#'
+        },
+        {
+          name: 'Podcasts by Program',
+          url: '#'
+        },
+        {
+          name: 'Ways to Listen',
+          url: '#'
+        },
+        {
+          name: 'Donate Now',
+          url: '#'
+        },
+        {
+          name: 'Podcast Central',
+          url: '#'
+        },
+        {
+          name: 'Good Doggos',
+          url: '#'
+        }
+      ]
+    },
+    {
+      name: 'Group 3',
+      url: '#',
+      children: [
+        {
+          name: 'Live Stream',
+          url: '#'
+        },
+        {
+          name: 'Podcasts by Program',
+          url: '#'
+        },
+        {
+          name: 'Ways to Listen',
+          url: '#'
+        }
+      ]
+    },
+    {
+      name: 'Group 4',
+      url: '#',
+      children: [
+        {
+          name: 'Live Stream',
+          url: '#'
+        },
+        {
+          name: 'Podcasts by Program',
+          url: '#'
+        },
+        {
+          name: 'Ways to Listen',
+          url: '#'
+        }
+      ]
+    }
+  ],
+  drawerSocialNav: [
+    {
+      name: 'Facebook',
+      url: '#',
+      icon: 'facebook',
+      title: 'Follow us on Facebook'
+    },
+    {
+      name: 'Twitter',
+      url: '#',
+      icon: 'twitter',
+      title: 'Follow us on Twitter'
+    },
+    {
+      name: 'RSS Feed',
+      url: '#',
+      icon: 'rss',
+      title: 'PRI RSS Feed'
+    },
+    {
+      name: 'Favorite',
+      url: '#',
+      icon: 'heart',
+      title: 'Show some love!'
+    }
+  ],
+  headerNav: [
+    {
+      name: 'Donate',
+      url: '#',
+      icon: 'heart',
+      color: 'Orange'
+    }
+  ]
+};
+
 storiesOf('Organisms/Header', module)
   .addDecorator(checkA11y)
-  .add('Default', () => <Header baseUrl="https://www.pri.org" />);
+  .add('Default', () => <Header baseUrl="https://www.pri.org" menus={menus} />);
+
+storiesOf('Organisms/MainMenu', module)
+  .addDecorator(checkA11y)
+  .addDecorator(
+    styles({
+      height: '100vh',
+      width: '360px',
+      margin: '0 auto'
+    })
+  )
+  .add('Default', () => (
+    <MainMenu baseUrl="https://www.pri.org" menus={menus} />
+  ));
 
 storiesOf('Organisms/Footer', module)
   .addDecorator(checkA11y)
