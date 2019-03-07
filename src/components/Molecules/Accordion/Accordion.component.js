@@ -25,7 +25,7 @@ export default class Accordion extends Component {
   };
 
   static defaultProps = {
-    accordionList: {},
+    accordionList: [],
     color: 'Blue',
     listId: null
   };

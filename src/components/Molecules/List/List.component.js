@@ -30,7 +30,7 @@ export default class List extends Component {
   };
 
   static defaultProps = {
-    listItems: {},
+    listItems: [],
     className: null,
     ulClass: null,
     liClass: null,
