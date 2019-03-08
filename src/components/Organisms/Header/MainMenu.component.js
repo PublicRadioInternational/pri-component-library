@@ -24,7 +24,7 @@ export default class MainMenu extends Component {
     baseUrl: PropTypes.string,
     menus: PropTypes.shape({
       drawerMainNav: PropTypes.arrayOf(PropTypes.object),
-      drawerSocailNav: PropTypes.arrayOf(PropTypes.object),
+      drawerSocialNav: PropTypes.arrayOf(PropTypes.object),
       drawerTopNav: PropTypes.arrayOf(PropTypes.object)
     })
   };
