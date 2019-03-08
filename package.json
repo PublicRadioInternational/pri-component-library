@@ -63,7 +63,9 @@
     "start": "NODE_ENV=development start-storybook -p 9001 -c .storybook",
     "build": "NODE_ENV=production build-storybook -c .storybook -o dist",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d dist ; npm publish"
+    "deploy": "yarn deploy:ci ; gh-pages -d dist ; npm publish",
+    "deploy:ci":
+      "mkdir dist/.circleci ; cp .circleci/config.yml dist/.circleci/config.yml"
   },
   "devDependencies": {
     "@commitlint/cli": "^6.1.2",
