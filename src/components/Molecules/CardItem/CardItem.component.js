@@ -36,31 +36,39 @@ BlurbContent.defaultProps = {
 /**
  * Component that renders a Card Item.
  */
-const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large, freeform }) => (
+const CardItem = ({
+  url,
+  title,
+  imgSrc,
+  imgAlt,
+  blurb,
+  large,
+  freeform,
+  links
+}) => (
   <article
     className={cx({
       cardItem: true,
-      normal: !large && !freeform,
       large,
-      freeform
+      freeform,
+      noImage: !imgSrc
     })}
     typeof="sioc:Item foaf:Document"
   >
-    {imgSrc &&
-      !freeform && (
-        <figure className={cx('image')}>
-          <a href={url}>
-            <LazyLoad>
-              <img
-                typeof="foaf:Image"
-                data-src={imgSrc}
-                alt={imgAlt}
-                className={cx('img')}
-              />
-            </LazyLoad>
-          </a>
-        </figure>
-      )}
+    {imgSrc && (
+      <figure className={cx('image')}>
+        <a href={url}>
+          <LazyLoad>
+            <img
+              typeof="foaf:Image"
+              data-src={imgSrc}
+              alt={imgAlt}
+              className={cx('img')}
+            />
+          </LazyLoad>
+        </a>
+      </figure>
+    )}
     {title && (
       <div className={`${styles.titleWrap}`}>
         <h2 className={`${styles.title}`}>
@@ -78,6 +86,17 @@ const CardItem = ({ url, title, imgSrc, imgAlt, blurb, large, freeform }) => (
         <span dangerouslySetInnerHTML={{ __html: blurb }} />
       </BlurbContent>
     )}
+    {links && (
+      <ul className={`${styles.links}`}>
+        {links.map(({ title: label, url: href }) => (
+          <li className={`${styles.linksItem}`} key={href}>
+            <a className={`${styles.linksLink}`} href={href}>
+              {label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
   </article>
 );
 
@@ -88,7 +107,8 @@ CardItem.propTypes = {
   imgAlt: PropTypes.string,
   blurb: PropTypes.node,
   large: PropTypes.bool,
-  freeform: PropTypes.bool
+  freeform: PropTypes.bool,
+  links: PropTypes.arrayOf(PropTypes.object)
 };
 
 CardItem.defaultProps = {
@@ -98,7 +118,8 @@ CardItem.defaultProps = {
   url: null,
   title: null,
   large: false,
-  freeform: false
+  freeform: false,
+  links: null
 };
 
 export default CardItem;

@@ -134,6 +134,54 @@ storiesOf('Molecules/CardItem', module)
         '<h2>Header within a freeform body</h2><h2><a href="#">Header within a freeform body and has a link</a></h2><blockquote><p>"Science and stories for a meaningful life. Hosted by award-winning professor Dacher Keltner, The Science of Happiness highlights the most provocative and practical findings to have emerged from the ground-breaking science of compassion, gratitude, mindfulness, and awe."</p></blockquote><p>Science and stories for a meaningful life. Hosted by award-winning professor Dacher Keltner, The Science of Happiness highlights the most provocative and practical findings to have emerged from the ground-breaking science of compassion, gratitude, mindfulness, and awe. A co-production with the Greater Good Science Center at UC Berkeley. <a href="#">This is a link</a></p>'
       }
     />
+  ))
+  .add('Freeform w/Links', () => (
+    <CardItem
+      title="50 years on, India is celebrating the Beatles' infamous trip to the country"
+      url="stories/2017-07-24/clearing-mines-and-explosives-mosul"
+      imgSrc="https://media.pri.org/s3fs-public/styles/story_main/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
+      imgAlt="Alt Text"
+      blurb={
+        '<h2>Header within a freeform body</h2><h2><a href="#">Header within a freeform body and has a link</a></h2><blockquote><p>"Science and stories for a meaningful life. Hosted by award-winning professor Dacher Keltner, The Science of Happiness highlights the most provocative and practical findings to have emerged from the ground-breaking science of compassion, gratitude, mindfulness, and awe."</p></blockquote><p>Science and stories for a meaningful life. Hosted by award-winning professor Dacher Keltner, The Science of Happiness highlights the most provocative and practical findings to have emerged from the ground-breaking science of compassion, gratitude, mindfulness, and awe. A co-production with the Greater Good Science Center at UC Berkeley. <a href="#">This is a link</a></p>'
+      }
+      freeform
+      links={[
+        {
+          url:
+            'https://www.pri.org/stories/2019-04-18/muellers-russia-report-outlines-episodes-possible-trump-obstruction',
+          title:
+            "Mueller's Russia report outlines episodes of possible Trump obstruction",
+          attributes: []
+        },
+        {
+          url:
+            'https://www.pri.org/stories/2019-03-22/smoke-or-fire-contacts-between-trump-campaign-and-russia',
+          title: 'Smoke or fire? Contacts between Trump campaign and Russia',
+          attributes: []
+        },
+        {
+          url:
+            'https://www.pri.org/stories/2019-04-18/factbox-five-things-look-muellers-trump-russia-report',
+          title:
+            "Factbox: Five things to look for in Mueller's Trump-Russia report",
+          attributes: []
+        },
+        {
+          url:
+            'https://www.pri.org/stories/2019-04-18/timeline-big-moments-mueller-investigation-russian-meddling-2016-us-election',
+          title:
+            'Timeline: Big moments in Mueller investigation of Russian meddling in 2016 US election',
+          attributes: []
+        },
+        {
+          url:
+            'https://www.pri.org/stories/2019-04-17/secrecy-subjective-when-government-censors-redact-documents',
+          title:
+            "'Secrecy is subjective' when government censors redact documents",
+          attributes: []
+        }
+      ]}
+    />
   ));
 
 /**
