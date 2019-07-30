@@ -261,7 +261,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           </p>
         </article>
         <article
-          className="cardItem normal"
+          className="cardItem"
           typeof="sioc:Item foaf:Document"
         >
           <figure
@@ -314,7 +314,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           </p>
         </article>
         <article
-          className="cardItem normal"
+          className="cardItem"
           typeof="sioc:Item foaf:Document"
         >
           <figure
@@ -367,7 +367,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           </p>
         </article>
         <article
-          className="cardItem normal"
+          className="cardItem"
           typeof="sioc:Item foaf:Document"
         >
           <figure
@@ -420,7 +420,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           </p>
         </article>
         <article
-          className="cardItem normal"
+          className="cardItem"
           typeof="sioc:Item foaf:Document"
         >
           <figure
@@ -1027,7 +1027,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           </p>
         </article>
         <article
-          className="cardItem normal"
+          className="cardItem"
           typeof="sioc:Item foaf:Document"
         >
           <figure
@@ -1080,7 +1080,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           </p>
         </article>
         <article
-          className="cardItem normal"
+          className="cardItem"
           typeof="sioc:Item foaf:Document"
         >
           <figure
@@ -1143,7 +1143,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           Custom Card Header
         </header>
         <article
-          className="cardItem large"
+          className="cardItem large freeform"
           typeof="sioc:Item foaf:Document"
         >
           <figure
@@ -1155,60 +1155,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               <img
                 alt="Alt Text"
                 className="img"
-                data-src="https://media.pri.org/s3fs-public/styles/feature_medium/public/story/images/180302copbridge.jpg?itok=52GppaOv"
-                typeof="foaf:Image"
-              />
-            </a>
-          </figure>
-          <div
-            className="titleWrap"
-          >
-            <h2
-              className="title"
-            >
-              <a
-                className="link"
-                href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
-              >
-                There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco
-              </a>
-            </h2>
-            <span
-              content="There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco"
-              property="dc:title"
-            />
-            <span
-              content="0"
-              datatype="xsd:integer"
-              property="sioc:num_replies"
-            />
-          </div>
-          <p
-            className="blurb"
-          >
-            <span
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Ten years after Kosovo declared its independence from Serbia, Serbs and Albanians in Kosovo remain deeply divided — even over food.",
-                }
-              }
-            />
-          </p>
-        </article>
-        <article
-          className="cardItem normal"
-          typeof="sioc:Item foaf:Document"
-        >
-          <figure
-            className="image"
-          >
-            <a
-              href="stories/2017-07-24/clearing-mines-and-explosives-mosul"
-            >
-              <img
-                alt="Alt Text"
-                className="img"
-                data-src="https://media.pri.org/s3fs-public/styles/feature_small/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
+                data-src="https://media.pri.org/s3fs-public/styles/story_main/public/story/images/Beatles_India_02.jpg?itok=iG8TKNDu"
                 typeof="foaf:Image"
               />
             </a>
@@ -1236,17 +1183,71 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               property="sioc:num_replies"
             />
           </div>
-          <p
+          <div
             className="blurb"
           >
             <span
               dangerouslySetInnerHTML={
                 Object {
-                  "__html": "When the Beatles embarked on their famous discovery of India to study transcendental meditation, the Indian government was far more wary. ",
+                  "__html": "<h2>Header within a freeform body</h2><h2><a href=\\"#\\">Header within a freeform body and has a link</a></h2><blockquote><p>\\"Science and stories for a meaningful life. Hosted by award-winning professor Dacher Keltner, The Science of Happiness highlights the most provocative and practical findings to have emerged from the ground-breaking science of compassion, gratitude, mindfulness, and awe.\\"</p></blockquote><p>Science and stories for a meaningful life. Hosted by award-winning professor Dacher Keltner, The Science of Happiness highlights the most provocative and practical findings to have emerged from the ground-breaking science of compassion, gratitude, mindfulness, and awe. A co-production with the Greater Good Science Center at UC Berkeley. <a href=\\"#\\">This is a link</a></p>",
                 }
               }
             />
-          </p>
+          </div>
+          <ul
+            className="links"
+          >
+            <li
+              className="linksItem"
+            >
+              <a
+                className="linksLink"
+                href="https://www.pri.org/stories/2019-04-18/muellers-russia-report-outlines-episodes-possible-trump-obstruction"
+              >
+                Mueller's Russia report outlines episodes of possible Trump obstruction
+              </a>
+            </li>
+            <li
+              className="linksItem"
+            >
+              <a
+                className="linksLink"
+                href="https://www.pri.org/stories/2019-03-22/smoke-or-fire-contacts-between-trump-campaign-and-russia"
+              >
+                Smoke or fire? Contacts between Trump campaign and Russia
+              </a>
+            </li>
+            <li
+              className="linksItem"
+            >
+              <a
+                className="linksLink"
+                href="https://www.pri.org/stories/2019-04-18/factbox-five-things-look-muellers-trump-russia-report"
+              >
+                Factbox: Five things to look for in Mueller's Trump-Russia report
+              </a>
+            </li>
+            <li
+              className="linksItem"
+            >
+              <a
+                className="linksLink"
+                href="https://www.pri.org/stories/2019-04-18/timeline-big-moments-mueller-investigation-russian-meddling-2016-us-election"
+              >
+                Timeline: Big moments in Mueller investigation of Russian meddling in 2016 US election
+              </a>
+            </li>
+            <li
+              className="linksItem"
+            >
+              <a
+                className="linksLink"
+                href="https://www.pri.org/stories/2019-04-17/secrecy-subjective-when-government-censors-redact-documents"
+              >
+                'Secrecy is subjective' when government censors redact documents
+              </a>
+            </li>
+          </ul>
         </article>
       </section>
     </section>
