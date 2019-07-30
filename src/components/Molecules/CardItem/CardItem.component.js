@@ -88,8 +88,8 @@ const CardItem = ({
     )}
     {links && (
       <ul className={`${styles.links}`}>
-        {links.map(({ title: label, url: href }) => (
-          <li className={`${styles.linksItem}`} key={href}>
+        {links.map(({ title: label, url: href }, index) => (
+          <li className={`${styles.linksItem}`} key={[href, index].join('--')}>
             <a className={`${styles.linksLink}`} href={href}>
               {label}
             </a>
