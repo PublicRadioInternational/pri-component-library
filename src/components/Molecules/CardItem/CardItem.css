@@ -61,7 +61,7 @@
   display: block;
   grid-column-start: 1;
   grid-column-end: -1;
-  padding: 0 1rem;
+  margin: 0 0 1rem;
 }
 
 .cardItem.freeform .links {
@@ -174,6 +174,10 @@
 
   .cardItem .title {
     font-size: 1.1rem;
+  }
+
+  .cardItem.freeform .blurb {
+    margin: 0;
   }
 }
 
