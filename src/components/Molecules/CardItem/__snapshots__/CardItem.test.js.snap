@@ -2,7 +2,7 @@
 
 exports[`<CardItem /> Matches the Card Item Default snapshot 1`] = `
 <article
-  className="cardItem normal"
+  className="cardItem"
   typeof="sioc:Item foaf:Document"
 >
   <figure
@@ -58,7 +58,7 @@ exports[`<CardItem /> Matches the Card Item Default snapshot 1`] = `
 
 exports[`<CardItem /> Matches the Card Item Large snapshot 1`] = `
 <article
-  className="cardItem large"
+  className="cardItem large noImage"
   typeof="sioc:Item foaf:Document"
 >
   <div
@@ -92,6 +92,20 @@ exports[`<CardItem /> Matches the Card Item No Link snapshot 1`] = `
   className="cardItem freeform"
   typeof="sioc:Item foaf:Document"
 >
+  <figure
+    className="image"
+  >
+    <a
+      href={null}
+    >
+      <img
+        alt={null}
+        className="img"
+        data-src="http://placehold.it/1920x1080.png"
+        typeof="foaf:Image"
+      />
+    </a>
+  </figure>
   <div
     className="titleWrap"
   >
