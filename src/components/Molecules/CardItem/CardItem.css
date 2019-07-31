@@ -165,7 +165,7 @@
       'TITLE TITLE';
   }
 
-  .cardItem.large .titleWrap {
+  .cardItem.large:not(.freeform) .titleWrap {
     margin-top: 0;
   }
 
