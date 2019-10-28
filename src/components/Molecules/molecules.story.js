@@ -344,7 +344,7 @@ storiesOf('Molecules/Teaser', module)
     <TeaserItem
       title="Progressives in Congress side with Trump on trade"
       url="stories/2018-03-06/progressives-side-trump-trade"
-      programTitle="PRI's The World"
+      programTitle="The World"
       programUrl="programs/the-world"
     />
   ))
@@ -365,7 +365,7 @@ storiesOf('Molecules/MenuList', module)
       label="Quick Links"
       menuListItems={[
         {
-          name: "PRI's The World",
+          name: 'The World',
           url: `${baseUrl}/programs/the-world`,
           itemLinkClass: 'world'
         },
