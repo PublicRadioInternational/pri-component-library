@@ -387,11 +387,11 @@ storiesOf('Molecules/TextBlock', module)
   .add('Donate', () => (
     <TextBlock
       alt
-      title="We are Public Media"
-      body="Make a donation"
+      title="Support global journalism"
+      body="Make a gift &amp; double your impact today."
       button="Donate"
       color="Orange"
-      url={`${baseUrl}/donate/index.html?utm_source=navigation&utm_medium=website&utm_campaign=donations`}
+      url={`${baseUrl}/donate/world-sidebar?utm_source=storySidebar&utm_medium=website&utm_campaign=donations`}
       icon="heart"
     />
   ));

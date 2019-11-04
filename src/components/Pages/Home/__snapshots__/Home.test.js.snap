@@ -783,19 +783,19 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
             <h3
               className="header headerAlt"
             >
-              We are Public Media
+              Support global journalism
             </h3>
             <p
               className="body bodyAlt"
             >
-              Make a donation
+              Make a gift & double your impact today.
             </p>
             <div
               className="btnWrap inputWrap"
             />
             <a
               className="btnOrange btn"
-              href="https://www.pri.org/donate/index.html?utm_source=navigation&utm_medium=website&utm_campaign=donations"
+              href="https://www.pri.org/donate/world-sidebar?utm_source=hpSidebar&utm_medium=website&utm_campaign=donations"
               onClick={[Function]}
             >
               <svg
