@@ -196,14 +196,8 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           className="header"
         >
           <a
-            className="logoLink"
             href="#"
           >
-            <img
-              alt=""
-              className="logo"
-              src="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
-            />
             PRIs The World
           </a>
         </header>
@@ -550,7 +544,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                 className="link"
                 href="programs/the-world"
               >
-                PRI's The World
+                The World
               </a>
             </p>
           </article>
@@ -606,7 +600,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
                 className="link"
                 href="programs/the-world"
               >
-                PRI's The World
+                The World
               </a>
             </p>
           </article>
@@ -648,7 +642,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
               className="listLink menuListLink world"
               href="https://www.pri.org/programs/the-world"
             >
-              PRI's The World
+              The World
             </a>
           </li>
           <li
@@ -962,14 +956,8 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           className="header"
         >
           <a
-            className="logoLink"
             href="#"
           >
-            <img
-              alt=""
-              className="logo"
-              src="https://media.pri.org/s3fs-public/styles/medium_square/public/logo_gp.png"
-            />
             GlobalPost
           </a>
         </header>
