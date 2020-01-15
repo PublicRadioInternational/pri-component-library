@@ -10,10 +10,6 @@ import styles from './Footer.css';
 import PriLogo from '../../Atoms/Svg/PriLogo.component';
 import List from '../../Molecules/List/List.component';
 
-import carnegieSponsorImg from './images/carnegie.jpg';
-import fordSponsorImg from './images/ford.jpg';
-import macarthurSponsorImg from './images/macarthur.jpg';
-
 /**
  * Component that renders the footer.
  */
@@ -36,7 +32,7 @@ const Footer = ({ links }) => (
           alt="Carnegie Corporation of New York"
           title="Carnegie Corporation of New York"
           typeof="foaf:Image"
-          src={carnegieSponsorImg}
+          src="https://media.pri.org/s3fs-public/styles/original_image/public/images/2018/09/carnegie.jpg"
         />
       </a>
       <a
@@ -51,7 +47,7 @@ const Footer = ({ links }) => (
           alt="MacArthur Foundation"
           title="MacArthur Foundation"
           typeof="foaf:Image"
-          src={macarthurSponsorImg}
+          src="https://media.pri.org/s3fs-public/logo-macarthur-color.jpg"
         />
       </a>
       <a
@@ -66,10 +62,24 @@ const Footer = ({ links }) => (
           alt="Ford Foundation"
           title="Ford Foundation"
           typeof="foaf:Image"
-          src={fordSponsorImg}
+          src="https://media.pri.org/s3fs-public/styles/original_image/public/images/2018/09/ford.jpg"
         />
       </a>
-      <p>A Partner of OZY Media News</p>
+      <a
+        className={styles.sponsor}
+        href="https://cpb.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          height="52"
+          width="149"
+          alt="Corporation for Public Broadcasting"
+          title="Corporation for Public Broadcasting"
+          typeof="foaf:Image"
+          src="https://media.pri.org/s3fs-public/images/2020/01/cpb-logo.png"
+        />
+      </a>
     </section>
 
     <section className={styles.footerBtm}>
