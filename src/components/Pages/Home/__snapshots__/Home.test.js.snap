@@ -1287,7 +1287,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
         <img
           alt="Carnegie Corporation of New York"
           height="52"
-          src="test-file-stub"
+          src="https://media.pri.org/s3fs-public/styles/original_image/public/images/2018/09/carnegie.jpg"
           title="Carnegie Corporation of New York"
           typeof="foaf:Image"
           width="149"
@@ -1302,7 +1302,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
         <img
           alt="MacArthur Foundation"
           height="52"
-          src="test-file-stub"
+          src="https://media.pri.org/s3fs-public/logo-macarthur-color.jpg"
           title="MacArthur Foundation"
           typeof="foaf:Image"
           width="149"
@@ -1317,15 +1317,27 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
         <img
           alt="Ford Foundation"
           height="52"
-          src="test-file-stub"
+          src="https://media.pri.org/s3fs-public/styles/original_image/public/images/2018/09/ford.jpg"
           title="Ford Foundation"
           typeof="foaf:Image"
           width="149"
         />
       </a>
-      <p>
-        A Partner of OZY Media News
-      </p>
+      <a
+        className="sponsor"
+        href="https://cpb.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Corporation for Public Broadcasting"
+          height="52"
+          src="https://media.pri.org/s3fs-public/images/2020/01/cpb-logo.png"
+          title="Corporation for Public Broadcasting"
+          typeof="foaf:Image"
+          width="149"
+        />
+      </a>
     </section>
     <section
       className="footerBtm"
@@ -1403,7 +1415,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       </div>
       <p>
         © 
-        2019
+        2020
          Public Radio International
       </p>
     </section>
