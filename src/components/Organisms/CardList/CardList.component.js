@@ -13,29 +13,19 @@ const cx = classNames.bind(styles);
 /**
  * Component that renders a Card List.
  */
-const CardList = ({ name, id, children, url, logo, title }) => {
+const CardList = ({ name, id, children, url, title }) => {
   const cardClasses = cx({
     list: true,
     [name]: styles[name]
   });
 
-  const headerContent = (
-    <React.Fragment>
-      {logo && <img src={logo} alt="" className={styles.logo} />}
-      {title}
-    </React.Fragment>
-  );
+  const headerContent = <React.Fragment>{title}</React.Fragment>;
 
   return (
     <section id={id} className={cardClasses}>
       {title && (
         <header className={styles.header}>
-          {(url && (
-            <a href={url} className={styles.logoLink}>
-              {headerContent}
-            </a>
-          )) ||
-            headerContent}
+          {(url && <a href={url}>{headerContent}</a>) || headerContent}
         </header>
       )}
       {children}
@@ -48,7 +38,6 @@ CardList.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node,
   url: PropTypes.string,
-  logo: PropTypes.string,
   title: PropTypes.string
 };
 
@@ -57,7 +46,6 @@ CardList.defaultProps = {
   id: null,
   children: [],
   url: null,
-  logo: null,
   title: null
 };
 

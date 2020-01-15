@@ -53,7 +53,7 @@ storiesOf('Organisms/CardList', module)
       name="pris-the-world"
       id="program-with-logo"
       url="#"
-      title="PRI's The World"
+      title="The World"
     >
       <CardItem
         title="There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco"
@@ -96,7 +96,7 @@ storiesOf('Organisms/CardList', module)
     </CardList>
   ))
   .add('Without Image', () => (
-    <CardList name="pris-the-world" url="#" title="PRI's The World">
+    <CardList name="pris-the-world" url="#" title="The World">
       <CardItem
         title="There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco"
         url="stories/2017-07-24/clearing-mines-and-explosives-mosul"
@@ -185,7 +185,7 @@ storiesOf('Organisms/CardList', module)
       name="pris-the-world"
       id="program-with-logo"
       url="#"
-      title="PRI's The World"
+      title="The World"
     >
       <CardItem
         title="There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco"
@@ -279,7 +279,7 @@ storiesOf('Organisms/CardList', module)
       name="pris-the-world"
       id="program-with-logo"
       url="#"
-      title="PRI's The World"
+      title="The World"
     >
       <CardItem
         title="50 years on, India is celebrating the Beatles' infamous trip to the country"
@@ -386,7 +386,7 @@ storiesOf('Organisms/TeaserList', module)
       <TeaserItem
         title="Progressives in Congress side with Trump on trade"
         url="stories/2018-03-06/progressives-side-trump-trade"
-        programTitle="PRI's The World"
+        programTitle="The World"
         programUrl="programs/the-world"
         hasAudio
       />
@@ -397,7 +397,7 @@ storiesOf('Organisms/TeaserList', module)
       <TeaserItem
         title="Yet anther article with an incredible title from the world"
         url="stories/2018-03-06/yet-another-incredible-taco"
-        programTitle="PRI's The World"
+        programTitle="The World"
         programUrl="programs/the-world"
         hasAudio
       />
