@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value gray, orange, white, grayLighter, grayDark from colors;
+@value gray, orange, white, grayLighter, grayDark, blueDark, blueLight from colors;
 
 /* import breakpoints */
 @value medium as bp-medium from "../../00_global/breakpoints.css";
@@ -12,8 +12,8 @@
   display: block;
   position: relative;
   box-sizing: border-box;
-  background-color: gray;
-  color: grayLighter;
+  background-color: blueDark;
+  color: white;
   text-align: center;
 }
 
@@ -81,7 +81,7 @@
   margin-bottom: 1rem;
   color: inherit;
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .announcement .title {
@@ -93,6 +93,10 @@
   margin-bottom: 1rem;
   font-size: 1.1rem;
   line-height: 1.4rem;
+}
+
+.description a {
+  color: blueLight;
 }
 
 .announcement .description {

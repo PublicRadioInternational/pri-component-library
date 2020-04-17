@@ -7,16 +7,16 @@
 @value gray: #33333c;
 @value black: #000;
 
-@value blue: #35719C;
-@value blueLight: #e8f1f7;
-@value blueMed: #3978a5;
-@value blueDark: #0062cc;
-@value green: #9caf16;
+@value blue: #0072a3;
+@value blueLight: #17c9d3;
+@value blueMed: #0072a3;
+@value blueDark: #003a57;
+@value green: #23c763;
 @value greenLight: #98c93e;
-@value orange: #d3401e;
-@value orangeDark: #b8381a;
-@value orangeDarker: #832813;
-@value yellow: #ffde16;
+@value orange: #ff9600;
+@value orangeDark: #003a57;
+@value orangeDarker: #16364f;
+@value yellow: #ffc400;
 
 @value world: #00a0de;
 @value americaAbroad: #235e7c;

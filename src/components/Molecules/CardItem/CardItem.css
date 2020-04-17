@@ -172,8 +172,10 @@
     margin: 0;
   }
 
+  .title,
   .cardItem .title {
     font-size: 1.1rem;
+    line-height: 1;
   }
 
   .cardItem.freeform .blurb {
@@ -205,8 +207,9 @@
     align-self: end;
   }
 
-  .title {
+  .cardItem .title {
     font-size: 1.5rem;
+    line-height: 1.25;
   }
 
   .blurb {

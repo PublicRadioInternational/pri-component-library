@@ -6,19 +6,17 @@
 
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value whiteDark, gray, grayLighter, grayDark, orange, orangeDark, blue, yellow, green from colors;
+@value whiteDark, gray, grayLighter, grayDark, orange, orangeDark, blue, yellow, green, blueDark from colors;
 
 .siteHeader {
   display: grid;
-  grid-template-columns: 50px 123px 1fr;
-  grid-template-rows: 50px;
+  grid-template-columns: 64px 123px 1fr;
+  grid-template-rows: 64px;
   align-items: center;
   position: relative;
   z-index: strataUi;
 
-  background-color: white;
-
-  border-bottom: 3px solid #ddd;
+  background-color: blue;
 }
 
 .menuToggle {
@@ -35,14 +33,14 @@
 }
 
 .menuIcon {
-  color: #4b4b4b;
+  color: white;
   cursor: pointer;
   width: 100%;
   height: 100%;
 }
 
 .menuIcon:hover {
-  color: black;
+  color: grayLighter;
 }
 
 .menuIcon:active {

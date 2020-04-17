@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value grayLighter, gray, orange from colors;
+@value grayLighter, gray, orange, blueDark from colors;
 
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
@@ -17,7 +17,7 @@
     #777 10%,
     rgba(211, 64, 30, 0.75) 20%,
     rgba(53, 113, 156, 0.5) 50%,
-    grayLighter 90%
+    blueDark 90%
   );
   background-position-x: 0;
   background-size: 4000px;
@@ -49,6 +49,8 @@
   position: relative;
   flex-grow: 1;
   max-width: 100%;
+  background-color: blueDark;
+  border-bottom: 1px solid black;
 }
 
 .searchLabel {

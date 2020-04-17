@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value white, whiteDark, grayLighter, gray, grayLight, grayDark, grayDarker, orange, orangeDark, orangeDarker, blue, blueMed, blueDark from colors;
+@value white, whiteDark, grayLighter, gray, grayLight, grayDark, grayDarker, orange, orangeDark, orangeDarker, blue, blueMed, blueDark, yellow from colors;
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
 @value copy from fonts;
@@ -60,7 +60,7 @@
 /* Colors */
 @define-mixin btnOrange {
   background-color: orange;
-  border-color: orangeDark;
+  border-color: yellow;
   color: white;
 }
 
