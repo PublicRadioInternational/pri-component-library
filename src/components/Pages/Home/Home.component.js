@@ -4,21 +4,15 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
-import sharedStyles from '../../00_global/shared.css';
 
 import Header from '../../Organisms/Header/Header.component';
 
 import LayoutMain from '../../Organisms/Main/LayoutMain.component';
 import LayoutMainList from '../../Organisms/Main/LayoutMainList.component';
 import LayoutAsideLatest from '../../Organisms/Main/LayoutAsideLatest.component';
-import LayoutAsideCallouts from '../../Organisms/Main/LayoutAsideCallouts.component';
 import LayoutMainList2 from '../../Organisms/Main/LayoutMainList2.component';
 
 import Hero from '../../Molecules/Hero/Hero.component';
-import MenuList from '../../Molecules/MenuList/MenuList.component';
-import TextBlock from '../../Molecules/TextBlock/TextBlock.component';
-import BlockList from '../../Organisms/BlockList/BlockList.component';
 import CardList from '../../Organisms/CardList/CardList.component';
 import CardItem from '../../Molecules/CardItem/CardItem.component';
 import StickyItem from '../../Molecules/StickyItem/StickyItem.component';
@@ -31,7 +25,7 @@ import Footer from '../../Organisms/Footer/Footer.component';
 /**
  * Component that renders the homepage.
  */
-const Home = ({ baseUrl }) => (
+const Home = () => (
   <div>
     <Header />
     <Hero
@@ -128,140 +122,6 @@ const Home = ({ baseUrl }) => (
           </TeaserList>
         </StickyItem>
       </LayoutAsideLatest>
-      <LayoutAsideCallouts>
-        <MenuList
-          label="Quick Links"
-          menuListItems={[
-            {
-              name: 'The World',
-              url: `${baseUrl}/programs/the-world`,
-              itemLinkClass: 'world'
-            },
-            {
-              name: 'Studio360',
-              url: `${baseUrl}/programs/studio-360`,
-              itemLinkClass: 'studio'
-            },
-            {
-              name: 'GlobalPost',
-              url: `${baseUrl}/programs/globalpost`,
-              itemLinkClass: 'globalPost'
-            },
-            {
-              name: "Across Women's Lives",
-              url: `${baseUrl}/verticals/across-womens-lives`,
-              itemLinkClass: 'acrossWomensLives'
-            },
-            {
-              name: 'Global Nation',
-              url: `${baseUrl}/verticals/global-nation`,
-              itemLinkClass: 'globalNation'
-            },
-            {
-              name: 'Global Security',
-              url: `${baseUrl}/verticals/global-security`,
-              itemLinkClass: 'globalSecurity'
-            },
-            {
-              name: 'Livable Planet',
-              url: `${baseUrl}/verticals/livable-planet`,
-              itemLinkClass: 'livablePlanet'
-            },
-            { name: 'View all Programs & Podcasts', url: `${baseUrl}/shows` }
-          ]}
-        />
-        <TextBlock
-          title="About PRI"
-          body="By giving voice to our dynamic world, we inspire connection, action and hope."
-          button="About Us"
-          color="Blue"
-          url={`${baseUrl}/about-pri`}
-          icon="info"
-        />
-        <BlockList title="Three ways to support PRI">
-          <TextBlock
-            alt
-            title="We are Public Media"
-            body="Make a donation"
-            button="Donate"
-            color="Orange"
-            url={`${baseUrl}/donate/index.html?utm_source=navigation&utm_medium=website&utm_campaign=donations`}
-            icon="heart"
-          />
-          <TextBlock
-            alt
-            title="Subscribe to our Newsletters"
-            body="Sign up for The Scan, PRI's daily newsletter"
-          >
-            <form
-              className="campaignmonitor-subscribe-form campaignmonitor-subscribe-form-the-scan hideSubmitButton-processed"
-              method="post"
-              id="campaignmonitor-subscribe-form"
-              acceptCharset="UTF-8"
-            >
-              <span>
-                <span className="form-item form-type-textfield form-item-email GoogleAnalyticsET-processed">
-                  <label htmlFor="edit-email">
-                    <span className={sharedStyles.visuallyhidden}>Email</span>
-                    <input
-                      type="text"
-                      id="edit-email"
-                      name="email"
-                      placeholder="Your Email"
-                      size="60"
-                      maxLength="200"
-                      className="form-text required"
-                    />
-                  </label>
-                </span>
-                <input
-                  type="hidden"
-                  name="list_id"
-                  value="986c7a3cd11f67a0ee74fabf7c05f6c0"
-                />
-                <input
-                  type="submit"
-                  id="edit-submit--3"
-                  name="op"
-                  value="Subscribe"
-                  className="form-submit btn btn-danger"
-                />
-                <input
-                  type="hidden"
-                  name="form_build_id"
-                  value="form-uYRO0cZswFet_TYFqbNrw-kMFvijHbWLD1cT_HTHdR8"
-                />
-                <input
-                  type="hidden"
-                  name="form_token"
-                  value="oP_Zt4SgcglXt9S2vr05DzI-RIQ2wXetfco4D159-cg"
-                />
-                <input
-                  type="hidden"
-                  name="form_id"
-                  value="campaignmonitor_subscribe_form"
-                />
-              </span>
-            </form>
-          </TextBlock>
-          <TextBlock
-            alt
-            title="Subscribe to our Podcasts"
-            body="The Science of Happiness is now #2 on iTunes"
-            button="Subscribe to Podcasts"
-            color="Orange"
-            url={`${baseUrl}/shows`}
-            icon="volume"
-          >
-            <a href={`${baseUrl}/shows`}>
-              <img
-                src="https://media.pri.org/s3fs-public/styles/medium_square/public/ScienceOfHappiness.jpg?itok=w_A0ovSx"
-                alt="Science of Happiness"
-              />
-            </a>
-          </TextBlock>
-        </BlockList>
-      </LayoutAsideCallouts>
       <LayoutMainList2>
         <CardList
           logo="https://media.pri.org/s3fs-public/styles/medium_square/public/logo_gp.png"
@@ -355,7 +215,7 @@ const Home = ({ baseUrl }) => (
         { name: 'About PRI', url: '#' },
         { name: 'Contact Us', url: '#' },
         { name: 'Donate', url: '#' },
-        { name: 'Meet the PRI.org Team', url: '#' },
+        { name: 'Meet the Team', url: '#' },
         { name: 'Privacy policy', url: '#' },
         { name: 'Terms of use', url: '#' }
       ]}
@@ -375,13 +235,5 @@ const Home = ({ baseUrl }) => (
     />
   </div>
 );
-
-Home.propTypes = {
-  baseUrl: PropTypes.string
-};
-
-Home.defaultProps = {
-  baseUrl: 'https://www.pri.org'
-};
 
 export default Home;

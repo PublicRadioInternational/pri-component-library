@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value whiteDark, gray, grayLighter, grayDark, orange, orangeDark, blue, yellow, green from colors;
+@value whiteDark, gray, grayLighter, grayDark, orange, orangeDark, blue, yellow, green, blueLight from colors;
 
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
@@ -9,7 +9,7 @@
 @value linkHeight: 2rem;
 
 :root {
-  --card-theme-color: blue;
+  --card-theme-color: blueLight;
   --card-text-color: white;
   --accordion-item-count: 0;
 }
@@ -42,7 +42,7 @@
 
 .accordionItemBlue,
 .accordionContentMenuLinkBlue {
-  --card-theme-color: blue;
+  --card-theme-color: blueLight;
 }
 
 .accordionItemYellow,

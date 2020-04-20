@@ -17,9 +17,69 @@ const Footer = ({ links }) => (
   <footer className={styles.siteFooter}>
     <section className={styles.sponsors}>
       <a href="/">
-        <PriLogo fillColor="#aaa" title="PRI" className="disableHover" />
+        <PriLogo
+          width="250"
+          height="47"
+          fillColor="#aaa"
+          title="PRI"
+          className="disableHover"
+        />
       </a>
-      <p>Major funding provided by:</p>
+      <p>
+        The World is a public radio program that crosses borders and time zones
+        to bring home the stories that matter.
+      </p>
+      <p>
+        <i>Produced by:</i>
+      </p>
+      <a
+        className={styles.sponsor}
+        href="https://www.prx.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          height="25"
+          width="84"
+          alt="PRX"
+          title="PRX"
+          typeof="foaf:Image"
+          src="https://media.pri.org/s3fs-public/images/2020/04/logo-prx.png"
+        />
+      </a>
+      <a
+        className={styles.sponsor}
+        href="https://www.bbc.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          height="25"
+          width="84"
+          alt="BBC"
+          title="BBC"
+          typeof="foaf:Image"
+          src="https://media.pri.org/s3fs-public/images/2020/04/logo-bbc.png"
+        />
+      </a>
+      <a
+        className={styles.sponsor}
+        href="https://www.wgbh.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          height="25"
+          width="84"
+          alt="WGBH"
+          title="WGBH"
+          typeof="foaf:Image"
+          src="https://media.pri.org/s3fs-public/images/2020/04/logo-wgbh.png"
+        />
+      </a>
+      <p>
+        <em>Major funding provided by:</em>
+      </p>
       <a
         className={styles.sponsor}
         href="https://www.carnegie.org/"
@@ -85,7 +145,7 @@ const Footer = ({ links }) => (
     <section className={styles.footerBtm}>
       {links && <List listItems={links} />}
 
-      <p>&copy; {new Date().getFullYear()} Public Radio International</p>
+      <p>&copy; {new Date().getFullYear()} The World from PRX</p>
     </section>
   </footer>
 );
