@@ -155,8 +155,10 @@
     grid-area: TITLE;
   }
 
+  .title,
   .cardItem .title {
     font-size: 1.1rem;
+    line-height: 1;
   }
 
   .cardItem.large {
@@ -194,8 +196,13 @@
       'BLURB BLURB';
   }
 
-  .title {
+  .cardItem .titleWrap {
+    align-self: end;
+  }
+
+  .cardItem .title {
     font-size: 1.5rem;
+    line-height: 1.25;
   }
 
   .blurb {
