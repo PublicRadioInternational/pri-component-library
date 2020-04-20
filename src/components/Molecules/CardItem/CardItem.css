@@ -15,13 +15,12 @@
   border-bottom: none;
 }
 
-.cardItem,
-.cardItem.freeform {
+.cardItem {
   padding: 1rem;
 }
 
-.cardItem.large {
-  padding: 0 0 2rem;
+.cardItem > * + * {
+  margin-top: 1rem;
 }
 
 .image {
@@ -33,18 +32,8 @@
   width: 100%;
 }
 
-.cardItem.large .image {
-  display: block;
-}
-
-.cardItem.large .titleWrap {
-  margin-top: 1rem;
-  padding: 0 1rem;
-}
-
-.cardItem .titleWrap {
-  margin: 0 0 1rem;
-  padding: 0;
+.titleWrap {
+  margin-top: 0;
 }
 
 .title {
@@ -57,21 +46,34 @@
   line-height: 1.3;
 }
 
+.cardItem.large {
+  padding-bottom: 2rem;
+}
+
+.cardItem.large .titleWrap {
+  margin-top: 1rem;
+}
+
+.cardItem.large .image {
+  display: block;
+  margin: -1rem -1rem 0;
+}
+
+.cardItem.freeform {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardItem.freeform .titleWrap {
+  margin-top: 1rem;
+}
+
 .cardItem.freeform .blurb {
   display: block;
-  grid-column-start: 1;
-  grid-column-end: -1;
-  margin: 0 0 1rem;
 }
 
 .cardItem.freeform .links {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  margin: 0 -1rem -1rem;
-}
-
-.cardItem.freeform.large .links {
-  margin: 0 0 -2rem;
+  margin: 1rem -1rem -1rem;
 }
 
 .blurb h2 {
@@ -141,23 +143,6 @@
     grid-template-areas: 'IMAGE TITLE';
   }
 
-  .cardItem.freeform {
-    grid-template-areas:
-      'IMAGE IMAGE'
-      'TITLE TITLE'
-      'BLURB BLURB';
-  }
-
-  .cardItem.large {
-    grid-template-areas:
-      'IMAGE IMAGE'
-      'TITLE TITLE';
-  }
-
-  .cardItem.noImage {
-    grid-template-areas: 'TITLE TITLE';
-  }
-
   .image {
     display: block;
   }
@@ -168,8 +153,6 @@
 
   .cardItem .titleWrap {
     grid-area: TITLE;
-    align-self: center;
-    margin: 0;
   }
 
   .title,
@@ -178,8 +161,18 @@
     line-height: 1;
   }
 
-  .cardItem.freeform .blurb {
-    margin: 0;
+  .cardItem.large {
+    grid-template-areas:
+      'IMAGE IMAGE'
+      'TITLE TITLE';
+  }
+
+  .cardItem.large:not(.freeform) .titleWrap {
+    margin-top: 0;
+  }
+
+  .cardItem.noImage {
+    grid-template-areas: 'TITLE TITLE';
   }
 }
 
@@ -216,15 +209,14 @@
     display: block;
   }
 
-  .cardItem .blurb {
+  .cardItem:not(.freeform) .titleWrap {
+    align-self: end;
+  }
+
+  .cardItem:not(.freeform) .blurb {
     grid-area: BLURB;
     align-self: start;
     margin: 0;
-  }
-
-  .cardItem.large .blurb {
-    margin: 0;
-    padding: 0 1rem;
   }
 
   .cardItem.freeform.noImage .title {
