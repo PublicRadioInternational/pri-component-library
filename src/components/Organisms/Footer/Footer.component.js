@@ -17,13 +17,7 @@ const Footer = ({ links }) => (
   <footer className={styles.siteFooter}>
     <section className={styles.sponsors}>
       <a href="/">
-        <PriLogo
-          width="250"
-          height="47"
-          fillColor="#aaa"
-          title="PRI"
-          className="disableHover"
-        />
+        <PriLogo fillColor="#aaa" title="PRI" className="disableHover" />
       </a>
       <p>
         The World is a public radio program that crosses borders and time zones

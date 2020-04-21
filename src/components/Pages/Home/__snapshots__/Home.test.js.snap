@@ -939,10 +939,10 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
         href="/"
       >
         <svg
-          height="47"
+          height={28}
           version={1.1}
           viewBox="0 0 150 28"
-          width="250"
+          width={150}
         >
           <title>
             PRI
@@ -1209,13 +1209,13 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
       <h3
         className="title"
       >
-        Google is the #1 search engine.
+        The World reports on global news in ways that reflect our shared core belief: we are all connected. Will you help us keep our reporting free for all, especially now?
       </h3>
       <div
         className="description"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "Don't believe us? Google it.",
+            "__html": "When you donate to The World this April, your donation will be matched by an anonymous, donor up to $67,000. That means when you donate $75 you’re actually providing $150 worth of support, which ensures our coverage is, and always will be, freely available.",
           }
         }
       />
@@ -1227,7 +1227,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           href="https://www.google.com/"
           onClick={[Function]}
         >
-          Google It
+          Donate
         </a>
         <button
           aria-expanded={null}

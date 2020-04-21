@@ -11,10 +11,10 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
       href="/"
     >
       <svg
-        height="47"
+        height={28}
         version={1.1}
         viewBox="0 0 150 28"
-        width="250"
+        width={150}
       >
         <title>
           PRI

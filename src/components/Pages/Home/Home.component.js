@@ -222,10 +222,10 @@ const Home = () => (
     />
     <CtaMessage
       type="loadUnder"
-      title="Google is the #1 search engine."
-      description="Don't believe us? Google it."
+      title="The World reports on global news in ways that reflect our shared core belief: we are all connected. Will you help us keep our reporting free for all, especially now?"
+      description="When you donate to The World this April, your donation will be matched by an anonymous, donor up to $67,000. That means when you donate $75 you’re actually providing $150 worth of support, which ensures our coverage is, and always will be, freely available."
       action={{
-        label: 'Google It',
+        label: 'Donate',
         btnColor: 'Blue',
         url: 'https://www.google.com/'
       }}
