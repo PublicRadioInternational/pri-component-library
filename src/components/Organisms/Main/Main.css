@@ -93,12 +93,11 @@
     grid-row: row1-start / 1;
   }
 
+  .mainList {
+    margin-top: 0;
+  }
+
   .mainList2 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    -ms-grid-row: 1;
-    grid-row: row1-start / 1;
-    grid-column: 1 / span 1;
     padding: 0 3%;
   }
 }
