@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value grayLighter, grayDark, blue, gray, orange from colors;
+@value grayLighter, grayDark, blue, blueLight, gray, orange from colors;
 
 /* import breakpoints */
 @value min as bp-phone, header as bp-tablet from "../../00_global/breakpoints.css";
@@ -87,7 +87,7 @@
 }
 
 .link:hover {
-  color: orange;
+  color: blueLight;
 }
 
 .blurb a {
@@ -95,7 +95,7 @@
 }
 
 .blurb a:hover {
-  color: orange;
+  color: blueLight;
 }
 
 .blurb p {

@@ -11,11 +11,12 @@
 @value blueLight: #17c9d3;
 @value blueMed: #0072a3;
 @value blueDark: #003a57;
+@value blueDarker: #002533;
 @value green: #23c763;
 @value greenLight: #98c93e;
 @value orange: #ff9600;
-@value orangeDark: #003a57;
-@value orangeDarker: #16364f;
+@value orangeDark: #8A570F;
+@value orangeDarker: #5B3C10;
 @value yellow: #ffc400;
 
 @value world: #00a0de;

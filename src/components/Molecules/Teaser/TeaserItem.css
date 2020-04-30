@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value grayLighter, gray, orange, blue, white, whiteDark from colors;
+@value grayLighter, gray, orange, blue, blueLight, white, whiteDark from colors;
 
 /* import breakpoints */
 @value medium as bp-med from "../../00_global/breakpoints.css";
@@ -38,7 +38,7 @@
 }
 
 .link:hover {
-  color: orange;
+  color: blueLight;
 }
 
 .program {
@@ -53,7 +53,7 @@
 }
 
 .program .link:hover {
-  color: orange;
+  color: blueLight;
 }
 
 .link .icon {

@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "./colors.css";
-@value grayLighter, gray, grayDark, orange, blue from colors;
+@value grayLighter, gray, grayDark, orange, blue, blueLight from colors;
 
 /* import fonts... */
 @value fonts: "./fonts.css";
@@ -48,7 +48,7 @@ a {
 }
 
 a:hover {
-  color: orange;
+  color: blueLight;
 }
 
 img[data-src] {

@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value gray, orange, grayLighter from colors;
+@value gray, orange, grayLighter, blueLight from colors;
 
 /* import breakpoints */
 @value small as bp-small, medium as bp-medium, header as bp-header from "../../00_global/breakpoints.css";
@@ -96,7 +96,7 @@
 }
 
 .title:hover {
-  color: white;
+  color: blueLight;
 }
 
 .summary {
@@ -110,5 +110,5 @@
 }
 
 .category:hover {
-  color: white;
+  color: blueLight;
 }

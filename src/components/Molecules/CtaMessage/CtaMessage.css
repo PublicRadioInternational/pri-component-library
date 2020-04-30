@@ -64,7 +64,11 @@
 }
 
 .close:hover {
-  color: orange;
+  color: blueLight;
+}
+
+.dismissBtn {
+  border-style: dotted;
 }
 
 .announcement .content {
