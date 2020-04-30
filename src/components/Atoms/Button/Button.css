@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value white, whiteDark, grayLighter, gray, grayLight, grayDark, grayDarker, orange, orangeDark, orangeDarker, blue, blueMed, blueDark, blueDarker, yellow from colors;
+@value white, whiteDark, grayLighter, gray, grayLight, grayDark, grayDarker, orange, orangeDark, orangeDarker, blue, blueLight, blueMed, blueDark, blueDarker, yellow from colors;
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
 @value copy from fonts;
@@ -71,12 +71,12 @@
 
 @define-mixin btnBlue {
   background-color: blue;
-  border: 1px solid blueMed;
+  border: 1px solid blueLight;
   color: white;
 }
 
 @define-mixin btnBlueHover {
-  background-color: blueMed;
+  background-color: blueLight;
   color: white;
 }
 
@@ -120,7 +120,7 @@
 }
 
 @define-mixin btnBlueHover {
-  background-color: orange;
+  background-color: blueLight;
   color: white;
 }
 
@@ -149,7 +149,7 @@
 }
 
 .btnMobileBlue {
-  color: blue;
+  color: blueMed;
 }
 
 @media bp-header {
