@@ -67,6 +67,10 @@
   color: orange;
 }
 
+.dismissBtn {
+  border-style: dotted;
+}
+
 .announcement .content {
   max-width: 800px;
   margin: 0 auto;
