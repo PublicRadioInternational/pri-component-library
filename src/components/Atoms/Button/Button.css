@@ -92,8 +92,8 @@
 
 /* Colors */
 @define-mixin btnDark {
-  background-color: grayDarker;
-  border-color: transparent;
+  background-color: blueDark;
+  border: 1px dotted blue;
   color: white;
 }
 
