@@ -108,6 +108,11 @@
   color: #1da1f2;
 }
 
+.instagram:hover {
+  background-color: #e1306c;
+  color: #e1306c;
+}
+
 .rss:hover {
   background-color: green;
   color: green;

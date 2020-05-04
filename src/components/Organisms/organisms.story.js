@@ -519,6 +519,12 @@ const menus = {
       title: 'Follow us on Twitter'
     },
     {
+      name: 'Instagram',
+      url: '#',
+      icon: 'instagram',
+      title: 'Follow us on Instagram'
+    },
+    {
       name: 'RSS Feed',
       url: '#',
       icon: 'rss',

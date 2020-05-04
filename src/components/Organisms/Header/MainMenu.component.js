@@ -43,6 +43,7 @@ export default class MainMenu extends Component {
     const iconViewBox = {
       facebook: '0 0 32 32',
       twitter: '0 0 32 32',
+      instagram: '0 0 448 512',
       rss: '3 3 20 20'
     };
 
