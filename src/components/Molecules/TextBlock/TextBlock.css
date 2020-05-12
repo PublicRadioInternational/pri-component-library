@@ -1,12 +1,20 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value whiteDark, blue, orange from colors;
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
 @value heading from fonts;
 
 .textBlock {
   margin-bottom: 1.5rem;
-  padding-top: 1rem;
+  padding: 15px;
   font-size: 1rem;
-  border-top: 3px solid #ddd;
+  border-top: 3px solid blue;
+  background: whiteDark;
+}
+
+.textBlockAlt {
+  border-color: orange;
 }
 
 .textBlock ul {
@@ -19,7 +27,8 @@
 }
 
 .header {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  padding: 3px 0;
 }
 
 .btn {
