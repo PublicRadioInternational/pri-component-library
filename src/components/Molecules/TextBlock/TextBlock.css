@@ -3,37 +3,27 @@
 @value heading from fonts;
 
 .textBlock {
-  margin-bottom: 1rem;
-  padding-left: 0.8rem;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+  border-top: 3px solid #ddd;
 }
 
-.textBlockAlt {
-  padding: 0.75rem;
-  text-align: center;
+.textBlock ul {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.textBlock h4 {
+  font-weight: normal;
 }
 
 .header {
   font-size: 1rem;
-  font-weight: normal;
-}
-
-.headerAlt {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 0.2rem;
-}
-
-.body {
-  font-size: 0.87rem;
-}
-
-.bodyAlt {
-  font: 1rem heading;
-  margin-bottom: 0.5rem;
 }
 
 .btn {
-  font: 0.875rem heading;
+  font: 1rem heading;
   letter-spacing: 0;
   padding: 0.5rem 0.7rem;
   text-transform: none;
