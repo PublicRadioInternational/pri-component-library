@@ -16,7 +16,7 @@ describe('<CardList />', () => {
           src="https://interactive-dev.pri.org/staging/prototypes/homepage/themes/pri/images/logo_tw.png"
           category="world"
           url="#"
-          categoryDescription="PRIs The World"
+          categoryDescription="The World"
         >
           <span>One</span>
           <span>Two</span>

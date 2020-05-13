@@ -4,6 +4,8 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
+import sharedStyles from '../../00_global/shared.css';
 
 import Header from '../../Organisms/Header/Header.component';
 
@@ -13,6 +15,7 @@ import LayoutAsideLatest from '../../Organisms/Main/LayoutAsideLatest.component'
 import LayoutMainList2 from '../../Organisms/Main/LayoutMainList2.component';
 
 import Hero from '../../Molecules/Hero/Hero.component';
+import TextBlock from '../../Molecules/TextBlock/TextBlock.component';
 import CardList from '../../Organisms/CardList/CardList.component';
 import CardItem from '../../Molecules/CardItem/CardItem.component';
 import StickyItem from '../../Molecules/StickyItem/StickyItem.component';
@@ -25,7 +28,7 @@ import Footer from '../../Organisms/Footer/Footer.component';
 /**
  * Component that renders the homepage.
  */
-const Home = () => (
+const Home = ({ baseUrl }) => (
   <div>
     <Header />
     <Hero
@@ -45,7 +48,7 @@ const Home = () => (
           name="pris-the-world"
           id="card-top"
           url="#"
-          title="PRIs The World"
+          title="The World"
         >
           <CardItem
             title="There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco"
@@ -88,6 +91,79 @@ const Home = () => (
         </CardList>
       </LayoutMainList>
       <LayoutAsideLatest>
+        <TextBlock
+          title="This is The World"
+          body="The World is a public radio program and podcast that crosses borders and time zones to bring home the stories that matter."
+          button="About Us"
+          color="Blue"
+          url={`${baseUrl}/about`}
+          icon="info"
+        />
+        <TextBlock
+          alt
+          title="Subscribe to our Podcast"
+          body="Listen to The World on your favorite podcast player."
+          button="Subscribe today"
+          color="Orange"
+          url={`${baseUrl}/programs/the-world`}
+          icon="volume"
+        />
+        <TextBlock
+          alt
+          title="Subscribe to our daily newsletter"
+          body="Sign up for the Top of the World, delivered to your inbox every weekday morning."
+        >
+          <form
+            className="campaignmonitor-subscribe-form campaignmonitor-subscribe-form-the-scan hideSubmitButton-processed"
+            method="post"
+            id="campaignmonitor-subscribe-form"
+            acceptCharset="UTF-8"
+          >
+            <span>
+              <span className="form-item form-type-textfield form-item-email GoogleAnalyticsET-processed">
+                <label htmlFor="edit-email">
+                  <span className={sharedStyles.visuallyhidden}>Email</span>
+                  <input
+                    type="text"
+                    id="edit-email"
+                    name="email"
+                    placeholder="Your Email"
+                    size="60"
+                    maxLength="200"
+                    className="form-text required"
+                  />
+                </label>
+              </span>
+              <input
+                type="hidden"
+                name="list_id"
+                value="986c7a3cd11f67a0ee74fabf7c05f6c0"
+              />
+              <input
+                type="submit"
+                id="edit-submit--3"
+                name="op"
+                value="Subscribe"
+                className="form-submit btn btn-danger"
+              />
+              <input
+                type="hidden"
+                name="form_build_id"
+                value="form-uYRO0cZswFet_TYFqbNrw-kMFvijHbWLD1cT_HTHdR8"
+              />
+              <input
+                type="hidden"
+                name="form_token"
+                value="oP_Zt4SgcglXt9S2vr05DzI-RIQ2wXetfco4D159-cg"
+              />
+              <input
+                type="hidden"
+                name="form_id"
+                value="campaignmonitor_subscribe_form"
+              />
+            </span>
+          </form>
+        </TextBlock>
         <StickyItem>
           <TeaserList
             title="Latest Content"
@@ -212,7 +288,7 @@ const Home = () => (
     </LayoutMain>
     <Footer
       links={[
-        { name: 'About PRI', url: '#' },
+        { name: 'About', url: '#' },
         { name: 'Contact Us', url: '#' },
         { name: 'Donate', url: '#' },
         { name: 'Meet the Team', url: '#' },
@@ -235,5 +311,13 @@ const Home = () => (
     />
   </div>
 );
+
+Home.propTypes = {
+  baseUrl: PropTypes.string
+};
+
+Home.defaultProps = {
+  baseUrl: 'https://www.pri.org'
+};
 
 export default Home;
