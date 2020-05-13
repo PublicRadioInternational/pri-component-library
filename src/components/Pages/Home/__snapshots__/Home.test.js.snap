@@ -214,7 +214,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
           <a
             href="#"
           >
-            PRIs The World
+            The World
           </a>
         </header>
         <article
@@ -502,34 +502,7 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
         </p>
         <div
           className="btnWrap inputWrap"
-        >
-          <h4>
-            Follow us:
-          </h4>
-          <ul>
-            <li>
-              <a
-                href="https://facebook.com/pritheworld"
-              >
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/pritheworld"
-              >
-                Twitter
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://instagram.com/pritheworld"
-              >
-                Instagram
-              </a>
-            </li>
-          </ul>
-        </div>
+        />
         <a
           className="btnBlue btn"
           href="https://www.pri.org/about"

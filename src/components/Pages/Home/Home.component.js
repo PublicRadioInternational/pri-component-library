@@ -48,7 +48,7 @@ const Home = ({ baseUrl }) => (
           name="pris-the-world"
           id="card-top"
           url="#"
-          title="PRIs The World"
+          title="The World"
         >
           <CardItem
             title="There is one place where Serbs and Albanians coexist in Kosovo — in the country's version of Costco"
@@ -98,20 +98,7 @@ const Home = ({ baseUrl }) => (
           color="Blue"
           url={`${baseUrl}/about`}
           icon="info"
-        >
-          <h4>Follow us:</h4>
-          <ul>
-            <li>
-              <a href="https://facebook.com/pritheworld">Facebook</a>
-            </li>
-            <li>
-              <a href="https://twitter.com/pritheworld">Twitter</a>
-            </li>
-            <li>
-              <a href="https://instagram.com/pritheworld">Instagram</a>
-            </li>
-          </ul>
-        </TextBlock>
+        />
         <TextBlock
           alt
           title="Subscribe to our Podcast"
