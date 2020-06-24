@@ -77,21 +77,6 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
     </a>
     <a
       className="sponsor"
-      href="https://www.bbc.org/"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <img
-        alt="BBC"
-        height="25"
-        src="https://media.pri.org/s3fs-public/images/2020/04/logo-bbc.png"
-        title="BBC"
-        typeof="foaf:Image"
-        width="84"
-      />
-    </a>
-    <a
-      className="sponsor"
       href="https://www.wgbh.org/"
       rel="noopener noreferrer"
       target="_blank"
