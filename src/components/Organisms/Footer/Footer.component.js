@@ -43,21 +43,6 @@ const Footer = ({ links }) => (
       </a>
       <a
         className={styles.sponsor}
-        href="https://www.bbc.org/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          height="25"
-          width="84"
-          alt="BBC"
-          title="BBC"
-          typeof="foaf:Image"
-          src="https://media.pri.org/s3fs-public/images/2020/04/logo-bbc.png"
-        />
-      </a>
-      <a
-        className={styles.sponsor}
         href="https://www.wgbh.org/"
         target="_blank"
         rel="noopener noreferrer"
