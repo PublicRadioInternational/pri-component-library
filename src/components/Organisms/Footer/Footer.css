@@ -5,9 +5,17 @@
 @value fonts: "../../00_global/fonts.css";
 @value copy from fonts;
 
+/* import breakpoints */
+@value min as bp-phone from "../../00_global/breakpoints.css";
+
 .siteFooter {
   background: grayLighter;
   clear: both;
+}
+
+.siteFooter svg {
+  height: 28px;
+  width: 150px;
 }
 
 .siteFooter p {
@@ -35,4 +43,11 @@
   font-weight: 500;
   padding: 1rem;
   text-align: center;
+}
+
+@media bp-phone {
+  footer.siteFooter svg {
+    height: 47px;
+    width: 250px;
+  }
 }

@@ -17,13 +17,7 @@ const Footer = ({ links }) => (
   <footer className={styles.siteFooter}>
     <section className={styles.sponsors}>
       <a href="/">
-        <PriLogo
-          width="250"
-          height="47"
-          fillColor="#aaa"
-          title="PRI"
-          className="disableHover"
-        />
+        <PriLogo fillColor="#aaa" title="PRI" className="disableHover" />
       </a>
       <p>
         The World is a public radio program that crosses borders and time zones
@@ -45,21 +39,6 @@ const Footer = ({ links }) => (
           title="PRX"
           typeof="foaf:Image"
           src="https://media.pri.org/s3fs-public/images/2020/04/logo-prx.png"
-        />
-      </a>
-      <a
-        className={styles.sponsor}
-        href="https://www.bbc.org/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          height="25"
-          width="84"
-          alt="BBC"
-          title="BBC"
-          typeof="foaf:Image"
-          src="https://media.pri.org/s3fs-public/images/2020/04/logo-bbc.png"
         />
       </a>
       <a
@@ -146,6 +125,8 @@ const Footer = ({ links }) => (
       {links && <List listItems={links} />}
 
       <p>&copy; {new Date().getFullYear()} The World from PRX</p>
+
+      <p>PRX is a 501(c)(3) organization recognized by the IRS: #263347402.</p>
     </section>
   </footer>
 );

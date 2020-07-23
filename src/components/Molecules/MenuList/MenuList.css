@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value gray, orange from colors;
+@value gray, orange, blueLight from colors;
 
 .menuList {
   margin-bottom: 1rem;
@@ -31,6 +31,6 @@
 }
 
 .menuListLink:hover {
-  background-color: orange;
+  background-color: blueLight;
   color: white;
 }

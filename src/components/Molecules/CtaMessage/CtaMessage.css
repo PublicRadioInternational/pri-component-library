@@ -64,7 +64,11 @@
 }
 
 .close:hover {
-  color: orange;
+  color: blueLight;
+}
+
+.dismissBtn {
+  border-style: dotted;
 }
 
 .announcement .content {
@@ -161,10 +165,13 @@
 
 .loadUnder .content > * + * {
   margin-left: 0.5rem;
+  line-height: 1.3;
 }
 
 .loadUnder .title {
   font-size: 1.19rem;
+  line-height: 1.4;
+  margin: 0.5rem 0;
 }
 
 .loadUnder .close {

@@ -11,10 +11,10 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
       href="/"
     >
       <svg
-        height="47"
+        height={28}
         version={1.1}
         viewBox="0 0 150 28"
-        width="250"
+        width={150}
       >
         <title>
           PRI
@@ -71,21 +71,6 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
         height="25"
         src="https://media.pri.org/s3fs-public/images/2020/04/logo-prx.png"
         title="PRX"
-        typeof="foaf:Image"
-        width="84"
-      />
-    </a>
-    <a
-      className="sponsor"
-      href="https://www.bbc.org/"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <img
-        alt="BBC"
-        height="25"
-        src="https://media.pri.org/s3fs-public/images/2020/04/logo-bbc.png"
-        title="BBC"
         typeof="foaf:Image"
         width="84"
       />
@@ -178,6 +163,9 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
       © 
       2020
        The World from PRX
+    </p>
+    <p>
+      PRX is a 501(c)(3) organization recognized by the IRS: #263347402.
     </p>
   </section>
 </footer>

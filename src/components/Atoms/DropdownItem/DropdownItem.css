@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value blue, orange, white, grayLighter, grayDark from colors;
+@value blue, orange, white, grayLighter, blueLight, grayDark from colors;
 
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
@@ -24,7 +24,7 @@
 }
 
 .dropdownItem:hover {
-  background-color: orange;
+  background-color: blueLight;
   color: white;
 }
 

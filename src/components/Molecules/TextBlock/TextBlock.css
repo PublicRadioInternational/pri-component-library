@@ -1,39 +1,38 @@
+/* import colors... */
+@value colors: "../../00_global/colors.css";
+@value whiteDark, blue, orange from colors;
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
 @value heading from fonts;
 
 .textBlock {
-  margin-bottom: 1rem;
-  padding-left: 0.8rem;
+  margin-bottom: 1.5rem;
+  padding: 15px;
+  font-size: 1rem;
+  border-top: 3px solid blue;
+  background: whiteDark;
 }
 
 .textBlockAlt {
-  padding: 0.75rem;
-  text-align: center;
+  border-color: orange;
 }
 
-.header {
-  font-size: 1rem;
+.textBlock ul {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.textBlock h4 {
   font-weight: normal;
 }
 
-.headerAlt {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 0.2rem;
-}
-
-.body {
-  font-size: 0.87rem;
-}
-
-.bodyAlt {
-  font: 1rem heading;
-  margin-bottom: 0.5rem;
+.header {
+  font-size: 1.1rem;
+  padding: 3px 0;
 }
 
 .btn {
-  font: 0.875rem heading;
+  font: 1rem heading;
   letter-spacing: 0;
   padding: 0.5rem 0.7rem;
   text-transform: none;

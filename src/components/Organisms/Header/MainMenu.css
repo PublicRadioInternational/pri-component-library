@@ -1,6 +1,6 @@
 /* import colors... */
 @value colors: "../../00_global/colors.css";
-@value whiteDark, gray, grayLighter, grayDark, orange, orangeDark, blue, yellow, green, blueDark from colors;
+@value whiteDark, gray, grayLighter, grayDark, orange, orangeDark, blue, blueLight, yellow, green, blueDark from colors;
 
 /* import fonts... */
 @value fonts: "../../00_global/fonts.css";
@@ -94,8 +94,8 @@
   line-height: 0;
 }
 .socialMenuLink:hover {
-  background-color: orange;
-  color: orange;
+  background-color: blueLight;
+  color: blueLight;
 }
 
 .facebook:hover {
@@ -106,6 +106,11 @@
 .twitter:hover {
   background-color: #1da1f2;
   color: #1da1f2;
+}
+
+.instagram:hover {
+  background-color: #e1306c;
+  color: #e1306c;
 }
 
 .rss:hover {
