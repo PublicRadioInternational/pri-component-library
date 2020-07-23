@@ -1325,6 +1325,9 @@ exports[`<Home /> Matches the Header snapshot 1`] = `
         2020
          The World from PRX
       </p>
+      <p>
+        PRX is a 501(c)(3) organization recognized by the IRS: #263347402.
+      </p>
     </section>
   </footer>
   <aside
