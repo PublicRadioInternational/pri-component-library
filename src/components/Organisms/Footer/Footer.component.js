@@ -125,6 +125,8 @@ const Footer = ({ links }) => (
       {links && <List listItems={links} />}
 
       <p>&copy; {new Date().getFullYear()} The World from PRX</p>
+
+      <p>PRX is a 501(c)(3) organization recognized by the IRS: #263347402.</p>
     </section>
   </footer>
 );
