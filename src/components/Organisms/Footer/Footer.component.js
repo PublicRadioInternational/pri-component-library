@@ -43,17 +43,17 @@ const Footer = ({ links }) => (
       </a>
       <a
         className={styles.sponsor}
-        href="https://www.wgbh.org/"
+        href="https://gbh.org/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <img
           height="25"
-          width="84"
-          alt="WGBH"
-          title="WGBH"
+          width="48"
+          alt="GBH"
+          title="GBH"
           typeof="foaf:Image"
-          src="https://media.pri.org/s3fs-public/images/2020/04/logo-wgbh.png"
+          src="https://media.pri.org/s3fs-public/images/2020/08/gbh_logo_purple-95x50.png"
         />
       </a>
       <p>
