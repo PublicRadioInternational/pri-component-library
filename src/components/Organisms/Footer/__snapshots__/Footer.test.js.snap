@@ -77,17 +77,17 @@ exports[`<Footer /> Matches the Footer snapshot 1`] = `
     </a>
     <a
       className="sponsor"
-      href="https://www.wgbh.org/"
+      href="https://gbh.org/"
       rel="noopener noreferrer"
       target="_blank"
     >
       <img
-        alt="WGBH"
+        alt="GBH"
         height="25"
-        src="https://media.pri.org/s3fs-public/images/2020/04/logo-wgbh.png"
-        title="WGBH"
+        src="https://media.pri.org/s3fs-public/images/2020/08/gbh_logo_purple-95x50.png"
+        title="GBH"
         typeof="foaf:Image"
-        width="84"
+        width="48"
       />
     </a>
     <p>
