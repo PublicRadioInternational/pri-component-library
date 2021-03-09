@@ -14,7 +14,7 @@ const cx = classNames.bind(styles);
  * Component that renders a link button with a click handler.
  */
 const ButtonLink = props => {
-  const { url, onClick, className, children, color, small } = props;
+  const { url, onClick, className, children, color, small, ...other } = props;
   // Generate a class name based on the color.
   const buttonClass = cx({
     [`btn${color}`]: !small,
@@ -23,7 +23,7 @@ const ButtonLink = props => {
   });
 
   return (
-    <a href={url} className={buttonClass} onClick={onClick}>
+    <a href={url} className={buttonClass} onClick={onClick} {...other}>
       {children}
     </a>
   );

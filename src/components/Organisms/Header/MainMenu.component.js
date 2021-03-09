@@ -49,12 +49,13 @@ export default class MainMenu extends Component {
 
     const topNavButtons =
       drawerTopNav &&
-      drawerTopNav.map(({ name, url }) => (
+      drawerTopNav.map(({ name, url, attributes }) => (
         <ButtonLink
           color="Orange"
           className={styles.btnGroupBtn}
           url={url}
           key={name}
+          {...attributes}
         >
           {name}
         </ButtonLink>
@@ -62,19 +63,20 @@ export default class MainMenu extends Component {
 
     const mainNavAccorcions =
       drawerMainNav &&
-      drawerMainNav.map(({ name, children }, i) => (
+      drawerMainNav.map(({ name, children, attributes }, i) => (
         <Accordion
           accordionTitle={name}
           listId={name}
           color={mainNavColors[i % 4]}
           accordionList={children}
           key={name}
+          {...attributes}
         />
       ));
 
     const socialNavItems =
       drawerSocialNav &&
-      drawerSocialNav.map(({ name, url, icon, title }) => {
+      drawerSocialNav.map(({ name, url, icon, title, attributes }) => {
         const linkClasses = cx({
           socialMenuLink: true,
           [icon]: true
@@ -82,7 +84,7 @@ export default class MainMenu extends Component {
 
         return (
           <li key={name}>
-            <a className={linkClasses} href={url} title={title}>
+            <a className={linkClasses} href={url} title={title} {...attributes}>
               <span className={styles.socialMenuIcon}>
                 <Icon
                   name={icon}
