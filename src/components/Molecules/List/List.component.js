@@ -78,11 +78,13 @@ export default class List extends Component {
             item.itemLinkClass !== undefined ? styles[item.itemLinkClass] : ''
           }`}
           href={item.url}
+          {...item.attributes}
         >
           {item.name}
         </a>
       </li>
     ));
+
     return (
       <div
         className={listWrapClasses}

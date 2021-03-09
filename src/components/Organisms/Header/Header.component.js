@@ -40,7 +40,7 @@ export default class Header extends Component {
 
     const headerNavButtons =
       headerNav &&
-      headerNav.map(({ name, url, icon, color }) => {
+      headerNav.map(({ name, url, icon, color, attributes }) => {
         const buttonClasses = cx({
           button: true,
           buttonHasIcon: icon
@@ -51,6 +51,7 @@ export default class Header extends Component {
             color={color}
             url={url}
             key={name}
+            {...attributes}
           >
             {icon && <Icon name={icon} className={styles.buttonIcon} />} {name}
           </ButtonLink>
