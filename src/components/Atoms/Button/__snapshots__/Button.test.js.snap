@@ -46,6 +46,7 @@ exports[`<ButtonLink /> Matches the Button Link snapshot 1`] = `
   className="btnWhite White"
   href="https://google.com"
   onClick={[MockFunction]}
+  title="test"
 >
   test
 </a>

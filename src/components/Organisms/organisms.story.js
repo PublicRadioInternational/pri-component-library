@@ -416,17 +416,26 @@ const menus = {
     },
     {
       name: 'Donate Now',
-      url: '#'
+      url: '#',
+      attributes: {
+        referrerpolicy: 'no-referrer-when-downgrade'
+      }
     }
   ],
   drawerMainNav: [
     {
       name: 'Group 1',
       url: '#',
+      attributes: {
+        title: 'Click to expand'
+      },
       children: [
         {
           name: 'Live Stream',
-          url: '#'
+          url: '#',
+          attributes: {
+            referrerpolicy: 'no-referrer-when-downgrade'
+          }
         },
         {
           name: 'Podcasts by Program',
@@ -444,7 +453,10 @@ const menus = {
       children: [
         {
           name: 'Live Stream',
-          url: '#'
+          url: '#',
+          attributes: {
+            referrerpolicy: 'no-referrer-when-downgrade'
+          }
         },
         {
           name: 'Podcasts by Program',
@@ -474,7 +486,10 @@ const menus = {
       children: [
         {
           name: 'Live Stream',
-          url: '#'
+          url: '#',
+          attributes: {
+            referrerpolicy: 'no-referrer-when-downgrade'
+          }
         },
         {
           name: 'Podcasts by Program',
@@ -492,7 +507,10 @@ const menus = {
       children: [
         {
           name: 'Live Stream',
-          url: '#'
+          url: '#',
+          attributes: {
+            referrerpolicy: 'no-referrer-when-downgrade'
+          }
         },
         {
           name: 'Podcasts by Program',
@@ -510,7 +528,10 @@ const menus = {
       name: 'Facebook',
       url: '#',
       icon: 'facebook',
-      title: 'Follow us on Facebook'
+      title: 'Follow us on Facebook',
+      attributes: {
+        referrerpolicy: 'no-referrer-when-downgrade'
+      }
     },
     {
       name: 'Twitter',
@@ -542,7 +563,10 @@ const menus = {
       name: 'Donate',
       url: '#',
       icon: 'heart',
-      color: 'Orange'
+      color: 'Orange',
+      attributes: {
+        referrerpolicy: 'no-referrer-when-downgrade'
+      }
     }
   ]
 };
@@ -571,7 +595,13 @@ storiesOf('Organisms/Footer', module)
       links={[
         { name: 'About PRI', url: '#' },
         { name: 'Contact Us', url: '#' },
-        { name: 'Donate', url: '#' },
+        {
+          name: 'Donate',
+          url: '#',
+          attributes: {
+            referrerpolicy: 'no-referrer-when-downgrade'
+          }
+        },
         { name: 'Meet the PRI.org Team', url: '#' },
         { name: 'Privacy policy', url: '#' },
         { name: 'Terms of use', url: '#' }
