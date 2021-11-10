@@ -1,5 +1,5 @@
 # PRI Component Library
-This repository contains a node module that exports PRI's React components.
+INACTIVE! This repository contains a node module that exports PRI's React components.
 
 The application defined in this codebase is live and available [here](https://publicradiointernational.github.io/pri-component-library/).
 
